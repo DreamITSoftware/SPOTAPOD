@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>pod-engagement-profile — aggregate explorer</title>
+<style>
+  :root{
+    --paper:#EEF1EF;
+    --ink:#182523;
+    --line:#C7D0CC;
+    --pine:#3D6B63;
+    --ochre:#9C7233;
+    --panel:#FFFFFF;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:"IBM Plex Sans","Segoe UI",Helvetica,Arial,sans-serif;
+    line-height:1.55;
+  }
+  .wrap{
+    max-width:840px;
+    margin:0 auto;
+    padding:56px 24px 96px;
+  }
+  h1,h2,h3{
+    font-family:"Source Serif 4","Iowan Old Style",Georgia,serif;
+    font-weight:600;
+    line-height:1.2;
+    margin:0 0 8px;
+  }
+  h1{font-size:2.1rem; letter-spacing:-0.01em;}
+  h2{font-size:1.35rem; margin-top:0;}
+  .subtitle{
+    color:#48605A;
+    font-size:1.05rem;
+    max-width:60ch;
+    margin:0 0 40px;
+  }
+  .notice{
+    border:1px solid var(--line);
+    border-left:4px solid var(--pine);
+    background:var(--panel);
+    padding:18px 20px;
+    margin:0 0 48px;
+    font-size:0.95rem;
+  }
+  .notice strong{color:var(--pine);}
+  section{
+    margin:0 0 56px;
+    padding-top:32px;
+    border-top:1px solid var(--line);
+  }
+  section:first-of-type{border-top:none; padding-top:0;}
+  .stat-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(160px,1fr));
+    gap:16px;
+    margin:20px 0 28px;
+  }
+  .stat{
+    background:var(--panel);
+    border:1px solid var(--line);
+    padding:16px 18px;
+  }
+  .stat .n{
+    font-family:"Source Serif 4",Georgia,serif;
+    font-size:1.6rem;
+    color:var(--pine);
+    display:block;
+  }
+  .stat .l{
+    font-size:0.85rem;
+    color:#4A5A56;
+  }
+  figure{
+    margin:24px 0;
+    background:var(--panel);
+    border:1px solid var(--line);
+    padding:12px;
+  }
+  figure img{
+    width:100%;
+    display:block;
+  }
+  figcaption{
+    font-size:0.9rem;
+    color:#4A5A56;
+    padding:10px 4px 2px;
+  }
+  .tag{
+    display:inline-block;
+    font-size:0.75rem;
+    color:var(--ochre);
+    border:1px solid var(--ochre);
+    padding:1px 7px;
+    margin-left:8px;
+  }
+  a{color:var(--pine);}
+  footer{
+    font-size:0.85rem;
+    color:#5A6D68;
+    border-top:1px solid var(--line);
+    padding-top:24px;
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <h1>Engagement-pod dataset profile</h1>
+  <p class="subtitle">Aggregate figures across three datasets, computed directly from the source files. Nothing on this page can be searched, filtered, or traced back to a specific account.</p>
+
+  <div class="notice">
+    <strong>No per-record lookup.</strong> This page shows population-level statistics only — the same numbers already published in the main <a href="../README.md">README</a> and <a href="../docs/baseline-profile.md">baseline profile</a>. See <a href="../docs/limitations.md">limitations.md</a> for why this repo doesn't build a searchable identity tool, and <a href="README.md">explorer/README.md</a> for how this differs from the SPOTAPOD explorer it takes structural cues from.
+  </div>
+
+  <section>
+    <h2>podawaa2024</h2>
+    <div class="stat-grid">
+      <div class="stat"><span class="n">213,491</span><span class="l">records</span></div>
+      <div class="stat"><span class="n">7,033</span><span class="l">unique authors (hashed)</span></div>
+      <div class="stat"><span class="n">44.3%</span><span class="l">zero Views</span></div>
+      <div class="stat"><span class="n">19.1%</span><span class="l">of posts from top 1% of authors</span></div>
+    </div>
+    <figure>
+      <img src="../figures/fig1-likes-distribution.png" alt="Likes distribution histogram, log scale">
+      <figcaption>Likes distribution (log scale). VERIFIED — reproducible via <code>analysis/profile_podawaa.py</code>.</figcaption>
+    </figure>
+    <figure>
+      <img src="../figures/fig2-author-concentration.png" alt="Author concentration Lorenz-style curve">
+      <figcaption>Author concentration — cumulative share of posts by ranked author percentile.</figcaption>
+    </figure>
+    <figure>
+      <img src="../figures/fig3-posts-by-year.png" alt="Posts by decoded year bar chart">
+      <figcaption>Posts by decoded year (from Snowflake-style post ID — see <a href="../docs/method.md">method.md</a>).</figcaption>
+    </figure>
+    <figure>
+      <img src="../figures/fig4-ratio-distribution.png" alt="Like-to-view ratio distribution histogram">
+      <figcaption>Like-to-view ratio distribution, with the likes=views line marked.</figcaption>
+    </figure>
+    <figure>
+      <img src="../figures/fig5-field-completeness.png" alt="Field completeness bar chart">
+      <figcaption>Field completeness across all five schema fields.</figcaption>
+    </figure>
+  </section>
+
+  <section>
+    <h2>HyperClaper</h2>
+    <div class="stat-grid">
+      <div class="stat"><span class="n">49,369</span><span class="l">records</span></div>
+      <div class="stat"><span class="n">702</span><span class="l">unique authors (hashed)</span></div>
+      <div class="stat"><span class="n">68.6%</span><span class="l">like=true &amp; comment=true</span></div>
+      <div class="stat"><span class="n">98.0%</span><span class="l">zero recorded impressions</span></div>
+    </div>
+    <figure>
+      <img src="../figures/fig6-hyperclapper-timeline.png" alt="Records by month timeline">
+      <figcaption>Records by month — volume concentrated mid-2025 onward.</figcaption>
+    </figure>
+    <figure>
+      <img src="../figures/fig7-hyperclapper-reciprocal-flags.png" alt="Reciprocal engagement flags bar chart">
+      <figcaption>Reciprocal like/comment flag combinations. <span class="tag">STATED</span> signal, not author intent — see <a href="../docs/method.md">method.md</a>.</figcaption>
+    </figure>
+  </section>
+
+  <section>
+    <h2>LinkBoost-2025</h2>
+    <div class="stat-grid">
+      <div class="stat"><span class="n">77,969</span><span class="l">records</span></div>
+      <div class="stat"><span class="n">469</span><span class="l">unique target posts (hashed)</span></div>
+      <div class="stat"><span class="n">238</span><span class="l">unique operator accounts (hashed)</span></div>
+      <div class="stat"><span class="n">58.2%</span><span class="l">of records from top 10% of targets</span></div>
+    </div>
+    <figure>
+      <img src="../figures/fig8-linkboost-target-concentration.png" alt="Target-post concentration curve">
+      <figcaption>Target-post concentration — cumulative share of records by ranked target percentile.</figcaption>
+    </figure>
+    <figure>
+      <img src="../figures/fig9-linkboost-country.png" alt="Records by reported country bar chart">
+      <figcaption>Top 10 reported countries.</figcaption>
+    </figure>
+    <figure>
+      <img src="../figures/fig10-linkboost-likes-comments.png" alt="SuccessfullLikes and SuccessfullComments distribution">
+      <figcaption>SuccessfullLikes / SuccessfullComments distribution per record.</figcaption>
+    </figure>
+  </section>
+
+  <footer>
+    Full write-ups: <a href="../docs/method.md">method</a> ·
+    <a href="../docs/data-dictionary.md">data dictionary</a> ·
+    <a href="../docs/limitations.md">limitations</a> ·
+    <a href="../docs/privacy.md">privacy</a> ·
+    <a href="../docs/regulatory-context.md">16 CFR § 465.8</a>.
+    Regenerate every figure on this page from your own copies of the source files via
+    <code>figures/generate_figures.py</code>.
+  </footer>
+
+</div>
+</body>
+</html>
