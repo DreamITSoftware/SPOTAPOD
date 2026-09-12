@@ -3,10 +3,10 @@
 ## Source sites
 
 | Dataset | Reported source | Reported collection method |
-|---|---|---|
+| --- | --- | --- |
 | `podawaa2024.json` | podawaa.com; also archived on Harvard Dataverse (see [Citations](#citations) below) | Navigated to the site directly and captured the resulting data to a local server |
 | `HyperClaper.json` | hyperclapper.com | Navigated to the site directly and captured the resulting data to a local server |
-| `LinkBoost-2025.json` | Not yet stated | Not yet stated |
+| `LinkBoost-2025.json` | app.linkboost.co | Navigated to the site directly and captured the resulting data to a local server |
 
 The first two entries are **STATED** — asserted by whoever collected the
 data, not independently verified by this repo. `LinkBoost-2025.json`'s
