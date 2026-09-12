@@ -1,0 +1,30 @@
+site_name: pod-engagement-profile
+site_description: >
+  Aggregate-only companion analysis of three engagement-pod-adjacent
+  datasets, oriented around 16 CFR 465.8. No script or page in this site
+  identifies an individual record or account.
+repo_url: ""
+theme:
+  name: readthedocs
+
+nav:
+  - Home: README.md
+  - Provenance: docs/provenance.md
+  - Regulatory context: docs/regulatory-context.md
+  - Other regulatory signals: docs/other-regulatory-signals.md
+  - Audience impact: docs/audience-impact.md
+  - Algorithm/creator-strategy case study: docs/algorithm-strategy-advice.md
+  - Demographics: docs/demographics.md
+  - Method: docs/method.md
+  - Data dictionary: docs/data-dictionary.md
+  - Privacy and PII: docs/privacy.md
+  - Limitations: docs/limitations.md
+  - Baseline profile (full output): docs/baseline-profile.md
+  - Validation tools: tools/README.md
+  - Contributing: CONTRIBUTING.md
+  - Changelog: CHANGELOG.md
+
+markdown_extensions:
+  - tables
+  - toc:
+      permalink: true
