@@ -11,7 +11,7 @@ This is deliberately blunt: a keyword hit is a SIGNAL, not a finding. It
 tells you "N records contain terms associated with category X," and
 nothing more. It does not identify which records, which authors, or
 whether any actual legal element (falsity, materiality, licensing status,
-jurisdiction, intent) is present. See docs/other-regulatory-signals.md for
+jurisdiction, intent) is present. See docs/research/other-regulatory-signals.md for
 the evidence-tier discipline this script's output is meant to be read
 under.
 
@@ -136,7 +136,7 @@ def main():
     print("Reminder: these are keyword-pattern SIGNALS, not findings. No")
     print("record, author, or occupation is identified by this script, and")
     print("no legal conclusion follows from a match. See")
-    print("docs/other-regulatory-signals.md.")
+    print("docs/research/other-regulatory-signals.md.")
 
 
 if __name__ == "__main__":

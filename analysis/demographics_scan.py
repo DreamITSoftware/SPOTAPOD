@@ -12,7 +12,7 @@ any other protected characteristic from names, photos, or any other proxy.
 Those categories are not present in any of these files as stated data, and
 guessing them from a name or photo is unreliable and not something this
 repo does to real people, at any aggregation level. See
-docs/demographics.md for the full reasoning.
+docs/research/demographics.md for the full reasoning.
 
 What this DOES report: aggregate counts of self-reported location strings
 and country values, and keyword-bucketed counts of stated

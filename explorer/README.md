@@ -11,7 +11,7 @@ identities across every panel. This one doesn't do that, and won't:
 there's no search box, no filter, no click-to-focus, and no per-record
 data of any kind embedded in the page — just the same population-level
 figures and headline numbers that are already in the main README and
-`docs/baseline-profile.md`, laid out for browsing. See
+`docs/research/baseline-profile.md`, laid out for browsing. See
 `docs/limitations.md` for why a per-author lookup isn't something this
 repo builds, in any form, including a private or read-only one.
 

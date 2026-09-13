@@ -26,7 +26,7 @@ no matter how useful the analysis behind it is.
 
 4. **Every substantive claim gets an evidence tier**: VERIFIED,
    CORROBORATED, STATED, UNCORROBORATED, or INFERENCE (see
-   `docs/limitations.md` and `docs/other-regulatory-signals.md` for how
+   `docs/limitations.md` and `docs/research/other-regulatory-signals.md` for how
    these are used in practice). Don't upgrade a tier without new evidence,
    and don't drop the tier label to make a claim read more confidently
    than it should.
@@ -35,12 +35,12 @@ no matter how useful the analysis behind it is.
    content matches a keyword pattern or a metric crosses a threshold; it
    cannot report that a specific account, post, or dataset violates 16 CFR
    § 465.8 or any other law. See `docs/regulatory-context.md` and
-   `docs/other-regulatory-signals.md` for the pattern to follow.
+   `docs/research/other-regulatory-signals.md` for the pattern to follow.
 
 6. **No inferred protected characteristics.** Never add code or docs that
    guess race, ethnicity, gender, age, religion, disability, or similar
    from a name, photo, or any other proxy — for an individual or in
-   aggregate. See `docs/demographics.md` for the line this repo draws and
+   aggregate. See `docs/research/demographics.md` for the line this repo draws and
    why aggregation doesn't move it.
 
 7. **New datasets get the full doc set.** Adding a fourth dataset means
@@ -74,6 +74,6 @@ it probably does; ask before shipping it, not after.
 3. Add a docstring citing the relevant law, if any (see the pattern in
    `analysis/profile_podawaa.py` and `analysis/regulatory_category_scan.py`).
 4. Run it against the real file, confirm the output contains zero
-   identifiers, and paste the output into `docs/baseline-profile.md`.
+   identifiers, and paste the output into `docs/research/baseline-profile.md`.
 5. Add corresponding entries to `README.md`'s headline figures and docs
    index.

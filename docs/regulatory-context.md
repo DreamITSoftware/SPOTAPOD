@@ -67,5 +67,5 @@ files, or this repo's scripts, can establish.
 For an aggregate (not per-record) look at whether post/comment content
 contains terms associated with a few *other* regulated categories — health
 claims, financial claims, licensing language, endorsement disclosure — see
-[other-regulatory-signals.md](other-regulatory-signals.md). Same rule
+[other-regulatory-signals.md](research/other-regulatory-signals.md). Same rule
 applies there: signal counts, never individual findings.
