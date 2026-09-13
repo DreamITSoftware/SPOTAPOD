@@ -3,6 +3,9 @@
 ## Unreleased
 
 ### Added
+- Appendix to `README.md`: a PII-disclaimer README template (reference
+  only, clearly marked as not describing this repository) for the
+  different case of a repo whose purpose requires hosting real PII.
 - `docs/algorithm-strategy-advice.md` — split out from `audience-impact.md`
   into its own page: a genre-level (not report-specific) case study on
   algorithm/creator-strategy advice content, kept free of any specific
