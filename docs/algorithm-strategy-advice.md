@@ -1,9 +1,5 @@
 # Case study: algorithm/creator-strategy advice content
 
-The 2024 Algorithm Report can be found here https://www.xavierdegraux.be/wp-content/uploads/2024/02/LinkedIn-Algorithm-Insights-2024-Degraux.pdf
-
-This report was pushed into engagement pods by Julien Fortuit who is named in the report, but they failed to disclose the report was using fake socials.
-
 This page is one specific illustration of the mechanism described in
 [audience-impact.md](audience-impact.md): what happens to readers when
 content gets artificially inflated engagement. It's split out into its own
