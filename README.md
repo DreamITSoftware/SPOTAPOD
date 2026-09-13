@@ -326,22 +326,6 @@ these files and this repo doesn't guess it. See
 [docs/demographics.md](docs/demographics.md) for the full breakdown, scope
 statement, and caveats.
 
-## Citations
-
-`podawaa2024.json` (CORROBORATED via matching sha256 — see
-[docs/provenance.md](docs/provenance.md#citations)):
-
-> Hall, Daniel. "LinkedIn posts using fake socials." Harvard Dataverse, 2026.
-> `doi:10.7910/DVN/WD9AUR`
-> https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/WD9AUR
-
-`HyperClaper.json` has no Dataverse citation — nothing ties this file to
-that DOI. See [docs/provenance.md](docs/provenance.md#citations) for why
-it isn't cited there and where it's reported to come from instead.
-
-`LinkBoost-2025.json` has no citation either — its source hasn't been
-confirmed yet (see [docs/provenance.md](docs/provenance.md)).
-
 ## License
 
 Code and schemas: MIT (see [LICENSE](LICENSE)). Documentation: CC BY 4.0
