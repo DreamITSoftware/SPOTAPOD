@@ -1,6 +1,6 @@
 cff-version: 1.2.0
 message: "If you use this repository, please cite it as below. See docs/provenance.md for how to cite the underlying datasets, which are separate from this repository."
-title: "pod-engagement-profile: aggregate-only companion analysis of engagement-pod datasets"
+title: "SPOTAPOD Analysis Repository: aggregate-only companion analysis of engagement-pod datasets (independent project, not affiliated with PolymathWizard/SPOTAPOD)"
 type: software
 license: MIT
 date-released: 2026-09-12

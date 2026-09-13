@@ -1,4 +1,12 @@
-# SPOTAPOD Analysis
+# SPOTAPOD Analysis Repository
+
+*Independent project, not officially affiliated with or endorsed by the
+[PolymathWizard/SPOTAPOD](https://github.com/PolymathWizard/SPOTAPOD)
+project — this repo takes structural cues from it (see the mirrored
+top-level layout) but was built separately, from different source files,
+and deliberately diverges on key points: no raw data included, no
+per-author/per-record explorer (see [explorer/README.md](explorer/README.md)
+and [docs/limitations.md](docs/limitations.md) for why).*
 
 **A de-identified, aggregate-only companion analysis of three engagement-pod-adjacent datasets.**
 
@@ -231,6 +239,16 @@ python3 analysis/regulatory_category_scan.py linkboost /path/to/LinkBoost-2025.j
 python3 analysis/demographics_scan.py hyperclapper /path/to/HyperClaper.json
 python3 analysis/demographics_scan.py linkboost /path/to/LinkBoost-2025.json
 
+# Aggregate book-promotion genre breakdown (no identities)
+python3 analysis/book_genre_scan.py podawaa /path/to/podawaa2024.json
+python3 analysis/book_genre_scan.py hyperclapper /path/to/HyperClaper.json
+python3 analysis/book_genre_scan.py linkboost /path/to/LinkBoost-2025.json
+
+# Career-advice content comparison across all three datasets (no identities)
+python3 analysis/career_advice_scan.py podawaa /path/to/podawaa2024.json
+python3 analysis/career_advice_scan.py hyperclapper /path/to/HyperClaper.json
+python3 analysis/career_advice_scan.py linkboost /path/to/LinkBoost-2025.json
+
 # Regenerate every chart in figures/
 python3 figures/generate_figures.py /path/to/podawaa2024.json /path/to/HyperClaper.json --linkboost-path /path/to/LinkBoost-2025.json --outdir figures
 ```
@@ -256,7 +274,7 @@ which additionally needs `matplotlib`.
 - Volume is heavily concentrated in mid-to-late 2025 through mid-2026 (see [fig6](figures/fig6-hyperclapper-timeline.png))
 - The top 10% of authors (by hashed post count) account for 73.5% of posts
 
-Full output: [docs/baseline-profile.md](docs/baseline-profile.md).
+Full output: [docs/research/baseline-profile.md](docs/research/baseline-profile.md).
 
 ### LinkBoost-2025
 
@@ -287,10 +305,12 @@ no per-record data). See [explorer/README.md](explorer/README.md) for why.
 
 - [Provenance](docs/provenance.md) — reported source and collection method for each file, the Dataverse citation for `podawaa2024.json`, and why this repo doesn't take a position on ToS compliance
 - [Regulatory context](docs/regulatory-context.md) — full text of 16 CFR § 465.8 and what it does/doesn't require
-- [Other regulatory signals](docs/other-regulatory-signals.md) — aggregate, keyword-based signal counts for categories beyond § 465.8, and why they're signals rather than findings
-- [Audience impact](docs/audience-impact.md) — inferred, category-level downstream risk to readers from inflated social proof, not a measured outcome
-- [Algorithm/creator-strategy advice case study](docs/algorithm-strategy-advice.md) — a genre-level (not report-specific) illustration of the same mechanism applied to platform-strategy content
-- [Demographics](docs/demographics.md) — aggregate geography and stated-occupation-category breakdown, and why protected characteristics (race, gender, age, etc.) are never inferred
+- [Other regulatory signals](docs/research/other-regulatory-signals.md) — aggregate, keyword-based signal counts for categories beyond § 465.8, and why they're signals rather than findings
+- [Audience impact](docs/research/audience-impact.md) — inferred, category-level downstream risk to readers from inflated social proof, not a measured outcome
+- [Algorithm/creator-strategy advice case study](docs/research/algorithm-strategy-advice.md) — a genre-level (not report-specific) illustration of the same mechanism applied to platform-strategy content
+- [Book-promotion content](docs/research/book-promotion-content.md) — aggregate genre breakdown of book-promotion language across all three datasets
+- [Career-advice comparison](docs/research/career-advice-comparison.md) — side-by-side methodology/findings/limitations table across all three datasets
+- [Demographics](docs/research/demographics.md) — aggregate geography and stated-occupation-category breakdown, and why protected characteristics (race, gender, age, etc.) are never inferred
 - [Method](docs/method.md) — how each figure is computed
 - [Data dictionary](docs/data-dictionary.md) — same content as the [Data dictionary](#data-dictionary) section above, kept as a standalone page for cross-linking from other docs
 - [Privacy and PII](docs/privacy.md) — what personal data is in these files and exactly how this repo does and doesn't touch it
@@ -307,11 +327,11 @@ claims, professional-licensing language, and endorsement-disclosure gaps.
 No record, author, or occupation is ever identified by this script; it
 reports population-level percentages only. Full methodology, results
 table, and why these are signals rather than findings:
-[docs/other-regulatory-signals.md](docs/other-regulatory-signals.md).
+[docs/research/other-regulatory-signals.md](docs/research/other-regulatory-signals.md).
 
 For what those categories could mean for the people who *saw* this
 content — not the accounts that posted it — see
-[docs/audience-impact.md](docs/audience-impact.md), an INFERENCE-tier
+[docs/research/audience-impact.md](docs/research/audience-impact.md), an INFERENCE-tier
 discussion of plausible downstream harm from inflated social proof, not a
 measurement of any actual outcome.
 
@@ -323,8 +343,43 @@ and stated occupation/headline text — into population-level percentages.
 It does **not** infer race, ethnicity, gender, age, or any other protected
 characteristic from names or photos; that data isn't stated anywhere in
 these files and this repo doesn't guess it. See
-[docs/demographics.md](docs/demographics.md) for the full breakdown, scope
+[docs/research/demographics.md](docs/research/demographics.md) for the full breakdown, scope
 statement, and caveats.
+
+## Book-promotion content
+
+`analysis/book_genre_scan.py` checks for book-promotion language across
+all three datasets and breaks matches down by genre. Book promotion is a
+small minority everywhere (0.26–0.98% of records), dominated by
+business/entrepreneurship and "writing craft" categories. Full breakdown:
+[docs/research/book-promotion-content.md](docs/research/book-promotion-content.md).
+
+## Career-advice content comparison
+
+`analysis/career_advice_scan.py` checks for career-advice language
+(resume, interview prep, promotion, networking, layoffs, etc.) across all
+three datasets. HyperClaper leads by a wide margin (16.52%), aligning with
+its occupation skew and reciprocal-engagement rate; podawaa2024 is lowest
+(4.45%); LinkBoost-2025 sits in between (6.68%) but reflects pod-activity
+volume on a small number of target posts rather than distinct content
+volume. Full methodology, side-by-side table, and caveats:
+[docs/research/career-advice-comparison.md](docs/research/career-advice-comparison.md).
+
+## Citations
+
+`podawaa2024.json` (CORROBORATED via matching sha256 — see
+[docs/provenance.md](docs/provenance.md#citations)):
+
+> Hall, Daniel. "LinkedIn posts using fake socials." Harvard Dataverse, 2026.
+> `doi:10.7910/DVN/WD9AUR`
+> https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/WD9AUR
+
+`HyperClaper.json` has no Dataverse citation — nothing ties this file to
+that DOI. See [docs/provenance.md](docs/provenance.md#citations) for why
+it isn't cited there and where it's reported to come from instead.
+
+`LinkBoost-2025.json` has no citation either — its source hasn't been
+confirmed yet (see [docs/provenance.md](docs/provenance.md)).
 
 ## License
 
@@ -340,12 +395,7 @@ themselves.
 See [CONTRIBUTING.md](CONTRIBUTING.md) for the hard rules every change has
 to pass — no raw data, no printable identifiers, no per-entity lookup, no
 unearned evidence tiers, no legal conclusions asserted as fact, no
-inferred protected characteristics. Run `python3 -m unittest discover -s tests -v` before submitting anything (see [tests/README.md](tests/README.md)).
+inferred protected characteristics. Run `python3 -m unittest discover -s
+tests -v` before submitting anything (see [tests/README.md](tests/README.md)).
 [CHANGELOG.md](CHANGELOG.md) tracks what's been added and, just as
 importantly, what's been declined and why.
-
-```
-Copy
-```
-
-### 
