@@ -356,122 +356,12 @@ themselves.
 See [CONTRIBUTING.md](CONTRIBUTING.md) for the hard rules every change has
 to pass — no raw data, no printable identifiers, no per-entity lookup, no
 unearned evidence tiers, no legal conclusions asserted as fact, no
-inferred protected characteristics. Run `python3 -m unittest discover -s
-tests -v` before submitting anything (see [tests/README.md](tests/README.md)).
+inferred protected characteristics. Run `python3 -m unittest discover -s tests -v` before submitting anything (see [tests/README.md](tests/README.md)).
 [CHANGELOG.md](CHANGELOG.md) tracks what's been added and, just as
 importantly, what's been declined and why.
 
----
-
-## Appendix: PII disclaimer template (reference only — does not apply to this repository)
-
-This appendix does **not** describe this repository. Everything above this
-line still stands: `pod-engagement-profile` contains no raw data, no
-printable identifiers, and no per-entity lookup, by design (see
-[docs/privacy.md](docs/privacy.md) and [CONTRIBUTING.md](CONTRIBUTING.md)).
-
-What follows is a reference template for the different, legitimate case of
-a repository whose whole purpose *requires* hosting real personal data —
-e.g. an approved research dataset, an internal compliance mirror, or a
-legal-discovery working set. It's included here for reference, using the
-three source files' actual field names as a worked example of the level of
-specificity a real disclaimer needs.
-
-```markdown
-# ⚠️ This repository contains personal data (PII)
-
-**Read this section before cloning, forking, or requesting access.**
-
-This repository stores real, identifiable personal information about
-private individuals who have not consented to its presence in this
-repository. It is not a public open-source project in the usual sense —
-access, use, and redistribution are restricted as described below.
-
-## What personal data this repository contains
-
-| Field | Source file | PII category | Direct or quasi-identifier |
-|---|---|---|---|
-| `AuthorPublicIdentifier` | podawaa2024.json | LinkedIn handle | Direct |
-| `Content` | podawaa2024.json | Post text (may incidentally disclose sensitive info) | Indirect |
-| `profile.name` / `linkedin_data.fullName` | HyperClaper.json | Real name | Direct |
-| `linkedin_data.public_identifier` | HyperClaper.json | LinkedIn handle | Direct |
-| `linkedin_data.linkedin_profile_link` | HyperClaper.json | Profile URL | Direct |
-| `linkedin_data.linkedin_profile_id` | HyperClaper.json | Internal LinkedIn ID | Direct |
-| `profile_picture` / `linkedin_data.profilePicture` | HyperClaper.json | Photo of a person's face | Direct (biometric-adjacent) |
-| `linkedin_data.headline` / `jobTitle` / `company` / `school` / `location` | HyperClaper.json | Professional/geographic profile | Quasi |
-| `FirstName` / `LastName` / `piFirstName` / `piLastName` | LinkBoost-2025.json | Real name | Direct |
-| `DashEntityUrn` / `ObjectUrn` | LinkBoost-2025.json | LinkedIn internal URN | Direct |
-| `liProfileLink` | LinkBoost-2025.json | Embedded profile URN + name | Direct |
-| `Occupation` | LinkBoost-2025.json | Stated headline/bio | Quasi |
-| `country` | LinkBoost-2025.json | Self-reported location | Quasi |
-
-This table must be kept in sync with the actual schema — an outdated PII
-inventory is worse than none, because it creates false confidence.
-
-## Legal basis for possessing and hosting this data
-
-State it plainly and specifically — not "we have the right to use this
-data" but the actual basis: e.g. "Collected under [ethics review/approval #] with
-[consent/waiver type]," "Licensed from [source] under [agreement],"
-"Retained under [legal hold / litigation matter]." If there is no clean
-legal basis, that is itself something to resolve before publishing,
-not something a disclaimer can paper over.
-
-## Who this repository is for
-
-Explicit allow-list language, e.g.: "Access is restricted to
-[named team/role] under [NDA / data use agreement]. This repository must
-not be forked, mirrored, or cloned outside of [approved environment]."
-A public repo and a PII repo are close to a contradiction — if this
-needs to be public, that's a sign the data needs to be removed or
-aggregated first, not disclaimed.
-
-## Data subject rights
-
-How does a person who appears in this data exercise applicable rights
-(access, correction, deletion/erasure, objection)? Name a real contact
-and a real process, e.g.: "Requests to access, correct, or delete your
-data can be sent to [email/role]. Requests will be processed within
-[X days] per [applicable law, e.g. GDPR Art. 15-17 / CCPA]."
-
-## Retention and deletion
-
-State a concrete retention period and what happens at the end of it —
-"Data will be deleted by [date]" or "Data is retained for the duration
-of [project/matter] and deleted within [X days] of its conclusion" —
-not an open-ended "as needed."
-
-## Security requirements
-
-Concrete, not aspirational: encryption at rest/in transit, access
-logging, who can grant access, MFA requirements, prohibition on copying
-outside the approved storage location.
-
-## Prohibited uses
-
-Spell out what this data must never be used for regardless of who has
-access — e.g. "This data must not be used to identify, contact, profile,
-or make decisions about any individual outside the scope of [approved
-purpose]. Re-identification of aggregated derivatives is prohibited."
-
-## License
-
-PII repositories generally should NOT carry an open-source license (MIT,
-CC BY, etc.) for the data itself — an open license grants redistribution
-rights that are almost never compatible with the legal basis under which
-personal data was collected. State a restrictive, purpose-bound license
-or "all rights reserved, access governed by [agreement]" instead.
-
-## Contact for privacy concerns or suspected breach
-
-A real, monitored contact — not a generic repo maintainer handle —
-for both data-subject requests and security incidents.
-
-## No warranty
-
-Standard disclaimer, but also: no representation that the data is
-accurate, complete, or free of errors that could misidentify or
-mischaracterize a real person.
+```
+Copy
 ```
 
 ### 
