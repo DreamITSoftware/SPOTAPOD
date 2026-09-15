@@ -3,6 +3,28 @@
 ## Unreleased
 
 ### Added
+- `analysis/topic_taxonomy.py` and `docs/research/topic-taxonomy.md` —
+  mutually exclusive (priority-ordered) categorization of all 340,829
+  records across the three datasets into nine content categories plus a
+  catch-all, with per-dataset breakdown.
+- `analysis/category_title_patterns.py` and `docs/research/decision-points.md`
+  — finds recurring (never one-off) title templates within each topic
+  category and maps each to the real-world decision it's plausibly aimed
+  at, grounded in actual duplicated content rather than generic category
+  descriptions. Flags the `business_entrepreneurship` political-endorsement
+  finding as a keyword-matching artifact rather than a substantive
+  finding, and deliberately doesn't name the candidate involved.
+- `tools/deidentify.py` and `tools/csharp/deidentify/` — a local-use-only
+  de-identification tool producing a copy of one of the three source
+  files with direct identifiers hashed (SHA-256) and, optionally
+  (`--redact-content`), post/comment content stripped entirely. Output is
+  never generated, stored, or shipped by this repo — the tool's own
+  documentation is explicit that default-mode output is not
+  re-identification-resistant (post content remains a fingerprinting
+  vector) and that output must never be committed or shared.
+- `.gitignore` blocking `*.json` output outside `schema/` and
+  `tests/fixtures/`, specifically to prevent the above tool's local
+  output from ever being accidentally committed.
 - `analysis/career_advice_scan.py` and `docs/research/career-advice-comparison.md`
   — side-by-side methodology/findings/limitations comparison of
   career-advice content prevalence across all three datasets, including

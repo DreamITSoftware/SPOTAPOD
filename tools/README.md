@@ -56,3 +56,46 @@ up 632 type inconsistencies: `like_count`, `comment_count`, and
 integers on a few hundred records. That's a real quirk of the source export,
 not a validator bug — worth knowing about before doing arithmetic on those
 fields downstream.
+
+# De-identification tool
+
+`tools/deidentify.py` (Python) and `tools/csharp/deidentify/` (C#) produce
+a de-identified **copy** of one of the three source files, for your own
+local use.
+
+**Read this before trusting the output for anything sensitive.** Default
+mode hashes direct identifiers (handles, real names, internal LinkedIn
+URNs/IDs, profile links, photos) with SHA-256 and leaves post content
+untouched. That stops casual browsing/grep from exposing an identity, but
+it does **not** stop re-identification via the post content itself — a
+distinctive sentence can be pasted into a search engine and traced back to
+its author regardless of what happened to the identifier fields. This is
+the same failure mode that de-anonymized the AOL search-log and Netflix
+Prize datasets. Pass `--redact-content` to also strip post/comment content
+fields entirely, which closes that gap at the cost of removing most of
+what the data is useful for.
+
+Quasi-identifiers (headline, occupation, location, country, follower
+counts) are left untouched in both modes — see
+[../docs/privacy.md](../docs/privacy.md) and
+[../docs/research/demographics.md](../docs/research/demographics.md) for
+why this repo never aggregates those beyond population-level statistics.
+
+```bash
+python3 tools/deidentify.py podawaa /path/to/podawaa2024.json /path/to/output.json
+python3 tools/deidentify.py hyperclapper /path/to/HyperClaper.json /path/to/output.json --redact-content
+python3 tools/deidentify.py linkboost /path/to/LinkBoost-2025.json /path/to/output.json --salt "$(openssl rand -hex 16)"
+
+# or, C#:
+cd tools/csharp/deidentify
+dotnet run -- podawaa /path/to/podawaa2024.json /path/to/output.json
+```
+
+**This repo's own `.gitignore` blocks `*.json` output outside `schema/`
+and `tests/fixtures/` for exactly this reason — the output of this tool is
+never meant to be committed here or shared/published anywhere.** Run it
+locally, use the output for your own analysis, and delete it when you're
+done. See [CONTRIBUTING.md](../CONTRIBUTING.md) rule 1 ("no raw data") —
+a de-identified derivative of the raw data is still a derivative of the
+raw data, and default-mode output in particular is not safe to treat as
+anonymous.

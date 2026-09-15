@@ -249,6 +249,10 @@ python3 analysis/career_advice_scan.py podawaa /path/to/podawaa2024.json
 python3 analysis/career_advice_scan.py hyperclapper /path/to/HyperClaper.json
 python3 analysis/career_advice_scan.py linkboost /path/to/LinkBoost-2025.json
 
+# Mutually exclusive topic taxonomy + recurring-pattern decision points (no identities)
+python3 analysis/topic_taxonomy.py /path/to/podawaa2024.json /path/to/HyperClaper.json /path/to/LinkBoost-2025.json
+python3 analysis/category_title_patterns.py /path/to/podawaa2024.json /path/to/HyperClaper.json /path/to/LinkBoost-2025.json
+
 # Regenerate every chart in figures/
 python3 figures/generate_figures.py /path/to/podawaa2024.json /path/to/HyperClaper.json --linkboost-path /path/to/LinkBoost-2025.json --outdir figures
 ```
@@ -310,6 +314,8 @@ no per-record data). See [explorer/README.md](explorer/README.md) for why.
 - [Algorithm/creator-strategy advice case study](docs/research/algorithm-strategy-advice.md) — a genre-level (not report-specific) illustration of the same mechanism applied to platform-strategy content
 - [Book-promotion content](docs/research/book-promotion-content.md) — aggregate genre breakdown of book-promotion language across all three datasets
 - [Career-advice comparison](docs/research/career-advice-comparison.md) — side-by-side methodology/findings/limitations table across all three datasets
+- [Topic taxonomy](docs/research/topic-taxonomy.md) — nine mutually exclusive content categories covering all 340,829 records, with per-dataset breakdown
+- [Decision points](docs/research/decision-points.md) — maps each category to the real-world decision its recurring content templates are aimed at, grounded in actual duplicated title patterns
 - [Demographics](docs/research/demographics.md) — aggregate geography and stated-occupation-category breakdown, and why protected characteristics (race, gender, age, etc.) are never inferred
 - [Method](docs/method.md) — how each figure is computed
 - [Data dictionary](docs/data-dictionary.md) — same content as the [Data dictionary](#data-dictionary) section above, kept as a standalone page for cross-linking from other docs
@@ -364,6 +370,23 @@ its occupation skew and reciprocal-engagement rate; podawaa2024 is lowest
 volume on a small number of target posts rather than distinct content
 volume. Full methodology, side-by-side table, and caveats:
 [docs/research/career-advice-comparison.md](docs/research/career-advice-comparison.md).
+
+## Topic taxonomy and decision points
+
+`analysis/topic_taxonomy.py` assigns every record across all three
+datasets to exactly one of nine mutually exclusive content categories
+(plus a catch-all). Headline: `technology_ai` (20.11%) and
+`uncategorized_other` (42.97%) dominate overall; HyperClaper skews
+sharply toward `career_job_search` (13.92%) and LinkBoost-2025 toward
+`leadership_coaching_motivation` (18.91%). Full results:
+[docs/research/topic-taxonomy.md](docs/research/topic-taxonomy.md).
+
+`analysis/category_title_patterns.py` finds the recurring (never one-off)
+title templates within each category, and
+[docs/research/decision-points.md](docs/research/decision-points.md) maps
+each category to the real-world decision its dominant template is
+plausibly aimed at — e.g. `career_job_search`'s top template (533
+occurrences) pushes an "AI resume rewrite" narrative.
 
 ## Citations
 
