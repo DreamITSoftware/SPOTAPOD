@@ -501,3 +501,128 @@ activity VOLUME on career-advice-adjacent posts, not the
 number of distinct career-advice pieces of content.
 
 ```
+
+## Topic taxonomy (mutually exclusive, aggregate)
+
+See [topic-taxonomy.md](topic-taxonomy.md) for the full write-up and
+per-dataset breakdown.
+
+```
+======================================================================
+TOPIC TAXONOMY — mutually exclusive categorization (aggregate only)
+======================================================================
+Dataset sizes: podawaa2024=213,491, HyperClaper=49,369, LinkBoost-2025=77,969
+Grand total records: 340,829
+
+career_job_search                 14,588  ( 4.28% of all records)
+    podawaa2024            4,762  ( 2.23% of podawaa2024)
+    HyperClaper            6,871  (13.92% of HyperClaper)
+    LinkBoost-2025         2,955  ( 3.79% of LinkBoost-2025)
+book_writing_publishing            1,499  ( 0.44% of all records)
+    podawaa2024              409  ( 0.19% of podawaa2024)
+    HyperClaper              450  ( 0.91% of HyperClaper)
+    LinkBoost-2025           640  ( 0.82% of LinkBoost-2025)
+education_certification            3,404  ( 1.00% of all records)
+    podawaa2024            1,340  ( 0.63% of podawaa2024)
+    HyperClaper            1,536  ( 3.11% of HyperClaper)
+    LinkBoost-2025           528  ( 0.68% of LinkBoost-2025)
+technology_ai                     68,526  (20.11% of all records)
+    podawaa2024           34,997  (16.39% of podawaa2024)
+    HyperClaper           13,810  (27.97% of HyperClaper)
+    LinkBoost-2025        19,719  (25.29% of LinkBoost-2025)
+finance_investing                 29,638  ( 8.70% of all records)
+    podawaa2024           19,604  ( 9.18% of podawaa2024)
+    HyperClaper            2,903  ( 5.88% of HyperClaper)
+    LinkBoost-2025         7,131  ( 9.15% of LinkBoost-2025)
+health_wellness_fitness            6,481  ( 1.90% of all records)
+    podawaa2024            2,938  ( 1.38% of podawaa2024)
+    HyperClaper              862  ( 1.75% of HyperClaper)
+    LinkBoost-2025         2,681  ( 3.44% of LinkBoost-2025)
+leadership_coaching_motivation    30,907  ( 9.07% of all records)
+    podawaa2024           13,127  ( 6.15% of podawaa2024)
+    HyperClaper            3,039  ( 6.16% of HyperClaper)
+    LinkBoost-2025        14,741  (18.91% of LinkBoost-2025)
+marketing_sales_branding          20,491  ( 6.01% of all records)
+    podawaa2024           14,919  ( 6.99% of podawaa2024)
+    HyperClaper            1,546  ( 3.13% of HyperClaper)
+    LinkBoost-2025         4,026  ( 5.16% of LinkBoost-2025)
+business_entrepreneurship         18,853  ( 5.53% of all records)
+    podawaa2024           13,650  ( 6.39% of podawaa2024)
+    HyperClaper            1,600  ( 3.24% of HyperClaper)
+    LinkBoost-2025         3,603  ( 4.62% of LinkBoost-2025)
+uncategorized_other              146,442  (42.97% of all records)
+    podawaa2024          107,745  (50.47% of podawaa2024)
+    HyperClaper           16,752  (33.93% of HyperClaper)
+    LinkBoost-2025        21,945  (28.15% of LinkBoost-2025)
+
+Reminder: keyword-pattern SIGNALS, not verified topic labels. No
+record, author, or matched text is identified by this script.
+```
+
+## Category title patterns (recurring/templated phrases only)
+
+See [decision-points.md](decision-points.md) for the decision-point
+mapping built from these patterns.
+
+```
+======================================================================
+CATEGORY TITLE PATTERNS — recurring/templated phrases only
+======================================================================
+Only phrases repeated >= 3 times are shown — a phrase
+used once is far more traceable to a specific author than one reused
+hundreds of times. No author or individual record is identified.
+
+--- career_job_search (14,588 records) ---
+  x533: 'No replies. No interviews. Just silence for 90 days. Then, I ran my resume through ChatGPT. Got 5 ca'
+  x126: 'Copy Paste These ChatGPT Prompts to Instantly Upgrade Your Resume Struggling to make your resume sta'
+  x102: 'Copy and paste these ChatGPT prompts to write a standout Resume/CV.  Highlight your best skills. ...'
+  x96: 'Copy and paste these ChatGPT prompts to secure your dream job (FAST).  Get more responses, book m...'
+  x95: 'Work from anywhere. Advance your career.   12 websites to find your dream remote job:   Indeed ( ...'
+
+--- book_writing_publishing (1,499 records) ---
+  x59: 'SUBSTANCE, NOT SPEED  Change is urgent. But the more pressure we feel, the more we need PRUDENCE ...'
+  x58: 'Toward an Inclusive AI Order  AI is becoming the electricity of the 21st century.  It will (re)po...'
+  x55: 'AI: antidote to political short-termism?  Politics moves in election cycles. Technology moves in ...'
+  x51: '!  My new book,  .      , is now available on Amazon.  From the crumbling pillars of 20th-century...'
+  x46: '"TRANSCEND: Unlocking Humanity in the Age of AI"  ANLA TIMESBESTSELLER  AUSA TODAYBESTSELLER  APU...'
+
+--- education_certification (3,404 records) ---
+  x114: "Looking for Remote Work Opportunities in 2026?\n\nHere's a curated list of 20 top websites offering..."
+  x94: 'If you take these 10 Perplexity AI prompts seriously, youll be 10x more productive at work:   Sav...'
+  x93: 'Google is offering free AI training!   (Get free certificates and upgrade your skills).  From pro...'
+  x82: 'AI is changing the future of work.  Here are 10 courses that will help you learn AI:    Save this...'
+  x54: 'BREAKING: Google just launched free AI courses.  No sign-up fees or prior skills required.  Here ...'
+
+--- technology_ai (68,526 records) ---
+  x199: 'Heres a quick summary of everything that happened in AI last week   Save this post for later   --...'
+  x129: 'ChatGPT Can Get You Hired Faster Than Any Recruiter Copy these seven prompts to land your dream job:'
+  x127: 'When my father taught me chess, he said something Ill never forget: Its not the move you make now...'
+  x121: "Digital Parenting   As #technology continues to shape our world, it's crucial for #education to e..."
+  x116: 'Heres a quick short summary of everything that happened in AI last week   Save this post for late...'
+
+--- finance_investing (29,638 records) ---
+  x123: 'Hard Work Beats Talent!   Between two equally talented individuals, the one who works harder will...'
+  x99: 'The Science Behind Happiness at Work!   While your job can play a role in your overall #happiness...'
+  x97: 'Too many people overcomplicate being broke.  "The economy is terrible"   "Inflation is killing me...'
+  x94: 'The small hardworking street shop you pass every day !!  Throughout my retail journey, Ive witnes...'
+  x89: 'Are politicians in California actually TRYING to destroy this industry??  An industry we can prou...'
+
+--- health_wellness_fitness (6,481 records) ---
+  x85: 'Right now, alcohol companies across the country are wondering what to do about their declining sa...'
+  x60: 'For many communities, therapy and counselling once carried a stigma. Today, more people are embra...'
+  x60: 'Small changes today can become your biggest competitive advantage tomorrow.  In business, the big...'
+  x58: 'Todays my birthday.  But Ill be honest  thats not what matters most.  What matters is who I got t...'
+  x52: "I'm free from the NARCISSISTS spider web.. Just had a life changing psychedelic journey yesterday..."
+
+--- leadership_coaching_motivation (30,907 records) ---
+  x130: 'When Life Gets Overwhelming, Choose to Rise Above!  Why waste time stressing over small things? L...'
+  x130: 'Life is Like a Piano!   Life is much like a piano  the white keys represent the moments of joy, w...'
+  x129: 'Its not just a dog herding sheep its leadership in motion.  In the blink of an eye, the dog moves...'
+  x122: 'A Tribute to Responsible Mothers!  There will come a day when your mom wont call you anymore. One...'
+  x109: 'Life is Like a Piano!  Life is like a piano, the white keys are happy moments and black keys are ...'
+
+--- marketing_sales_branding (20,491 records) ---
+  x88: 'If we were running a law firms social media, it wouldnt be boring.  Heres how wed turn it into a ...'
+  x79: 'Youre trying to run a business and be a content creator and youve only posted once this month.   ...'
+  x78: "I turned 25 yesterday!  At 25, I'm advising CEOs who are twice my age on their personal branding ..."
+```
