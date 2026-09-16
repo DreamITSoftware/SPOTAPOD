@@ -305,6 +305,16 @@ python3 analysis/pharma_content_scan.py podawaa /path/to/podawaa2024.json
 python3 analysis/pharma_content_scan.py hyperclapper /path/to/HyperClaper.json
 python3 analysis/pharma_content_scan.py linkboost /path/to/LinkBoost-2025.json
 
+# Political party / Trump content
+python3 analysis/political_content_scan.py podawaa /path/to/podawaa2024.json
+python3 analysis/political_content_scan.py hyperclapper /path/to/HyperClaper.json
+python3 analysis/political_content_scan.py linkboost /path/to/LinkBoost-2025.json
+
+# Immunotherapy content, with documented acronym-collision and false-positive fixes
+python3 analysis/immunotherapy_content_scan.py podawaa /path/to/podawaa2024.json
+python3 analysis/immunotherapy_content_scan.py hyperclapper /path/to/HyperClaper.json
+python3 analysis/immunotherapy_content_scan.py linkboost /path/to/LinkBoost-2025.json
+
 # Regenerate every chart in figures/
 python3 figures/generate_figures.py /path/to/podawaa2024.json /path/to/HyperClaper.json --linkboost-path /path/to/LinkBoost-2025.json --outdir figures
 ```
@@ -379,6 +389,8 @@ no per-record data). See [explorer/README.md](explorer/README.md) for why.
 - [National security / NSA content](docs/research/national-security-content.md) — the smallest content category in the repo; under 0.1% of any dataset
 - [Homelessness-related content](docs/research/homelessness-content.md) — narrow vs. broad term counts, including a duplicate-template case that turned out to be genuine content, not noise
 - [Pharma / biotech content](docs/research/pharma-content.md) — pharma/biotech/FDA term counts; corrects a LinkBoost-2025 miscategorization where most "FDA" matches turned out to be import-compliance content, not pharmaceutical-industry content
+- [Political party / Trump content](docs/research/political-content.md) — Trump/Biden/party-name mention counts; links a LinkBoost-2025 correction back to the same repeated campaign post already documented in decision-points.md
+- [Immunotherapy content](docs/research/immunotherapy-content.md) — documents two false positives (a "cart"/CAR-T acronym collision and an unrelated boosted post) that made this the smallest genuine content category found so far
 - [Demographics](docs/research/demographics.md) — aggregate geography and stated-occupation-category breakdown, and why protected characteristics (race, gender, age, etc.) are never inferred
 - [Method](docs/method.md) — how each figure is computed
 - [Data dictionary](docs/data-dictionary.md) — same content as the [Data dictionary](#data-dictionary) section above, kept as a standalone page for cross-linking from other docs
@@ -579,6 +591,30 @@ LinkBoost-2025, and it mattered: 333 of its 482 matches turned out to
 be FDA import-compliance/customs content across roughly 8 posts, not
 pharmaceutical-industry content. Full results:
 [docs/research/pharma-content.md](docs/research/pharma-content.md).
+
+## Political party / Trump content
+
+`analysis/political_content_scan.py` counts political-party and
+Trump/Biden mentions. Trump is the largest term in every dataset.
+LinkBoost-2025's duplicate-template warning fired again here, linking
+back to the same repeated political campaign-endorsement post already
+documented in decision-points.md (97 occurrences there too) - the
+candidate is not identified in either doc, consistent with this repo's
+privacy rules. Full results:
+[docs/research/political-content.md](docs/research/political-content.md).
+
+## Immunotherapy content
+
+`analysis/immunotherapy_content_scan.py` counts immunotherapy-related
+term mentions - and documents two real false positives found while
+building it. An initial "CAR-T" pattern also matched the common word
+"cart" (shopping cart, e-commerce content), producing 100+ false
+positives per dataset before it was fixed. A second false positive
+survived the fix: LinkBoost-2025's 40 "immunotherapy" matches all trace
+to one unrelated business-transformation post. Corrected, genuine
+immunotherapy content is 16 mentions total, all in podawaa2024 - the
+smallest genuine content category found in this project so far. Full
+results: [docs/research/immunotherapy-content.md](docs/research/immunotherapy-content.md).
 
 ## Citations
 
