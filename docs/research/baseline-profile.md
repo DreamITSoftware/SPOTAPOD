@@ -1229,3 +1229,163 @@ Reciprocal like+comment pair             68.6%                  84.2%
 Zero impressions                         98.0%                  97.3%
 
 ```
+
+## Travel agencies and destinations
+
+See [travel-content.md](travel-content.md) for methodology and two important corrections (duplicate-template inflation and a French-language false positive).
+
+```
+=== podawaa2024 (213,491 records) ===
+Travel agencies/platforms:
+    Airbnb                       261 (0.1223%)
+    travel agency (generic)      29 (0.0136%)
+    Kayak                        27 (0.0126%)
+    Booking.com                  20 (0.0094%)
+    TripAdvisor                  20 (0.0094%)
+    Expedia                      16 (0.0075%)
+    VRBO                         13 (0.0061%)
+    Priceline                    4 (0.0019%)
+    ^ WARNING: "Priceline" -- top repeated string = 1/4 (25.0%) of matches -- likely template inflation, not distinct signal. Corrected estimate: 4
+    Hotels.com                   4 (0.0019%)
+    ^ WARNING: "Hotels.com" -- top repeated string = 1/4 (25.0%) of matches -- likely template inflation, not distinct signal. Corrected estimate: 4
+    MakeMyTrip                   4 (0.0019%)
+    ^ WARNING: "MakeMyTrip" -- top repeated string = 3/4 (75.0%) of matches -- likely template inflation, not distinct signal. Corrected estimate: 2
+    Trip.com                     1 (0.0005%)
+    ^ WARNING: "Trip.com" -- top repeated string = 1/1 (100.0%) of matches -- likely template inflation, not distinct signal. Corrected estimate: 1
+Destinations:
+    France                       8,010 (3.7519%)
+    Paris                        4,586 (2.1481%)
+    London                       844 (0.3953%)
+    Dubai                        754 (0.3532%)
+    Barcelona                    496 (0.2323%)
+    Singapore                    467 (0.2187%)
+    Italy                        413 (0.1935%)
+    Spain                        389 (0.1822%)
+    Miami                        370 (0.1733%)
+    Portugal                     280 (0.1312%)
+    Switzerland                  257 (0.1204%)
+    New York City                247 (0.1157%)
+    Amsterdam                    238 (0.1115%)
+    Japan                        231 (0.1082%)
+    Thailand                     157 (0.0735%)
+
+  NOTE: "France" and "Paris" counts in this dataset are inflated by
+  French-language content discussing French domestic topics (workplace
+  issues, tech news, politics), not travel recommendations. Confirmed by
+  reading a sample of matching posts -- this is not caught by the
+  duplicate-string check above, since the posts are genuinely distinct.
+  See docs/research/travel-content.md.
+
+=== HyperClaper (49,369 records) ===
+Travel agencies/platforms:
+    Airbnb                       149 (0.3018%)
+    Expedia                      17 (0.0344%)
+    ^ WARNING: "Expedia" -- top repeated string = 5/17 (29.4%) of matches -- likely template inflation, not distinct signal. Corrected estimate: 13
+    Booking.com                  10 (0.0203%)
+    ^ WARNING: "Booking.com" -- top repeated string = 5/10 (50.0%) of matches -- likely template inflation, not distinct signal. Corrected estimate: 6
+    MakeMyTrip                   6 (0.0122%)
+    TripAdvisor                  5 (0.0101%)
+    ^ WARNING: "TripAdvisor" -- top repeated string = 3/5 (60.0%) of matches -- likely template inflation, not distinct signal. Corrected estimate: 3
+    Kayak                        4 (0.0081%)
+    ^ WARNING: "Kayak" -- top repeated string = 1/4 (25.0%) of matches -- likely template inflation, not distinct signal. Corrected estimate: 4
+    Priceline                    2 (0.0041%)
+    ^ WARNING: "Priceline" -- top repeated string = 1/2 (50.0%) of matches -- likely template inflation, not distinct signal. Corrected estimate: 2
+    VRBO                         2 (0.0041%)
+    ^ WARNING: "VRBO" -- top repeated string = 1/2 (50.0%) of matches -- likely template inflation, not distinct signal. Corrected estimate: 2
+    travel agency (generic)      1 (0.0020%)
+    ^ WARNING: "travel agency (generic)" -- top repeated string = 1/1 (100.0%) of matches -- likely template inflation, not distinct signal. Corrected estimate: 1
+Destinations:
+    Dubai                        219 (0.4436%)
+    London                       161 (0.3261%)
+    Singapore                    99 (0.2005%)
+    Japan                        98 (0.1985%)
+    Miami                        76 (0.1539%)
+    Paris                        65 (0.1317%)
+    Italy                        65 (0.1317%)
+    Switzerland                  58 (0.1175%)
+    France                       45 (0.0912%)
+    New York City                43 (0.0871%)
+    Rome                         34 (0.0689%)
+    Thailand                     29 (0.0587%)
+    Portugal                     19 (0.0385%)
+    Tokyo                        18 (0.0365%)
+    Bali                         18 (0.0365%)
+
+=== LinkBoost-2025 (77,969 records) ===
+Travel agencies/platforms:
+    Airbnb                       189 (0.2424%)
+    ^ WARNING: "Airbnb" -- top repeated string = 48/189 (25.4%) of matches -- likely template inflation, not distinct signal. Corrected estimate: 142
+    Expedia                      48 (0.0616%)
+    ^ WARNING: "Expedia" -- top repeated string = 47/48 (97.9%) of matches -- likely template inflation, not distinct signal. Corrected estimate: 2
+    Booking.com                  48 (0.0616%)
+    ^ WARNING: "Booking.com" -- top repeated string = 47/48 (97.9%) of matches -- likely template inflation, not distinct signal. Corrected estimate: 2
+    TripAdvisor                  48 (0.0616%)
+    ^ WARNING: "TripAdvisor" -- top repeated string = 47/48 (97.9%) of matches -- likely template inflation, not distinct signal. Corrected estimate: 2
+    Hotels.com                   48 (0.0616%)
+    ^ WARNING: "Hotels.com" -- top repeated string = 47/48 (97.9%) of matches -- likely template inflation, not distinct signal. Corrected estimate: 2
+Destinations:
+    New York City                289 (0.3707%)
+    ^ WARNING: "New York City" -- top repeated string = 80/289 (27.7%) of matches -- likely template inflation, not distinct signal. Corrected estimate: 210
+    London                       251 (0.3219%)
+    Portugal                     166 (0.2129%)
+    ^ WARNING: "Portugal" -- top repeated string = 94/166 (56.6%) of matches -- likely template inflation, not distinct signal. Corrected estimate: 73
+    Japan                        165 (0.2116%)
+    ^ WARNING: "Japan" -- top repeated string = 71/165 (43.0%) of matches -- likely template inflation, not distinct signal. Corrected estimate: 95
+    Rome                         164 (0.2103%)
+    ^ WARNING: "Rome" -- top repeated string = 162/164 (98.8%) of matches -- likely template inflation, not distinct signal. Corrected estimate: 3
+    Los Angeles                  152 (0.1949%)
+    ^ WARNING: "Los Angeles" -- top repeated string = 89/152 (58.6%) of matches -- likely template inflation, not distinct signal. Corrected estimate: 64
+    Italy                        137 (0.1757%)
+    ^ WARNING: "Italy" -- top repeated string = 102/137 (74.5%) of matches -- likely template inflation, not distinct signal. Corrected estimate: 36
+    Dubai                        111 (0.1424%)
+    ^ WARNING: "Dubai" -- top repeated string = 24/111 (21.6%) of matches -- likely template inflation, not distinct signal. Corrected estimate: 88
+    Thailand                     104 (0.1334%)
+    ^ WARNING: "Thailand" -- top repeated string = 100/104 (96.2%) of matches -- likely template inflation, not distinct signal. Corrected estimate: 5
+    Bali                         59 (0.0757%)
+    ^ WARNING: "Bali" -- top repeated string = 50/59 (84.7%) of matches -- likely template inflation, not distinct signal. Corrected estimate: 10
+    Miami                        51 (0.0654%)
+    ^ WARNING: "Miami" -- top repeated string = 36/51 (70.6%) of matches -- likely template inflation, not distinct signal. Corrected estimate: 16
+    Singapore                    39 (0.0500%)
+    ^ WARNING: "Singapore" -- top repeated string = 14/39 (35.9%) of matches -- likely template inflation, not distinct signal. Corrected estimate: 26
+    France                       39 (0.0500%)
+    ^ WARNING: "France" -- top repeated string = 15/39 (38.5%) of matches -- likely template inflation, not distinct signal. Corrected estimate: 25
+    Paris                        21 (0.0269%)
+    ^ WARNING: "Paris" -- top repeated string = 14/21 (66.7%) of matches -- likely template inflation, not distinct signal. Corrected estimate: 8
+    Spain                        18 (0.0231%)
+    ^ WARNING: "Spain" -- top repeated string = 15/18 (83.3%) of matches -- likely template inflation, not distinct signal. Corrected estimate: 4
+
+```
+
+## National security / NSA content
+
+See [national-security-content.md](national-security-content.md) for methodology and the LinkBoost-2025 correction.
+
+```
+=== podawaa2024 (213,491 records) ===
+Records mentioning any national-security term: 118 (0.0553%)
+Distinct underlying text values: 101
+    CIA                                40
+    FBI                                36
+    NSA                                24
+    national security                  23
+    intelligence agency / agencies     6
+    homeland security                  4
+    national defense                   3
+
+=== HyperClaper (49,369 records) ===
+Records mentioning any national-security term: 40 (0.0810%)
+Distinct underlying text values: 39
+    national security                  31
+    FBI                                4
+    CIA                                2
+    national defense                   2
+    NSA                                1
+
+=== LinkBoost-2025 (77,969 records) ===
+Records mentioning any national-security term: 35 (0.0449%)
+Distinct underlying text values: 3
+  ^ WARNING: top repeated string = 15 records (42.9%) -- likely template inflation. Corrected estimate: 21
+    national security                  20
+    FBI                                15
+
+```
