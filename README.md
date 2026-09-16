@@ -271,6 +271,11 @@ python3 analysis/law_content_scan.py linkboost /path/to/LinkBoost-2025.json
 python3 analysis/speaker_thought_leader_scan.py hyperclapper /path/to/HyperClaper.json
 python3 analysis/speaker_thought_leader_scan.py linkboost /path/to/LinkBoost-2025.json
 
+# Nonprofit-related content, with automatic duplicate-template detection
+python3 analysis/nonprofit_content_scan.py podawaa /path/to/podawaa2024.json
+python3 analysis/nonprofit_content_scan.py hyperclapper /path/to/HyperClaper.json
+python3 analysis/nonprofit_content_scan.py linkboost /path/to/LinkBoost-2025.json
+
 # Regenerate every chart in figures/
 python3 figures/generate_figures.py /path/to/podawaa2024.json /path/to/HyperClaper.json --linkboost-path /path/to/LinkBoost-2025.json --outdir figures
 ```
@@ -338,6 +343,7 @@ no per-record data). See [explorer/README.md](explorer/README.md) for why.
 - [Entity mentions](docs/research/entity-mentions.md) — news outlet, magazine, TV/streaming platform, and corporation mention counts across all three datasets
 - [Law-related content](docs/research/law-content.md) — narrow (legal-profession) vs. broader (compliance, legislation, IP) content counts
 - [Speaker / thought leader](docs/research/speaker-thought-leader.md) — self-described speaker/thought-leader prevalence, with a real overlap finding between the two terms
+- [Nonprofit-related content](docs/research/nonprofit-content.md) — charity/NGO/philanthropy mention counts, with a built-in check that catches raw counts inflated by a single repeated template
 - [Demographics](docs/research/demographics.md) — aggregate geography and stated-occupation-category breakdown, and why protected characteristics (race, gender, age, etc.) are never inferred
 - [Method](docs/method.md) — how each figure is computed
 - [Data dictionary](docs/data-dictionary.md) — same content as the [Data dictionary](#data-dictionary) section above, kept as a standalone page for cross-linking from other docs
@@ -454,6 +460,19 @@ HyperClaper, 97.3% in LinkBoost-2025), consistent with one recurring
 bio template rather than two independent self-descriptions. LinkBoost-2025
 skews far higher on both (18.29% "speaker" vs. 3.83% in HyperClaper).
 Full results: [docs/research/speaker-thought-leader.md](docs/research/speaker-thought-leader.md).
+
+## Nonprofit-related content
+
+`analysis/nonprofit_content_scan.py` scans for charity, nonprofit, NGO,
+philanthropy, and 501(c)(3) mentions, and \u2014 unlike earlier scans \u2014
+builds in an automatic check for dominant repeated strings inflating a
+raw count. It caught a real one: HyperClaper's headline field first
+looked like it had the highest nonprofit-mention rate of any field
+(1.38%), but 658 of those 681 matching records turned out to share one
+repeated headline. Corrected, the real rate is 0.05% \u2014 the lowest, not
+the highest. The same check caught two more distortions in
+LinkBoost-2025. Full results:
+[docs/research/nonprofit-content.md](docs/research/nonprofit-content.md).
 
 ## Citations
 
