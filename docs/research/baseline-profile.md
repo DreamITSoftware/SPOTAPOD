@@ -982,3 +982,114 @@ Records mentioning any tracked entity: 12,179 (15.62%)
   Walmart                    24 (0.031%)
 
 ```
+
+## Law-related content (narrow vs. broader)
+
+See [law-content.md](law-content.md) for methodology and caveats.
+
+```
+=== podawaa2024 (213,491 records, 79.9s) ===
+NARROW (legal profession specific): 459 (0.215%)
+    lawyer                       303 (0.142%)
+    attorney                     112 (0.052%)
+    litigation                   46 (0.022%)
+    law firm                     38 (0.018%)
+    general counsel              9 (0.004%)
+    legal counsel                6 (0.003%)
+    bar exam                     2 (0.001%)
+    paralegal                    2 (0.001%)
+BROADER (incl. legislation/compliance/IP/etc.): 3,064 (1.435%)
+    compliance                   1,556 (0.729%)
+    legal (adjective, general)   1,260 (0.590%)
+    lawyer                       303 (0.142%)
+    legislation                  124 (0.058%)
+    attorney                     112 (0.052%)
+    intellectual property        109 (0.051%)
+    litigation                   46 (0.022%)
+    lawsuit                      44 (0.021%)
+    law firm                     38 (0.018%)
+    employment law               10 (0.005%)
+    general counsel              9 (0.004%)
+    court case                   8 (0.004%)
+    legal counsel                6 (0.003%)
+    bar exam                     2 (0.001%)
+    paralegal                    2 (0.001%)
+
+=== HyperClaper (49,369 records, 23.5s) ===
+NARROW (legal profession specific): 168 (0.340%)
+    lawyer                       95 (0.192%)
+    attorney                     39 (0.079%)
+    litigation                   23 (0.047%)
+    law firm                     8 (0.016%)
+    legal counsel                4 (0.008%)
+    paralegal                    4 (0.008%)
+    general counsel              1 (0.002%)
+    bar exam                     1 (0.002%)
+BROADER (incl. legislation/compliance/IP/etc.): 1,235 (2.502%)
+    compliance                   712 (1.442%)
+    legal (adjective, general)   475 (0.962%)
+    lawyer                       95 (0.192%)
+    attorney                     39 (0.079%)
+    lawsuit                      29 (0.059%)
+    intellectual property        24 (0.049%)
+    litigation                   23 (0.047%)
+    court case                   12 (0.024%)
+    legislation                  12 (0.024%)
+    law firm                     8 (0.016%)
+    legal counsel                4 (0.008%)
+    paralegal                    4 (0.008%)
+    general counsel              1 (0.002%)
+    bar exam                     1 (0.002%)
+
+=== LinkBoost-2025 (77,969 records, 29.9s) ===
+NARROW (legal profession specific): 447 (0.573%)
+    lawyer                       206 (0.264%)
+    paralegal                    89 (0.114%)
+    law firm                     80 (0.103%)
+    attorney                     69 (0.088%)
+    litigation                   63 (0.081%)
+BROADER (incl. legislation/compliance/IP/etc.): 3,473 (4.454%)
+    compliance                   1,794 (2.301%)
+    legal (adjective, general)   1,154 (1.480%)
+    lawsuit                      214 (0.274%)
+    lawyer                       206 (0.264%)
+    intellectual property        123 (0.158%)
+    paralegal                    89 (0.114%)
+    law firm                     80 (0.103%)
+    attorney                     69 (0.088%)
+    litigation                   63 (0.081%)
+    court case                   53 (0.068%)
+
+```
+
+## Speaker / thought leader (no names, no full bios)
+
+See [speaker-thought-leader.md](speaker-thought-leader.md) for methodology and the overlap finding.
+
+```
+============================================================
+HYPERCLAPPER — SPEAKER / THOUGHT LEADER (no names, no full bios)
+============================================================
+Total records: 49,369
+Records with occupation/headline text: 37,500
+
+"Speaker":        1,889 (3.83% of all records, 5.04% of those with text)
+"Thought leader": 500 (1.01% of all records, 1.33% of those with text)
+Both terms in the same record: 500 (100.0% of "thought leader" records also say "speaker")
+
+Reminder: this reports keyword counts only. No name, handle, or
+verbatim occupation/headline text is printed by this script.
+
+============================================================
+LINKBOOST — SPEAKER / THOUGHT LEADER (no names, no full bios)
+============================================================
+Total records: 77,969
+Records with occupation/headline text: 74,898
+
+"Speaker":        14,261 (18.29% of all records, 19.04% of those with text)
+"Thought leader": 4,292 (5.50% of all records, 5.73% of those with text)
+Both terms in the same record: 4,175 (97.3% of "thought leader" records also say "speaker")
+
+Reminder: this reports keyword counts only. No name, handle, or
+verbatim occupation/headline text is printed by this script.
+```

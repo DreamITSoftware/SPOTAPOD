@@ -3,6 +3,19 @@
 ## Unreleased
 
 ### Added
+- `analysis/speaker_thought_leader_scan.py` and
+  `docs/research/speaker-thought-leader.md` \u2014 self-described
+  speaker/thought-leader prevalence (HyperClaper and LinkBoost-2025
+  only; podawaa2024 has no occupation field). Flags that "thought
+  leader" mentions are almost entirely a subset of "speaker" mentions
+  (100% overlap in HyperClaper, 97.3% in LinkBoost-2025) rather than
+  two independent signals, consistent with one recurring bio template.
+- `analysis/law_content_scan.py` and `docs/research/law-content.md` \u2014
+  narrow (legal-profession-specific: lawyer, attorney, law firm,
+  litigation) vs. broader (adds legislation, compliance, intellectual
+  property, and bare "legal") content tallies. "Compliance" alone
+  accounts for roughly half of every dataset's broader-count hits, which
+  is why it's tracked as its own line rather than blended in.
 - `analysis/entity_mention_scan.py` and `docs/research/entity-mentions.md`
   — mention counts for named news outlets, magazines, TV/streaming
   platforms, and corporations across all three datasets. Documents a
