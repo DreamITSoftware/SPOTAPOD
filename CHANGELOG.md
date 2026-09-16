@@ -3,6 +3,23 @@
 ## Unreleased
 
 ### Added
+- `analysis/pharma_content_scan.py` and `docs/research/pharma-content.md`
+  - pharma/biotech/FDA term counts. Extends the duplicate-template
+  safeguard with a new check for a low distinct-string count without a
+  single dominant string, which caught a real miscategorization: 333 of
+  LinkBoost-2025's 482 "pharma" matches are FDA import-compliance/
+  customs content across roughly 8 boosted posts, not
+  pharmaceutical-industry content.
+- `analysis/homelessness_content_scan.py` and
+  `docs/research/homelessness-content.md` - narrow vs. broad
+  homelessness-related term counts. Notable because the
+  duplicate-template safeguard fired on LinkBoost-2025 but, unlike
+  every prior instance in this repo, the repeated string turned out to
+  be genuine on-topic content (a real "overcame homelessness" success
+  story boosted 79 times), not noise - documented as a reminder that
+  the safeguard flags a pattern to check, not an automatic verdict.
+  LinkBoost-2025 also contains genuine homelessness-sector advocacy
+  content beyond that template.
 - `analysis/national_security_scan.py` and
   `docs/research/national-security-content.md` - national security/NSA/
   CIA/FBI term mention counts. The smallest content category checked in
