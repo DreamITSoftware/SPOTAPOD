@@ -285,6 +285,16 @@ python3 analysis/investment_vc_scan.py linkboost /path/to/LinkBoost-2025.json
 python3 analysis/cybersecurity_anomaly_scan.py podawaa /path/to/podawaa2024.json
 python3 analysis/cybersecurity_anomaly_scan.py hyperclapper /path/to/HyperClaper.json
 
+# Travel agencies and destinations, with duplicate-template and language-artifact notes
+python3 analysis/travel_content_scan.py podawaa /path/to/podawaa2024.json
+python3 analysis/travel_content_scan.py hyperclapper /path/to/HyperClaper.json
+python3 analysis/travel_content_scan.py linkboost /path/to/LinkBoost-2025.json
+
+# National security / NSA content, with duplicate-template detection
+python3 analysis/national_security_scan.py podawaa /path/to/podawaa2024.json
+python3 analysis/national_security_scan.py hyperclapper /path/to/HyperClaper.json
+python3 analysis/national_security_scan.py linkboost /path/to/LinkBoost-2025.json
+
 # Regenerate every chart in figures/
 python3 figures/generate_figures.py /path/to/podawaa2024.json /path/to/HyperClaper.json --linkboost-path /path/to/LinkBoost-2025.json --outdir figures
 ```
@@ -355,6 +365,8 @@ no per-record data). See [explorer/README.md](explorer/README.md) for why.
 - [Nonprofit-related content](docs/research/nonprofit-content.md) — charity/NGO/philanthropy mention counts, with a built-in check that catches raw counts inflated by a single repeated template
 - [Investment / venture capital content](docs/research/investment-vc-content.md) — investment/VC term mention counts, with a review of what legal frameworks would (and wouldn't) apply if specific elements were separately established
 - [Cybersecurity content vs. engagement anomalies](docs/research/cybersecurity-anomaly.md) — cross-tabulates cybersecurity content against the repo's own anomaly indicators; podawaa2024 and HyperClaper only
+- [Travel agencies and destinations](docs/research/travel-content.md) — travel platform and destination mentions, with two documented corrections (a duplicate-template artifact and a French-language false positive)
+- [National security / NSA content](docs/research/national-security-content.md) — the smallest content category in the repo; under 0.1% of any dataset
 - [Demographics](docs/research/demographics.md) — aggregate geography and stated-occupation-category breakdown, and why protected characteristics (race, gender, age, etc.) are never inferred
 - [Method](docs/method.md) — how each figure is computed
 - [Data dictionary](docs/data-dictionary.md) — same content as the [Data dictionary](#data-dictionary) section above, kept as a standalone page for cross-linking from other docs
@@ -509,6 +521,30 @@ notably HyperClaper's reciprocal like+comment rate (84.2% vs. 68.6%
 baseline). An elevated category-level rate is a population pattern,
 not identification of any specific account or post. Full results:
 [docs/research/cybersecurity-anomaly.md](docs/research/cybersecurity-anomaly.md).
+
+## Travel agencies and destinations
+
+`analysis/travel_content_scan.py` counts travel agency/platform and
+destination mentions, with a built-in duplicate-template safeguard
+that caught real inflation in LinkBoost-2025 (a single AI-travel-tool
+ad, boosted 47 times, accounted for 48 mentions each of four different
+booking platforms) and a separate, non-duplicate artifact in
+podawaa2024, where "France" and "Paris" mentions turned out to be
+French-language content about French domestic topics, not travel
+recommendations. Excluding that artifact, Dubai and London are the
+most consistently mentioned destinations across all three datasets.
+Full results: [docs/research/travel-content.md](docs/research/travel-content.md).
+
+## National security / NSA content
+
+`analysis/national_security_scan.py` counts mentions of
+national-security-related terms. This is the smallest content category
+checked in this repo so far - under 0.1% of any dataset - and NSA
+specifically is almost nonexistent (24 mentions in podawaa2024, 1 in
+HyperClaper, 0 in LinkBoost-2025). The duplicate-template safeguard
+caught a real correction here too: LinkBoost-2025's "FBI" count of 15
+is one boosted post, not 15 distinct posts. Full results:
+[docs/research/national-security-content.md](docs/research/national-security-content.md).
 
 ## Citations
 

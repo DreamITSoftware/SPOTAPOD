@@ -3,6 +3,22 @@
 ## Unreleased
 
 ### Added
+- `analysis/national_security_scan.py` and
+  `docs/research/national-security-content.md` - national security/NSA/
+  CIA/FBI term mention counts. The smallest content category checked in
+  this repo so far (under 0.1% of any dataset); NSA specifically is
+  almost nonexistent (24/1/0 mentions across the three datasets). The
+  duplicate-template safeguard caught a real correction: LinkBoost-2025's
+  "FBI" count of 15 is one boosted post, not 15 distinct ones.
+- `analysis/travel_content_scan.py` and `docs/research/travel-content.md`
+  - travel agency/platform and destination mention counts. Two real
+  corrections documented: LinkBoost-2025's per-platform counts are
+  dominated by a single AI-travel-tool ad boosted 47 times (the
+  duplicate-template safeguard from nonprofit_content_scan.py catches
+  this automatically), and podawaa2024's France/Paris counts are a
+  separate, non-duplicate artifact - genuinely distinct French-language
+  posts about French domestic topics, not travel content, found only by
+  reading a sample of the matching text.
 - `analysis/cybersecurity_anomaly_scan.py` and
   `docs/research/cybersecurity-anomaly.md` - cross-tabulates
   cybersecurity-related content against the repo's existing
