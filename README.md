@@ -262,6 +262,15 @@ python3 analysis/entity_mention_scan.py podawaa /path/to/podawaa2024.json --cate
 python3 analysis/entity_mention_scan.py hyperclapper /path/to/HyperClaper.json --category all
 python3 analysis/entity_mention_scan.py linkboost /path/to/LinkBoost-2025.json --category all
 
+# Law-related content: narrow (legal profession) vs. broader (compliance, legislation, IP)
+python3 analysis/law_content_scan.py podawaa /path/to/podawaa2024.json
+python3 analysis/law_content_scan.py hyperclapper /path/to/HyperClaper.json
+python3 analysis/law_content_scan.py linkboost /path/to/LinkBoost-2025.json
+
+# Speaker / thought leader aggregate (no names, no full bios)
+python3 analysis/speaker_thought_leader_scan.py hyperclapper /path/to/HyperClaper.json
+python3 analysis/speaker_thought_leader_scan.py linkboost /path/to/LinkBoost-2025.json
+
 # Regenerate every chart in figures/
 python3 figures/generate_figures.py /path/to/podawaa2024.json /path/to/HyperClaper.json --linkboost-path /path/to/LinkBoost-2025.json --outdir figures
 ```
@@ -327,6 +336,8 @@ no per-record data). See [explorer/README.md](explorer/README.md) for why.
 - [Decision points](docs/research/decision-points.md) — maps each category to the real-world decision its recurring content templates are aimed at, grounded in actual duplicated title patterns
 - [Simple title aggregate](docs/research/simple-titles.md) — generic professional-title keyword counts (CEO, Founder, Coach, etc.), no names or full bios
 - [Entity mentions](docs/research/entity-mentions.md) — news outlet, magazine, TV/streaming platform, and corporation mention counts across all three datasets
+- [Law-related content](docs/research/law-content.md) — narrow (legal-profession) vs. broader (compliance, legislation, IP) content counts
+- [Speaker / thought leader](docs/research/speaker-thought-leader.md) — self-described speaker/thought-leader prevalence, with a real overlap finding between the two terms
 - [Demographics](docs/research/demographics.md) — aggregate geography and stated-occupation-category breakdown, and why protected characteristics (race, gender, age, etc.) are never inferred
 - [Method](docs/method.md) — how each figure is computed
 - [Data dictionary](docs/data-dictionary.md) — same content as the [Data dictionary](#data-dictionary) section above, kept as a standalone page for cross-linking from other docs
@@ -421,6 +432,28 @@ plausibly tied to that dataset's elevated free-certification content
 share). YouTube/TikTok/Netflix are the top three streaming/TV platforms,
 in that order, in every dataset. Full results across all four categories:
 [docs/research/entity-mentions.md](docs/research/entity-mentions.md).
+
+## Law-related content
+
+`analysis/law_content_scan.py` reports two tallies: a narrow one (lawyer,
+attorney, law firm, litigation, paralegal, etc.) and a broader one that
+adds legislation, compliance, intellectual property, and the bare word
+"legal." Genuine legal-profession content is small everywhere (under
+0.6% of any dataset, narrow measure); "compliance" alone drives roughly
+half of the broader count in every dataset, which is why it's tracked
+as its own line rather than folded in silently. Full results:
+[docs/research/law-content.md](docs/research/law-content.md).
+
+## Speaker / thought leader
+
+`analysis/speaker_thought_leader_scan.py` covers HyperClaper and
+LinkBoost-2025 only (podawaa2024 has no occupation field). The real
+finding isn't the raw counts \u2014 it's that "thought leader" mentions are
+almost entirely a subset of "speaker" mentions (100% overlap in
+HyperClaper, 97.3% in LinkBoost-2025), consistent with one recurring
+bio template rather than two independent self-descriptions. LinkBoost-2025
+skews far higher on both (18.29% "speaker" vs. 3.83% in HyperClaper).
+Full results: [docs/research/speaker-thought-leader.md](docs/research/speaker-thought-leader.md).
 
 ## Citations
 
