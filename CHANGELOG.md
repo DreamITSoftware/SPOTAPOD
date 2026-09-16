@@ -3,6 +3,23 @@
 ## Unreleased
 
 ### Added
+- `analysis/immunotherapy_content_scan.py` and
+  `docs/research/immunotherapy-content.md` - immunotherapy-related term
+  counts, documenting two real false positives found while building it:
+  an initial "CAR-T" pattern that also matched the common word "cart"
+  (100+ false positives per dataset before the fix), and a second false
+  positive that survived the fix - LinkBoost-2025's 40 "immunotherapy"
+  matches all trace to one unrelated business-transformation post.
+  Corrected, genuine immunotherapy content is 16 mentions total, all in
+  podawaa2024 - the smallest genuine content category found in this
+  project so far.
+- `analysis/political_content_scan.py` and
+  `docs/research/political-content.md` - Trump/Biden/political-party
+  term counts. Trump is the largest term in every dataset. Links a
+  LinkBoost-2025 duplicate-template correction back to the same
+  repeated political campaign-endorsement post already documented in
+  decision-points.md; the candidate is not identified in either doc,
+  consistent with this repo's privacy rules.
 - `analysis/pharma_content_scan.py` and `docs/research/pharma-content.md`
   - pharma/biotech/FDA term counts. Extends the duplicate-template
   safeguard with a new check for a low distinct-string count without a

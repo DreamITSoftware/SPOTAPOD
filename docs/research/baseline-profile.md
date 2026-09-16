@@ -1452,3 +1452,64 @@ Distinct underlying text values: 28
     pharmaceutical industry          2
 
 ```
+
+## Political party / Trump content
+
+See [political-content.md](political-content.md) for methodology and the LinkBoost-2025 correction linking back to decision-points.md.
+
+```
+=== podawaa2024 (213,491 records) ===
+Any political-term mention: 197 (0.0923%)
+Distinct underlying text values: 182
+    Trump (Donald/President)           102
+    Biden (Joe/President)              81
+    Republican(s) / GOP                15
+    political party (generic)          13
+    Democrat(s) / Democratic Party     11
+    libertarian                        3
+
+=== HyperClaper (49,369 records) ===
+Any political-term mention: 147 (0.2978%)
+Distinct underlying text values: 144
+    Trump (Donald/President)           136
+    Republican(s) / GOP                7
+    Democrat(s) / Democratic Party     6
+    political party (generic)          5
+    Biden (Joe/President)              2
+    libertarian                        1
+
+=== LinkBoost-2025 (77,969 records) ===
+Any political-term mention: 309 (0.3963%)
+Distinct underlying text values: 23
+  ^ WARNING: top repeated string = 97 records (31.4%) -- likely template inflation. Corrected estimate: 213. Candidate/individual named in the repeated post is not identified by this script, consistent with this repo's privacy rules -- see docs/research/political-content.md.
+    Trump (Donald/President)           173
+    Democrat(s) / Democratic Party     108
+    political party (generic)          28
+    Biden (Joe/President)              15
+
+```
+
+## Immunotherapy content
+
+See [immunotherapy-content.md](immunotherapy-content.md) for methodology, including two documented false positives (a CAR-T/"cart" acronym collision and an unrelated boosted post).
+
+```
+=== podawaa2024 (213,491 records) ===
+Records mentioning any immunotherapy-related term: 16 (0.00749%)
+Distinct underlying text values: 14
+    immunotherapy                      11
+    monoclonal antibody/antibodies     5
+    cancer immunotherapy               2
+    CAR-T (cell therapy, strict)       1
+
+=== HyperClaper (49,369 records) ===
+Records mentioning any immunotherapy-related term: 0 (0.00000%)
+Distinct underlying text values: 0
+
+=== LinkBoost-2025 (77,969 records) ===
+Records mentioning any immunotherapy-related term: 40 (0.05130%)
+Distinct underlying text values: 1
+  ^ WARNING: top repeated string = 40 records (100.0%) -- likely template inflation or an off-topic post using the term in passing. Check the underlying content before trusting this number; see docs/research/immunotherapy-content.md for an example where this exact pattern turned out to be a single unrelated business post, not medical content.
+    immunotherapy                      40
+
+```
