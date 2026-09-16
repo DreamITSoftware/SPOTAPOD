@@ -40,7 +40,7 @@ LinkBoost-2025 skews dramatically higher on both terms than HyperClaper
 26 in HyperClaper. This is consistent with LinkBoost-2025's broader lean
 toward leadership/coaching content already documented in
 [topic-taxonomy.md](topic-taxonomy.md) (`leadership_coaching_motivation`
-at 18.91%, roughly 3\u00d7 the other two datasets) and
+at 18.91%, roughly 3× the other two datasets) and
 [simple-titles.md](simple-titles.md) (Founder/Coach account for 34.7%
 combined in LinkBoost-2025).
 
