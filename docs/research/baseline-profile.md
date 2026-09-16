@@ -1207,3 +1207,25 @@ Distinct underlying text values: 260
     angel investor                         10 (0.013%)
 
 ```
+
+## Cybersecurity content vs. engagement anomalies
+
+See [cybersecurity-anomaly.md](cybersecurity-anomaly.md) for methodology, scope limits, and what this cross-tab does not show.
+
+```
+podawaa2024 (213,491 total records)
+Cybersecurity-related posts: 2,779 (1.302%)
+
+Anomaly indicator                     All posts (baseline)   Cybersecurity posts only
+Zero views with likes present            35.3%                  39.9%
+Likes exceed views                      36.51%                41.02%
+Like/view ratio exceeds 15%             11.78%                14.18%
+
+HyperClaper (49,369 total records)
+Cybersecurity-related posts: 4,487 (9.089%)
+
+Anomaly indicator                     All posts (baseline)   Cybersecurity posts only
+Reciprocal like+comment pair             68.6%                  84.2%
+Zero impressions                         98.0%                  97.3%
+
+```

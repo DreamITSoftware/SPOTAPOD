@@ -281,6 +281,10 @@ python3 analysis/investment_vc_scan.py podawaa /path/to/podawaa2024.json
 python3 analysis/investment_vc_scan.py hyperclapper /path/to/HyperClaper.json
 python3 analysis/investment_vc_scan.py linkboost /path/to/LinkBoost-2025.json
 
+# Cybersecurity content vs. engagement anomalies (podawaa2024, HyperClaper only)
+python3 analysis/cybersecurity_anomaly_scan.py podawaa /path/to/podawaa2024.json
+python3 analysis/cybersecurity_anomaly_scan.py hyperclapper /path/to/HyperClaper.json
+
 # Regenerate every chart in figures/
 python3 figures/generate_figures.py /path/to/podawaa2024.json /path/to/HyperClaper.json --linkboost-path /path/to/LinkBoost-2025.json --outdir figures
 ```
@@ -350,6 +354,7 @@ no per-record data). See [explorer/README.md](explorer/README.md) for why.
 - [Speaker / thought leader](docs/research/speaker-thought-leader.md) — self-described speaker/thought-leader prevalence, with a real overlap finding between the two terms
 - [Nonprofit-related content](docs/research/nonprofit-content.md) — charity/NGO/philanthropy mention counts, with a built-in check that catches raw counts inflated by a single repeated template
 - [Investment / venture capital content](docs/research/investment-vc-content.md) — investment/VC term mention counts, with a review of what legal frameworks would (and wouldn't) apply if specific elements were separately established
+- [Cybersecurity content vs. engagement anomalies](docs/research/cybersecurity-anomaly.md) — cross-tabulates cybersecurity content against the repo's own anomaly indicators; podawaa2024 and HyperClaper only
 - [Demographics](docs/research/demographics.md) — aggregate geography and stated-occupation-category breakdown, and why protected characteristics (race, gender, age, etc.) are never inferred
 - [Method](docs/method.md) — how each figure is computed
 - [Data dictionary](docs/data-dictionary.md) — same content as the [Data dictionary](#data-dictionary) section above, kept as a standalone page for cross-linking from other docs
@@ -491,6 +496,19 @@ mention is not evidence of any legal violation on its own -- see
 [docs/research/investment-vc-content.md](docs/research/investment-vc-content.md)
 for why, and for the securities-law and FTC frameworks that would
 actually be relevant if specific elements were separately established.
+
+## Cybersecurity content vs. engagement anomalies
+
+`analysis/cybersecurity_anomaly_scan.py` cross-tabulates
+cybersecurity-related content against the same engagement-anomaly
+indicators used in the baseline profile (zero views with likes,
+likes exceeding views, extreme like/view ratio, reciprocal
+like+comment pairing). Cybersecurity content shows a higher anomaly
+rate than the dataset baseline on 3 of 4 measures checked, most
+notably HyperClaper's reciprocal like+comment rate (84.2% vs. 68.6%
+baseline). An elevated category-level rate is a population pattern,
+not identification of any specific account or post. Full results:
+[docs/research/cybersecurity-anomaly.md](docs/research/cybersecurity-anomaly.md).
 
 ## Citations
 
