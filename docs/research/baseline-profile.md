@@ -1154,3 +1154,56 @@ Distinct underlying text values among those:   3
     charity / charitable             29 (0.037%)
 
 ```
+
+## Investment / venture capital content
+
+See [investment-vc-content.md](investment-vc-content.md) for methodology, legal-framework caveats, and full results.
+
+```
+=== podawaa2024 (213,491 records) ===
+Records mentioning investment/VC terms: 7,314 (3.426%)
+Distinct underlying text values: 6,747
+    investment / investing                 4,754 (2.227%)
+    investor(s)                            2,676 (1.253%)
+    VC (venture capital abbrev.)           1,009 (0.473%)
+    venture capital                        440 (0.206%)
+    private equity                         246 (0.115%)
+    seed funding / seed round              148 (0.069%)
+    IPO                                    142 (0.067%)
+    angel investor                         92 (0.043%)
+    Series A/B/C funding                   88 (0.041%)
+    venture capitalist(s)                  64 (0.030%)
+    startup funding                        18 (0.008%)
+    raised a round / raised funding        4 (0.002%)
+
+=== HyperClaper (49,369 records) ===
+Records mentioning investment/VC terms: 2,253 (4.564%)
+Distinct underlying text values: 2,183
+    investment / investing                 1,233 (2.498%)
+    investor(s)                            964 (1.953%)
+    VC (venture capital abbrev.)           240 (0.486%)
+    IPO                                    105 (0.213%)
+    venture capital                        65 (0.132%)
+    private equity                         51 (0.103%)
+    seed funding / seed round              31 (0.063%)
+    Series A/B/C funding                   24 (0.049%)
+    angel investor                         12 (0.024%)
+    venture capitalist(s)                  11 (0.022%)
+    startup funding                        8 (0.016%)
+    raised a round / raised funding        6 (0.012%)
+
+=== LinkBoost-2025 (77,969 records) ===
+Records mentioning investment/VC terms: 4,029 (5.167%)
+Distinct underlying text values: 260
+    investment / investing                 2,397 (3.074%)
+    investor(s)                            1,610 (2.065%)
+    VC (venture capital abbrev.)           351 (0.450%)
+    IPO                                    198 (0.254%)
+    private equity                         131 (0.168%)
+    seed funding / seed round              47 (0.060%)
+    venture capitalist(s)                  34 (0.044%)
+    venture capital                        20 (0.026%)
+    Series A/B/C funding                   15 (0.019%)
+    angel investor                         10 (0.013%)
+
+```

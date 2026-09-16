@@ -276,6 +276,11 @@ python3 analysis/nonprofit_content_scan.py podawaa /path/to/podawaa2024.json
 python3 analysis/nonprofit_content_scan.py hyperclapper /path/to/HyperClaper.json
 python3 analysis/nonprofit_content_scan.py linkboost /path/to/LinkBoost-2025.json
 
+# Investment/VC content, with duplicate-template detection
+python3 analysis/investment_vc_scan.py podawaa /path/to/podawaa2024.json
+python3 analysis/investment_vc_scan.py hyperclapper /path/to/HyperClaper.json
+python3 analysis/investment_vc_scan.py linkboost /path/to/LinkBoost-2025.json
+
 # Regenerate every chart in figures/
 python3 figures/generate_figures.py /path/to/podawaa2024.json /path/to/HyperClaper.json --linkboost-path /path/to/LinkBoost-2025.json --outdir figures
 ```
@@ -344,6 +349,7 @@ no per-record data). See [explorer/README.md](explorer/README.md) for why.
 - [Law-related content](docs/research/law-content.md) — narrow (legal-profession) vs. broader (compliance, legislation, IP) content counts
 - [Speaker / thought leader](docs/research/speaker-thought-leader.md) — self-described speaker/thought-leader prevalence, with a real overlap finding between the two terms
 - [Nonprofit-related content](docs/research/nonprofit-content.md) — charity/NGO/philanthropy mention counts, with a built-in check that catches raw counts inflated by a single repeated template
+- [Investment / venture capital content](docs/research/investment-vc-content.md) — investment/VC term mention counts, with a review of what legal frameworks would (and wouldn't) apply if specific elements were separately established
 - [Demographics](docs/research/demographics.md) — aggregate geography and stated-occupation-category breakdown, and why protected characteristics (race, gender, age, etc.) are never inferred
 - [Method](docs/method.md) — how each figure is computed
 - [Data dictionary](docs/data-dictionary.md) — same content as the [Data dictionary](#data-dictionary) section above, kept as a standalone page for cross-linking from other docs
@@ -473,6 +479,18 @@ repeated headline. Corrected, the real rate is 0.05% — the lowest, not
 the highest. The same check caught two more distortions in
 LinkBoost-2025. Full results:
 [docs/research/nonprofit-content.md](docs/research/nonprofit-content.md).
+
+## Investment / venture capital content
+
+`analysis/investment_vc_scan.py` counts investment- and VC-related term
+mentions across post content. This is one of the larger content
+categories checked in this repo so far (3.43-5.17% "any mention" across
+the three datasets), with LinkBoost-2025 highest, consistent with its
+lean toward executive/business content elsewhere in this repo. A
+mention is not evidence of any legal violation on its own -- see
+[docs/research/investment-vc-content.md](docs/research/investment-vc-content.md)
+for why, and for the securities-law and FTC frameworks that would
+actually be relevant if specific elements were separately established.
 
 ## Citations
 

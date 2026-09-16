@@ -3,6 +3,15 @@
 ## Unreleased
 
 ### Added
+- `analysis/investment_vc_scan.py` and
+  `docs/research/investment-vc-content.md` - investment/VC term mention
+  counts across all three datasets (3.43-5.17% "any mention"), one of
+  the larger content categories checked so far. Documents which legal
+  frameworks (securities law, FTC Endorsement Guides, Investment
+  Advisers Act) would actually be relevant if specific elements were
+  separately established, and why a keyword mention alone establishes
+  none of them. Uses the same duplicate-template safeguard as
+  nonprofit_content_scan.py; no field triggered it.
 - `analysis/nonprofit_content_scan.py` and
   `docs/research/nonprofit-content.md` — charity/nonprofit/NGO/
   philanthropy mention counts, with a permanent, automatic safeguard
