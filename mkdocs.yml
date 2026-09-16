@@ -18,6 +18,8 @@ nav:
   - Career-advice comparison: docs/research/career-advice-comparison.md
   - Topic taxonomy: docs/research/topic-taxonomy.md
   - Decision points: docs/research/decision-points.md
+  - Simple title aggregate: docs/research/simple-titles.md
+  - Entity mentions: docs/research/entity-mentions.md
   - Demographics: docs/research/demographics.md
   - Method: docs/method.md
   - Data dictionary: docs/data-dictionary.md
@@ -25,6 +27,7 @@ nav:
   - Limitations: docs/limitations.md
   - Baseline profile (full output): docs/research/baseline-profile.md
   - Validation tools: tools/README.md
+  - Outreach materials: outreach/README.md
   - Contributing: CONTRIBUTING.md
   - Changelog: CHANGELOG.md
 

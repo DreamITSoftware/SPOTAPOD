@@ -253,6 +253,15 @@ python3 analysis/career_advice_scan.py linkboost /path/to/LinkBoost-2025.json
 python3 analysis/topic_taxonomy.py /path/to/podawaa2024.json /path/to/HyperClaper.json /path/to/LinkBoost-2025.json
 python3 analysis/category_title_patterns.py /path/to/podawaa2024.json /path/to/HyperClaper.json /path/to/LinkBoost-2025.json
 
+# Simple job-title keyword aggregate (no names, no full bios)
+python3 analysis/simple_title_aggregate.py hyperclapper /path/to/HyperClaper.json
+python3 analysis/simple_title_aggregate.py linkboost /path/to/LinkBoost-2025.json
+
+# Entity mentions: news outlets, magazines, TV/streaming, corporations (no identities)
+python3 analysis/entity_mention_scan.py podawaa /path/to/podawaa2024.json --category all
+python3 analysis/entity_mention_scan.py hyperclapper /path/to/HyperClaper.json --category all
+python3 analysis/entity_mention_scan.py linkboost /path/to/LinkBoost-2025.json --category all
+
 # Regenerate every chart in figures/
 python3 figures/generate_figures.py /path/to/podawaa2024.json /path/to/HyperClaper.json --linkboost-path /path/to/LinkBoost-2025.json --outdir figures
 ```
@@ -316,6 +325,8 @@ no per-record data). See [explorer/README.md](explorer/README.md) for why.
 - [Career-advice comparison](docs/research/career-advice-comparison.md) — side-by-side methodology/findings/limitations table across all three datasets
 - [Topic taxonomy](docs/research/topic-taxonomy.md) — nine mutually exclusive content categories covering all 340,829 records, with per-dataset breakdown
 - [Decision points](docs/research/decision-points.md) — maps each category to the real-world decision its recurring content templates are aimed at, grounded in actual duplicated title patterns
+- [Simple title aggregate](docs/research/simple-titles.md) — generic professional-title keyword counts (CEO, Founder, Coach, etc.), no names or full bios
+- [Entity mentions](docs/research/entity-mentions.md) — news outlet, magazine, TV/streaming platform, and corporation mention counts across all three datasets
 - [Demographics](docs/research/demographics.md) — aggregate geography and stated-occupation-category breakdown, and why protected characteristics (race, gender, age, etc.) are never inferred
 - [Method](docs/method.md) — how each figure is computed
 - [Data dictionary](docs/data-dictionary.md) — same content as the [Data dictionary](#data-dictionary) section above, kept as a standalone page for cross-linking from other docs
@@ -388,6 +399,29 @@ each category to the real-world decision its dominant template is
 plausibly aimed at — e.g. `career_job_search`'s top template (533
 occurrences) pushes an "AI resume rewrite" narrative.
 
+## Simple title aggregate
+
+`analysis/simple_title_aggregate.py` reports how many records' stated
+occupation/headline text contains a simple, generic professional title
+keyword ("CEO," "Founder," "Coach," "Marketer," etc.) — aggregate counts
+only, never a name, handle, or verbatim headline/occupation sentence.
+Covers HyperClaper and LinkBoost-2025 only (podawaa2024 has no
+occupation field). LinkBoost skews heavily Founder/Coach (34.7%
+combined); HyperClaper leans Marketer/Founder (20.2% combined). Full
+results: [docs/research/simple-titles.md](docs/research/simple-titles.md).
+
+## Entity mentions (news outlets, magazines, TV/streaming, corporations)
+
+`analysis/entity_mention_scan.py` counts mentions of named entities across
+four fixed categories. Headline: corporations get named far more than
+any other category (13.00\u201323.19% of records across the three datasets,
+led by LinkedIn, Google, and \u2014 specifically in HyperClaper \u2014 an
+outsized 8.67% share for IBM, roughly 24\u201326\u00d7 its share elsewhere,
+plausibly tied to that dataset's elevated free-certification content
+share). YouTube/TikTok/Netflix are the top three streaming/TV platforms,
+in that order, in every dataset. Full results across all four categories:
+[docs/research/entity-mentions.md](docs/research/entity-mentions.md).
+
 ## Citations
 
 `podawaa2024.json` (CORROBORATED via matching sha256 — see
@@ -403,6 +437,14 @@ it isn't cited there and where it's reported to come from instead.
 
 `LinkBoost-2025.json` has no citation either — its source hasn't been
 confirmed yet (see [docs/provenance.md](docs/provenance.md)).
+
+## Outreach materials
+
+[outreach/](outreach/) contains finished, aggregate-only educational
+deliverables built from this research — currently a two-page classroom
+media-literacy lesson plan. See [outreach/README.md](outreach/README.md)
+for what's there, why it's safe to commit as a finished PDF (unlike raw
+data), and the same scope discipline as the rest of this repo.
 
 ## License
 

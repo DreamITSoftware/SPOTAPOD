@@ -64,6 +64,16 @@ person fails review — the useful part doesn't buy back the part that
 doesn't belong here. If you're not sure whether something crosses a line,
 it probably does; ask before shipping it, not after.
 
+## Adding to outreach/
+
+`outreach/` holds finished PDFs, unlike everywhere else in this repo. The
+bar for committing a binary deliverable there is stricter, not looser:
+every fact in it must already be aggregate/established elsewhere in
+`docs/research/` (a statistic, a repeated-template count) — never a name,
+handle, photo, profile link, or one-off post. If you can't point to the
+exact `docs/research/` page a claim in an outreach document comes from,
+it doesn't go in `outreach/` yet.
+
 ## Adding a new analysis script
 
 1. Read the target file's schema and note every field that's a direct or

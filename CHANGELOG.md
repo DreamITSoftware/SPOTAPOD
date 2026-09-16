@@ -3,6 +3,29 @@
 ## Unreleased
 
 ### Added
+- `analysis/entity_mention_scan.py` and `docs/research/entity-mentions.md`
+  — mention counts for named news outlets, magazines, TV/streaming
+  platforms, and corporations across all three datasets. Documents a
+  real performance pitfall found while building it (a bare `TIME`
+  pattern matching the common word "time" caused multi-minute runtimes)
+  and how the shipped patterns avoid it. Corporations are mentioned far
+  more than any other category (13\u201323% of records); IBM's 8.67% share
+  in HyperClaper specifically (vs. 0.18\u20130.33% elsewhere) is flagged as
+  plausibly, not confirmedly, tied to that dataset's elevated
+  free-certification content share.
+- `outreach/` — new top-level folder for finished, aggregate-only
+  educational deliverables. First addition: `classroom-case-study.pdf`
+  (and its self-contained HTML source), a two-page grades-9–12 media
+  literacy lesson plan built from the author-concentration statistic and
+  the 533×-repeated "AI resume rewrite" template. Explicitly scoped as
+  general media-literacy teaching material, not evidence for any
+  teen-focused platform or pending legislation.
+- `analysis/simple_title_aggregate.py` and `docs/research/simple-titles.md`
+  — aggregate counts of simple, generic professional-title keywords
+  (CEO, Founder, Coach, Marketer, etc.) found in stated occupation/
+  headline text, for HyperClaper and LinkBoost-2025 only (podawaa2024 has
+  no occupation-equivalent field). No name, handle, or verbatim headline/
+  occupation sentence is ever printed.
 - `analysis/topic_taxonomy.py` and `docs/research/topic-taxonomy.md` —
   mutually exclusive (priority-ordered) categorization of all 340,829
   records across the three datasets into nine content categories plus a
