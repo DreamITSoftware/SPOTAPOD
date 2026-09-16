@@ -144,7 +144,7 @@ def main():
         return
 
     print("=" * 70)
-    print("TOPIC TAXONOMY \u2014 mutually exclusive categorization (aggregate only)")
+    print("TOPIC TAXONOMY - mutually exclusive categorization (aggregate only)")
     print("=" * 70)
     print(f"Dataset sizes: " + ", ".join(f"{k}={v:,}" for k, v in dataset_sizes.items()))
     print(f"Grand total records: {grand_total:,}")

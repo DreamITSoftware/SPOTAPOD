@@ -4,14 +4,14 @@ simple_title_aggregate.py
 
 Aggregates how many records' stated occupation/headline text contains a
 SIMPLE, generic professional title keyword (e.g. "CEO", "Founder",
-"Coach", "Consultant") \u2014 never the verbatim headline/occupation
+"Coach", "Consultant") - never the verbatim headline/occupation
 sentence itself, and never a name or handle. Mutually exclusive
 (priority-ordered): each record is assigned to the first matching title
 keyword, or "unspecified_other" if none match.
 
 Only podawaa2024.json has no occupation/headline-equivalent field at all,
 so it isn't included here. HyperClaper.json's own `jobTitle` field is
-almost always empty (1 of 49,369 records) \u2014 the actual signal lives in
+almost always empty (1 of 49,369 records) - the actual signal lives in
 `headline`, which is what this script reads instead.
 
 Usage:
@@ -27,7 +27,7 @@ from collections import Counter
 # Priority-ordered: a record is tested against these in order and
 # assigned to the FIRST matching simple title. Broad seniority titles are
 # checked before narrower functional ones so "Founder & Marketing Coach"
-# lands under Founder, not Coach \u2014 an arbitrary but fixed rule, stated
+# lands under Founder, not Coach - an arbitrary but fixed rule, stated
 # here so results are reproducible.
 SIMPLE_TITLES = [
     ("Founder / Co-Founder", [r"\bco-?founder\b", r"\bfounder\b"]),
@@ -100,7 +100,7 @@ def main():
             counts[cat] += 1
 
     print("=" * 60)
-    print(f"{args.dataset.upper()} \u2014 SIMPLE TITLE AGGREGATE (no names, no full bios)")
+    print(f"{args.dataset.upper()} - SIMPLE TITLE AGGREGATE (no names, no full bios)")
     print("=" * 60)
     print(f"Total records: {n:,}")
     print(f"No occupation/headline text at all: {no_text:,} ({no_text/n*100:.1f}%)")

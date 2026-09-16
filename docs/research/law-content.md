@@ -21,7 +21,7 @@ the way a lawyer or law-firm post is. For most questions this scan is
 likely to be asked to answer, the **narrow** tally is the more
 meaningful number.
 
-## Results (VERIFIED \u2014 reproducible via the script)
+## Results (VERIFIED - reproducible via the script)
 
 ### Narrow: legal-profession-specific content
 

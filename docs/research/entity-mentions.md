@@ -10,7 +10,7 @@ author, or matched text.
 
 A record is counted once per entity it mentions (repeated mentions of
 the same entity in one record still count once), and a record can be
-counted under multiple entities if it names more than one \u2014 this is an
+counted under multiple entities if it names more than one - this is an
 overlapping tally, like the career-advice and other-regulatory-signal
 scans, not the mutually-exclusive scheme `topic_taxonomy.py` uses.
 
@@ -26,7 +26,7 @@ qualifying phrase for every entity whose name doubles as a common word
 recall (a casual "as TIME reported" mention without "Magazine" attached
 is missed) for both correctness and runtime that scales properly.
 
-## Results (VERIFIED \u2014 reproducible via the script)
+## Results (VERIFIED - reproducible via the script)
 
 ### News outlets
 
@@ -35,15 +35,15 @@ is missed) for both correctness and runtime that scales properly.
 | Forbes | 726 (0.34%) | 86 (0.17%) | 198 (0.25%) |
 | Harvard Business Review | 324 (0.15%) | 31 (0.06%) | 290 (0.37%) |
 | Bloomberg | 122 (0.06%) | 33 (0.07%) | 84 (0.11%) |
-| Fast Company | 28 (0.01%) | \u2014 | 338 (0.43%) |
-| CNBC | 112 (0.05%) | 28 (0.06%) | \u2014 |
+| Fast Company | 28 (0.01%) | - | 338 (0.43%) |
+| CNBC | 112 (0.05%) | 28 (0.06%) | - |
 | Wall Street Journal | 89 (0.04%) | 15 (0.03%) | 45 (0.06%) |
 | TechCrunch | 84 (0.04%) | 13 (0.03%) | 44 (0.06%) |
 | New York Times | 81 (0.04%) | 13 (0.03%) | 53 (0.07%) |
 | BBC | 79 (0.04%) | 10 (0.02%) | 15 (0.02%) |
-| CNN | 70 (0.03%) | 11 (0.02%) | \u2014 |
+| CNN | 70 (0.03%) | 11 (0.02%) | - |
 | Reuters | 49 (0.02%) | 14 (0.03%) | 56 (0.07%) |
-| USA Today | \u2014 | 5 (0.01%) | 93 (0.12%) |
+| USA Today | - | 5 (0.01%) | 93 (0.12%) |
 
 Any-mention rate: 0.88% (podawaa2024), 0.60% (HyperClaper), 1.62%
 (LinkBoost-2025). Forbes and Harvard Business Review lead across all
@@ -60,16 +60,16 @@ established in [topic-taxonomy.md](topic-taxonomy.md).
 | Wired | 87 (0.04%) | 105 (0.21%) | 202 (0.26%) |
 | Fast Company | 28 (0.01%) | 4 (0.01%) | 338 (0.43%) |
 | Psychology Today | 8 (0.00%) | 2 (0.00%) | 236 (0.30%) |
-| Vogue | 65 (0.03%) | 6 (0.01%) | \u2014 |
+| Vogue | 65 (0.03%) | 6 (0.01%) | - |
 | The Atlantic | 38 (0.02%) | 4 (0.01%) | 24 (0.03%) |
 | Inc. Magazine | 19 (0.01%) | 1 (0.00%) | 85 (0.11%) |
-| National Geographic | 18 (0.01%) | 3 (0.01%) | \u2014 |
+| National Geographic | 18 (0.01%) | 3 (0.01%) | - |
 | The Economist | 13 (0.01%) | 12 (0.02%) | 18 (0.02%) |
 
 Any-mention rate: 0.68% (podawaa2024), 0.78% (HyperClaper), 2.52%
 (LinkBoost-2025). Fortune (618 mentions, 0.79%) and Psychology Today
-(236 mentions, 0.30%) stand out specifically in LinkBoost-2025 \u2014 both
-essentially absent elsewhere \u2014 consistent with that dataset's
+(236 mentions, 0.30%) stand out specifically in LinkBoost-2025 - both
+essentially absent elsewhere - consistent with that dataset's
 leadership/coaching content skew (see
 [topic-taxonomy.md](topic-taxonomy.md), where LinkBoost's
 `leadership_coaching_motivation` share is roughly 3\u00d7 the other two
@@ -84,15 +84,15 @@ files).
 | Netflix | 519 (0.24%) | 135 (0.27%) | 482 (0.62%) |
 | Twitch | 112 (0.05%) | 4 (0.01%) | 15 (0.02%) |
 | BBC | 79 (0.04%) | 10 (0.02%) | 15 (0.02%) |
-| CNN | 70 (0.03%) | 11 (0.02%) | \u2014 |
+| CNN | 70 (0.03%) | 11 (0.02%) | - |
 | HBO / HBO Max | 18 (0.01%) | 4 (0.01%) | 15 (0.02%) |
-| Disney+ | 21 (0.01%) | 4 (0.01%) | \u2014 |
-| Hulu | 23 (0.01%) | 3 (0.01%) | \u2014 |
-| Amazon Prime Video | 21 (0.01%) | 3 (0.01%) | \u2014 |
-| Apple TV+ | 18 (0.01%) | 2 (0.00%) | \u2014 |
+| Disney+ | 21 (0.01%) | 4 (0.01%) | - |
+| Hulu | 23 (0.01%) | 3 (0.01%) | - |
+| Amazon Prime Video | 21 (0.01%) | 3 (0.01%) | - |
+| Apple TV+ | 18 (0.01%) | 2 (0.00%) | - |
 
 Any-mention rate: 1.97% (podawaa2024), 1.65% (HyperClaper), 3.17%
-(LinkBoost-2025) \u2014 the highest overall mention rate of any category in
+(LinkBoost-2025) - the highest overall mention rate of any category in
 this scan. YouTube, TikTok, and Netflix are the top three, in the same
 order, in every single dataset; traditional linear TV networks are
 negligible everywhere (all under 0.05%). This is consistent with
@@ -117,7 +117,7 @@ broadcast media.
 Full per-dataset rankings (all 32 tracked corporations) are reproducible
 via the script; the table above shows the ten highest combined.
 Any-mention rate: 13.00% (podawaa2024), 23.19% (HyperClaper), 15.62%
-(LinkBoost-2025) \u2014 by far the highest of any category scanned, and the
+(LinkBoost-2025) - by far the highest of any category scanned, and the
 only one where any single dataset exceeds 20%.
 
 **IBM's share in HyperClaper (8.67%, roughly 24\u00d7 its share in
@@ -137,7 +137,7 @@ counts entity mentions only and does not itself verify that explanation.
   Amazon the rainforest, Apple the fruit) are not filtered out beyond
   what's noted above, so counts for those specific entities skew
   somewhat high relative to a strictly on-topic count.
-- A mention means the name appears in the text \u2014 not that the post
+- A mention means the name appears in the text - not that the post
   accurately describes, is affiliated with, or is endorsed by the named
   outlet, magazine, platform, or corporation.
 - As with every keyword scan in this repo, results depend on the fixed

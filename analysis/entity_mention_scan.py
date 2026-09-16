@@ -123,7 +123,7 @@ def scan(texts, label, category_name, entities):
                 hit = True
         if hit:
             any_hit += 1
-    print(f"=== {label} \u2014 {category_name} ({n:,} records, {time.time()-t0:.1f}s) ===")
+    print(f"=== {label} - {category_name} ({n:,} records, {time.time()-t0:.1f}s) ===")
     print(f"Records mentioning any tracked entity: {any_hit:,} ({any_hit/n*100:.2f}%)")
     for name, c in counts.most_common(40):
         print(f"  {name:<26} {c:,} ({c/n*100:.3f}%)")

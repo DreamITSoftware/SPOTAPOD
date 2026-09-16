@@ -4,13 +4,13 @@
 
 ### Added
 - `analysis/speaker_thought_leader_scan.py` and
-  `docs/research/speaker-thought-leader.md` \u2014 self-described
+  `docs/research/speaker-thought-leader.md` - self-described
   speaker/thought-leader prevalence (HyperClaper and LinkBoost-2025
   only; podawaa2024 has no occupation field). Flags that "thought
   leader" mentions are almost entirely a subset of "speaker" mentions
   (100% overlap in HyperClaper, 97.3% in LinkBoost-2025) rather than
   two independent signals, consistent with one recurring bio template.
-- `analysis/law_content_scan.py` and `docs/research/law-content.md` \u2014
+- `analysis/law_content_scan.py` and `docs/research/law-content.md` -
   narrow (legal-profession-specific: lawyer, attorney, law firm,
   litigation) vs. broader (adds legislation, compliance, intellectual
   property, and bare "legal") content tallies. "Compliance" alone

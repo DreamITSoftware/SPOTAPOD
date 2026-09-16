@@ -426,7 +426,7 @@ results: [docs/research/simple-titles.md](docs/research/simple-titles.md).
 `analysis/entity_mention_scan.py` counts mentions of named entities across
 four fixed categories. Headline: corporations get named far more than
 any other category (13.00\u201323.19% of records across the three datasets,
-led by LinkedIn, Google, and \u2014 specifically in HyperClaper \u2014 an
+led by LinkedIn, Google, and - specifically in HyperClaper - an
 outsized 8.67% share for IBM, roughly 24\u201326\u00d7 its share elsewhere,
 plausibly tied to that dataset's elevated free-certification content
 share). YouTube/TikTok/Netflix are the top three streaming/TV platforms,
@@ -448,7 +448,7 @@ as its own line rather than folded in silently. Full results:
 
 `analysis/speaker_thought_leader_scan.py` covers HyperClaper and
 LinkBoost-2025 only (podawaa2024 has no occupation field). The real
-finding isn't the raw counts \u2014 it's that "thought leader" mentions are
+finding isn't the raw counts - it's that "thought leader" mentions are
 almost entirely a subset of "speaker" mentions (100% overlap in
 HyperClaper, 97.3% in LinkBoost-2025), consistent with one recurring
 bio template rather than two independent self-descriptions. LinkBoost-2025

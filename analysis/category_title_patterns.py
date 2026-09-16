@@ -107,9 +107,9 @@ def main():
         by_cat[classify(t)].append(t)
 
     print("=" * 70)
-    print("CATEGORY TITLE PATTERNS \u2014 recurring/templated phrases only")
+    print("CATEGORY TITLE PATTERNS - recurring/templated phrases only")
     print("=" * 70)
-    print(f"Only phrases repeated >= {args.min_repeats} times are shown \u2014 a phrase")
+    print(f"Only phrases repeated >= {args.min_repeats} times are shown - a phrase")
     print("used once is far more traceable to a specific author than one reused")
     print("hundreds of times. No author or individual record is identified.")
     print()
