@@ -72,7 +72,7 @@ Any-mention rate: 0.68% (podawaa2024), 0.78% (HyperClaper), 2.52%
 essentially absent elsewhere - consistent with that dataset's
 leadership/coaching content skew (see
 [topic-taxonomy.md](topic-taxonomy.md), where LinkBoost's
-`leadership_coaching_motivation` share is roughly 3\u00d7 the other two
+`leadership_coaching_motivation` share is roughly 3× the other two
 files).
 
 ### TV networks and streaming platforms
@@ -120,12 +120,12 @@ Any-mention rate: 13.00% (podawaa2024), 23.19% (HyperClaper), 15.62%
 (LinkBoost-2025) - by far the highest of any category scanned, and the
 only one where any single dataset exceeds 20%.
 
-**IBM's share in HyperClaper (8.67%, roughly 24\u00d7 its share in
-podawaa2024 and 26\u00d7 its share in LinkBoost-2025) is the standout
+**IBM's share in HyperClaper (8.67%, roughly 24× its share in
+podawaa2024 and 26× its share in LinkBoost-2025) is the standout
 finding.** This is consistent with, though not independently
 re-confirmed by, HyperClaper's elevated `education_certification` topic
 share documented in [topic-taxonomy.md](topic-taxonomy.md) (3.11% vs.
-0.63\u20130.68% elsewhere): a plausible explanation is a recurring
+0.63–0.68% elsewhere): a plausible explanation is a recurring
 "free IBM certification" content template, similar in kind to the
 "Google is offering free AI training" pattern already documented in
 [decision-points.md](decision-points.md), though this specific scan

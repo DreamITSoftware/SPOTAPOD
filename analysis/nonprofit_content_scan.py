@@ -118,7 +118,7 @@ def main():
 
     fields = LOADERS[args.dataset](args.path)
     print("=" * 60)
-    print(f"{LABELS[args.dataset]} \u2014 NONPROFIT-RELATED CONTENT")
+    print(f"{LABELS[args.dataset]} — NONPROFIT-RELATED CONTENT")
     print("=" * 60)
     for field_label, texts in fields.items():
         scan_field(texts, field_label)

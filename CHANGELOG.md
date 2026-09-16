@@ -4,7 +4,7 @@
 
 ### Added
 - `analysis/nonprofit_content_scan.py` and
-  `docs/research/nonprofit-content.md` \u2014 charity/nonprofit/NGO/
+  `docs/research/nonprofit-content.md` — charity/nonprofit/NGO/
   philanthropy mention counts, with a permanent, automatic safeguard
   against the exact distortion a manual check just caught: a raw
   "any mention" count driven by one repeated headline/template rather
@@ -33,8 +33,8 @@
   real performance pitfall found while building it (a bare `TIME`
   pattern matching the common word "time" caused multi-minute runtimes)
   and how the shipped patterns avoid it. Corporations are mentioned far
-  more than any other category (13\u201323% of records); IBM's 8.67% share
-  in HyperClaper specifically (vs. 0.18\u20130.33% elsewhere) is flagged as
+  more than any other category (13–23% of records); IBM's 8.67% share
+  in HyperClaper specifically (vs. 0.18–0.33% elsewhere) is flagged as
   plausibly, not confirmedly, tied to that dataset's elevated
   free-certification content share.
 - `outreach/` — new top-level folder for finished, aggregate-only

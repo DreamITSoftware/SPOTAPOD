@@ -431,9 +431,9 @@ results: [docs/research/simple-titles.md](docs/research/simple-titles.md).
 
 `analysis/entity_mention_scan.py` counts mentions of named entities across
 four fixed categories. Headline: corporations get named far more than
-any other category (13.00\u201323.19% of records across the three datasets,
+any other category (13.00–23.19% of records across the three datasets,
 led by LinkedIn, Google, and - specifically in HyperClaper - an
-outsized 8.67% share for IBM, roughly 24\u201326\u00d7 its share elsewhere,
+outsized 8.67% share for IBM, roughly 24–26× its share elsewhere,
 plausibly tied to that dataset's elevated free-certification content
 share). YouTube/TikTok/Netflix are the top three streaming/TV platforms,
 in that order, in every dataset. Full results across all four categories:
@@ -464,12 +464,12 @@ Full results: [docs/research/speaker-thought-leader.md](docs/research/speaker-th
 ## Nonprofit-related content
 
 `analysis/nonprofit_content_scan.py` scans for charity, nonprofit, NGO,
-philanthropy, and 501(c)(3) mentions, and \u2014 unlike earlier scans \u2014
+philanthropy, and 501(c)(3) mentions, and — unlike earlier scans —
 builds in an automatic check for dominant repeated strings inflating a
 raw count. It caught a real one: HyperClaper's headline field first
 looked like it had the highest nonprofit-mention rate of any field
 (1.38%), but 658 of those 681 matching records turned out to share one
-repeated headline. Corrected, the real rate is 0.05% \u2014 the lowest, not
+repeated headline. Corrected, the real rate is 0.05% — the lowest, not
 the highest. The same check caught two more distortions in
 LinkBoost-2025. Full results:
 [docs/research/nonprofit-content.md](docs/research/nonprofit-content.md).
