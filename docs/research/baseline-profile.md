@@ -1389,3 +1389,66 @@ Distinct underlying text values: 3
     FBI                                15
 
 ```
+
+## Homelessness-related content
+
+See [homelessness-content.md](homelessness-content.md) for methodology and why one duplicate-template warning here turned out to be genuine content, not noise.
+
+```
+=== podawaa2024 (213,491 records) ===
+NARROW (homeless/homelessness, unhoused, housing insecurity, homeless services): 65 (0.0304%)
+  Distinct underlying text values: 61
+BROAD (narrow + affordable housing + bare "shelter", noisier): 143 (0.0670%)
+
+=== HyperClaper (49,369 records) ===
+NARROW (homeless/homelessness, unhoused, housing insecurity, homeless services): 9 (0.0182%)
+  Distinct underlying text values: 9
+BROAD (narrow + affordable housing + bare "shelter", noisier): 34 (0.0689%)
+
+=== LinkBoost-2025 (77,969 records) ===
+NARROW (homeless/homelessness, unhoused, housing insecurity, homeless services): 213 (0.2732%)
+  Distinct underlying text values: 12
+  ^ NOTE: top repeated string = 79 records (37.1%). Corrected estimate: 135. (This does not necessarily mean noise -- check the underlying text; see docs/research/homelessness-content.md for an example where the repeated string was genuine on-topic content.)
+BROAD (narrow + affordable housing + bare "shelter", noisier): 213 (0.2732%)
+
+```
+
+## Pharma / biotech content
+
+See [pharma-content.md](pharma-content.md) for methodology and the LinkBoost-2025 FDA/import-compliance correction.
+
+```
+=== podawaa2024 (213,491 records) ===
+Records mentioning any pharma/biotech term: 636 (0.2979%)
+Distinct underlying text values: 582
+    pharma / pharmaceutical(s)       359
+    biotech                          239
+    FDA                              62
+    clinical trial(s)                47
+    pharma company/companies         35
+    pharmaceutical industry          12
+    big pharma                       8
+    drug company/companies           3
+
+=== HyperClaper (49,369 records) ===
+Records mentioning any pharma/biotech term: 146 (0.2957%)
+Distinct underlying text values: 144
+    pharma / pharmaceutical(s)       80
+    biotech                          48
+    FDA                              15
+    clinical trial(s)                13
+    pharmaceutical industry          3
+    pharma company/companies         3
+    big pharma                       1
+
+=== LinkBoost-2025 (77,969 records) ===
+Records mentioning any pharma/biotech term: 482 (0.6182%)
+Distinct underlying text values: 28
+  ^ NOTE: distinct-string count (28) is well below the match count (482) without any single string dominating -- likely a small cluster of posts each boosted multiple times, not one repeated template. Worth checking the actual content before trusting the topic label at face value; see docs/research/pharma-content.md for an example where this pattern turned out to be FDA import-compliance content, not pharmaceutical-industry content.
+    FDA                              333
+    pharma / pharmaceutical(s)       90
+    biotech                          80
+    clinical trial(s)                30
+    pharmaceutical industry          2
+
+```

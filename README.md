@@ -295,6 +295,16 @@ python3 analysis/national_security_scan.py podawaa /path/to/podawaa2024.json
 python3 analysis/national_security_scan.py hyperclapper /path/to/HyperClaper.json
 python3 analysis/national_security_scan.py linkboost /path/to/LinkBoost-2025.json
 
+# Homelessness-related content, narrow vs. broad
+python3 analysis/homelessness_content_scan.py podawaa /path/to/podawaa2024.json
+python3 analysis/homelessness_content_scan.py hyperclapper /path/to/HyperClaper.json
+python3 analysis/homelessness_content_scan.py linkboost /path/to/LinkBoost-2025.json
+
+# Pharma / biotech content, with content-cluster verification
+python3 analysis/pharma_content_scan.py podawaa /path/to/podawaa2024.json
+python3 analysis/pharma_content_scan.py hyperclapper /path/to/HyperClaper.json
+python3 analysis/pharma_content_scan.py linkboost /path/to/LinkBoost-2025.json
+
 # Regenerate every chart in figures/
 python3 figures/generate_figures.py /path/to/podawaa2024.json /path/to/HyperClaper.json --linkboost-path /path/to/LinkBoost-2025.json --outdir figures
 ```
@@ -367,6 +377,8 @@ no per-record data). See [explorer/README.md](explorer/README.md) for why.
 - [Cybersecurity content vs. engagement anomalies](docs/research/cybersecurity-anomaly.md) — cross-tabulates cybersecurity content against the repo's own anomaly indicators; podawaa2024 and HyperClaper only
 - [Travel agencies and destinations](docs/research/travel-content.md) — travel platform and destination mentions, with two documented corrections (a duplicate-template artifact and a French-language false positive)
 - [National security / NSA content](docs/research/national-security-content.md) — the smallest content category in the repo; under 0.1% of any dataset
+- [Homelessness-related content](docs/research/homelessness-content.md) — narrow vs. broad term counts, including a duplicate-template case that turned out to be genuine content, not noise
+- [Pharma / biotech content](docs/research/pharma-content.md) — pharma/biotech/FDA term counts; corrects a LinkBoost-2025 miscategorization where most "FDA" matches turned out to be import-compliance content, not pharmaceutical-industry content
 - [Demographics](docs/research/demographics.md) — aggregate geography and stated-occupation-category breakdown, and why protected characteristics (race, gender, age, etc.) are never inferred
 - [Method](docs/method.md) — how each figure is computed
 - [Data dictionary](docs/data-dictionary.md) — same content as the [Data dictionary](#data-dictionary) section above, kept as a standalone page for cross-linking from other docs
@@ -545,6 +557,28 @@ HyperClaper, 0 in LinkBoost-2025). The duplicate-template safeguard
 caught a real correction here too: LinkBoost-2025's "FBI" count of 15
 is one boosted post, not 15 distinct posts. Full results:
 [docs/research/national-security-content.md](docs/research/national-security-content.md).
+
+## Homelessness-related content
+
+`analysis/homelessness_content_scan.py` reports narrow vs. broad
+homelessness-related term counts. LinkBoost-2025's duplicate-template
+warning fired here too, but unlike every prior instance in this repo,
+the repeated string turned out to be genuine on-topic content, not
+noise - a real "overcame homelessness" success story boosted 79 times.
+LinkBoost-2025 also contains genuine homelessness-sector advocacy
+content beyond that template, a meaningfully different character than
+most other small categories checked in this repo. Full results:
+[docs/research/homelessness-content.md](docs/research/homelessness-content.md).
+
+## Pharma / biotech content
+
+`analysis/pharma_content_scan.py` counts pharma/biotech term mentions.
+The duplicate-template safeguard didn't fire here, but a new check
+(low distinct-string count without one dominant string) did on
+LinkBoost-2025, and it mattered: 333 of its 482 matches turned out to
+be FDA import-compliance/customs content across roughly 8 posts, not
+pharmaceutical-industry content. Full results:
+[docs/research/pharma-content.md](docs/research/pharma-content.md).
 
 ## Citations
 
