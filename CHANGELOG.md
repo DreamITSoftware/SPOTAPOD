@@ -3,6 +3,16 @@
 ## Unreleased
 
 ### Added
+- `analysis/cybersecurity_anomaly_scan.py` and
+  `docs/research/cybersecurity-anomaly.md` - cross-tabulates
+  cybersecurity-related content against the repo's existing
+  engagement-anomaly indicators (zero views with likes, likes
+  exceeding views, extreme like/view ratio, reciprocal like+comment
+  pairing). podawaa2024 and HyperClaper only; LinkBoost-2025 has no
+  per-record engagement fields to cross-reference. Cybersecurity
+  content shows an elevated anomaly rate on 3 of 4 measures checked.
+  Explicit in both the script and the doc that a category-level
+  elevated rate identifies no specific account or post.
 - `analysis/investment_vc_scan.py` and
   `docs/research/investment-vc-content.md` - investment/VC term mention
   counts across all three datasets (3.43-5.17% "any mention"), one of
