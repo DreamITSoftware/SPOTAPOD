@@ -1093,3 +1093,64 @@ Both terms in the same record: 4,175 (97.3% of "thought leader" records also say
 Reminder: this reports keyword counts only. No name, handle, or
 verbatim occupation/headline text is printed by this script.
 ```
+
+## Nonprofit-related content (with duplicate-template safeguard)
+
+See [nonprofit-content.md](nonprofit-content.md) for methodology, corrected rates, and why the safeguard matters.
+
+```
+============================================================
+podawaa2024 — NONPROFIT-RELATED CONTENT
+============================================================
+--- Content (213,491 records) ---
+Records mentioning any nonprofit-related term: 657 (0.308%)
+Distinct underlying text values among those:   616
+    charity / charitable             279 (0.131%)
+    nonprofit / non-profit           221 (0.104%)
+    philanthropy / philanthropic     147 (0.069%)
+    NGO                              77 (0.036%)
+    nonprofit organization           27 (0.013%)
+    501(c)(3)                        10 (0.005%)
+
+============================================================
+HyperClaper — NONPROFIT-RELATED CONTENT
+============================================================
+--- post_title (49,369 records) ---
+Records mentioning any nonprofit-related term: 142 (0.288%)
+Distinct underlying text values among those:   141
+    charity / charitable             77 (0.156%)
+    nonprofit / non-profit           45 (0.091%)
+    philanthropy / philanthropic     22 (0.045%)
+    NGO                              8 (0.016%)
+    nonprofit organization           3 (0.006%)
+    501(c)(3)                        2 (0.004%)
+
+--- headline (49,369 records) ---
+Records mentioning any nonprofit-related term: 681 (1.379%)
+Distinct underlying text values among those:   5
+  ^ WARNING: the single most-repeated matching string accounts for 658 of those records (96.6%) -- this raw count is likely inflated by one template/profile snapshot, not broad signal. A corrected 'distinct records' estimate treats that repeated string as one occurrence: 24 (0.049%).
+    charity / charitable             658 (1.333%)
+    NGO                              13 (0.026%)
+    nonprofit / non-profit           10 (0.020%)
+    philanthropy / philanthropic     5 (0.010%)
+
+============================================================
+LinkBoost-2025 — NONPROFIT-RELATED CONTENT
+============================================================
+--- Title (77,969 records) ---
+Records mentioning any nonprofit-related term: 413 (0.530%)
+Distinct underlying text values among those:   21
+  ^ WARNING: the single most-repeated matching string accounts for 99 of those records (24.0%) -- this raw count is likely inflated by one template/profile snapshot, not broad signal. A corrected 'distinct records' estimate treats that repeated string as one occurrence: 315 (0.404%).
+    charity / charitable             248 (0.318%)
+    philanthropy / philanthropic     111 (0.142%)
+    nonprofit / non-profit           51 (0.065%)
+    NGO                              3 (0.004%)
+
+--- Occupation (77,969 records) ---
+Records mentioning any nonprofit-related term: 120 (0.154%)
+Distinct underlying text values among those:   3
+  ^ WARNING: the single most-repeated matching string accounts for 67 of those records (55.8%) -- this raw count is likely inflated by one template/profile snapshot, not broad signal. A corrected 'distinct records' estimate treats that repeated string as one occurrence: 54 (0.069%).
+    philanthropy / philanthropic     91 (0.117%)
+    charity / charitable             29 (0.037%)
+
+```

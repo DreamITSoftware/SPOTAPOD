@@ -3,6 +3,17 @@
 ## Unreleased
 
 ### Added
+- `analysis/nonprofit_content_scan.py` and
+  `docs/research/nonprofit-content.md` \u2014 charity/nonprofit/NGO/
+  philanthropy mention counts, with a permanent, automatic safeguard
+  against the exact distortion a manual check just caught: a raw
+  "any mention" count driven by one repeated headline/template rather
+  than genuine distinct signal. The script now reports distinct
+  underlying text values alongside every raw count and flags any field
+  where a single string accounts for 20%+ of matches. Caught three real
+  instances on first run, including HyperClaper's headline field, which
+  looked like the highest nonprofit-mention rate of any field (1.38%)
+  before correction and the lowest (0.05%) after.
 - `analysis/speaker_thought_leader_scan.py` and
   `docs/research/speaker-thought-leader.md` - self-described
   speaker/thought-leader prevalence (HyperClaper and LinkBoost-2025
