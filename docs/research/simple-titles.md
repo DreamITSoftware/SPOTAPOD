@@ -2,7 +2,7 @@
 
 `analysis/simple_title_aggregate.py` reports how many records' stated
 occupation/headline text contains a simple, generic professional title
-keyword \u2014 "CEO," "Founder," "Coach," "Marketer," and so on. Same
+keyword - "CEO," "Founder," "Coach," "Marketer," and so on. Same
 discipline as every other scan in this repo: only aggregate counts are
 reported. No name, handle, or verbatim occupation/headline sentence is
 ever printed by this script or appears on this page.
@@ -14,7 +14,7 @@ Only **HyperClaper.json** and **LinkBoost-2025.json** are covered.
 there's nothing to aggregate there.
 
 HyperClaper.json's own `jobTitle` field is almost entirely empty (1 of
-49,369 records) \u2014 the actual signal lives in `linkedin_data.headline`,
+49,369 records) - the actual signal lives in `linkedin_data.headline`,
 which is what this script reads instead. LinkBoost-2025.json's
 `Occupation` field is used directly.
 
@@ -24,7 +24,7 @@ Each record's headline/occupation text is checked against seventeen
 simple-title keyword patterns, in a fixed priority order (broader
 seniority titles like "Founder" and "CEO" are checked before narrower
 functional ones like "Coach," so "Founder & Marketing Coach" lands under
-Founder, not Coach \u2014 an arbitrary but fixed and reproducible rule). A
+Founder, not Coach - an arbitrary but fixed and reproducible rule). A
 record is assigned to the first matching title, or `unspecified_other` if
 none match. Records with no headline/occupation text at all are tracked
 separately and excluded from the percentage base for the title buckets.
@@ -33,7 +33,7 @@ This is the same "simple, generic keyword, aggregate count only" approach
 as [topic-taxonomy.md](topic-taxonomy.md), applied to stated titles
 instead of post content.
 
-## Results (VERIFIED \u2014 reproducible via the script)
+## Results (VERIFIED - reproducible via the script)
 
 ### HyperClaper (49,369 records; 24.0% have no headline text at all)
 
@@ -84,11 +84,11 @@ instead of post content.
 ## Reading these numbers
 
 - **LinkBoost skews heavily toward Founder/Coach** (34.7% combined) versus
-  HyperClaper's lean toward Marketer/Founder (20.2% combined) \u2014
+  HyperClaper's lean toward Marketer/Founder (20.2% combined) -
   consistent with the `leadership_coaching_motivation` topic-category
   finding in [topic-taxonomy.md](topic-taxonomy.md), where LinkBoost's
   18.91% far outpaces the ~6% seen in the other two files.
-- **`unspecified_other` is large in both files** (34.9% and 29.4%) \u2014
+- **`unspecified_other` is large in both files** (34.9% and 29.4%) -
   expected, since seventeen keyword patterns can't exhaustively cover
   every real job title (e.g. "Nurse," "Teacher," "Attorney" aren't in the
   list), and free-text headlines often lead with a personal tagline

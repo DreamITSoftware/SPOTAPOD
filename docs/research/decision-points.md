@@ -26,16 +26,16 @@ paraphrased.
 
 | Category | Recurring pattern found | Decision point it's aimed at |
 |---|---|---|
-| `career_job_search` | A viral rejection-to-success narrative \u2014 months of silence, then an AI resume rewrite \u2014 recurs 533 times | Whether to abandon traditional job-search advice for an "AI resume rewrite" shortcut |
+| `career_job_search` | A viral rejection-to-success narrative - months of silence, then an AI resume rewrite - recurs 533 times | Whether to abandon traditional job-search advice for an "AI resume rewrite" shortcut |
 | `technology_ai` | Weekly "everything that happened in AI" roundups meant to be saved/bookmarked (199\u00d7); "ChatGPT can get you hired faster than any recruiter" with a copy-paste prompt list (129\u00d7) | Which AI tool or prompt to adopt, and which accounts to treat as a trustworthy AI news source |
 | `education_certification` | "Google is offering free AI training" / curated "20 top websites" resource-list posts (93\u2013114\u00d7) | Whether to enroll in a specific "free" credential or trust a curated list over independent research |
-| `leadership_coaching_motivation` | Generic inspirational metaphors \u2014 "life is like a piano," "choose to rise above" \u2014 recur 109\u2013130\u00d7 each | Whether to treat vague motivational content as substantive leadership guidance |
+| `leadership_coaching_motivation` | Generic inspirational metaphors - "life is like a piano," "choose to rise above" - recur 109\u2013130\u00d7 each | Whether to treat vague motivational content as substantive leadership guidance |
 | `finance_investing` | "Hard work beats talent" and "everyone blames the economy" narratives (97\u2013123\u00d7) | Whether to internalize a simplified financial/economic narrative when making real financial decisions |
 | `marketing_sales_branding` | Youth-credibility branding flexes ("I turned 25 and I'm advising CEOs twice my age") and services-hook posts (78\u201388\u00d7) | Whether to hire or trust a branding consultant based on confidence-signaling rather than track record |
 | `business_entrepreneurship` | A repeated political campaign-endorsement post (97\u00d7, candidate not identified here) and "simplify your content calendar" templates (65\u00d7) | Whether to trust political endorsement content appearing in a professional feed; whether to adopt templated content-strategy advice |
-| `health_wellness_fitness` | Personal recovery narratives \u2014 psychedelic-assisted healing, therapy destigmatization (52\u201360\u00d7 each) | Whether to model a personal health decision on someone else's viral recovery story |
+| `health_wellness_fitness` | Personal recovery narratives - psychedelic-assisted healing, therapy destigmatization (52\u201360\u00d7 each) | Whether to model a personal health decision on someone else's viral recovery story |
 | `book_writing_publishing` | Repeated "my new book is now available" launch-announcement templates | Whether to buy or read the specific book being promoted |
-| `uncategorized_other` | No single dominant pattern | Not mapped \u2014 this bucket is a catch-all by construction (see [topic-taxonomy.md](topic-taxonomy.md)); forcing a decision point onto it would fabricate specificity the category doesn't have |
+| `uncategorized_other` | No single dominant pattern | Not mapped - this bucket is a catch-all by construction (see [topic-taxonomy.md](topic-taxonomy.md)); forcing a decision point onto it would fabricate specificity the category doesn't have |
 
 ## Two things worth flagging plainly
 

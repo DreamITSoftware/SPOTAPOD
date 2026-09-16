@@ -10,10 +10,10 @@ occupation/headline sentence.
 
 Only **HyperClaper.json** and **LinkBoost-2025.json** are covered.
 `podawaa2024.json` has no occupation/headline-equivalent field, so
-there's nothing to scan there \u2014 same limitation documented in
+there's nothing to scan there - same limitation documented in
 [simple-titles.md](simple-titles.md).
 
-## Results (VERIFIED \u2014 reproducible via the script)
+## Results (VERIFIED - reproducible via the script)
 
 | | HyperClaper | LinkBoost-2025 |
 |---|---|---|
@@ -29,14 +29,14 @@ The overlap is the actual finding here, not the raw counts on their
 own. In HyperClaper, **100% of "thought leader" records also contain
 "speaker"** (500 of 500). In LinkBoost-2025 it's **97.3%** (4,175 of
 4,292). That's not two independently common self-descriptions
-co-occurring by chance \u2014 it's much more consistent with a single
+co-occurring by chance - it's much more consistent with a single
 recurring bio template (something like "Speaker | Thought Leader") than
 with two separate, unrelated credibility claims. Read the "thought
 leader" numbers above as largely a subset of the "speaker" numbers,
 not as an independent signal.
 
 LinkBoost-2025 skews dramatically higher on both terms than HyperClaper
-\u2014 roughly 1 in 5 records mentions "speaker" there, versus roughly 1 in
+- roughly 1 in 5 records mentions "speaker" there, versus roughly 1 in
 26 in HyperClaper. This is consistent with LinkBoost-2025's broader lean
 toward leadership/coaching content already documented in
 [topic-taxonomy.md](topic-taxonomy.md) (`leadership_coaching_motivation`

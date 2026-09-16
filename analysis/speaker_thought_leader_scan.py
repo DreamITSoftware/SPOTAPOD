@@ -55,7 +55,7 @@ def main():
     both = sum(1 for t in texts if t and SPEAKER.search(t) and THOUGHT_LEADER.search(t))
 
     print("=" * 60)
-    print(f"{args.dataset.upper()} \u2014 SPEAKER / THOUGHT LEADER (no names, no full bios)")
+    print(f"{args.dataset.upper()} - SPEAKER / THOUGHT LEADER (no names, no full bios)")
     print("=" * 60)
     print(f"Total records: {n:,}")
     print(f"Records with occupation/headline text: {has_text:,}")
