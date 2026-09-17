@@ -3,6 +3,13 @@
 ## Unreleased
 
 ### Added
+- `analysis/honesty_language_scan.py` and
+  `docs/research/honesty-language-content.md` - kindness,
+  lying/lies/liar, and deception/deceptive term counts, related to but
+  distinct from authenticity-content.md (self-description vs. the
+  underlying moral vocabulary). "Lying/lies/liar" leads in two of three
+  datasets; deception-specific language is small everywhere (under 100
+  mentions per dataset).
 - `docs/unknowing-participant-impact.md` - a new foundational doc (not
   a content-topic finding, alongside limitations.md and privacy.md)
   addressing a distinction no other doc in this repo makes explicit:
