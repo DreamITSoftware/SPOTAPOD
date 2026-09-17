@@ -30,7 +30,7 @@ is missed) for both correctness and runtime that scales properly.
 
 ### News outlets
 
-| Outlet | podawaa2024 | HyperClaper | LinkBoost-2025 |
+| Outlet | podawaa2024 | HyperClapper | LinkBoost-2025 |
 |---|---|---|---|
 | Forbes | 726 (0.34%) | 86 (0.17%) | 198 (0.25%) |
 | Harvard Business Review | 324 (0.15%) | 31 (0.06%) | 290 (0.37%) |
@@ -45,14 +45,14 @@ is missed) for both correctness and runtime that scales properly.
 | Reuters | 49 (0.02%) | 14 (0.03%) | 56 (0.07%) |
 | USA Today | - | 5 (0.01%) | 93 (0.12%) |
 
-Any-mention rate: 0.88% (podawaa2024), 0.60% (HyperClaper), 1.62%
+Any-mention rate: 0.88% (podawaa2024), 0.60% (HyperClapper), 1.62%
 (LinkBoost-2025). Forbes and Harvard Business Review lead across all
 three, consistent with the business/career-advice content skew already
 established in [topic-taxonomy.md](topic-taxonomy.md).
 
 ### Magazines
 
-| Magazine | podawaa2024 | HyperClaper | LinkBoost-2025 |
+| Magazine | podawaa2024 | HyperClapper | LinkBoost-2025 |
 |---|---|---|---|
 | Forbes | 726 (0.34%) | 86 (0.17%) | 198 (0.25%) |
 | Fortune | 124 (0.06%) | 128 (0.26%) | 618 (0.79%) |
@@ -66,7 +66,7 @@ established in [topic-taxonomy.md](topic-taxonomy.md).
 | National Geographic | 18 (0.01%) | 3 (0.01%) | - |
 | The Economist | 13 (0.01%) | 12 (0.02%) | 18 (0.02%) |
 
-Any-mention rate: 0.68% (podawaa2024), 0.78% (HyperClaper), 2.52%
+Any-mention rate: 0.68% (podawaa2024), 0.78% (HyperClapper), 2.52%
 (LinkBoost-2025). Fortune (618 mentions, 0.79%) and Psychology Today
 (236 mentions, 0.30%) stand out specifically in LinkBoost-2025 - both
 essentially absent elsewhere - consistent with that dataset's
@@ -77,7 +77,7 @@ files).
 
 ### TV networks and streaming platforms
 
-| Platform | podawaa2024 | HyperClaper | LinkBoost-2025 |
+| Platform | podawaa2024 | HyperClapper | LinkBoost-2025 |
 |---|---|---|---|
 | YouTube | 2,540 (1.19%) | 492 (1.00%) | 1,610 (2.07%) |
 | TikTok | 1,055 (0.49%) | 208 (0.42%) | 537 (0.69%) |
@@ -91,7 +91,7 @@ files).
 | Amazon Prime Video | 21 (0.01%) | 3 (0.01%) | - |
 | Apple TV+ | 18 (0.01%) | 2 (0.00%) | - |
 
-Any-mention rate: 1.97% (podawaa2024), 1.65% (HyperClaper), 3.17%
+Any-mention rate: 1.97% (podawaa2024), 1.65% (HyperClapper), 3.17%
 (LinkBoost-2025) - the highest overall mention rate of any category in
 this scan. YouTube, TikTok, and Netflix are the top three, in the same
 order, in every single dataset; traditional linear TV networks are
@@ -101,7 +101,7 @@ broadcast media.
 
 ### Corporations
 
-| Corporation | podawaa2024 | HyperClaper | LinkBoost-2025 |
+| Corporation | podawaa2024 | HyperClapper | LinkBoost-2025 |
 |---|---|---|---|
 | LinkedIn | 13,642 (6.39%) | 5,064 (10.26%) | 5,842 (7.49%) |
 | Google | 5,877 (2.75%) | 6,546 (13.26%) | 3,141 (4.03%) |
@@ -116,14 +116,14 @@ broadcast media.
 
 Full per-dataset rankings (all 32 tracked corporations) are reproducible
 via the script; the table above shows the ten highest combined.
-Any-mention rate: 13.00% (podawaa2024), 23.19% (HyperClaper), 15.62%
+Any-mention rate: 13.00% (podawaa2024), 23.19% (HyperClapper), 15.62%
 (LinkBoost-2025) - by far the highest of any category scanned, and the
 only one where any single dataset exceeds 20%.
 
-**IBM's share in HyperClaper (8.67%, roughly 24× its share in
+**IBM's share in HyperClapper (8.67%, roughly 24× its share in
 podawaa2024 and 26× its share in LinkBoost-2025) is the standout
 finding.** This is consistent with, though not independently
-re-confirmed by, HyperClaper's elevated `education_certification` topic
+re-confirmed by, HyperClapper's elevated `education_certification` topic
 share documented in [topic-taxonomy.md](topic-taxonomy.md) (3.11% vs.
 0.63–0.68% elsewhere): a plausible explanation is a recurring
 "free IBM certification" content template, similar in kind to the

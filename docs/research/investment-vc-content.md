@@ -41,7 +41,7 @@ the frameworks that would actually be relevant are:
 
 ## Results (VERIFIED - reproducible via the script)
 
-| Term | podawaa2024 | HyperClaper | LinkBoost-2025 |
+| Term | podawaa2024 | HyperClapper | LinkBoost-2025 |
 |---|---|---|---|
 | Investment / investing | 4,754 (2.23%) | 1,233 (2.50%) | 2,397 (3.07%) |
 | Investor(s) | 2,676 (1.25%) | 964 (1.95%) | 1,610 (2.07%) |

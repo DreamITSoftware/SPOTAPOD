@@ -6,7 +6,7 @@ license: MIT
 date-released: 2026-09-12
 abstract: >
   A de-identified, aggregate-only companion analysis of three
-  engagement-pod-adjacent datasets (podawaa2024, HyperClaper,
+  engagement-pod-adjacent datasets (podawaa2024, HyperClapper,
   LinkBoost-2025), oriented around 16 CFR 465.8 ("Misuse of fake
   indicators of social media influence"). No script or document in this
   repository identifies an individual account, author, or record; all

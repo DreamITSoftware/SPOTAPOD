@@ -12,12 +12,12 @@ duplicate-template check described below.
 | Dataset | Any mention | % of dataset |
 |---|---|---|
 | podawaa2024 | 3,700 | 1.733% |
-| HyperClaper | 1,784 | 3.614% |
+| HyperClapper | 1,784 | 3.614% |
 | LinkBoost-2025 | 3,056 | 3.920% |
 
 **Term breakdown:**
 
-| Term | podawaa2024 | HyperClaper | LinkBoost-2025 |
+| Term | podawaa2024 | HyperClapper | LinkBoost-2025 |
 |---|---|---|---|
 | Top N (Top 5/10/etc.) | 1,681 | 1,258 | 1,287 |
 | N ways/tips/reasons/steps (listicle) | 1,560 | 472 | 1,627 |
@@ -47,7 +47,7 @@ niche-topic scans in this repo - well above
 [immunotherapy-content.md](immunotherapy-content.md), all of which sit
 under 1%.
 
-HyperClaper and LinkBoost-2025 both show meaningfully higher rates than
+HyperClapper and LinkBoost-2025 both show meaningfully higher rates than
 podawaa2024 (3.6% and 3.9% vs. 1.7%), consistent with the broader
 pattern already established across multiple scans in this repo that
 these two datasets skew more heavily toward templated, formulaic
@@ -58,7 +58,7 @@ pattern.
 
 The two datasets also show a real difference in listicle style:
 LinkBoost-2025 leans more on numbered-listicle phrasing ("N ways/tips/
-reasons," 1,627, its single largest term) while HyperClaper leans much
+reasons," 1,627, its single largest term) while HyperClapper leans much
 more heavily toward "Top N" specifically (1,258 vs. 472 for the
 numbered-listicle phrasing) - a style difference, not just a volume
 difference, between the two datasets.

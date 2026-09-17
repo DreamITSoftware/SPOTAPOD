@@ -11,7 +11,7 @@ percentages only, no matched text or record identified.
 
 ## Comparison table
 
-| | **podawaa2024** | **HyperClaper** | **LinkBoost-2025** |
+| | **podawaa2024** | **HyperClapper** | **LinkBoost-2025** |
 |---|---|---|---|
 | **Records** | 213,491 | 49,369 | 77,969 |
 | **Content field scanned** | `Content` | `post_title` | `Title` |
@@ -25,13 +25,13 @@ percentages only, no matched text or record identified.
 ## Reading these numbers
 
 - **Record-level percentages measure different things across files.**
-  podawaa2024 and HyperClaper approximate "how much distinct content
+  podawaa2024 and HyperClapper approximate "how much distinct content
   touches career advice." LinkBoost-2025 instead measures "how much
   engagement-pod activity volume is directed at career-advice-adjacent
   posts" — the same percentage means something structurally different
   because of the 469-unique-posts-to-77,969-records ratio. Treat
   cross-dataset percentage comparisons with that distinction in mind.
-- **Three independent signals point the same direction for HyperClaper**:
+- **Three independent signals point the same direction for HyperClapper**:
   highest career-advice content rate (16.52%), highest reciprocal-
   engagement rate (68.6%), and highest self-help/leadership occupation
   skew (see [demographics.md](demographics.md)). Three aligned signals is

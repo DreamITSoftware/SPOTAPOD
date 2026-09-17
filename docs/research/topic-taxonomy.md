@@ -37,7 +37,7 @@ below sum to the full 340,829-record total across all three files.
 
 ### Per-dataset breakdown
 
-| Category | podawaa2024 | HyperClaper | LinkBoost-2025 |
+| Category | podawaa2024 | HyperClapper | LinkBoost-2025 |
 |---|---|---|---|
 | `career_job_search` | 2.23% | **13.92%** | 3.79% |
 | `technology_ai` | 16.39% | 27.97% | 25.29% |
@@ -51,7 +51,7 @@ below sum to the full 340,829-record total across all three files.
 | `uncategorized_other` | 50.47% | 33.93% | 28.15% |
 
 Two standouts, consistent with earlier findings elsewhere in this repo:
-HyperClaper is disproportionately career-content (13.92% vs. 2–4%
+HyperClapper is disproportionately career-content (13.92% vs. 2–4%
 elsewhere — see also the reciprocal-engagement and occupation findings in
 [demographics.md](demographics.md)), and LinkBoost-2025 is disproportionately
 leadership/coaching content (18.91% vs. ~6% elsewhere), matching its

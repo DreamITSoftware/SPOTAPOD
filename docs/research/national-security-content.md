@@ -22,7 +22,7 @@ Corrected, LinkBoost-2025's real any-mention count is 21, not 35.
 
 ## Results (VERIFIED - reproducible via the script)
 
-| Term | podawaa2024 | HyperClaper | LinkBoost-2025 |
+| Term | podawaa2024 | HyperClapper | LinkBoost-2025 |
 |---|---|---|---|
 | CIA | 40 | 2 | - |
 | FBI | 36 | 4 | 15\* |
@@ -44,7 +44,7 @@ investment/VC content, cybersecurity content, or travel content, all of
 which sit well below 10% but still meaningfully above this one. Every
 figure here is under 0.1% of its dataset. NSA specifically is almost
 nonexistent: 24 mentions in podawaa2024 (213,491 records), 1 in
-HyperClaper, and 0 in LinkBoost-2025.
+HyperClapper, and 0 in LinkBoost-2025.
 
 These are professional/business/career datasets. National-security
 content isn't a meaningful presence in any of them, and the low counts

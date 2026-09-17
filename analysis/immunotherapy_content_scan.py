@@ -13,7 +13,7 @@ with the hyphen made optional to also catch "CAR T" as two words. That
 pattern, case-insensitive, also matches the common word "cart" --
 shopping cart, price comparisons, abandoned-cart marketing content --
 and completely dominated the raw counts with pure noise: 107, 60, and
-58 false-positive matches in podawaa2024, HyperClaper, and
+58 false-positive matches in podawaa2024, HyperClapper, and
 LinkBoost-2025 respectively, none of which were about cell therapy.
 Sampling the matches directly (posts about online shopping, Shopify,
 subscriptions, grocery habits) made this obvious immediately. The
@@ -99,7 +99,7 @@ def load_linkboost(path):
 
 
 LOADERS = {"podawaa": load_podawaa, "hyperclapper": load_hyperclapper, "linkboost": load_linkboost}
-LABELS = {"podawaa": "podawaa2024", "hyperclapper": "HyperClaper", "linkboost": "LinkBoost-2025"}
+LABELS = {"podawaa": "podawaa2024", "hyperclapper": "HyperClapper", "linkboost": "LinkBoost-2025"}
 
 
 def main():

@@ -24,7 +24,7 @@ here either.
 
 ## Results (VERIFIED - reproducible via the script)
 
-| Term | podawaa2024 | HyperClaper | LinkBoost-2025 |
+| Term | podawaa2024 | HyperClapper | LinkBoost-2025 |
 |---|---|---|---|
 | Trump | 102 | 136 | 173 |
 | Biden | 81 | 2 | 15 |
@@ -42,8 +42,8 @@ here either.
 Trump is the single largest term in every dataset, and the only one
 with meaningful presence across all three - Biden and party-name
 mentions are comparatively sparse and unevenly distributed.
-HyperClaper's Trump-to-Biden ratio (136:2) is the most lopsided of the
-three. podawaa2024 and HyperClaper show genuinely distinct,
+HyperClapper's Trump-to-Biden ratio (136:2) is the most lopsided of the
+three. podawaa2024 and HyperClapper show genuinely distinct,
 broadly-distributed content (182 and 144 distinct strings
 respectively, no dominant template); the correction above is specific
 to LinkBoost-2025.

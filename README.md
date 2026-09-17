@@ -281,7 +281,7 @@ python3 analysis/investment_vc_scan.py podawaa /path/to/podawaa2024.json
 python3 analysis/investment_vc_scan.py hyperclapper /path/to/HyperClaper.json
 python3 analysis/investment_vc_scan.py linkboost /path/to/LinkBoost-2025.json
 
-# Cybersecurity content vs. engagement anomalies (podawaa2024, HyperClaper only)
+# Cybersecurity content vs. engagement anomalies (podawaa2024, HyperClapper only)
 python3 analysis/cybersecurity_anomaly_scan.py podawaa /path/to/podawaa2024.json
 python3 analysis/cybersecurity_anomaly_scan.py hyperclapper /path/to/HyperClaper.json
 
@@ -394,7 +394,7 @@ no per-record data). See [explorer/README.md](explorer/README.md) for why.
 - [Speaker / thought leader](docs/research/speaker-thought-leader.md) — self-described speaker/thought-leader prevalence, with a real overlap finding between the two terms
 - [Nonprofit-related content](docs/research/nonprofit-content.md) — charity/NGO/philanthropy mention counts, with a built-in check that catches raw counts inflated by a single repeated template
 - [Investment / venture capital content](docs/research/investment-vc-content.md) — investment/VC term mention counts, with a review of what legal frameworks would (and wouldn't) apply if specific elements were separately established
-- [Cybersecurity content vs. engagement anomalies](docs/research/cybersecurity-anomaly.md) — cross-tabulates cybersecurity content against the repo's own anomaly indicators; podawaa2024 and HyperClaper only
+- [Cybersecurity content vs. engagement anomalies](docs/research/cybersecurity-anomaly.md) — cross-tabulates cybersecurity content against the repo's own anomaly indicators; podawaa2024 and HyperClapper only
 - [Travel agencies and destinations](docs/research/travel-content.md) — travel platform and destination mentions, with two documented corrections (a duplicate-template artifact and a French-language false positive)
 - [National security / NSA content](docs/research/national-security-content.md) — the smallest content category in the repo; under 0.1% of any dataset
 - [Homelessness-related content](docs/research/homelessness-content.md) — narrow vs. broad term counts, including a duplicate-template case that turned out to be genuine content, not noise
@@ -402,7 +402,7 @@ no per-record data). See [explorer/README.md](explorer/README.md) for why.
 - [Political party / Trump content](docs/research/political-content.md) — Trump/Biden/party-name mention counts; links a LinkBoost-2025 correction back to the same repeated campaign post already documented in decision-points.md
 - [Immunotherapy content](docs/research/immunotherapy-content.md) — documents two false positives (a "cart"/CAR-T acronym collision and an unrelated boosted post) that made this the smallest genuine content category found so far
 - ["Top list" / listicle content](docs/research/toplist-content.md) — one of the larger niche-topic categories found (1.7–3.9%), with a real style difference between datasets
-- [Blockchain / crypto content](docs/research/blockchain-crypto-content.md) — podawaa2024's rate is 4x HyperClaper's; a plausible (not confirmed) shift toward AI content over time
+- [Blockchain / crypto content](docs/research/blockchain-crypto-content.md) — podawaa2024's rate is 4x HyperClapper's; a plausible (not confirmed) shift toward AI content over time
 - [Demographics](docs/research/demographics.md) — aggregate geography and stated-occupation-category breakdown, and why protected characteristics (race, gender, age, etc.) are never inferred
 - [Method](docs/method.md) — how each figure is computed
 - [Data dictionary](docs/data-dictionary.md) — same content as the [Data dictionary](#data-dictionary) section above, kept as a standalone page for cross-linking from other docs
@@ -451,7 +451,7 @@ business/entrepreneurship and "writing craft" categories. Full breakdown:
 
 `analysis/career_advice_scan.py` checks for career-advice language
 (resume, interview prep, promotion, networking, layoffs, etc.) across all
-three datasets. HyperClaper leads by a wide margin (16.52%), aligning with
+three datasets. HyperClapper leads by a wide margin (16.52%), aligning with
 its occupation skew and reciprocal-engagement rate; podawaa2024 is lowest
 (4.45%); LinkBoost-2025 sits in between (6.68%) but reflects pod-activity
 volume on a small number of target posts rather than distinct content
@@ -463,7 +463,7 @@ volume. Full methodology, side-by-side table, and caveats:
 `analysis/topic_taxonomy.py` assigns every record across all three
 datasets to exactly one of nine mutually exclusive content categories
 (plus a catch-all). Headline: `technology_ai` (20.11%) and
-`uncategorized_other` (42.97%) dominate overall; HyperClaper skews
+`uncategorized_other` (42.97%) dominate overall; HyperClapper skews
 sharply toward `career_job_search` (13.92%) and LinkBoost-2025 toward
 `leadership_coaching_motivation` (18.91%). Full results:
 [docs/research/topic-taxonomy.md](docs/research/topic-taxonomy.md).
@@ -481,9 +481,9 @@ occurrences) pushes an "AI resume rewrite" narrative.
 occupation/headline text contains a simple, generic professional title
 keyword ("CEO," "Founder," "Coach," "Marketer," etc.) — aggregate counts
 only, never a name, handle, or verbatim headline/occupation sentence.
-Covers HyperClaper and LinkBoost-2025 only (podawaa2024 has no
+Covers HyperClapper and LinkBoost-2025 only (podawaa2024 has no
 occupation field). LinkBoost skews heavily Founder/Coach (34.7%
-combined); HyperClaper leans Marketer/Founder (20.2% combined). Full
+combined); HyperClapper leans Marketer/Founder (20.2% combined). Full
 results: [docs/research/simple-titles.md](docs/research/simple-titles.md).
 
 ## Entity mentions (news outlets, magazines, TV/streaming, corporations)
@@ -491,7 +491,7 @@ results: [docs/research/simple-titles.md](docs/research/simple-titles.md).
 `analysis/entity_mention_scan.py` counts mentions of named entities across
 four fixed categories. Headline: corporations get named far more than
 any other category (13.00–23.19% of records across the three datasets,
-led by LinkedIn, Google, and - specifically in HyperClaper - an
+led by LinkedIn, Google, and - specifically in HyperClapper - an
 outsized 8.67% share for IBM, roughly 24–26× its share elsewhere,
 plausibly tied to that dataset's elevated free-certification content
 share). YouTube/TikTok/Netflix are the top three streaming/TV platforms,
@@ -511,13 +511,13 @@ as its own line rather than folded in silently. Full results:
 
 ## Speaker / thought leader
 
-`analysis/speaker_thought_leader_scan.py` covers HyperClaper and
+`analysis/speaker_thought_leader_scan.py` covers HyperClapper and
 LinkBoost-2025 only (podawaa2024 has no occupation field). The real
 finding isn't the raw counts - it's that "thought leader" mentions are
 almost entirely a subset of "speaker" mentions (100% overlap in
-HyperClaper, 97.3% in LinkBoost-2025), consistent with one recurring
+HyperClapper, 97.3% in LinkBoost-2025), consistent with one recurring
 bio template rather than two independent self-descriptions. LinkBoost-2025
-skews far higher on both (18.29% "speaker" vs. 3.83% in HyperClaper).
+skews far higher on both (18.29% "speaker" vs. 3.83% in HyperClapper).
 Full results: [docs/research/speaker-thought-leader.md](docs/research/speaker-thought-leader.md).
 
 ## Nonprofit-related content
@@ -525,7 +525,7 @@ Full results: [docs/research/speaker-thought-leader.md](docs/research/speaker-th
 `analysis/nonprofit_content_scan.py` scans for charity, nonprofit, NGO,
 philanthropy, and 501(c)(3) mentions, and — unlike earlier scans —
 builds in an automatic check for dominant repeated strings inflating a
-raw count. It caught a real one: HyperClaper's headline field first
+raw count. It caught a real one: HyperClapper's headline field first
 looked like it had the highest nonprofit-mention rate of any field
 (1.38%), but 658 of those 681 matching records turned out to share one
 repeated headline. Corrected, the real rate is 0.05% — the lowest, not
@@ -553,7 +553,7 @@ indicators used in the baseline profile (zero views with likes,
 likes exceeding views, extreme like/view ratio, reciprocal
 like+comment pairing). Cybersecurity content shows a higher anomaly
 rate than the dataset baseline on 3 of 4 measures checked, most
-notably HyperClaper's reciprocal like+comment rate (84.2% vs. 68.6%
+notably HyperClapper's reciprocal like+comment rate (84.2% vs. 68.6%
 baseline). An elevated category-level rate is a population pattern,
 not identification of any specific account or post. Full results:
 [docs/research/cybersecurity-anomaly.md](docs/research/cybersecurity-anomaly.md).
@@ -577,7 +577,7 @@ Full results: [docs/research/travel-content.md](docs/research/travel-content.md)
 national-security-related terms. This is the smallest content category
 checked in this repo so far - under 0.1% of any dataset - and NSA
 specifically is almost nonexistent (24 mentions in podawaa2024, 1 in
-HyperClaper, 0 in LinkBoost-2025). The duplicate-template safeguard
+HyperClapper, 0 in LinkBoost-2025). The duplicate-template safeguard
 caught a real correction here too: LinkBoost-2025's "FBI" count of 15
 is one boosted post, not 15 distinct posts. Full results:
 [docs/research/national-security-content.md](docs/research/national-security-content.md).
@@ -635,18 +635,18 @@ of," and similar listicle patterns. This is one of the larger content
 categories found across the niche-topic scans in this repo (1.7-3.9%
 "any mention," well above pharma, cybersecurity, law, nonprofit,
 travel, political, national security, and immunotherapy content, all
-under 1%). HyperClaper and LinkBoost-2025 both run meaningfully higher
+under 1%). HyperClapper and LinkBoost-2025 both run meaningfully higher
 than podawaa2024, consistent with their broader lean toward templated
 content already seen elsewhere in this repo, and the two datasets show
 a real style difference: LinkBoost-2025 leans on numbered-listicle
-phrasing while HyperClaper leans on "Top N" specifically. Full results:
+phrasing while HyperClapper leans on "Top N" specifically. Full results:
 [docs/research/toplist-content.md](docs/research/toplist-content.md).
 
 ## Blockchain / crypto content
 
 `analysis/blockchain_crypto_scan.py` counts blockchain/crypto term
 mentions. podawaa2024 has by far the highest rate (2.93%, roughly 4x
-HyperClaper and 2.5x LinkBoost-2025) and is the only dataset where
+HyperClapper and 2.5x LinkBoost-2025) and is the only dataset where
 "blockchain" outranks general "crypto" phrasing. Since podawaa2024 is
 2024 data and the other two are 2025-2026 data, this is consistent
 with -- though doesn't confirm -- a shift in this content ecosystem's

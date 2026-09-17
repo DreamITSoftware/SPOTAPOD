@@ -33,7 +33,7 @@ INFERENCE caveat below)
 | Dataset | Records scanned | Any category | health_medical | financial | licensing | endorsement |
 |---|---|---|---|---|---|---|
 | podawaa2024 | 213,491 | 1.99% | 0.66% | 0.07% | 0.01% | 1.27% |
-| HyperClaper | 49,369 | 5.80% | 2.79% | 0.14% | 0.01% | 3.02% |
+| HyperClapper | 49,369 | 5.80% | 2.79% | 0.14% | 0.01% | 3.02% |
 | LinkBoost-2025 | 77,969 | 5.69% | 3.38% | 0.26% | 0.09% | 2.07% |
 
 Full script output: `analysis/regulatory_category_scan.py` run directly

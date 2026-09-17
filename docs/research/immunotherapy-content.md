@@ -14,7 +14,7 @@ written as two words. Case-insensitive, that pattern also matches the
 common word "cart" - shopping cart, price comparisons, abandoned-cart
 marketing content - and completely dominated the raw counts with pure
 noise: 107, 60, and 58 false-positive matches in podawaa2024,
-HyperClaper, and LinkBoost-2025 respectively, none of which were
+HyperClapper, and LinkBoost-2025 respectively, none of which were
 actually about cell therapy. Sampling the matches directly (posts about
 online shopping, Shopify, subscriptions, grocery habits) made this
 obvious immediately.
@@ -42,7 +42,7 @@ medical content at all.
 | Dataset | Any mention | % of dataset |
 |---|---|---|
 | podawaa2024 | 16 | 0.0075% |
-| HyperClaper | 0 | 0.0000% |
+| HyperClapper | 0 | 0.0000% |
 | LinkBoost-2025 | 40 raw / **0 corrected** | 0.0000% corrected |
 
 **podawaa2024 term breakdown (the only dataset with genuine signal):**
@@ -60,7 +60,7 @@ Genuine immunotherapy content is essentially nonexistent across all
 340,829 combined records - 16 real mentions total, all in podawaa2024.
 This is the smallest genuine content category found in this project so
 far, smaller even than [national-security-content.md](national-security-content.md)
-(which had real, if sparse, content in all three datasets). HyperClaper
+(which had real, if sparse, content in all three datasets). HyperClapper
 and LinkBoost-2025 have zero real immunotherapy content once the false
 positives described above are accounted for.
 

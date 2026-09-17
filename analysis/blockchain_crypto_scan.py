@@ -8,14 +8,14 @@ repo: aggregate counts only, no record, author, or matched text ever
 printed beyond the duplicate-template check below.
 
 podawaa2024 shows by far the highest rate (2.93%, roughly 4x
-HyperClaper and 2.5x LinkBoost-2025) and is the only dataset where
+HyperClapper and 2.5x LinkBoost-2025) and is the only dataset where
 "blockchain" itself, rather than "crypto/cryptocurrency" generally,
 is the single largest term. Since podawaa2024 is 2024 data and
-HyperClaper/LinkBoost-2025 are 2025-2026 data, this is consistent with
+HyperClapper/LinkBoost-2025 are 2025-2026 data, this is consistent with
 -- but does not on its own prove -- a shift in this content ecosystem's
 attention from blockchain/Web3 toward AI over that period, which lines
 up with the sharp technology_ai increase already documented in
-topic-taxonomy.md (16.39% in podawaa2024 to 27.97% in HyperClaper).
+topic-taxonomy.md (16.39% in podawaa2024 to 27.97% in HyperClapper).
 Treat this as INFERENCE-tier reasoning from two adjacent data points,
 not a confirmed time-series trend.
 
@@ -96,7 +96,7 @@ def load_linkboost(path):
 
 
 LOADERS = {"podawaa": load_podawaa, "hyperclapper": load_hyperclapper, "linkboost": load_linkboost}
-LABELS = {"podawaa": "podawaa2024", "hyperclapper": "HyperClaper", "linkboost": "LinkBoost-2025"}
+LABELS = {"podawaa": "podawaa2024", "hyperclapper": "HyperClapper", "linkboost": "LinkBoost-2025"}
 
 
 def main():
