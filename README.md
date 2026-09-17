@@ -340,6 +340,11 @@ python3 analysis/authenticity_content_scan.py podawaa /path/to/podawaa2024.json
 python3 analysis/authenticity_content_scan.py hyperclapper /path/to/HyperClaper.json
 python3 analysis/authenticity_content_scan.py linkboost /path/to/LinkBoost-2025.json
 
+# Kindness, lying, and deception language
+python3 analysis/honesty_language_scan.py podawaa /path/to/podawaa2024.json
+python3 analysis/honesty_language_scan.py hyperclapper /path/to/HyperClaper.json
+python3 analysis/honesty_language_scan.py linkboost /path/to/LinkBoost-2025.json
+
 # Diabetes content
 python3 analysis/diabetes_content_scan.py podawaa /path/to/podawaa2024.json
 python3 analysis/diabetes_content_scan.py hyperclapper /path/to/HyperClaper.json
@@ -455,6 +460,7 @@ no per-record data). See [explorer/README.md](explorer/README.md) for why.
 - [University content](docs/research/university-content.md) — documents a cross-language false positive (German "mit" vs. the "MIT" acronym) caught via cross-dataset inconsistency rather than a within-dataset check
 - [Veteran / military content](docs/research/veteran-content.md) — includes genuine tribute content alongside a correction linking back to the already-documented campaign-post artifact
 - [Authenticity content](docs/research/authenticity-content.md) — directly checks and refutes a specific "honesty irony" statistic from a disputed third-party document
+- [Kindness, lying, and deception language](docs/research/honesty-language-content.md) — everyday moral vocabulary around honesty and dishonesty, distinct from the self-description terms in authenticity-content.md
 - [Diabetes content](docs/research/diabetes-content.md) — one of the smallest genuine categories found; a duplicate-string case that turned out to be real content, not noise
 - [LinkedIn algorithm mentions](docs/research/algorithm-mention-content.md) — directly relevant to this project's own subject matter; companion to algorithm-strategy-advice.md
 - [Career transitions](docs/research/career-transitions-content.md) — layoffs, remote work, burnout, and work-life balance mentions
@@ -812,6 +818,18 @@ demographics.md). India leads two datasets, Europe leads the third;
 the pattern lines up with each dataset's own account-location skew
 already documented elsewhere in this repo. Full results:
 [docs/research/geographic-mentions-content.md](docs/research/geographic-mentions-content.md).
+
+## Kindness, lying, and deception language
+
+`analysis/honesty_language_scan.py` counts kindness, lying/lies/liar,
+and deception/deceptive term mentions - related to but distinct from
+[authenticity-content.md](docs/research/authenticity-content.md).
+"Lying/lies/liar" leads in two of three datasets; deception-specific
+language is small everywhere (under 100 mentions per dataset) compared
+to the more common everyday vocabulary. LinkBoost-2025 has the highest
+overall rate, consistent with its documented lean toward
+inspirational/emotional content. Full results:
+[docs/research/honesty-language-content.md](docs/research/honesty-language-content.md).
 
 ## Structural analyses (not content keyword scans)
 
