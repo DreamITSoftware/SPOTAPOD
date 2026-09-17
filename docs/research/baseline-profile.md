@@ -1790,3 +1790,149 @@ Distinct underlying text values: 37
     algorithm favors/rewards             70
 
 ```
+
+## Career transitions (layoffs, remote work, burnout)
+
+See [career-transitions-content.md](career-transitions-content.md) for methodology.
+
+```
+=== podawaa2024 (213,491 records) ===
+Records mentioning any career-transition term: 1,898 (0.889%)
+Distinct underlying text values: 1,761
+    burnout                      803
+    remote work                  607
+    work-life balance            384
+    layoffs                      229
+    return to office / RTO       33
+
+=== HyperClapper (49,369 records) ===
+Records mentioning any career-transition term: 2,395 (4.851%)
+Distinct underlying text values: 1,276
+    remote work                  1,716
+    burnout                      415
+    layoffs                      239
+    work-life balance            38
+    return to office / RTO       13
+
+=== LinkBoost-2025 (77,969 records) ===
+Records mentioning any career-transition term: 2,398 (3.076%)
+Distinct underlying text values: 139
+  ^ NOTE: distinct-string count (139) is below the match count (2,398) without one string dominating -- worth a manual check.
+    burnout                      1,937
+    remote work                  202
+    layoffs                      193
+    work-life balance            66
+
+```
+
+## Social proof and credibility signaling
+
+See [social-proof-content.md](social-proof-content.md) for methodology and the cross-dataset "Agree?" confirmation.
+
+```
+=== podawaa2024 (213,491 records) ===
+Records mentioning any social-proof term: 6,061 (2.839%)
+Distinct underlying text values: 1,872
+  ^ NOTE: top repeated string = 3,918 records (64.6%). Corrected estimate: 2,144. If this dataset is podawaa2024 or LinkBoost-2025, this is very likely the already-documented "Agree?" template (see baseline-profile.md) -- not a new artifact.
+    engagement bait (Agree?/Thoughts?)       5,072
+    congratulations / anniversary            604
+    award / recognition (30 under 30 etc.)   300
+    follower milestone                       93
+
+=== HyperClapper (49,369 records) ===
+Records mentioning any social-proof term: 404 (0.818%)
+Distinct underlying text values: 397
+    engagement bait (Agree?/Thoughts?)       173
+    congratulations / anniversary            154
+    follower milestone                       47
+    award / recognition (30 under 30 etc.)   32
+
+=== LinkBoost-2025 (77,969 records) ===
+Records mentioning any social-proof term: 1,712 (2.196%)
+Distinct underlying text values: 43
+  ^ NOTE: top repeated string = 888 records (51.9%). Corrected estimate: 825. If this dataset is podawaa2024 or LinkBoost-2025, this is very likely the already-documented "Agree?" template (see baseline-profile.md) -- not a new artifact.
+    engagement bait (Agree?/Thoughts?)       1,408
+    follower milestone                       184
+    congratulations / anniversary            95
+    award / recognition (30 under 30 etc.)   25
+
+```
+
+## Industry verticals
+
+See [industry-verticals-content.md](industry-verticals-content.md) for methodology.
+
+```
+=== podawaa2024 (213,491 records) ===
+Records mentioning any industry-vertical term: 14,533 (6.807%)
+Distinct underlying text values: 13,757
+    retail / e-commerce                      5,308
+    energy / climate / ESG / sustainability  3,364
+    manufacturing / supply chain             2,620
+    healthcare / hospital                    2,310
+    insurance                                1,227
+    real estate                              949
+
+=== HyperClapper (49,369 records) ===
+Records mentioning any industry-vertical term: 5,038 (10.205%)
+Distinct underlying text values: 3,439
+    retail / e-commerce                      3,071
+    healthcare / hospital                    754
+    manufacturing / supply chain             577
+    real estate                              348
+    energy / climate / ESG / sustainability  338
+    insurance                                275
+
+=== LinkBoost-2025 (77,969 records) ===
+Records mentioning any industry-vertical term: 4,742 (6.082%)
+Distinct underlying text values: 263
+  ^ NOTE: distinct-string count (263) is below the match count (4,742) without one string dominating -- worth a manual check.
+    healthcare / hospital                    1,745
+    manufacturing / supply chain             848
+    energy / climate / ESG / sustainability  772
+    retail / e-commerce                      770
+    insurance                                752
+    real estate                              633
+
+```
+
+## Geographic content mentions
+
+See [geographic-mentions-content.md](geographic-mentions-content.md) for methodology.
+
+```
+=== podawaa2024 (213,491 records) ===
+Records mentioning any tracked country/region: 6,421 (3.008%)
+Distinct underlying text values: 6,024
+    Europe                       2,800
+    India                        1,731
+    Africa                       1,099
+    China                        559
+    United States / America      357
+    Middle East                  332
+    United Kingdom / Britain     103
+
+=== HyperClapper (49,369 records) ===
+Records mentioning any tracked country/region: 3,180 (6.441%)
+Distinct underlying text values: 2,847
+    India                        2,023
+    Europe                       850
+    China                        228
+    Africa                       87
+    Middle East                  86
+    United States / America      86
+    United Kingdom / Britain     19
+
+=== LinkBoost-2025 (77,969 records) ===
+Records mentioning any tracked country/region: 2,190 (2.809%)
+Distinct underlying text values: 154
+  ^ NOTE: distinct-string count (154) is below the match count (2,190) without one string dominating -- worth a manual check.
+    India                        1,525
+    China                        306
+    Europe                       231
+    Africa                       131
+    United Kingdom / Britain     51
+    Middle East                  40
+    United States / America      8
+
+```
