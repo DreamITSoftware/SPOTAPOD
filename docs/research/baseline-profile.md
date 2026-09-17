@@ -1720,3 +1720,73 @@ Distinct underlying text values: 204
     real talk                        25
 
 ```
+
+## Diabetes content
+
+See [diabetes-content.md](diabetes-content.md) for methodology and why the LinkBoost-2025 duplicate turned out to be genuine content.
+
+```
+=== podawaa2024 (213,491 records) ===
+Records mentioning any diabetes-related term: 126 (0.0590%)
+Distinct underlying text values: 115
+    diabetes                 85
+    insulin                  28
+    diabetic                 17
+    blood sugar              12
+    type 2 diabetes          6
+    type 1 diabetes          6
+    prediabetes              1
+
+=== HyperClapper (49,369 records) ===
+Records mentioning any diabetes-related term: 41 (0.0830%)
+Distinct underlying text values: 36
+    diabetes                 29
+    blood sugar              23
+    insulin                  16
+    type 2 diabetes          10
+    diabetic                 1
+    glucose monitoring       1
+
+=== LinkBoost-2025 (77,969 records) ===
+Records mentioning any diabetes-related term: 172 (0.2206%)
+Distinct underlying text values: 15
+  ^ NOTE: top repeated string = 40 records (23.3%). Corrected estimate: 133. Checking the underlying text is recommended before assuming this is noise -- it may be genuine content boosted by the platform's structure rather than a false positive; see docs/research/diabetes-content.md for this scan's specific finding.
+    blood sugar              105
+    insulin                  63
+    diabetes                 35
+    type 2 diabetes          17
+    prediabetes              17
+    diabetic                 4
+
+```
+
+## LinkedIn algorithm mentions
+
+See [algorithm-mention-content.md](algorithm-mention-content.md) for methodology; directly relevant to this project's own subject matter.
+
+```
+=== podawaa2024 (213,491 records) ===
+Records mentioning any algorithm term: 543 (0.254%)
+Distinct underlying text values: 512
+    algorithm (generic, any platform)    543
+    LinkedIn algorithm (specific)        67
+    algorithm change/update              28
+    algorithm favors/rewards             4
+    game the algorithm                   2
+
+=== HyperClapper (49,369 records) ===
+Records mentioning any algorithm term: 321 (0.650%)
+Distinct underlying text values: 306
+    algorithm (generic, any platform)    321
+    algorithm favors/rewards             20
+    algorithm change/update              12
+    LinkedIn algorithm (specific)        11
+
+=== LinkBoost-2025 (77,969 records) ===
+Records mentioning any algorithm term: 594 (0.762%)
+Distinct underlying text values: 37
+  ^ NOTE: distinct-string count (37) is below the match count (594) without one string dominating -- worth a manual check if this pattern is unexpected for the dataset.
+    algorithm (generic, any platform)    594
+    algorithm favors/rewards             70
+
+```
