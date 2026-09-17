@@ -34,7 +34,7 @@ an earlier version of this class of scan would have.
 
 ## Results (VERIFIED - reproducible via the script)
 
-| Term | podawaa2024 | HyperClaper | LinkBoost-2025 |
+| Term | podawaa2024 | HyperClapper | LinkBoost-2025 |
 |---|---|---|---|
 | Pharma / pharmaceutical(s) | 359 | 80 | 90 |
 | Biotech | 239 | 48 | 80 |
@@ -51,7 +51,7 @@ pharmaceutical-industry content.
 
 ## Reading these numbers
 
-podawaa2024 and HyperClaper show genuine, broadly distributed pharma/
+podawaa2024 and HyperClapper show genuine, broadly distributed pharma/
 biotech content (582 and 144 distinct posts respectively, no dominant
 cluster). LinkBoost-2025's higher overall rate is real but
 mischaracterized by the raw term breakdown alone - once the FDA/import-

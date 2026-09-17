@@ -28,7 +28,7 @@ meaningful number.
 | Dataset | Records | % |
 |---|---|---|
 | podawaa2024 | 459 | 0.22% |
-| HyperClaper | 168 | 0.34% |
+| HyperClapper | 168 | 0.34% |
 | LinkBoost-2025 | 447 | 0.57% |
 
 Top term in every dataset is "lawyer," followed by "attorney" and
@@ -39,12 +39,12 @@ Top term in every dataset is "lawyer," followed by "attorney" and
 | Dataset | Records | % |
 |---|---|---|
 | podawaa2024 | 3,064 | 1.44% |
-| HyperClaper | 1,235 | 2.50% |
+| HyperClapper | 1,235 | 2.50% |
 | LinkBoost-2025 | 3,473 | 4.45% |
 
 "Compliance" alone accounts for roughly half of all broader-category
 hits in every dataset (1,556 of 3,064 in podawaa2024; 712 of 1,235 in
-HyperClaper; 1,794 of 3,473 in LinkBoost-2025).
+HyperClapper; 1,794 of 3,473 in LinkBoost-2025).
 
 ## Reading these numbers
 

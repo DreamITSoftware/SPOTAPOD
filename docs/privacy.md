@@ -22,7 +22,7 @@ who did not consent to appearing in either dataset or in this repo.
 | `Content` / `post_title` / `Title` / `Comment` | All three | Not PII on its own in most cases, but first-person posts/comments can incidentally disclose health, family, immigration, or other sensitive details about the author or people they mention |
 
 Taken together, `HyperClaper.json` and `LinkBoost-2025.json` are enough to
-fully de-anonymize the records in them — real names and, for HyperClaper, a
+fully de-anonymize the records in them — real names and, for HyperClapper, a
 photo — no inference required. `podawaa2024.json` is one step removed (a
 handle, not a name or photo) but a handle is still a direct identifier: it
 resolves to `linkedin.com/in/<handle>` and the real person behind it.

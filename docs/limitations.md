@@ -23,7 +23,7 @@ knowingly used pod tooling:
   repo should be read as establishing that any account meets that legal
   standard.
 - **Zero-views and low-denominator artifacts are common and mundane.** 44.3%
-  of `podawaa2024` records show `Views = 0`; 98.0% of `HyperClaper` records
+  of `podawaa2024` records show `Views = 0`; 98.0% of `HyperClapper` records
   show zero impressions. Some of this may reflect real pod-driven anomalies,
   but a large share is almost certainly a tracking/collection gap — LinkedIn's
   own view-count rollout was inconsistent over the 2018–2024 window this data

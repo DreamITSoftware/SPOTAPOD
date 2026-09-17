@@ -33,7 +33,7 @@ for it here.
 
 | Dataset | Records with a location/country value | Top entries |
 |---|---|---|
-| HyperClaper | 36,301 / 49,369 (73.5%) | Delhi, India (10.7%); Gurugram, India (6.2%); United Kingdom (4.1%); Bengaluru, India (2.7%); several more Indian cities and US/UK metros |
+| HyperClapper | 36,301 / 49,369 (73.5%) | Delhi, India (10.7%); Gurugram, India (6.2%); United Kingdom (4.1%); Bengaluru, India (2.7%); several more Indian cities and US/UK metros |
 | LinkBoost-2025 | 47,173 / 77,969 (60.5%) | United States (21.8%); India (15.6%); United Kingdom (8.0%); Canada (3.8%); Serbia (3.1%) |
 
 Full country/location breakdowns are in `docs/research/baseline-profile.md` (this
@@ -46,7 +46,7 @@ keyword-based category patterns (marketing, sales, technology, healthcare,
 finance, education, executive/leadership/coaching, HR, design, legal). A
 record can match more than one category or none.
 
-| Category | HyperClaper (% of records with text) | LinkBoost-2025 (% of records with text) |
+| Category | HyperClapper (% of records with text) | LinkBoost-2025 (% of records with text) |
 |---|---|---|
 | marketing_content_creation | 33.4% | 21.8% |
 | sales_business_development | 11.8% | 2.7% |

@@ -43,7 +43,7 @@ than assuming inflation automatically means noise.
 | Dataset | Narrow | % | Broad | % |
 |---|---|---|---|---|
 | podawaa2024 | 65 | 0.030% | 143 | 0.067% |
-| HyperClaper | 9 | 0.018% | 34 | 0.069% |
+| HyperClapper | 9 | 0.018% | 34 | 0.069% |
 | LinkBoost-2025 | 213 raw / ~135 corrected | 0.273% raw | 213 | 0.273% |
 
 ## What stands out

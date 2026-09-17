@@ -137,7 +137,7 @@ def main():
     elif args.dataset == "hyperclapper":
         with open(args.path, "r", encoding="utf-8") as f:
             posts = json.load(f)["data"]["post"]
-        scan([p.get("post_title") for p in posts], "HyperClaper", len(posts))
+        scan([p.get("post_title") for p in posts], "HyperClapper", len(posts))
     elif args.dataset == "linkboost":
         with open(args.path, "r", encoding="utf-8") as f:
             recs = json.load(f)

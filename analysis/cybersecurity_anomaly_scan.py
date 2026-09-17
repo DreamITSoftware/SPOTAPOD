@@ -81,7 +81,7 @@ def scan_hyperclapper(path):
     r_all, z_all, n_all = rates(posts)
     r_cy, z_cy, n_cy = rates(cyber_posts)
 
-    print(f"HyperClaper ({n:,} total records)")
+    print(f"HyperClapper ({n:,} total records)")
     print(f"Cybersecurity-related posts: {cyber_n:,} ({cyber_n/n*100:.3f}%)")
     print()
     print("Anomaly indicator                     All posts (baseline)   Cybersecurity posts only")

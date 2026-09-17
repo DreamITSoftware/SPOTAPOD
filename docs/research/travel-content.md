@@ -37,7 +37,7 @@ warning when scanning podawaa2024 for exactly this reason.
 
 ### Travel agencies/platforms (raw counts; see corrections above for LinkBoost-2025)
 
-| Platform | podawaa2024 | HyperClaper | LinkBoost-2025 (raw / corrected) |
+| Platform | podawaa2024 | HyperClapper | LinkBoost-2025 (raw / corrected) |
 |---|---|---|---|
 | Airbnb | 261 (0.12%) | 149 (0.30%) | 189 / ~142 |
 | Expedia | 16 | 17 | 48 / ~2 |
@@ -53,7 +53,7 @@ signal across all three datasets.
 
 ### Destinations (raw counts; podawaa2024's France/Paris excluded per the note above; LinkBoost-2025 needs the same correction as the agencies table)
 
-| Destination | podawaa2024 | HyperClaper | LinkBoost-2025 (raw) |
+| Destination | podawaa2024 | HyperClapper | LinkBoost-2025 (raw) |
 |---|---|---|---|
 | Dubai | 754 | 219 | 111 |
 | London | 844 | 161 | 251 |

@@ -12,12 +12,12 @@ percentages only, no matched text or record identified.
 | Dataset | Records scanned | Book-promotion matches |
 |---|---|---|
 | podawaa2024 | 213,491 | 559 (0.26%) |
-| HyperClaper | 49,369 | 478 (0.97%) |
+| HyperClapper | 49,369 | 478 (0.97%) |
 | LinkBoost-2025 | 77,969 | 767 (0.98%) |
 
 ### Genre breakdown (% of that dataset's book-promotion records; a record can match more than one genre)
 
-| Genre | podawaa2024 | HyperClaper | LinkBoost-2025 |
+| Genre | podawaa2024 | HyperClapper | LinkBoost-2025 |
 |---|---|---|---|
 | business_entrepreneurship | 35.2% | 49.2% | 32.5% |
 | writing_craft | 22.0% | 51.0% | 24.4% |

@@ -9,10 +9,10 @@ author, or matched text ever printed.
 ## The safeguard this script has that earlier ones didn't
 
 A first, manual pass at this question found a 1.38% "any mention" rate
-in HyperClaper's headline field — the highest of any field checked —
+in HyperClapper's headline field — the highest of any field checked —
 which looked like a real, notable signal. It wasn't. Checking the
 underlying text showed all but 23 of those 681 matching records shared
-the exact same headline, repeated 658 times, because HyperClaper's
+the exact same headline, repeated 658 times, because HyperClapper's
 structure logs one row per reciprocal-engagement action and captures
 that account's headline snapshot every time. The corrected rate, once
 that single repeated string is treated as one occurrence rather than
@@ -31,19 +31,19 @@ LinkBoost-2025's Title and Occupation fields.
 | Field | Raw "any mention" | Distinct strings | Dominant string | Corrected rate |
 |---|---|---|---|---|
 | podawaa2024 — Content | 657 (0.308%) | 616 | none flagged | 0.308% (no correction needed) |
-| HyperClaper — post_title | 142 (0.288%) | 141 | none flagged | 0.288% (no correction needed) |
-| HyperClaper — headline | 681 (1.379%) | 5 | 658 records (96.6%) | **0.049%** |
+| HyperClapper — post_title | 142 (0.288%) | 141 | none flagged | 0.288% (no correction needed) |
+| HyperClapper — headline | 681 (1.379%) | 5 | 658 records (96.6%) | **0.049%** |
 | LinkBoost-2025 — Title | 413 (0.530%) | 21 | 99 records (24.0%) | **0.404%** |
 | LinkBoost-2025 — Occupation | 120 (0.154%) | 3 | 67 records (55.8%) | **0.069%** |
 
-Only podawaa2024's Content field and HyperClaper's post_title field have
+Only podawaa2024's Content field and HyperClapper's post_title field have
 enough distinct strings behind their raw counts (616 of 657, and 141 of
 142) to trust the raw percentage directly. Every other field needed the
 correction shown above.
 
 ### Term breakdown (raw, pre-correction — see table above for which fields need adjusting)
 
-| Term | podawaa2024 | HyperClaper (posts) | HyperClaper (headline) | LinkBoost-2025 (Title) | LinkBoost-2025 (Occupation) |
+| Term | podawaa2024 | HyperClapper (posts) | HyperClapper (headline) | LinkBoost-2025 (Title) | LinkBoost-2025 (Occupation) |
 |---|---|---|---|---|---|
 | Charity / charitable | 279 | 77 | 658† | 248† | 29 |
 | Nonprofit / non-profit | 221 | 45 | 10 | 51 | — |

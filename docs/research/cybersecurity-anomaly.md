@@ -28,7 +28,7 @@ Cybersecurity-related posts: 2,779 of 213,491 (1.30%)
 | Likes exceed views | 36.51% | **41.02%** |
 | Like/view ratio exceeds 15% | 11.78% | 14.18% |
 
-### HyperClaper
+### HyperClapper
 
 Cybersecurity-related posts: 4,487 of 49,369 (9.09%)
 
@@ -41,12 +41,12 @@ Cybersecurity-related posts: 4,487 of 49,369 (9.09%)
 
 Cybersecurity content shows a higher anomaly rate than the dataset
 baseline on three of the four measures checked, most notably the
-reciprocal like+comment flag in HyperClaper (84.2% vs. 68.6% baseline)
+reciprocal like+comment flag in HyperClapper (84.2% vs. 68.6% baseline)
 - a meaningfully elevated rate, and a genuine, reproducible, aggregate
 finding.
 
-Cybersecurity content also makes up a much larger share of HyperClaper
-(9.09%) than of podawaa2024 (1.30%), consistent with HyperClaper's
+Cybersecurity content also makes up a much larger share of HyperClapper
+(9.09%) than of podawaa2024 (1.30%), consistent with HyperClapper's
 broader skew toward technology/AI content already documented in
 [topic-taxonomy.md](topic-taxonomy.md) (`technology_ai` at 27.97% there
 vs. 16.39% in podawaa2024).

@@ -5,7 +5,7 @@
 ### Added
 - `analysis/blockchain_crypto_scan.py` and
   `docs/research/blockchain-crypto-content.md` - blockchain/crypto term
-  counts. podawaa2024's rate (2.93%) is roughly 4x HyperClaper's and
+  counts. podawaa2024's rate (2.93%) is roughly 4x HyperClapper's and
   2.5x LinkBoost-2025's, and is the only dataset where "blockchain"
   outranks general "crypto" phrasing. Documents a plausible,
   INFERENCE-tier cross-dataset pattern: since podawaa2024 is 2024 data
@@ -16,7 +16,7 @@
 - `analysis/toplist_content_scan.py` and `docs/research/toplist-content.md`
   - "Top 10"/listicle content counts. One of the larger content
   categories found across this repo's niche-topic scans (1.7-3.9% "any
-  mention"). HyperClaper and LinkBoost-2025 both run meaningfully
+  mention"). HyperClapper and LinkBoost-2025 both run meaningfully
   higher than podawaa2024, consistent with their broader lean toward
   templated content documented elsewhere in this repo, and the two
   datasets show a real style difference (numbered-listicle phrasing vs.
@@ -76,7 +76,7 @@
   cybersecurity-related content against the repo's existing
   engagement-anomaly indicators (zero views with likes, likes
   exceeding views, extreme like/view ratio, reciprocal like+comment
-  pairing). podawaa2024 and HyperClaper only; LinkBoost-2025 has no
+  pairing). podawaa2024 and HyperClapper only; LinkBoost-2025 has no
   per-record engagement fields to cross-reference. Cybersecurity
   content shows an elevated anomaly rate on 3 of 4 measures checked.
   Explicit in both the script and the doc that a category-level
@@ -98,15 +98,15 @@
   than genuine distinct signal. The script now reports distinct
   underlying text values alongside every raw count and flags any field
   where a single string accounts for 20%+ of matches. Caught three real
-  instances on first run, including HyperClaper's headline field, which
+  instances on first run, including HyperClapper's headline field, which
   looked like the highest nonprofit-mention rate of any field (1.38%)
   before correction and the lowest (0.05%) after.
 - `analysis/speaker_thought_leader_scan.py` and
   `docs/research/speaker-thought-leader.md` - self-described
-  speaker/thought-leader prevalence (HyperClaper and LinkBoost-2025
+  speaker/thought-leader prevalence (HyperClapper and LinkBoost-2025
   only; podawaa2024 has no occupation field). Flags that "thought
   leader" mentions are almost entirely a subset of "speaker" mentions
-  (100% overlap in HyperClaper, 97.3% in LinkBoost-2025) rather than
+  (100% overlap in HyperClapper, 97.3% in LinkBoost-2025) rather than
   two independent signals, consistent with one recurring bio template.
 - `analysis/law_content_scan.py` and `docs/research/law-content.md` -
   narrow (legal-profession-specific: lawyer, attorney, law firm,
@@ -121,7 +121,7 @@
   pattern matching the common word "time" caused multi-minute runtimes)
   and how the shipped patterns avoid it. Corporations are mentioned far
   more than any other category (13–23% of records); IBM's 8.67% share
-  in HyperClaper specifically (vs. 0.18–0.33% elsewhere) is flagged as
+  in HyperClapper specifically (vs. 0.18–0.33% elsewhere) is flagged as
   plausibly, not confirmedly, tied to that dataset's elevated
   free-certification content share.
 - `outreach/` — new top-level folder for finished, aggregate-only
@@ -134,7 +134,7 @@
 - `analysis/simple_title_aggregate.py` and `docs/research/simple-titles.md`
   — aggregate counts of simple, generic professional-title keywords
   (CEO, Founder, Coach, Marketer, etc.) found in stated occupation/
-  headline text, for HyperClaper and LinkBoost-2025 only (podawaa2024 has
+  headline text, for HyperClapper and LinkBoost-2025 only (podawaa2024 has
   no occupation-equivalent field). No name, handle, or verbatim headline/
   occupation sentence is ever printed.
 - `analysis/topic_taxonomy.py` and `docs/research/topic-taxonomy.md` —

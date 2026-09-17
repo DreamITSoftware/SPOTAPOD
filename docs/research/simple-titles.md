@@ -35,7 +35,7 @@ instead of post content.
 
 ## Results (VERIFIED - reproducible via the script)
 
-### HyperClaper (49,369 records; 24.0% have no headline text at all)
+### HyperClapper (49,369 records; 24.0% have no headline text at all)
 
 | Title | Count | % |
 |---|---|---|
@@ -84,7 +84,7 @@ instead of post content.
 ## Reading these numbers
 
 - **LinkBoost skews heavily toward Founder/Coach** (34.7% combined) versus
-  HyperClaper's lean toward Marketer/Founder (20.2% combined) -
+  HyperClapper's lean toward Marketer/Founder (20.2% combined) -
   consistent with the `leadership_coaching_motivation` topic-category
   finding in [topic-taxonomy.md](topic-taxonomy.md), where LinkBoost's
   18.91% far outpaces the ~6% seen in the other two files.

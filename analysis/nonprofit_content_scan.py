@@ -16,7 +16,7 @@ represent). A raw count much higher than its distinct-string count
 means a small number of templates or repeated profile snapshots are
 driving the number, not broad genuine signal -- exactly what happened
 when a first pass at this analysis reported a 1.38% "any mention" rate
-for HyperClaper's headline field that turned out to be one recurring
+for HyperClapper's headline field that turned out to be one recurring
 headline appearing 658 times, not 658 different people. The corrected
 rate, once that duplication is accounted for, is 0.05%.
 
@@ -107,7 +107,7 @@ def load_linkboost(path):
 
 
 LOADERS = {"podawaa": load_podawaa, "hyperclapper": load_hyperclapper, "linkboost": load_linkboost}
-LABELS = {"podawaa": "podawaa2024", "hyperclapper": "HyperClaper", "linkboost": "LinkBoost-2025"}
+LABELS = {"podawaa": "podawaa2024", "hyperclapper": "HyperClapper", "linkboost": "LinkBoost-2025"}
 
 
 def main():

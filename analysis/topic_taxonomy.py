@@ -102,7 +102,7 @@ def main():
 
     datasets = {
         "podawaa2024": load_podawaa(args.podawaa_path),
-        "HyperClaper": load_hyperclapper(args.hyperclapper_path),
+        "HyperClapper": load_hyperclapper(args.hyperclapper_path),
         "LinkBoost-2025": load_linkboost(args.linkboost_path),
     }
 

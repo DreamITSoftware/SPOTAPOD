@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "title": "HyperClaper",
+  "title": "HyperClapper",
   "description": "like_count, impression_count, comment_count, and followers are 'indicators of social media influence' under 16 CFR 465.1(j), governed by 16 CFR 465.8 (see docs/regulatory-context.md). This schema makes no legal determination about any record.",
   "type": "object",
   "required": ["data"],

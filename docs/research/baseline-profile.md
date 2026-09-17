@@ -511,48 +511,48 @@ per-dataset breakdown.
 ======================================================================
 TOPIC TAXONOMY — mutually exclusive categorization (aggregate only)
 ======================================================================
-Dataset sizes: podawaa2024=213,491, HyperClaper=49,369, LinkBoost-2025=77,969
+Dataset sizes: podawaa2024=213,491, HyperClapper=49,369, LinkBoost-2025=77,969
 Grand total records: 340,829
 
 career_job_search                 14,588  ( 4.28% of all records)
     podawaa2024            4,762  ( 2.23% of podawaa2024)
-    HyperClaper            6,871  (13.92% of HyperClaper)
+    HyperClapper            6,871  (13.92% of HyperClapper)
     LinkBoost-2025         2,955  ( 3.79% of LinkBoost-2025)
 book_writing_publishing            1,499  ( 0.44% of all records)
     podawaa2024              409  ( 0.19% of podawaa2024)
-    HyperClaper              450  ( 0.91% of HyperClaper)
+    HyperClapper              450  ( 0.91% of HyperClapper)
     LinkBoost-2025           640  ( 0.82% of LinkBoost-2025)
 education_certification            3,404  ( 1.00% of all records)
     podawaa2024            1,340  ( 0.63% of podawaa2024)
-    HyperClaper            1,536  ( 3.11% of HyperClaper)
+    HyperClapper            1,536  ( 3.11% of HyperClapper)
     LinkBoost-2025           528  ( 0.68% of LinkBoost-2025)
 technology_ai                     68,526  (20.11% of all records)
     podawaa2024           34,997  (16.39% of podawaa2024)
-    HyperClaper           13,810  (27.97% of HyperClaper)
+    HyperClapper           13,810  (27.97% of HyperClapper)
     LinkBoost-2025        19,719  (25.29% of LinkBoost-2025)
 finance_investing                 29,638  ( 8.70% of all records)
     podawaa2024           19,604  ( 9.18% of podawaa2024)
-    HyperClaper            2,903  ( 5.88% of HyperClaper)
+    HyperClapper            2,903  ( 5.88% of HyperClapper)
     LinkBoost-2025         7,131  ( 9.15% of LinkBoost-2025)
 health_wellness_fitness            6,481  ( 1.90% of all records)
     podawaa2024            2,938  ( 1.38% of podawaa2024)
-    HyperClaper              862  ( 1.75% of HyperClaper)
+    HyperClapper              862  ( 1.75% of HyperClapper)
     LinkBoost-2025         2,681  ( 3.44% of LinkBoost-2025)
 leadership_coaching_motivation    30,907  ( 9.07% of all records)
     podawaa2024           13,127  ( 6.15% of podawaa2024)
-    HyperClaper            3,039  ( 6.16% of HyperClaper)
+    HyperClapper            3,039  ( 6.16% of HyperClapper)
     LinkBoost-2025        14,741  (18.91% of LinkBoost-2025)
 marketing_sales_branding          20,491  ( 6.01% of all records)
     podawaa2024           14,919  ( 6.99% of podawaa2024)
-    HyperClaper            1,546  ( 3.13% of HyperClaper)
+    HyperClapper            1,546  ( 3.13% of HyperClapper)
     LinkBoost-2025         4,026  ( 5.16% of LinkBoost-2025)
 business_entrepreneurship         18,853  ( 5.53% of all records)
     podawaa2024           13,650  ( 6.39% of podawaa2024)
-    HyperClaper            1,600  ( 3.24% of HyperClaper)
+    HyperClapper            1,600  ( 3.24% of HyperClapper)
     LinkBoost-2025         3,603  ( 4.62% of LinkBoost-2025)
 uncategorized_other              146,442  (42.97% of all records)
     podawaa2024          107,745  (50.47% of podawaa2024)
-    HyperClaper           16,752  (33.93% of HyperClaper)
+    HyperClapper           16,752  (33.93% of HyperClapper)
     LinkBoost-2025        21,945  (28.15% of LinkBoost-2025)
 
 Reminder: keyword-pattern SIGNALS, not verified topic labels. No
@@ -809,7 +809,7 @@ Records mentioning any tracked entity: 27,750 (13.00%)
   Oracle                     19 (0.009%)
   Ernst & Young (EY)         11 (0.005%)
 
-=== HyperClaper — news_outlets (49,369 records, 22.4s) ===
+=== HyperClapper — news_outlets (49,369 records, 22.4s) ===
 Records mentioning any tracked entity: 294 (0.60%)
   Forbes                     86 (0.174%)
   Bloomberg                  33 (0.067%)
@@ -834,7 +834,7 @@ Records mentioning any tracked entity: 294 (0.60%)
   Al Jazeera                 1 (0.002%)
   MSNBC                      1 (0.002%)
 
-=== HyperClaper — magazines (49,369 records, 16.3s) ===
+=== HyperClapper — magazines (49,369 records, 16.3s) ===
 Records mentioning any tracked entity: 385 (0.78%)
   Fortune                    128 (0.259%)
   Wired                      105 (0.213%)
@@ -854,7 +854,7 @@ Records mentioning any tracked entity: 385 (0.78%)
   Bloomberg Businessweek     1 (0.002%)
   Entrepreneur Magazine      1 (0.002%)
 
-=== HyperClaper — tv_streaming (49,369 records, 19.2s) ===
+=== HyperClapper — tv_streaming (49,369 records, 19.2s) ===
 Records mentioning any tracked entity: 817 (1.65%)
   YouTube                    492 (0.997%)
   TikTok                     208 (0.421%)
@@ -872,7 +872,7 @@ Records mentioning any tracked entity: 817 (1.65%)
   Al Jazeera                 1 (0.002%)
   MSNBC                      1 (0.002%)
 
-=== HyperClaper — corporations (49,369 records, 28.4s) ===
+=== HyperClapper — corporations (49,369 records, 28.4s) ===
 Records mentioning any tracked entity: 11,448 (23.19%)
   Google                     6,546 (13.259%)
   LinkedIn                   5,064 (10.257%)
@@ -1015,7 +1015,7 @@ BROADER (incl. legislation/compliance/IP/etc.): 3,064 (1.435%)
     bar exam                     2 (0.001%)
     paralegal                    2 (0.001%)
 
-=== HyperClaper (49,369 records, 23.5s) ===
+=== HyperClapper (49,369 records, 23.5s) ===
 NARROW (legal profession specific): 168 (0.340%)
     lawyer                       95 (0.192%)
     attorney                     39 (0.079%)
@@ -1113,7 +1113,7 @@ Distinct underlying text values among those:   616
     501(c)(3)                        10 (0.005%)
 
 ============================================================
-HyperClaper — NONPROFIT-RELATED CONTENT
+HyperClapper — NONPROFIT-RELATED CONTENT
 ============================================================
 --- post_title (49,369 records) ---
 Records mentioning any nonprofit-related term: 142 (0.288%)
@@ -1176,7 +1176,7 @@ Distinct underlying text values: 6,747
     startup funding                        18 (0.008%)
     raised a round / raised funding        4 (0.002%)
 
-=== HyperClaper (49,369 records) ===
+=== HyperClapper (49,369 records) ===
 Records mentioning investment/VC terms: 2,253 (4.564%)
 Distinct underlying text values: 2,183
     investment / investing                 1,233 (2.498%)
@@ -1221,7 +1221,7 @@ Zero views with likes present            35.3%                  39.9%
 Likes exceed views                      36.51%                41.02%
 Like/view ratio exceeds 15%             11.78%                14.18%
 
-HyperClaper (49,369 total records)
+HyperClapper (49,369 total records)
 Cybersecurity-related posts: 4,487 (9.089%)
 
 Anomaly indicator                     All posts (baseline)   Cybersecurity posts only
@@ -1276,7 +1276,7 @@ Destinations:
   duplicate-string check above, since the posts are genuinely distinct.
   See docs/research/travel-content.md.
 
-=== HyperClaper (49,369 records) ===
+=== HyperClapper (49,369 records) ===
 Travel agencies/platforms:
     Airbnb                       149 (0.3018%)
     Expedia                      17 (0.0344%)
@@ -1372,7 +1372,7 @@ Distinct underlying text values: 101
     homeland security                  4
     national defense                   3
 
-=== HyperClaper (49,369 records) ===
+=== HyperClapper (49,369 records) ===
 Records mentioning any national-security term: 40 (0.0810%)
 Distinct underlying text values: 39
     national security                  31
@@ -1400,7 +1400,7 @@ NARROW (homeless/homelessness, unhoused, housing insecurity, homeless services):
   Distinct underlying text values: 61
 BROAD (narrow + affordable housing + bare "shelter", noisier): 143 (0.0670%)
 
-=== HyperClaper (49,369 records) ===
+=== HyperClapper (49,369 records) ===
 NARROW (homeless/homelessness, unhoused, housing insecurity, homeless services): 9 (0.0182%)
   Distinct underlying text values: 9
 BROAD (narrow + affordable housing + bare "shelter", noisier): 34 (0.0689%)
@@ -1430,7 +1430,7 @@ Distinct underlying text values: 582
     big pharma                       8
     drug company/companies           3
 
-=== HyperClaper (49,369 records) ===
+=== HyperClapper (49,369 records) ===
 Records mentioning any pharma/biotech term: 146 (0.2957%)
 Distinct underlying text values: 144
     pharma / pharmaceutical(s)       80
@@ -1468,7 +1468,7 @@ Distinct underlying text values: 182
     Democrat(s) / Democratic Party     11
     libertarian                        3
 
-=== HyperClaper (49,369 records) ===
+=== HyperClapper (49,369 records) ===
 Any political-term mention: 147 (0.2978%)
 Distinct underlying text values: 144
     Trump (Donald/President)           136
@@ -1502,7 +1502,7 @@ Distinct underlying text values: 14
     cancer immunotherapy               2
     CAR-T (cell therapy, strict)       1
 
-=== HyperClaper (49,369 records) ===
+=== HyperClapper (49,369 records) ===
 Records mentioning any immunotherapy-related term: 0 (0.00000%)
 Distinct underlying text values: 0
 
@@ -1516,7 +1516,7 @@ Distinct underlying text values: 1
 
 ## "Top list" / listicle content
 
-See [toplist-content.md](toplist-content.md) for methodology and the podawaa2024/HyperClaper style comparison.
+See [toplist-content.md](toplist-content.md) for methodology and the podawaa2024/HyperClapper style comparison.
 
 ```
 === podawaa2024 (213,491 records) ===
@@ -1529,7 +1529,7 @@ Distinct underlying text values: 3,427
     ultimate guide                     49
     must-know                          20
 
-=== HyperClaper (49,369 records) ===
+=== HyperClapper (49,369 records) ===
 Records mentioning any top-list/listicle term: 1,784 (3.614%)
 Distinct underlying text values: 1,188
     Top N (Top 5/10/etc.)              1,258
@@ -1569,7 +1569,7 @@ Distinct underlying text values: 5,925
     Ethereum                     515
     altcoin                      82
 
-=== HyperClaper (49,369 records) ===
+=== HyperClapper (49,369 records) ===
 Records mentioning any blockchain/crypto term: 382 (0.774%)
 Distinct underlying text values: 375
     crypto / cryptocurrency      196
