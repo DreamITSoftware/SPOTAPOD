@@ -1936,3 +1936,49 @@ Distinct underlying text values: 154
     United States / America      8
 
 ```
+
+## Cross-dataset account overlap (structural analysis, hashed identifiers only)
+
+See [cross-dataset-account-overlap.md](cross-dataset-account-overlap.md) for methodology.
+
+```
+============================================================
+CROSS-DATASET ACCOUNT OVERLAP (hashed identifiers only)
+============================================================
+HyperClapper distinct hashed accounts:   702
+LinkBoost-2025 distinct hashed accounts: 414
+Overlapping hashed accounts:             0
+Overlap as % of HyperClapper accounts:   0.00%
+Overlap as % of LinkBoost-2025 accounts: 0.00%
+
+No account identifier, overlapping or otherwise, is ever printed by
+this script -- only aggregate set sizes and the overlap count.
+```
+
+## Posting velocity (structural analysis, anonymous rank only)
+
+See [posting-velocity.md](posting-velocity.md) for methodology and why this finds a different anomaly signature than simple timing regularity.
+
+```
+======================================================================
+POSTING VELOCITY -- top-volume HyperClapper accounts (anonymous rank only)
+======================================================================
+Total accounts with usable timestamps: 702
+
+Rank      Posts   Active days   Posts/day   Interval CV%  
+account_1  1138    310.0         3.67        567.2         
+account_2  1043    712.6         1.46        254.7         
+account_3  1039    378.0         2.75        562.6         
+account_4  976     310.4         3.14        99.4          
+account_5  801     309.2         2.59        799.0         
+account_6  758     273.0         2.78        85.8          
+account_7  697     263.0         2.65        285.8         
+account_8  658     528.3         1.25        184.2         
+account_9  652     235.8         2.76        123.5         
+account_10 651     174.0         3.74        91.5          
+
+Dataset-wide date range: 2022-07-08 to 2026-07-02 (1,455 days)
+
+No account hash, handle, or other identifier is ever printed by this
+script -- accounts are reported only by anonymous volume rank.
+```
