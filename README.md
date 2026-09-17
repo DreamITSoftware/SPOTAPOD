@@ -350,6 +350,26 @@ python3 analysis/algorithm_mention_scan.py podawaa /path/to/podawaa2024.json
 python3 analysis/algorithm_mention_scan.py hyperclapper /path/to/HyperClaper.json
 python3 analysis/algorithm_mention_scan.py linkboost /path/to/LinkBoost-2025.json
 
+# Career transitions (layoffs, remote work, burnout)
+python3 analysis/career_transitions_scan.py podawaa /path/to/podawaa2024.json
+python3 analysis/career_transitions_scan.py hyperclapper /path/to/HyperClaper.json
+python3 analysis/career_transitions_scan.py linkboost /path/to/LinkBoost-2025.json
+
+# Social proof and credibility signaling
+python3 analysis/social_proof_scan.py podawaa /path/to/podawaa2024.json
+python3 analysis/social_proof_scan.py hyperclapper /path/to/HyperClaper.json
+python3 analysis/social_proof_scan.py linkboost /path/to/LinkBoost-2025.json
+
+# Industry verticals
+python3 analysis/industry_verticals_scan.py podawaa /path/to/podawaa2024.json
+python3 analysis/industry_verticals_scan.py hyperclapper /path/to/HyperClaper.json
+python3 analysis/industry_verticals_scan.py linkboost /path/to/LinkBoost-2025.json
+
+# Geographic content mentions
+python3 analysis/geographic_mentions_scan.py podawaa /path/to/podawaa2024.json
+python3 analysis/geographic_mentions_scan.py hyperclapper /path/to/HyperClaper.json
+python3 analysis/geographic_mentions_scan.py linkboost /path/to/LinkBoost-2025.json
+
 # Regenerate every chart in figures/
 python3 figures/generate_figures.py /path/to/podawaa2024.json /path/to/HyperClaper.json --linkboost-path /path/to/LinkBoost-2025.json --outdir figures
 ```
@@ -433,6 +453,10 @@ no per-record data). See [explorer/README.md](explorer/README.md) for why.
 - [Authenticity content](docs/research/authenticity-content.md) — directly checks and refutes a specific "honesty irony" statistic from a disputed third-party document
 - [Diabetes content](docs/research/diabetes-content.md) — one of the smallest genuine categories found; a duplicate-string case that turned out to be real content, not noise
 - [LinkedIn algorithm mentions](docs/research/algorithm-mention-content.md) — directly relevant to this project's own subject matter; companion to algorithm-strategy-advice.md
+- [Career transitions](docs/research/career-transitions-content.md) — layoffs, remote work, burnout, and work-life balance mentions
+- [Social proof and credibility signaling](docs/research/social-proof-content.md) — award claims, follower milestones, and engagement bait; confirms the "Agree?" template across two datasets
+- [Industry verticals](docs/research/industry-verticals-content.md) — real estate, insurance, manufacturing, retail, healthcare, and energy/ESG; the largest niche-topic category found
+- [Geographic content mentions](docs/research/geographic-mentions-content.md) — countries/regions as content subject matter, cross-checked against account-location metadata
 - [Demographics](docs/research/demographics.md) — aggregate geography and stated-occupation-category breakdown, and why protected characteristics (race, gender, age, etc.) are never inferred
 - [Method](docs/method.md) — how each figure is computed
 - [Data dictionary](docs/data-dictionary.md) — same content as the [Data dictionary](#data-dictionary) section above, kept as a standalone page for cross-linking from other docs
@@ -745,6 +769,42 @@ genuinely about gaming/understanding the LinkedIn algorithm; podawaa2024
 is the only dataset with meaningful "LinkedIn algorithm" specificity
 rather than generic "algorithm" phrasing. Full results:
 [docs/research/algorithm-mention-content.md](docs/research/algorithm-mention-content.md).
+
+## Career transitions (layoffs, remote work, burnout)
+
+`analysis/career_transitions_scan.py` counts layoffs, remote work,
+return-to-office, burnout, and work-life balance mentions. HyperClapper
+has the highest rate (4.851%), driven mostly by "remote work"; LinkBoost-2025
+leans heavily on "burnout" specifically, connecting to the
+performed-vulnerability pattern in authenticity-content.md. Full
+results: [docs/research/career-transitions-content.md](docs/research/career-transitions-content.md).
+
+## Social proof and credibility signaling
+
+`analysis/social_proof_scan.py` counts award/recognition claims,
+follower milestones, engagement-bait formats, and anniversary posts -
+one of the most directly on-theme scans in this repo. Confirms the
+already-documented "Agree?" template (baseline-profile.md) appears in
+LinkBoost-2025 too (888 occurrences), not just podawaa2024. Full
+results: [docs/research/social-proof-content.md](docs/research/social-proof-content.md).
+
+## Industry verticals
+
+`analysis/industry_verticals_scan.py` counts real estate, insurance,
+manufacturing/supply chain, retail/e-commerce, healthcare, and
+energy/ESG mentions. HyperClapper's 10.2% "any mention" rate is the
+highest of any niche-topic scan in this repo. Retail/e-commerce leads
+in two datasets; healthcare leads in the third. Full results:
+[docs/research/industry-verticals-content.md](docs/research/industry-verticals-content.md).
+
+## Geographic content mentions
+
+`analysis/geographic_mentions_scan.py` counts countries/regions as
+content subject matter (distinct from account-location metadata in
+demographics.md). India leads two datasets, Europe leads the third;
+the pattern lines up with each dataset's own account-location skew
+already documented elsewhere in this repo. Full results:
+[docs/research/geographic-mentions-content.md](docs/research/geographic-mentions-content.md).
 
 ## Citations
 

@@ -3,6 +3,28 @@
 ## Unreleased
 
 ### Added
+- Four new scans covering topics suggested by post titles/content
+  review, each with the established duplicate-template safeguard:
+  - `analysis/career_transitions_scan.py` and
+    `docs/research/career-transitions-content.md` - layoffs, remote
+    work, RTO, burnout, and work-life balance. HyperClapper's rate
+    (4.851%) is highest, driven by "remote work."
+  - `analysis/social_proof_scan.py` and
+    `docs/research/social-proof-content.md` - awards/recognition,
+    follower milestones, engagement bait, and anniversary posts.
+    Confirms the already-documented "Agree?" template (3,918x in
+    podawaa2024) also appears in LinkBoost-2025 (888x), a genuine
+    cross-dataset pattern rather than a single-dataset artifact.
+  - `analysis/industry_verticals_scan.py` and
+    `docs/research/industry-verticals-content.md` - real estate,
+    insurance, manufacturing/supply chain, retail/e-commerce,
+    healthcare, and energy/ESG. HyperClapper's 10.2% "any mention"
+    rate is the highest of any niche-topic scan in this repo.
+  - `analysis/geographic_mentions_scan.py` and
+    `docs/research/geographic-mentions-content.md` - countries/regions
+    as content subject matter (distinct from the account-location
+    metadata in demographics.md). Confirms content subject matter
+    tracks each dataset's own account-location skew.
 - `analysis/algorithm_mention_scan.py` and
   `docs/research/algorithm-mention-content.md` - algorithm-related term
   counts, directly relevant to this project's own subject matter and a
