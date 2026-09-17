@@ -325,6 +325,21 @@ python3 analysis/blockchain_crypto_scan.py podawaa /path/to/podawaa2024.json
 python3 analysis/blockchain_crypto_scan.py hyperclapper /path/to/HyperClaper.json
 python3 analysis/blockchain_crypto_scan.py linkboost /path/to/LinkBoost-2025.json
 
+# University content, with cross-language false-positive fix
+python3 analysis/university_content_scan.py podawaa /path/to/podawaa2024.json
+python3 analysis/university_content_scan.py hyperclapper /path/to/HyperClaper.json
+python3 analysis/university_content_scan.py linkboost /path/to/LinkBoost-2025.json
+
+# Veteran / military content
+python3 analysis/veteran_content_scan.py podawaa /path/to/podawaa2024.json
+python3 analysis/veteran_content_scan.py hyperclapper /path/to/HyperClaper.json
+python3 analysis/veteran_content_scan.py linkboost /path/to/LinkBoost-2025.json
+
+# Authenticity content
+python3 analysis/authenticity_content_scan.py podawaa /path/to/podawaa2024.json
+python3 analysis/authenticity_content_scan.py hyperclapper /path/to/HyperClaper.json
+python3 analysis/authenticity_content_scan.py linkboost /path/to/LinkBoost-2025.json
+
 # Regenerate every chart in figures/
 python3 figures/generate_figures.py /path/to/podawaa2024.json /path/to/HyperClaper.json --linkboost-path /path/to/LinkBoost-2025.json --outdir figures
 ```
@@ -403,6 +418,9 @@ no per-record data). See [explorer/README.md](explorer/README.md) for why.
 - [Immunotherapy content](docs/research/immunotherapy-content.md) — documents two false positives (a "cart"/CAR-T acronym collision and an unrelated boosted post) that made this the smallest genuine content category found so far
 - ["Top list" / listicle content](docs/research/toplist-content.md) — one of the larger niche-topic categories found (1.7–3.9%), with a real style difference between datasets
 - [Blockchain / crypto content](docs/research/blockchain-crypto-content.md) — podawaa2024's rate is 4x HyperClapper's; a plausible (not confirmed) shift toward AI content over time
+- [University content](docs/research/university-content.md) — documents a cross-language false positive (German "mit" vs. the "MIT" acronym) caught via cross-dataset inconsistency rather than a within-dataset check
+- [Veteran / military content](docs/research/veteran-content.md) — includes genuine tribute content alongside a correction linking back to the already-documented campaign-post artifact
+- [Authenticity content](docs/research/authenticity-content.md) — directly checks and refutes a specific "honesty irony" statistic from a disputed third-party document
 - [Demographics](docs/research/demographics.md) — aggregate geography and stated-occupation-category breakdown, and why protected characteristics (race, gender, age, etc.) are never inferred
 - [Method](docs/method.md) — how each figure is computed
 - [Data dictionary](docs/data-dictionary.md) — same content as the [Data dictionary](#data-dictionary) section above, kept as a standalone page for cross-linking from other docs
@@ -654,6 +672,45 @@ attention from blockchain/Web3 toward AI over that period, alongside
 the technology_ai increase already documented in
 [docs/research/topic-taxonomy.md](docs/research/topic-taxonomy.md).
 Full results: [docs/research/blockchain-crypto-content.md](docs/research/blockchain-crypto-content.md).
+
+## University content
+
+`analysis/university_content_scan.py` counts university-related term
+mentions, and documents a real cross-language false positive: an
+earlier draft's case-insensitive "MIT" pattern also matched the German
+preposition "mit," inflating podawaa2024's MIT count by roughly 94%
+(2,601 raw vs. 148 genuine) and briefly making it look like the top
+term in that dataset alone -- an inconsistency with the other two
+datasets that prompted the fix. Corrected, "university/universities"
+leads in all three datasets, Harvard is the most-mentioned named
+institution everywhere, and LinkBoost-2025 leans unusually heavily on
+Cambridge relative to the other two. Full results:
+[docs/research/university-content.md](docs/research/university-content.md).
+
+## Veteran / military content
+
+`analysis/veteran_content_scan.py` counts veteran/military term
+mentions. LinkBoost-2025's duplicate-template warning fires again,
+tracing to the same repeated political-endorsement post already
+documented in decision-points.md and political-content.md (candidate
+not named). Unlike that artifact, the rest of LinkBoost-2025's veteran
+content is genuine - real, distinct tributes to Indian Armed Forces
+personnel. podawaa2024 shows the most diverse term usage, including the
+only meaningful "veteran-owned" business content across the three
+datasets. Full results:
+[docs/research/veteran-content.md](docs/research/veteran-content.md).
+
+## Authenticity content
+
+`analysis/authenticity_content_scan.py` counts authenticity-related
+term mentions, and directly checks a specific claim from a disputed
+third-party document referenced in this project's history: that
+HyperClapper had 5,193 "honest truth"/"real talk" posts (10.52%). The
+actual combined count is 61 - nowhere close. LinkBoost-2025 has the
+highest overall rate and the most genuinely distributed content;
+podawaa2024 leans on "transparent/transparency" while the other two
+lean on "authentic/authenticity." Full results:
+[docs/research/authenticity-content.md](docs/research/authenticity-content.md).
 
 ## Citations
 
