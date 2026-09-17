@@ -1,0 +1,29 @@
+cff-version: 1.2.0
+message: "If you use this repository, please cite it as below. See docs/provenance.md for how to cite the underlying datasets, which are separate from this repository."
+title: "SPOTAPOD Analysis Repository: aggregate-only companion analysis of engagement-pod datasets (independent project, not affiliated with PolymathWizard/SPOTAPOD)"
+type: software
+license: MIT
+date-released: 2026-09-12
+abstract: >
+  A de-identified, aggregate-only companion analysis of three
+  engagement-pod-adjacent datasets (podawaa2024, HyperClapper,
+  LinkBoost-2025), oriented around 16 CFR 465.8 ("Misuse of fake
+  indicators of social media influence"). No script or document in this
+  repository identifies an individual account, author, or record; all
+  reported figures are population-level statistics reproducible from the
+  checksummed source files. See README.md and docs/ for method, data
+  dictionary, limitations, privacy, provenance, and regulatory context.
+references:
+  - type: dataset
+    title: "LinkedIn posts using fake socials"
+    authors:
+      - name: "Daniel Hall"
+    repository: "https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/WD9AUR"
+    identifiers:
+      - type: doi
+        value: "10.7910/DVN/WD9AUR"
+    notes: >
+      Corresponds to podawaa2024.json in this repo (CORROBORATED via
+      matching sha256 — see docs/provenance.md). HyperClaper.json and
+      LinkBoost-2025.json are not part of this Dataverse record; see
+      docs/provenance.md for their reported, STATED sources.
