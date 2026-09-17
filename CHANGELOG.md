@@ -3,6 +3,22 @@
 ## Unreleased
 
 ### Added
+- `docs/unknowing-participant-impact.md` - a new foundational doc (not
+  a content-topic finding, alongside limitations.md and privacy.md)
+  addressing a distinction no other doc in this repo makes explicit:
+  knowing and unknowing participation in engagement-pod activity are
+  different situations with different harms, and this repo's data
+  cannot tell them apart. Traces this concretely through the actual
+  findings across the repo rather than as an abstract category -
+  baseline anomalies, posting velocity (ghostwritten-executive
+  accounts), repeated templates, real tribute/advocacy content caught
+  alongside a boosted political post, false-positive category
+  placement, and demographic aggregation - then works through five
+  concrete harms (self-deception about real reach, negligence-style
+  legal exposure, reputational exposure from an unexplainable signal,
+  non-consensual research inclusion, and possible unauthorized account
+  use), tying them to why this repo's privacy rules are binding rather
+  than optional.
 - Two structural analyses, different in kind from the content keyword
   scans elsewhere in this repo:
   - `analysis/cross_dataset_overlap_scan.py` and
