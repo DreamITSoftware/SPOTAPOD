@@ -3,6 +3,34 @@
 ## Unreleased
 
 ### Added
+- `analysis/authenticity_content_scan.py` and
+  `docs/research/authenticity-content.md` - authenticity-related term
+  counts. Directly checks a specific claim from a disputed third-party
+  document referenced in this project's history: that HyperClapper had
+  5,193 "honest truth"/"real talk" posts (10.52%). The actual combined
+  count is 61. This is consistent with a separately documented
+  discrepancy in the same document (a claimed 1,706 vs. an actual
+  533-806 occurrences of a resume-rewrite template).
+- `analysis/veteran_content_scan.py` and `docs/research/veteran-content.md`
+  - veteran/military term counts. LinkBoost-2025's duplicate-template
+  warning traces to the same repeated political-endorsement post
+  already documented in decision-points.md and political-content.md
+  (candidate not named). Unlike that artifact, the rest of
+  LinkBoost-2025's veteran content is genuine - real tributes to Indian
+  Armed Forces personnel. podawaa2024 has the most diverse term usage.
+  Bare "VA" deliberately excluded (collides with the Virginia state
+  abbreviation); only "Veterans Affairs"/"VA benefits"/"VA loan"/"VA
+  disability" are checked.
+- `analysis/university_content_scan.py` and
+  `docs/research/university-content.md` - university-related term
+  counts, documenting a real cross-language false positive: an earlier
+  case-insensitive "MIT" pattern also matched the German preposition
+  "mit," inflating podawaa2024's MIT count by roughly 94% (2,601 raw
+  vs. 148 genuine). Caught via cross-dataset inconsistency (one
+  dataset's top term didn't match the other two) rather than a
+  within-dataset duplicate-template or low-distinct-ratio check -
+  documented as a reminder that cross-dataset comparison is itself a
+  useful safeguard.
 - `analysis/blockchain_crypto_scan.py` and
   `docs/research/blockchain-crypto-content.md` - blockchain/crypto term
   counts. podawaa2024's rate (2.93%) is roughly 4x HyperClapper's and
