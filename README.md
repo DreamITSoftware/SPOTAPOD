@@ -315,6 +315,16 @@ python3 analysis/immunotherapy_content_scan.py podawaa /path/to/podawaa2024.json
 python3 analysis/immunotherapy_content_scan.py hyperclapper /path/to/HyperClaper.json
 python3 analysis/immunotherapy_content_scan.py linkboost /path/to/LinkBoost-2025.json
 
+# "Top list" / listicle content
+python3 analysis/toplist_content_scan.py podawaa /path/to/podawaa2024.json
+python3 analysis/toplist_content_scan.py hyperclapper /path/to/HyperClaper.json
+python3 analysis/toplist_content_scan.py linkboost /path/to/LinkBoost-2025.json
+
+# Blockchain / crypto content
+python3 analysis/blockchain_crypto_scan.py podawaa /path/to/podawaa2024.json
+python3 analysis/blockchain_crypto_scan.py hyperclapper /path/to/HyperClaper.json
+python3 analysis/blockchain_crypto_scan.py linkboost /path/to/LinkBoost-2025.json
+
 # Regenerate every chart in figures/
 python3 figures/generate_figures.py /path/to/podawaa2024.json /path/to/HyperClaper.json --linkboost-path /path/to/LinkBoost-2025.json --outdir figures
 ```
@@ -391,6 +401,8 @@ no per-record data). See [explorer/README.md](explorer/README.md) for why.
 - [Pharma / biotech content](docs/research/pharma-content.md) — pharma/biotech/FDA term counts; corrects a LinkBoost-2025 miscategorization where most "FDA" matches turned out to be import-compliance content, not pharmaceutical-industry content
 - [Political party / Trump content](docs/research/political-content.md) — Trump/Biden/party-name mention counts; links a LinkBoost-2025 correction back to the same repeated campaign post already documented in decision-points.md
 - [Immunotherapy content](docs/research/immunotherapy-content.md) — documents two false positives (a "cart"/CAR-T acronym collision and an unrelated boosted post) that made this the smallest genuine content category found so far
+- ["Top list" / listicle content](docs/research/toplist-content.md) — one of the larger niche-topic categories found (1.7–3.9%), with a real style difference between datasets
+- [Blockchain / crypto content](docs/research/blockchain-crypto-content.md) — podawaa2024's rate is 4x HyperClaper's; a plausible (not confirmed) shift toward AI content over time
 - [Demographics](docs/research/demographics.md) — aggregate geography and stated-occupation-category breakdown, and why protected characteristics (race, gender, age, etc.) are never inferred
 - [Method](docs/method.md) — how each figure is computed
 - [Data dictionary](docs/data-dictionary.md) — same content as the [Data dictionary](#data-dictionary) section above, kept as a standalone page for cross-linking from other docs
@@ -615,6 +627,33 @@ to one unrelated business-transformation post. Corrected, genuine
 immunotherapy content is 16 mentions total, all in podawaa2024 - the
 smallest genuine content category found in this project so far. Full
 results: [docs/research/immunotherapy-content.md](docs/research/immunotherapy-content.md).
+
+## "Top list" / listicle content
+
+`analysis/toplist_content_scan.py` counts "Top 10," "N ways to," "best
+of," and similar listicle patterns. This is one of the larger content
+categories found across the niche-topic scans in this repo (1.7-3.9%
+"any mention," well above pharma, cybersecurity, law, nonprofit,
+travel, political, national security, and immunotherapy content, all
+under 1%). HyperClaper and LinkBoost-2025 both run meaningfully higher
+than podawaa2024, consistent with their broader lean toward templated
+content already seen elsewhere in this repo, and the two datasets show
+a real style difference: LinkBoost-2025 leans on numbered-listicle
+phrasing while HyperClaper leans on "Top N" specifically. Full results:
+[docs/research/toplist-content.md](docs/research/toplist-content.md).
+
+## Blockchain / crypto content
+
+`analysis/blockchain_crypto_scan.py` counts blockchain/crypto term
+mentions. podawaa2024 has by far the highest rate (2.93%, roughly 4x
+HyperClaper and 2.5x LinkBoost-2025) and is the only dataset where
+"blockchain" outranks general "crypto" phrasing. Since podawaa2024 is
+2024 data and the other two are 2025-2026 data, this is consistent
+with -- though doesn't confirm -- a shift in this content ecosystem's
+attention from blockchain/Web3 toward AI over that period, alongside
+the technology_ai increase already documented in
+[docs/research/topic-taxonomy.md](docs/research/topic-taxonomy.md).
+Full results: [docs/research/blockchain-crypto-content.md](docs/research/blockchain-crypto-content.md).
 
 ## Citations
 
