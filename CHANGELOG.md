@@ -3,6 +3,20 @@
 ## Unreleased
 
 ### Added
+- Two structural analyses, different in kind from the content keyword
+  scans elsewhere in this repo:
+  - `analysis/cross_dataset_overlap_scan.py` and
+    `docs/research/cross-dataset-account-overlap.md` - checks whether
+    the same accounts appear in both HyperClapper and LinkBoost-2025
+    using hashed identifiers only (never plaintext). Result: zero
+    overlap across 702 and 414 distinct accounts respectively.
+  - `analysis/posting_velocity_scan.py` and
+    `docs/research/posting-velocity.md` - computes sustained posting
+    rate for HyperClapper's highest-volume accounts using real
+    timestamps. Interval timing is highly irregular (CV consistently
+    above 80%), ruling out simple robotic clockwork, but the top 10
+    accounts sustain 1.2-3.7 posts/day for 174-712 consecutive days.
+    Accounts identified only by anonymous rank.
 - Four new scans covering topics suggested by post titles/content
   review, each with the established duplicate-template safeguard:
   - `analysis/career_transitions_scan.py` and
