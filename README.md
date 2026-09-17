@@ -468,6 +468,7 @@ no per-record data). See [explorer/README.md](explorer/README.md) for why.
 - [Data dictionary](docs/data-dictionary.md) — same content as the [Data dictionary](#data-dictionary) section above, kept as a standalone page for cross-linking from other docs
 - [Privacy and PII](docs/privacy.md) — what personal data is in these files and exactly how this repo does and doesn't touch it
 - [Limitations](docs/limitations.md) — why this repo stops at aggregates, and what individual-level claims it deliberately does not make
+- [Impact on unknowing participants](docs/unknowing-participant-impact.md) — why knowing and unknowing participation are different situations this data can't distinguish, and what that means for the people who didn't know
 - [Validation tools](tools/README.md) — Python and C# structural/type validators, plus known data-quality findings
 - [Schemas](schema) — reference JSON Schema for all three file formats
 

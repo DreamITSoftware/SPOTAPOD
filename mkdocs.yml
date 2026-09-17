@@ -49,6 +49,7 @@ nav:
   - Data dictionary: docs/data-dictionary.md
   - Privacy and PII: docs/privacy.md
   - Limitations: docs/limitations.md
+  - Impact on unknowing participants: docs/unknowing-participant-impact.md
   - Baseline profile (full output): docs/research/baseline-profile.md
   - Validation tools: tools/README.md
   - Outreach materials: outreach/README.md
