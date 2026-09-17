@@ -1594,3 +1594,129 @@ Distinct underlying text values: 63
     DeFi                         74
 
 ```
+
+## University content
+
+See [university-content.md](university-content.md) for methodology, including the German-language MIT/"mit" cross-dataset correction.
+
+```
+=== podawaa2024 (213,491 records) ===
+Records mentioning any university-related term: 2,596 (1.216%)
+Distinct underlying text values: 2,410
+    university/universities            1,379
+    college(s)                         537
+    Harvard                            508
+    Stanford                           150
+    MIT (strict, case-sensitive)       148
+    Oxford                             89
+    Berkeley                           80
+    Cambridge                          65
+    Ivy League                         24
+    Princeton                          23
+    Yale                               21
+
+=== HyperClapper (49,369 records) ===
+Records mentioning any university-related term: 1,378 (2.791%)
+Distinct underlying text values: 1,215
+    university/universities            717
+    college(s)                         315
+    MIT (strict, case-sensitive)       197
+    Harvard                            152
+    Stanford                           145
+    Oxford                             24
+    Berkeley                           19
+    Cambridge                          11
+    Yale                               10
+    Ivy League                         7
+    Princeton                          5
+
+=== LinkBoost-2025 (77,969 records) ===
+Records mentioning any university-related term: 1,976 (2.534%)
+Distinct underlying text values: 107
+    university/universities            784
+    college(s)                         659
+    MIT (strict, case-sensitive)       386
+    Harvard                            277
+    Cambridge                          151
+    Stanford                           30
+    Oxford                             9
+
+```
+
+## Veteran / military content
+
+See [veteran-content.md](veteran-content.md) for methodology and the correction linking back to political-content.md.
+
+```
+=== podawaa2024 (213,491 records) ===
+Records mentioning any veteran/military term: 472 (0.221%)
+Distinct underlying text values: 413
+    veteran(s)                         444
+    service member(s)                  25
+    armed forces                       20
+    veteran-owned                      15
+    Veterans Affairs / VA benefits     6
+    combat veteran                     2
+    ex-military                        2
+
+=== HyperClapper (49,369 records) ===
+Records mentioning any veteran/military term: 82 (0.166%)
+Distinct underlying text values: 77
+    veteran(s)                         77
+    armed forces                       29
+    combat veteran                     2
+    veteran-owned                      1
+    disabled veteran                   1
+    service member(s)                  1
+    military veteran                   1
+
+=== LinkBoost-2025 (77,969 records) ===
+Records mentioning any veteran/military term: 476 (0.610%)
+Distinct underlying text values: 23
+  ^ WARNING: top repeated string = 97 records (20.4%) -- likely template inflation. Corrected estimate: 380. This is the same repeated political-endorsement post documented (without naming the candidate) in docs/research/decision-points.md and docs/research/political-content.md.
+    veteran(s)                         476
+    armed forces                       219
+
+```
+
+## Authenticity content
+
+See [authenticity-content.md](authenticity-content.md) for methodology and the direct check against the disputed document's "honesty irony" claim.
+
+```
+=== podawaa2024 (213,491 records) ===
+Records mentioning any authenticity-related term: 3,939 (1.845%)
+Distinct underlying text values: 3,676
+    transparent / transparency       1,814
+    authentic / authenticity         1,390
+    genuine                          932
+    unfiltered                       60
+    be yourself                      58
+    no BS / no fluff                 48
+    real talk                        37
+    honest truth                     2
+
+=== HyperClapper (49,369 records) ===
+Records mentioning any authenticity-related term: 1,394 (2.824%)
+Distinct underlying text values: 1,339
+    authentic / authenticity         474
+    transparent / transparency       445
+    genuine                          346
+    no BS / no fluff                 111
+    real talk                        46
+    unfiltered                       42
+    honest truth                     15
+    be yourself                      7
+
+=== LinkBoost-2025 (77,969 records) ===
+Records mentioning any authenticity-related term: 3,410 (4.374%)
+Distinct underlying text values: 204
+  ^ NOTE: distinct-string count (204) is below the match count (3,410) without one string dominating -- worth a manual check if this pattern is unexpected for the dataset.
+    authentic / authenticity         1,881
+    transparent / transparency       794
+    genuine                          772
+    unfiltered                       198
+    no BS / no fluff                 97
+    real talk                        25
+
+```
