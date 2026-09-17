@@ -3,6 +3,23 @@
 ## Unreleased
 
 ### Added
+- `analysis/algorithm_mention_scan.py` and
+  `docs/research/algorithm-mention-content.md` - algorithm-related term
+  counts, directly relevant to this project's own subject matter and a
+  companion to algorithm-strategy-advice.md. LinkBoost-2025 has the
+  highest rate, with top repeated posts genuinely about gaming/
+  understanding the LinkedIn algorithm; podawaa2024 is the only dataset
+  with meaningful "LinkedIn algorithm" specificity rather than generic
+  "algorithm" phrasing.
+- `analysis/diabetes_content_scan.py` and
+  `docs/research/diabetes-content.md` - diabetes-related term counts,
+  one of the smallest genuine content categories found in this project
+  (under 0.25% everywhere). LinkBoost-2025's flagged duplicate string
+  turned out to be genuine health content boosted by the platform's
+  structure, not a false positive - the opposite outcome from the
+  immunotherapy and university scans, documented as a reminder that
+  the duplicate-template safeguard flags a number to check, not a
+  verdict either way.
 - `analysis/authenticity_content_scan.py` and
   `docs/research/authenticity-content.md` - authenticity-related term
   counts. Directly checks a specific claim from a disputed third-party

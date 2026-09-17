@@ -340,6 +340,16 @@ python3 analysis/authenticity_content_scan.py podawaa /path/to/podawaa2024.json
 python3 analysis/authenticity_content_scan.py hyperclapper /path/to/HyperClaper.json
 python3 analysis/authenticity_content_scan.py linkboost /path/to/LinkBoost-2025.json
 
+# Diabetes content
+python3 analysis/diabetes_content_scan.py podawaa /path/to/podawaa2024.json
+python3 analysis/diabetes_content_scan.py hyperclapper /path/to/HyperClaper.json
+python3 analysis/diabetes_content_scan.py linkboost /path/to/LinkBoost-2025.json
+
+# LinkedIn algorithm mentions
+python3 analysis/algorithm_mention_scan.py podawaa /path/to/podawaa2024.json
+python3 analysis/algorithm_mention_scan.py hyperclapper /path/to/HyperClaper.json
+python3 analysis/algorithm_mention_scan.py linkboost /path/to/LinkBoost-2025.json
+
 # Regenerate every chart in figures/
 python3 figures/generate_figures.py /path/to/podawaa2024.json /path/to/HyperClaper.json --linkboost-path /path/to/LinkBoost-2025.json --outdir figures
 ```
@@ -421,6 +431,8 @@ no per-record data). See [explorer/README.md](explorer/README.md) for why.
 - [University content](docs/research/university-content.md) — documents a cross-language false positive (German "mit" vs. the "MIT" acronym) caught via cross-dataset inconsistency rather than a within-dataset check
 - [Veteran / military content](docs/research/veteran-content.md) — includes genuine tribute content alongside a correction linking back to the already-documented campaign-post artifact
 - [Authenticity content](docs/research/authenticity-content.md) — directly checks and refutes a specific "honesty irony" statistic from a disputed third-party document
+- [Diabetes content](docs/research/diabetes-content.md) — one of the smallest genuine categories found; a duplicate-string case that turned out to be real content, not noise
+- [LinkedIn algorithm mentions](docs/research/algorithm-mention-content.md) — directly relevant to this project's own subject matter; companion to algorithm-strategy-advice.md
 - [Demographics](docs/research/demographics.md) — aggregate geography and stated-occupation-category breakdown, and why protected characteristics (race, gender, age, etc.) are never inferred
 - [Method](docs/method.md) — how each figure is computed
 - [Data dictionary](docs/data-dictionary.md) — same content as the [Data dictionary](#data-dictionary) section above, kept as a standalone page for cross-linking from other docs
@@ -711,6 +723,28 @@ highest overall rate and the most genuinely distributed content;
 podawaa2024 leans on "transparent/transparency" while the other two
 lean on "authentic/authenticity." Full results:
 [docs/research/authenticity-content.md](docs/research/authenticity-content.md).
+
+## Diabetes content
+
+`analysis/diabetes_content_scan.py` counts diabetes-related term
+mentions - one of the smallest genuine content categories found in
+this project (under 0.25% everywhere). LinkBoost-2025's duplicate
+string turned out to be genuine health content boosted by the
+platform's structure, not a false positive - the opposite outcome from
+the immunotherapy and university scans, a reminder that this
+safeguard flags a number to check, not a verdict. Full results:
+[docs/research/diabetes-content.md](docs/research/diabetes-content.md).
+
+## LinkedIn algorithm mentions
+
+`analysis/algorithm_mention_scan.py` counts algorithm-related term
+mentions - directly relevant to this project's own subject matter, and
+a companion to [algorithm-strategy-advice.md](docs/research/algorithm-strategy-advice.md).
+LinkBoost-2025 has the highest rate and its top repeated posts are
+genuinely about gaming/understanding the LinkedIn algorithm; podawaa2024
+is the only dataset with meaningful "LinkedIn algorithm" specificity
+rather than generic "algorithm" phrasing. Full results:
+[docs/research/algorithm-mention-content.md](docs/research/algorithm-mention-content.md).
 
 ## Citations
 
