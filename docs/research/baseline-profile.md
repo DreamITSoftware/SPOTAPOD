@@ -1982,3 +1982,32 @@ Dataset-wide date range: 2022-07-08 to 2026-07-02 (1,455 days)
 No account hash, handle, or other identifier is ever printed by this
 script -- accounts are reported only by anonymous volume rank.
 ```
+
+## Kindness, lying, and deception language
+
+See [honesty-language-content.md](honesty-language-content.md) for methodology.
+
+```
+=== podawaa2024 (213,491 records) ===
+Records mentioning any kindness/lying/deception term: 2,189 (1.025%)
+Distinct underlying text values: 1,951
+    lying / lies / liar              1,318
+    kindness                         818
+    deception / deceptive / deceit   83
+
+=== HyperClapper (49,369 records) ===
+Records mentioning any kindness/lying/deception term: 675 (1.367%)
+Distinct underlying text values: 650
+    kindness                         335
+    lying / lies / liar              333
+    deception / deceptive / deceit   21
+
+=== LinkBoost-2025 (77,969 records) ===
+Records mentioning any kindness/lying/deception term: 2,334 (2.993%)
+Distinct underlying text values: 103
+  ^ NOTE: distinct-string count (103) is below the match count (2,334) without one string dominating -- worth a manual check.
+    lying / lies / liar              1,163
+    kindness                         1,081
+    deception / deceptive / deceit   90
+
+```
