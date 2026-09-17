@@ -3,6 +3,24 @@
 ## Unreleased
 
 ### Added
+- `analysis/blockchain_crypto_scan.py` and
+  `docs/research/blockchain-crypto-content.md` - blockchain/crypto term
+  counts. podawaa2024's rate (2.93%) is roughly 4x HyperClaper's and
+  2.5x LinkBoost-2025's, and is the only dataset where "blockchain"
+  outranks general "crypto" phrasing. Documents a plausible,
+  INFERENCE-tier cross-dataset pattern: since podawaa2024 is 2024 data
+  and the other two are 2025-2026 data, this is consistent with a shift
+  in attention from blockchain/Web3 toward AI over that period,
+  alongside the technology_ai increase already in topic-taxonomy.md -
+  explicitly flagged as not a confirmed time-series trend.
+- `analysis/toplist_content_scan.py` and `docs/research/toplist-content.md`
+  - "Top 10"/listicle content counts. One of the larger content
+  categories found across this repo's niche-topic scans (1.7-3.9% "any
+  mention"). HyperClaper and LinkBoost-2025 both run meaningfully
+  higher than podawaa2024, consistent with their broader lean toward
+  templated content documented elsewhere in this repo, and the two
+  datasets show a real style difference (numbered-listicle phrasing vs.
+  "Top N" phrasing) rather than just a volume difference.
 - `analysis/immunotherapy_content_scan.py` and
   `docs/research/immunotherapy-content.md` - immunotherapy-related term
   counts, documenting two real false positives found while building it:

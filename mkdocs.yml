@@ -31,6 +31,8 @@ nav:
   - Pharma / biotech content: docs/research/pharma-content.md
   - Political party / Trump content: docs/research/political-content.md
   - Immunotherapy content: docs/research/immunotherapy-content.md
+  - "Top list" / listicle content: docs/research/toplist-content.md
+  - Blockchain / crypto content: docs/research/blockchain-crypto-content.md
   - Demographics: docs/research/demographics.md
   - Method: docs/method.md
   - Data dictionary: docs/data-dictionary.md

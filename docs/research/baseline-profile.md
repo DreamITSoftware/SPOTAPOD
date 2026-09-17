@@ -1513,3 +1513,84 @@ Distinct underlying text values: 1
     immunotherapy                      40
 
 ```
+
+## "Top list" / listicle content
+
+See [toplist-content.md](toplist-content.md) for methodology and the podawaa2024/HyperClaper style comparison.
+
+```
+=== podawaa2024 (213,491 records) ===
+Records mentioning any top-list/listicle term: 3,700 (1.733%)
+Distinct underlying text values: 3,427
+    Top N (Top 5/10/etc.)              1,681
+    N ways/tips/reasons (listicle)     1,560
+    best of                            387
+    must-read                          157
+    ultimate guide                     49
+    must-know                          20
+
+=== HyperClaper (49,369 records) ===
+Records mentioning any top-list/listicle term: 1,784 (3.614%)
+Distinct underlying text values: 1,188
+    Top N (Top 5/10/etc.)              1,258
+    N ways/tips/reasons (listicle)     472
+    best of                            35
+    must-read                          18
+    must-know                          15
+    ultimate guide                     3
+
+=== LinkBoost-2025 (77,969 records) ===
+Records mentioning any top-list/listicle term: 3,056 (3.920%)
+Distinct underlying text values: 182
+  ^ NOTE: distinct-string count (182) is below the match count (3,056) without one string dominating -- consistent with LinkBoost-2025's known structure (a limited set of distinct target posts, each logged multiple times) if this is that dataset; worth a manual check otherwise.
+    N ways/tips/reasons (listicle)     1,627
+    Top N (Top 5/10/etc.)              1,287
+    must-read                          104
+    best of                            57
+    ultimate guide                     10
+    must-know                          10
+
+```
+
+## Blockchain / crypto content
+
+See [blockchain-crypto-content.md](blockchain-crypto-content.md) for methodology and the cross-dataset AI-shift observation.
+
+```
+=== podawaa2024 (213,491 records) ===
+Records mentioning any blockchain/crypto term: 6,255 (2.930%)
+Distinct underlying text values: 5,925
+    blockchain                   2,971
+    crypto / cryptocurrency      2,361
+    Web3                         2,251
+    NFT                          1,541
+    Bitcoin                      1,112
+    DeFi                         551
+    Ethereum                     515
+    altcoin                      82
+
+=== HyperClaper (49,369 records) ===
+Records mentioning any blockchain/crypto term: 382 (0.774%)
+Distinct underlying text values: 375
+    crypto / cryptocurrency      196
+    blockchain                   113
+    Bitcoin                      87
+    Web3                         65
+    DeFi                         29
+    Ethereum                     29
+    NFT                          19
+    altcoin                      2
+
+=== LinkBoost-2025 (77,969 records) ===
+Records mentioning any blockchain/crypto term: 921 (1.181%)
+Distinct underlying text values: 63
+  ^ NOTE: distinct-string count (63) is below the match count (921) without one string dominating -- consistent with LinkBoost-2025's known structure if this is that dataset; worth a manual check otherwise.
+    crypto / cryptocurrency      567
+    Bitcoin                      254
+    Web3                         231
+    blockchain                   221
+    Ethereum                     178
+    NFT                          134
+    DeFi                         74
+
+```
