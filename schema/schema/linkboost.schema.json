@@ -1,0 +1,31 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "LinkBoost-2025",
+  "description": "SuccessfullLikes and SuccessfullComments are 'indicators of social media influence' under 16 CFR 465.1(j), governed by 16 CFR 465.8 (see docs/regulatory-context.md). This schema makes no legal determination about any record.",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": ["Id", "ObjectUrn", "SuccessfullLikes", "SuccessfullComments", "Url", "piFirstName", "piLastName", "UserId", "VolumeId"],
+    "properties": {
+      "Id": { "type": "string" },
+      "FirstName": { "type": ["string", "null"] },
+      "LastName": { "type": ["string", "null"] },
+      "piFirstName": { "type": "string" },
+      "piLastName": { "type": "string" },
+      "Occupation": { "type": ["string", "null"] },
+      "DashEntityUrn": { "type": ["string", "null"] },
+      "ObjectUrn": { "type": "string" },
+      "SuccessfullLikes": { "type": "integer", "minimum": 0 },
+      "SuccessfullComments": { "type": "integer", "minimum": 0 },
+      "Comment": { "type": ["string", "null"] },
+      "Url": { "type": "string" },
+      "liProfileLink": { "type": ["string", "null"] },
+      "liUrl": { "type": ["string", "null"] },
+      "liDigitalMarketer": { "type": ["string", "null"] },
+      "Title": { "type": ["string", "null"] },
+      "VolumeId": { "type": "integer" },
+      "UserId": { "type": "string" },
+      "country": { "type": ["string", "null"] }
+    }
+  }
+}
