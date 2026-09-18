@@ -1,0 +1,66 @@
+{
+  "data": {
+    "post": [
+      {
+        "profile": {
+          "name": "Test Testerson",
+          "linkedin_data": {
+            "school": "",
+            "skills": [],
+            "company": "",
+            "fullName": "Test Testerson",
+            "headline": "Fictional Marketing Coach",
+            "jobTitle": "",
+            "location": "Testville, Test State, United States",
+            "companies": [],
+            "followers": "1,234 followers",
+            "isPremium": true,
+            "isTopVoice": false,
+            "connections": "500",
+            "description": "",
+            "jobDescription": "",
+            "profilePicture": "https://example.invalid/photo.jpg",
+            "public_identifier": "test-testerson",
+            "linkedin_profile_id": "TEST_ID_0001",
+            "linkedin_profile_link": "https://www.linkedin.com/in/test-testerson/"
+          },
+          "profile_picture": "https://example.invalid/photo2.jpg",
+          "__typename": "profile"
+        },
+        "comment": true,
+        "like": true,
+        "post_url": "https://www.linkedin.com/feed/update/urn:li:share:0000000000000000000",
+        "created_at": "2026-01-01T00:00:00.000000+00:00",
+        "id": "fixture-id-0001",
+        "post_title": "Fictional test post for fixture purposes.",
+        "like_count": 5,
+        "impression_count": 0,
+        "comment_count": 2,
+        "__typename": "post"
+      },
+      {
+        "profile": {
+          "name": "Another Fictional Person",
+          "linkedin_data": {
+            "public_identifier": "another-fictional-person",
+            "followers": 42,
+            "isPremium": false,
+            "isTopVoice": true
+          },
+          "profile_picture": "https://example.invalid/photo3.jpg",
+          "__typename": "profile"
+        },
+        "comment": false,
+        "like": true,
+        "post_url": "https://www.linkedin.com/feed/update/urn:li:share:0000000000000000001",
+        "created_at": "2026-02-01T00:00:00.000000+00:00",
+        "id": "fixture-id-0002",
+        "post_title": "Another fictional test post.",
+        "like_count": 5.0,
+        "impression_count": 10,
+        "comment_count": 0,
+        "__typename": "post"
+      }
+    ]
+  }
+}
