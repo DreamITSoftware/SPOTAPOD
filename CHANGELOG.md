@@ -3,6 +3,46 @@
 ## Unreleased
 
 ### Added
+- `docs/research/enforcement-precedent.md` - catalogs real FTC/AG/SEC/DOJ
+  actions on fake social media engagement (STATED tier, sourced from
+  public case filings/press releases): Devumi (2019, FTC + NY AG,
+  explicitly names 800+ fake LinkedIn follower orders sold), Sunday
+  Riley (2019, fake reviews), the § 465 Consumer Review and Testimonials
+  Rule's move into active warning-letter enforcement in late 2025, and
+  SEC/DOJ v. Constantinescu et al. (2022, real-not-fake followings used
+  in a pump-and-dump). Explicitly notes no public action was found
+  against Podawaa, HyperClapper/LinkBoost, or Lempod - platform-side
+  enforcement (Chrome Web Store removal, algorithmic sandboxing) appears
+  to be the actual response to those tools, not litigation. No legal
+  conclusion drawn about this repo's own datasets.
+- `docs/research/hyperclapper-gamers-verification.md` - ran all 30
+  applicable analysis scripts against `hyperclapper-gamers.json` and
+  compared every output line-by-line against the already-published
+  `HyperClaper.json` figures across every docs/research/*.md page. Zero
+  discrepancies found, including per-account posting-velocity figures and
+  the full month-by-month baseline-profile time series - evidence too
+  granular to plausibly coincide by chance. Still INFERENCE tier per
+  provenance.md (sha256 does not match); this page adds evidence, not a
+  tier upgrade. `provenance.md`'s Candidate duplicate section updated to
+  reference it.
+- `analysis/federal_agency_scan.py` and
+  `docs/research/federal-agency-mentions.md` - named federal-agency
+  mention counts (22 agencies/phrases), with a case-sensitivity fix for
+  ICE/SEC that removes ~85% and ~50% false-positive inflation
+  respectively (ice cream, "sec" as seconds abbreviation). Run against
+  `hyperclapper-gamers.json`, not the checksummed `HyperClaper.json` - the doc states
+  this explicitly. Its FBI/CIA/NSA/FDA counts match
+  national-security-content.md's and pharma-content.md's independently
+  published `HyperClaper.json` figures exactly, adding a second line of
+  corroboration (beyond record/profile counts) to the provenance.md
+  hyperclapper-gamers.json inference.
+- `docs/provenance.md`: new "Candidate duplicate: hyperclapper-gamers.json" section
+  (INFERENCE tier) - documents a file distributed as `hyperclapper-gamers.json` that
+  matches `HyperClaper.json`'s record count (49,369), profile count
+  (702-703), and field-completeness pattern exactly, but whose sha256
+  does not match the checksummed `HyperClaper.json` even after
+  whitespace/key-order normalization. Explicitly not treated as a
+  confirmed match; no figure in this repo is computed from `hyperclapper-gamers.json`.
 - `docs/research/hyperclapper-product-context.md` - publicly sourced,
   evidence-tiered context on the HyperClapper product itself (self-reported
   marketing claims: member count, pricing tiers, positioning vs. Lempod and

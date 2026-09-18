@@ -47,6 +47,9 @@ nav:
   - Posting velocity: docs/research/posting-velocity.md
   - Demographics: docs/research/demographics.md
   - "HyperClapper: external product context": docs/research/hyperclapper-product-context.md
+  - Federal agency mentions: docs/research/federal-agency-mentions.md
+  - "Full cross-check: hyperclapper-gamers.json": docs/research/hyperclapper-gamers-verification.md
+  - Enforcement precedent: docs/research/enforcement-precedent.md
   - Method: docs/method.md
   - Data dictionary: docs/data-dictionary.md
   - Privacy and PII: docs/privacy.md
