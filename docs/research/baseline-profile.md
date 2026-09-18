@@ -2011,3 +2011,276 @@ Distinct underlying text values: 103
     deception / deceptive / deceit   90
 
 ```
+
+## Children-related content
+
+See [children-content.md](children-content.md) for methodology and the French "son" correction.
+
+```
+=== podawaa2024 (213,491 records) ===
+Records mentioning any children-related term: 2,630 (1.232%)
+Distinct underlying text values: 2,422
+    child / children                   1,171
+    kid / kids                         887
+    baby / babies                      362
+    son (clear English usage only)     269
+    daughter                           242
+    parenting                          81
+    toddler                            42
+
+=== HyperClapper (49,369 records) ===
+Records mentioning any children-related term: 1,417 (2.870%)
+Distinct underlying text values: 1,340
+    child / children                   695
+    kid / kids                         656
+    son (clear English usage only)     102
+    baby / babies                      98
+    daughter                           97
+    parenting                          73
+    toddler                            21
+
+=== LinkBoost-2025 (77,969 records) ===
+Records mentioning any children-related term: 4,128 (5.294%)
+Distinct underlying text values: 204
+  ^ NOTE: distinct-string count (204) is below the match count (4,128) without one string dominating -- worth a manual check.
+    kid / kids                         2,326
+    child / children                   1,230
+    son (clear English usage only)     516
+    baby / babies                      326
+    daughter                           292
+    parenting                          259
+    toddler                            133
+
+```
+
+## Narcissist content
+
+See [narcissist-content.md](narcissist-content.md) for methodology and why this is the smallest content category in the repo.
+
+```
+=== podawaa2024 (213,491 records) ===
+Records mentioning any narcissist-related term: 30 (0.0141%)
+Distinct underlying text values: 28
+    narcissistic         20
+    narcissist(s)        9
+    narcissism           5
+
+=== HyperClapper (49,369 records) ===
+Records mentioning any narcissist-related term: 10 (0.0203%)
+Distinct underlying text values: 10
+    narcissistic         5
+    narcissist(s)        4
+    narcissism           2
+
+=== LinkBoost-2025 (77,969 records) ===
+Records mentioning any narcissist-related term: 116 (0.1488%)
+Distinct underlying text values: 3
+  ^ NOTE: top repeated string = 52 records (44.8%). Corrected estimate: 65. Checking the underlying text is recommended before assuming this is noise -- it may be genuine content boosted by the platform's structure rather than a false positive; see docs/research/narcissist-content.md for this scan's specific finding.
+    narcissistic         116
+    narcissist(s)        52
+
+```
+
+## Law enforcement content
+
+See [law-enforcement-content.md](law-enforcement-content.md) for methodology.
+
+```
+=== podawaa2024 (213,491 records) ===
+Records mentioning any law-enforcement term: 345 (0.1616%)
+Distinct underlying text values: 328
+    police               203
+    cop / cops           53
+    detective            52
+    law enforcement      49
+    police officer(s)    11
+    sheriff              2
+
+=== HyperClapper (49,369 records) ===
+Records mentioning any law-enforcement term: 123 (0.2491%)
+Distinct underlying text values: 118
+    police               51
+    cop / cops           45
+    detective            27
+    law enforcement      17
+    police officer(s)    11
+
+=== LinkBoost-2025 (77,969 records) ===
+Records mentioning any law-enforcement term: 461 (0.5913%)
+Distinct underlying text values: 32
+  ^ NOTE: distinct-string count (32) is below the match count (461) without one string dominating -- worth a manual check.
+    police               224
+    cop / cops           182
+    law enforcement      120
+    detective            90
+    sheriff              30
+
+```
+
+## One-word posts
+
+See [one-word-posts.md](one-word-posts.md) for methodology, the "postNoContent" artifact, and the LinkBoost bare-URL finding.
+
+```
+=== podawaa2024 (213,491 records) ===
+One-word posts: 4,608 (2.158%)
+Distinct one-word strings: 364
+Top repeated one-word posts (>= 3 occurrences):
+  x3918: 'Agree?'
+  x160: 'postNoContent'
+  x40: '💯'
+  x26: 'Thoughts?'
+  x9: 'test'
+  x8: 'Concur?'
+  x8: '👇'
+  x7: 'Truth!'
+  x6: 'Test'
+  x5: '#haveitmagical'
+  x5: 'Surprised?'
+  x5: '🔥'
+  x4: 'True?'
+  x4: 'Agree..?'
+  x4: 'Finally...'
+  x4: '#beneficialownership'
+  x4: '🎉'
+  x4: '🙌'
+  x4: '👀'
+  x3: '❤️'
+  x3: '.'
+  x3: '💡'
+  x3: '#octek'
+  x3: '#mondayquote'
+  x3: '!'
+
+=== HyperClapper (49,369 records) ===
+One-word posts: 110 (0.223%)
+Distinct one-word strings: 23
+Top repeated one-word posts (>= 3 occurrences):
+  x81: 'Agree'
+  x5: 'Insightful'
+  x3: '❤️'
+
+=== LinkBoost-2025 (77,969 records) ===
+One-word posts: 1,021 (1.309%)
+Distinct one-word strings: 5
+Top repeated one-word posts (>= 3 occurrences):
+  x888: 'Agree?'
+  x58: 'inc.com'
+  x57: 'https://luma.com/fqypezla'
+  x12: 'Social'
+  x6: '#selfaccountable'
+
+```
+
+## Rare earth metals / critical minerals content
+
+See [rare-earth-metals-content.md](rare-earth-metals-content.md) for methodology and why this is one of the smallest categories in the repo.
+
+```
+=== podawaa2024 (213,491 records) ===
+Records mentioning any rare-earth/critical-minerals term: 68 (0.03185%)
+Distinct underlying text values: 61
+    lithium                              52
+    cobalt                               22
+    critical minerals                    3
+    rare earth metals/elements/earths    2
+
+=== HyperClapper (49,369 records) ===
+Records mentioning any rare-earth/critical-minerals term: 30 (0.06077%)
+Distinct underlying text values: 29
+    critical minerals                    13
+    lithium                              10
+    cobalt                               6
+    rare earth metals/elements/earths    5
+    neodymium                            1
+
+=== LinkBoost-2025 (77,969 records) ===
+Records mentioning any rare-earth/critical-minerals term: 71 (0.09106%)
+Distinct underlying text values: 5
+  ^ NOTE: top repeated string = 53 records (74.6%). Corrected estimate: 19. Check the underlying text before assuming noise -- see docs/research/rare-earth-metals-content.md for this scan's finding.
+    lithium                              56
+    cobalt                               15
+
+```
+
+## Genetic disorder content
+
+See [genetic-disorder-content.md](genetic-disorder-content.md) for methodology. Health-adjacent, sensitive topic; no individual health claims made anywhere.
+
+```
+=== podawaa2024 (213,491 records) ===
+Records mentioning any genetic-disorder term: 27 (0.01265%)
+Distinct underlying text values: 24
+    Down syndrome                  17
+    genetic disease(s)             3
+    genetic disorder(s)            2
+    sickle cell                    2
+    genetic mutation(s)            2
+    cystic fibrosis                2
+    inherited disorder(s)          1
+
+=== HyperClapper (49,369 records) ===
+Records mentioning any genetic-disorder term: 1 (0.00203%)
+Distinct underlying text values: 1
+    Down syndrome                  1
+
+=== LinkBoost-2025 (77,969 records) ===
+Records mentioning any genetic-disorder term: 46 (0.05900%)
+Distinct underlying text values: 1
+  ^ NOTE: top repeated string = 46 records (100.0%). Corrected estimate: 1. Checking the underlying text is recommended before assuming this is noise or genuine broad signal; see docs/research/genetic-disorder-content.md for this scan's specific finding.
+    genetic condition(s)           46
+
+```
+
+## Car maker content
+
+See [car-maker-content.md](car-maker-content.md) for methodology and the Tesla/finance-content connection.
+
+```
+=== podawaa2024 (213,491 records) ===
+Records mentioning any car maker: 1,054 (0.494%)
+Distinct underlying text values: 970
+    Tesla                410
+    Ford                 159
+    Mercedes(-Benz)      130
+    Audi                 87
+    BMW                  81
+    Toyota               75
+    Volkswagen           73
+    Honda                42
+    Hyundai              27
+    Kia                  27
+    Chevrolet            26
+    General Motors       26
+    Stellantis           24
+    Nissan               22
+    Rivian               4
+
+=== HyperClapper (49,369 records) ===
+Records mentioning any car maker: 160 (0.324%)
+Distinct underlying text values: 159
+    Tesla                63
+    Ford                 23
+    Mercedes(-Benz)      22
+    Toyota               17
+    BMW                  16
+    Volkswagen           9
+    Nissan               7
+    Kia                  5
+    Audi                 5
+    Honda                4
+    Hyundai              4
+    General Motors       3
+    Rivian               1
+
+=== LinkBoost-2025 (77,969 records) ===
+Records mentioning any car maker: 508 (0.652%)
+Distinct underlying text values: 40
+  ^ NOTE: distinct-string count (40) is below the match count (508) without one string dominating -- worth a manual check.
+    Tesla                411
+    Ford                 66
+    Mercedes(-Benz)      44
+    Toyota               19
+    Nissan               2
+
+```
