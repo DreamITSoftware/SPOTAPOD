@@ -1,0 +1,70 @@
+site_name: SPOTAPOD Analysis Repository
+site_description: >
+  Aggregate-only companion analysis of three engagement-pod-adjacent
+  datasets, oriented around 16 CFR 465.8. No script or page in this site
+  identifies an individual record or account.
+repo_url: ""
+theme:
+  name: readthedocs
+
+nav:
+  - Home: README.md
+  - Provenance: docs/provenance.md
+  - Regulatory context: docs/regulatory-context.md
+  - Other regulatory signals: docs/research/other-regulatory-signals.md
+  - Audience impact: docs/research/audience-impact.md
+  - Algorithm/creator-strategy case study: docs/research/algorithm-strategy-advice.md
+  - Book-promotion content: docs/research/book-promotion-content.md
+  - Career-advice comparison: docs/research/career-advice-comparison.md
+  - Topic taxonomy: docs/research/topic-taxonomy.md
+  - Decision points: docs/research/decision-points.md
+  - Simple title aggregate: docs/research/simple-titles.md
+  - Entity mentions: docs/research/entity-mentions.md
+  - Law-related content: docs/research/law-content.md
+  - Speaker / thought leader: docs/research/speaker-thought-leader.md
+  - Nonprofit-related content: docs/research/nonprofit-content.md
+  - Investment / venture capital content: docs/research/investment-vc-content.md
+  - Cybersecurity content vs. engagement anomalies: docs/research/cybersecurity-anomaly.md
+  - Travel agencies and destinations: docs/research/travel-content.md
+  - National security / NSA content: docs/research/national-security-content.md
+  - Homelessness-related content: docs/research/homelessness-content.md
+  - Pharma / biotech content: docs/research/pharma-content.md
+  - Political party / Trump content: docs/research/political-content.md
+  - Immunotherapy content: docs/research/immunotherapy-content.md
+  - "Top list" / listicle content: docs/research/toplist-content.md
+  - Blockchain / crypto content: docs/research/blockchain-crypto-content.md
+  - University content: docs/research/university-content.md
+  - Veteran / military content: docs/research/veteran-content.md
+  - Authenticity content: docs/research/authenticity-content.md
+  - Kindness, lying, and deception language: docs/research/honesty-language-content.md
+  - Children-related content: docs/research/children-content.md
+  - Narcissist content: docs/research/narcissist-content.md
+  - Law enforcement content: docs/research/law-enforcement-content.md
+  - One-word posts: docs/research/one-word-posts.md
+  - Rare earth metals / critical minerals content: docs/research/rare-earth-metals-content.md
+  - Genetic disorder content: docs/research/genetic-disorder-content.md
+  - Car maker content: docs/research/car-maker-content.md
+  - Diabetes content: docs/research/diabetes-content.md
+  - LinkedIn algorithm mentions: docs/research/algorithm-mention-content.md
+  - Career transitions: docs/research/career-transitions-content.md
+  - Social proof and credibility signaling: docs/research/social-proof-content.md
+  - Industry verticals: docs/research/industry-verticals-content.md
+  - Geographic content mentions: docs/research/geographic-mentions-content.md
+  - Cross-dataset account overlap: docs/research/cross-dataset-account-overlap.md
+  - Posting velocity: docs/research/posting-velocity.md
+  - Demographics: docs/research/demographics.md
+  - Method: docs/method.md
+  - Data dictionary: docs/data-dictionary.md
+  - Privacy and PII: docs/privacy.md
+  - Limitations: docs/limitations.md
+  - Impact on unknowing participants: docs/unknowing-participant-impact.md
+  - Baseline profile (full output): docs/research/baseline-profile.md
+  - Validation tools: tools/README.md
+  - Outreach materials: outreach/README.md
+  - Contributing: CONTRIBUTING.md
+  - Changelog: CHANGELOG.md
+
+markdown_extensions:
+  - tables
+  - toc:
+      permalink: true
