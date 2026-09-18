@@ -1,0 +1,23 @@
+Creative Commons Attribution 4.0 International (CC BY 4.0)
+
+This license covers the written documentation in this repository (README.md
+and everything under docs/) — the method, data dictionary, limitations,
+privacy, provenance, regulatory-context, other-regulatory-signals,
+audience-impact, and demographics pages, and the prose in baseline-profile.md.
+
+You are free to share and adapt this material for any purpose, including
+commercially, as long as you give appropriate credit, provide a link to
+the license, and indicate if changes were made.
+
+Full license text: https://creativecommons.org/licenses/by/4.0/legalcode
+
+This license does not cover, and does not grant any rights to, the
+underlying datasets described in docs/provenance.md, which are not
+included in this repository. Code and schemas are covered by LICENSE (MIT)
+instead.
+
+If you adapt or redistribute this documentation, please preserve the
+evidence-tier labels (VERIFIED/CORROBORATED/STATED/UNCORROBORATED/INFERENCE)
+and the privacy/aggregation constraints described in docs/privacy.md and
+docs/limitations.md rather than stripping them out — that discipline is
+the point of the document, not incidental formatting.
