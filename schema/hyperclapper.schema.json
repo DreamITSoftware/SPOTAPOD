@@ -1,0 +1,50 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "HyperClapper",
+  "description": "like_count, impression_count, comment_count, and followers are 'indicators of social media influence' under 16 CFR 465.1(j), governed by 16 CFR 465.8 (see docs/regulatory-context.md). This schema makes no legal determination about any record.",
+  "type": "object",
+  "required": ["data"],
+  "properties": {
+    "data": {
+      "type": "object",
+      "required": ["post"],
+      "properties": {
+        "post": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["comment", "like", "post_url", "created_at"],
+            "properties": {
+              "profile": {
+                "type": ["object", "null"],
+                "properties": {
+                  "name": { "type": ["string", "null"] },
+                  "profile_picture": { "type": ["string", "null"] },
+                  "linkedin_data": {
+                    "type": ["object", "null"],
+                    "properties": {
+                      "public_identifier": { "type": ["string", "null"] },
+                      "linkedin_profile_id": { "type": ["string", "null"] },
+                      "linkedin_profile_link": { "type": ["string", "null"] },
+                      "followers": { "type": ["string", "integer", "null"] },
+                      "isPremium": { "type": ["boolean", "null"] },
+                      "isTopVoice": { "type": ["boolean", "null"] }
+                    }
+                  }
+                }
+              },
+              "comment": { "type": "boolean" },
+              "like": { "type": "boolean" },
+              "post_url": { "type": "string" },
+              "created_at": { "type": "string", "format": "date-time" },
+              "post_title": { "type": ["string", "null"] },
+              "like_count": { "type": ["integer", "null"], "minimum": 0 },
+              "impression_count": { "type": ["integer", "null"], "minimum": 0 },
+              "comment_count": { "type": ["integer", "null"], "minimum": 0 }
+            }
+          }
+        }
+      }
+    }
+  }
+}
