@@ -3,6 +3,16 @@
 ## Unreleased
 
 ### Added
+- `analysis/theoretical_penalty_ceiling.py` and
+  `docs/research/theoretical-penalty-ceiling.md`: record count times the
+  FTC's 2025 inflation-adjusted maximum civil penalty per violation
+  ($53,088), an intentionally extreme arithmetic exercise, not a penalty
+  estimate or a damages calculation, labeled as such throughout, and
+  paired with the *Devumi* and *TopSocial24* real settlement figures it
+  should actually be read against. Produced on request, since refusing
+  to engage with the arithmetic entirely would have left the question
+  unanswered while answering it without this framing would have been
+  worse.
 - `analysis/date_cutoff_count.py` and `docs/research/date-cutoff-count.md`:
   an aggregate, VERIFIED count of how many records in each dataset fall
   before/after a given cutoff date (default 2024-10-22), computed from

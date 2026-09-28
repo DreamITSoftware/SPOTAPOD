@@ -555,6 +555,7 @@ no per-record data). See [explorer/README.md](explorer/README.md) for why.
 - [Posting velocity](docs/research/posting-velocity.md), structural analysis: top HyperClapper accounts sustain 1.2–3.7 posts/day for up to 712 consecutive days
 - [Demographics](docs/research/demographics.md), aggregate geography and stated-occupation-category breakdown, and why protected characteristics (race, gender, age, etc.) are never inferred
 - [Date cutoff count](docs/research/date-cutoff-count.md), aggregate record counts before/after a given date across all three datasets, including a decoded date for LinkBoost-2025 pulled from the target-post URN embedded in its `Url` field, and why a date split is not, and is never treated as, a 16 CFR § 465.8 violation count
+- [Theoretical penalty ceiling](docs/research/theoretical-penalty-ceiling.md), record count times the FTC's statutory maximum civil penalty, an intentionally extreme arithmetic exercise labeled throughout as not a damages estimate, with the real-world settlement figures it should be read against
 - [Method](docs/method.md), how each figure is computed
 - [Data dictionary](docs/data-dictionary.md), same content as the [Data dictionary](#data-dictionary) section above, kept as a standalone page for cross-linking from other docs
 - [Privacy and PII](docs/privacy.md), what personal data is in these files and exactly how this repo does and doesn't touch it
