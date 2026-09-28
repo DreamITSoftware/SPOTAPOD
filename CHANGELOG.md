@@ -2,6 +2,24 @@
 
 ## Unreleased
 
+### Added
+- `docs/provenance.md` now documents a vulnerability disclosure, supplied
+  to this project, describing two related flaws (`UpdatesV2` and
+  `ProfileUpdatesV2`) in LinkedIn's search-page and creator-activity-page
+  rendering that exposed view, reaction, and share counts on any public
+  post as clear-text JSON to any logged-in user, dated open 2023-07-19 to
+  closed 2023-08-10. Split by tier: the technical mechanism, CVSS scoring
+  (7.0 to 9.6), and GDPR analysis are STATED, reported by the finder and
+  not independently re-tested here. That a real vulnerability in
+  LinkedIn's "content view reporting" existed and was fixed is
+  CORROBORATED by LinkedIn's own written reply, included in the same
+  disclosure, confirming it had "thoroughly investigated and resolved the
+  issue." Explicitly scoped: this does not establish that any of the
+  three tools behind this repo's datasets used this or any other specific
+  method to obtain view/impression data, since none of the three is named
+  in the disclosure. Cross-referenced from `docs/data-dictionary.md`'s
+  `impression_count` row.
+
 ### Changed
 - `docs/regulatory-context.md` expanded from a single-rule page (16 CFR
   § 465.8 only) into a cross-referenced legal framework: FTC Act § 5's

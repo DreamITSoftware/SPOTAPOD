@@ -65,6 +65,66 @@ sites they reportedly came from, and how they read at the time of
 collection, if that's knowable, is worth doing before you do, ideally with
 an actual lawyer rather than this repo's say-so.
 
+## A documented mechanism for how view counts leak
+
+Every dataset in this repo treats view and impression counts as
+"indicators of social media influence" under 16 CFR § 465.1(j) (see
+[regulatory-context.md](regulatory-context.md)). One open question those
+counts raise on their own: `Views` should be visible to a post's author,
+but nothing about LinkedIn's stated design lets a stranger read another
+account's view count off a search page or a creator's activity feed.
+`HyperClapper.json`'s `impression_count` field being populated for only
+2.0% of records is consistent with that: a metric that normally sits
+behind the wall of "your own analytics, nobody else's."
+
+A vulnerability disclosure supplied to this project shows that wall did
+not always hold. Dated open 2023-07-19 and closed 2023-08-10, the
+disclosure documents two related flaws, internally named `UpdatesV2` and
+`ProfileUpdatesV2`, in LinkedIn's search-page and creator-activity-page
+rendering. Per the disclosure, navigating to either page caused reaction
+counts, share counts, and view counts, for any public post on the page,
+to be sent to the browser as clear-text JSON, readable by any logged-in
+user regardless of whose post it was, and scrapable in a loop at scale.
+The disclosure's own CVSS v3.1 scoring puts the flaw at 7.0 to 9.6,
+network-exploitable, requiring no more than ordinary low-level user
+privileges, and rates confidentiality impact as High. It states plainly
+that this exposed data "views should not be public," raises the exact
+same profiling and re-identification concerns [privacy.md](privacy.md)
+raises about this repo's own hashed identifiers, and names GDPR
+specifically as a regime the exposure could implicate.
+
+This project treats the disclosure's technical detail, the exact
+mechanism, the CVSS number, the GDPR analysis, as **STATED**: reported by
+the person who found it, not independently re-tested by this repo. One
+part of it is **CORROBORATED** by an independent party. The same
+document includes LinkedIn's own written reply, from an Executive
+Escalations Case Manager, thanking the reporter for "recently
+uncover[ing] a vulnerability within our content view reporting" and,
+in a follow-up message roughly sixteen hours later, confirming LinkedIn
+had "thoroughly investigated and resolved the issue." That is LinkedIn
+itself, not this repo and not the person who found the bug, stating in
+writing that a real vulnerability in its view-count reporting existed
+and got fixed. The disclosure marks the `UpdatesV2` flaw specifically as
+fixed; it marks `ProfileUpdatesV2` as unreported to LinkedIn, validated
+only by the named LinkedIn creators listed in the disclosure itself, and
+this repo has no independent confirmation that LinkedIn ever patched
+that second one.
+
+What this does and does not establish for the three datasets in this
+repo: it establishes that a real, LinkedIn-acknowledged flaw once let
+any user pull another account's view count in clear text, for at least a
+three-week window inside the multi-year span these files cover. It does
+not establish that Podawaa, HyperClapper, or LinkBoost specifically used
+this flaw, a different flaw, or ordinary authenticated access to obtain
+whatever view or impression data they show. No tool named in this
+project's own provenance notes is named in the disclosure, and the
+disclosure does not claim otherwise. The value of citing it here is
+narrower and more solid than "proof engagement pods scraped LinkedIn":
+it is proof that the specific number this whole project treats as an
+indicator of influence has, at least once, leaked to anyone who knew
+where to scroll, confirmed by the platform that built the wall around it
+in the first place.
+
 ## How this fits the rest of the repo
 
 Consistent with [regulatory-context.md](regulatory-context.md) (this repo
