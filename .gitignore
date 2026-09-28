@@ -9,6 +9,10 @@
 bin/
 obj/
 
+# Python build artifacts
+__pycache__/
+*.pyc
+
 # OS/editor cruft
 .DS_Store
 *.swp
