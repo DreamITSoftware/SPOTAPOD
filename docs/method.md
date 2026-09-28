@@ -27,6 +27,23 @@ land in the expected 2018–2024 range; it is an **INFERENCE** about the ID
 encoding, not something confirmed by LinkedIn documentation, so treat decoded
 years as approximate.
 
+## Post-date decoding (LinkBoost-2025)
+
+LinkBoost-2025 has no dedicated timestamp field, but every record's `Url`
+embeds a LinkedIn activity URN identifying the TARGET post being liked or
+commented on (`urn:li:activity:<id>/`). That id uses the same
+Snowflake-style bit layout as podawaa2024's `linkedinPostId`, so the same
+decode (shift right 22 bits for milliseconds since the Unix epoch)
+applies here too. This is the same **INFERENCE** as podawaa2024's
+decoding, not confirmed by LinkedIn documentation, and it approximates
+the target post's own publish date, not when LinkBoost's operator
+account acted on it. Because many records in this file target the same
+handful of posts (469 unique `ObjectUrn` values, 3,129 unique activity
+ids), a per-record date count and a per-unique-target-post date count
+give different pictures and are both worth reporting separately; see
+[docs/research/date-cutoff-count.md](research/date-cutoff-count.md) for
+an example.
+
 ## Reciprocal engagement flags (HyperClapper)
 
 The `like` and `comment` booleans in the HyperClapper export appear to record

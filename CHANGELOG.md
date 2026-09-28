@@ -7,11 +7,15 @@
   an aggregate, VERIFIED count of how many records in each dataset fall
   before/after a given cutoff date (default 2024-10-22), computed from
   `linkedinPostId`'s decoded date in podawaa2024 (INFERENCE, per
-  `docs/method.md`) and `created_at` in HyperClapper (capture time, not
-  post publish date); LinkBoost-2025 has no timestamp field and is
-  reported as uncountable, not zero. Explicitly scoped: this is a date
-  split, not a 16 CFR § 465.8 violation count, since the rule requires an
-  actual transaction this data does not record.
+  `docs/method.md`), `created_at` in HyperClapper (capture time, not post
+  publish date), and, for LinkBoost-2025, the activity URN embedded in
+  each record's `Url` field, decoded with the same Snowflake-style method
+  as podawaa2024 (also INFERENCE; approximates the target post's publish
+  date, not when the pod action occurred). LinkBoost-2025's count is
+  reported both per-record and per-unique-target-post, since many
+  records target the same handful of posts. Explicitly scoped: this is a
+  date split, not a 16 CFR § 465.8 violation count, since the rule
+  requires an actual transaction this data does not record.
 - `docs/provenance.md` now documents a vulnerability disclosure, supplied
   to this project, describing two related flaws (`UpdatesV2` and
   `ProfileUpdatesV2`) in LinkedIn's search-page and creator-activity-page

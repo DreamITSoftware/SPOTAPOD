@@ -8,7 +8,7 @@ been edited by hand.
 ```
 podawaa2024.json: 213491 total records | 2636 decoded after 2024-10-22 | 3364 without a decodable linkedinPostId
 HyperClapper.json: 49369 total records | 45528 captured (created_at) after 2024-10-22 | 0 without a usable created_at
-LinkBoost-2025.json: 77969 total records | no timestamp field exists in this dataset's schema, so no before/after split is possible
+LinkBoost-2025.json: 77969 total records | 77943 decoded (via Url's activity id) after 2024-10-22 | 0 without a decodable activity id | unique target posts: 3127 after, 2 before
 ```
 
 ## What this is, and isn't
@@ -26,10 +26,11 @@ occurred that satisfies the rule's elements. This repo does not convert a
 date split into a violation count, for the same reason it makes no other
 per-record legal determination (see [limitations.md](../limitations.md)).
 
-## Reading the two dates correctly
+## Reading the three dates correctly
 
-The two datasets that can be split at all use different kinds of
-timestamps, and they are not directly comparable:
+All three datasets use different kinds of timestamps, decoded or
+captured in different ways, and none of them are directly comparable to
+one another:
 
 - **podawaa2024.json** uses a date decoded from `linkedinPostId`
   (Snowflake-style bit layout; see [method.md](../method.md)). This
@@ -44,15 +45,25 @@ timestamps, and they are not directly comparable:
   necessarily when the underlying post was originally published. A high
   share of records falling after any given cutoff mainly reflects when
   this particular export was scraped, not a spike in posting activity.
-- **LinkBoost-2025.json** has no timestamp field anywhere in its schema.
-  It is reported here as uncountable for this split, not as zero.
+- **LinkBoost-2025.json** has no dedicated timestamp field, but each
+  record's `Url` embeds a LinkedIn activity URN
+  (`urn:li:activity:<id>/`) identifying the TARGET post, and that id
+  decodes with the same Snowflake-style method as podawaa2024's
+  (also **INFERENCE**; see [method.md](../method.md)). This approximates
+  the target post's own publish date, not when LinkBoost's operator
+  account acted on it. Because many records target the same handful of
+  posts, the per-record count (99.97% after the cutoff) and the
+  per-unique-target-post count (3,127 of 3,129 unique posts after the
+  cutoff) tell slightly different stories: almost every recorded pod
+  action in this file targeted a post from after October 22, 2024, and
+  that's true whether you count records or distinct targets.
 
 ## Why this exists
 
 This breakdown was produced on request, to test what a plain date split
 looks like against these files before any claim gets built on top of it.
 It stays inside this repo's usual discipline: a script computes it
-directly from the data (VERIFIED), the two usable date fields are
-labeled for what they actually measure, and the one thing this repo will
-not do, turn a date range into a compliance finding, is stated here as
-plainly as everywhere else in this project.
+directly from the data (VERIFIED), each dataset's date field is labeled
+for what it actually measures and what tier its decoding sits at, and
+the one thing this repo will not do, turn a date range into a compliance
+finding, is stated here as plainly as everywhere else in this project.
