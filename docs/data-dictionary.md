@@ -35,7 +35,7 @@ Top level: `{"data": {"post": [ ... ]}}`
 | `post_url` | URL | 100.0% | Link to the LinkedIn post itself |
 | `created_at` | ISO 8601 timestamp | 100.0% | When this record was captured, not necessarily the post's original publish date |
 | `post_title` | string | 98.8% | Post text/caption |
-| `like_count` / `impression_count` / `comment_count` | int | 15.3% / 2.0% / 15.1% | Sparse, only populated for a minority of records |
+| `like_count` / `impression_count` / `comment_count` | int | 15.3% / 2.0% / 15.1% | Sparse, only populated for a minority of records. See [provenance.md](provenance.md#a-documented-mechanism-for-how-view-counts-leak) for a documented, LinkedIn-acknowledged flaw that once exposed view counts on other accounts' posts, one candidate explanation for how a field like this gets populated at all without the account holder's own login |
 
 ## LinkBoost-2025.json
 
