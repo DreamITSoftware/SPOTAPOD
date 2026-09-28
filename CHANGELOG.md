@@ -3,6 +3,15 @@
 ## Unreleased
 
 ### Added
+- `analysis/date_cutoff_count.py` and `docs/research/date-cutoff-count.md`:
+  an aggregate, VERIFIED count of how many records in each dataset fall
+  before/after a given cutoff date (default 2024-10-22), computed from
+  `linkedinPostId`'s decoded date in podawaa2024 (INFERENCE, per
+  `docs/method.md`) and `created_at` in HyperClapper (capture time, not
+  post publish date); LinkBoost-2025 has no timestamp field and is
+  reported as uncountable, not zero. Explicitly scoped: this is a date
+  split, not a 16 CFR § 465.8 violation count, since the rule requires an
+  actual transaction this data does not record.
 - `docs/provenance.md` now documents a vulnerability disclosure, supplied
   to this project, describing two related flaws (`UpdatesV2` and
   `ProfileUpdatesV2`) in LinkedIn's search-page and creator-activity-page
