@@ -3,6 +3,16 @@
 ## Unreleased
 
 ### Added
+- `docs/provenance.md` now documents a second, separate vulnerability
+  disclosure (a LinkedIn post by this project's author, discovered
+  2024-03-26): a `li_at` session-cookie leak in LEMPOD, a pod tool not
+  among the three this repo profiles, exposed via websocket traffic to
+  anyone navigating to a pod on that platform. CVSS 8.8. Tiered STATED
+  only, since no independent confirmation from LEMPOD or LinkedIn is
+  quoted in the source post, unlike the `UpdatesV2` disclosure. Explicitly
+  scoped as unrelated to `podawaa2024.json`, `HyperClapper.json`, or
+  `LinkBoost-2025.json`, and includes a fair counter-read raised in the
+  post's own comments rather than omitting it.
 - `analysis/theoretical_penalty_ceiling.py` and
   `docs/research/theoretical-penalty-ceiling.md`: record count times the
   FTC's 2025 inflation-adjusted maximum civil penalty per violation
