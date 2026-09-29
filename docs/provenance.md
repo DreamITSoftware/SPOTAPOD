@@ -154,10 +154,23 @@ LinkedIn account directly, without their password. The post also
 describes bypassing LEMPOD's own interaction-tracking protocol, the
 possibility of scraping this at scale across multiple accounts
 (potentially a denial-of-service risk against LEMPOD and LinkedIn
-alike), and puts the [CVSS v3.1](https://www.first.org/cvss/v3-1/specification-document)
-score at 8.8. It names GDPR as implicated
-for the same reasons as the other disclosure: mass profiling of the
-resulting data would be exactly the kind of processing GDPR restricts.
+alike). It names GDPR as implicated for the same reasons as the other
+disclosure: mass profiling of the resulting data would be exactly the
+kind of processing GDPR restricts.
+
+Per the reporter, this finding carries the same
+[CVSS v3.1](https://www.first.org/cvss/v3-1/specification-document) vector
+and score as the upper end of the UpdatesV2/ProfileUpdatesV2 range above:
+[`AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:N/A:H/E:H/RL:X/RC:X/CR:X/IR:X/AR:X/MAV:N/MAC:L/MPR:N/MUI:N/MS:C/MC:X/MI:X/MA:X`](https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?vector=AV:N%2FAC:L%2FPR:L%2FUI:N%2FS:C%2FC:H%2FI:N%2FA:H%2FE:H%2FRL:X%2FRC:X%2FCR:X%2FIR:X%2FAR:X%2FMAV:N%2FMAC:L%2FMPR:N%2FMUI:N%2FMS:C%2FMC:X%2FMI:X%2FMA:X&version=3.1),
+independently recomputed against the official CVSS v3.1 formula (verified
+against known reference vectors first) at a **Base Score of 9.6**. This
+repo previously recorded this finding's score as 8.8; the reporter has
+since confirmed it should be 9.6, the same figure and vector as the
+view-count disclosure, and this page is corrected accordingly. That two
+unrelated findings, in different systems, discovered nine months apart,
+share the identical vector is the reporter's account and is recorded here
+as **STATED**, not independently verified by this repo beyond confirming
+the arithmetic the vector itself implies.
 
 The exact technical mechanism (the websocket message contents, the
 specific API calls used to reproduce it, the video walkthrough referenced
@@ -185,7 +198,7 @@ something LinkedIn's reply itself confirms. What is **CORROBORATED**, by
 LinkedIn's own words, is narrower and still meaningful: LinkedIn's
 security and engineering teams reviewed the reported issue, were able to
 replicate it, and took some mitigating action in response. The precise
-technical mechanism and the CVSS 8.8 scoring remain STATED, reported by
+technical mechanism and the CVSS 9.6 scoring remain STATED, reported by
 the finder and not independently verified line-by-line by this repo or
 confirmed in that specific form by LinkedIn.
 
