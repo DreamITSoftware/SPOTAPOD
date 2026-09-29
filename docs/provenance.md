@@ -149,16 +149,64 @@ alike), and puts the CVSS v3.1 score at 8.8. It names GDPR as implicated
 for the same reasons as the other disclosure: mass profiling of the
 resulting data would be exactly the kind of processing GDPR restricts.
 
-This is **STATED** only, reported by the finder (this project's author)
-with no independent confirmation from LEMPOD or LinkedIn quoted or
-attached to the post, unlike the `UpdatesV2` disclosure above, which
-carries LinkedIn's own written confirmation. It should not be read at
-the same evidentiary weight as that one. One commenter on the original
-post raised a fair counter-read worth noting rather than omitting: that
-a pod-tool vulnerability like this could equally support an operator's
-claim that suspicious activity on their account came from being hacked
-rather than from running a pod, an alternative explanation this repo
-has no way to adjudicate from the post alone.
+The exact technical mechanism (the websocket message contents, the
+specific API calls used to reproduce it, the video walkthrough referenced
+in the exchange) is **STATED**: supplied by the reporter (this project's
+author), not independently re-tested by this repo.
+
+That said, this disclosure now carries independent corroboration beyond
+the original post, from LinkedIn's own written case correspondence
+(LinkedIn Case #240327-019836, March 27 to April 8, 2024, supplied to this
+project directly). On March 27, 2024, LinkedIn's Executive Case Manager
+wrote that the report had been "escalated... to our security and
+engineering teams for further investigation." On April 8, 2024, the same
+case manager confirmed in writing: "our Engineering and Trust teams were
+able to replicate the issue you had reported, and actions were put in
+place to mitigate the potential risk you had identified."
+
+That confirmation is narrower than it might first look, and this repo is
+precise about the boundary. LinkedIn's message does not say which party,
+LinkedIn or LEMPOD, implemented whatever fix followed, and it does not
+repeat back the specific `li_at` mechanism, the CVSS score, or any other
+technical detail from the original report. Separately, the reporter's own
+message from a few days earlier states he closed his ticket because "it
+seems LEMPOD fixed the vulnerability," which is his own inference, not
+something LinkedIn's reply itself confirms. What is **CORROBORATED**, by
+LinkedIn's own words, is narrower and still meaningful: LinkedIn's
+security and engineering teams reviewed the reported issue, were able to
+replicate it, and took some mitigating action in response. The precise
+technical mechanism and the CVSS 8.8 scoring remain STATED, reported by
+the finder and not independently verified line-by-line by this repo or
+confirmed in that specific form by LinkedIn.
+
+This is still a different evidentiary picture than the `UpdatesV2`
+disclosure above, which carries a direct written confirmation of the
+specific mechanism reported. Here, LinkedIn confirmed the issue was real
+and acted on, not the specific technical details of how it worked. It
+should be read at that intermediate weight, not the same as UpdatesV2 and
+not as thin as an uncorroborated post either.
+
+One commenter on the original post raised a fair counter-read worth
+noting rather than omitting: that a pod-tool vulnerability like this could
+equally support an operator's claim that suspicious activity on their
+account came from being hacked rather than from running a pod, an
+alternative explanation this repo has no way to adjudicate from the post
+or the case correspondence alone.
+
+The same case correspondence includes one more fact worth recording
+separately from the vulnerability itself. In responding to this report,
+LinkedIn's Executive Case Manager wrote that "the use of add-ons,
+extensions or tooling that scrape, modify the appearance of, or automate
+activity on LinkedIn's website is prohibited under LinkedIn's User
+Agreement." That is **CORROBORATED**, LinkedIn's own written statement of
+its User Agreement's scope, and it concerns LinkedIn's own User
+Agreement governing account holders' conduct on LinkedIn. It is a
+different question from whether obtaining `podawaa2024.json`,
+`HyperClapper.json`, or `LinkBoost-2025.json` from their respective
+source sites complied with those sites' own terms of service, addressed
+separately above. This statement doesn't resolve that separate question;
+it only confirms that LinkedIn's own User Agreement, as LinkedIn describes
+it, reaches tools of this general category.
 
 What this does and does not establish: it does not concern, and this
 repo does not use it as evidence about, `podawaa2024.json`,

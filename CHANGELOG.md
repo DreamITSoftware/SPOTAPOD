@@ -3,6 +3,21 @@
 ## Unreleased
 
 ### Added
+- `docs/provenance.md`'s LEMPOD section updated with independent
+  corroboration from LinkedIn's own case correspondence (LinkedIn Case
+  #240327-019836, March 27-April 8, 2024, supplied directly to this
+  project), upgrading part of that disclosure from STATED-only. LinkedIn's
+  Executive Case Manager confirmed in writing that its Engineering and
+  Trust teams replicated the reported issue and took mitigating action.
+  The precise technical mechanism and CVSS score remain STATED; what's now
+  CORROBORATED is that LinkedIn reviewed, replicated, and acted on the
+  report. Also records a separate, CORROBORATED fact from the same
+  correspondence: LinkedIn's own statement that its User Agreement
+  prohibits tooling that scrapes, modifies the appearance of, or automates
+  activity on LinkedIn's site, explicitly scoped as distinct from the
+  separate, unresolved question of whether the three source sites'
+  (podawaa.com, hyperclapper.com, linkboost's site) own terms of service
+  were complied with.
 - `docs/regulatory-context.md` now has a "Breach notification law" section
   addressing a different question than the fake-engagement statutes on the
   rest of the page: what notification duty, if any, applies when a company
