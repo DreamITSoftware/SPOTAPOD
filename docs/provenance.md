@@ -85,9 +85,10 @@ rendering. Per the disclosure, navigating to either page caused reaction
 counts, share counts, and view counts, for any public post on the page,
 to be sent to the browser as clear-text JSON, readable by any logged-in
 user regardless of whose post it was, and scrapable in a loop at scale.
-The disclosure's own CVSS v3.1 scoring puts the flaw at 7.0 to 9.6,
-network-exploitable, requiring no more than ordinary low-level user
-privileges, and rates confidentiality impact as High. It states plainly
+The disclosure's own [CVSS v3.1](https://www.first.org/cvss/v3-1/specification-document)
+scoring puts the flaw at 7.0 to 9.6, network-exploitable, requiring no more
+than ordinary low-level user privileges, and rates confidentiality impact
+as High. It states plainly
 that this exposed data "views should not be public," raises the exact
 same profiling and re-identification concerns [privacy.md](privacy.md)
 raises about this repo's own hashed identifiers, and names GDPR
@@ -145,7 +146,8 @@ LinkedIn account directly, without their password. The post also
 describes bypassing LEMPOD's own interaction-tracking protocol, the
 possibility of scraping this at scale across multiple accounts
 (potentially a denial-of-service risk against LEMPOD and LinkedIn
-alike), and puts the CVSS v3.1 score at 8.8. It names GDPR as implicated
+alike), and puts the [CVSS v3.1](https://www.first.org/cvss/v3-1/specification-document)
+score at 8.8. It names GDPR as implicated
 for the same reasons as the other disclosure: mass profiling of the
 resulting data would be exactly the kind of processing GDPR restricts.
 
