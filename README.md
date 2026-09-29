@@ -563,6 +563,7 @@ no per-record data). See [explorer/README.md](explorer/README.md) for why.
 - [Impact on unknowing participants](docs/unknowing-participant-impact.md), why knowing and unknowing participation are different situations this data can't distinguish, and what that means for the people who didn't know
 - [Validation tools](tools/README.md), Python and C# structural/type validators, plus known data-quality findings
 - [Schemas](schema), reference JSON Schema for all three file formats
+- [Commentary: LinkedIn's CEO and the fakery he didn't mention](docs/commentary/linkedin-ceo-fakery-contrast.md), opinion piece contrasting a September 2026 WSJ interview with this repo's own findings; evidence-tiered, with two figures corrected against the raw source files before publication
 
 ## Other regulatory signals
 

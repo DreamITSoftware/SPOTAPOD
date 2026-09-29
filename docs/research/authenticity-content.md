@@ -29,6 +29,16 @@ notes). Both discrepancies point the same direction - the disputed
 document's specific statistics do not hold up against direct
 verification against the source files.
 
+A third claim from the same document has since been checked directly
+against this repo's own copy of the raw source files: that HyperClapper's
+"top 20 accounts produce 50.6%... top 100 produce 87.3%" of all posts.
+Run via `analysis/top_account_concentration.py` (VERIFIED, reproducible),
+the actual figures are **36.2%** (top 20 authors) and **83.5%** (top 100
+authors) of posts with an identified author - both real concentration
+effects, and both lower than claimed. All three checked statistics from
+this document point the same direction: the underlying pattern each one
+describes is real, but the specific number attached to it is inflated.
+
 ## LinkBoost-2025's lower distinct-string ratio, checked
 
 LinkBoost-2025 triggers the low-distinct-ratio note (204 distinct

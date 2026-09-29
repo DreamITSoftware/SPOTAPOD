@@ -141,11 +141,21 @@ Author concentration (posts-per-author):
   Top 1% of authors account for 17.2% of posts
   Top 5% of authors account for 51.5% of posts
   Top 10% of authors account for 73.5% of posts
+  Top 20 authors (of 702) account for 36.2% of posts
+  Top 100 authors (of 702) account for 83.5% of posts
 
 Duplicate post_title content (cross-author exact match):
   Records sharing title with >=1 other record: 9,717
   Distinct duplicate-title groups:              1,940
 ```
+
+The top-20/top-100 lines were computed via
+[analysis/top_account_concentration.py](../../analysis/top_account_concentration.py)
+to directly check a disputed third-party document's claim of "top 20 =
+50.6%, top 100 = 87.3%" - see
+[authenticity-content.md](authenticity-content.md) for the full
+comparison. Both figures use the same "percent of posts with an
+identified author" denominator as the 1%/5%/10% figures above.
 
 ## Cross-author duplicate-content clustering (podawaa2024, --min-authors 2)
 ```
