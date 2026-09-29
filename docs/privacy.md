@@ -27,6 +27,13 @@ photo. No inference required. `podawaa2024.json` is one step removed (a
 handle, not a name or photo) but a handle is still a direct identifier: it
 resolves to `linkedin.com/in/<handle>` and the real person behind it.
 
+A fourth file, supplied as `spotapod.json`, introduces no new privacy
+surface beyond the above: every author and post in it was verified to
+already exist in `podawaa2024.json` (see
+[provenance.md](provenance.md#a-fourth-file-supplied-as-spotapodjson-not-independent-data)),
+so it is a derived view of an already-covered population, not a new
+one.
+
 ## How this repo handles it
 
 - **No PII field is ever read into a variable that gets printed, logged, or

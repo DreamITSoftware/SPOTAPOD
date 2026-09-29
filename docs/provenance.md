@@ -16,6 +16,47 @@ See [limitations.md](limitations.md) for why guessing at provenance isn't
 how this repo operates. If you can confirm where and how this file was
 obtained, that goes here as STATED, same as the other two.
 
+## A fourth file, supplied as `spotapod.json`: not independent data
+
+A file supplied under the name `spotapod.json` was checked directly
+against `podawaa2024.json` before being described anywhere in this repo
+as a separate dataset, because two of its fields (`linkedinPostId`,
+`Author`/`AuthorPublicIdentifier`) matched podawaa2024's naming closely
+enough to raise the question of overlap.
+
+**VERIFIED, reproducible**: every one of this file's 201,000 unique
+`linkedinPostId` values also appears in `podawaa2024.json`, and every
+one of its 6,948 unique (hashed) authors is also present among
+podawaa2024's 7,033 authors. For the records checked, its `Title` field
+matches podawaa2024's `Content` field, and its `MaxReactions`/`MaxViews`
+fields match podawaa2024's `Likes`/`Views` fields, for the same post ID.
+This is not a coincidental overlap between two independently collected
+files - it is the same underlying post population, re-exported.
+
+What this file adds beyond podawaa2024.json is one new field,
+`PODCount` (an apparent per-post repeat or pod-detection count; its
+exact definition and how it was computed are **not stated** by whatever
+process produced this file), plus `PostDate` and a dedup pass that
+collapses podawaa2024's 213,491 raw records down to its 201,000 unique
+post IDs.
+
+**Because of this, `spotapod.json` is documented here as a derived,
+post-level aggregation of podawaa2024.json, not as a fourth
+independent source.** It introduces no new individuals, no new PII
+surface, and no new privacy review beyond what already applies to
+podawaa2024.json (see [privacy.md](privacy.md)). Its one new
+contribution, the `PODCount` field, is profiled on its own terms in
+[pod-count-profile.md](research/pod-count-profile.md).
+
+The supplied file also does not parse as standard JSON: it appears to
+have been line-wrapped at a fixed column width without regard to JSON
+token boundaries, splitting some numeric and string values mid-token.
+This repo's own copy of it is repaired (literal newlines/carriage
+returns stripped before parsing) before any script reads it; see
+`analysis/pod_count_profile.py` for the exact repair step, which was
+verified to produce a clean, fully-parseable, internally consistent
+record set.
+
 This repo has no way to confirm, from the files themselves, which site a
 given record actually came from, what specific requests were made to
 obtain it, or when collection occurred. Treat any reported source as the
