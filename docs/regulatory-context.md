@@ -202,6 +202,62 @@ page actually being established first. It adds no new element of its own
 to check against the data; it just widens who can sue once someone else's
 violation is proven.
 
+## Breach notification law: a different question than 16 CFR § 465.8
+
+The laws above concern fake engagement. A separate question applies to the
+LEMPOD disclosure in [provenance.md](provenance.md#a-second-separate-disclosure-a-pod-tools-own-vulnerability-lempod):
+what duty, if any, applies when a company discovers that user credentials or
+session tokens leaked, and does or doesn't tell affected users. This is a
+different body of law from the fake-engagement statutes above, and it is
+worth being precise about which entity it would even apply to.
+
+The LEMPOD vulnerability, per the disclosure, sits inside LEMPOD's own
+platform, not LinkedIn's. LinkedIn did not build or operate the leak.
+Any notification duty arising from it would run to LEMPOD first, not to
+LinkedIn, unless separate facts showed LinkedIn had actual knowledge of the
+exposure and some independent basis for a duty of its own. This repo has no
+such facts. It also has no information, in either direction, about whether
+LEMPOD notified its users.
+
+**State data breach notification statutes.** All 50 U.S. states have some
+version of a law requiring notice to residents when their personal
+information is exposed. Most define "personal information" by an
+enumerated list: a Social Security number, a driver's license number, or a
+username/password combination, most commonly. A session cookie like `li_at`
+is not explicitly named on most states' lists, which makes whether it
+counts as reportable "personal information" a genuinely open legal
+question rather than a settled one. New York's SHIELD Act (N.Y. Gen. Bus.
+Law § 899-aa/bb) and a handful of others use somewhat broader definitions
+that could plausibly reach a session credential; many older state statutes
+use narrower, enumerated lists that might not. Source: [NCSL security
+breach notification laws summary](https://www.ncsl.org/technology-and-communication/security-breach-notification-laws).
+
+**GDPR, Articles 33 and 34.** If an entity is a data controller for EU
+residents' data, Article 33 requires notifying the relevant supervisory
+authority within 72 hours of becoming aware of a breach, and Article 34
+requires notifying the affected individuals directly when the breach poses
+a high risk to their rights and freedoms. Whether GDPR reaches this
+disclosure at all depends on facts not established here: whose data was
+exposed, where those people are located, and who qualifies as the
+controller for it. Source: [GDPR Articles 33-34, official text](https://gdpr-info.eu/art-33-gdpr/).
+
+**FTC Act § 5.** Separately from the state breach-notification statutes,
+the FTC has in some cases treated a company's failure to disclose a known
+security incident to affected users as itself an unfair practice under
+§ 45, distinct from the underlying vulnerability.
+
+### What this repo will not do with this section either
+
+The same discipline applies here as everywhere else on this page. Naming
+the frameworks that would matter if a duty were triggered is not the same
+as concluding a duty was triggered, or that anyone failed to meet one. This
+repo does not know whether LEMPOD or LinkedIn had actual knowledge
+sufficient to trigger any of these obligations, how many users or which
+jurisdictions were potentially affected, or whether notice was already
+given through some channel this repo has no visibility into. Absent those
+facts, this section states what law would apply and to whom, not that a
+violation occurred.
+
 ## What this repo will not do with any of this
 
 Cross-referencing a law's elements against an aggregate statistic is not

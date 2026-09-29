@@ -167,6 +167,15 @@ narrower: another documented instance of the same underlying pattern,
 a tool built around LinkedIn engagement handling sensitive account data
 insecurely, cited for that pattern and nothing more specific.
 
+A separate question this disclosure raises is what, if any, breach
+notification duty applies when something like this is discovered, and to
+whom it would run. See
+[regulatory-context.md](regulatory-context.md#breach-notification-law-a-different-question-than-16-cfr--4658)
+for that analysis. Short version: any such duty would run to LEMPOD, the
+platform where the leak occurred, not to LinkedIn, absent separate facts
+this repo does not have. This repo also has no information, in either
+direction, about whether LEMPOD notified affected users.
+
 ## How this fits the rest of the repo
 
 Consistent with [regulatory-context.md](regulatory-context.md) (this repo
