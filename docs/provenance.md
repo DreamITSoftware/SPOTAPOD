@@ -125,6 +125,48 @@ indicator of influence has, at least once, leaked to anyone who knew
 where to scroll, confirmed by the platform that built the wall around it
 in the first place.
 
+## A second, separate disclosure: a pod tool's own vulnerability (LEMPOD)
+
+The disclosure above concerns a flaw in LinkedIn's own systems. A
+second, unrelated disclosure, a LinkedIn post by this project's author,
+describes a vulnerability in a pod tool itself, LEMPOD, not in
+LinkedIn's platform and not in any of the three tools this repo actually
+profiles (Podawaa, HyperClapper, LinkBoost). It is included here for
+context on the broader pattern, a pod ecosystem with its own security
+problems, not as evidence about any dataset in this repo.
+
+Per that post, discovered 2024-03-26: navigating to a pod on the LEMPOD
+platform let an attacker read the pod's websocket traffic, which
+included other pod members' private information and their LinkedIn
+`li_at` session cookie, sent to the client in clear-text JSON. The
+`li_at` cookie is what LinkedIn uses to keep a browser logged in, so
+per the post, anyone who captured it could log into that member's
+LinkedIn account directly, without their password. The post also
+describes bypassing LEMPOD's own interaction-tracking protocol, the
+possibility of scraping this at scale across multiple accounts
+(potentially a denial-of-service risk against LEMPOD and LinkedIn
+alike), and puts the CVSS v3.1 score at 8.8. It names GDPR as implicated
+for the same reasons as the other disclosure: mass profiling of the
+resulting data would be exactly the kind of processing GDPR restricts.
+
+This is **STATED** only, reported by the finder (this project's author)
+with no independent confirmation from LEMPOD or LinkedIn quoted or
+attached to the post, unlike the `UpdatesV2` disclosure above, which
+carries LinkedIn's own written confirmation. It should not be read at
+the same evidentiary weight as that one. One commenter on the original
+post raised a fair counter-read worth noting rather than omitting: that
+a pod-tool vulnerability like this could equally support an operator's
+claim that suspicious activity on their account came from being hacked
+rather than from running a pod, an alternative explanation this repo
+has no way to adjudicate from the post alone.
+
+What this does and does not establish: it does not concern, and this
+repo does not use it as evidence about, `podawaa2024.json`,
+`HyperClapper.json`, or `LinkBoost-2025.json`. Its relevance here is
+narrower: another documented instance of the same underlying pattern,
+a tool built around LinkedIn engagement handling sensitive account data
+insecurely, cited for that pattern and nothing more specific.
+
 ## How this fits the rest of the repo
 
 Consistent with [regulatory-context.md](regulatory-context.md) (this repo
