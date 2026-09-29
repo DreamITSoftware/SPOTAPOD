@@ -3,6 +3,24 @@
 ## Unreleased
 
 ### Added
+- `docs/commentary/linkedin-ceo-fakery-contrast.md`, a commentary piece
+  contrasting LinkedIn CEO Dan Shapero's September 29, 2026 Wall Street
+  Journal remarks about AI-driven application noise with this repo's
+  own findings on manufactured engagement and account concentration in
+  career-advice content. Evidence-tiered throughout; the WSJ quotes are
+  STATED, this repo's own counts are VERIFIED and reproducible.
+- `analysis/top_account_concentration.py`, an aggregate-only script
+  computing what share of a dataset's posts come from its top 20 and
+  top 100 authors (by post count, using the "percent of posts with an
+  identified author" denominator already used for the 1%/5%/10%
+  figures in `docs/research/baseline-profile.md`). Written to directly
+  check a disputed third-party document's claim that HyperClapper's
+  "top 20 accounts produce 50.6%... top 100 produce 87.3%" of all
+  posts. Run against this repo's own copy of HyperClapper: top 20 =
+  36.2%, top 100 = 83.5%, of posts with an identified author - both
+  real concentration effects, both lower than claimed. Results and
+  methodology added to `docs/research/baseline-profile.md` and
+  `docs/research/authenticity-content.md`.
 - `docs/provenance.md`'s UpdatesV2/ProfileUpdatesV2 section now cites a
   supplied CVSS v3.1 vector reproducing the top of the previously stated
   7.0-9.6 range. Recomputed independently against the official CVSS v3.1
