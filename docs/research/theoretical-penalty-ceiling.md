@@ -5,6 +5,17 @@ with the record counts already established in
 [baseline-profile.md](baseline-profile.md). Nothing below has been edited
 by hand.
 
+**THEORETICAL CEILING ONLY, one record treated as one maximum-penalty violation. Not a penalty estimate.** Penalty per record used: $53,088.
+
+| Dataset | Records | × $53,088 | Theoretical ceiling |
+|---|---|---|---|
+| podawaa2024.json | 213,491 | $53,088 | $11,333,810,208 |
+| HyperClapper.json | 49,369 | $53,088 | $2,620,901,472 |
+| LinkBoost-2025.json | 77,969 | $53,088 | $4,139,218,272 |
+| **Combined** | **340,829** | | **$18,093,929,952** |
+
+Raw script output, for reproducibility:
+
 ```
 THEORETICAL CEILING ONLY -- one record treated as one maximum-penalty violation. Not a penalty estimate. See docs/research/theoretical-penalty-ceiling.md for why.
 Penalty per record used: $53,088
