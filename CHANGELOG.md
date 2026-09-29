@@ -3,6 +3,18 @@
 ## Unreleased
 
 ### Added
+- `docs/regulatory-context.md` now has a "Breach notification law" section
+  addressing a different question than the fake-engagement statutes on the
+  rest of the page: what notification duty, if any, applies when a company
+  discovers leaked credentials or session tokens, and to whom it would run.
+  Corrects the framing to note any such duty for the LEMPOD disclosure runs
+  to LEMPOD (where the leak occurred), not LinkedIn, absent separate facts
+  this repo doesn't have. Covers state breach-notification statutes (the
+  session-cookie-as-"personal information" definitional gap across states),
+  GDPR Articles 33/34, and FTC Act § 5's treatment of nondisclosure as its
+  own unfair practice in some cases. Cross-linked from `docs/provenance.md`'s
+  LEMPOD section. No claim that any notification duty was triggered or
+  unmet; this repo has no facts either way.
 - `docs/provenance.md` now documents a second, separate vulnerability
   disclosure (a LinkedIn post by this project's author, discovered
   2024-03-26): a `li_at` session-cookie leak in LEMPOD, a pod tool not
