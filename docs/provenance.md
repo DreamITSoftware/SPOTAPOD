@@ -88,7 +88,15 @@ user regardless of whose post it was, and scrapable in a loop at scale.
 The disclosure's own [CVSS v3.1](https://www.first.org/cvss/v3-1/specification-document)
 scoring puts the flaw at 7.0 to 9.6, network-exploitable, requiring no more
 than ordinary low-level user privileges, and rates confidentiality impact
-as High. It states plainly
+as High. The upper end of that range is reproducible from a supplied
+vector,
+[`AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:N/A:H/E:H/RL:X/RC:X/CR:X/IR:X/AR:X/MAV:N/MAC:L/MPR:N/MUI:N/MS:C/MC:X/MI:X/MA:X`](https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?vector=AV:N%2FAC:L%2FPR:L%2FUI:N%2FS:C%2FC:H%2FI:N%2FA:H%2FE:H%2FRL:X%2FRC:X%2FCR:X%2FIR:X%2FAR:X%2FMAV:N%2FMAC:L%2FMPR:N%2FMUI:N%2FMS:C%2FMC:X%2FMI:X%2FMA:X&version=3.1),
+which this repo independently recomputed using the official CVSS v3.1
+formula (verified against known reference vectors first) and confirms
+produces a **Base Score of 9.6**, matching the top of the stated 7.0-9.6
+range. The disclosure does not specify which of the two named flaws
+(`UpdatesV2` or `ProfileUpdatesV2`) this particular vector belongs to, so
+this repo isn't assigning it to one over the other. It states plainly
 that this exposed data "views should not be public," raises the exact
 same profiling and re-identification concerns [privacy.md](privacy.md)
 raises about this repo's own hashed identifiers, and names GDPR

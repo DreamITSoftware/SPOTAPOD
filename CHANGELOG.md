@@ -3,6 +3,15 @@
 ## Unreleased
 
 ### Added
+- `docs/provenance.md`'s UpdatesV2/ProfileUpdatesV2 section now cites a
+  supplied CVSS v3.1 vector reproducing the top of the previously stated
+  7.0-9.6 range. Recomputed independently against the official CVSS v3.1
+  formula (verified against known reference vectors first) before citing
+  it: confirmed Base Score of 9.6, matching the disclosure. The vector was
+  initially misattributed to the separate LEMPOD disclosure in a since-
+  corrected draft of this entry; the disclosure text doesn't specify
+  whether the vector belongs to `UpdatesV2` or `ProfileUpdatesV2`
+  specifically, so neither is assumed.
 - `docs/provenance.md`'s LEMPOD section updated with independent
   corroboration from LinkedIn's own case correspondence (LinkedIn Case
   #240327-019836, March 27-April 8, 2024, supplied directly to this
