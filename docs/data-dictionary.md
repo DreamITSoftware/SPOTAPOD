@@ -63,3 +63,23 @@ Fields not covered by scripts beyond hashing/counting as noted above are
 internal/structural and carry no additional identity risk beyond what's
 already flagged. This includes `id` and `__typename` in HyperClaper.json.
 
+## spotapod.json
+
+See [provenance.md](provenance.md#a-fourth-file-supplied-as-spotapodjson-not-independent-data)
+for why this file is documented as a derived aggregation of
+podawaa2024.json rather than an independent dataset. Requires a repair
+step before parsing; not standard JSON as supplied (see that section).
+
+Top level: `[ ... ]` (flat array, no wrapper object)
+
+| Field | Type | Completeness | Notes |
+|---|---|---|---|
+| `linkedinPostId` | int | 100.0% | Same ID scheme and same values as podawaa2024.json's field of the same name |
+| `PostDate` | ISO 8601 timestamp | 100.0% | Range 2018-07-15 to 2024-11-01 across the file |
+| `PODCount` | int | 100.0% | Min 1, max 1,364, mean 9.97, median 2. Not defined by the source; treated as an unexplained per-post count, not assumed to mean any specific thing |
+| `Author` | string | 89.5% | Real name. **Never printed by any script in this repo** |
+| `AuthorPublicIdentifier` | string | 89.5% | Same identifier scheme as podawaa2024.json's field of the same name; every hashed value found here is also present in podawaa2024.json. Hashed in memory only |
+| `MaxViews` | int | 100.0% | Matches podawaa2024.json's `Views` for the same post ID, for records checked. 43.2% show 0 |
+| `MaxReactions` | int | 100.0% | Matches podawaa2024.json's `Likes` for the same post ID, for records checked |
+| `Title` | string | 100.0% | Matches podawaa2024.json's `Content` for the same post ID, for records checked |
+

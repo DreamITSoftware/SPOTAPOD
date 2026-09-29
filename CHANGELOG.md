@@ -3,6 +3,21 @@
 ## Unreleased
 
 ### Added
+- A file supplied as `spotapod.json` was checked before being treated as a
+  fourth independent dataset. Verified: every one of its 201,000 unique
+  `linkedinPostId` values and every one of its 6,948 unique authors already
+  exists in `podawaa2024.json`, and its `Title`/`MaxReactions`/`MaxViews`
+  fields match podawaa2024's `Content`/`Likes`/`Views` for the same post
+  ID. Documented in `docs/provenance.md`, `docs/data-dictionary.md`, and
+  `docs/privacy.md` as a derived, post-level aggregation of
+  podawaa2024.json, not a new independent source - it introduces no new
+  individuals or privacy surface. Its one new field, `PODCount`, is
+  profiled in `docs/research/pod-count-profile.md` via the new
+  `analysis/pod_count_profile.py` script, including a repair step for the
+  file's non-standard JSON formatting (line-wrapped at a fixed width
+  without regard to token boundaries) and a check of `PODCount`'s
+  relationship to the zero-view-with-reactions anomaly documented
+  elsewhere in this repo.
 - `docs/commentary/linkedin-ceo-fakery-contrast.md`, a commentary piece
   contrasting LinkedIn CEO Dan Shapero's September 29, 2026 Wall Street
   Journal remarks about AI-driven application noise with this repo's
