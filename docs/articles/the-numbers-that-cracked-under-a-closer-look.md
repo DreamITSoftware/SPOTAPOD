@@ -16,6 +16,8 @@ If you wanted to guess which category of content on a professional network would
 
 Nearly six in ten of the accounts behind those pod-driven posts describe themselves as executive coaches or leadership consultants. That's not a coincidence, it's a business model. A coach selling influence for a living needs their posts to look influential. A wall of likes and comments doesn't just read as popular, it reads as proof the advice works, proof worth paying for. The fake number isn't decoration. It's the pitch.
 
+Call it what it actually is: not thought leadership, BOUGHT leadership. And the wider phenomenon it feeds, a feed where the loudest voices got that way by paying a pod instead of earning a following, isn't digital populism. It's digital BOUGHTulism, a slow paralysis of the trust signals a platform needs to function, administered one purchased comment at a time.
+
 ## The tool that keeps coming back
 
 Here's where it stops being abstract. HyperClapper, one of the pod tools behind this data, has had at least one Chrome Web Store listing removed, delisted June 4, 2026, roughly 500 users at the time. The same publisher has a second listing, still live, still getting updates as recently as September 15, 2026, with roughly 1,000 users. Same developer, new extension ID, same product.
