@@ -2,6 +2,17 @@
 
 ## Unreleased
 
+### Corrected
+- `docs/commentary/linkedin-ceo-fakery-contrast.md` claimed "nine of the ten
+  single highest-liked posts... show zero recorded views." This was never
+  independently verified against the raw data before publication. Checked
+  directly against `podawaa2024.json`: sorting all 213,491 posts by `Likes`
+  and taking the top 10, **4** show `Views == 0`, not 9. Corrected the text
+  to state the actual figure. The other statistics in that piece (75,442
+  zero-view posts / 35.3%, the 88,028-likes-on-zero-views post, the
+  41,315-likes-on-one-view post) were independently re-verified in an
+  earlier commit and are unaffected.
+
 ### Added
 - A file supplied as `spotapod.json` was checked before being treated as a
   fourth independent dataset. Verified: every one of its 201,000 unique

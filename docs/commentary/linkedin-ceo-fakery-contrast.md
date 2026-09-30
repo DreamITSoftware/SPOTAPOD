@@ -23,7 +23,7 @@ But there's a second direction of traffic on the same platform that nobody at Li
 
 I analyzed two LinkedIn datasets, 213,491 posts from 2024 and 49,369 posts from 2025 into 2026, and found that a cluster of 100 accounts now produces 83.5% of everything in the second dataset that has an identifiable author. More than four in five posts in the "most-talked-about" career content on the platform trace back to a hundred accounts running the same handful of scripts on repeat.
 
-The engagement numbers propping that content up don't hold together. In the 2024 dataset, 75,442 posts, 35.3% of the entire file, show likes recorded against zero views. You cannot like a post you never saw. One single post logged 88,028 likes on zero views. Another logged 41,315 likes on a single view, a ratio past 41,000 to 1. Nine of the ten single highest-liked posts in that 213,491-post dataset show zero recorded views.
+The engagement numbers propping that content up don't hold together. In the 2024 dataset, 75,442 posts, 35.3% of the entire file, show likes recorded against zero views. You cannot like a post you never saw. One single post logged 88,028 likes on zero views. Another logged 41,315 likes on a single view, a ratio past 41,000 to 1. Among the ten single highest-liked posts in that 213,491-post dataset, four show zero recorded views.
 
 If Shapero's employers can't tell who can do the job anymore because of AI noise on one side of the platform, the teenagers scrolling LinkedIn at eleven at night can't tell who's actually successful because of manufactured noise on the other side. Nobody built them a $450 million tool for that.
 
