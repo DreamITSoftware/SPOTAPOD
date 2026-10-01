@@ -27,3 +27,16 @@ references:
       matching sha256, see docs/provenance.md). HyperClaper.json and
       LinkBoost-2025.json are not part of this Dataverse record; see
       docs/provenance.md for their reported, STATED sources.
+  - type: magazine-article
+    title: "Your Teen's Career Hero Has a Case of Digital BOUGHTulism"
+    authors:
+      - name: "Daniel Hall"
+    journal: "Cyber Defense eMagazine"
+    month: 10
+    year: 2026
+    notes: >
+      October 2026 Edition, p. 51. Popular treatment of this repository's
+      career-advice reciprocal-engagement findings (see
+      docs/research/career-advice-reciprocal-crosstab.md and
+      docs/articles/the-numbers-that-cracked-under-a-closer-look.md),
+      written for a general/parenting audience.
