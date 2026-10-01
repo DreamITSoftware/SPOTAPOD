@@ -40,13 +40,25 @@ It's important to be fair here too. This doesn't prove every single comment from
 
 It also doesn't prove the people running these accounts knew their tool was broken. Maybe they paid for a service to make their posts look more popular and never checked closely on how it actually worked. That's still not honest, but it's a different kind of not-honest than doing it on purpose and knowing exactly how broken it was.
 
+## Is there actually a law about this?
+
+Yes, there is, and it's a good one to know about. In the United States, there's a government group called the Federal Trade Commission, or FTC for short. Their whole job is protecting people from being tricked, especially when money or trust is involved.
+
+The FTC has a specific rule, with the official name 16 CFR Section 465.8, that says companies and people aren't allowed to use fake "indicators of social media influence" to make themselves look more popular, trusted, or important than they really are. "Indicators of social media influence" is just a fancy way of saying likes, comments, followers, the numbers that are supposed to tell you how much other people actually like something.
+
+Think about why a rule like that matters. If a stranger tells you their lemonade stand is the best in town, you might want some proof, maybe a long line of happy customers. That line is a kind of "indicator." Now imagine the stranger secretly paid ten friends to stand in line and look excited, without ever tasting the lemonade. The line is still there. It still looks convincing. But it isn't proof of anything real anymore, it's a trick wearing the costume of proof. The FTC rule exists because that exact trick, done with likes and comments instead of a pretend line, can fool just as many people, maybe more, since it's happening on a screen where nobody can see the strings.
+
+Here's the part that matters a lot for honesty, and this investigation is very careful about it: finding broken fill-in-the-blank comments, like `{{firstName}}` showing up where a real name should be, is strong evidence that something automated was happening. But "something automated happened" and "this specific person broke this specific law on purpose" are two different things. Proving someone actually broke a law usually takes more steps, like showing they knew exactly what they were doing and meant to trick people, which this investigation's data can't fully prove by itself. So nobody in this story gets called a criminal. What can honestly be said is simpler and still important: the behavior documented here, accounts systematically faking engagement through broken automated tools, is exactly the kind of thing that law was written to stop, whether or not any one account ever gets formally caught and punished for it.
+
+That's actually a really useful lesson about laws in general. A law can clearly describe something as wrong, and evidence can clearly show that wrong thing happening, without every single instance of it ending in a court case. Laws work partly by stopping bad behavior directly, and partly just by existing, so that everyone knows the rules and companies like LinkedIn have a reason to keep hunting for cheaters even when no judge is involved yet.
+
 ## The honest wrap-up
 
 **We know for sure:** 9,780 real comments, out of 77,899 checked, still had their secret fill-in-the-blank notes showing instead of real words. Those all traced back to just 144 accounts, and the biggest ones among them were career coaches, the same kind of accounts already caught faking popularity earlier in this investigation.
 
 **We don't know for sure:** how many of the other comments from those same accounts were also fake but didn't get caught, and whether the people running the accounts knew their tool was broken or just never checked.
 
-**A reasonable guess, not a proven fact:** that this broken trick is connected to the bigger pattern of fake popularity already found in this investigation, since it's the exact same accounts doing it.
+**A reasonable guess, not a proven fact:** that this broken trick is connected to the bigger pattern of fake popularity already found in this investigation, since it's the exact same accounts doing it. It's also a reasonable guess, not a proven fact, that any specific account broke the FTC's rule on purpose, since proving "on purpose" takes more than this data alone can show.
 
 Every number in this story can be checked by anyone, using the same public files this investigation used. That's the whole point: don't just trust a confident-sounding claim, check it yourself whenever you can.
 
