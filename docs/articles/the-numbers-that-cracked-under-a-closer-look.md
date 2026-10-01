@@ -1,4 +1,4 @@
-# 88,028 Likes, Zero Views: LinkedIn's Most Honest Post
+# The Post Nobody Saw, but Liked
 
 ### Fake engagement doesn't just inflate a post. It launders trust, and the receipts show exactly how.
 
