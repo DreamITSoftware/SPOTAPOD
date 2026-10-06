@@ -16,23 +16,22 @@ false 2,601 - a roughly 94% false-positive rate that briefly made "MIT"
 look like the single largest university-related term in that dataset,
 ahead of the generic word "university" itself.
 
-What actually caught this wasn't a threshold or a distinct-string
-check - it was that podawaa2024's uncorrected result was inconsistent
+No threshold or distinct-string check caught this. Podawaa2024's uncorrected result was inconsistent
 with the other two datasets, where "university/universities" led as
 expected. That inconsistency prompted a manual read of the matching
-text, which immediately showed German sentences ("Ich ging mit meiner
+text, which showed German sentences ("Ich ging mit meiner
 Mutter...") mixed in with genuine MIT mentions ("MIT engineers have
 shown...").
 
 The fix: "MIT" is matched case-sensitively in the shipped script (no
 `re.IGNORECASE`), since the German word is always written lowercase and
-the university acronym is always written in caps. Same class of lesson
+the university acronym is always written in caps. This is the same kind of problem
 as the "cart"/CAR-T collision in
 [immunotherapy-content.md](immunotherapy-content.md) and the "TIME"
-magazine pattern in [entity-mentions.md](entity-mentions.md) - a short,
+magazine pattern in [entity-mentions.md](entity-mentions.md) . A short,
 common-looking token needs either a qualifying phrase or a case
 constraint before it can be trusted, and cross-dataset consistency is
-itself a useful check even when no single automated safeguard fires.
+a useful check even when no automated safeguard fires.
 
 ## Results (VERIFIED - reproducible via the script)
 
@@ -54,22 +53,20 @@ itself a useful check even when no single automated safeguard fires.
 ## Reading these numbers
 
 "University/universities" (the generic term) correctly leads in all
-three datasets once the MIT/"mit" collision is fixed - the consistency
-of that ranking across datasets is itself part of the evidence that the
-correction is right.
+three datasets once the MIT/"mit" collision is fixed. The same ranking across datasets is
+part of the evidence that the correction is right.
 
 Harvard is the most-mentioned named institution everywhere, well ahead
 of Stanford, MIT, Oxford, and the rest. LinkBoost-2025 leans unusually
 heavily on Cambridge (151, second only to Harvard there) relative to
-the other two datasets, where Cambridge barely registers - a real,
-dataset-specific pattern rather than an artifact, since it doesn't
+the other two datasets, where Cambridge barely registers - a
+dataset-specific pattern, not an artifact, since it doesn't
 depend on the corrected term.
 
 ## Caveats
 
 Same as every keyword scan in this repo: a match means the term
 appears in the text, not that the post is genuine, accurate content
-about the named institution. This doc's own correction above is a
-reminder that cross-dataset comparison - not just within-dataset
-distinct-string or duplicate-template checks - can itself surface a
-methodological problem that neither check alone would catch.
+about the named institution. The correction above shows that cross-dataset comparison can surface a
+methodological problem that within-dataset distinct-string or
+duplicate-template checks miss.

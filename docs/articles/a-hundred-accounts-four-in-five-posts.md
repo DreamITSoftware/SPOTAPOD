@@ -2,19 +2,17 @@
 
 ### In one engagement-pod dataset, 100 accounts out of 702 produce 83.5% of everything
 
-Imagine a room of 702 people, all supposedly independent voices sharing career advice on LinkedIn. Now imagine that everything worth reading in that room, four out of every five things said, comes from just 100 of them.
+Consider 702 accounts, all presented as independent voices sharing career advice on LinkedIn. In one dataset, four out of every five posts come from 100 of them.
 
-That's what the data shows. In a dataset of 49,369 posts collected from a LinkedIn engagement-pod tool across 2025 and into 2026, the top 100 accounts (out of 702 with an identifiable author) account for **83.5%** of all posts with a known author. The top 20 accounts alone account for 36.2%.
+In a dataset of 49,369 posts collected from a LinkedIn engagement-pod tool across 2025 and into 2026, the top 100 accounts (out of 702 with an identifiable author) account for **83.5%** of all posts with a known author. The top 20 accounts alone account for 36.2%.
 
-## Why "concentration" undersells it
+## How concentrated the posting is
 
-A content platform having some power users isn't news, since every social network has a long tail. What makes this different is the ratio: this isn't the top 20% driving most of the content, or even the top 10%. It's roughly the top 14% of accounts (100 of 702) driving five out of every six posts with a known author. The other 86% of accounts are, collectively, background noise next to a small operating core.
+Every social network has some power users. The ratio here is unusual: roughly the top 14% of accounts (100 of 702) produce five out of every six posts with a known author. The other 86% of accounts contribute little by comparison.
 
-## Where this number came from, and why it needed checking
+## Where the number came from
 
-A third-party document claimed this same dataset showed the top 100 accounts producing 87.3% of everything. That number turned out not to hold up under direct verification against the raw file. The actual figure, computed the same way and against the same file, is 83.5%. Both numbers describe a real, extreme concentration effect. Only one of them is accurate.
-
-That gap matters for a simple reason: overstating a real problem doesn't make the argument stronger, it makes it easier to dismiss the moment someone checks the math. 83.5% needs no exaggeration to make the point.
+A third-party document claimed this same dataset showed the top 100 accounts producing 87.3% of everything. That number turned out not to hold up under direct verification against the raw file. The actual figure, computed the same way and against the same file, is 83.5%. Both numbers show extreme concentration, but only 83.5% is accurate. Overstating a real problem makes the argument easier to dismiss once someone checks the math, and 83.5% needs no exaggeration.
 
 ## What this is, and isn't
 

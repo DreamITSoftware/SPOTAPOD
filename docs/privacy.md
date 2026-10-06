@@ -23,7 +23,7 @@ who did not consent to appearing in either dataset or in this repo.
 
 Taken together, `HyperClaper.json` and `LinkBoost-2025.json` are enough to
 fully de-anonymize the records in them: real names and, for HyperClapper, a
-photo. No inference required. `podawaa2024.json` is one step removed (a
+photo. No inference is required. `podawaa2024.json` is one step removed (a
 handle, not a name or photo) but a handle is still a direct identifier: it
 resolves to `linkedin.com/in/<handle>` and the real person behind it.
 
@@ -31,8 +31,7 @@ A fourth file, supplied as `spotapod.json`, introduces no new privacy
 surface beyond the above: every author and post in it was verified to
 already exist in `podawaa2024.json` (see
 [provenance.md](provenance.md#a-fourth-file-supplied-as-spotapodjson-not-independent-data)),
-so it is a derived view of an already-covered population, not a new
-one.
+so it is a derived view of an already-covered population.
 
 ## How this repo handles it
 
@@ -72,8 +71,7 @@ this repo will not add a per-author lookup, a browsable table keyed by name
 or handle, or any feature that lets someone search "is this person in the
 dataset." That's true even in a private/internal build: the moment a tool
 can answer that question for one person, it can answer it for everyone in
-any of the three files,
-and this repo isn't set up to handle the correction, consent, or
+any of the three files, and this repo isn't set up to handle the correction, consent, or
 due-process obligations that come with that.
 
 ## If you're handling the raw files yourself
@@ -88,18 +86,18 @@ A few practical points, not legal advice:
   different purpose than the person posted it for. Most privacy regimes
   distinguish between data being public and data being *repurposed*, and
   pairing public posts with an accusation of deceptive behavior is a
-  different purpose than the original post. Separately, note that
+  different purpose than the original post. Note also that
   [16 CFR § 465.8](regulatory-context.md) itself only prohibits *selling,
-  distributing, purchasing, or procuring* fake indicators, appearing in a
+  distributing, purchasing, or procuring* fake indicators, so appearing in a
   dataset because your public metrics look unusual is not the same as
   having engaged in conduct the rule covers, and this repo does not treat
   it as such (see [limitations.md](limitations.md)).
 - If someone identified in either file asks you to remove their data or
   explain what you're doing with it, having a real answer ready (what you
   keep, what you don't, for how long, and why) is worth doing before you
-  need it, not after.
+  need it.
 - If you plan to publish anything beyond this repo's own aggregate-only
   output, including sharing a raw or lightly-processed copy of either file
-  with anyone else, that's a materially different, higher-risk step than
-  what this repo does, and worth running past someone with actual legal
+  with anyone else, that's a higher-risk step than
+  what this repo does. Run it past someone with legal
   expertise in your jurisdiction first.

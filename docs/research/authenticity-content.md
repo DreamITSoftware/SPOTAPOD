@@ -21,13 +21,11 @@ claimed comparison is not checked by this script, since it falls
 outside this scan's term list; only the "honest truth"/"real talk" side
 is addressed here.)
 
-This is consistent with a separate, previously documented discrepancy
-in the same document: a claimed 1,706 occurrences of a resume-rewrite
+A separate, previously documented discrepancy in the same document points the same way: a claimed 1,706 occurrences of a resume-rewrite
 template against an actual, independently verified count of 533-806
 depending on spelling variants (see this project's broader research
-notes). Both discrepancies point the same direction - the disputed
-document's specific statistics do not hold up against direct
-verification against the source files.
+notes). The disputed document's specific statistics do not hold up
+when checked against the source files.
 
 A third claim from the same document has since been checked directly
 against this repo's own copy of the raw source files: that HyperClapper's
@@ -35,9 +33,8 @@ against this repo's own copy of the raw source files: that HyperClapper's
 Run via `analysis/top_account_concentration.py` (VERIFIED, reproducible),
 the actual figures are **36.2%** (top 20 authors) and **83.5%** (top 100
 authors) of posts with an identified author - both real concentration
-effects, and both lower than claimed. All three checked statistics from
-this document point the same direction: the underlying pattern each one
-describes is real, but the specific number attached to it is inflated.
+effects, and both lower than claimed. In all three checked statistics from
+this document, the underlying pattern is real but the specific number is inflated.
 
 ## LinkBoost-2025's lower distinct-string ratio, checked
 
@@ -64,18 +61,16 @@ new artifact requiring correction.
 
 ## Reading these numbers
 
-LinkBoost-2025 has both the highest rate and the most genuinely
+LinkBoost-2025 has both the highest rate and the most widely
 distributed content of the three datasets. "Transparent/transparency"
 leads in podawaa2024, while "authentic/authenticity" leads in the other
-two datasets - a real phrasing difference across datasets, similar in
-kind to the "Top N" vs. numbered-listicle style difference documented
+two datasets - a phrasing difference across datasets, similar to the "Top N" vs. numbered-listicle style difference documented
 in [toplist-content.md](toplist-content.md).
 
 ## Caveats
 
 Same as every keyword scan in this repo: a match means the term
 appears in the text, not that the post or account is genuinely
-authentic, transparent, or honest. If anything, this category's own
-subject matter is a reminder that claiming authenticity and being
-authentic are two different things - which is exactly the point this
-scan was built to check against a specific outside claim.
+authentic, transparent, or honest. Claiming authenticity and being
+authentic are different things, and this
+scan was built to check a specific outside claim.

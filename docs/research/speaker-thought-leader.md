@@ -25,17 +25,15 @@ there's nothing to scan there - same limitation documented in
 
 ## Reading the overlap
 
-The overlap is the actual finding here, not the raw counts on their
-own. In HyperClapper, **100% of "thought leader" records also contain
+The overlap is the main finding, more than the raw counts. In HyperClapper, **100% of "thought leader" records also contain
 "speaker"** (500 of 500). In LinkBoost-2025 it's **97.3%** (4,175 of
-4,292). That's not two independently common self-descriptions
-co-occurring by chance - it's much more consistent with a single
+4,292). This is more consistent with a single
 recurring bio template (something like "Speaker | Thought Leader") than
-with two separate, unrelated credibility claims. Read the "thought
+with two independent self-descriptions co-occurring by chance. Read the "thought
 leader" numbers above as largely a subset of the "speaker" numbers,
 not as an independent signal.
 
-LinkBoost-2025 skews dramatically higher on both terms than HyperClapper
+LinkBoost-2025 is much higher on both terms than HyperClapper
 - roughly 1 in 5 records mentions "speaker" there, versus roughly 1 in
 26 in HyperClapper. This is consistent with LinkBoost-2025's broader lean
 toward leadership/coaching content already documented in

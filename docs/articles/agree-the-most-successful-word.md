@@ -2,7 +2,7 @@
 
 ### One two-syllable question, posted with no other content, appears 3,918 times in a single dataset
 
-Strip a LinkedIn post down to a single word and you'd expect it to disappear into the feed. Instead, one single-word post, "Agree?", appears **3,918 times** in a 213,491-post dataset. That makes it, by a wide margin, the single most repeated piece of content of any kind found in this entire project.
+One would expect a single-word LinkedIn post to disappear into the feed. Instead, one single-word post, "Agree?", appears **3,918 times** in a 213,491-post dataset. That makes it the most repeated piece of content of any kind found in this project, by a wide margin.
 
 ## The full one-word leaderboard
 
@@ -20,13 +20,13 @@ Posts consisting of exactly one whitespace-delimited token show up across all th
 
 "Agree?" alone accounts for 85% of every one-word post in the dataset.
 
-## Why a one-word post is the purest example of engagement bait
+## Why a one-word post is engagement bait
 
-A post with actual content can be judged on its substance. A bare "Agree?" has none. Its entire function is to prompt a reflexive reaction, nothing else. That it's been deployed 3,918 times, rather than once or twice as a genuine rhetorical flourish, looks a lot more like a mechanical engagement-farming tactic than a communication choice.
+A post with content can be judged on its substance. A bare "Agree?" has none. Its only function is to prompt a reflexive reaction. Appearing 3,918 times, rather than once or twice as a rhetorical flourish, looks more like a mechanical engagement-farming tactic than a communication choice.
 
 ## What this is, and isn't
 
-**VERIFIED**, reproducible via the published scan: one-word posts are counted only when they repeat at least 3 times, specifically so a genuinely unique short post is never singled out. That design choice makes 3,918 an undercount-safe floor, not an inflated number.
+**VERIFIED**, reproducible via the published scan: one-word posts are counted only when they repeat at least 3 times, specifically so a genuinely unique short post is never singled out. That design choice makes 3,918 a floor, not an inflated number.
 
 Full one-word breakdown across all three datasets: **github.com/DreamITSoftware/SPOTAPOD**.
 

@@ -8,7 +8,7 @@ discipline as every other scan in this repo: aggregate counts only, no
 record, author, or matched text ever printed beyond the
 duplicate-template check below.
 
-## The correction this scan's safeguard caught
+## The correction from the duplicate-template check
 
 Same duplicate-template safeguard as
 [nonprofit-content.md](nonprofit-content.md) and
@@ -17,7 +17,7 @@ underlying text values alongside every raw count, and flags a field
 where a single repeated string accounts for 20% or more of matches. It
 fired on first run: LinkBoost-2025's "FBI" count of 15 is one boosted
 news-commentary post about the Jordan Belfort/Wolf of Wall Street
-financial-fraud case, not 15 distinct posts actually about the FBI.
+financial-fraud case, not 15 distinct posts about the FBI.
 Corrected, LinkBoost-2025's real any-mention count is 21, not 35.
 
 ## Results (VERIFIED - reproducible via the script)
@@ -38,24 +38,23 @@ Corrected, LinkBoost-2025's real any-mention count is 21, not 35.
 
 ## Reading these numbers
 
-This is the smallest content category checked in this repo so far -
-smaller than law-related content, nonprofit-related content,
-investment/VC content, cybersecurity content, or travel content, all of
-which sit well below 10% but still meaningfully above this one. Every
-figure here is under 0.1% of its dataset. NSA specifically is almost
-nonexistent: 24 mentions in podawaa2024 (213,491 records), 1 in
+This is the smallest content category checked in this repo so far,
+smaller than law-related, nonprofit-related,
+investment/VC, cybersecurity, or travel content, all of
+which sit well below 10% but above this one. Every
+figure here is under 0.1% of its dataset. NSA is
+nearly absent: 24 mentions in podawaa2024 (213,491 records), 1 in
 HyperClapper, and 0 in LinkBoost-2025.
 
 These are professional/business/career datasets. National-security
-content isn't a meaningful presence in any of them, and the low counts
-here are consistent with that rather than a surprising finding on their
-own.
+content is a negligible presence in any of them, and the low counts
+are consistent with that.
 
 ## Caveats
 
 Same as every keyword scan in this repo: a match means the term
 appears in the text, not that the post contains genuine national
 security information, commentary, or expertise. At counts this small,
-individual posts can shift the percentage meaningfully, which is
-exactly why the duplicate-template check matters even more here than in
+individual posts can shift the percentage noticeably, so
+the duplicate-template check matters more here than in
 larger categories.

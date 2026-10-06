@@ -14,17 +14,16 @@ counted under multiple entities if it names more than one - this is an
 overlapping tally, like the career-advice and other-regulatory-signal
 scans, not the mutually-exclusive scheme `topic_taxonomy.py` uses.
 
-**A note on a real performance/accuracy trade-off found while building
-this**: an early draft included a bare `\bTIME\b` pattern for *TIME*
+**Performance and accuracy trade-off**: an early draft included a bare `\bTIME\b` pattern for *TIME*
 magazine, which matched the extremely common English word "time" on
 nearly every record and caused the scan to run for several minutes
 per dataset instead of under two. The shipped patterns require a
 qualifying phrase for every entity whose name doubles as a common word
 (`TIME Magazine` or `TIME 100` rather than bare `TIME`; `Fortune 500` or
 `Fortune Magazine` rather than bare `Fortune`; similar treatment for
-`Oracle`, `Ernst & Young`, and others). This trades a small amount of
+`Oracle`, `Ernst & Young`, and others). This loses a small amount of
 recall (a casual "as TIME reported" mention without "Magazine" attached
-is missed) for both correctness and runtime that scales properly.
+is missed) but keeps counts correct and runtime reasonable.
 
 ## Results (VERIFIED - reproducible via the script)
 
@@ -121,8 +120,8 @@ Any-mention rate: 13.00% (podawaa2024), 23.19% (HyperClapper), 15.62%
 only one where any single dataset exceeds 20%.
 
 **IBM's share in HyperClapper (8.67%, roughly 24× its share in
-podawaa2024 and 26× its share in LinkBoost-2025) is the standout
-finding.** This is consistent with, though not independently
+podawaa2024 and 26× its share in LinkBoost-2025) is the largest
+outlier.** This is consistent with, though not independently
 re-confirmed by, HyperClapper's elevated `education_certification` topic
 share documented in [topic-taxonomy.md](topic-taxonomy.md) (3.11% vs.
 0.63–0.68% elsewhere): a plausible explanation is a recurring

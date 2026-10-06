@@ -3,28 +3,26 @@
 `analysis/diabetes_content_scan.py` counts mentions of diabetes-related
 terms (diabetes, diabetic, type 1/2 diabetes, insulin, blood sugar,
 glucose monitoring, prediabetes) across post content in all three
-datasets. Same discipline as every other scan in this repo: aggregate
+datasets. Same discipline as the other scans in this repo: aggregate
 counts only, no record, author, or matched text ever printed beyond
 the duplicate-template check described below.
 
-## A duplicate string that turned out to be genuine content
+## A duplicate string that is genuine content
 
 The duplicate-template check fires on LinkBoost-2025 (40 of 172
 matches share one string), but checking the underlying text directly
-showed this is genuine health/nutrition content - a post about sugar
-consumption and its effect on blood sugar - boosted by the platform's
+showed this is genuine health/nutrition content (a post about sugar
+consumption and its effect on blood sugar) boosted by the platform's
 structure, not a false positive. Corrected, LinkBoost-2025's real
 any-mention count is 133, not 172.
 
 This is the same kind of outcome as
 [homelessness-content.md](homelessness-content.md) and
 [veteran-content.md](veteran-content.md), where a flagged duplicate
-turned out to be real content rather than noise, and the opposite of
+turned out to be real content rather than noise, unlike
 [immunotherapy-content.md](immunotherapy-content.md) and
 [university-content.md](university-content.md), where flagged patterns
-turned out to be outright false positives. The lesson standing across
-all four: the safeguard tells you a number needs a second look, not
-what you'll find when you look.
+turned out to be false positives. In all four cases the safeguard flags a number for a second look but does not say what that look will find.
 
 ## Results (VERIFIED - reproducible via the script)
 
@@ -51,8 +49,8 @@ of any dataset.
 
 "Blood sugar" is LinkBoost-2025's dominant term (105, mostly the
 boosted post above), while podawaa2024 leans toward the clinical term
-"diabetes" itself (85) - a real phrasing difference between
-general-wellness framing and more clinical language, similar in kind to
+"diabetes" itself (85). This is a phrasing difference between
+general-wellness framing and more clinical language, similar to
 the framing differences documented in
 [authenticity-content.md](authenticity-content.md) and
 [toplist-content.md](toplist-content.md).

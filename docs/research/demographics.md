@@ -1,7 +1,7 @@
-# Demographics: what's actually in the data, and what isn't
+# Demographics: what's in the data, and what isn't
 
-This page covers `analysis/demographics_scan.py`. Before the numbers: a
-scope statement, because "demographics" usually implies more than what
+This page covers `analysis/demographics_scan.py`. A scope statement comes
+before the numbers, because "demographics" usually implies more than
 these files contain.
 
 ## What is NOT in these files, and won't be inferred
@@ -11,22 +11,21 @@ disability status, or any other protected characteristic for anyone in
 them. This repo does not infer any of those from a name, a profile photo,
 or any other proxy. Not for an individual record, and not in aggregate.
 Name-based or photo-based demographic inference is unreliable (these
-methods carry well-documented, substantial error rates) and it's a form of
-profiling a real, non-consenting person by a protected characteristic they
-never stated. That's true even framed as a population-level statistic
-("X% of accounts appear to be..."). The aggregation doesn't remove the
-individual-level guess underneath it. If you need this analysis, it isn't
-happening in this repo, full stop. See [privacy.md](../privacy.md) and
+methods carry well-documented, substantial error rates) and it profiles a
+real person who did not consent, by a protected characteristic they
+never stated. That holds even when framed as a population-level statistic
+("X% of accounts appear to be..."), because the aggregation does not remove
+the individual-level guess underneath it. This analysis is not done in this repo. See [privacy.md](../privacy.md) and
 [limitations.md](../limitations.md) for the same principle applied elsewhere.
 
-## What IS in the data, and what's reported
+## What is in the data
 
-Two of the three files have fields that are legitimately aggregable
-without inferring anything: a **self-reported location string**
+Two of the three files have fields that can be aggregated
+without inference: a **self-reported location string**
 (HyperClaper.json's `location`) or **country** (LinkBoost-2025.json's
 `country`), and **stated occupation/headline text**
 (HyperClaper.json's `headline`/`jobTitle`; LinkBoost-2025.json's
-`Occupation`). `podawaa2024.json` has neither field. Nothing to report
+`Occupation`). `podawaa2024.json` has neither field. There is nothing to report
 for it here.
 
 ### Geography

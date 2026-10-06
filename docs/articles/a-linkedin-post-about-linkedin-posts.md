@@ -2,19 +2,19 @@
 
 ### Publishing this project's own findings natively on LinkedIn, in LinkedIn's own format, and watching what happens to the engagement numbers
 
-Every article in this project so far has been published off-platform: Substack, GitHub, a research repository. This is the format experiment of publishing a version of this project's own findings directly on LinkedIn itself, in native post form, and treating the resulting engagement as its own small data point.
+Every article in this project so far has been published off-platform: Substack, GitHub, a research repository. This is a format experiment: publishing a version of this project's findings directly on LinkedIn, as a native post, and treating the resulting engagement as a small data point of its own.
 
 ## The proposed format
 
-A short, native-style LinkedIn post, the platform's own conventions, short paragraphs, a hook line, stating one specific verified finding (the zero-view anomaly, or the 533-post resume-template cluster) with a link back to the full research. Then observe and report, honestly, what engagement that post actually receives, compared to the typical engagement levels this project's own datasets show for career-advice or "exposing a problem" content categories.
+A short LinkedIn post in the platform's own conventions (short paragraphs, a hook line) stating one verified finding (the zero-view anomaly, or the 533-post resume-template cluster) with a link back to the full research. Then report what engagement that post receives, compared to the typical engagement levels this project's own datasets show for career-advice or "exposing a problem" content categories.
 
-## Why this is worth doing as an experiment rather than just a distribution strategy
+## Why run this as an experiment and not only as distribution
 
-There's an obvious irony worth leaning into rather than avoiding. A post about engagement manipulation, published on the platform where that manipulation happens, invites exactly the question this project would ask of anyone else's post: was its engagement organic? This format commits, in advance, to disclosing that post's own actual engagement numbers rather than only its reach, and to being explicit about the impossibility of definitively ruling out any pod-based amplification of its own performance.
+A post about engagement manipulation, published on the platform where that manipulation happens, invites the question this project would ask of anyone else's post: was its engagement organic? This format commits in advance to disclosing the post's actual engagement numbers, not only its reach, and to stating that pod-based amplification of its own performance cannot be ruled out.
 
-## The honesty commitment this format requires
+## The disclosure commitment
 
-If this project's own LinkedIn post about its own findings received unusually high engagement, that fact gets reported alongside the post's content, not quietly omitted because it would complicate a tidy distribution story. A project built around scrutinizing engagement authenticity has a particular obligation to apply the same scrutiny to its own posts, not just everyone else's.
+If this project's LinkedIn post received unusually high engagement, that gets reported alongside the post's content and is not omitted. A project built around scrutinizing engagement authenticity should apply the same scrutiny to its own posts.
 
 ## What this is, and isn't
 

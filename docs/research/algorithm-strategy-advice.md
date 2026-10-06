@@ -2,25 +2,24 @@
 
 This page is one specific illustration of the mechanism described in
 [audience-impact.md](audience-impact.md): what happens to readers when
-content gets artificially inflated engagement. It's split out into its own
-page because it's a distinct genre worth reasoning about on its own terms,
-not because it's about any specific real report.
+content gets artificially inflated engagement. It has its own
+page because the genre is distinct enough to reason about separately.
+It is not about any specific real report.
 
 **This page names no real report, author, or company, and makes no claim
 that any real algorithm-advice content has in fact received inflated
-engagement.** It's a generic, conditional illustration of a content genre.
-See the note at the end for why that boundary is deliberate and not
-just a formality.
+engagement.** It is a generic, conditional illustration of a content genre.
+See the note at the end for why that boundary is deliberate.
 
 ## The genre
 
-A distinct and common category of LinkedIn content makes specific,
+A common category of LinkedIn content makes specific,
 tactical claims about how to succeed on the platform, recommended posting
 frequency, which content formats (carousel/document posts, video, text,
 polls) perform best for which purpose, optimal hashtag counts, and timing
 advice built around a post's early "golden hour" of engagement. This kind
-of content is a good example for reasoning about audience impact because
-the stakes are concrete and immediate: a creator or small business reading
+of content is a useful example for audience impact because
+the stakes are concrete: a creator or small business reading
 it will often change *what they actually do*, their posting schedule,
 format mix, or content investment, based on it.
 
@@ -29,20 +28,19 @@ format mix, or content investment, based on it.
 - **Individual creators over-index on a claim's popularity as a stand-in
   for its accuracy.** A tactic recommended in a post that "looks" heavily
   validated by real engagement is more likely to be adopted uncritically
-  than one a reader has to evaluate on the merits alone, the same social-
+  than one a reader has to evaluate on the merits alone. This is the same social-
   proof mechanism described in [audience-impact.md](audience-impact.md),
-  just applied to business/strategy advice instead of health or financial
+  applied to business/strategy advice instead of health or financial
   claims.
 - **Wasted effort and opportunity cost at the individual level.** Time and
   resources spent producing content in a specific format or cadence
-  because a claim looked credible is a real cost to a small creator or
+  because a claim looked credible is a cost to a small creator or
   business if the underlying claim was wrong, outdated, or not
   representative of their actual audience.
 - **Ecosystem-level homogenization, if this happens at scale.** This is
-  the broadest claim this repo makes anywhere, and it's worth being
-  precise about its scope: not a claim about humanity in general, but
-  about the health of a specific information ecosystem (a platform's
-  content and advice economy). If a large number of creators independently
+  the broadest claim this repo makes anywhere, so its scope matters: it concerns
+  a specific information ecosystem (a platform's
+  content and advice economy), not humanity in general. If a large number of creators independently
   converge on the same tactical advice because it was amplified rather
   than because it was verified, three things become more likely: content
   strategies homogenize across otherwise-unrelated creators (reducing
@@ -66,12 +64,11 @@ this repo declines to perform (see
 
 The analysis on this page is grounded in real, publicly-stated tactical
 claims common to this genre (posting cadence, format performance, early-
-engagement windows, hashtag counts) so that it says something substantive
-rather than being empty hedging, but the specific report, its author, and
+engagement windows, hashtag counts) so that it says something substantive, but the specific report, its author, and
 its company are deliberately not named here, and no claim is made that any
 of them were involved in inflated engagement. Naming a real party even in
 a conditional "if this specific report were pushed via fake socials"
 framing would associate them with that conduct by juxtaposition regardless
-of the hedge, which is a real reputational cost to a real business with no
-evidentiary basis behind it. The genre-level version of this question is
-answerable without that cost, so that's what's recorded here.
+of the hedge, which would be a reputational cost to a real business with no
+evidentiary basis. The genre-level version of this question is
+answerable without that cost, so that is what is recorded here.

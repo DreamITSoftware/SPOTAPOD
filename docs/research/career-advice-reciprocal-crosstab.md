@@ -32,9 +32,9 @@ Difference: **+18.53 percentage points**.
 The file's overall reciprocal-engagement rate (65.53% among non-career
 records, close to the 68.6% file-wide figure cited in
 [career-advice-comparison.md](career-advice-comparison.md)) is already
-high. Career-advice-matching content sits meaningfully above even that
+high. Career-advice-matching content sits well above even that
 elevated baseline. This is a within-file, row-level comparison, not a
-cross-file one, so it isolates the career-advice effect from whatever
+cross-file one, so it separates the career-advice effect from whatever
 makes HyperClapper as a whole more pod-heavy than the other two datasets.
 
 ## Limitations
@@ -47,13 +47,13 @@ makes HyperClapper as a whole more pod-heavy than the other two datasets.
   rests on HyperClapper alone.
 - **Keyword matching is still blunt.** The same career-advice pattern set
   used in [career-advice-comparison.md](career-advice-comparison.md)
-  applies here, "promotion" can mean career promotion or a marketing
+  applies here: "promotion" can mean career promotion or a marketing
   promotion, with no way to tell which from this signal alone.
 - **File-identity note.** Several HyperClapper-style export files exist
   outside this repo with different SHA-256 hashes than the one recorded
   in `checksums/CHECKSUMS.txt`. One such non-matching copy produced
   identical record-level results on this specific check, but that should
-  never be assumed. Always verify the hash before citing a figure from
+  not be assumed. Always verify the hash before citing a figure from
   this script.
 - **Correlation between category and coordination, not proof of intent.**
   This establishes that career-advice content is disproportionately

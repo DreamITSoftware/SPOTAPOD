@@ -2,7 +2,7 @@
 
 `analysis/blockchain_crypto_scan.py` counts mentions of blockchain- and
 crypto-related terms across post content in all three datasets. Same
-discipline as every other scan in this repo: aggregate counts only, no
+rules as every other scan in this repo: aggregate counts only, no
 record, author, or matched text ever printed beyond the
 duplicate-template check described below.
 
@@ -29,7 +29,7 @@ duplicate-template check described below.
 
 LinkBoost-2025's lower distinct-string count (63 for 921 matches) was
 checked manually - the top repeated strings (81, 80, 54, 49, 42
-occurrences, none dominating) are genuinely distinct posts, consistent
+occurrences, none dominating) are distinct posts, consistent
 with that dataset's known structure (a limited set of distinct target
 posts, each logged multiple times), not a new artifact requiring
 correction.
@@ -37,9 +37,9 @@ correction.
 ## Reading these numbers
 
 podawaa2024 has by far the highest rate - nearly 3% of the entire
-dataset, roughly 4x HyperClapper's rate and 2.5x LinkBoost-2025's. This
-is a real, meaningful divergence between datasets, not something a
-duplicate-template or false-positive check explains away.
+dataset, roughly 4x HyperClapper's rate and 2.5x LinkBoost-2025's. A
+duplicate-template or false-positive check does not explain this
+divergence between datasets.
 
 podawaa2024 is also the only dataset where "blockchain" itself, rather
 than "crypto/cryptocurrency" generally, is the single largest term
@@ -57,7 +57,7 @@ podawaa2024 to 27.97% in HyperClapper, per
 content ecosystem may have shifted from blockchain/Web3 toward AI over
 that period. This is INFERENCE-tier reasoning from two adjacent data
 points across different time periods and different underlying
-datasets, not a confirmed time-series trend - no single dataset in this
+datasets. It is not a confirmed time-series trend, since no single dataset in this
 project tracks the same population over time.
 
 ## Caveats

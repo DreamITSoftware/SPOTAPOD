@@ -4,21 +4,21 @@
 disorder-related terms (genetic disorder(s), genetic condition(s),
 genetic disease(s), genetic mutation(s), hereditary disease/condition,
 inherited disorder(s), Down syndrome, cystic fibrosis, sickle cell)
-across post content in all three datasets. Same discipline as every
-other scan in this repo: aggregate counts only, no record, author, or
-matched text ever printed beyond the duplicate-template check
+across post content in all three datasets. As with every
+other scan in this repo, it reports aggregate counts only, with no record, author, or
+matched text printed beyond the duplicate-template check
 described below.
 
 This is a health-adjacent, sensitive topic. Every match reported here
-is purely a keyword hit in public post text. No claim is made or
+is a keyword hit in public post text. No claim is made or
 implied about any specific individual's actual health status, genetic
-makeup, or diagnosis - this script measures how often terms appear in
-text, nothing more.
+makeup, or diagnosis. The script measures only how often terms appear in
+text.
 
 ## LinkBoost-2025's correction: one post, not 46
 
 All 46 of LinkBoost-2025's "genetic condition(s)" matches trace to a
-single post - checked directly, it's a genuine, substantive excerpt
+single post. Checked directly, it is a genuine excerpt
 from a Cathie Wood interview discussing AI and genomics in healthcare,
 naming "rare genetic conditions" alongside cancer and chronic illness
 as diseases AI-driven medicine might eventually address. This is real
@@ -47,14 +47,14 @@ This is one of the smallest content categories found in this project,
 comparable to [narcissist-content.md](narcissist-content.md) and
 [immunotherapy-content.md](immunotherapy-content.md). podawaa2024 has
 the most genuine diversity across named conditions, led by Down
-syndrome (17 of 27 total). HyperClapper has essentially none. Once
+syndrome (17 of 27 total). HyperClapper has almost none. Once
 corrected, LinkBoost-2025's entire contribution to this category is a
 single post.
 
 ## Caveats
 
-Same as every keyword scan in this repo, with extra emphasis given the
-topic: a match means the term appears in the text, not that any post
+As with every keyword scan in this repo, and with extra emphasis given the
+topic, a match means the term appears in the text, not that any post
 or account has any connection to a real diagnosis, condition, or
 genetic status. No individual's health information is identified,
 inferred, or reported anywhere in this document or the underlying

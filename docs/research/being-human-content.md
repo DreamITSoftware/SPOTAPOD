@@ -39,27 +39,24 @@ This is genuine signal, not an artifact.
 
 ## Reading these numbers
 
-"Humanity" leads every dataset by a wide margin, consistently the most
-common of the seven terms checked, ahead of more specific phrasings
+"Humanity" is the most common of the seven terms in every dataset, well ahead of more specific phrasings
 like "being human" or "human touch."
 
 LinkBoost-2025 has by far the highest rate - over 5x podawaa2024's rate
-and nearly 3x HyperClapper's. This fits the pattern already established
-across multiple scans in this repo: LinkBoost-2025 consistently skews
-hardest toward emotional/motivational/inspirational content, the same
-lean already documented in
+and nearly 3x HyperClapper's. This fits the pattern across multiple scans in this repo: LinkBoost-2025 skews
+most toward emotional/motivational/inspirational content, as documented in
 [authenticity-content.md](authenticity-content.md),
 [honesty-language-content.md](honesty-language-content.md), and
 [confidence-content.md](confidence-content.md).
 
-**A specific thematic connection worth naming**: several of
+**A thematic connection**: several of
 LinkBoost-2025's top repeated "being human" posts explicitly juxtapose
 human qualities (humanity, connection, the human side) against a
 backdrop of AI-driven career advice - one of the same top repeated
 strings in this scan is a "ChatGPT prompts for resume creation" post.
-This suggests "being human" framing in this dataset may function partly
-as counter-programming to the same dataset's own heavy AI-productivity
-content, rather than as an unrelated, independent theme.
+This suggests "being human" framing in this dataset may partly
+counter the same dataset's heavy AI-productivity
+content, rather than being an independent theme.
 
 ## Caveats
 

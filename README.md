@@ -647,7 +647,7 @@ results: [docs/research/simple-titles.md](docs/research/simple-titles.md).
 four fixed categories. Headline: corporations get named far more than
 any other category (13.00–23.19% of records across the three datasets,
 led by LinkedIn, Google, and - specifically in HyperClapper - an
-outsized 8.67% share for IBM, roughly 24–26× its share elsewhere,
+8.67% share for IBM, roughly 24–26× its share elsewhere,
 plausibly tied to that dataset's elevated free-certification content
 share). YouTube/TikTok/Netflix are the top three streaming/TV platforms,
 in that order, in every dataset. Full results across all four categories:
@@ -667,8 +667,8 @@ as its own line rather than folded in silently. Full results:
 ## Speaker / thought leader
 
 `analysis/speaker_thought_leader_scan.py` covers HyperClapper and
-LinkBoost-2025 only (podawaa2024 has no occupation field). The real
-finding isn't the raw counts - it's that "thought leader" mentions are
+LinkBoost-2025 only (podawaa2024 has no occupation field). The main
+finding is that "thought leader" mentions are
 almost entirely a subset of "speaker" mentions (100% overlap in
 HyperClapper, 97.3% in LinkBoost-2025), consistent with one recurring
 bio template rather than two independent self-descriptions. LinkBoost-2025
@@ -745,8 +745,8 @@ warning fired here too, but unlike every prior instance in this repo,
 the repeated string turned out to be genuine on-topic content, not
 noise - a real "overcame homelessness" success story boosted 79 times.
 LinkBoost-2025 also contains genuine homelessness-sector advocacy
-content beyond that template, a meaningfully different character than
-most other small categories checked in this repo. Full results:
+content beyond that template, unlike most other small categories checked
+in this repo. Full results:
 [docs/research/homelessness-content.md](docs/research/homelessness-content.md).
 
 ## Pharma / biotech content
@@ -843,7 +843,7 @@ datasets. Full results:
 term mentions, and directly checks a specific claim from a disputed
 third-party document referenced in this project's history: that
 HyperClapper had 5,193 "honest truth"/"real talk" posts (10.52%). The
-actual combined count is 61 - nowhere close. LinkBoost-2025 has the
+actual combined count is 61. LinkBoost-2025 has the
 highest overall rate and the most genuinely distributed content;
 podawaa2024 leans on "transparent/transparency" while the other two
 lean on "authentic/authenticity." Full results:
@@ -855,9 +855,9 @@ lean on "authentic/authenticity." Full results:
 mentions - one of the smallest genuine content categories found in
 this project (under 0.25% everywhere). LinkBoost-2025's duplicate
 string turned out to be genuine health content boosted by the
-platform's structure, not a false positive - the opposite outcome from
-the immunotherapy and university scans, a reminder that this
-safeguard flags a number to check, not a verdict. Full results:
+platform's structure, not a false positive. This is the opposite outcome from
+the immunotherapy and university scans: the
+safeguard flags a number to check and gives no verdict. Full results:
 [docs/research/diabetes-content.md](docs/research/diabetes-content.md).
 
 ## LinkedIn algorithm mentions
@@ -956,8 +956,8 @@ results: [docs/research/law-enforcement-content.md](docs/research/law-enforcemen
 
 `analysis/one_word_posts_scan.py` finds posts consisting of a single
 token, reporting only strings that repeat 3+ times. "Agree?"/"Agree" is
-the single most common one-word post everywhere it appears - not just
-a notable duplicate but the literal top result in all three datasets.
+the single most common one-word post everywhere it appears, and the
+top result in all three datasets.
 Also catches a real data-quality artifact ("postNoContent," a missing-
 data placeholder, not a genuine post) and a distinct bare-URL genre
 specific to LinkBoost-2025. Full results:
@@ -1031,16 +1031,15 @@ LinkBoost-2025 has by far the highest rate - over 5x podawaa2024's -
 consistent with its documented lean toward emotional/motivational
 content. A specific connection worth noting: several of its top
 repeated "being human" posts juxtapose human qualities against AI-
-driven career advice, suggesting this framing may partly counter-
-program the same dataset's heavy AI-productivity content. Full
+driven career advice, suggesting this framing may partly respond to
+the same dataset's heavy AI-productivity content. Full
 results: [docs/research/being-human-content.md](docs/research/being-human-content.md).
 
 ## "Future" content
 
 `analysis/future_content_scan.py` counts future-related term mentions -
 the largest niche-topic category found in this repo so far (5.5%-8.9%).
-Unlike most other scans in this repo, all three datasets show a clean,
-steady climb (podawaa2024 < HyperClapper < LinkBoost-2025) rather than
+Unlike most other scans in this repo, all three datasets show a steady climb (podawaa2024 < HyperClapper < LinkBoost-2025) rather than
 one sharp outlier. "Future of work" tracks with the AI-productivity
 content documented elsewhere, while "futuristic" is comparatively rare
 and declines most sharply in LinkBoost-2025. Full results:
@@ -1082,8 +1081,8 @@ Full results: [docs/research/animal-content.md](docs/research/animal-content.md)
 
 ## Structural analyses (not content keyword scans)
 
-Two scans structurally different from everything else in this repo -
-not keyword counts, but questions about the data's own shape.
+Two scans differ from everything else in this repo. They ask about the
+data's own shape instead of counting keywords.
 
 `analysis/cross_dataset_overlap_scan.py` checks whether the same
 accounts appear in both HyperClapper and LinkBoost-2025, using hashed
@@ -1139,5 +1138,5 @@ to pass, no raw data, no printable identifiers, no per-entity lookup, no
 unearned evidence tiers, no legal conclusions asserted as fact, no
 inferred protected characteristics. Run `python3 -m unittest discover -s
 tests -v` before submitting anything (see [tests/README.md](tests/README.md)).
-[CHANGELOG.md](CHANGELOG.md) tracks what's been added and, just as
-importantly, what's been declined and why.
+[CHANGELOG.md](CHANGELOG.md) tracks what's been added and what's been
+declined and why.

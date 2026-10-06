@@ -26,7 +26,7 @@ LinkBoost-2025.json: 77,969 records x $53,088 = $4,139,218,272
 Combined (340,829 records): $18,093,929,952
 ```
 
-## Read this section before the numbers above mean anything to you
+## Read this section before using the numbers above
 
 This is not a penalty estimate, a damages calculation, or a prediction
 of what any enforcement action would actually cost anyone. It is a
@@ -36,7 +36,7 @@ multiplied by the raw record count in each dataset, on the assumption
 that every single record counts as its own separate, maximum-penalty
 violation.
 
-That assumption is not supported by anything. No statute, no published
+Nothing supports that assumption. No statute, no published
 FTC rule, and no enforcement action this repo is aware of defines "one
 violation" as "one exported data record." A real violation count would
 turn on facts this repo does not have: how the underlying transactions
@@ -46,9 +46,8 @@ Every real-world resolution for comparable conduct that this repo cites
 elsewhere, [New York v. Devumi](provenance.md) and
 [*LinkedIn Corp. v. TopSocial24 et al.*](../regulatory-context.md)
 ($43,086, entered and collected), settled for a small fraction of any
-theoretical per-record maximum. If you take one thing from this page,
-take that gap: an $18 billion arithmetic ceiling next to a $43,086 real
-judgment is the whole argument for why this number should never be
+theoretical per-record maximum. An $18 billion arithmetic ceiling next to a $43,086 real
+judgment shows why this number should never be
 quoted as a realistic figure.
 
 ## Where the $53,088 comes from
@@ -62,13 +61,10 @@ than a hardcoded constant.
 
 ## Why this is in the repo at all
 
-This project's discipline is to stop and flag rather than assert an
-unverifiable legal conclusion, and a request for "how much money would
-this be from an FTC perspective" is exactly the kind of question that
-invites one. Refusing to engage with the question at all would have
-left a curiosity unanswered; answering it with a real dollar figure
-attached to no methodology would have been worse. This page exists to
-show the actual arithmetic, plainly labeled for what it is, specifically
-so nobody, including anyone reading this repo without the context of how
+This project flags unverifiable legal conclusions instead of asserting them, and a request for "how much money would
+this be from an FTC perspective" invites one. Refusing to engage with the question would
+have left it unanswered, and giving a dollar figure
+with no methodology would have been worse. This page shows the actual arithmetic, labeled
+for what it is, so that nobody, including readers without the context of how
 it was produced, mistakes a multiplication exercise for a legal or
-financial conclusion this repo, or anyone, is in a position to make.
+financial conclusion that this repo, or anyone, is in a position to make.

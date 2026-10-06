@@ -14,23 +14,21 @@ LinkBoost-2025.json: 77969 total records | 77943 decoded (via Url's activity id)
 ## What this is, and isn't
 
 This is a VERIFIED, aggregate-only count of how many records in each
-dataset fall on either side of October 22, 2024. It is not, and does not
-attempt to be, a count of records that violate
+dataset fall on either side of October 22, 2024. It is not a count of records that violate
 [16 CFR § 465.8](../regulatory-context.md). That rule requires an actual
 transaction, a seller and a buyer exchanging money for a fabricated
 indicator of social media influence, and none of these datasets records
 whether a purchase happened, what was paid, or who the counterparties
-were. A record with an anomalous metric on either side of this date tells
-you the number looks fabricated; it does not tell you a transaction
+were. A record with an anomalous metric on either side of this date suggests
+the number looks fabricated, but does not show a transaction
 occurred that satisfies the rule's elements. This repo does not convert a
 date split into a violation count, for the same reason it makes no other
 per-record legal determination (see [limitations.md](../limitations.md)).
 
 ## Reading the three dates correctly
 
-All three datasets use different kinds of timestamps, decoded or
-captured in different ways, and none of them are directly comparable to
-one another:
+The three datasets use different kinds of timestamps, decoded or
+captured in different ways, so they are not directly comparable:
 
 - **podawaa2024.json** uses a date decoded from `linkedinPostId`
   (Snowflake-style bit layout; see [method.md](../method.md)). This
@@ -44,7 +42,7 @@ one another:
   already notes is when the pod tool *captured* the record, not
   necessarily when the underlying post was originally published. A high
   share of records falling after any given cutoff mainly reflects when
-  this particular export was scraped, not a spike in posting activity.
+  this export was scraped, and does not indicate a spike in posting activity.
 - **LinkBoost-2025.json** has no dedicated timestamp field, but each
   record's `Url` embeds a LinkedIn activity URN
   (`urn:li:activity:<id>/`) identifying the TARGET post, and that id
@@ -54,16 +52,14 @@ one another:
   account acted on it. Because many records target the same handful of
   posts, the per-record count (99.97% after the cutoff) and the
   per-unique-target-post count (3,127 of 3,129 unique posts after the
-  cutoff) tell slightly different stories: almost every recorded pod
-  action in this file targeted a post from after October 22, 2024, and
-  that's true whether you count records or distinct targets.
+  cutoff) differ slightly, but almost every recorded pod
+  action in this file targeted a post from after October 22, 2024,
+  whether you count records or distinct targets.
 
 ## Why this exists
 
-This breakdown was produced on request, to test what a plain date split
-looks like against these files before any claim gets built on top of it.
-It stays inside this repo's usual discipline: a script computes it
-directly from the data (VERIFIED), each dataset's date field is labeled
-for what it actually measures and what tier its decoding sits at, and
-the one thing this repo will not do, turn a date range into a compliance
-finding, is stated here as plainly as everywhere else in this project.
+This breakdown was produced on request, to see what a plain date split
+looks like against these files before any claim is built on it.
+A script computes it directly from the data (VERIFIED), each dataset's date
+field is labeled for what it measures and what tier its decoding sits at,
+and this repo does not turn a date range into a compliance finding.

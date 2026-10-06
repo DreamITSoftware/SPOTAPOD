@@ -16,10 +16,10 @@ case/courtroom, and the bare adjective "legal."
 "Compliance" and bare "legal" are deliberately reported as their own
 line items within the broader tally rather than folded in silently,
 because both terms are heavily used in general business/HR contexts
-(data compliance, workplace compliance) that aren't really "about law"
+(data compliance, workplace compliance) that are not about law
 the way a lawyer or law-firm post is. For most questions this scan is
-likely to be asked to answer, the **narrow** tally is the more
-meaningful number.
+likely to be asked to answer, the **narrow** tally is the better
+number.
 
 ## Results (VERIFIED - reproducible via the script)
 
@@ -48,10 +48,10 @@ HyperClapper; 1,794 of 3,473 in LinkBoost-2025).
 
 ## Reading these numbers
 
-Genuine legal-profession content is small in absolute terms everywhere
+Legal-profession content is small everywhere
 (under 0.6% of any dataset by the narrow measure). LinkBoost-2025 has
 the highest concentration under both measures, consistent with its
-broader lean toward professional-services content already noted for
+lean toward professional-services content already noted for
 consulting firms in [entity-mentions.md](entity-mentions.md) (McKinsey
 mentions there are also highest in LinkBoost-2025).
 

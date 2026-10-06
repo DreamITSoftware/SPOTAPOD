@@ -4,7 +4,7 @@
 (posts per day, across each account's full active window) for the
 highest-volume accounts in HyperClapper - the only one of the three
 datasets with real per-record timestamps (`created_at`). This is a
-structural/behavioral analysis, not a content keyword scan: it checks
+structural/behavioral analysis rather than a content keyword scan: it checks
 whether the small number of accounts already known to drive a
 disproportionate share of HyperClapper's posts (see
 [baseline-profile.md](baseline-profile.md)) show posting patterns
@@ -29,17 +29,17 @@ by hash value, handle, or any other identifier.
 
 A very low coefficient of variation in posting intervals would indicate
 simple robotic clockwork - posting at machine-regular fixed intervals.
-**That is not what this data shows.** Every top-10 account has a CV
-well above 80%, several above 500% - posting intervals are highly
-irregular, not mechanically regular.
+This data does not show that. Every top-10 account has a CV
+well above 80%, several above 500%, so posting intervals are highly
+irregular.
 
-**The signal that does show up is sustained rate.** Regardless of how
+The signal that does show up is sustained rate. However
 irregular the spacing between individual posts is, the accounts checked
 here maintain 1.2 to 3.7 posts per day, every day, across periods
-ranging from 174 to 712 consecutive days. That is the harder pattern to
-explain as ordinary individual human authorship - not because the
-timing looks robotic, but because no realistic individual professional
-sustains multiple substantive posts a day, every day, for the better
+ranging from 174 to 712 consecutive days. That is hard to
+explain as ordinary individual human authorship. The timing does not look
+robotic, but few individual professionals
+sustain multiple substantive posts a day, every day, for the better
 part of a year or more.
 
 ## Results (VERIFIED - reproducible via the script)
@@ -63,11 +63,11 @@ Total accounts with usable timestamps: 702.
 ## Reading these numbers
 
 Every one of the top 10 accounts by volume sustains a posting rate that
-would require substantial daily time investment if done by one person
-manually, maintained without a multi-day gap large enough to
-meaningfully lower the average, across periods measured in months to
-nearly two years. account_2 is the most striking case: a comparatively
-modest 1.46 posts/day, but sustained across 712.6 days - just under two
+would require substantial daily time if done by one person
+manually, without a multi-day gap large enough to
+lower the average, across periods of months to
+nearly two years. account_2 is the longest case: a comparatively
+modest 1.46 posts/day, sustained across 712.6 days, just under two
 full years without the rate meaningfully dropping.
 
 This is consistent with, though does not on its own prove, either
@@ -76,9 +76,9 @@ publishing under a single identity - the same structural possibility
 already discussed at the dataset level in
 [baseline-profile.md](baseline-profile.md) (HyperClapper's top 100
 accounts producing a large majority of all posts) and
-[decision-points.md](decision-points.md). This scan adds a new,
-independent line of evidence toward that same conclusion: not just
-that a few accounts post disproportionately often, but that they do so
+[decision-points.md](decision-points.md). This scan adds an
+independent line of evidence toward that same conclusion: a few accounts
+post disproportionately often, and they do so
 at a sustained rate difficult to reconcile with ordinary individual
 usage.
 

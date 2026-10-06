@@ -2,7 +2,7 @@
 
 `analysis/investment_vc_scan.py` counts mentions of investment- and
 venture-capital-related terms across post content in all three
-datasets. Same discipline as every other scan in this repo: aggregate
+datasets. As with every other scan in this repo, it reports aggregate
 counts only, no record, author, or matched text ever printed. Includes
 the same duplicate-template safeguard introduced in
 [nonprofit-content.md](nonprofit-content.md) - it reports distinct
@@ -19,9 +19,9 @@ fact, materiality, intent, actual reliance or harm, and often
 jurisdiction and registration status.
 
 If specific elements were separately established for a specific record,
-the frameworks that would actually be relevant are:
+these frameworks would apply:
 
-- **16 CFR 465.8** - the same rule this whole project is built around.
+- **16 CFR 465.8** - the rule this project is built around.
   Requires scienter and commercial-purpose materiality for that
   specific record, which this scan doesn't establish.
 - **FTC Endorsement Guides (16 CFR Part 255)** - relevant if content is
@@ -59,7 +59,7 @@ No field triggered the duplicate-template warning. LinkBoost-2025's
 distinct-string count (260 of 4,029 matching records) reflects that
 dataset's known structure - many pod actions logged against a limited
 set of target posts - documented already in
-[baseline-profile.md](baseline-profile.md), not a new distortion.
+[baseline-profile.md](baseline-profile.md), and is not a new distortion.
 
 ## Reading these numbers
 
@@ -69,15 +69,15 @@ its lean toward higher-level business/executive content already seen in
 mention rates) and [simple-titles.md](simple-titles.md) (highest
 Founder/CEO title share).
 
-"Venture capital" spelled out in full is inversely related to each
+The spelled-out phrase "venture capital" is inversely related to each
 dataset's overall investment-content rate: podawaa2024 uses the full
 phrase most (0.21%) while LinkBoost-2025, despite having the highest
-overall rate, almost never does (0.03%) - most of its investment
+overall rate, rarely does (0.03%). Most of its investment
 content uses "investor," "investing," or "VC" instead.
 
 This is one of the larger content categories checked in this repo so
-far - higher than law-related content or nonprofit-related content,
-though still well below the corporation-mention rate (13-23%) in
+far, higher than law-related content or nonprofit-related content,
+though well below the corporation-mention rate (13-23%) in
 [entity-mentions.md](entity-mentions.md).
 
 ## Caveats
