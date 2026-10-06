@@ -2,19 +2,19 @@
 
 ### 75,442 posts in one LinkedIn dataset were liked by people who, according to LinkedIn's own numbers, never saw them
 
-Here is a sentence that should not be possible: a post has zero recorded views and thousands of recorded likes.
+Some posts have zero recorded views and thousands of recorded likes. That should not be possible.
 
-You cannot like a post you never saw. LinkedIn's own view counter and like counter are supposed to describe the same event from two angles: one counts who scrolled past it, the other counts who reacted. When one says zero and the other says thousands, one of those numbers is not describing anything real.
+You cannot like a post you never saw. LinkedIn's view counter counts who scrolled past a post, and its like counter counts who reacted. When one says zero and the other says thousands, one of those numbers is wrong.
 
-In a dataset of 213,491 LinkedIn posts collected in 2024, this isn't a rare glitch. It happens **75,442 times**, which is 35.3% of the entire file. More than a third of the posts in this dataset show engagement that, by LinkedIn's own accounting, could not have happened the way it's displayed.
+In a dataset of 213,491 LinkedIn posts collected in 2024, this is not a rare glitch. It happens **75,442 times**, which is 35.3% of the entire file. More than a third of the posts in this dataset show engagement that, by LinkedIn's own accounting, could not have happened as displayed.
 
-## What "zero views, nonzero likes" actually looks like
+## What "zero views, nonzero likes" looks like
 
-This isn't a handful of posts off by a rounding error. The pattern spans the full range of the dataset, from posts with a single like and zero views up to a post with **88,028 likes and zero recorded views**. That's a number large enough that, if it were real, it would represent one of the most-engaged posts on the platform that year, attached to a view count of nothing.
+This is more than a handful of posts off by a rounding error. The pattern spans the full range of the dataset, from posts with a single like and zero views up to a post with **88,028 likes and zero recorded views**. If that number were real, it would be one of the most-engaged posts on the platform that year, with a view count of zero.
 
-## Why this matters more than it sounds
+## Why this matters
 
-Every one of those 75,442 posts is a signal someone else on LinkedIn sees and reacts to. A hiring manager scanning a candidate's activity, a job seeker deciding whose advice to trust, and a teenager scrolling career content at eleven at night are all reading a like count as evidence that other real people found something worth agreeing with. If more than a third of that evidence is structurally impossible, the signal itself is unreliable at a scale that's hard to write off as noise.
+Every one of those 75,442 posts shows a like count that other LinkedIn users read. A hiring manager scanning a candidate's activity, a job seeker deciding whose advice to trust, and a teenager scrolling career content at eleven at night all read a like count as evidence that other real people found something worth agreeing with. If more than a third of that evidence is impossible as recorded, the signal is unreliable at a scale that is hard to write off as noise.
 
 ## What this is, and isn't
 

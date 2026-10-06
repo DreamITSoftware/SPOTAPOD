@@ -3,21 +3,20 @@
 `analysis/cross_dataset_overlap_scan.py` checks whether the same
 LinkedIn accounts appear in both HyperClapper and LinkBoost-2025 - two
 different commercial engagement-pod tools - by hashing each dataset's
-account identifiers and comparing the hash sets. This is structurally
-different from every other scan in this repo: it's not a content
-keyword scan, it's a question about whether two products draw from the
-same or different user populations.
+account identifiers and comparing the hash sets. Unlike the other scans
+in this repo, it is not a content keyword scan. It asks whether two
+products draw from the same or different user populations.
 
 ## Why this question matters
 
 Every other analysis in this repo treats the three datasets as
-independent samples. This scan tests that assumption directly for two
+independent samples. This scan tests that assumption for two
 of them. If the same accounts showed up using both tools, that would
-suggest a shared "professional pod-participant" community - people who
+suggest a shared "professional pod-participant" community of people who
 use more than one engagement-manipulation product. If the populations
-are disjoint, that's evidence the market segments by tool, or that the
+are disjoint, either the market segments by tool, or the
 overall pool of participants is large enough relative to any single
-sample that overlap wouldn't be expected regardless.
+sample that overlap would not be expected.
 
 ## Method and privacy
 
@@ -49,8 +48,8 @@ meaningful.
 
 ## Reading this number
 
-Zero is a real, specific finding, not just "low overlap" rounded down -
-across 702 and 414 distinct accounts respectively, not one hashed
+Zero is an exact finding, not "low overlap" rounded down.
+Across 702 and 414 distinct accounts respectively, no hashed
 identifier appears in both sets. This repo does not have enough
 information to determine why: it could reflect genuinely segmented
 customer bases between different pod-service products, or it could
@@ -58,7 +57,7 @@ simply reflect that these sample sizes are small relative to the total
 population of LinkedIn accounts using any engagement-manipulation tool,
 such that overlap would be statistically unlikely even if some
 individuals do use more than one product. Both explanations remain
-open; only the zero-overlap fact itself is established here.
+open; only the zero overlap is established here.
 
 ## Caveats
 

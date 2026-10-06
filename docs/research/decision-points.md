@@ -1,23 +1,23 @@
 # Decision points by category
 
 This page maps each `topic_taxonomy.py` category to the real-world
-decision it's plausibly trying to influence, grounded in the actual
-recurring content patterns `analysis/category_title_patterns.py` finds in
-each category, not a generic description of the category name.
+decision it plausibly tries to influence. The mapping rests on the recurring
+content patterns `analysis/category_title_patterns.py` finds in each
+category, not on the category name.
 
 **Evidence tier: INFERENCE.** This page describes what a recurring
-template is plausibly nudging a reader toward, based on its actual
-content. It is not a measured claim that any specific reader made any
+template is plausibly nudging a reader toward, based on its content.
+It is not a measured claim that any specific reader made any
 specific decision because of it, see [limitations.md](../limitations.md)
-for why this repo doesn't make that kind of claim from engagement data
+for why this repo does not make that kind of claim from engagement data
 alone.
 
-## Method: why only recurring phrases, never one-off posts
+## Method: recurring phrases only, never one-off posts
 
 `category_title_patterns.py` reports a phrase only if it recurs at least
-three times (configurable) within a category. A post used once is far
-more traceable to its specific author than a template reused hundreds of
-times across many accounts, the same reasoning already applied to the
+three times (configurable) within a category. A post used once is much
+more traceable to its author than a template reused hundreds of times
+across many accounts. The same reasoning applies to the
 "Agree?" × 3,918 finding in [baseline-profile.md](baseline-profile.md).
 No quote on this page exceeds 15 words verbatim; longer patterns are
 paraphrased.
@@ -37,24 +37,23 @@ paraphrased.
 | `book_writing_publishing` | Repeated "my new book is now available" launch-announcement templates | Whether to buy or read the specific book being promoted |
 | `uncategorized_other` | No single dominant pattern | Not mapped - this bucket is a catch-all by construction (see [topic-taxonomy.md](topic-taxonomy.md)); forcing a decision point onto it would fabricate specificity the category doesn't have |
 
-## Two things worth flagging plainly
+## Two caveats
 
-1. **The `business_entrepreneurship` political-endorsement finding is a
-   genuine artifact of the keyword-matching method**, not a claim about
+1. **The `business_entrepreneurship` political-endorsement finding is an
+   artifact of the keyword-matching method**, and says nothing about
    political content strategy generally. A campaign-endorsement post
    likely matched on incidental overlap with the category's keywords
    (e.g. "business," "leadership")
    rather than being business content in any meaningful sense. The
    candidate is deliberately not identified on this page, consistent
    with [privacy.md](../privacy.md) and [limitations.md](../limitations.md).
-2. **This is still content-category interpretation, not behavioral
+2. **This is content-category interpretation, not behavioral
    measurement.** None of the three datasets record who read a post, what
    they did afterward, or whether it changed a decision. The "decision
-   point" column is this repo's read of what each recurring template is
+   point" column is this repo's reading of what each recurring template is
    *for*, not evidence of what it *did*.
 
 See also [career-advice-comparison.md](career-advice-comparison.md) and
 [algorithm-strategy-advice.md](algorithm-strategy-advice.md) for the
-related, more general mechanism (inflated engagement lending false
-credibility to whatever claim sits underneath it) this page applies at
-the category level.
+more general mechanism (inflated engagement lending false credibility to
+the claim underneath it) that this page applies at the category level.

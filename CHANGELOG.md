@@ -105,11 +105,8 @@
   FTC's 2025 inflation-adjusted maximum civil penalty per violation
   ($53,088), an intentionally extreme arithmetic exercise, not a penalty
   estimate or a damages calculation, labeled as such throughout, and
-  paired with the *Devumi* and *TopSocial24* real settlement figures it
-  should actually be read against. Produced on request, since refusing
-  to engage with the arithmetic entirely would have left the question
-  unanswered while answering it without this framing would have been
-  worse.
+  paired with the *Devumi* and *TopSocial24* settlement figures it
+  should be read against. Produced on request.
 - `analysis/date_cutoff_count.py` and `docs/research/date-cutoff-count.md`:
   an aggregate, VERIFIED count of how many records in each dataset fall
   before/after a given cutoff date (default 2024-10-22), computed from
@@ -149,18 +146,17 @@
   judgment as precedent), New York GBL § 349, and California's UCL
   borrowing statute. Each law's actual elements are checked against the
   aggregate numbers already in `docs/research/baseline-profile.md`,
-  tiered STATED/CORROBORATED/INFERENCE per element, with an honest
-  finding that the CFAA most likely does not reach this conduct at all
-  given account-holder-authenticated access under the post-*Van Buren*
+  tiered STATED/CORROBORATED/INFERENCE per element, and a finding
+  that the CFAA most likely does not reach this conduct, given
+  account-holder-authenticated access under the post-*Van Buren*
   "gates-up-or-down" test. No new legal determination is made anywhere
-  in the update: the closing section restates, more specifically than
-  before, exactly which elements (intent, a specific misrepresentation,
+  in the update: the closing section restates which elements (intent, a specific misrepresentation,
   a specific injured party) no dataset here can supply.
 
 ### Added
 - `analysis/animal_content_scan.py` and `docs/research/animal-content.md`
   - animal-related term counts, documenting the worst term-collision
-  problem found anywhere in this repo. Bare "cat(s)" collides with
+  problem in this repo. Bare "cat(s)" collides with
   India's CAT entrance exam, the .cat domain, a French insurance term,
   Catalan-language abbreviation, the Caterpillar (NYSE: CAT) stock
   ticker, and hurricane category scale ("Cat 1" through "Cat 5"). In
@@ -171,26 +167,25 @@
   loose. "Dog(s)," "animal(s)," and "pet(s)" don't have this problem.
 - `analysis/empathy_content_scan.py` and
   `docs/research/empathy-content.md` - empathy-related term counts.
-  LinkBoost-2025 highest by a wide margin, continuing the pattern of
-  that dataset skewing hardest toward emotional/leadership content
-  across every related scan in this repo. Independently re-surfaces the
-  "Empathy isn't just a checkbox for leaders" post already found in
-  career-transitions-content.md's burnout check, confirming it as a
-  genuine cross-category recurring template rather than a one-off.
+  LinkBoost-2025 is highest by a wide margin, consistent with that
+  dataset's skew toward emotional/leadership content in related scans.
+  Also finds the "Empathy isn't just a checkbox for leaders" post
+  already found in career-transitions-content.md's burnout check,
+  confirming it as a recurring template across categories.
 - `analysis/rejection_content_scan.py` and
   `docs/research/rejection-content.md` - rejection-related term counts.
   HyperClapper's "job rejection" count (52) was checked directly
   against the already-documented resume-rewrite template in
-  decision-points.md and confirmed entirely distinct (zero overlap) -
-  genuinely separate content, reinforcing HyperClapper's elevated
-  career/job-search share with independent evidence. LinkBoost-2025 has
+  decision-points.md and confirmed entirely distinct (zero overlap),
+  which supports HyperClapper's elevated career/job-search share with
+  independent evidence. LinkBoost-2025 has
   the highest overall rate, including a "rejected by 100 VCs, built
   Canva" founder-resilience post.
 - `analysis/future_content_scan.py` and `docs/research/future-content.md`
   - future-related term counts, the largest niche-topic category found
   in this repo so far (5.5%-8.9%). Unlike most other scans, all three
-  datasets show a clean, steady climb (podawaa2024 < HyperClapper <
-  LinkBoost-2025) rather than one sharp outlier. "Future of work"
+  datasets climb steadily (podawaa2024 < HyperClapper <
+  LinkBoost-2025) with no single outlier. "Future of work"
   tracks with the AI-productivity content documented elsewhere;
   "futuristic" is comparatively rare and declines most sharply in
   LinkBoost-2025.
@@ -200,7 +195,7 @@
   podawaa2024's, consistent with its documented emotional/motivational
   lean. Notes a specific thematic connection: several of its top
   repeated posts juxtapose human qualities against AI-driven career
-  advice, suggesting this framing may partly counter-program the same
+  advice, which may partly counter the same
   dataset's heavy AI-productivity content.
 - `analysis/confidence_content_scan.py` and
   `docs/research/confidence-content.md` - confidence-related term
@@ -215,9 +210,9 @@
   - TED/TEDx mentions. Handles a real collision risk (bare "TED" is
   also a common first name) via case-sensitive, all-caps-only matching
   for the bare term - a deliberate exception to this repo's usual
-  case-insensitive convention. HyperClapper is dominated almost
-  entirely by "TEDx" specifically (89% of its matches), connecting to
-  the speaker/thought-leader credibility pattern already documented,
+  case-insensitive convention. HyperClapper's matches are mostly "TEDx"
+  (89%), which fits the speaker/thought-leader credibility pattern
+  already documented,
   while the other two datasets lean toward referencing TED content
   generally. LinkBoost-2025's duplicate-template warning traces to one
   genuine listicle post, boosted 41 times.
@@ -236,7 +231,7 @@
   actual health status. One of the smallest categories in this repo.
   LinkBoost-2025's duplicate-template flag traces to one genuine post
   (a Cathie Wood interview excerpt on AI and genomics), boosted 46
-  times - corrected, its real contribution is a single post.
+  times - corrected, it is a single post.
 - `analysis/rare_earth_metals_scan.py` and
   `docs/research/rare-earth-metals-content.md` - rare earth/critical-
   minerals term counts. One of the smallest content categories found
@@ -349,9 +344,8 @@
   (under 0.25% everywhere). LinkBoost-2025's flagged duplicate string
   turned out to be genuine health content boosted by the platform's
   structure, not a false positive - the opposite outcome from the
-  immunotherapy and university scans, documented as a reminder that
-  the duplicate-template safeguard flags a number to check, not a
-  verdict either way.
+  immunotherapy and university scans, documented because the duplicate-template safeguard flags a number to
+  check, not a verdict either way.
 - `analysis/authenticity_content_scan.py` and
   `docs/research/authenticity-content.md` - authenticity-related term
   counts. Directly checks a specific claim from a disputed third-party
@@ -364,22 +358,22 @@
   - veteran/military term counts. LinkBoost-2025's duplicate-template
   warning traces to the same repeated political-endorsement post
   already documented in decision-points.md and political-content.md
-  (candidate not named). Unlike that artifact, the rest of
-  LinkBoost-2025's veteran content is genuine - real tributes to Indian
+  (candidate not named). The rest of
+  LinkBoost-2025's veteran content is genuine: tributes to Indian
   Armed Forces personnel. podawaa2024 has the most diverse term usage.
   Bare "VA" deliberately excluded (collides with the Virginia state
   abbreviation); only "Veterans Affairs"/"VA benefits"/"VA loan"/"VA
   disability" are checked.
 - `analysis/university_content_scan.py` and
   `docs/research/university-content.md` - university-related term
-  counts, documenting a real cross-language false positive: an earlier
+  counts, documenting a cross-language false positive: an earlier
   case-insensitive "MIT" pattern also matched the German preposition
   "mit," inflating podawaa2024's MIT count by roughly 94% (2,601 raw
   vs. 148 genuine). Caught via cross-dataset inconsistency (one
   dataset's top term didn't match the other two) rather than a
   within-dataset duplicate-template or low-distinct-ratio check -
-  documented as a reminder that cross-dataset comparison is itself a
-  useful safeguard.
+  documented because cross-dataset comparison is itself a useful
+  safeguard.
 - `analysis/blockchain_crypto_scan.py` and
   `docs/research/blockchain-crypto-content.md` - blockchain/crypto term
   counts. podawaa2024's rate (2.93%) is roughly 4x HyperClapper's and
@@ -400,7 +394,7 @@
   "Top N" phrasing) rather than just a volume difference.
 - `analysis/immunotherapy_content_scan.py` and
   `docs/research/immunotherapy-content.md` - immunotherapy-related term
-  counts, documenting two real false positives found while building it:
+  counts, documenting two false positives found while building it:
   an initial "CAR-T" pattern that also matched the common word "cart"
   (100+ false positives per dataset before the fix), and a second false
   positive that survived the fix - LinkBoost-2025's 40 "immunotherapy"
@@ -418,7 +412,7 @@
 - `analysis/pharma_content_scan.py` and `docs/research/pharma-content.md`
   - pharma/biotech/FDA term counts. Extends the duplicate-template
   safeguard with a new check for a low distinct-string count without a
-  single dominant string, which caught a real miscategorization: 333 of
+  single dominant string, which caught a miscategorization: 333 of
   LinkBoost-2025's 482 "pharma" matches are FDA import-compliance/
   customs content across roughly 8 boosted posts, not
   pharmaceutical-industry content.
@@ -427,9 +421,9 @@
   homelessness-related term counts. Notable because the
   duplicate-template safeguard fired on LinkBoost-2025 but, unlike
   every prior instance in this repo, the repeated string turned out to
-  be genuine on-topic content (a real "overcame homelessness" success
-  story boosted 79 times), not noise - documented as a reminder that
-  the safeguard flags a pattern to check, not an automatic verdict.
+  be genuine on-topic content (an "overcame homelessness" success
+  story boosted 79 times), not noise - documented because the safeguard flags a pattern to check, not an
+  automatic verdict.
   LinkBoost-2025 also contains genuine homelessness-sector advocacy
   content beyond that template.
 - `analysis/national_security_scan.py` and
@@ -437,10 +431,10 @@
   CIA/FBI term mention counts. The smallest content category checked in
   this repo so far (under 0.1% of any dataset); NSA specifically is
   almost nonexistent (24/1/0 mentions across the three datasets). The
-  duplicate-template safeguard caught a real correction: LinkBoost-2025's
+  duplicate-template safeguard caught a correction: LinkBoost-2025's
   "FBI" count of 15 is one boosted post, not 15 distinct ones.
 - `analysis/travel_content_scan.py` and `docs/research/travel-content.md`
-  - travel agency/platform and destination mention counts. Two real
+  - travel agency/platform and destination mention counts. Two
   corrections documented: LinkBoost-2025's per-platform counts are
   dominated by a single AI-travel-tool ad boosted 47 times (the
   duplicate-template safeguard from nonprofit_content_scan.py catches
@@ -470,11 +464,11 @@
 - `analysis/nonprofit_content_scan.py` and
   `docs/research/nonprofit-content.md`, charity/nonprofit/NGO/
   philanthropy mention counts, with a permanent, automatic safeguard
-  against the exact distortion a manual check just caught: a raw
+  against the distortion a manual check just caught: a raw
   "any mention" count driven by one repeated headline/template rather
   than genuine distinct signal. The script now reports distinct
   underlying text values alongside every raw count and flags any field
-  where a single string accounts for 20%+ of matches. Caught three real
+  where a single string accounts for 20%+ of matches. Caught three
   instances on first run, including HyperClapper's headline field, which
   looked like the highest nonprofit-mention rate of any field (1.38%)
   before correction and the lowest (0.05%) after.

@@ -1,20 +1,20 @@
 # Zero Overlap
 
-### Two different LinkedIn engagement-pod tools, 702 and 414 accounts respectively, share not a single user
+### Two different LinkedIn engagement-pod tools, 702 and 414 accounts respectively, share no users
 
-If two products are selling the same kind of engagement manipulation, you'd expect some crossover: customers who shop around, or accounts hedging their bets across more than one tool. Checking two such tools against each other directly, across a combined 1,116 accounts, finds **zero** shared users.
+If two products are selling the same kind of engagement manipulation, you would expect some crossover, such as customers who shop around or accounts using more than one tool. Checking two such tools against each other directly, across a combined 1,116 accounts, finds **zero** shared users.
 
 ## What was actually compared
 
 Two datasets, each drawn from a different commercial LinkedIn engagement-pod tool, were hashed and compared account by account: 702 distinct accounts from one tool, 414 from the other. Every identifier was hashed before comparison and never held in plaintext, so this check only ever produces two numbers: how many accounts are in each set, and how many appear in both.
 
-The overlap: zero. Not "low." Not "a handful, rounding to zero percent." Not one single account, out of 1,116 checked, appears in both datasets.
+The overlap is zero. No account out of 1,116 checked appears in both datasets.
 
-## Why zero is a real, meaningful finding
+## What zero could mean
 
-Zero could mean the market for engagement manipulation is more segmented than it looks from the outside, with different tools serving genuinely different customer bases, maybe by price point, region, or word of mouth. Or it could mean the total population of people using any such tool is large enough that, statistically, two samples this size wouldn't be expected to overlap even if plenty of individuals use more than one product.
+The market for engagement manipulation may be more segmented than it looks, with different tools serving different customer bases, perhaps by price, region, or word of mouth. Or the total population of users may be large enough that two samples this size would not be expected to overlap, even if many individuals use more than one product.
 
-This project can't tell you which explanation is right. What it can tell you is that the two most obvious stories people tell about engagement-pod users ("it's basically the same tight community running every tool" and "it's all one interconnected market") aren't supported by this specific comparison. Whatever is happening here, it isn't obviously coordinated between these two products.
+This project can't tell you which explanation is right. It does show that two common stories about engagement-pod users ("it's basically the same tight community running every tool" and "it's all one interconnected market") are not supported by this comparison. The two products do not appear to be coordinated.
 
 ## What this is, and isn't
 

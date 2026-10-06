@@ -11,9 +11,8 @@
 The first two entries are **STATED**, asserted by whoever collected the
 data, not independently verified by this repo. `LinkBoost-2025.json`'s
 source and collection method haven't been provided yet; this repo isn't
-filling in "linkboost.com" as a guess just because it matches the filename.
-See [limitations.md](limitations.md) for why guessing at provenance isn't
-how this repo operates. If you can confirm where and how this file was
+filling in "linkboost.com" as a guess based on the filename.
+See [limitations.md](limitations.md) for why this repo does not guess at provenance. If you can confirm where and how this file was
 obtained, that goes here as STATED, same as the other two.
 
 ## A fourth file, supplied as `spotapod.json`: not independent data
@@ -30,8 +29,8 @@ one of its 6,948 unique (hashed) authors is also present among
 podawaa2024's 7,033 authors. For the records checked, its `Title` field
 matches podawaa2024's `Content` field, and its `MaxReactions`/`MaxViews`
 fields match podawaa2024's `Likes`/`Views` fields, for the same post ID.
-This is not a coincidental overlap between two independently collected
-files - it is the same underlying post population, re-exported.
+The overlap is not coincidental between two independently collected
+files. It is the same underlying post population, re-exported.
 
 What this file adds beyond podawaa2024.json is one new field,
 `PODCount` (an apparent per-post repeat or pod-detection count; its
@@ -74,8 +73,8 @@ identifies that file as archived on Harvard Dataverse:
 > `doi:10.7910/DVN/WD9AUR`
 > https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/WD9AUR
 
-A matching sha256 across independently-obtained copies is about as strong a
-corroboration as a file hash can give. It means this repo's copy and the
+A matching sha256 across independently-obtained copies is the strongest
+corroboration a file hash can give. This repo's copy and the
 Dataverse-archived copy are byte-for-byte identical.
 
 **`HyperClaper.json`**, **no citation added**. Nothing about this file
@@ -83,28 +82,28 @@ supports linking it to the Dataverse record above: its structure, schema,
 and reported source (hyperclapper.com, see the table above) are entirely
 different from `podawaa2024.json`, and no checksum or other evidence ties it
 to that DOI or to Harvard Dataverse at all. If you have a citation for where
-this specific file is archived, that's worth adding. But citing it to the
+this specific file is archived, it can be added. Citing it to the
 same Dataverse DOI as `podawaa2024.json` would be inaccurate, since nothing
 here supports that connection.
 
 ## Terms of service
 
 This repo does not assert, one way or the other, that collecting this data
-complied with either site's terms of service. That's a legal conclusion
-this repo isn't positioned to make: it would require the actual ToS text in
+complied with either site's terms of service. That is a legal conclusion
+this repo cannot make: it would require the actual ToS text in
 effect on the site at the time of collection, the specific technical method
 used to capture the data (which this repo does not have independent
 knowledge of beyond the STATED description above), and a legal analysis of
 whether that method fell inside or outside what those terms permitted.
 Terms of service for platforms like these commonly restrict automated
-access or bulk data capture, so this is not a settled question, and no
-document in this repo should be read as having settled it.
+access or bulk data capture. The question is not settled, and no
+document in this repo settles it.
 
-If you're relying on any of these datasets for anything beyond your own
-private analysis, reviewing the actual current terms of service for the
+If you rely on any of these datasets beyond your own
+private analysis, review the current terms of service for the
 sites they reportedly came from, and how they read at the time of
-collection, if that's knowable, is worth doing before you do, ideally with
-an actual lawyer rather than this repo's say-so.
+collection if that is knowable, ideally with
+a lawyer.
 
 ## A documented mechanism for how view counts leak
 
@@ -115,10 +114,9 @@ counts raise on their own: `Views` should be visible to a post's author,
 but nothing about LinkedIn's stated design lets a stranger read another
 account's view count off a search page or a creator's activity feed.
 `HyperClapper.json`'s `impression_count` field being populated for only
-2.0% of records is consistent with that: a metric that normally sits
-behind the wall of "your own analytics, nobody else's."
+2.0% of records is consistent with that: the metric normally appears only in the author's own analytics.
 
-A vulnerability disclosure supplied to this project shows that wall did
+A vulnerability disclosure supplied to this project shows that this restriction did
 not always hold. Dated open 2023-07-19 and closed 2023-08-10, the
 disclosure documents two related flaws, internally named `UpdatesV2` and
 `ProfileUpdatesV2`, in LinkedIn's search-page and creator-activity-page
@@ -137,7 +135,7 @@ formula (verified against known reference vectors first) and confirms
 produces a **Base Score of 9.6**, matching the top of the stated 7.0-9.6
 range. The disclosure does not specify which of the two named flaws
 (`UpdatesV2` or `ProfileUpdatesV2`) this particular vector belongs to, so
-this repo isn't assigning it to one over the other. It states plainly
+this repo does not assign it to either. It states plainly
 that this exposed data "views should not be public," raises the exact
 same profiling and re-identification concerns [privacy.md](privacy.md)
 raises about this repo's own hashed identifiers, and names GDPR
@@ -168,22 +166,19 @@ not establish that Podawaa, HyperClapper, or LinkBoost specifically used
 this flaw, a different flaw, or ordinary authenticated access to obtain
 whatever view or impression data they show. No tool named in this
 project's own provenance notes is named in the disclosure, and the
-disclosure does not claim otherwise. The value of citing it here is
-narrower and more solid than "proof engagement pods scraped LinkedIn":
-it is proof that the specific number this whole project treats as an
-indicator of influence has, at least once, leaked to anyone who knew
-where to scroll, confirmed by the platform that built the wall around it
-in the first place.
+disclosure does not claim otherwise. It is not proof that engagement pods scraped LinkedIn.
+It shows that the number this project treats as an
+indicator of influence leaked at least once to any logged-in user, as confirmed by the platform itself.
 
 ## A second, separate disclosure: a pod tool's own vulnerability (LEMPOD)
 
 The disclosure above concerns a flaw in LinkedIn's own systems. A
 second, unrelated disclosure, a LinkedIn post by this project's author,
-describes a vulnerability in a pod tool itself, LEMPOD, not in
-LinkedIn's platform and not in any of the three tools this repo actually
-profiles (Podawaa, HyperClapper, LinkBoost). It is included here for
-context on the broader pattern, a pod ecosystem with its own security
-problems, not as evidence about any dataset in this repo.
+describes a vulnerability in a pod tool itself, LEMPOD. It is not in
+LinkedIn's platform and not in any of the three tools this repo
+profiles (Podawaa, HyperClapper, LinkBoost). It is included for
+context on the broader pattern of a pod ecosystem with its own security
+problems, and is not evidence about any dataset in this repo.
 
 Per that post, discovered 2024-03-26: navigating to a pod on the LEMPOD
 platform let an attacker read the pod's websocket traffic, which
@@ -228,36 +223,34 @@ case manager confirmed in writing: "our Engineering and Trust teams were
 able to replicate the issue you had reported, and actions were put in
 place to mitigate the potential risk you had identified."
 
-That confirmation is narrower than it might first look, and this repo is
-precise about the boundary. LinkedIn's message does not say which party,
+That confirmation is narrow. LinkedIn's message does not say which party,
 LinkedIn or LEMPOD, implemented whatever fix followed, and it does not
 repeat back the specific `li_at` mechanism, the CVSS score, or any other
 technical detail from the original report. Separately, the reporter's own
 message from a few days earlier states he closed his ticket because "it
 seems LEMPOD fixed the vulnerability," which is his own inference, not
 something LinkedIn's reply itself confirms. What is **CORROBORATED**, by
-LinkedIn's own words, is narrower and still meaningful: LinkedIn's
+LinkedIn's own words, is limited: LinkedIn's
 security and engineering teams reviewed the reported issue, were able to
 replicate it, and took some mitigating action in response. The precise
 technical mechanism and the CVSS 9.6 scoring remain STATED, reported by
 the finder and not independently verified line-by-line by this repo or
 confirmed in that specific form by LinkedIn.
 
-This is still a different evidentiary picture than the `UpdatesV2`
+The evidence here differs from the `UpdatesV2`
 disclosure above, which carries a direct written confirmation of the
 specific mechanism reported. Here, LinkedIn confirmed the issue was real
-and acted on, not the specific technical details of how it worked. It
-should be read at that intermediate weight, not the same as UpdatesV2 and
-not as thin as an uncorroborated post either.
+and acted on it, but did not confirm the technical details of how it worked. It
+should be read at an intermediate weight: below UpdatesV2 and
+above an uncorroborated post.
 
-One commenter on the original post raised a fair counter-read worth
-noting rather than omitting: that a pod-tool vulnerability like this could
+One commenter on the original post raised a counter-reading, noted here: that a pod-tool vulnerability like this could
 equally support an operator's claim that suspicious activity on their
 account came from being hacked rather than from running a pod, an
 alternative explanation this repo has no way to adjudicate from the post
 or the case correspondence alone.
 
-The same case correspondence includes one more fact worth recording
+The same case correspondence includes one more fact, recorded
 separately from the vulnerability itself. In responding to this report,
 LinkedIn's Executive Case Manager wrote that "the use of add-ons,
 extensions or tooling that scrape, modify the appearance of, or automate
@@ -268,16 +261,14 @@ Agreement governing account holders' conduct on LinkedIn. It is a
 different question from whether obtaining `podawaa2024.json`,
 `HyperClapper.json`, or `LinkBoost-2025.json` from their respective
 source sites complied with those sites' own terms of service, addressed
-separately above. This statement doesn't resolve that separate question;
-it only confirms that LinkedIn's own User Agreement, as LinkedIn describes
+separately above. This statement does not resolve that separate question;
+it confirms that LinkedIn's own User Agreement, as LinkedIn describes
 it, reaches tools of this general category.
 
-What this does and does not establish: it does not concern, and this
-repo does not use it as evidence about, `podawaa2024.json`,
-`HyperClapper.json`, or `LinkBoost-2025.json`. Its relevance here is
-narrower: another documented instance of the same underlying pattern,
+What this does and does not establish: this repo does not use it as evidence about `podawaa2024.json`,
+`HyperClapper.json`, or `LinkBoost-2025.json`. It is another documented instance of the same pattern:
 a tool built around LinkedIn engagement handling sensitive account data
-insecurely, cited for that pattern and nothing more specific.
+insecurely. It is cited for that pattern only.
 
 A separate question this disclosure raises is what, if any, breach
 notification duty applies when something like this is discovered, and to

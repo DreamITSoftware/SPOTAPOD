@@ -1,10 +1,9 @@
 # Contributing
 
-This repo exists to demonstrate that engagement-pod patterns can be
-documented rigorously *without* exposing anyone's identity. That's not a
-style choice, it's the actual constraint every contribution has to pass.
-If a change would violate any of the rules below, it doesn't belong here,
-no matter how useful the analysis behind it is.
+This repo documents engagement-pod patterns rigorously without exposing
+anyone's identity. Every contribution has to meet that constraint. If a
+change would violate any of the rules below, it doesn't belong here, no
+matter how useful the analysis behind it is.
 
 ## Hard rules (non-negotiable)
 
@@ -12,17 +11,17 @@ no matter how useful the analysis behind it is.
    source JSON files, or any subset/sample of their records, anywhere in
    this repo.
 
-2. **No script may print, log, or write a direct identifier**, name,
-   handle, URN, profile link, photo URL, or internal ID, found in any
+2. **No script may print, log, or write a direct identifier** (name,
+   handle, URN, profile link, photo URL, or internal ID) found in any
    source file. If your script needs to touch one of these fields at all,
    pass it through `hashlib.sha256` (Python) or `SHA256.Create()` (C#)
    immediately, use the hash only as an in-memory counting key, and let it
    go out of scope. Never write the hash-to-original mapping anywhere.
 
-3. **No per-entity lookup, browsable table, or search feature.** Not a
-   private one, not a hashed one. If a change would let someone filter,
+3. **No per-entity lookup, browsable table, or search feature.** This
+   applies to private and hashed versions too. If a change would let someone filter,
    search, or click down to a specific record/author/target/operator,
-   it doesn't ship, see `docs/limitations.md` for why.
+   it doesn't ship (see `docs/limitations.md` for why).
 
 4. **Every substantive claim gets an evidence tier**: VERIFIED,
    CORROBORATED, STATED, UNCORROBORATED, or INFERENCE (see
@@ -52,22 +51,22 @@ no matter how useful the analysis behind it is.
 8. **Provenance is reported, not assumed.** Don't fill in a dataset's
    source or collection method based on a filename or a guess. If it's not
    confirmed, `docs/provenance.md` says "Not yet stated" until someone
-   actually states it. Same goes for terms-of-service compliance, never
+   actually states it. The same applies to terms-of-service compliance: don't
    assert it as fact without independent confirmation.
 
 ## What review should check
 
-Before merging any change, check it against the list above like a
-checklist, not a vibe. A pull request that adds a genuinely useful
+Before merging any change, check it against the list above as a
+checklist. A pull request that adds a genuinely useful
 aggregate statistic but also introduces a way to filter down to one
-person fails review, the useful part doesn't buy back the part that
+person fails review. The useful part does not offset the part that
 doesn't belong here. If you're not sure whether something crosses a line,
 it probably does; ask before shipping it, not after.
 
 ## Adding to outreach/
 
 `outreach/` holds finished PDFs, unlike everywhere else in this repo. The
-bar for committing a binary deliverable there is stricter, not looser:
+bar for committing a binary deliverable there is stricter:
 every fact in it must already be aggregate/established elsewhere in
 `docs/research/` (a statistic, a repeated-template count), never a name,
 handle, photo, profile link, or one-off post. If you can't point to the

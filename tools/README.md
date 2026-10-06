@@ -53,8 +53,8 @@ if you point it at something much larger.
 Running the Python validator against the checksummed HyperClaper.json turns
 up 632 type inconsistencies: `like_count`, `comment_count`, and
 `impression_count` are stored as JSON floats (e.g. `5.0`) instead of
-integers on a few hundred records. That's a real quirk of the source export,
-not a validator bug, worth knowing about before doing arithmetic on those
+integers on a few hundred records. This is a quirk of the source export,
+not a validator bug. Keep it in mind before doing arithmetic on those
 fields downstream.
 
 # De-identification tool
@@ -63,7 +63,7 @@ fields downstream.
 a de-identified **copy** of one of the three source files, for your own
 local use.
 
-**Read this before trusting the output for anything sensitive.** Default
+**Read this before using the output for anything sensitive.** Default
 mode hashes direct identifiers (handles, real names, internal LinkedIn
 URNs/IDs, profile links, photos) with SHA-256 and leaves post content
 untouched. That stops casual browsing/grep from exposing an identity, but
@@ -72,8 +72,8 @@ distinctive sentence can be pasted into a search engine and traced back to
 its author regardless of what happened to the identifier fields. This is
 the same failure mode that de-anonymized the AOL search-log and Netflix
 Prize datasets. Pass `--redact-content` to also strip post/comment content
-fields entirely, which closes that gap at the cost of removing most of
-what the data is useful for.
+fields entirely, which closes that gap but removes most of
+the data's usefulness.
 
 Quasi-identifiers (headline, occupation, location, country, follower
 counts) are left untouched in both modes, see

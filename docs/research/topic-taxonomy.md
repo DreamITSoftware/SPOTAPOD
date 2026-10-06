@@ -14,9 +14,9 @@ Unlike the earlier category scans in this repo (`other-regulatory-signals.md`,
 record match more than one category, this taxonomy is **mutually
 exclusive by construction**, each record is tested against the nine
 categories in a fixed order and assigned to the first one that matches.
-This trades some nuance (a record that's genuinely about both career
+This loses some nuance (a record that is about both career
 advice and AI only gets counted once, under whichever category is
-checked first) for a property the earlier scans don't have: every record
+checked first) and gains a property the earlier scans lack: every record
 in every dataset is accounted for in exactly one bucket, so the counts
 below sum to the full 340,829-record total across all three files.
 
@@ -50,7 +50,7 @@ below sum to the full 340,829-record total across all three files.
 | `book_writing_publishing` | 0.19% | 0.91% | 0.82% |
 | `uncategorized_other` | 50.47% | 33.93% | 28.15% |
 
-Two standouts, consistent with earlier findings elsewhere in this repo:
+Two datasets stand out, consistent with earlier findings elsewhere in this repo:
 HyperClapper is disproportionately career-content (13.92% vs. 2–4%
 elsewhere, see also the reciprocal-engagement and occupation findings in
 [demographics.md](demographics.md)), and LinkBoost-2025 is disproportionately
@@ -60,12 +60,12 @@ occupation text skewing 59.5% toward "executive/leadership/coaching" per
 
 ## Reading `uncategorized_other`
 
-At 42.97%, this is the largest single bucket: expected, since nine
-keyword-based categories can't exhaustively cover the full range of
+At 42.97%, this is the largest single bucket. This is expected, since nine
+keyword-based categories cannot cover the full range of
 professional-networking content (personal announcements, engagement-bait
 questions, congratulations posts, industry commentary with no category
-keyword, etc.). This bucket is a catch-all by construction, not a finding
-in itself. It's too heterogeneous to characterize as a topic the way the
+keyword, etc.). This bucket is a catch-all by construction, not a finding.
+It is too heterogeneous to characterize as a topic the way the
 other nine can be.
 
 ## Caveats

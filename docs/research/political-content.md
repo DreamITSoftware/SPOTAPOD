@@ -12,7 +12,7 @@ ever identified.
 The duplicate-template safeguard from
 [nonprofit-content.md](nonprofit-content.md) fired on LinkBoost-2025:
 97 of its "Democrat/Democratic Party" matches trace to a single
-repeated post. This is not a new discovery - it is the same political
+repeated post. This is not a new discovery. It is the same political
 campaign-endorsement template already documented in
 [decision-points.md](decision-points.md), which also found 97
 occurrences of this exact post, there under the
@@ -39,12 +39,12 @@ here either.
 
 ## Reading these numbers
 
-Trump is the single largest term in every dataset, and the only one
+Trump is the largest term in every dataset, and the only one
 with meaningful presence across all three - Biden and party-name
 mentions are comparatively sparse and unevenly distributed.
 HyperClapper's Trump-to-Biden ratio (136:2) is the most lopsided of the
-three. podawaa2024 and HyperClapper show genuinely distinct,
-broadly-distributed content (182 and 144 distinct strings
+three. podawaa2024 and HyperClapper show distinct,
+broadly distributed content (182 and 144 distinct strings
 respectively, no dominant template); the correction above is specific
 to LinkBoost-2025.
 

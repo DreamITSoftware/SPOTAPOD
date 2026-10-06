@@ -1,20 +1,20 @@
 # Career Content Then and Now: A Closer Look at One Category's Jump
 
-### 2.23% to 13.92%, but only in one of two later-dated datasets, which changes what the jump actually means
+### 2.23% to 13.92%, but only in one of two later-dated datasets, which changes what the jump means
 
-This project's topic taxonomy shows career-job-search content occupying 2.23% of podawaa2024's earlier-skewing records, but 13.92% of HyperClapper's later-skewing records, a more than six-fold increase. That number is worth a closer, more careful look than the headline jump alone gives it.
+This project's topic taxonomy shows career-job-search content occupying 2.23% of podawaa2024's earlier-skewing records, but 13.92% of HyperClapper's later-skewing records, a more than six-fold increase. The headline jump needs a closer look.
 
 ## The number that complicates the story
 
 The same category, checked in LinkBoost-2025, also a later-dated dataset, shows only 3.79%, barely above podawaa2024's 2.23% and nowhere near HyperClapper's 13.92%. If career content's rise were a genuine platform-wide, time-driven trend, both later datasets should show something closer to the same jump. They don't.
 
-## What this actually tells you
+## What this tells you
 
-The most defensible read isn't "career content is rising sharply on LinkedIn." It's "career content's share is dramatically higher in HyperClapper specifically, for reasons this project's data can't distinguish between a real trend and a dataset-specific artifact." HyperClapper's own well-documented account concentration (top 100 of 702 accounts producing 83.5% of posts) means a shift in what its most active handful of accounts post about could move this percentage substantially without reflecting any broader platform pattern at all.
+The most defensible reading is that career content's share is much higher in HyperClapper specifically, and this project's data can't distinguish a real trend from a dataset-specific artifact. It does not show that career content is rising sharply on LinkedIn. HyperClapper's well-documented account concentration (top 100 of 702 accounts producing 83.5% of posts) means a shift in what its most active accounts post about could move this percentage substantially without reflecting any broader platform pattern.
 
-## Why this is a good example of comparative research done carefully
+## Why compare datasets
 
-A single-dataset analysis showing "career content jumped from 2.23% to 13.92%" would be a genuinely misleading headline on its own, true of the comparison it makes, misleading about what it implies. Only by checking a second, independent later-dated source and finding a much smaller shift does the actual, narrower, more honest claim become visible: this looks like it's about HyperClapper's specific content mix, not a platform-wide career-content boom.
+A single-dataset analysis showing "career content jumped from 2.23% to 13.92%" would be a misleading headline: true of the comparison it makes, misleading about what it implies. Checking a second, independent later-dated source and finding a much smaller shift supports a narrower claim: this looks like it reflects HyperClapper's specific content mix, not a platform-wide career-content boom.
 
 ## What this is, and isn't
 
