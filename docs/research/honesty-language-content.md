@@ -22,15 +22,17 @@ physical sense ("lie down"). Both terms require a qualifying form
 ## LinkBoost-2025's low-distinct-ratio note, checked
 
 The low-distinct-ratio note fires on LinkBoost-2025 (103 distinct
-strings for 2,334 matches), but the duplicate-template warning does
-not: no single string dominates. Checked manually: the top repeated
-string is 121 of 2,334 matches (about 5%), and the top several are
-distinct, on-theme posts (digital parenting, emotional
-intelligence in children, an "AI & the Hug We Didn't Know We Needed"
-post, kindness-as-power, happiness at work). This is real signal
-consistent with that dataset's known structure, not a new artifact.
+strings for 2,334 matches), but the duplicate-template warning does not:
+no single string dominates. Checked manually, the top repeated string is
+121 of 2,334 matches (about 5%), and the top several are distinct,
+on-theme posts (digital parenting, emotional intelligence in children,
+an "AI & the Hug We Didn't Know We Needed" post, kindness-as-power,
+happiness at work).
 
-## Results (VERIFIED - reproducible via the script)
+This is real signal consistent with that dataset's known structure, not
+a new artifact.
+
+## Results (VERIFIED: reproducible via the script)
 
 | Term | podawaa2024 | HyperClapper | LinkBoost-2025 |
 |---|---|---|---|
@@ -44,9 +46,10 @@ consistent with that dataset's known structure, not a new artifact.
 "Lying/lies/liar" leads in podawaa2024 and LinkBoost-2025, while
 kindness and lying are nearly tied in HyperClapper (335 vs. 333).
 Deception-specific language is small everywhere: under 100 mentions in
-every dataset, well behind both "kindness" and "lying". People write
-about honesty and dishonesty with everyday moral vocabulary far more
-often than with the clinical term "deception."
+every dataset, well behind both "kindness" and "lying".
+
+People write about honesty and dishonesty with everyday moral vocabulary
+far more often than with the clinical term "deception."
 
 LinkBoost-2025 has the highest overall rate (2.993%), consistent with
 its documented lean toward inspirational/emotional content in

@@ -26,7 +26,7 @@ tooling:
   of `podawaa2024` records show `Views = 0`; 98.0% of `HyperClapper` records
   show zero impressions. Some of this may reflect real pod-driven anomalies,
   but a large share is probably a tracking/collection gap. LinkedIn's
-  own view-count rollout was inconsistent over the 2018–2024 window this data
+  own view-count rollout was inconsistent over the 2018 to 2024 window this data
   spans. Treating a zero as "suspicious" without that context would
   misclassify many ordinary accounts.
 - **Reciprocal `like`/`comment` flags describe the tool's action, not the
@@ -44,8 +44,7 @@ tooling:
   the data pipeline's own fallback behavior, or copy-paste engagement-bait
   templates that circulate widely and organically, and need not indicate a
   coordinated pod.
-- **Small sample per author.** Most authors in `podawaa2024` have very few
-  posts (1,409 authors have exactly 1). A single anomalous record is weak
+- **Small sample per author.** Most authors in `podawaa2024` have few posts (1,409 authors have exactly 1). A single anomalous record is weak
   evidence about a person's overall behavior.
 
 For these reasons, this repo does not build, and will

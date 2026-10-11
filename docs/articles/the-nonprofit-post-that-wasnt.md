@@ -2,7 +2,7 @@
 
 ### A "1.38% nonprofit-content rate" turned out to be one headline, copy-pasted 658 times
 
-A first manual pass at nonprofit-related language (charity, NGO, philanthropy, 501(c)(3)) in one dataset's headline field found a 1.38% match rate. That was the highest of any field checked, and it looked like a notable signal.
+A first manual pass at nonprofit-related language (charity, NGO, philanthropy, 501(c)(3)) in one dataset's headline field found a 1.38% match rate. That was the highest of any field checked, and it appeared to be a notable signal.
 
 Checking the underlying text directly showed 658 of the 681 matching records shared the exact same headline. That one dataset's structure logs a fresh row every time a reciprocal-engagement action happens, capturing that account's headline snapshot each time. So one person's nonprofit-mentioning headline was counted 658 times, once per engagement event. 658 different people did not mention nonprofit work.
 
@@ -22,7 +22,7 @@ Rather than patch this one instance by hand, the underlying script was rebuilt t
 
 ## Why this is the most important nonprofit finding in this project
 
-Nonprofit content does not matter more than other categories. The error this correction fixes, counting the same repeated headline hundreds of times as if it were hundreds of independent mentions, is the kind of error a less careful research project could have published as a real finding.
+Nonprofit content does not matter more than other categories. The error this correction fixes, counting the same repeated headline hundreds of times as hundreds of independent mentions, is the kind of error a less careful research project could have published as a real finding.
 
 ## What is verified
 

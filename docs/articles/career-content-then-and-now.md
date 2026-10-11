@@ -14,7 +14,7 @@ The most defensible reading is that career content's share is much higher in Hyp
 
 ## Why compare datasets
 
-A single-dataset analysis showing "career content jumped from 2.23% to 13.92%" would be a misleading headline: true of the comparison it makes, misleading about what it implies. Checking a second, independent later-dated source and finding a much smaller shift supports a narrower claim: this looks like it reflects HyperClapper's specific content mix, not a platform-wide career-content boom.
+A single-dataset analysis showing "career content jumped from 2.23% to 13.92%" would be a misleading headline: true of the comparison it makes, misleading about what it implies. Checking a second, independent later-dated source and finding a much smaller shift supports a narrower claim: this appears to reflect HyperClapper's specific content mix, not a platform-wide career-content boom.
 
 ## What this is, and isn't
 

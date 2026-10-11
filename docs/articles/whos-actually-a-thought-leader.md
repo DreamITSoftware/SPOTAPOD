@@ -8,7 +8,7 @@ Across two datasets with occupation and headline fields, **100% of HyperClapper'
 
 ## Why the overlap matters
 
-Two independently common phrases co-occurring by chance at a 97-100% rate is not plausible. The overlap is more consistent with a single recurring bio template, something like "Speaker | Thought Leader," copy-pasted or adapted across thousands of profiles, than with people separately deciding to claim both terms.
+Two independently common phrases co-occurring by chance at a 97% to 100% rate is not plausible. The overlap is more consistent with a single recurring bio template, something like "Speaker | Thought Leader," copy-pasted or adapted across thousands of profiles, than with people separately deciding to claim both terms.
 
 This changes how the raw numbers should be read. HyperClapper shows 1,889 "speaker" mentions (3.83% of all records) and 500 "thought leader" mentions (1.01%). LinkBoost-2025 shows 14,261 "speaker" mentions (18.29%, roughly one in five records) and 4,292 "thought leader" mentions (5.50%). Read the "thought leader" column as almost entirely a subset of the "speaker" column, not two separately meaningful signals.
 

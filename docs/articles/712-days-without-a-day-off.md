@@ -18,7 +18,7 @@ The account at the top of this list posted, on average, once every 6.5 hours, fo
 
 ## Irregular timing, sustained rate
 
-One might assume this looks like a bot: too regular, too mechanical. The data shows the opposite. Every one of these accounts has highly irregular spacing between individual posts: some intervals close together, some far apart, no fixed rhythm. Whatever produces this volume is not posting on a rigid timer. It sustains an average rate that few individual professionals could, while individual posts still look like a human deciding when to publish.
+One might assume this is a bot: too regular, too mechanical. The data shows the opposite. Every one of these accounts has irregular spacing between individual posts: some intervals close together, some far apart, no fixed rhythm. Whatever produces this volume is not posting on a rigid timer. It sustains an average rate that few individual professionals could, while individual posts still look like a human deciding when to publish.
 
 ## What this is, and isn't
 

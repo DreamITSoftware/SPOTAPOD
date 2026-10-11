@@ -20,7 +20,7 @@ news-commentary post about the Jordan Belfort/Wolf of Wall Street
 financial-fraud case, not 15 distinct posts about the FBI.
 Corrected, LinkBoost-2025's real any-mention count is 21, not 35.
 
-## Results (VERIFIED - reproducible via the script)
+## Results (VERIFIED: reproducible via the script)
 
 | Term | podawaa2024 | HyperClapper | LinkBoost-2025 |
 |---|---|---|---|
@@ -34,7 +34,8 @@ Corrected, LinkBoost-2025's real any-mention count is 21, not 35.
 | **Any mention (raw)** | **118 (0.055%)** | **40 (0.081%)** | **35 (0.045%)** |
 | **Any mention (corrected)** | 118 (no correction needed) | 40 (no correction needed) | **21 (0.027%)** |
 
-\* See correction above - this is one repeated post, not 15 distinct ones.
+\* See correction above: this is one repeated post, not 15 distinct
+ones.
 
 ## Reading these numbers
 

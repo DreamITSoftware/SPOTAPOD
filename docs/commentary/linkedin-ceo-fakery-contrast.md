@@ -21,7 +21,9 @@ Shapero's fix is aimed at one direction of traffic: job seekers flooding recruit
 
 There is a second direction of traffic on the same platform that LinkedIn has not held a press briefing about: "career advice" content flowing the other way, from a small number of accounts toward millions of job seekers, teenagers among them, who are trying to learn what a successful career even looks like.
 
-I analyzed two LinkedIn datasets, 213,491 posts from 2024 and 49,369 posts from 2025 into 2026, and found that 100 accounts produce 83.5% of everything in the second dataset that has an identifiable author. More than four in five posts in the "most-talked-about" career content trace back to a hundred accounts running the same handful of scripts on repeat.
+I analyzed two LinkedIn datasets, 213,491 posts from 2024 and 49,369 posts from 2025 into 2026, and found that 100 accounts produce 83.5% of everything in the second dataset that has an identifiable author.
+
+More than four in five posts in the "most-talked-about" career content trace back to a hundred accounts running the same handful of scripts on repeat.
 
 The engagement numbers behind that content do not hold together. In the 2024 dataset, 75,442 posts, 35.3% of the entire file, show likes recorded against zero views. You cannot like a post you never saw. One post logged 88,028 likes on zero views. Another logged 41,315 likes on a single view, a ratio past 41,000 to 1. Among the ten highest-liked posts in that 213,491-post dataset, four show zero recorded views.
 
@@ -47,7 +49,7 @@ I am not saying Shapero's statements to the Journal are false. I have no reason 
 
 I am not saying LinkedIn caused the fake engagement in my datasets, or that Podawaa, HyperClapper, or LinkBoost, the three tools my research actually profiles, are connected to anything Shapero discussed. I have no evidence they are, and his remarks do not mention any of them.
 
-What I am saying is narrower: LinkedIn's own CEO publicly acknowledged the core premise of my research, that AI-driven fakery on this platform degrades people's ability to tell who is real, enough to justify a nine-figure product investment. He did so for the side of the platform that pays LinkedIn directly. My data shows the same failure, arguably at a more extreme and more measurable scale, on the side that pays LinkedIn nothing, the job seekers and teenagers reading career content for free. One side got a product launch. The other has got nothing, three years running.
+What I am saying is narrower: LinkedIn's own CEO publicly acknowledged the core premise of my research, that AI-driven fakery on this platform degrades people's ability to tell who is real, enough to justify a nine-figure product investment. He did so for the side of the platform that pays LinkedIn directly. My data shows the same failure, at what I would argue is a more extreme and more measurable scale, on the side that pays LinkedIn nothing, the job seekers and teenagers reading career content for free. One side got a product launch. The other has got nothing, three years running.
 
 ## The numbers, by evidence tier
 

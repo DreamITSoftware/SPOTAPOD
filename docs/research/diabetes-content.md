@@ -3,18 +3,19 @@
 `analysis/diabetes_content_scan.py` counts mentions of diabetes-related
 terms (diabetes, diabetic, type 1/2 diabetes, insulin, blood sugar,
 glucose monitoring, prediabetes) across post content in all three
-datasets. Same discipline as the other scans in this repo: aggregate
-counts only, no record, author, or matched text ever printed beyond
-the duplicate-template check described below.
+datasets. It follows the same discipline as the other scans in this
+repo: aggregate counts only, no record, author, or matched text ever
+printed beyond the duplicate-template check described below.
 
 ## A duplicate string that is genuine content
 
-The duplicate-template check fires on LinkBoost-2025 (40 of 172
-matches share one string), but checking the underlying text directly
-showed this is genuine health/nutrition content (a post about sugar
-consumption and its effect on blood sugar) boosted by the platform's
-structure, not a false positive. Corrected, LinkBoost-2025's real
-any-mention count is 133, not 172.
+The duplicate-template check fires on LinkBoost-2025 (40 of 172 matches
+share one string), but checking the underlying text directly showed this
+is genuine health/nutrition content (a post about sugar consumption and
+its effect on blood sugar) boosted by the platform's structure, not a
+false positive.
+
+Corrected, LinkBoost-2025's real any-mention count is 133, not 172.
 
 This is the same kind of outcome as
 [homelessness-content.md](homelessness-content.md) and
@@ -22,9 +23,12 @@ This is the same kind of outcome as
 turned out to be real content rather than noise, unlike
 [immunotherapy-content.md](immunotherapy-content.md) and
 [university-content.md](university-content.md), where flagged patterns
-turned out to be false positives. In all four cases the safeguard flags a number for a second look but does not say what that look will find.
+turned out to be false positives.
 
-## Results (VERIFIED - reproducible via the script)
+In all four cases the safeguard flags a number for a second look but
+does not say what that look will find.
+
+## Results (VERIFIED: reproducible via the script)
 
 | Term | podawaa2024 | HyperClapper | LinkBoost-2025 |
 |---|---|---|---|
@@ -57,9 +61,8 @@ the framing differences documented in
 
 ## Caveats
 
-Same as every keyword scan in this repo: a match means the term
-appears in the text, not that the account or post has any verified
-connection to diabetes, medical expertise, or accurate health
-information. This is a health-adjacent content category; as with
-everywhere else in this repo, no claim is made or inferred about any
-individual's health status.
+Same as every keyword scan in this repo: a match means the term appears
+in the text, not that the account or post has any verified connection to
+diabetes, medical expertise, or accurate health information. This is a
+health-adjacent content category. As with everywhere else in this repo,
+no claim is made or inferred about any individual's health status.

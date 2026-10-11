@@ -2,28 +2,30 @@
 
 `analysis/rare_earth_metals_scan.py` counts mentions of rare earth
 metals/elements and adjacent critical-minerals terms (lithium, cobalt,
-critical minerals, neodymium) across post content in all three
-datasets. Same discipline as the other scans in this repo: aggregate
-counts only, no record, author, or matched text ever printed beyond
-the duplicate-template check described below.
+critical minerals, neodymium) across post content in all three datasets.
+It follows the same discipline as the other scans in this repo:
+aggregate counts only, no record, author, or matched text ever printed
+beyond the duplicate-template check described below.
 
 ## Scope note
 
-Lithium and cobalt are not rare earth elements. They are
-battery and EV supply-chain minerals commonly discussed alongside rare
-earths in policy and industry conversations. They are
-included here because they account for most
-matches. The specific phrase "rare earth metals/elements/earths"
-appears only **7 times total** across all three datasets combined.
+Lithium and cobalt are not rare earth elements. They are battery and EV
+supply-chain minerals commonly discussed alongside rare earths in policy
+and industry conversations. They are included here because they account
+for most matches.
+
+The specific phrase "rare earth metals/elements/earths" appears only **7
+times total** across all three datasets combined.
 
 ## A duplicate string that is genuine content
 
 The duplicate-template check fires on LinkBoost-2025 (53 of 71 matches
-share one string), but checking the underlying text directly showed
-this is genuine content (an e-waste/battery-recycling industry post
-about an Indian recycling company) boosted by the platform's
-structure, not a false positive. Corrected, LinkBoost-2025's real
-any-mention count is 19, not 71.
+share one string), but checking the underlying text directly showed this
+is genuine content (an e-waste/battery-recycling industry post about an
+Indian recycling company) boosted by the platform's structure, not a
+false positive.
+
+Corrected, LinkBoost-2025's real any-mention count is 19, not 71.
 
 This is the same kind of outcome as
 [homelessness-content.md](homelessness-content.md),
@@ -31,7 +33,7 @@ This is the same kind of outcome as
 [narcissist-content.md](narcissist-content.md), where a flagged
 duplicate turned out to be real content rather than noise.
 
-## Results (VERIFIED - reproducible via the script)
+## Results (VERIFIED: reproducible via the script)
 
 | Term | podawaa2024 | HyperClapper | LinkBoost-2025 |
 |---|---|---|---|
@@ -45,13 +47,13 @@ duplicate turned out to be real content rather than noise.
 
 ## Reading these numbers
 
-Actual "rare earth" terminology is rare, with only 7 mentions
-total. Lithium is the dominant term in podawaa2024 and
-LinkBoost-2025, while HyperClapper leans more toward the general phrase
-"critical minerals." This is one of the smallest content categories
-found in this project, comparable in scale to
-[narcissist-content.md](narcissist-content.md) and
-[immunotherapy-content.md](immunotherapy-content.md).
+Actual "rare earth" terminology is rare, with only 7 mentions total.
+Lithium is the dominant term in podawaa2024 and LinkBoost-2025, while
+HyperClapper leans more toward the general phrase "critical minerals."
+
+This is one of the smallest content categories found in this project,
+comparable in scale to [narcissist-content.md](narcissist-content.md)
+and [immunotherapy-content.md](immunotherapy-content.md).
 
 ## Caveats
 

@@ -40,11 +40,13 @@ collapses podawaa2024's 213,491 raw records down to its 201,000 unique
 post IDs.
 
 **Because of this, `spotapod.json` is documented here as a derived,
-post-level aggregation of podawaa2024.json, not as a fourth
-independent source.** It introduces no new individuals, no new PII
-surface, and no new privacy review beyond what already applies to
-podawaa2024.json (see [privacy.md](privacy.md)). Its one new
-contribution, the `PODCount` field, is profiled on its own terms in
+post-level aggregation of podawaa2024.json, not as a fourth independent
+source.**
+
+It introduces no new individuals, no new PII surface, and no new privacy
+review beyond what already applies to podawaa2024.json (see
+[privacy.md](privacy.md)). Its one new contribution, the `PODCount`
+field, is profiled on its own terms in
 [pod-count-profile.md](research/pod-count-profile.md).
 
 The supplied file also does not parse as standard JSON: it appears to
@@ -132,7 +134,7 @@ vector,
 [`AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:N/A:H/E:H/RL:X/RC:X/CR:X/IR:X/AR:X/MAV:N/MAC:L/MPR:N/MUI:N/MS:C/MC:X/MI:X/MA:X`](https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?vector=AV:N%2FAC:L%2FPR:L%2FUI:N%2FS:C%2FC:H%2FI:N%2FA:H%2FE:H%2FRL:X%2FRC:X%2FCR:X%2FIR:X%2FAR:X%2FMAV:N%2FMAC:L%2FMPR:N%2FMUI:N%2FMS:C%2FMC:X%2FMI:X%2FMA:X&version=3.1),
 which this repo independently recomputed using the official CVSS v3.1
 formula (verified against known reference vectors first) and confirms
-produces a **Base Score of 9.6**, matching the top of the stated 7.0-9.6
+produces a **Base Score of 9.6**, matching the top of the stated 7.0 to 9.6
 range. The disclosure does not specify which of the two named flaws
 (`UpdatesV2` or `ProfileUpdatesV2`) this particular vector belongs to, so
 this repo does not assign it to either. It states plainly
@@ -175,10 +177,10 @@ indicator of influence leaked at least once to any logged-in user, as confirmed 
 The disclosure above concerns a flaw in LinkedIn's own systems. A
 second, unrelated disclosure, a LinkedIn post by this project's author,
 describes a vulnerability in a pod tool itself, LEMPOD. It is not in
-LinkedIn's platform and not in any of the three tools this repo
-profiles (Podawaa, HyperClapper, LinkBoost). It is included for
-context on the broader pattern of a pod ecosystem with its own security
-problems, and is not evidence about any dataset in this repo.
+LinkedIn's platform and not in any of the three tools this repo profiles
+(Podawaa, HyperClapper, LinkBoost). It is included for context on the
+broader pattern of pod tools having their own security problems, and is
+not evidence about any dataset in this repo.
 
 Per that post, discovered 2024-03-26: navigating to a pod on the LEMPOD
 platform let an attacker read the pod's websocket traffic, which

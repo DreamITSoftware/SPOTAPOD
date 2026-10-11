@@ -10,12 +10,12 @@ author, or matched text.
 
 A record is counted once per entity it mentions (repeated mentions of
 the same entity in one record still count once), and a record can be
-counted under multiple entities if it names more than one - this is an
+counted under multiple entities if it names more than one. This is an
 overlapping tally, like the career-advice and other-regulatory-signal
 scans, not the mutually-exclusive scheme `topic_taxonomy.py` uses.
 
 **Performance and accuracy trade-off**: an early draft included a bare `\bTIME\b` pattern for *TIME*
-magazine, which matched the extremely common English word "time" on
+magazine, which matched the common English word "time" on
 nearly every record and caused the scan to run for several minutes
 per dataset instead of under two. The shipped patterns require a
 qualifying phrase for every entity whose name doubles as a common word
@@ -25,7 +25,7 @@ qualifying phrase for every entity whose name doubles as a common word
 recall (a casual "as TIME reported" mention without "Magazine" attached
 is missed) but keeps counts correct and runtime reasonable.
 
-## Results (VERIFIED - reproducible via the script)
+## Results (VERIFIED: reproducible via the script)
 
 ### News outlets
 
@@ -67,8 +67,8 @@ established in [topic-taxonomy.md](topic-taxonomy.md).
 
 Any-mention rate: 0.68% (podawaa2024), 0.78% (HyperClapper), 2.52%
 (LinkBoost-2025). Fortune (618 mentions, 0.79%) and Psychology Today
-(236 mentions, 0.30%) stand out specifically in LinkBoost-2025 - both
-essentially absent elsewhere - consistent with that dataset's
+(236 mentions, 0.30%) stand out specifically in LinkBoost-2025 and are
+almost absent elsewhere, consistent with that dataset's
 leadership/coaching content skew (see
 [topic-taxonomy.md](topic-taxonomy.md), where LinkBoost's
 `leadership_coaching_motivation` share is roughly 3× the other two
@@ -91,7 +91,7 @@ files).
 | Apple TV+ | 18 (0.01%) | 2 (0.00%) | - |
 
 Any-mention rate: 1.97% (podawaa2024), 1.65% (HyperClapper), 3.17%
-(LinkBoost-2025) - the highest overall mention rate of any category in
+(LinkBoost-2025): the highest overall mention rate of any category in
 this scan. YouTube, TikTok, and Netflix are the top three, in the same
 order, in every single dataset; traditional linear TV networks are
 negligible everywhere (all under 0.05%). This is consistent with
@@ -116,7 +116,7 @@ broadcast media.
 Full per-dataset rankings (all 32 tracked corporations) are reproducible
 via the script; the table above shows the ten highest combined.
 Any-mention rate: 13.00% (podawaa2024), 23.19% (HyperClapper), 15.62%
-(LinkBoost-2025) - by far the highest of any category scanned, and the
+(LinkBoost-2025): by far the highest of any category scanned, and the
 only one where any single dataset exceeds 20%.
 
 **IBM's share in HyperClapper (8.67%, roughly 24× its share in
@@ -124,7 +124,7 @@ podawaa2024 and 26× its share in LinkBoost-2025) is the largest
 outlier.** This is consistent with, though not independently
 re-confirmed by, HyperClapper's elevated `education_certification` topic
 share documented in [topic-taxonomy.md](topic-taxonomy.md) (3.11% vs.
-0.63–0.68% elsewhere): a plausible explanation is a recurring
+0.63% to 0.68% elsewhere): a plausible explanation is a recurring
 "free IBM certification" content template, similar in kind to the
 "Google is offering free AI training" pattern already documented in
 [decision-points.md](decision-points.md), though this specific scan
@@ -136,7 +136,7 @@ counts entity mentions only and does not itself verify that explanation.
   Amazon the rainforest, Apple the fruit) are not filtered out beyond
   what's noted above, so counts for those specific entities skew
   somewhat high relative to a strictly on-topic count.
-- A mention means the name appears in the text - not that the post
+- A mention means the name appears in the text, not that the post
   accurately describes, is affiliated with, or is endorsed by the named
   outlet, magazine, platform, or corporation.
 - As with every keyword scan in this repo, results depend on the fixed

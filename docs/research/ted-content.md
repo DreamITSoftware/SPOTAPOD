@@ -28,7 +28,7 @@ Swear By" listicle, boosted by the platform's structure. Checked
 directly, it is genuine content, not a false positive. Corrected,
 LinkBoost-2025's real any-mention count is 26, not 66.
 
-## Results (VERIFIED - reproducible via the script)
+## Results (VERIFIED: reproducible via the script)
 
 | Term | podawaa2024 | HyperClapper | LinkBoost-2025 |
 |---|---|---|---|

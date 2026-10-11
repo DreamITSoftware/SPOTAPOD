@@ -18,7 +18,7 @@ This project also caught and corrected one of its own published numbers, a claim
 
 ## A discussion prompt
 
-Ask students: if a claim gets repeated by several sources, does that make it more likely to be true? The 1,706 figure appears to have been repeated rather than recomputed, which makes it a counter-example. Repetition without independent verification looks like confirmation but confirms nothing.
+Ask students: if a claim gets repeated by several sources, does that make it more likely to be true? The 1,706 figure appears to have been repeated rather than recomputed, which makes it a counter-example. Repetition without independent verification is not confirmation.
 
 ## What this is, and isn't
 

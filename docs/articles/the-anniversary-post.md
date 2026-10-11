@@ -6,7 +6,7 @@ This project doesn't yet have a full year of history behind it. This piece is th
 
 ## What the retrospective will need to cover
 
-**Every correction made, not just every finding published.** The corrections log (1,706 to 533, 50.6%/87.3% to 36.2%/83.5%, "nine of ten" to "four of ten") is as much a record of this project's first year as any new finding. A retrospective that lists only new discoveries and omits corrected errors would be the selective accounting this project's evidence-tier discipline exists to prevent.
+**Every correction made, as well as every finding published.** The corrections log (1,706 to 533, 50.6%/87.3% to 36.2%/83.5%, "nine of ten" to "four of ten") is as much a record of this project's first year as any new finding. A retrospective that lists only new discoveries and omits corrected errors would be the selective accounting this project's evidence-tier discipline exists to prevent.
 
 **Which datasets were added, and how each was actually vetted.** The spotapod.json investigation, confirming it was a derived aggregation of podawaa2024.json rather than a genuine fourth independent dataset, is an example of a due-diligence step that belongs in a retrospective, because getting it wrong (claiming a fourth independent dataset that was not one) would have been an avoidable error.
 

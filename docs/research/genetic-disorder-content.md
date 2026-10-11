@@ -1,32 +1,35 @@
 # Genetic disorder content
 
-`analysis/genetic_disorder_scan.py` counts mentions of genetic-
-disorder-related terms (genetic disorder(s), genetic condition(s),
-genetic disease(s), genetic mutation(s), hereditary disease/condition,
-inherited disorder(s), Down syndrome, cystic fibrosis, sickle cell)
-across post content in all three datasets. As with every
-other scan in this repo, it reports aggregate counts only, with no record, author, or
-matched text printed beyond the duplicate-template check
-described below.
+`analysis/genetic_disorder_scan.py` counts mentions of
+genetic-disorder-related terms (genetic disorder(s), genetic
+condition(s), genetic disease(s), genetic mutation(s), hereditary
+disease/condition, inherited disorder(s), Down syndrome, cystic
+fibrosis, sickle cell) across post content in all three datasets.
 
-This is a health-adjacent, sensitive topic. Every match reported here
-is a keyword hit in public post text. No claim is made or
-implied about any specific individual's actual health status, genetic
-makeup, or diagnosis. The script measures only how often terms appear in
-text.
+As with every other scan in this repo, it reports aggregate counts only,
+with no record, author, or matched text printed beyond the
+duplicate-template check described below.
+
+This is a health-adjacent, sensitive topic.
+
+Every match reported here is a keyword hit in public post text. No claim
+is made or implied about any specific individual's actual health status,
+genetic makeup, or diagnosis. The script measures only how often terms
+appear in text.
 
 ## LinkBoost-2025's correction: one post, not 46
 
 All 46 of LinkBoost-2025's "genetic condition(s)" matches trace to a
-single post. Checked directly, it is a genuine excerpt
-from a Cathie Wood interview discussing AI and genomics in healthcare,
-naming "rare genetic conditions" alongside cancer and chronic illness
-as diseases AI-driven medicine might eventually address. This is real
-content, not a false positive, but it is one post boosted 46 times by
-the platform's structure, not 46 distinct mentions. Corrected,
-LinkBoost-2025's real count is 1.
+single post. Checked directly, it is a genuine excerpt from a Cathie
+Wood interview discussing AI and genomics in healthcare, naming "rare
+genetic conditions" alongside cancer and chronic illness as diseases
+AI-driven medicine might eventually address. This is real content, not a
+false positive, but it is one post boosted 46 times by the platform's
+structure, not 46 distinct mentions.
 
-## Results (VERIFIED - reproducible via the script)
+Corrected, LinkBoost-2025's real count is 1.
+
+## Results (VERIFIED: reproducible via the script)
 
 | Term | podawaa2024 | HyperClapper | LinkBoost-2025 |
 |---|---|---|---|
@@ -53,9 +56,10 @@ single post.
 
 ## Caveats
 
-As with every keyword scan in this repo, and with extra emphasis given the
-topic, a match means the term appears in the text, not that any post
-or account has any connection to a real diagnosis, condition, or
-genetic status. No individual's health information is identified,
-inferred, or reported anywhere in this document or the underlying
-script's output.
+As with every keyword scan in this repo, and with extra emphasis given
+the topic, a match means the term appears in the text, not that any post
+or account has any connection to a real diagnosis, condition, or genetic
+status.
+
+No individual's health information is identified, inferred, or reported
+anywhere in this document or the underlying script's output.

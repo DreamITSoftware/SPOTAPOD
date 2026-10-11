@@ -2,16 +2,16 @@
 
 `analysis/one_word_posts_scan.py` finds posts whose content consists of
 a single whitespace-delimited token (e.g. "Agree?", a single emoji, a
-bare URL) across all three datasets. Same discipline as every other
-scan in this repo: reports counts only. Consistent with this repo's
-general approach to recurring content (see
+bare URL) across all three datasets. Same discipline as every other scan
+in this repo: reports counts only. Consistent with this repo's general
+approach to recurring content (see
 [decision-points.md](decision-points.md) and
 `category_title_patterns.py`), only one-word strings that repeat at
-least 3 times are ever printed - a genuinely one-off single-word post
-is never surfaced, since a unique short post is far more traceable to
-its specific author than one reused across many records.
+least 3 times are ever printed. A genuinely one-off single-word post is
+never surfaced, since a unique short post is far more traceable to its
+specific author than one reused across many records.
 
-## Results (VERIFIED - reproducible via the script)
+## Results (VERIFIED: reproducible via the script)
 
 | Dataset | One-word posts | % of dataset | Distinct one-word strings |
 |---|---|---|---|
@@ -75,14 +75,14 @@ post in every dataset where it appears. [baseline-profile.md](baseline-profile.m
 reports it as a notable duplicate string; it is also the top
 one-word post everywhere. podawaa2024 has both the highest rate (2.16%)
 and by far the most variety (364 distinct one-word strings, versus 23
-and 5 in the other two) - consistent with podawaa2024 being the
+and 5 in the other two): consistent with podawaa2024 being the
 broadest and most diffuse of the three datasets across every other
 scan in this repo.
 
 ## Caveats
 
-This is a purely structural measure (token count) and says nothing
-about a post's substance beyond its length - a one-word post could be
-genuine engagement bait, a data artifact, a bare link, or an incomplete
-export. As with every other repeated-content finding in this repo, only
-strings that recur across multiple records are ever shown.
+This is a purely structural measure (token count) and says nothing about
+a post's substance beyond its length: a one-word post could be genuine
+engagement bait, a data artifact, a bare link, or an incomplete export.
+As with every other repeated-content finding in this repo, only strings
+that recur across multiple records are ever shown.

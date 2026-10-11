@@ -190,7 +190,7 @@ Top level: `[ ... ]` (flat array, no wrapper object)
 | Field | Type | Completeness | Notes |
 |---|---|---|---|
 | `Id` | string | 100.0% | Internal record ID |
-| `FirstName` / `LastName` | string | 96.0–96.1% | Real name. **Never printed by any script in this repo** |
+| `FirstName` / `LastName` | string | 96.0 to 96.1% | Real name. **Never printed by any script in this repo** |
 | `piFirstName` / `piLastName` | string | 100.0% | Duplicate of FirstName/LastName, always present. **Never printed by any script in this repo** |
 | `Occupation` | string | 96.1% | LinkedIn-style headline/bio, a quasi-identifier on its own |
 | `DashEntityUrn` | string | 96.1% | LinkedIn internal profile URN. **Never read by any script in this repo** |
@@ -453,8 +453,8 @@ python3 analysis/posting_velocity_scan.py /path/to/HyperClaper.json
 python3 figures/generate_figures.py /path/to/podawaa2024.json /path/to/HyperClaper.json --linkboost-path /path/to/LinkBoost-2025.json --outdir figures
 ```
 
-All scripts are Python 3 standard library, except `figures/generate_figures.py`
-which additionally needs `matplotlib`.
+All scripts are Python 3 standard library, except
+`figures/generate_figures.py` which also needs `matplotlib`.
 
 ## Headline figures
 
@@ -462,7 +462,7 @@ which additionally needs `matplotlib`.
 
 - 213,491 records across 7,033 unique author identifiers (hashed count only)
 - 44.3% of records carry zero `Views`; 36.5% show more `Likes` than `Views`
-- Decoded post dates span 2018–2024 (decoded from the Snowflake-style post ID, see [method](docs/method.md))
+- Decoded post dates span 2018 to 2024 (decoded from the Snowflake-style post ID, see [method](docs/method.md))
 - 28,254 records share exact-match `Content` with at least one other record; the most repeated string appears 3,918 times
 - The top 1% of authors (by hashed post count) account for 19.1% of all posts; the top 10% account for 61.9%
 
@@ -479,7 +479,7 @@ Full output: [docs/research/baseline-profile.md](docs/research/baseline-profile.
 ### LinkBoost-2025
 
 - 77,969 records across 469 unique target posts and 238 unique operator accounts (hashed counts only)
-- `SuccessfullLikes` ranges 2–261 (mean 171.2); `SuccessfullComments` ranges 1–133 (mean 47.5) per record
+- `SuccessfullLikes` ranges 2 to 261 (mean 171.2); `SuccessfullComments` ranges 1 to 133 (mean 47.5) per record
 - 39.5% of records carry no reported `country`; of the rest, the US (21.8%), India (15.6%), and UK (8.0%) lead
 - The top 1% of target posts (by hashed record count) account for 18.9% of all records; the top 10% account for 58.2%
 - The top 10% of operator accounts (by hashed record count) account for 53.0% of all records
@@ -525,7 +525,7 @@ no per-record data). See [explorer/README.md](explorer/README.md) for why.
 - [Pharma / biotech content](docs/research/pharma-content.md), pharma/biotech/FDA term counts; corrects a LinkBoost-2025 miscategorization where most "FDA" matches turned out to be import-compliance content, not pharmaceutical-industry content
 - [Political party / Trump content](docs/research/political-content.md), Trump/Biden/party-name mention counts; links a LinkBoost-2025 correction back to the same repeated campaign post already documented in decision-points.md
 - [Immunotherapy content](docs/research/immunotherapy-content.md), documents two false positives (a "cart"/CAR-T acronym collision and an unrelated boosted post) that made this the smallest genuine content category found so far
-- ["Top list" / listicle content](docs/research/toplist-content.md), one of the larger niche-topic categories found (1.7–3.9%), with a real style difference between datasets
+- ["Top list" / listicle content](docs/research/toplist-content.md), one of the larger niche-topic categories found (1.7% to 3.9%), with a real style difference between datasets
 - [Blockchain / crypto content](docs/research/blockchain-crypto-content.md), podawaa2024's rate is 4x HyperClapper's; a plausible (not confirmed) shift toward AI content over time
 - [University content](docs/research/university-content.md), documents a cross-language false positive (German "mit" vs. the "MIT" acronym) caught via cross-dataset inconsistency rather than a within-dataset check
 - [Veteran / military content](docs/research/veteran-content.md), includes genuine tribute content alongside a correction linking back to the already-documented campaign-post artifact
@@ -539,9 +539,9 @@ no per-record data). See [explorer/README.md](explorer/README.md) for why.
 - [Genetic disorder content](docs/research/genetic-disorder-content.md), health-adjacent, sensitive topic; one of the smallest categories in the repo, with no individual health claims made anywhere
 - [Car maker content](docs/research/car-maker-content.md), Tesla dominates every dataset; in LinkBoost-2025 it's almost entirely a finance/investing story rather than an automotive one
 - [TED / TEDx content](docs/research/ted-content.md), handles a real name-collision risk ("Ted" the first name) via case-sensitive matching; HyperClapper skews heavily toward personal TEDx credentials
-- [Confidence content](docs/research/confidence-content.md), one of the larger niche-topic categories found (1.1%-5.2%); HyperClapper leans business-framing over personal "self-confidence" framing
+- [Confidence content](docs/research/confidence-content.md), one of the larger niche-topic categories found (1.1% to 5.2%); HyperClapper leans business-framing over personal "self-confidence" framing
 - ["Being human" content](docs/research/being-human-content.md), LinkBoost-2025's rate is 5x podawaa2024's; several posts juxtapose humanity against AI-driven career content
-- ["Future" content](docs/research/future-content.md), the largest niche-topic category in this repo (5.5%-8.9%), with a clean cross-dataset gradient rather than a single outlier
+- ["Future" content](docs/research/future-content.md), the largest niche-topic category in this repo (5.5% to 8.9%), with a clean cross-dataset gradient rather than a single outlier
 - [Rejection content](docs/research/rejection-content.md), confirms HyperClapper's "job rejection" content is genuinely distinct from the already-documented resume-rewrite template
 - [Empathy content](docs/research/empathy-content.md), LinkBoost-2025 highest by a wide margin; independently re-confirms a leadership template already found in a different scan
 - [Animal content](docs/research/animal-content.md), the worst term-collision problem found in this repo: "cat(s)" is 100% false positives in LinkBoost-2025 (CAT exam, stock ticker, hurricane categories)
@@ -552,7 +552,7 @@ no per-record data). See [explorer/README.md](explorer/README.md) for why.
 - [Industry verticals](docs/research/industry-verticals-content.md), real estate, insurance, manufacturing, retail, healthcare, and energy/ESG; the largest niche-topic category found
 - [Geographic content mentions](docs/research/geographic-mentions-content.md), countries/regions as content subject matter, cross-checked against account-location metadata
 - [Cross-dataset account overlap](docs/research/cross-dataset-account-overlap.md), structural analysis (hashed identifiers only): zero accounts appear in both HyperClapper and LinkBoost-2025
-- [Posting velocity](docs/research/posting-velocity.md), structural analysis: top HyperClapper accounts sustain 1.2–3.7 posts/day for up to 712 consecutive days
+- [Posting velocity](docs/research/posting-velocity.md), structural analysis: top HyperClapper accounts sustain 1.2 to 3.7 posts/day for up to 712 consecutive days
 - [Demographics](docs/research/demographics.md), aggregate geography and stated-occupation-category breakdown, and why protected characteristics (race, gender, age, etc.) are never inferred
 - [Date cutoff count](docs/research/date-cutoff-count.md), aggregate record counts before/after a given date across all three datasets, including a decoded date for LinkBoost-2025 pulled from the target-post URN embedded in its `Url` field, and why a date split is not, and is never treated as, a 16 CFR § 465.8 violation count
 - [Theoretical penalty ceiling](docs/research/theoretical-penalty-ceiling.md), record count times the FTC's statutory maximum civil penalty, an intentionally extreme arithmetic exercise labeled throughout as not a damages estimate, with the real-world settlement figures it should be read against
@@ -598,7 +598,7 @@ statement, and caveats.
 
 `analysis/book_genre_scan.py` checks for book-promotion language across
 all three datasets and breaks matches down by genre. Book promotion is a
-small minority everywhere (0.26–0.98% of records), dominated by
+small minority everywhere (0.26% to 0.98% of records), dominated by
 business/entrepreneurship and "writing craft" categories. Full breakdown:
 [docs/research/book-promotion-content.md](docs/research/book-promotion-content.md).
 
@@ -643,14 +643,15 @@ results: [docs/research/simple-titles.md](docs/research/simple-titles.md).
 
 ## Entity mentions (news outlets, magazines, TV/streaming, corporations)
 
-`analysis/entity_mention_scan.py` counts mentions of named entities across
-four fixed categories. Headline: corporations get named far more than
-any other category (13.00–23.19% of records across the three datasets,
-led by LinkedIn, Google, and - specifically in HyperClapper - an
-8.67% share for IBM, roughly 24–26× its share elsewhere,
-plausibly tied to that dataset's elevated free-certification content
-share). YouTube/TikTok/Netflix are the top three streaming/TV platforms,
-in that order, in every dataset. Full results across all four categories:
+`analysis/entity_mention_scan.py` counts mentions of named entities in
+four fixed categories. Corporations get named far more than anything
+else, in 13.00% to 23.19% of records across the three datasets.
+
+LinkedIn and Google lead overall. In HyperClapper, IBM has an 8.67%
+share, roughly 24 to 26 times its share elsewhere, which plausibly ties
+to that dataset's elevated free-certification content. YouTube, TikTok
+and Netflix are the top three streaming and TV platforms, in that order,
+in every dataset. Full results across all four categories:
 [docs/research/entity-mentions.md](docs/research/entity-mentions.md).
 
 ## Law-related content
@@ -678,10 +679,10 @@ Full results: [docs/research/speaker-thought-leader.md](docs/research/speaker-th
 ## Nonprofit-related content
 
 `analysis/nonprofit_content_scan.py` scans for charity, nonprofit, NGO,
-philanthropy, and 501(c)(3) mentions, and (unlike earlier scans) 
-builds in an automatic check for dominant repeated strings inflating a
-raw count. It caught a real one: HyperClapper's headline field first
-looked like it had the highest nonprofit-mention rate of any field
+philanthropy, and 501(c)(3) mentions, and (unlike earlier scans) builds
+in an automatic check for dominant repeated strings inflating a raw
+count. It caught a real one: HyperClapper's headline field first
+appeared to have the highest nonprofit-mention rate of any field
 (1.38%), but 658 of those 681 matching records turned out to share one
 repeated headline. Corrected, the real rate is 0.05%, the lowest, not
 the highest. The same check caught two more distortions in
@@ -691,26 +692,27 @@ LinkBoost-2025. Full results:
 ## Investment / venture capital content
 
 `analysis/investment_vc_scan.py` counts investment- and VC-related term
-mentions across post content. This is one of the larger content
-categories checked in this repo so far (3.43-5.17% "any mention" across
-the three datasets), with LinkBoost-2025 highest, consistent with its
-lean toward executive/business content elsewhere in this repo. A
-mention is not evidence of any legal violation on its own -- see
+mentions across post content. It is one of the larger categories checked
+in this repo so far, at 3.43% to 5.17% "any mention" across the three
+datasets. LinkBoost-2025 is highest, consistent with its lean toward
+executive and business content elsewhere in this repo.
+
+A mention is not evidence of any legal violation on its own.
 [docs/research/investment-vc-content.md](docs/research/investment-vc-content.md)
-for why, and for the securities-law and FTC frameworks that would
-actually be relevant if specific elements were separately established.
+explains why, and covers the securities-law and FTC frameworks that
+would apply if specific elements were separately established.
 
 ## Cybersecurity content vs. engagement anomalies
 
 `analysis/cybersecurity_anomaly_scan.py` cross-tabulates
 cybersecurity-related content against the same engagement-anomaly
-indicators used in the baseline profile (zero views with likes,
-likes exceeding views, extreme like/view ratio, reciprocal
-like+comment pairing). Cybersecurity content shows a higher anomaly
-rate than the dataset baseline on 3 of 4 measures checked, most
-notably HyperClapper's reciprocal like+comment rate (84.2% vs. 68.6%
-baseline). An elevated category-level rate is a population pattern,
-not identification of any specific account or post. Full results:
+indicators used in the baseline profile (zero views with likes, likes
+exceeding views, extreme like/view ratio, reciprocal like+comment
+pairing). Cybersecurity content shows a higher anomaly rate than the
+dataset baseline on 3 of 4 measures checked, especially HyperClapper's
+reciprocal like+comment rate (84.2% vs. 68.6% baseline). An elevated
+category-level rate is a population pattern, not identification of any
+specific account or post. Full results:
 [docs/research/cybersecurity-anomaly.md](docs/research/cybersecurity-anomaly.md).
 
 ## Travel agencies and destinations
@@ -730,11 +732,11 @@ Full results: [docs/research/travel-content.md](docs/research/travel-content.md)
 
 `analysis/national_security_scan.py` counts mentions of
 national-security-related terms. This is the smallest content category
-checked in this repo so far - under 0.1% of any dataset - and NSA
+checked in this repo so far, under 0.1% of any dataset, and NSA
 specifically is almost nonexistent (24 mentions in podawaa2024, 1 in
 HyperClapper, 0 in LinkBoost-2025). The duplicate-template safeguard
-caught a real correction here too: LinkBoost-2025's "FBI" count of 15
-is one boosted post, not 15 distinct posts. Full results:
+caught a real correction here too: LinkBoost-2025's "FBI" count of 15 is
+one boosted post, not 15 distinct posts. Full results:
 [docs/research/national-security-content.md](docs/research/national-security-content.md).
 
 ## Homelessness-related content
@@ -743,7 +745,7 @@ is one boosted post, not 15 distinct posts. Full results:
 homelessness-related term counts. LinkBoost-2025's duplicate-template
 warning fired here too, but unlike every prior instance in this repo,
 the repeated string turned out to be genuine on-topic content, not
-noise - a real "overcame homelessness" success story boosted 79 times.
+noise: a real "overcame homelessness" success story boosted 79 times.
 LinkBoost-2025 also contains genuine homelessness-sector advocacy
 content beyond that template, unlike most other small categories checked
 in this repo. Full results:
@@ -765,7 +767,7 @@ pharmaceutical-industry content. Full results:
 Trump/Biden mentions. Trump is the largest term in every dataset.
 LinkBoost-2025's duplicate-template warning fired again here, linking
 back to the same repeated political campaign-endorsement post already
-documented in decision-points.md (97 occurrences there too) - the
+documented in decision-points.md (97 occurrences there too). The
 candidate is not identified in either doc, consistent with this repo's
 privacy rules. Full results:
 [docs/research/political-content.md](docs/research/political-content.md).
@@ -773,28 +775,30 @@ privacy rules. Full results:
 ## Immunotherapy content
 
 `analysis/immunotherapy_content_scan.py` counts immunotherapy-related
-term mentions - and documents two real false positives found while
-building it. An initial "CAR-T" pattern also matched the common word
-"cart" (shopping cart, e-commerce content), producing 100+ false
-positives per dataset before it was fixed. A second false positive
-survived the fix: LinkBoost-2025's 40 "immunotherapy" matches all trace
-to one unrelated business-transformation post. Corrected, genuine
-immunotherapy content is 16 mentions total, all in podawaa2024 - the
-smallest genuine content category found in this project so far. Full
-results: [docs/research/immunotherapy-content.md](docs/research/immunotherapy-content.md).
+term mentions. It also documents two real false positives found while
+building it.
+
+An initial "CAR-T" pattern also matched the common word "cart" (shopping
+cart, e-commerce content), producing 100+ false positives per dataset
+before it was fixed. A second false positive survived the fix:
+LinkBoost-2025's 40 "immunotherapy" matches all trace to one unrelated
+business-transformation post. Corrected, genuine immunotherapy content
+is 16 mentions total, all in podawaa2024. That is the smallest genuine
+content category found in this project so far. Full results:
+[docs/research/immunotherapy-content.md](docs/research/immunotherapy-content.md).
 
 ## "Top list" / listicle content
 
 `analysis/toplist_content_scan.py` counts "Top 10," "N ways to," "best
 of," and similar listicle patterns. This is one of the larger content
-categories found across the niche-topic scans in this repo (1.7-3.9%
-"any mention," well above pharma, cybersecurity, law, nonprofit,
-travel, political, national security, and immunotherapy content, all
-under 1%). HyperClapper and LinkBoost-2025 both run meaningfully higher
-than podawaa2024, consistent with their broader lean toward templated
-content already seen elsewhere in this repo, and the two datasets show
-a real style difference: LinkBoost-2025 leans on numbered-listicle
-phrasing while HyperClapper leans on "Top N" specifically. Full results:
+categories found across the niche-topic scans in this repo (1.7% to 3.9%
+"any mention," well above pharma, cybersecurity, law, nonprofit, travel,
+political, national security, and immunotherapy content, all under 1%).
+HyperClapper and LinkBoost-2025 both run meaningfully higher than
+podawaa2024, consistent with their broader lean toward templated content
+already seen elsewhere in this repo, and the two datasets show a real
+style difference: LinkBoost-2025 leans on numbered-listicle phrasing
+while HyperClapper leans on "Top N" specifically. Full results:
 [docs/research/toplist-content.md](docs/research/toplist-content.md).
 
 ## Blockchain / crypto content
@@ -802,26 +806,30 @@ phrasing while HyperClapper leans on "Top N" specifically. Full results:
 `analysis/blockchain_crypto_scan.py` counts blockchain/crypto term
 mentions. podawaa2024 has by far the highest rate (2.93%, roughly 4x
 HyperClapper and 2.5x LinkBoost-2025) and is the only dataset where
-"blockchain" outranks general "crypto" phrasing. Since podawaa2024 is
-2024 data and the other two are 2025-2026 data, this is consistent
-with -- though doesn't confirm -- a shift in this content ecosystem's
-attention from blockchain/Web3 toward AI over that period, alongside
+"blockchain" outranks general "crypto" phrasing.
+
+Since podawaa2024 is 2024 data and the other two cover 2025 and 2026,
+this is consistent with a shift in attention from blockchain/Web3 toward
+AI over that period, though it doesn't confirm one. It sits alongside
 the technology_ai increase already documented in
-[docs/research/topic-taxonomy.md](docs/research/topic-taxonomy.md).
-Full results: [docs/research/blockchain-crypto-content.md](docs/research/blockchain-crypto-content.md).
+[docs/research/topic-taxonomy.md](docs/research/topic-taxonomy.md). Full
+results:
+[docs/research/blockchain-crypto-content.md](docs/research/blockchain-crypto-content.md).
 
 ## University content
 
 `analysis/university_content_scan.py` counts university-related term
-mentions, and documents a real cross-language false positive: an
-earlier draft's case-insensitive "MIT" pattern also matched the German
+mentions, and documents a real cross-language false positive: an earlier
+draft's case-insensitive "MIT" pattern also matched the German
 preposition "mit," inflating podawaa2024's MIT count by roughly 94%
-(2,601 raw vs. 148 genuine) and briefly making it look like the top
-term in that dataset alone -- an inconsistency with the other two
-datasets that prompted the fix. Corrected, "university/universities"
-leads in all three datasets, Harvard is the most-mentioned named
-institution everywhere, and LinkBoost-2025 leans unusually heavily on
-Cambridge relative to the other two. Full results:
+(2,601 raw vs. 148 genuine) and briefly making it appear to be the top
+term in that dataset alone, an inconsistency with the other two datasets
+that prompted the fix.
+
+Corrected, "university/universities" leads in all three datasets,
+Harvard is the most-mentioned named institution everywhere, and
+LinkBoost-2025 leans unusually heavily on Cambridge relative to the
+other two. Full results:
 [docs/research/university-content.md](docs/research/university-content.md).
 
 ## Veteran / military content
@@ -829,9 +837,9 @@ Cambridge relative to the other two. Full results:
 `analysis/veteran_content_scan.py` counts veteran/military term
 mentions. LinkBoost-2025's duplicate-template warning fires again,
 tracing to the same repeated political-endorsement post already
-documented in decision-points.md and political-content.md (candidate
-not named). Unlike that artifact, the rest of LinkBoost-2025's veteran
-content is genuine - real, distinct tributes to Indian Armed Forces
+documented in decision-points.md and political-content.md (candidate not
+named). Unlike that artifact, the rest of LinkBoost-2025's veteran
+content is genuine: real, distinct tributes to Indian Armed Forces
 personnel. podawaa2024 shows the most diverse term usage, including the
 only meaningful "veteran-owned" business content across the three
 datasets. Full results:
@@ -852,21 +860,24 @@ lean on "authentic/authenticity." Full results:
 ## Diabetes content
 
 `analysis/diabetes_content_scan.py` counts diabetes-related term
-mentions - one of the smallest genuine content categories found in
-this project (under 0.25% everywhere). LinkBoost-2025's duplicate
-string turned out to be genuine health content boosted by the
-platform's structure, not a false positive. This is the opposite outcome from
-the immunotherapy and university scans: the
+mentions. It is one of the smallest genuine content categories found in
+this project, under 0.25% everywhere.
+
+LinkBoost-2025's duplicate string turned out to be genuine health
+content boosted by the platform's structure, not a false positive. That
+is the opposite outcome from the immunotherapy and university scans: the
 safeguard flags a number to check and gives no verdict. Full results:
 [docs/research/diabetes-content.md](docs/research/diabetes-content.md).
 
 ## LinkedIn algorithm mentions
 
 `analysis/algorithm_mention_scan.py` counts algorithm-related term
-mentions - directly relevant to this project's own subject matter, and
-a companion to [algorithm-strategy-advice.md](docs/research/algorithm-strategy-advice.md).
+mentions. It is directly relevant to this project's own subject matter
+and is a companion to
+[algorithm-strategy-advice.md](docs/research/algorithm-strategy-advice.md).
+
 LinkBoost-2025 has the highest rate and its top repeated posts are
-genuinely about gaming/understanding the LinkedIn algorithm; podawaa2024
+genuinely about gaming/understanding the LinkedIn algorithm. podawaa2024
 is the only dataset with meaningful "LinkedIn algorithm" specificity
 rather than generic "algorithm" phrasing. Full results:
 [docs/research/algorithm-mention-content.md](docs/research/algorithm-mention-content.md).
@@ -883,11 +894,13 @@ results: [docs/research/career-transitions-content.md](docs/research/career-tran
 ## Social proof and credibility signaling
 
 `analysis/social_proof_scan.py` counts award/recognition claims,
-follower milestones, engagement-bait formats, and anniversary posts -
-one of the most directly on-theme scans in this repo. Confirms the
-already-documented "Agree?" template (baseline-profile.md) appears in
-LinkBoost-2025 too (888 occurrences), not just podawaa2024. Full
-results: [docs/research/social-proof-content.md](docs/research/social-proof-content.md).
+follower milestones, engagement-bait formats, and anniversary posts. It
+is one of the most directly on-theme scans in this repo.
+
+It confirms that the already-documented "Agree?" template
+(baseline-profile.md) appears in LinkBoost-2025 too, with 888
+occurrences, as well as in podawaa2024. Full results:
+[docs/research/social-proof-content.md](docs/research/social-proof-content.md).
 
 ## Industry verticals
 
@@ -910,9 +923,10 @@ already documented elsewhere in this repo. Full results:
 ## Kindness, lying, and deception language
 
 `analysis/honesty_language_scan.py` counts kindness, lying/lies/liar,
-and deception/deceptive term mentions - related to but distinct from
-[authenticity-content.md](docs/research/authenticity-content.md).
-"Lying/lies/liar" leads in two of three datasets; deception-specific
+and deception/deceptive term mentions. It is related to, but distinct
+from, [authenticity-content.md](docs/research/authenticity-content.md).
+
+"Lying/lies/liar" leads in two of three datasets. Deception-specific
 language is small everywhere (under 100 mentions per dataset) compared
 to the more common everyday vocabulary. LinkBoost-2025 has the highest
 overall rate, consistent with its documented lean toward
@@ -922,54 +936,63 @@ inspirational/emotional content. Full results:
 ## Children-related content
 
 `analysis/children_content_scan.py` counts children-related term
-mentions - and documents a real correction: bare "son" was catching
+mentions. It also documents a real correction: bare "son" was catching
 the French possessive pronoun "son" (his/her), not the English word for
-a child. podawaa2024's raw "son" count was 17,573, of which only 1.5%
-(269) showed clear English child-reference usage. Corrected, children
-content is small everywhere (1.2%-5.3%), with LinkBoost-2025 highest,
+a child.
+
+podawaa2024's raw "son" count was 17,573, of which only 1.5% (269)
+showed clear English child-reference usage. Corrected, children content
+is small everywhere, at 1.2% to 5.3%, with LinkBoost-2025 highest,
 consistent with its documented lean toward emotional/family content.
-Full results: [docs/research/children-content.md](docs/research/children-content.md).
+Full results:
+[docs/research/children-content.md](docs/research/children-content.md).
 
 ## Narcissist content
 
-`analysis/narcissist_content_scan.py` counts narcissist/narcissistic/
-narcissism mentions - the smallest content category found in this repo
-so far, at 156 total records across all three datasets combined before
-correction. LinkBoost-2025's duplicate-template flag turned out to be
-genuine content again (a personal recovery narrative boosted 52 times),
-not noise. Even corrected, this remains the smallest "any mention" rate
+`analysis/narcissist_content_scan.py` counts
+narcissist/narcissistic/narcissism mentions. It is the smallest content
+category found in this repo so far, at 156 total records across all
+three datasets combined before correction.
+
+LinkBoost-2025's duplicate-template flag turned out to be genuine
+content again (a personal recovery narrative boosted 52 times), not
+noise. Even corrected, this remains the smallest "any mention" rate
 documented anywhere in this repo. Full results:
 [docs/research/narcissist-content.md](docs/research/narcissist-content.md).
 
 ## Law enforcement content
 
-`analysis/law_enforcement_scan.py` counts law-enforcement term mentions
-- distinct from national-security-content.md, which covers federal
-agencies rather than general/local law enforcement. LinkBoost-2025 has
-the highest rate by a clear margin, spread genuinely across many
-distinct career-narrative posts (an IPS officer's exam story, a cop's
-salary-progression post, a detective's career recap), consistent with
-that dataset's broader lean toward career-journey content. Full
-results: [docs/research/law-enforcement-content.md](docs/research/law-enforcement-content.md).
+`analysis/law_enforcement_scan.py` counts law-enforcement term mentions.
+It is distinct from national-security-content.md, which covers federal
+agencies rather than general or local law enforcement.
+
+LinkBoost-2025 has the highest rate by a clear margin, spread genuinely
+across many distinct career-narrative posts (an IPS officer's exam
+story, a cop's salary-progression post, a detective's career recap),
+consistent with that dataset's broader lean toward career-story content.
+Full results:
+[docs/research/law-enforcement-content.md](docs/research/law-enforcement-content.md).
 
 ## One-word posts
 
 `analysis/one_word_posts_scan.py` finds posts consisting of a single
 token, reporting only strings that repeat 3+ times. "Agree?"/"Agree" is
-the single most common one-word post everywhere it appears, and the
-top result in all three datasets.
-Also catches a real data-quality artifact ("postNoContent," a missing-
-data placeholder, not a genuine post) and a distinct bare-URL genre
-specific to LinkBoost-2025. Full results:
+the single most common one-word post everywhere it appears, and the top
+result in all three datasets. It also catches a real data-quality
+artifact ("postNoContent," a missing-data placeholder, not a genuine
+post) and a distinct bare-URL genre specific to LinkBoost-2025. Full
+results:
 [docs/research/one-word-posts.md](docs/research/one-word-posts.md).
 
 ## Rare earth metals / critical minerals content
 
-`analysis/rare_earth_metals_scan.py` counts rare earth/critical-
-minerals term mentions - one of the smallest content categories found
-in this project. The specific phrase "rare earth metals/elements/earths"
-appears only 7 times total across all three datasets combined; lithium
-and cobalt account for the overwhelming majority of matches instead.
+`analysis/rare_earth_metals_scan.py` counts rare earth/critical-minerals
+term mentions. It is one of the smallest content categories found in
+this project.
+
+The specific phrase "rare earth metals/elements/earths" appears only 7
+times total across all three datasets combined; lithium and cobalt
+account for the overwhelming majority of matches instead.
 LinkBoost-2025's duplicate-template flag turned out to be genuine
 content again (an e-waste/battery-recycling industry post boosted 53
 times), not noise. Full results:
@@ -978,83 +1001,95 @@ times), not noise. Full results:
 ## Genetic disorder content
 
 `analysis/genetic_disorder_scan.py` counts genetic-disorder term
-mentions - a health-adjacent, sensitive topic where every match is a
-purely textual keyword hit, with no claim made about any individual's
-actual health status. One of the smallest categories in this repo.
-LinkBoost-2025's duplicate-template flag traces to one genuine post (a
-Cathie Wood interview excerpt on AI and genomics), boosted 46 times -
-corrected, its real contribution is a single post. Full results:
+mentions. This is a health-adjacent, sensitive topic, and every match is
+a purely textual keyword hit, with no claim made about any individual's
+actual health status.
+
+It is one of the smallest categories in this repo. LinkBoost-2025's
+duplicate-template flag traces to one genuine post (a Cathie Wood
+interview excerpt on AI and genomics), boosted 46 times. Corrected, its
+real contribution is a single post. Full results:
 [docs/research/genetic-disorder-content.md](docs/research/genetic-disorder-content.md).
 
 ## Car maker content
 
 `analysis/car_maker_scan.py` counts major automaker mentions, distinct
 from entity-mentions.md's broader corporation scan. Tesla dominates
-every dataset, and in LinkBoost-2025 it's essentially the only
-automaker discussed at meaningful volume (81% of that dataset's
-matches) - tracking with LinkBoost-2025's broader lean toward finance/
-investing content, since most Tesla mentions there are stock/investment
-stories rather than automotive ones. podawaa2024 has by far the most
+every dataset, and in LinkBoost-2025 it is almost the only automaker
+discussed at meaningful volume (81% of that dataset's matches).
+
+That tracks with LinkBoost-2025's broader lean toward finance/investing
+content, since most Tesla mentions there are stock/investment stories
+rather than automotive ones. podawaa2024 has by far the most
 manufacturer diversity. Full results:
 [docs/research/car-maker-content.md](docs/research/car-maker-content.md).
 
 ## TED / TEDx content
 
-`analysis/ted_content_scan.py` counts TED/TEDx mentions - a real
-collision-risk case since bare "TED" is also a common first name,
-handled by matching it case-sensitively (all-caps only) rather than
-case-insensitively like every other term in this repo. HyperClapper is
-dominated almost entirely by "TEDx" specifically (89% of its matches),
-connecting to the speaker/thought-leader credibility-signaling pattern
-in speaker-thought-leader.md, while the other two datasets lean toward
-referencing TED content generally rather than personal TEDx
-credentials. Full results:
+`analysis/ted_content_scan.py` counts TED/TEDx mentions. It is a real
+collision-risk case, since bare "TED" is also a common first name, so it
+is matched case-sensitively (all-caps only) rather than
+case-insensitively like every other term in this repo.
+
+HyperClapper is dominated almost entirely by "TEDx" specifically (89% of
+its matches), connecting to the speaker/thought-leader
+credibility-signaling pattern in speaker-thought-leader.md. The other
+two datasets lean toward referencing TED content generally rather than
+personal TEDx credentials. Full results:
 [docs/research/ted-content.md](docs/research/ted-content.md).
 
 ## Confidence content
 
 `analysis/confidence_content_scan.py` counts confidence-related term
-mentions - one of the larger niche-topic categories found in this repo
-(1.1%-5.2%), in the same range as toplist-content.md. HyperClapper's
-rate is more than 4x podawaa2024's despite a smaller raw count,
-tracking with the broader motivational/leadership skew already
+mentions. It is one of the larger niche-topic categories found in this
+repo, at 1.1% to 5.2%, in the same range as toplist-content.md.
+
+HyperClapper's rate is more than 4x podawaa2024's despite a smaller raw
+count, tracking with the broader motivational/leadership skew already
 documented across this repo. "Self-confidence" specifically is nearly
 absent in HyperClapper despite a comparable general "confidence" rate,
 suggesting a business-framing lean rather than personal framing. Full
-results: [docs/research/confidence-content.md](docs/research/confidence-content.md).
+results:
+[docs/research/confidence-content.md](docs/research/confidence-content.md).
 
 ## "Being human" content
 
 `analysis/being_human_scan.py` counts "being human"/humanity-related
 term mentions (bare "human" deliberately excluded as too broad).
-LinkBoost-2025 has by far the highest rate - over 5x podawaa2024's -
+LinkBoost-2025 has by far the highest rate, over 5x podawaa2024's,
 consistent with its documented lean toward emotional/motivational
-content. A specific connection worth noting: several of its top
-repeated "being human" posts juxtapose human qualities against AI-
-driven career advice, suggesting this framing may partly respond to
-the same dataset's heavy AI-productivity content. Full
-results: [docs/research/being-human-content.md](docs/research/being-human-content.md).
+content.
+
+Several of its top repeated "being human" posts set human qualities
+against AI-driven career advice, which suggests the framing may partly
+respond to the same dataset's heavy AI-productivity content. Full
+results:
+[docs/research/being-human-content.md](docs/research/being-human-content.md).
 
 ## "Future" content
 
-`analysis/future_content_scan.py` counts future-related term mentions -
-the largest niche-topic category found in this repo so far (5.5%-8.9%).
-Unlike most other scans in this repo, all three datasets show a steady climb (podawaa2024 < HyperClapper < LinkBoost-2025) rather than
-one sharp outlier. "Future of work" tracks with the AI-productivity
-content documented elsewhere, while "futuristic" is comparatively rare
-and declines most sharply in LinkBoost-2025. Full results:
+`analysis/future_content_scan.py` counts future-related term mentions.
+It is the largest niche-topic category found in this repo so far, at
+5.5% to 8.9%.
+
+Unlike most other scans in this repo, all three datasets show a steady
+climb (podawaa2024 < HyperClapper < LinkBoost-2025) rather than one
+outlier. "Future of work" tracks with the AI-productivity content
+documented elsewhere, while "futuristic" is comparatively rare and
+declines most sharply in LinkBoost-2025. Full results:
 [docs/research/future-content.md](docs/research/future-content.md).
 
 ## Rejection content
 
 `analysis/rejection_content_scan.py` counts rejection-related term
-mentions. HyperClapper's "job rejection" count (52) was checked
-directly against the already-documented resume-rewrite template in
-decision-points.md and confirmed to be entirely distinct - genuinely
-separate content, reinforcing HyperClapper's elevated career/job-search
-share with independent evidence. LinkBoost-2025 has the highest overall
-rate, including a "rejected by 100 VCs, built Canva" founder-resilience
-post. Full results:
+mentions. HyperClapper's "job rejection" count (52) was checked directly
+against the already-documented resume-rewrite template in
+decision-points.md and confirmed to be entirely distinct. It is
+genuinely separate content, which reinforces HyperClapper's elevated
+career/job-search share with independent evidence.
+
+LinkBoost-2025 has the highest overall rate, including a "rejected by
+100 VCs, built Canva" founder-resilience post. Full results:
 [docs/research/rejection-content.md](docs/research/rejection-content.md).
 
 ## Empathy content
@@ -1062,11 +1097,12 @@ post. Full results:
 `analysis/empathy_content_scan.py` counts empathy-related term mentions.
 LinkBoost-2025 has by far the highest rate, continuing the pattern
 across confidence, "being human," and honesty-language content of
-LinkBoost-2025 skewing hardest toward emotional/leadership content.
-Independently re-surfaces the "Empathy isn't just a checkbox for
+LinkBoost-2025 skewing hardest toward emotional/leadership content. It
+independently re-surfaces the "Empathy isn't just a checkbox for
 leaders" post already found in career-transitions-content.md's burnout
 check, confirming it as a genuine cross-category recurring template.
-Full results: [docs/research/empathy-content.md](docs/research/empathy-content.md).
+Full results:
+[docs/research/empathy-content.md](docs/research/empathy-content.md).
 
 ## Animal content
 
@@ -1075,9 +1111,10 @@ and documents the worst term-collision problem found anywhere in this
 repo: bare "cat(s)" collides with the Indian CAT exam, the .cat domain,
 a French insurance term, Catalan-language abbreviation, the Caterpillar
 stock ticker, and hurricane category scale. In LinkBoost-2025, every
-single sampled "cat" match traces to one of these - zero genuine animal
-content. "Dog(s)," "animal(s)," and "pet(s)" don't have this problem.
-Full results: [docs/research/animal-content.md](docs/research/animal-content.md).
+single sampled "cat" match traces to one of these, with zero genuine
+animal content. "Dog(s)," "animal(s)," and "pet(s)" don't have this
+problem. Full results:
+[docs/research/animal-content.md](docs/research/animal-content.md).
 
 ## Structural analyses (not content keyword scans)
 
@@ -1092,10 +1129,11 @@ accounts respectively. Full results:
 
 `analysis/posting_velocity_scan.py` computes sustained posting rate for
 HyperClapper's highest-volume accounts using real timestamps. Interval
-timing is highly irregular (ruling out simple robotic clockwork), but
-the top 10 accounts sustain 1.2-3.7 posts/day for 174-712 consecutive
-days - a pattern hard to reconcile with ordinary individual authorship.
-Accounts are identified only by anonymous rank. Full results:
+timing is irregular (ruling out simple robotic clockwork), but the top
+10 accounts sustain 1.2 to 3.7 posts/day for 174 to 712 consecutive
+days. That pattern is hard to reconcile with ordinary individual
+authorship. Accounts are identified only by anonymous rank. Full
+results:
 [docs/research/posting-velocity.md](docs/research/posting-velocity.md).
 
 ## Citations

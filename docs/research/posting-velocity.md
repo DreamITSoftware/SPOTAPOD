@@ -2,10 +2,11 @@
 
 `analysis/posting_velocity_scan.py` computes sustained posting rate
 (posts per day, across each account's full active window) for the
-highest-volume accounts in HyperClapper - the only one of the three
-datasets with real per-record timestamps (`created_at`). This is a
-structural/behavioral analysis rather than a content keyword scan: it checks
-whether the small number of accounts already known to drive a
+highest-volume accounts in HyperClapper, the only one of the three
+datasets with real per-record timestamps (`created_at`).
+
+This is a structural/behavioral analysis, not a content keyword scan. It
+checks whether the small number of accounts already known to drive a
 disproportionate share of HyperClapper's posts (see
 [baseline-profile.md](baseline-profile.md)) show posting patterns
 consistent with sustained automation or managed content operations,
@@ -22,27 +23,27 @@ interval-regularity check (coefficient of variation of the time between
 consecutive posts) is also reported.
 
 Accounts are identified in this script's output and in this document
-only by anonymous volume rank ("account_1," "account_2," ...) - never
-by hash value, handle, or any other identifier.
+only by anonymous volume rank ("account_1," "account_2," ...), never by
+hash value, handle, or any other identifier.
 
 ## Two different anomaly signatures, and why only one shows up here
 
-A very low coefficient of variation in posting intervals would indicate
-simple robotic clockwork - posting at machine-regular fixed intervals.
-This data does not show that. Every top-10 account has a CV
-well above 80%, several above 500%, so posting intervals are highly
-irregular.
+A low coefficient of variation in posting intervals would indicate
+simple robotic clockwork, posting at machine-regular fixed intervals.
+This data does not show that. Every top-10 account has a CV well above
+80%, several above 500%, so posting intervals are irregular.
 
-The signal that does show up is sustained rate. However
-irregular the spacing between individual posts is, the accounts checked
-here maintain 1.2 to 3.7 posts per day, every day, across periods
-ranging from 174 to 712 consecutive days. That is hard to
-explain as ordinary individual human authorship. The timing does not look
-robotic, but few individual professionals
-sustain multiple substantive posts a day, every day, for the better
-part of a year or more.
+The signal that does show up is sustained rate. However irregular the
+spacing between individual posts is, the accounts checked here maintain
+1.2 to 3.7 posts per day, every day, across periods ranging from 174 to
+712 consecutive days. That is hard to explain as ordinary individual
+human authorship.
 
-## Results (VERIFIED - reproducible via the script)
+The timing does not look robotic, but few individual professionals
+sustain multiple substantive posts a day, every day, for the better part
+of a year or more.
+
+## Results (VERIFIED: reproducible via the script)
 
 | Rank | Posts | Active days | Posts/day | Interval CV% |
 |---|---|---|---|---|
@@ -63,32 +64,33 @@ Total accounts with usable timestamps: 702.
 ## Reading these numbers
 
 Every one of the top 10 accounts by volume sustains a posting rate that
-would require substantial daily time if done by one person
-manually, without a multi-day gap large enough to
-lower the average, across periods of months to
-nearly two years. account_2 is the longest case: a comparatively
-modest 1.46 posts/day, sustained across 712.6 days, just under two
-full years without the rate meaningfully dropping.
+would require substantial daily time if done by one person manually,
+without a multi-day gap large enough to lower the average, across
+periods of months to nearly two years.
 
-This is consistent with, though does not on its own prove, either
-heavy scheduling-tool automation or a managed content operation
-publishing under a single identity - the same structural possibility
-already discussed at the dataset level in
+account_2 is the longest case: a comparatively modest 1.46 posts/day,
+sustained across 712.6 days, just under two full years without the rate
+meaningfully dropping.
+
+This is consistent with, though does not on its own prove, either heavy
+scheduling-tool automation or a managed content operation publishing
+under a single identity. The same structural possibility is already
+discussed at the dataset level in
 [baseline-profile.md](baseline-profile.md) (HyperClapper's top 100
 accounts producing a large majority of all posts) and
-[decision-points.md](decision-points.md). This scan adds an
-independent line of evidence toward that same conclusion: a few accounts
-post disproportionately often, and they do so
-at a sustained rate difficult to reconcile with ordinary individual
-usage.
+[decision-points.md](decision-points.md). This scan adds an independent
+line of evidence toward that same conclusion: a few accounts post
+disproportionately often, and they do so at a sustained rate difficult
+to reconcile with ordinary individual usage.
 
 ## Caveats
 
 This is INFERENCE-tier reasoning about what a sustained rate this high
 plausibly indicates, not direct proof of automation for any specific
-account - this script does not and cannot determine whether a given
-account is bot-operated, professionally managed, or a genuine
-individual with unusual habits. Only HyperClapper has the timestamp
-data this analysis requires; podawaa2024 and LinkBoost-2025 are not
-included because neither dataset provides comparable per-record
-timestamps.
+account. This script does not and cannot determine whether a given
+account is bot-operated, professionally managed, or a genuine individual
+with unusual habits.
+
+Only HyperClapper has the timestamp data this analysis requires;
+podawaa2024 and LinkBoost-2025 are not included because neither dataset
+provides comparable per-record timestamps.

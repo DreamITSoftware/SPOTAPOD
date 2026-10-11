@@ -12,7 +12,7 @@ Checked across three datasets for an "endorsement disclosure gap," phrases like 
 
 A record counts as a "hit" here if any qualifying phrase appears anywhere in its text, case-insensitively, with no context check at all. There's no sentiment analysis, no verification that a disclosure doesn't exist somewhere else in the post that the pattern simply didn't catch, no distinction between literal and figurative use. "This partnership changed my career" and an actual undisclosed paid promotion trip the same pattern.
 
-That is the limit of what a keyword count can establish. Proving an actual Endorsement Guides violation requires the material connection to be real, the disclosure to be genuinely absent (not just absent from where an automated check looked), and the endorsement to be genuinely about goods or services rather than a figurative use of "partnership" language. None of that is something an aggregate text scan can verify.
+That is the limit of what a keyword count can establish. Proving an actual Endorsement Guides violation requires the material connection to be real, the disclosure to be genuinely absent rather than merely missing from where an automated check looked, and the endorsement to be genuinely about goods or services rather than a figurative use of "partnership" language. None of that is something an aggregate text scan can verify.
 
 ## Why report the pattern
 

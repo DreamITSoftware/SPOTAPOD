@@ -6,11 +6,11 @@ LinkedIn's parent company periodically references engagement metrics, member gro
 
 ## Questions worth asking of any future statement
 
-**Does the stated metric distinguish organic from pod-amplified engagement?** This project's account-concentration findings (a small fraction of accounts producing the large majority of posts in at least one dataset) suggest aggregate engagement figures can be heavily influenced by a small, highly active subset of accounts. A platform-wide average could mask that concentration.
+**Does the stated metric distinguish organic from pod-amplified engagement?** This project's account-concentration findings (a small fraction of accounts producing the large majority of posts in at least one dataset) suggest aggregate engagement figures can be shaped by a small subset of prolific accounts. A platform-wide average could mask that concentration.
 
 **Does a stated "content quality" or "authenticity" initiative address the specific patterns this project has documented?** Zero-view-with-high-likes anomalies, duplicate-template content, and extreme posting-velocity outliers are three independently verifiable pattern types. A general statement about "improving content quality" does not indicate whether any of them are being addressed.
 
-**Is any cited detection or removal number independently verifiable, or only self-reported?** This project's own standard, that VERIFIED requires independent reproduction and not just a stated figure, applies equally to a platform's own self-reported enforcement statistics.
+**Is any cited detection or removal number independently verifiable, or only self-reported?** This project's own standard, that VERIFIED requires independent reproduction rather than a stated figure alone, applies equally to a platform's own self-reported enforcement statistics.
 
 ## Why stated figures need checking
 

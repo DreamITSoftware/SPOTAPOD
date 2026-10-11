@@ -11,12 +11,12 @@ only, no record, author, or matched text ever printed.
 ## Scope
 
 Only **podawaa2024.json** and **HyperClaper.json** are covered.
-**LinkBoost-2025.json is not supported** - it has no per-record
-engagement fields to cross-reference against. Every record there is,
-by the dataset's own construction, a logged successful pod action, so
-a per-record anomaly rate cannot be computed for it.
+**LinkBoost-2025.json is not supported**: it has no per-record
+engagement fields to cross-reference against. Every record there is, by
+the dataset's own construction, a logged successful pod action, so a
+per-record anomaly rate cannot be computed for it.
 
-## Results (VERIFIED - reproducible via the script)
+## Results (VERIFIED: reproducible via the script)
 
 ### podawaa2024
 
@@ -40,7 +40,7 @@ Cybersecurity-related posts: 4,487 of 49,369 (9.09%)
 ## Reading these numbers
 
 Cybersecurity content shows a higher anomaly rate than the dataset
-baseline on three of the four measures checked, most notably the
+baseline on three of the four measures checked, especially the
 reciprocal like+comment flag in HyperClapper (84.2% vs. 68.6% baseline).
 This is a reproducible aggregate finding.
 
@@ -67,7 +67,7 @@ caveat, which applies here identically.
 
 Same as every keyword scan in this repo: a match means a cybersecurity
 term appears in the text, not that the post is credible, accurate, or
-representative security content. The anomaly indicators
-themselves are the same blunt population-level signals used everywhere
-else in this repo - they flag a statistical pattern, not a confirmed
-instance of manipulation for any single record.
+representative security content. The anomaly indicators themselves are
+the same blunt population-level signals used everywhere else in this
+repo: they flag a statistical pattern, not a confirmed instance of
+manipulation for any single record.

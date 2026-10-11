@@ -12,7 +12,7 @@ printed beyond the duplicate-template check described below.
 everywhere.** The script's built-in safeguard (same as
 [nonprofit-content.md](nonprofit-content.md) and
 [investment-vc-content.md](investment-vc-content.md)) flagged dominant
-repeated strings in nearly every LinkBoost-2025 term checked - a single
+repeated strings in nearly every LinkBoost-2025 term checked. A single
 AI-travel-tool ad post, boosted 47 times, accounts for all 48 mentions
 each of Expedia, Booking.com, TripAdvisor, and Hotels.com. This is not a
 series of separate findings. It is one fact about the dataset's
@@ -33,7 +33,7 @@ travel recommendations. No automated distinct-string check catches
 this; it required reading actual post text. The script prints a fixed
 warning when scanning podawaa2024 for exactly this reason.
 
-## Results (VERIFIED - reproducible via the script)
+## Results (VERIFIED: reproducible via the script)
 
 ### Travel agencies/platforms (raw counts; see corrections above for LinkBoost-2025)
 
@@ -70,9 +70,8 @@ consistently mentioned destinations across all three datasets.
 
 ## Caveats
 
-Same as every keyword scan in this repo: a match means the term
-appears in the text, not that the post is a genuine, credible travel
-recommendation. The two corrections above show
-that a raw keyword count, without checking for both
-duplicate templates and language/context artifacts, can be
-misleading and not just imprecise.
+Same as every keyword scan in this repo: a match means the term appears
+in the text, not that the post is a genuine, credible travel
+recommendation. The two corrections above show that a raw keyword count,
+without checking for both duplicate templates and language/context
+artifacts, can be misleading as well as imprecise.

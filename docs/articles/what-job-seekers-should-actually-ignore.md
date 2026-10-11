@@ -2,7 +2,7 @@
 
 ### A resume-rewrite formula that appears identically 533 times is a template, not an insider secret
 
-Job seekers spend time trying to reverse-engineer what "worked" for a viral LinkedIn post about landing a job. Some of what looks like a proven formula is a template running through a large number of accounts.
+Job seekers spend time trying to reverse-engineer what "worked" for a viral LinkedIn post about landing a job. Some of what passes for a proven formula is a template running through a large number of accounts.
 
 ## The finding
 

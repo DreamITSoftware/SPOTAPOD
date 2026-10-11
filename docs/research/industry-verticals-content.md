@@ -3,11 +3,11 @@
 `analysis/industry_verticals_scan.py` counts mentions of real estate,
 insurance, manufacturing/supply chain, retail/e-commerce,
 healthcare/hospital, and energy/climate/ESG/sustainability terms across
-post content in all three datasets. Like every other
-scan in this repo, it reports aggregate counts only, with no record, author, or or matched
+post content in all three datasets. Like every other scan in this repo,
+it reports aggregate counts only, with no record, author, or matched
 text printed beyond the duplicate-template check below.
 
-## Results (VERIFIED - reproducible via the script)
+## Results (VERIFIED: reproducible via the script)
 
 | Term | podawaa2024 | HyperClapper | LinkBoost-2025 |
 |---|---|---|---|
@@ -19,23 +19,23 @@ text printed beyond the duplicate-template check below.
 | Real estate | 949 | 348 | 633 |
 | **Any mention** | **14,533 (6.807%)** | **5,038 (10.205%)** | **4,742 (6.082%)** |
 
-This is the largest niche-topic category found in this project to
-date. HyperClapper's 10.2% rate is the highest "any mention" figure of
-any scan documented in this repo outside the entity-mention and topic-
-taxonomy work.
-
-LinkBoost-2025's lower distinct-string ratio (263 for 4,742 matches)
-was checked manually. The top repeated strings (a "tribute to
-responsible mothers" post, a "life is like a piano" post, and other
-already-familiar LinkBoost templates) are distinct and none
+This is the largest niche-topic category found in this project to date.
+HyperClapper's 10.2% rate is the highest "any mention" figure of any
+scan documented in this repo outside the entity-mention and
+topic-taxonomy work. LinkBoost-2025's lower distinct-string ratio (263
+for 4,742 matches) was checked manually. The top repeated strings (a
+"tribute to responsible mothers" post, a "life is like a piano" post,
+and other already-familiar LinkBoost templates) are distinct and none
 individually dominates, consistent with that dataset's known structure.
 
 ## Reading these numbers
 
 "Retail/e-commerce" leads in both podawaa2024 and HyperClapper, but
-drops to last place in LinkBoost-2025, where "healthcare/hospital"
-leads instead. This is a real difference in composition between datasets, not
-an artifact. A sample check of podawaa2024's retail matches confirmed
+drops to last place in LinkBoost-2025, where "healthcare/hospital" leads
+instead.
+
+This is a real difference in composition between datasets, not an
+artifact. A sample check of podawaa2024's retail matches confirmed
 genuine signal (posts about retail products, retail spaces, and retail
 hashtags), not noise from an overly broad term.
 

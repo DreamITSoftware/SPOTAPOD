@@ -2,9 +2,9 @@
 
 `analysis/rejection_content_scan.py` counts mentions of
 rejection-related terms (rejection(s), rejected, reject, job rejection,
-rejection letter) across post content in all three datasets. Same
-as every other scan in this repo: aggregate counts only, no
-record, author, or matched text ever printed beyond the
+rejection letter) across post content in all three datasets. It follows
+the same discipline as every other scan in this repo: aggregate counts
+only, no record, author, or matched text ever printed beyond the
 duplicate-template check described below.
 
 ## HyperClapper's "job rejection" and the resume-rewrite template
@@ -13,20 +13,23 @@ HyperClapper's "job rejection" count (52) was checked directly against
 the already-documented "silence for 90 days... ran my resume through
 ChatGPT" template (see [decision-points.md](decision-points.md)) to
 confirm it does not re-surface that same template under a different
-keyword. There is zero overlap between the two sets, so these are
-separate job-rejection posts, not already-counted content.
+keyword.
+
+There is zero overlap between the two sets, so these are separate
+job-rejection posts, not already-counted content.
 
 ## LinkBoost-2025's low-distinct-ratio note
 
-The low-distinct-ratio note fires on LinkBoost-2025 (59 distinct
-strings for 939 matches), but the duplicate-template warning does not -
-no single string dominates (the top is 81 of 939, about 9%). Checked
-manually: the top repeated strings are distinct, on-theme
-posts, including a "rejected by 100 VCs, went on to build Canva"
-founder-resilience story and two ChatGPT-resume-prompt posts. This is
-real signal, not an artifact.
+The low-distinct-ratio note fires on LinkBoost-2025 (59 distinct strings
+for 939 matches), but the duplicate-template warning does not: no single
+string dominates (the top is 81 of 939, about 9%). Checked manually, the
+top repeated strings are distinct, on-theme posts, including a "rejected
+by 100 VCs, went on to build Canva" founder-resilience story and two
+ChatGPT-resume-prompt posts.
 
-## Results (VERIFIED - reproducible via the script)
+This is real signal, not an artifact.
+
+## Results (VERIFIED: reproducible via the script)
 
 | Term | podawaa2024 | HyperClapper | LinkBoost-2025 |
 |---|---|---|---|
@@ -52,7 +55,7 @@ distinct across many posts, including a founder-resilience narrative
 (rejected by 100 VCs before building Canva) and resume-prompt content,
 which fit the resume/career-rejection theme of this category.
 
-This is a moderate-sized content category - smaller than
+This is a moderate-sized content category, smaller than
 [confidence-content.md](confidence-content.md) or
 [future-content.md](future-content.md), but larger than most of the
 niche health/geography/entity scans checked elsewhere in this repo.

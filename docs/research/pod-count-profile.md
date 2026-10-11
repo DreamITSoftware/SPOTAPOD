@@ -1,25 +1,31 @@
 # Pod count profile (spotapod.json)
 
 `analysis/pod_count_profile.py` profiles a file supplied as
-`spotapod.json`. See
+`spotapod.json`. Every one of its 201,000 unique `linkedinPostId`
+values, and every one of its 6,948 unique authors, is already present in
+`podawaa2024.json`.
 [provenance.md](../provenance.md#a-fourth-file-supplied-as-spotapodjson-not-independent-data)
-for why this is documented as a derived, post-level aggregation of
-`podawaa2024.json` rather than a fourth independent dataset. Every one
-of its 201,000 unique `linkedinPostId` values, and every one of its
-6,948 unique authors, is already present in `podawaa2024.json`. Same
-discipline as every other script in this repo: aggregate counts only,
-no record, author, or post content ever printed.
+explains why this file is documented as a derived, post-level
+aggregation of `podawaa2024.json` and not as a fourth independent
+dataset.
+
+The script follows the same discipline as every other in this repo:
+aggregate counts only, with no record, author, or post content ever
+printed.
 
 ## What this file adds
 
 One new field not present in `podawaa2024.json`: `PODCount`, an
 unexplained per-post integer (min 1, max 1,364, mean 9.97, median 2).
-Nothing in the supplied file states what produced this count or what
-it's meant to measure, so this repo does not guess. It is profiled here
-as an unexplained aggregate signal and is not asserted to mean "number of pod
-actions" or anything more specific than its name.
 
-## Results (VERIFIED - reproducible via the script)
+Nothing in the supplied file says what produced this count or what it
+measures.
+
+This repo does not guess. `PODCount` is profiled here as an unexplained
+aggregate signal and is not asserted to mean "number of pod actions" or
+anything more specific than its name.
+
+## Results (VERIFIED: reproducible via the script)
 
 ```
 Total records: 203,038
@@ -44,7 +50,7 @@ unique post IDs) and is not a separate measurement.
 The median `PODCount` is identical (2) whether or not a post shows the
 zero-view-with-reactions anomaly, but the mean is roughly three times
 higher for the anomalous group (17.46 vs. 5.78). That gap comes from a
-long tail of very high `PODCount` values concentrated in the anomalous
+long tail of high `PODCount` values concentrated in the anomalous
 records, not from a shift in the typical post. Most anomalous and most
 ordinary posts look the same by this measure, but the few posts with an
 unusually high `PODCount` are more likely to also show the zero-view
@@ -52,11 +58,12 @@ engagement anomaly.
 
 ## Caveats
 
-`PODCount`'s definition is not stated by whatever process produced
-this file, so this correlation should be read only as a
-correlation between an unexplained count and a previously documented
-engagement anomaly, not as confirmation of what causes either one.
+`PODCount`'s definition is not stated by whatever process produced this
+file, so this correlation should be read only as a correlation between
+an unexplained count and a previously documented engagement anomaly, not
+as confirmation of what causes either one.
+
 This script also does not establish that `spotapod.json` was produced
 independently of podawaa2024.json's own known duplicate-record
-structure; see [provenance.md](../provenance.md) for what has and
-hasn't been established about this file's origin.
+structure; see [provenance.md](../provenance.md) for what has and hasn't
+been established about this file's origin.

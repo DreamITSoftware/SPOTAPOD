@@ -6,7 +6,7 @@ Most of this series speaks about the data. This one speaks to someone specific: 
 
 ## What you're looking at
 
-The career-success and "here's how I did it" content in your feed is not a representative sample of what is happening to people in your position. This project's own research into this platform's content found heavy duplication in the categories most likely to make a rejection sting more: identical resume-rewrite templates (533 of them, independently verified) circulating as if they were 533 independent success stories. It also found that in some datasets a small number of highly active accounts produce a disproportionate share of all visible content. What looks like a consensus of other people succeeding easily is, in measurable part, the same small set of voices and the same templates, repeated.
+The career-success and "here's how I did it" content in your feed is not a representative sample of what is happening to people in your position. This project's own research into this platform's content found heavy duplication in the categories most likely to make a rejection sting more: identical resume-rewrite templates (533 of them, independently verified) circulating as 533 independent success stories. It also found that in some datasets a small number of prolific accounts produce a disproportionate share of all visible content. What looks like a consensus of other people succeeding easily is, in measurable part, the same small set of voices and the same templates, repeated.
 
 ## What that doesn't mean
 

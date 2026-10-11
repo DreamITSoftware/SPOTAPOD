@@ -10,10 +10,10 @@ occupation/headline sentence.
 
 Only **HyperClaper.json** and **LinkBoost-2025.json** are covered.
 `podawaa2024.json` has no occupation/headline-equivalent field, so
-there's nothing to scan there - same limitation documented in
+there's nothing to scan there. This is the same limitation documented in
 [simple-titles.md](simple-titles.md).
 
-## Results (VERIFIED - reproducible via the script)
+## Results (VERIFIED: reproducible via the script)
 
 | | HyperClapper | LinkBoost-2025 |
 |---|---|---|

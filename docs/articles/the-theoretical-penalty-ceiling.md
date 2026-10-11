@@ -22,9 +22,7 @@ Not addressing "how much would this be worth, from an FTC perspective" would lea
 
 ## What this is, and isn't
 
-**VERIFIED, pure arithmetic**: record count × current statutory maximum, reproducible by anyone.
-
-**Explicitly not**: a damages estimate, a penalty prediction, or anything resembling a realistic legal exposure figure.
+**VERIFIED, pure arithmetic**: record count × current statutory maximum, reproducible by anyone. **Explicitly not**: a damages estimate, a penalty prediction, or anything resembling a realistic legal exposure figure.
 
 Full calculation and the real settlement figures it should be read against: **github.com/DreamITSoftware/SPOTAPOD**.
 

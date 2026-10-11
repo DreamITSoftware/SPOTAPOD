@@ -12,11 +12,11 @@ Yes, LinkedIn is a career platform, and career content showing up a lot on it is
 
 The actual test is whether the posts about resumes and promotions get more coordinated engagement than everything else in the same file, not whether career content and coordinated engagement both appear in it. Run post by post inside one dataset, the objection does not hold. Career-advice posts land a like and a comment together, the fingerprint of a pod, at **84.06%**. Everything else in the same file sits at **65.53%**, which is already a suspiciously high number for a place people supposedly visit to talk about their jobs. Career content still beats it by nearly 19 points.
 
-So the result is not just that LinkedIn talks about careers. Career posts get more coordinated engagement than other posts.
+So the result goes beyond LinkedIn talking about careers: career posts get more coordinated engagement than other posts.
 
 ## Why career advice, of all things
 
-Coaches and consultants sell influence, so their posts need to look influential. A post with many likes and comments looks popular and looks like proof the advice works, which is worth paying for. This is likely ordinary business using a shortcut that is illegal.
+Coaches and consultants sell influence, so their posts need to look influential. A post with many likes and comments looks popular and reads as proof the advice works, which is worth paying for. This is likely ordinary business using a shortcut that is illegal.
 
 Rule 16 CFR § 465.8 bans fake engagement because it "materially misrepresents influence or importance" to whoever relies on it. The harm is that readers cannot tell a post that actually landed from one that got help from a group.
 

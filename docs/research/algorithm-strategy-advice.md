@@ -2,8 +2,9 @@
 
 This page is one specific illustration of the mechanism described in
 [audience-impact.md](audience-impact.md): what happens to readers when
-content gets artificially inflated engagement. It has its own
-page because the genre is distinct enough to reason about separately.
+content gets artificially inflated engagement. It has its own page
+because the genre is distinct enough to reason about separately.
+
 It is not about any specific real report.
 
 **This page names no real report, author, or company, and makes no claim
@@ -13,15 +14,16 @@ See the note at the end for why that boundary is deliberate.
 
 ## The genre
 
-A common category of LinkedIn content makes specific,
-tactical claims about how to succeed on the platform, recommended posting
-frequency, which content formats (carousel/document posts, video, text,
-polls) perform best for which purpose, optimal hashtag counts, and timing
-advice built around a post's early "golden hour" of engagement. This kind
-of content is a useful example for audience impact because
-the stakes are concrete: a creator or small business reading
-it will often change *what they actually do*, their posting schedule,
-format mix, or content investment, based on it.
+A common category of LinkedIn content makes specific, tactical claims
+about how to succeed on the platform: recommended posting frequency,
+which content formats (carousel/document posts, video, text, polls)
+perform best for which purpose, optimal hashtag counts, and timing
+advice built around a post's early "golden hour" of engagement.
+
+This kind of content is a useful example for audience impact because the
+stakes are concrete: a creator or small business reading it will often
+change *what they actually do* (their posting schedule, format mix, or
+content investment) based on it.
 
 ## If content in this genre received inflated engagement
 
@@ -37,10 +39,9 @@ format mix, or content investment, based on it.
   because a claim looked credible is a cost to a small creator or
   business if the underlying claim was wrong, outdated, or not
   representative of their actual audience.
-- **Ecosystem-level homogenization, if this happens at scale.** This is
+- **Platform-wide homogenization, if this happens at scale.** This is
   the broadest claim this repo makes anywhere, so its scope matters: it concerns
-  a specific information ecosystem (a platform's
-  content and advice economy), not humanity in general. If a large number of creators independently
+  one platform's content and advice economy, not humanity in general. If a large number of creators independently
   converge on the same tactical advice because it was amplified rather
   than because it was verified, three things become more likely: content
   strategies homogenize across otherwise-unrelated creators (reducing
@@ -63,12 +64,16 @@ this repo declines to perform (see
 [limitations.md](../limitations.md) and [privacy.md](../privacy.md)).
 
 The analysis on this page is grounded in real, publicly-stated tactical
-claims common to this genre (posting cadence, format performance, early-
-engagement windows, hashtag counts) so that it says something substantive, but the specific report, its author, and
-its company are deliberately not named here, and no claim is made that any
-of them were involved in inflated engagement. Naming a real party even in
-a conditional "if this specific report were pushed via fake socials"
-framing would associate them with that conduct by juxtaposition regardless
-of the hedge, which would be a reputational cost to a real business with no
-evidentiary basis. The genre-level version of this question is
-answerable without that cost, so that is what is recorded here.
+claims common to this genre (posting cadence, format performance,
+early-engagement windows, hashtag counts) so that it says something
+substantive, but the specific report, its author, and its company are
+deliberately not named here, and no claim is made that any of them were
+involved in inflated engagement.
+
+Naming a real party, even in a conditional "if this specific report were
+pushed via fake socials" framing, would associate them with that conduct
+regardless of the hedge. That would be a reputational cost to a real
+business with no evidentiary basis.
+
+The genre-level version of this question is answerable without that
+cost, so that is what is recorded here.

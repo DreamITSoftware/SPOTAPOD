@@ -1,51 +1,57 @@
 # Authenticity content
 
 `analysis/authenticity_content_scan.py` counts mentions of
-authenticity-related terms ("authentic," "genuine," "transparent,"
-"real talk," "honest truth," "unfiltered," "be yourself," "no BS/no
-fluff") across post content in all three datasets. Same discipline as
-every other scan in this repo: aggregate counts only, no record,
-author, or matched text ever printed beyond the duplicate-template
-check described below.
+authenticity-related terms ("authentic," "genuine," "transparent," "real
+talk," "honest truth," "unfiltered," "be yourself," "no BS/no fluff")
+across post content in all three datasets. It follows the same
+discipline as every other scan in this repo: aggregate counts only, no
+record, author, or matched text ever printed beyond the
+duplicate-template check described below.
 
 ## A specific claim from a disputed document, checked directly
 
 A disputed third-party document referenced in this project's history
 (not included in this repo) claimed HyperClapper had 5,193 posts
 (10.52%) branding themselves with "the honest truth" or "real talk,"
-against only 93 posts (0.19%) acknowledging fake engagement - framed as
-a "honesty irony." The actual counts computed here are **15** for
-"honest truth" and **46** for "real talk," a combined 61 - nowhere
-close to 5,193. (The "acknowledges fake engagement" side of that
-claimed comparison is not checked by this script, since it falls
-outside this scan's term list; only the "honest truth"/"real talk" side
-is addressed here.)
+against only 93 posts (0.19%) acknowledging fake engagement, which it
+framed as an "honesty irony."
+
+The actual counts computed here are **15** for "honest truth" and **46**
+for "real talk," a combined 61.
+
+That is nowhere close to 5,193.
+
+(The "acknowledges fake engagement" side of that claimed comparison is
+not checked by this script, since it falls outside this scan's term
+list; only the "honest truth"/"real talk" side is addressed here.)
 
 A separate, previously documented discrepancy in the same document points the same way: a claimed 1,706 occurrences of a resume-rewrite
-template against an actual, independently verified count of 533-806
+template against an actual, independently verified count of 533 to 806
 depending on spelling variants (see this project's broader research
 notes). The disputed document's specific statistics do not hold up
 when checked against the source files.
 
 A third claim from the same document has since been checked directly
-against this repo's own copy of the raw source files: that HyperClapper's
-"top 20 accounts produce 50.6%... top 100 produce 87.3%" of all posts.
-Run via `analysis/top_account_concentration.py` (VERIFIED, reproducible),
-the actual figures are **36.2%** (top 20 authors) and **83.5%** (top 100
-authors) of posts with an identified author - both real concentration
-effects, and both lower than claimed. In all three checked statistics from
-this document, the underlying pattern is real but the specific number is inflated.
+against this repo's own copy of the raw source files: that
+HyperClapper's "top 20 accounts produce 50.6%... top 100 produce 87.3%"
+of all posts. Run via `analysis/top_account_concentration.py` (VERIFIED,
+reproducible), the actual figures are **36.2%** (top 20 authors) and
+**83.5%** (top 100 authors) of posts with an identified author. Both are
+real concentration effects, and both are lower than claimed.
+
+In all three checked statistics from this document, the underlying
+pattern is real but the specific number is inflated.
 
 ## LinkBoost-2025's lower distinct-string ratio, checked
 
 LinkBoost-2025 triggers the low-distinct-ratio note (204 distinct
 strings for 3,410 matches) but not the duplicate-template warning. A
 manual check of the top repeated strings (133, 104, 100, 98, 80
-occurrences - no single one dominating) confirmed these are genuinely
-distinct posts, consistent with LinkBoost-2025's known structure, not a
-new artifact requiring correction.
+occurrences, with no single one dominating) confirmed these are
+genuinely distinct posts, consistent with LinkBoost-2025's known
+structure, not a new artifact requiring correction.
 
-## Results (VERIFIED - reproducible via the script)
+## Results (VERIFIED: reproducible via the script)
 
 | Term | podawaa2024 | HyperClapper | LinkBoost-2025 |
 |---|---|---|---|
@@ -61,11 +67,12 @@ new artifact requiring correction.
 
 ## Reading these numbers
 
-LinkBoost-2025 has both the highest rate and the most widely
-distributed content of the three datasets. "Transparent/transparency"
-leads in podawaa2024, while "authentic/authenticity" leads in the other
-two datasets - a phrasing difference across datasets, similar to the "Top N" vs. numbered-listicle style difference documented
-in [toplist-content.md](toplist-content.md).
+LinkBoost-2025 has both the highest rate and the most widely distributed
+content of the three datasets. "Transparent/transparency" leads in
+podawaa2024, while "authentic/authenticity" leads in the other two
+datasets. That is a phrasing difference across datasets, similar to the
+"Top N" vs. numbered-listicle style difference documented in
+[toplist-content.md](toplist-content.md).
 
 ## Caveats
 

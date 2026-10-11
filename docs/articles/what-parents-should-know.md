@@ -2,7 +2,7 @@
 
 ### A meaningful share of the "advice" carrying the most engagement was pod-boosted
 
-LinkedIn has become a place teenagers and young adults browse for career advice well before they have a professional account of their own to worry about. This article covers what this project's data suggests parents should know before treating a highly liked post as a reliable signal of good advice.
+LinkedIn has become a place teenagers and young adults browse for career advice well before they have a professional account of their own to worry about. This article covers what this project's data suggests parents should know before treating a post with many likes as a reliable signal of good advice.
 
 ## What the data shows
 
@@ -14,7 +14,7 @@ None of this means LinkedIn career advice is universally fake or that every high
 
 ## A habit to build
 
-Before treating any single viral career post as authoritative, it's worth checking whether the same advice, or something close to it, appears from multiple independent sources with different audiences and different incentives. That is stronger corroboration than any single post's like count, pod-boosted or not.
+Before treating any single viral career post as authoritative, check whether the same advice, or something close to it, appears from multiple independent sources with different audiences and different incentives. That is stronger corroboration than any single post's like count, pod-boosted or not.
 
 ## What is verified and what is inference
 

@@ -2,26 +2,26 @@
 
 `analysis/animal_content_scan.py` counts mentions of animal-related
 terms (animal(s), pet(s), dog(s), cat(s)) across post content in all
-three datasets. Same as every other scan in this repo:
-aggregate counts only, no record, author, or matched text ever printed
-beyond the duplicate-template check described below.
+three datasets. As with every other scan in this repo: aggregate counts
+only, no record, author, or matched text ever printed beyond the
+duplicate-template check described below.
 
 ## "Cat" has more collision problems than any other short word in this repo
 
 Bare "cat"/"cats" has more collision sources than any other term
 checked in this repo. Sampling matches found:
 
-- **"CAT" as India's major MBA entrance exam** (Common Admission Test)
-  - plausible given this dataset's documented Indian-population skew,
+- **"CAT" as India's major MBA entrance exam** (Common Admission Test):
+  plausible given this dataset's documented Indian-population skew,
   see [demographics.md](demographics.md)
 - **The ".cat" domain extension** (Catalonia's country code)
 - **A French insurance term** ("Cat Nat" = catastrophes naturelles)
 - **"cat" as an abbreviation for the Catalan language** in multilingual
   bio/skills listings
 - **"CAT" as the NYSE ticker symbol for Caterpillar Inc.**
-- **"Cat 1" through "Cat 5"** - hurricane category scale, referring to
+- **"Cat 1" through "Cat 5"**: hurricane category scale, referring to
   storm intensity, not animals at all
-- **"Fat Cats"** - an idiom for wealthy elites
+- **"Fat Cats"**: an idiom for wealthy elites
 - **Jaguar's "leaping cat" logo** in a brand-redesign post
 
 The script reports both a LOOSE count (bare "cat"/"cats",
@@ -31,13 +31,14 @@ immediately before it, or in an explicit "cats and dogs" / "pet cat(s)"
 / "kitten" pairing).
 
 **LinkBoost-2025's strict count is zero.**
-All 15 distinct "cat"-matching strings there trace to non-animal
-usage - the Caterpillar stock ticker, hurricane categories, the "fat
-cats" idiom, cat-video internet-culture references used dismissively,
-and the Jaguar logo story. None is a post about an actual animal.
+
+All 15 distinct "cat"-matching strings there trace to non-animal usage:
+the Caterpillar stock ticker, hurricane categories, the "fat cats"
+idiom, cat-video internet-culture references used dismissively, and the
+Jaguar logo story. None is a post about an actual animal.
 
 podawaa2024's strict count is 28.5% of its loose count, and
-HyperClapper's is 39.3% - both are overcounts, though the strict
+HyperClapper's is 39.3%, and both are overcounts, though the strict
 pattern also undercounts some genuine mentions (e.g. "cat videos" or
 "cat memes" with no article), so neither number is exact.
 
@@ -48,13 +49,15 @@ have this problem.
 
 The low-distinct-ratio note fires on LinkBoost-2025 for the overall
 animal-term count (57 distinct strings for 1,054 matches), but the
-duplicate-template warning does not - no single string dominates (the
-top is 129 of 1,054, about 12%). Checked manually: the top repeated
-strings are distinct, on-theme posts, led by a leadership-metaphor post
-about a sheepdog. The overall count is real signal, separate from the "cat"-specific contamination
-documented above.
+duplicate-template warning does not: no single string dominates (the top
+is 129 of 1,054, about 12%). Checked manually, the top repeated strings
+are distinct, on-theme posts, led by a leadership-metaphor post about a
+sheepdog.
 
-## Results (VERIFIED - reproducible via the script)
+The overall count is real signal, separate from the "cat"-specific
+contamination documented above.
+
+## Results (VERIFIED: reproducible via the script)
 
 | Term | podawaa2024 | HyperClapper | LinkBoost-2025 |
 |---|---|---|---|

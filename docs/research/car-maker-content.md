@@ -21,7 +21,7 @@ stocks tied to Tesla, "should you buy a Tesla in cash" investing
 advice, Musk/AI business news, a Cathie Wood interview excerpt). This
 is real signal, not an artifact.
 
-## Results (VERIFIED - reproducible via the script)
+## Results (VERIFIED: reproducible via the script)
 
 | Maker | podawaa2024 | HyperClapper | LinkBoost-2025 |
 |---|---|---|---|
@@ -45,10 +45,10 @@ is real signal, not an artifact.
 
 ## Reading these numbers
 
-Tesla is the most-mentioned automaker in every dataset by a wide
-margin. In LinkBoost-2025 it is essentially the only automaker
-discussed at meaningful volume (411 of 508 total mentions, 81%).
-LinkBoost-2025's content skews toward finance/investing (see
+Tesla is the most-mentioned automaker in every dataset by a wide margin.
+In LinkBoost-2025 it is nearly the only automaker discussed at
+meaningful volume (411 of 508 total mentions, 81%). LinkBoost-2025's
+content skews toward finance/investing (see
 [investment-vc-content.md](investment-vc-content.md)), and Tesla shows
 up there mainly as a stock/investment topic rather than as automotive
 content.

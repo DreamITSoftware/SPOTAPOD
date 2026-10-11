@@ -11,17 +11,16 @@ duplicate-template check described below.
 An earlier draft used the pattern `\bCAR-?T\b` for "CAR-T" (a real
 cell-therapy term), with the hyphen made optional to also catch "CAR T"
 written as two words. Case-insensitive, that pattern also matches the
-common word "cart" - shopping cart, price comparisons, abandoned-cart
-marketing content - and dominated the raw counts with
-noise: 107, 60, and 58 false-positive matches in podawaa2024,
-HyperClapper, and LinkBoost-2025 respectively, none of which were
-about cell therapy. Sampling the matches directly (posts about
-online shopping, Shopify, subscriptions, grocery habits) showed this
-immediately.
+common word "cart" (shopping cart, price comparisons, abandoned-cart
+marketing content) and dominated the raw counts with noise: 107, 60, and
+58 false-positive matches in podawaa2024, HyperClapper, and
+LinkBoost-2025 respectively, none of which were about cell therapy.
+Sampling the matches directly (posts about online shopping, Shopify,
+subscriptions, grocery habits) showed this immediately.
 
 The shipped pattern requires "CAR-T" to appear with "cell" or "therapy"
 nearby, which eliminates the false positives at the cost of missing a
-bare "CAR-T" mention with no qualifying word attached - an acceptable
+bare "CAR-T" mention with no qualifying word attached, an acceptable
 trade given the noise the unqualified pattern produced. This is the same
 kind of error as the "TIME" magazine pattern documented in
 [entity-mentions.md](entity-mentions.md), but it was caught before it
@@ -37,7 +36,7 @@ to use the word "immunotherapy" somewhere in its body, likely as a
 passing example, boosted 40 times by the platform's structure. It is not
 medical content.
 
-## Results (VERIFIED - reproducible via the script)
+## Results (VERIFIED: reproducible via the script)
 
 | Dataset | Any mention | % of dataset |
 |---|---|---|
@@ -70,5 +69,5 @@ Same as every keyword scan in this repo, with one extra warning: at
 counts this small, a single mismatched acronym or a single off-topic
 post using a term in passing can dominate or fabricate an apparent
 finding. Both happened while building this scan. Check the underlying
-text, not just the number, for any very-low-count keyword result in this
+text as well as the number for any low-count keyword result in this
 project before drawing a conclusion from it.

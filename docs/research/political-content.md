@@ -22,7 +22,7 @@ Consistent with this repo's privacy rules, the candidate named in that
 post was not identified in decision-points.md and is not identified
 here either.
 
-## Results (VERIFIED - reproducible via the script)
+## Results (VERIFIED: reproducible via the script)
 
 | Term | podawaa2024 | HyperClapper | LinkBoost-2025 |
 |---|---|---|---|
@@ -39,18 +39,18 @@ here either.
 
 ## Reading these numbers
 
-Trump is the largest term in every dataset, and the only one
-with meaningful presence across all three - Biden and party-name
-mentions are comparatively sparse and unevenly distributed.
-HyperClapper's Trump-to-Biden ratio (136:2) is the most lopsided of the
-three. podawaa2024 and HyperClapper show distinct,
-broadly distributed content (182 and 144 distinct strings
-respectively, no dominant template); the correction above is specific
-to LinkBoost-2025.
+Trump is the largest term in every dataset, and the only one with
+meaningful presence across all three. Biden and party-name mentions are
+comparatively sparse and unevenly distributed. HyperClapper's
+Trump-to-Biden ratio (136:2) is the most lopsided of the three.
+podawaa2024 and HyperClapper show distinct, broadly distributed content
+(182 and 144 distinct strings respectively, no dominant template); the
+correction above is specific to LinkBoost-2025.
 
-This is a small category overall - under 0.4% of any dataset even
-before correction - consistent with these being professional/business/
-career-focused datasets rather than political-commentary datasets.
+This is a small category overall: under 0.4% of any dataset even before
+correction, consistent with these being
+professional/business/career-focused datasets rather than
+political-commentary datasets.
 
 ## Caveats
 

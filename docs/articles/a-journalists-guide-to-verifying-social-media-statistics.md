@@ -8,7 +8,9 @@ A disputed third-party document claimed 1,706 identical resume-rewrite posts on 
 
 **Was the number recomputed, or cited?** The 1,706 figure appears to have been repeated rather than independently derived. Any number worth reporting should be traceable to an actual computation against actual data, not a chain of citations back to an unverified original.
 
-**What counts as a "match"?** A duplicate-content count depends heavily on the matching method. Exact string match, normalized-text match, or fuzzy similarity all produce different counts from the same data. A number without its matching method disclosed can't be meaningfully checked or reproduced.
+**What counts as a "match"?** A duplicate-content count depends on the matching method.
+
+Exact string match, normalized-text match, or fuzzy similarity all produce different counts from the same data. A number without its matching method disclosed can't be meaningfully checked or reproduced.
 
 **Does the source show its work?** This project publishes the actual script behind every VERIFIED claim. A statistic with no visible methodology, however credible the source, is a STATED-tier claim at best, reportable as "X says Y," never as an independently established fact.
 

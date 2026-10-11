@@ -1,18 +1,20 @@
 # Outreach materials
 
-Derived, aggregate-only educational resources built from this repo's
-research, distinct from `docs/`, `analysis/`, and `figures/` because
-these are finished deliverables meant to be printed and handed to someone
-(a teacher, in this case), not repo documentation.
+These are derived, aggregate-only educational resources built from this
+repo's research.
+
+They sit apart from `docs/`, `analysis/`, and `figures/` because they
+are finished deliverables meant to be printed and handed to someone (a
+teacher, in this case), not repo documentation.
 
 ## What's here
 
 **`classroom-case-study.pdf`**, a two-page, ready-to-teach media
 literacy lesson plan ("Spotting Manufactured Popularity Online") for
-grades 9–12 (adaptable to 6–8). Built from the same aggregate findings as
+grades 9 to 12 (adaptable to 6 to 8). Built from the same aggregate findings as
 [docs/research/](../docs/research/), the author-concentration statistic
 and the 533×-repeated "AI resume rewrite" template, reframed as a
-45–50 minute classroom activity with learning objectives, a data
+45 to 50 minute classroom activity with learning objectives, a data
 interpretation exercise, discussion questions, and a standards-alignment
 table (mapped to NAMLE's Access/Analyze/Evaluate/Act competencies).
 
@@ -29,12 +31,16 @@ wkhtmltopdf --enable-local-file-access classroom-case-study.html classroom-case-
 Every fact in this document is aggregate (a concentration statistic, a
 repeated-template count) or established methodology from
 `docs/research/`. It contains no names, handles, photos, profile links,
-or unique/one-off post content. See
+or unique/one-off post content.
+
+See
 [docs/research/decision-points.md](../docs/research/decision-points.md)
 for why only phrases repeated many times, never a single post, are ever
-referenced. The same test governs everything in this repo
-(see [CONTRIBUTING.md](../CONTRIBUTING.md)). The PDF passes it, so it is
-committed directly instead of being left as a build artifact.
+referenced. The same test governs everything in this repo (see
+[CONTRIBUTING.md](../CONTRIBUTING.md)).
+
+The PDF passes it, so it is committed directly instead of being left as
+a build artifact.
 
 ## Scope note (same as everywhere else in this repo)
 

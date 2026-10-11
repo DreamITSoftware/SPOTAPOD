@@ -1,24 +1,27 @@
 # Topic taxonomy (mutually exclusive categorization)
 
-`analysis/topic_taxonomy.py` assigns every record across all three datasets
-to exactly one of nine content categories, using priority-ordered keyword
-pattern matching (first matching category wins, so categories never
-overlap). Anything matching none of the nine falls into a tenth catch-all,
-`uncategorized_other`. Same discipline as every other scan in this repo:
-counts and percentages only, no record or author identified.
+`analysis/topic_taxonomy.py` assigns every record across all three
+datasets to exactly one of nine content categories, using
+priority-ordered keyword pattern matching (first matching category wins,
+so categories never overlap). Anything matching none of the nine falls
+into a tenth catch-all, `uncategorized_other`.
+
+It follows the same discipline as every other scan in this repo: counts
+and percentages only, no record or author identified.
 
 ## Method
 
-Unlike the earlier category scans in this repo (`other-regulatory-signals.md`,
-`book-promotion-content.md`, `career-advice-comparison.md`), which let a
-record match more than one category, this taxonomy is **mutually
-exclusive by construction**, each record is tested against the nine
-categories in a fixed order and assigned to the first one that matches.
-This loses some nuance (a record that is about both career
-advice and AI only gets counted once, under whichever category is
-checked first) and gains a property the earlier scans lack: every record
-in every dataset is accounted for in exactly one bucket, so the counts
-below sum to the full 340,829-record total across all three files.
+Unlike the earlier category scans in this repo
+(`other-regulatory-signals.md`, `book-promotion-content.md`,
+`career-advice-comparison.md`), which let a record match more than one
+category, this taxonomy is **mutually exclusive by construction**: each
+record is tested against the nine categories in a fixed order and
+assigned to the first one that matches. This loses some nuance (a record
+that is about both career advice and AI only gets counted once, under
+whichever category is checked first) and gains a property the earlier
+scans lack: every record in every dataset is accounted for in exactly
+one bucket, so the counts below sum to the full 340,829-record total
+across all three files.
 
 ## Results (VERIFIED, reproducible via the script)
 
@@ -50,23 +53,26 @@ below sum to the full 340,829-record total across all three files.
 | `book_writing_publishing` | 0.19% | 0.91% | 0.82% |
 | `uncategorized_other` | 50.47% | 33.93% | 28.15% |
 
-Two datasets stand out, consistent with earlier findings elsewhere in this repo:
-HyperClapper is disproportionately career-content (13.92% vs. 2–4%
+Two datasets stand out, consistent with earlier findings elsewhere in
+this repo.
+
+HyperClapper is disproportionately career-content (13.92% vs. 2% to 4%
 elsewhere, see also the reciprocal-engagement and occupation findings in
-[demographics.md](demographics.md)), and LinkBoost-2025 is disproportionately
-leadership/coaching content (18.91% vs. ~6% elsewhere), matching its
-occupation text skewing 59.5% toward "executive/leadership/coaching" per
-[demographics.md](demographics.md).
+[demographics.md](demographics.md)), and LinkBoost-2025 is
+disproportionately leadership/coaching content (18.91% vs. ~6%
+elsewhere), matching its occupation text skewing 59.5% toward
+"executive/leadership/coaching" per [demographics.md](demographics.md).
 
 ## Reading `uncategorized_other`
 
-At 42.97%, this is the largest single bucket. This is expected, since nine
-keyword-based categories cannot cover the full range of
+At 42.97%, this is the largest single bucket. This is expected, since
+nine keyword-based categories cannot cover the full range of
 professional-networking content (personal announcements, engagement-bait
 questions, congratulations posts, industry commentary with no category
-keyword, etc.). This bucket is a catch-all by construction, not a finding.
-It is too heterogeneous to characterize as a topic the way the
-other nine can be.
+keyword, etc.).
+
+This bucket is a catch-all by construction, not a finding. It is too
+heterogeneous to characterize as a topic the way the other nine can be.
 
 ## Caveats
 
