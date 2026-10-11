@@ -9,6 +9,7 @@ theme:
 
 nav:
   - Home: README.md
+  - Books: docs/books/README.md
   - Provenance: docs/provenance.md
   - Regulatory context: docs/regulatory-context.md
   - Other regulatory signals: docs/research/other-regulatory-signals.md

@@ -565,6 +565,7 @@ no per-record data). See [explorer/README.md](explorer/README.md) for why.
 - [Schemas](schema), reference JSON Schema for all three file formats
 - [Commentary: LinkedIn's CEO and the fakery he didn't mention](docs/commentary/linkedin-ceo-fakery-contrast.md), opinion piece contrasting a September 2026 WSJ interview with this repo's own findings; evidence-tiered, with two figures corrected against the raw source files before publication
 - [Pod count profile](docs/research/pod-count-profile.md), profiles a fourth supplied file (`spotapod.json`) shown to be a derived aggregation of podawaa2024.json rather than an independent dataset, and its one new field (`PODCount`)
+- [Books](docs/books/README.md), *DIGITAL BOUGHTulism: POONAMI*, Daniel Hall's field guide to fake social media for teenagers, in PDF, EPUB, Word and Markdown. Copyright the author, all rights reserved; not covered by this repo's CC BY license
 
 ## Other regulatory signals
 
