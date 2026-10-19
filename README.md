@@ -1115,6 +1115,22 @@ it isn't cited there and where it's reported to come from instead.
 `LinkBoost-2025.json` has no citation either. Its source hasn't been
 confirmed yet (see [docs/provenance.md](docs/provenance.md)).
 
+### Related work by the author
+
+These are listed as STATED by the author. This repository hasn't checked them.
+
+- Hall, Daniel. "Your Teen's Career Hero Has a Case of Digital BOUGHTulism."
+  *Cyber Defense eMagazine*, October 2026 edition, p. 51.
+- Hall, Daniel. *DIGITAL BOUGHTulism: POONAMI: A Teenagers Field Guide to Fake
+  Social Media*. https://www.amazon.com/dp/B0HMX7536J
+- Hall, Adam and Berg (2025). *Top 100 List of Lies on Social Media*.
+- Hall, Daniel. Research data on Harvard Dataverse.
+  https://doi.org/10.7910/DVN/NT6YM2. Nothing in this repository ties that
+  record to these datasets, so cite it as related work only.
+
+[CITATION.cff](CITATION.cff) lists the article, the book and the Dataverse
+record in citation format.
+
 ## Outreach materials
 
 [outreach/](outreach/) contains finished, aggregate-only educational

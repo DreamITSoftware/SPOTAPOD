@@ -14,6 +14,7 @@
   earlier commit and are unaffected.
 
 ### Added
+- Citations of the author's related work: the book *DIGITAL BOUGHTulism: POONAMI* and a second Harvard Dataverse record in `CITATION.cff` and the README, plus the October 2026 *Cyber Defense eMagazine* article and *Top 100 List of Lies on Social Media* in the README. All are listed as STATED and none is checked here.
 - A file supplied as `spotapod.json` was checked before being treated as a
   fourth independent dataset. Verified: every one of its 201,000 unique
   `linkedinPostId` values and every one of its 6,948 unique authors already
