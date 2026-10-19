@@ -40,3 +40,22 @@ references:
       docs/research/career-advice-reciprocal-crosstab.md and
       docs/articles/the-numbers-that-cracked-under-a-closer-look.md),
       written for a general/parenting audience.
+  - type: book
+    title: "DIGITAL BOUGHTulism: POONAMI: A Teenagers Field Guide to Fake Social Media"
+    authors:
+      - name: "Daniel Hall"
+    url: "https://www.amazon.com/dp/B0HMX7536J"
+    notes: >
+      Related work by the author, listed as STATED. The publication year and
+      publisher are not confirmed here.
+  - type: dataset
+    title: "Research data on Harvard Dataverse (exact record title not confirmed here)"
+    authors:
+      - name: "Daniel Hall"
+    repository: "https://doi.org/10.7910/DVN/NT6YM2"
+    identifiers:
+      - type: doi
+        value: "10.7910/DVN/NT6YM2"
+    notes: >
+      Related work by the author, listed as STATED. Nothing in this repository
+      ties this record to the datasets analysed here.
