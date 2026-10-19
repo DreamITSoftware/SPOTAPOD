@@ -1124,9 +1124,9 @@ These are listed as STATED by the author. This repository hasn't checked them.
 - Hall, Daniel. *DIGITAL BOUGHTulism: POONAMI: A Teenagers Field Guide to Fake
   Social Media*. https://www.amazon.com/dp/B0HMX7536J
 - Hall, Adam and Berg (2025). *Top 100 List of Lies on Social Media*.
-- Hall, Daniel. Research data on Harvard Dataverse.
-  https://doi.org/10.7910/DVN/NT6YM2. Nothing in this repository ties that
-  record to these datasets, so cite it as related work only.
+- Hall, Daniel. *Replication Data for: SPOTAPOD Analysis Repository*. Harvard
+  Dataverse. https://doi.org/10.7910/DVN/NT6YM2. The title is as the author
+  gave it, and this repository hasn't opened the record.
 
 [CITATION.cff](CITATION.cff) lists the article, the book and the Dataverse
 record in citation format.
