@@ -30,6 +30,9 @@ If you're going to cite a dollar figure about engagement-pod liability, cite the
 
 Full comparison: **github.com/DreamITSoftware/SPOTAPOD**.
 
+<!-- export65-note -->
+> **Update, 22 October 2026.** The $18,093,929,952 figure covers the three datasets only. The [65 export files](../provenance.md#the-65-export-files) are not in it, and this project did not compute a ceiling figure for them. See [the research page](../research/theoretical-penalty-ceiling.md#the-65-export-files).
+
 ---
 
 *Self-published. Not peer-reviewed. This is not legal advice or a damages estimate.*

@@ -28,6 +28,9 @@ The obvious assumption is that this looks like a bot: too regular, too mechanica
 
 Full methodology: **github.com/DreamITSoftware/SPOTAPOD**.
 
+<!-- export65-note -->
+> **Update, 22 October 2026.** The posting-velocity scan was not run on the [65 export files](../provenance.md#the-65-export-files). Every record carries a creation time, but the site does not define it, and 22 of the 65 files stop at exactly 5,000 records, which probably cuts off each affected account's older records (INFERENCE). A per-account active window computed from those dates would not be reliable. Detail: [posting velocity](../research/posting-velocity.md#the-65-export-files).
+
 ---
 
 *Self-published. Not peer-reviewed. Independently reproducible from the source file. Accounts are identified only by anonymous rank, never by handle or hash value, anywhere in this project.*

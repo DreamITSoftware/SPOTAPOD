@@ -111,6 +111,13 @@ Engagement statistics fields as stored (the site does not document what they mea
   Records with both likes and views:   11943
     statsViews of 0 with statsLikes above 0: 0
     statsLikes above statsViews:             1636 (13.7%)
+    Records with exactly 1 view:             20
+    Highest statsLikes per statsViews:       217.0 to 1 (median 0.26)
+    Records with 2 or more likes per view:   784; 10 or more: 133; 100 or more: 6
+  Records with the 10 highest statsLikes (ties at the tenth value kept): 10
+    with statsViews of 0:                    0
+    with no statsViews field:                2
+    with statsViews above 0:                 8
 
 Records by account (first + last name, case-normalised; counts only)
   Distinct accounts:                   1380
@@ -129,5 +136,7 @@ Repetition of post text (exact match; counts only)
 - **Coverage.** `statsLikes` is on 46,931 records, `statsComments` on 32,534 and `statsViews` on 11,987. How the records that carry each field were selected is not known, so the medians (40 likes, 9 comments, 441 views) describe the records that have the field and no wider set.
 - **Zero views.** Of the 11,943 records that carry both a like count and a view count, none has zero views with likes above zero. The zero-view pattern that [the zero-view articles](../articles/the-zero-view-problem.md) count in podawaa2024 does not appear in these fields.
 - **Likes above views.** 1,636 of those 11,943 records (13.7%) have more likes than views. If the two fields are measured in the same way, that is an inconsistency, and if they are measured differently it may not be one. The counts do not show that any like was bought, and they cannot say which reading is right.
+- **Ratios.** The lowest view count among the 11,943 is 1, and 20 records have exactly one view. The highest ratio is 217 likes per view, 784 records have 2 or more likes per view, 133 have 10 or more and 6 have 100 or more. The median is 0.26 likes per view. The largest like count is 12,029 and the largest view count is 842,676.
+- **Top ten by likes.** The records with the ten highest `statsLikes` values hold no record with zero views. Two of the ten have no `statsViews` field and eight have a view count above zero. This is the check that [the top-ten article](../articles/four-of-the-top-ten.md) makes on podawaa2024, and it is limited by the fact that `statsViews` is present on only 11,987 of the 56,363 records.
 - **Accounts.** The records come from 1,380 accounts. The top 20 account for 29.3% of the records and the top 100 for 62.7%. 139 accounts with 100 or more records account for 70.8%, and 326 accounts have one record. For comparison, [one HyperClapper article](../articles/a-hundred-accounts-four-in-five-posts.md) reports that 100 of that file's 702 accounts produce 83.5% of its posts. An account here is a first and last name, so one person who uses two names counts twice.
 - **Repetition.** The 56,126 records with text hold 52,235 distinct texts (93.1%). 1,619 texts occur in more than one record, and together they cover 5,510 records. The most repeated text occurs in 274 records. 299 texts were submitted under more than one account name, and the most account names for one text is 23. The counts are for exact matches, so a text with one changed character counts as a different text.

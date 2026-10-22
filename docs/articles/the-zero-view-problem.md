@@ -24,6 +24,9 @@ Every one of those 75,442 posts is a signal someone else on LinkedIn sees and re
 
 Full methodology and the underlying dataset documentation: **github.com/DreamITSoftware/SPOTAPOD**.
 
+<!-- export65-note -->
+> **Update, 22 October 2026.** The [65 export files](../provenance.md#the-65-export-files) carry optional fields named `statsLikes`, `statsComments` and `statsViews`. Of the 11,943 records that carry both a like count and a view count, none has zero views with likes above zero, so the zero-view pattern counted above does not appear in those fields. 1,636 of the 11,943 (13.7%) have more likes than views. The site does not document what the fields measure, and views are present on only 11,987 of the 56,363 records, so these are counts for the records that have the field and not rates for the whole file. Detail: [engagement statistics fields](../research/export-65-profile.md#engagement-statistics-fields).
+
 ---
 
 *Self-published. Not peer-reviewed. Every figure above is independently reproducible from the source file using the scripts published in the linked repository.*

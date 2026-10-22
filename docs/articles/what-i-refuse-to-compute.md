@@ -28,6 +28,9 @@ Aggregate statistics about engagement manipulation serve a public-interest purpo
 
 Full privacy documentation: **github.com/DreamITSoftware/SPOTAPOD**.
 
+<!-- export65-note -->
+> **Update, 22 October 2026.** The scripts that read the [65 export files](../provenance.md#the-65-export-files) follow the same rule. The profile script holds first and last names only as one-way hashes in memory, to count accounts, and prints no name, link, record id or post text. The shared reader used by the content scans reads the post text and prints nothing. The tests run them on fabricated fixtures and check that no identifier appears in the output.
+
 ---
 
 *Self-published. Not peer-reviewed.*

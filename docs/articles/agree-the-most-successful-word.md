@@ -30,6 +30,9 @@ A post with actual content can be judged on its substance. A bare "Agree?" has n
 
 Full one-word breakdown across all three datasets: **github.com/DreamITSoftware/SPOTAPOD**.
 
+<!-- export65-note -->
+> **Update, 22 October 2026.** In the [65 export files](../provenance.md#the-65-export-files), one-word posts are 315 of 56,363 records (0.559%) and hold 67 distinct strings. "Agree?" is again the most repeated, in 163 records, which is 51.7% of the one-word posts. "Thoughts?" follows with 52. The most repeated post text of any kind in the 65 files appears in 274 records, so the 3,918 count above is still the largest. Detail: [one-word posts](../research/one-word-posts.md#the-65-export-files).
+
 ---
 
 *Self-published. Not peer-reviewed. Independently reproducible from the source files. No individual post or author is identified.*

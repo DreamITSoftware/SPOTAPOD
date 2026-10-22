@@ -35,6 +35,9 @@ Four out of ten is still a real finding. It means two in five of the single most
 
 Full dataset and scripts: **github.com/DreamITSoftware/SPOTAPOD**.
 
+<!-- export65-note -->
+> **Update, 22 October 2026.** The same check on the [65 export files](../provenance.md#the-65-export-files) gives a different result. None of the ten records with the highest `statsLikes` values has zero views: two have no `statsViews` field and eight have a view count above zero. The check is limited, because `statsViews` is present on only 11,987 of the 56,363 records and the site does not document what the fields measure. The largest like count in those files is 12,029. Detail: [engagement statistics fields](../research/export-65-profile.md#engagement-statistics-fields).
+
 ---
 
 *Self-published. Not peer-reviewed. Independently reproducible from the source file.*

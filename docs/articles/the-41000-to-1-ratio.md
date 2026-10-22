@@ -24,6 +24,9 @@ A typical engaged LinkedIn post might see somewhere between 2% and 8% of its vie
 
 Full methodology: **github.com/DreamITSoftware/SPOTAPOD**.
 
+<!-- export65-note -->
+> **Update, 22 October 2026.** Among the 11,943 records in the [65 export files](../provenance.md#the-65-export-files) that carry both likes and views, the highest ratio is 217 likes per view and the median is 0.26. 20 records have exactly 1 view. 784 records have 2 or more likes per view, 133 have 10 or more and 6 have 100 or more. Nothing in those files reaches the 41,315-to-1 ratio above. Reading the fields as a post's public counts is an INFERENCE. Detail: [engagement statistics fields](../research/export-65-profile.md#engagement-statistics-fields).
+
 ---
 
 *Self-published. Not peer-reviewed. Independently reproducible from the source file.*

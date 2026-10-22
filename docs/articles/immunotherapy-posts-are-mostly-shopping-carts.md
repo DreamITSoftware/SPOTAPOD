@@ -24,6 +24,9 @@ This category ended up being one of the smallest genuine content categories this
 
 Full methodology: **github.com/DreamITSoftware/SPOTAPOD**.
 
+<!-- export65-note -->
+> **Update, 22 October 2026.** The [65 export files](../provenance.md#the-65-export-files) hold 14 of 56,363 records (0.025%) that match the strict immunotherapy patterns: immunotherapy 9, immuno-oncology 4, cancer immunotherapy 2, checkpoint inhibitor 2 and CAR-T with "cell" or "therapy" nearby 1. All 14 are distinct texts. The strict CAR-T rule described above was the one used, so no shopping-cart matches are counted. This repository prints no matched text, so this project has not read the 14 records and does not know that each is about cell therapy. The rate is the highest of the four sources, from a small count. Detail: [immunotherapy content](../research/immunotherapy-content.md#the-65-export-files).
+
 ---
 
 *Self-published. Not peer-reviewed. Independently reproducible from the source files.*

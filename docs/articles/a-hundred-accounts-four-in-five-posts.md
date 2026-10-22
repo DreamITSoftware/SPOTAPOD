@@ -24,6 +24,9 @@ That gap matters for a simple reason: overstating a real problem doesn't make th
 
 Full methodology: **github.com/DreamITSoftware/SPOTAPOD**.
 
+<!-- export65-note -->
+> **Update, 22 October 2026.** The [65 export files](../provenance.md#the-65-export-files) come from 1,380 accounts, counted from hashed first and last names. The top 20 accounts produce 29.3% of the records and the top 100 (7.2% of the accounts) produce 62.7%. 139 accounts with 100 or more records produce 70.8% of the records, and 326 accounts have one record. That is less concentrated than HyperClapper's 36.2% and 83.5%. An account here is a first and last name, so one person using two names counts twice. Detail: [engagement statistics fields](../research/export-65-profile.md#engagement-statistics-fields).
+
 ---
 
 *Self-published. Not peer-reviewed. Independently reproducible from the source file. No account is identified anywhere in this project.*

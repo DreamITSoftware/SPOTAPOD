@@ -20,6 +20,9 @@ Checked manually, LinkBoost-2025's top repeated empathy-related strings span rea
 
 Full methodology: **github.com/DreamITSoftware/SPOTAPOD**.
 
+<!-- export65-note -->
+> **Update, 22 October 2026.** In the [65 export files](../provenance.md#the-65-export-files), 476 of 56,363 records (0.845%) mention an empathy term, the second lowest of the four sources (podawaa2024 0.556%, HyperClapper 0.873%, LinkBoost-2025 1.889%). The matches hold 469 distinct texts, so no empathy-matching text repeats more than 8 times, and the 56-occurrence template described above has no counterpart at that scale. Detail: [empathy content](../research/empathy-content.md#the-65-export-files).
+
 ---
 
 *Self-published. Not peer-reviewed. Independently reproducible from the source files. No author or full post text is identified.*

@@ -28,6 +28,9 @@ Refusing to engage with "how much would this be worth, from an FTC perspective" 
 
 Full calculation and the real settlement figures it should be read against: **github.com/DreamITSoftware/SPOTAPOD**.
 
+<!-- export65-note -->
+> **Update, 22 October 2026.** The figure above multiplies the record count of the three datasets only. The [65 export files](../provenance.md#the-65-export-files) are not in it, and this project did not compute a figure for them, because another multiplication of a record count by a statutory maximum would give a number of the same kind and no better support. See [the research page](../research/theoretical-penalty-ceiling.md#the-65-export-files).
+
 ---
 
 *Self-published. Not peer-reviewed. This is not legal advice or a damages estimate.*

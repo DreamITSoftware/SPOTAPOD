@@ -24,6 +24,9 @@ A third-party document claimed this specific template appeared 1,706 times. That
 
 Full methodology and the exact matching script: **github.com/DreamITSoftware/SPOTAPOD**.
 
+<!-- export65-note -->
+> **Update, 22 October 2026.** The [65 export files](../provenance.md#the-65-export-files) contain no text repeated as often as this template. The most repeated post text there appears in 274 records, and 1,619 texts occur in more than one record, covering 5,510 of the 56,126 records that have text (9.8%). The 533 count above covers the three datasets only. Detail: [engagement statistics fields](../research/export-65-profile.md#engagement-statistics-fields).
+
 ---
 
 *Self-published. Not peer-reviewed. Independently reproducible from the source files. No author is identified anywhere in this project.*

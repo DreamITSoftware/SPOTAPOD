@@ -26,6 +26,9 @@ Nobody double-checks the numbers that confirm what they already expected. The te
 
 Full script index: **github.com/DreamITSoftware/SPOTAPOD**.
 
+<!-- export65-note -->
+> **Update, 22 October 2026.** The figures drawn from the [65 export files](../provenance.md#the-65-export-files) follow this rule. `export65_profile.py` produces the file-level figures, and the shared reader `export65_loader.py` lets the existing content scans run on the files. The files are not in the repository, and `--check-manifest` compares a folder of files against `checksums/EXPORT65_MANIFEST.csv`. The limit stated above applies in full: the source and method of the files are the collector's account (STATED).
+
 ---
 
 *Self-published. Not peer-reviewed.*

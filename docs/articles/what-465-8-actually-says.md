@@ -28,6 +28,9 @@ A rule this specific, with elements this clear, is a useful yardstick precisely 
 
 Full element-by-element table and sourcing: **github.com/DreamITSoftware/SPOTAPOD**.
 
+<!-- export65-note -->
+> **Update, 22 October 2026.** The [65 export files](../provenance.md#the-65-export-files) add fields with metric names and nothing on the other elements. They carry fields named `statsLikes`, `statsComments` and `statsViews` on 46,931, 32,534 and 11,987 of 56,363 records, and they say nothing about scienter or materiality. The rule took effect on 21 October 2024, and 55,925 of the 56,363 records (99.22%) have a `createdAt` on or after that date. That counts records created after a date. It does not count violations, and what `createdAt` records is not documented (INFERENCE). Detail: [profile](../research/export-65-profile.md).
+
 ---
 
 *Self-published. Not peer-reviewed. This is not legal advice. The author is not a lawyer. Consult one for any actual legal determination.*

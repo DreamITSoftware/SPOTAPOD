@@ -24,6 +24,9 @@ Clients often arrive anxious about a specific viral format they feel they're "su
 
 Full findings: **github.com/DreamITSoftware/SPOTAPOD**.
 
+<!-- export65-note -->
+> **Update, 22 October 2026.** The 533 count above covers the three datasets only. The [65 export files](../provenance.md#the-65-export-files) contain no text repeated that often: the most repeated post text there appears in 274 records. Detail: [engagement statistics fields](../research/export-65-profile.md#engagement-statistics-fields).
+
 ---
 
 *Self-published. Not peer-reviewed.*

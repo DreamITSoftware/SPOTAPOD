@@ -96,4 +96,4 @@ timestamps.
 <!-- export65-section -->
 ## The 65 export files
 
-Added 22 October 2026. This scan was not run on the 65 export files. It measures the posting rate of the highest-volume HyperClapper accounts from that file's per-record timestamps. The 65 files carry a creation time on every record, but it is the time a post was submitted to the tool, so a rate computed from it would measure submissions and not posting. It was not run. What the 65 files hold is in [export-65-profile.md](export-65-profile.md).
+Added 22 October 2026. This scan was not run on the 65 export files. It measures the posting rate of the highest-volume HyperClapper accounts from that file's per-record timestamps. The 65 files carry a creation time on every record, but the site does not define it. The likeliest reading is the time a post was submitted to the tool (INFERENCE), so a rate computed from it would measure submissions and not posting. 22 of the 65 files also stop at exactly 5,000 records, which probably cuts off older records for the accounts in them. It was not run. What the 65 files hold is in [export-65-profile.md](export-65-profile.md).

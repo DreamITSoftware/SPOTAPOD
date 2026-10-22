@@ -24,6 +24,9 @@ Even as an explicitly labeled inference, it reframes a duplication rate from "ev
 
 Full duplicate-content data: **github.com/DreamITSoftware/SPOTAPOD**.
 
+<!-- export65-note -->
+> **Update, 22 October 2026.** In the [65 export files](../provenance.md#the-65-export-files), 5,510 of 56,363 records (9.8%) share their exact post text with at least one other record, in 1,619 groups. The same measure in the baseline profile is 28,254 of 213,491 (13.2%) in podawaa2024, 9,717 of 49,369 (19.7%) in HyperClapper and 76,532 of 77,969 (98.2%) in LinkBoost-2025. On that measure the 65 files have the lowest share of repeated text of the four. They hold 52,235 distinct post texts among 56,126 records that have text (93.1%), and the most repeated text appears in 274 records. Detail: [engagement statistics fields](../research/export-65-profile.md#engagement-statistics-fields). The inference above about what a duplication rate says about a tool's business remains an inference.
+
 ---
 
 *Self-published. Not peer-reviewed.*

@@ -28,6 +28,9 @@ Pod tools aren't static. A service's scale, mechanism, or user base can shift, a
 
 Full data: **github.com/DreamITSoftware/SPOTAPOD**.
 
+<!-- export65-note -->
+> **Update, 22 October 2026.** This tracker lists tools, and the [65 export files](../provenance.md#the-65-export-files) are not a fourth entry. The collector reports that they came from the LinkBoost web application (STATED), and nothing here says they hold the same data as LinkBoost-2025. They hold 56,363 distinct records from 1,380 accounts, created from 11 October 2024 to 16 October 2026 by their `createdAt`. Detail: [provenance](../provenance.md#the-65-export-files) and [profile](../research/export-65-profile.md).
+
 ---
 
 *Self-published. Not peer-reviewed.*

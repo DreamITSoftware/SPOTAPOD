@@ -30,6 +30,9 @@ Not because nonprofit content matters more than any other category, but because 
 
 Full methodology: **github.com/DreamITSoftware/SPOTAPOD**.
 
+<!-- export65-note -->
+> **Update, 22 October 2026.** In the [65 export files](../provenance.md#the-65-export-files), 222 of 56,363 records (0.394%) mention a nonprofit term in the post text, and the matches hold 220 distinct texts. The duplicate-template check did not fire. That rate sits just below LinkBoost-2025's corrected 0.404% and above podawaa2024 (0.308%) and HyperClapper (0.288%). The 65 files have no headline or occupation field, so the repeated-headline problem that produced the 1.38% figure above cannot arise in them. Detail: [nonprofit content](../research/nonprofit-content.md#the-65-export-files).
+
 ---
 
 *Self-published. Not peer-reviewed. Independently reproducible from the source files.*

@@ -30,6 +30,9 @@ Only the fact itself: zero shared accounts between two independently sourced dat
 
 Full methodology: **github.com/DreamITSoftware/SPOTAPOD**.
 
+<!-- export65-note -->
+> **Update, 22 October 2026.** The overlap test was not run on the [65 export files](../provenance.md#the-65-export-files). It hashes the vanity usernames that HyperClapper and LinkBoost-2025 hold. The 65 files hold first and last names and a post link with no username, so the same test cannot be run, and a comparison by name would be a weaker test of a different kind. Detail: [cross-dataset account overlap](../research/cross-dataset-account-overlap.md#the-65-export-files).
+
 ---
 
 *Self-published. Not peer-reviewed.*

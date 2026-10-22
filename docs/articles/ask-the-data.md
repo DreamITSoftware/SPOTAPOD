@@ -26,6 +26,9 @@ Any specific, checkable question about patterns in this project's three datasets
 
 Full findings: **github.com/DreamITSoftware/SPOTAPOD**.
 
+<!-- export65-note -->
+> **Update, 22 October 2026.** Since 22 October 2026 the project also holds the [65 export files](../provenance.md#the-65-export-files). Questions about them are handled the same way, and the figures so far are in [the profile](../research/export-65-profile.md).
+
 ---
 
 *Self-published. Not peer-reviewed. Not legal advice.*

@@ -24,6 +24,9 @@ Any category from this project's ongoing taxonomy work that falls below roughly 
 
 Full taxonomy: **github.com/DreamITSoftware/SPOTAPOD**.
 
+<!-- export65-note -->
+> **Update, 22 October 2026.** The [65 export files](../provenance.md#the-65-export-files) hold 10 of 56,363 records (0.018%) with "rare earth metals", "rare earth elements" or "rare earths", and 68 records (0.121%) with any of the wider terms (critical minerals 31, lithium 24, cobalt 16, the rare-earth phrases 10 and neodymium 1). Both counts are separate from the 7 and the 68, 30 and 19 above, which cover the three datasets only. The count of 10 is above the 0.01% threshold the series uses for an installment, which is about 6 records at this size. Detail: [rare-earth content](../research/rare-earth-metals-content.md#the-65-export-files).
+
 ---
 
 *Self-published. Not peer-reviewed.*

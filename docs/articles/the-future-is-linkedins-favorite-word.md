@@ -20,6 +20,9 @@ Most topics in this project show one dataset as a sharp outlier against the othe
 
 Full methodology: **github.com/DreamITSoftware/SPOTAPOD**.
 
+<!-- export65-note -->
+> **Update, 22 October 2026.** In the [65 export files](../provenance.md#the-65-export-files), 4,877 of 56,363 records (8.653%, about 1 in 12) mention "future", and 177 of them mention "future of work". That is just below LinkBoost-2025 (8.887%) and above HyperClapper (7.207%) and podawaa2024 (5.525%). The matches hold 4,702 distinct texts. Detail: [future content](../research/future-content.md#the-65-export-files).
+
 ---
 
 *Self-published. Not peer-reviewed. Independently reproducible from the source files.*

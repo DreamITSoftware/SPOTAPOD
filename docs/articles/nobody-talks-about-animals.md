@@ -29,6 +29,9 @@ This project runs dozens of keyword scans, and most of them work fine with strai
 
 Full methodology: **github.com/DreamITSoftware/SPOTAPOD**.
 
+<!-- export65-note -->
+> **Update, 22 October 2026.** In the [65 export files](../provenance.md#the-65-export-files), 491 of 56,363 records (0.871%) mention an animal term. The loose count for "cat" is 97 and the strict count is 31 (32.0%), so the strict share sits between podawaa2024 (28.5%) and HyperClapper (39.3%), and the strict count is not zero as it is in LinkBoost-2025. The scan's duplicate-template check did not fire, and the matching records hold 476 distinct texts. Detail: [animal content](../research/animal-content.md#the-65-export-files).
+
 ---
 
 *Self-published. Not peer-reviewed. Independently reproducible from the source files.*
