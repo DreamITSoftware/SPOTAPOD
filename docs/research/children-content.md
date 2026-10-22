@@ -75,3 +75,25 @@ child. The corrected "son" pattern trades some recall for precision -
 an unusually structured English sentence referencing a son without one
 of the checked markers nearby would be missed, though this is a much
 smaller error than the 98.5% false-positive rate it replaces.
+
+<!-- export65-section -->
+## The 65 export files
+
+Added 22 October 2026. This is the same scan run on the 65 export files: 56,363 distinct records after the files are de-duplicated on record id, reading each record's `title` field, which holds the post text. These files are a separate set from the three datasets above, and nothing above this heading has changed. Their source, method and limits are in [provenance.md](../provenance.md#the-65-export-files) and [export-65-profile.md](export-65-profile.md). Rates use all 56,363 records as the denominator, and 237 of them have no post text. Command: `python3 analysis/children_content_scan.py export65 /path/to/folder_with_the_65_files`.
+
+```text
+=== 65 export files (56,363 records) ===
+Records mentioning any children-related term: 1,650 (2.927%)
+Distinct underlying text values: 1,601
+    kid / kids                         805
+    child / children                   649
+    son (clear English usage only)     151
+    daughter                           150
+    baby / babies                      145
+    parenting                          102
+    toddler                            52
+```
+
+1,650 of 56,363 records (2.927%) match. In the three datasets above the same measure is 1.232% in podawaa2024, 2.87% in HyperClapper and 5.294% in LinkBoost-2025 (using the corrected figure where this page gives one), which puts the 65 export files at the second highest of the four. The scan's duplicate-template check did not fire, and the matching records hold 1,601 distinct texts.
+
+The rates come from different fields and different kinds of record, so a gap between them describes the files and does not describe the tools. A match is a keyword in the text, not a finding about the post or its author.

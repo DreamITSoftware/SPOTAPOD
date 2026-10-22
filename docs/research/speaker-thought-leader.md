@@ -50,3 +50,8 @@ Same as every keyword scan in this repo: a match means the term appears
 in the occupation/headline text, not that the account is a verified or
 active public speaker. As with [simple-titles.md](simple-titles.md),
 this is self-reported text, not a credential.
+
+<!-- export65-section -->
+## The 65 export files
+
+Added 22 October 2026. This scan was not run on the 65 export files. It reads the occupation or headline field, which the 65 files do not have. What the 65 files hold is in [export-65-profile.md](export-65-profile.md).

@@ -73,3 +73,8 @@ for the occupation-skew context, still INFERENCE-tier), and any claim
 about audience-side impact (see [audience-impact.md](audience-impact.md),
 which covers a different set of content categories and does not include
 career advice).
+
+<!-- export65-section -->
+## The 65 export files
+
+Added 22 October 2026. This scan was not run on the 65 export files. It is HyperClapper only, because it needs the per-record like and comment flags that only that file has. What the 65 files hold is in [export-65-profile.md](export-65-profile.md).

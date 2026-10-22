@@ -76,3 +76,47 @@ recommendation. This doc's own two corrections above are a reminder
 that a raw keyword count on its own, without checking for both
 duplicate templates and language/context artifacts, can be actively
 misleading rather than just imprecise.
+
+<!-- export65-section -->
+## The 65 export files
+
+Added 22 October 2026. This is the same scan run on the 65 export files: 56,363 distinct records after the files are de-duplicated on record id, reading each record's `title` field, which holds the post text. These files are a separate set from the three datasets above, and nothing above this heading has changed. Their source, method and limits are in [provenance.md](../provenance.md#the-65-export-files) and [export-65-profile.md](export-65-profile.md). Rates use all 56,363 records as the denominator, and 237 of them have no post text. Command: `python3 analysis/travel_content_scan.py export65 /path/to/folder_with_the_65_files`.
+
+```text
+=== 65 export files (56,363 records) ===
+Travel agencies/platforms:
+    Airbnb                       76 (0.1348%)
+    Expedia                      8 (0.0142%)
+    MakeMyTrip                   5 (0.0089%)
+    ^ WARNING: "MakeMyTrip" -- top repeated string = 2/5 (40.0%) of matches -- likely template inflation, not distinct signal. Corrected estimate: 4
+    travel agency (generic)      5 (0.0089%)
+    ^ WARNING: "travel agency (generic)" -- top repeated string = 2/5 (40.0%) of matches -- likely template inflation, not distinct signal. Corrected estimate: 4
+    TripAdvisor                  4 (0.0071%)
+    ^ WARNING: "TripAdvisor" -- top repeated string = 1/4 (25.0%) of matches -- likely template inflation, not distinct signal. Corrected estimate: 4
+    Booking.com                  2 (0.0035%)
+    ^ WARNING: "Booking.com" -- top repeated string = 1/2 (50.0%) of matches -- likely template inflation, not distinct signal. Corrected estimate: 2
+    Kayak                        1 (0.0018%)
+    ^ WARNING: "Kayak" -- top repeated string = 1/1 (100.0%) of matches -- likely template inflation, not distinct signal. Corrected estimate: 1
+    Priceline                    1 (0.0018%)
+    ^ WARNING: "Priceline" -- top repeated string = 1/1 (100.0%) of matches -- likely template inflation, not distinct signal. Corrected estimate: 1
+Destinations:
+    Dubai                        388 (0.6884%)
+    London                       344 (0.6103%)
+    France                       315 (0.5589%)
+    Miami                        226 (0.4010%)
+    Singapore                    209 (0.3708%)
+    Paris                        172 (0.3052%)
+    Japan                        156 (0.2768%)
+    New York City                123 (0.2182%)
+    Italy                        103 (0.1827%)
+    Switzerland                  73 (0.1295%)
+    Spain                        71 (0.1260%)
+    Los Angeles                  62 (0.1100%)
+    Bali                         54 (0.0958%)
+    Amsterdam                    47 (0.0834%)
+    Rome                         45 (0.0798%)
+```
+
+Airbnb appears in 76 of 56,363 records (0.1348%), against 0.12% in podawaa2024 and 0.30% in HyperClapper. The other agency and platform names have counts of 8 or fewer, and the scan's duplicate-template warnings fire on six of those lines, where one repeated text is a large share of a count of 1 to 5. Those counts are too small to read anything into. Among destinations, Dubai (388 records) and London (344) lead, then France (315), Miami (226) and Singapore (209).
+
+The rates come from different fields and different kinds of record, so a gap between them describes the files and does not describe the tools. A match is a keyword in the text, not a finding about the post or its author.

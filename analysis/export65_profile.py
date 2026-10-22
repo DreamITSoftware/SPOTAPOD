@@ -98,6 +98,8 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("folder")
     ap.add_argument("--cutoff", default="2024-10-21", help="UTC date, YYYY-MM-DD (default 2024-10-21)")
+    ap.add_argument("--stats", action="store_true",
+                    help="also print counts for the statsLikes, statsComments and statsViews fields and for post text")
     ap.add_argument("--write-manifest")
     ap.add_argument("--check-manifest")
     a = ap.parse_args()
@@ -222,6 +224,58 @@ def main():
             100.0 * sum(1 for x in lags if x > 168) / len(lags)))
         print("  decoded post dates run from %s to %s; before %s: %d" % (
             iso(min(pdates)), iso(max(pdates)), a.cutoff, sum(1 for p in pdates if p < cutoff)))
+
+    if a.stats:
+        def val(r, k):
+            v = r.get(k)
+            return v if isinstance(v, (int, float)) and not isinstance(v, bool) else None
+        def med(xs):
+            xs = sorted(xs)
+            return xs[len(xs) // 2] if xs else None
+        likes = [val(r, "statsLikes") for r in kept.values()]
+        comments = [val(r, "statsComments") for r in kept.values()]
+        views = [val(r, "statsViews") for r in kept.values()]
+        both = [(l, v) for l, v in zip(likes, views) if l is not None and v is not None]
+        print("\nEngagement statistics fields as stored (the site does not document what they measure)")
+        print("  Records with post text (title):      %d of %d" % (sum(1 for r in kept.values() if r.get("title")), n))
+        print("  statsLikes present:                  %d (median %s)" % (sum(1 for x in likes if x is not None), med([x for x in likes if x is not None])))
+        print("  statsComments present:               %d (median %s)" % (sum(1 for x in comments if x is not None), med([x for x in comments if x is not None])))
+        print("  statsViews present:                  %d (median %s)" % (sum(1 for x in views if x is not None), med([x for x in views if x is not None])))
+        print("  Records with both likes and views:   %d" % len(both))
+        print("    statsViews of 0 with statsLikes above 0: %d" % sum(1 for l, v in both if v == 0 and l > 0))
+        print("    statsLikes above statsViews:             %d (%.1f%%)" % (
+            sum(1 for l, v in both if l > v), 100.0 * sum(1 for l, v in both if l > v) / len(both) if both else 0.0))
+
+        # concentration by account and repetition of post text; one-way hashes in memory, counts only
+        def acct(r):
+            k = (str(r.get("firstName")).strip().lower() + "|" + str(r.get("lastName")).strip().lower()).encode("utf-8")
+            return hashlib.sha256(k).hexdigest()
+        per_acct = collections.Counter(acct(r) for r in kept.values())
+        ranked = sorted(per_acct.values(), reverse=True)
+        print("\nRecords by account (first + last name, case-normalised; counts only)")
+        print("  Distinct accounts:                   %d" % len(ranked))
+        for k in (20, 100):
+            print("  Share of records from the top %-3d accounts: %.1f%%" % (k, 100.0 * sum(ranked[:k]) / n))
+        print("  Accounts with 1 record: %d; with 100 or more: %d (%.1f%% of records)" % (
+            sum(1 for c in ranked if c == 1), sum(1 for c in ranked if c >= 100),
+            100.0 * sum(c for c in ranked if c >= 100) / n))
+        text_recs = collections.Counter()
+        text_accts = collections.defaultdict(set)
+        for r in kept.values():
+            t = r.get("title")
+            if t:
+                th = hashlib.sha256(t.encode("utf-8")).hexdigest()
+                text_recs[th] += 1
+                text_accts[th].add(acct(r))
+        withtext = sum(text_recs.values())
+        rep = [c for c in text_recs.values() if c > 1]
+        print("\nRepetition of post text (exact match; counts only)")
+        print("  Distinct post texts:                 %d of %d records with text" % (len(text_recs), withtext))
+        print("  Texts that occur in more than 1 record: %d (covering %d records)" % (len(rep), sum(rep)))
+        print("  Most records sharing one text:       %d" % (max(text_recs.values()) if text_recs else 0))
+        multi = [len(v) for v in text_accts.values() if len(v) > 1]
+        print("  Texts submitted under more than 1 account name: %d; most account names for one text: %d" % (
+            len(multi), max(multi) if multi else 1))
 
     if a.write_manifest:
         with open(a.write_manifest, "w", newline="", encoding="utf-8") as fh:

@@ -12,6 +12,7 @@ matched text is printed or returned.
 Usage:
     python3 topic_taxonomy.py /path/to/podawaa2024.json /path/to/HyperClaper.json /path/to/LinkBoost-2025.json
     python3 topic_taxonomy.py ... --json   # machine-readable output
+    python3 topic_taxonomy.py ... --export65 /path/to/folder_with_the_65_files   # adds a separate block for the 65 export files
 """
 import sys
 import json
@@ -98,6 +99,8 @@ def main():
     ap.add_argument("hyperclapper_path")
     ap.add_argument("linkboost_path")
     ap.add_argument("--json", action="store_true", help="print machine-readable JSON instead of a text report")
+    ap.add_argument("--export65", metavar="PATH",
+                    help="folder with the 65 export files; reported as a separate block and NOT added to the three-dataset totals")
     args = ap.parse_args()
 
     datasets = {
@@ -107,6 +110,12 @@ def main():
     }
 
     all_category_names = [name for name, _ in CATEGORIES] + [FALLBACK]
+    export65_counts, export65_n = None, 0
+    if args.export65:
+        from export65_loader import load_export65  # the 65 export files; see export65_loader.py
+        e_texts = load_export65(args.export65)
+        export65_n = len(e_texts)
+        export65_counts = Counter(classify(t) for t in e_texts)
     totals = Counter()
     by_dataset = {name: Counter() for name in all_category_names}
     dataset_sizes = {}
@@ -140,7 +149,15 @@ def main():
             "method": "priority-ordered keyword pattern match; each record assigned to exactly one category (first match wins); no record, author, or matched text is included in this output",
             "categories_in_priority_order": all_category_names,
         }
-        print(json.dumps({"meta": meta, "categories": result}, indent=2))
+        out = {"meta": meta, "categories": result}
+        if export65_counts is not None:
+            out["export65"] = {
+                "records": export65_n,
+                "by_category": {cat: {"count": export65_counts[cat],
+                                      "pct": round(export65_counts[cat] / export65_n * 100, 2)}
+                                for cat in all_category_names},
+            }
+        print(json.dumps(out, indent=2))
         return
 
     print("=" * 70)
@@ -156,6 +173,12 @@ def main():
             c = by_dataset[cat][ds]
             p = c / dataset_sizes[ds] * 100
             print(f"    {ds:<20} {c:>7,}  ({p:5.2f}% of {ds})")
+    if export65_counts is not None:
+        print()
+        print("65 export files, run separately (not included in the totals above)")
+        print(f"Records: {export65_n:,}")
+        for cat in all_category_names:
+            print(f"{cat:<32} {export65_counts[cat]:>7,}  ({export65_counts[cat] / export65_n * 100:5.2f}% of the 65 export files)")
     print()
     print("Reminder: keyword-pattern SIGNALS, not verified topic labels. No")
     print("record, author, or matched text is identified by this script.")

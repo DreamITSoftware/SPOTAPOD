@@ -85,3 +85,30 @@ though still well below the corporation-mention rate (13-23%) in
 Same as every keyword scan in this repo: a match means the term
 appears in the text, not that the post describes a real investment,
 a real fund, or a real transaction.
+
+<!-- export65-section -->
+## The 65 export files
+
+Added 22 October 2026. This is the same scan run on the 65 export files: 56,363 distinct records after the files are de-duplicated on record id, reading each record's `title` field, which holds the post text. These files are a separate set from the three datasets above, and nothing above this heading has changed. Their source, method and limits are in [provenance.md](../provenance.md#the-65-export-files) and [export-65-profile.md](export-65-profile.md). Rates use all 56,363 records as the denominator, and 237 of them have no post text. Command: `python3 analysis/investment_vc_scan.py export65 /path/to/folder_with_the_65_files`.
+
+```text
+=== 65 export files (56,363 records) ===
+Records mentioning investment/VC terms: 3,951 (7.010%)
+Distinct underlying text values: 3,862
+    investment / investing                 2,361 (4.189%)
+    investor(s)                            1,859 (3.298%)
+    VC (venture capital abbrev.)           262 (0.465%)
+    private equity                         191 (0.339%)
+    IPO                                    125 (0.222%)
+    venture capital                        92 (0.163%)
+    seed funding / seed round              29 (0.051%)
+    Series A/B/C funding                   20 (0.035%)
+    angel investor                         13 (0.023%)
+    venture capitalist(s)                  10 (0.018%)
+    raised a round / raised funding        6 (0.011%)
+    startup funding                        5 (0.009%)
+```
+
+3,951 of 56,363 records (7.01%) match. In the three datasets above the same measure is 3.43% in podawaa2024, 4.56% in HyperClapper and 5.17% in LinkBoost-2025 (using the corrected figure where this page gives one), which puts the 65 export files at the highest of the four. The scan's duplicate-template check did not fire, and the matching records hold 3,862 distinct texts.
+
+The rates come from different fields and different kinds of record, so a gap between them describes the files and does not describe the tools. A match is a keyword in the text, not a finding about the post or its author.

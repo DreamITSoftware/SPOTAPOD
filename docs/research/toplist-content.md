@@ -68,3 +68,24 @@ difference, between the two datasets.
 Same as every keyword scan in this repo: a match means the phrase
 pattern appears in the text, not that the post is a genuine, well-
 researched listicle, or that its claims are accurate.
+
+<!-- export65-section -->
+## The 65 export files
+
+Added 22 October 2026. This is the same scan run on the 65 export files: 56,363 distinct records after the files are de-duplicated on record id, reading each record's `title` field, which holds the post text. These files are a separate set from the three datasets above, and nothing above this heading has changed. Their source, method and limits are in [provenance.md](../provenance.md#the-65-export-files) and [export-65-profile.md](export-65-profile.md). Rates use all 56,363 records as the denominator, and 237 of them have no post text. Command: `python3 analysis/toplist_content_scan.py export65 /path/to/folder_with_the_65_files`.
+
+```text
+=== 65 export files (56,363 records) ===
+Records mentioning any top-list/listicle term: 1,897 (3.366%)
+Distinct underlying text values: 1,429
+    Top N (Top 5/10/etc.)              1,037
+    N ways/tips/reasons (listicle)     761
+    best of                            87
+    must-read                          28
+    ultimate guide                     23
+    must-know                          5
+```
+
+1,897 of 56,363 records (3.366%) match a top-list or listicle pattern, against 1.733% (podawaa2024), 3.614% (HyperClapper) and 3.920% (LinkBoost-2025), which is the second lowest of the four. Top N is the most frequent pattern (1,037 records), then N ways, tips or reasons (761). The matches hold 1,429 distinct texts, so repeated texts account for part of the count.
+
+The rates come from different fields and different kinds of record, so a gap between them describes the files and does not describe the tools. A match is a keyword in the text, not a finding about the post or its author.

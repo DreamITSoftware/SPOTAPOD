@@ -97,3 +97,8 @@ instead of post content.
   bucket depends on which pattern happens to match first in priority
   order, this is not a verified job classification, and no claim is made
   about any specific record or the person behind it.
+
+<!-- export65-section -->
+## The 65 export files
+
+Added 22 October 2026. This scan was not run on the 65 export files. It classifies the occupation or headline field, which the 65 files do not have. What the 65 files hold is in [export-65-profile.md](export-65-profile.md).

@@ -72,3 +72,8 @@ show the actual arithmetic, plainly labeled for what it is, specifically
 so nobody, including anyone reading this repo without the context of how
 it was produced, mistakes a multiplication exercise for a legal or
 financial conclusion this repo, or anyone, is in a position to make.
+
+<!-- export65-section -->
+## The 65 export files
+
+Added 22 October 2026. This scan was not run on the 65 export files. This page multiplies a record count by a statutory maximum as a deliberately extreme exercise that should not be quoted as an estimate. Adding a count for the 65 files would add a figure of the same kind, so it was not run. What the 65 files hold is in [export-65-profile.md](export-65-profile.md).

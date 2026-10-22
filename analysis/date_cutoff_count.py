@@ -22,6 +22,10 @@ Dataset-specific caveats:
     pod tool CAPTURED the record, not necessarily when the underlying
     post was originally published. Not directly comparable to
     podawaa2024's decoded post date.
+  - 65 export files (optional --export65): each distinct record has a stored
+    `createdAt` (when the record was created in the tool, read as UTC), and
+    its `url` holds the target post's id, decoded with the same INFERENCE as
+    above. Both are reported. See ../docs/research/export-65-profile.md.
   - LinkBoost-2025.json: has no dedicated timestamp field, but each
     record's `Url` embeds a LinkedIn activity URN
     (`urn:li:activity:<id>`) identifying the TARGET post, and that id
@@ -36,6 +40,7 @@ Usage:
     python3 date_cutoff_count.py /path/to/podawaa2024.json \\
         /path/to/HyperClapper.json /path/to/LinkBoost-2025.json \\
         --cutoff 2024-10-22
+    python3 date_cutoff_count.py ... --export65 /path/to/folder_with_the_65_files
 """
 import sys
 import json
@@ -128,11 +133,38 @@ def count_linkboost(path, cutoff):
     return total, after, undecodable, len(posts_after), len(posts_before)
 
 
+def count_export65(path, cutoff):
+    """Distinct records of the 65 export files: split by stored createdAt and by decoded target-post date."""
+    from export65_loader import load_records  # the 65 export files; see export65_loader.py
+    from export65_profile import created_ms, post_ms
+    recs = load_records(path)
+    cut_ms = cutoff.timestamp() * 1000
+    created_after = created_missing = post_after = post_undecodable = 0
+    posts_after, posts_before = set(), set()
+    for r in recs:
+        c = created_ms(r)
+        if c is None:
+            created_missing += 1
+        elif c > cut_ms:
+            created_after += 1
+        p = post_ms(r)
+        if p is None:
+            post_undecodable += 1
+        elif p > cut_ms:
+            post_after += 1
+            posts_after.add(p)
+        else:
+            posts_before.add(p)
+    return len(recs), created_after, created_missing, post_after, post_undecodable, len(posts_after), len(posts_before)
+
+
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("podawaa_path")
     parser.add_argument("hyperclapper_path")
     parser.add_argument("linkboost_path")
+    parser.add_argument("--export65", metavar="PATH",
+                        help="folder with the 65 export files; adds one line for them")
     parser.add_argument("--cutoff", default="2024-10-22",
                          help="Cutoff date, YYYY-MM-DD (UTC). Default: 2024-10-22")
     args = parser.parse_args()
@@ -162,6 +194,17 @@ def main():
         f"a decodable activity id | unique target posts: {posts_after_lb} after, "
         f"{posts_before_lb} before"
     )
+
+    if args.export65:
+        total_e, created_after, created_missing, post_after, post_undecodable, up_after, up_before = count_export65(
+            args.export65, cutoff_date
+        )
+        print(
+            f"65 export files: {total_e} distinct records | {created_after} created (createdAt) after "
+            f"{args.cutoff} | {created_missing} without a usable createdAt | {post_after} decoded "
+            f"(via url's post id) after {args.cutoff} | {post_undecodable} without a decodable post id | "
+            f"unique target posts: {up_after} after, {up_before} before"
+        )
 
 
 if __name__ == "__main__":

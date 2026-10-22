@@ -67,3 +67,20 @@ directly from the data (VERIFIED), each dataset's date field is labeled
 for what it actually measures and what tier its decoding sits at, and
 the one thing this repo will not do, turn a date range into a compliance
 finding, is stated here as plainly as everywhere else in this project.
+
+<!-- export65-section -->
+## The 65 export files
+
+Added 22 October 2026. `analysis/date_cutoff_count.py` takes an optional `--export65 /path/to/folder_with_the_65_files` and prints one more line, for the 65 export files. The first three lines are unchanged, and the cutoff is the same, 22 October 2024. The 65 files are a separate set (see [provenance.md](../provenance.md#the-65-export-files) and [export-65-profile.md](export-65-profile.md)).
+
+```
+podawaa2024.json: 213491 total records | 2636 decoded after 2024-10-22 | 3364 without a decodable linkedinPostId
+HyperClapper.json: 49369 total records | 45528 captured (created_at) after 2024-10-22 | 0 without a usable created_at
+LinkBoost-2025.json: 77969 total records | 77943 decoded (via Url's activity id) after 2024-10-22 | 0 without a decodable activity id | unique target posts: 3127 after, 2 before
+65 export files: 56363 distinct records | 55861 created (createdAt) after 2024-10-22 | 0 without a usable createdAt | 55767 decoded (via url's post id) after 2024-10-22 | 0 without a decodable post id | unique target posts: 55025 after, 596 before
+```
+
+- **Stored creation time.** Every one of the 56,363 distinct records has a usable `createdAt`, which I read as UTC. 55,861 (99.11%) were created after 22 October 2024 and 502 on or before it. The site does not define the field, so reading it as the time the tool created the record is an INFERENCE.
+- **Decoded post date.** The post id in each record's `url` decodes with the same INFERENCE as the other files. 55,767 records (98.94%) target a post published after the cutoff and 596 (1.06%) do not. The records target 55,025 distinct posts after the cutoff and 596 before it.
+- **The day the rule took effect.** [16 CFR § 465.8](../regulatory-context.md) took effect on 21 October 2024. At that date, [export-65-profile.md](export-65-profile.md) reports 438 records created before it (0.78%) and 55,925 on or after it (99.22%). The two cutoffs differ by the 64 records created on 21 October.
+- **What the dates are not.** The creation time is a different kind of date from the other three files' dates: it is neither a capture time, as in HyperClapper, nor a decoded post date, as in podawaa2024 and LinkBoost-2025. The count covers the records that the export returned, and 22 of the 65 files stop at exactly 5,000 records, so older records are probably missing (INFERENCE). The split is a count and not a count of violations, for the reasons given above.

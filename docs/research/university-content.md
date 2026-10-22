@@ -73,3 +73,29 @@ about the named institution. This doc's own correction above is a
 reminder that cross-dataset comparison - not just within-dataset
 distinct-string or duplicate-template checks - can itself surface a
 methodological problem that neither check alone would catch.
+
+<!-- export65-section -->
+## The 65 export files
+
+Added 22 October 2026. This is the same scan run on the 65 export files: 56,363 distinct records after the files are de-duplicated on record id, reading each record's `title` field, which holds the post text. These files are a separate set from the three datasets above, and nothing above this heading has changed. Their source, method and limits are in [provenance.md](../provenance.md#the-65-export-files) and [export-65-profile.md](export-65-profile.md). Rates use all 56,363 records as the denominator, and 237 of them have no post text. Command: `python3 analysis/university_content_scan.py export65 /path/to/folder_with_the_65_files`.
+
+```text
+=== 65 export files (56,363 records) ===
+Records mentioning any university-related term: 1,370 (2.431%)
+Distinct underlying text values: 1,295
+    university/universities            652
+    college(s)                         325
+    Harvard                            207
+    Stanford                           172
+    MIT (strict, case-sensitive)       138
+    Oxford                             41
+    Berkeley                           20
+    Cambridge                          14
+    Yale                               14
+    Princeton                          7
+    Ivy League                         6
+```
+
+1,370 of 56,363 records (2.431%) match. In the three datasets above the same measure is 1.216% in podawaa2024, 2.791% in HyperClapper and 2.534% in LinkBoost-2025 (using the corrected figure where this page gives one), which puts the 65 export files at the second lowest of the four. The scan's duplicate-template check did not fire, and the matching records hold 1,295 distinct texts.
+
+The rates come from different fields and different kinds of record, so a gap between them describes the files and does not describe the tools. A match is a keyword in the text, not a finding about the post or its author.

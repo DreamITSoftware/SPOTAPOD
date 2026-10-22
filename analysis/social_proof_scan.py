@@ -21,6 +21,7 @@ Usage:
     python3 social_proof_scan.py podawaa /path/to/podawaa2024.json
     python3 social_proof_scan.py hyperclapper /path/to/HyperClaper.json
     python3 social_proof_scan.py linkboost /path/to/LinkBoost-2025.json
+    python3 social_proof_scan.py export65 /path/to/folder_with_the_65_files
 """
 import sys
 import json
@@ -89,6 +90,9 @@ def load_linkboost(path):
 
 LOADERS = {"podawaa": load_podawaa, "hyperclapper": load_hyperclapper, "linkboost": load_linkboost}
 LABELS = {"podawaa": "podawaa2024", "hyperclapper": "HyperClapper", "linkboost": "LinkBoost-2025"}
+from export65_loader import load_export65  # the 65 export files; see export65_loader.py
+LOADERS["export65"] = load_export65
+LABELS["export65"] = "65 export files"
 
 
 def main():

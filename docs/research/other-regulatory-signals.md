@@ -77,3 +77,31 @@ which law is invoked.
 See [audience-impact.md](audience-impact.md) for a discussion of what
 these categories could mean for the people who *saw* this content, framed
 as an inferred mechanism rather than a measured outcome.
+
+<!-- export65-section -->
+## The 65 export files
+
+Added 22 October 2026. This is the same scan run on the 65 export files: 56,363 distinct records after the files are de-duplicated on record id, reading each record's `title` field, which holds the post text. These files are a separate set from the three datasets above, and nothing above this heading has changed. Their source, method and limits are in [provenance.md](../provenance.md#the-65-export-files) and [export-65-profile.md](export-65-profile.md). Rates use all 56,363 records as the denominator, and 237 of them have no post text. Command: `python3 analysis/regulatory_category_scan.py export65 /path/to/folder_with_the_65_files`.
+
+```text
+============================================================
+EXPORT65: REGULATORY-CATEGORY SIGNAL SCAN (aggregate, de-identified)
+============================================================
+Total records scanned: 56,363
+Records matching at least one category: 3,896 (6.91%)
+
+Category signal counts (a record can match more than one):
+  health_medical_claims            2,325 (4.13%)
+  financial_investment_claims      101 (0.18%)
+  professional_licensing_language  39 (0.07%)
+  endorsement_disclosure_gap       1,522 (2.70%)
+
+Reminder: these are keyword-pattern SIGNALS, not findings. No
+record, author, or occupation is identified by this script, and
+no legal conclusion follows from a match. See
+docs/research/other-regulatory-signals.md.
+```
+
+3,896 of 56,363 records (6.91%) match at least one category, against 1.99% (podawaa2024), 5.80% (HyperClapper) and 5.69% (LinkBoost-2025), which is the highest of the four. By category the 65 files give health_medical_claims 4.13% (the three datasets above: 0.66%, 2.79%, 3.38%; highest of the four), financial_investment_claims 0.18% (0.07%, 0.14%, 0.26%; second highest), professional_licensing_language 0.07% (0.01%, 0.01%, 0.09%; second highest) and endorsement_disclosure_gap 2.70% (1.27%, 3.02%, 2.07%; second highest). These are keyword signals, as the page above explains, and the matches are not findings about any post.
+
+The rates come from different fields and different kinds of record, so a gap between them describes the files and does not describe the tools. A match is a keyword in the text, not a finding about the post or its author.

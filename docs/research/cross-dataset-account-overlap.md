@@ -69,3 +69,8 @@ established for it, if one exists) could change the result. This scan
 also cannot detect overlap between accounts that use different vanity
 usernames across the two tools, or accounts that changed their vanity
 username between the two datasets' collection windows.
+
+<!-- export65-section -->
+## The 65 export files
+
+Added 22 October 2026. This scan was not run on the 65 export files. It hashes the vanity usernames that HyperClapper and LinkBoost-2025 hold. The 65 files hold first and last names and a post link with no username, so the same test cannot be run. A comparison by name would be a weaker test of a different kind, and it was not run. What the 65 files hold is in [export-65-profile.md](export-65-profile.md).

@@ -64,3 +64,23 @@ niche health/geography/entity scans checked elsewhere in this repo.
 Same as every keyword scan in this repo: a match means the term
 appears in the text, not that the post describes a genuine personal
 rejection experience.
+
+<!-- export65-section -->
+## The 65 export files
+
+Added 22 October 2026. This is the same scan run on the 65 export files: 56,363 distinct records after the files are de-duplicated on record id, reading each record's `title` field, which holds the post text. These files are a separate set from the three datasets above, and nothing above this heading has changed. Their source, method and limits are in [provenance.md](../provenance.md#the-65-export-files) and [export-65-profile.md](export-65-profile.md). Rates use all 56,363 records as the denominator, and 237 of them have no post text. Command: `python3 analysis/rejection_content_scan.py export65 /path/to/folder_with_the_65_files`.
+
+```text
+=== 65 export files (56,363 records) ===
+Records mentioning any rejection-related term: 448 (0.795%)
+Distinct underlying text values: 425
+    rejection(s)         223
+    rejected             181
+    reject               96
+    job rejection        14
+    rejection letter     2
+```
+
+448 of 56,363 records (0.795%) match. In the three datasets above the same measure is 0.165% in podawaa2024, 1.183% in HyperClapper and 1.204% in LinkBoost-2025 (using the corrected figure where this page gives one), which puts the 65 export files at the second lowest of the four. The scan's duplicate-template check did not fire, and the matching records hold 425 distinct texts.
+
+The rates come from different fields and different kinds of record, so a gap between them describes the files and does not describe the tools. A match is a keyword in the text, not a finding about the post or its author.

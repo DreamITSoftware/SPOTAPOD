@@ -87,3 +87,26 @@ about a post's substance beyond its length - a one-word post could be
 genuine engagement bait, a data artifact, a bare link, or an incomplete
 export. As with every other repeated-content finding in this repo, only
 strings that recur across multiple records are ever shown.
+
+<!-- export65-section -->
+## The 65 export files
+
+Added 22 October 2026. This is the same scan run on the 65 export files: 56,363 distinct records after the files are de-duplicated on record id, reading each record's `title` field, which holds the post text. These files are a separate set from the three datasets above, and nothing above this heading has changed. Their source, method and limits are in [provenance.md](../provenance.md#the-65-export-files) and [export-65-profile.md](export-65-profile.md). Rates use all 56,363 records as the denominator, and 237 of them have no post text. Command: `python3 analysis/one_word_posts_scan.py export65 /path/to/folder_with_the_65_files`.
+
+```text
+=== 65 export files (56,363 records) ===
+One-word posts: 315 (0.559%)
+Distinct one-word strings: 67
+Top repeated one-word posts (>= 3 occurrences):
+  x163: 'Agree?'
+  x52: 'Thoughts?'
+  x11: 'Remember:'
+  x8: 'Home'
+  x7: 'HOME'
+  x5: 'lttr.ai'
+  x3: 'Interesting'
+```
+
+315 of 56,363 records (0.559%) are a single word, against 2.158% (podawaa2024), 0.223% (HyperClapper) and 1.309% (LinkBoost-2025), which puts the 65 export files at the second lowest of the four. They hold 67 distinct one-word strings. The question Agree? is again the most repeated: 163 records, 51.7% of the one-word posts. Thoughts? comes next with 52.
+
+The rates come from different fields and different kinds of record, so a gap between them describes the files and does not describe the tools. A match is a keyword in the text, not a finding about the post or its author.

@@ -67,3 +67,19 @@ homeless-services agency, or that the content is accurate or
 representative of the sector. The broad tally in particular should be
 read as an upper bound inflated by unrelated uses of "shelter," not a
 trustworthy standalone figure.
+
+<!-- export65-section -->
+## The 65 export files
+
+Added 22 October 2026. This is the same scan run on the 65 export files: 56,363 distinct records after the files are de-duplicated on record id, reading each record's `title` field, which holds the post text. These files are a separate set from the three datasets above, and nothing above this heading has changed. Their source, method and limits are in [provenance.md](../provenance.md#the-65-export-files) and [export-65-profile.md](export-65-profile.md). Rates use all 56,363 records as the denominator, and 237 of them have no post text. Command: `python3 analysis/homelessness_content_scan.py export65 /path/to/folder_with_the_65_files`.
+
+```text
+=== 65 export files (56,363 records) ===
+NARROW (homeless/homelessness, unhoused, housing insecurity, homeless services): 39 (0.0692%)
+  Distinct underlying text values: 39
+BROAD (narrow + affordable housing + bare "shelter", noisier): 76 (0.1348%)
+```
+
+39 of 56,363 records (0.0692%) match the narrow patterns and 76 (0.1348%) match the broad patterns. The three datasets above give a narrow rate of 0.030% (podawaa2024), 0.018% (HyperClapper) and 0.273% raw for LinkBoost-2025 (about 135 records after the correction on this page), and a broad rate of 0.067%, 0.069% and 0.273%. The narrow rate in the 65 files is above the first two and below LinkBoost-2025 on both its raw and corrected counts. All 39 narrow matches are distinct texts.
+
+The rates come from different fields and different kinds of record, so a gap between them describes the files and does not describe the tools. A match is a keyword in the text, not a finding about the post or its author.
