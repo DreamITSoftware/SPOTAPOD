@@ -83,3 +83,20 @@ Top level: `[ ... ]` (flat array, no wrapper object)
 | `MaxReactions` | int | 100.0% | Matches podawaa2024.json's `Likes` for the same post ID, for records checked |
 | `Title` | string | 100.0% | Matches podawaa2024.json's `Content` for the same post ID, for records checked |
 
+
+## The 65 export files (`podUsers_<id>_<stamp>.json`)
+
+Each file is one server response: a text frame that wraps a JSON message holding a list of records. Percentages are of the 56,363 distinct records (see [provenance.md](provenance.md#the-65-export-files)). `statsLikes`, `statsComments` and `statsViews` fall within the definition at 16 CFR § 465.1(j), like the indicator fields above.
+
+| Field | Type | Completeness | Notes |
+|---|---|---|---|
+| `_id` | string | 100.0% | Record id. Used only to de-duplicate, **never printed** |
+| `state` | string | 100.0% | `finishedEngagement` 96.5%, `deleted` 2.9%, `stopped` 0.5%, `running` 0.2%. A state of the tool's record, not an outcome on LinkedIn |
+| `url` | string | 100.0% | URL of a LinkedIn post. A direct identifier, **never printed**. The post id inside it is decoded for a date in one script (INFERENCE: see [method](method.md)) |
+| `engageTiming` | string | 74.8% | A timing setting stored as text: single values such as `20`, `60`, `120` and `300`, and ranges such as `300to900`. The files do not state the unit |
+| `createdAt` | object | 100.0% | `{"$date": <milliseconds>}`. Creation time of the record, read as stored and reported in UTC |
+| `engagementType` | string | 100.0% | `normal` 74.6%, `human` 15.9%, `viral` 7.6%, `steady` 2.0% |
+| `firstName`, `lastName` | string | 100.0%, 99.8% | Direct identifiers. **Never printed**, hashed in memory to count distinct accounts |
+| `title` | string | 99.6% | Post text |
+| `engagedUsersCount` | int | 100.0% | Median 278, mean 249.1, maximum 1,003. A number stored on the tool's record, not a count of people verified to have engaged |
+| `statsLikes`, `statsComments`, `statsViews` | int | 83.3%, 57.7%, 21.3% | Counts stored on some records |

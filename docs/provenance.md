@@ -16,6 +16,36 @@ See [limitations.md](limitations.md) for why guessing at provenance isn't
 how this repo operates. If you can confirm where and how this file was
 obtained, that goes here as STATED, same as the other two.
 
+## The 65 export files
+
+These are a separate set of files. They are not one of the three datasets in the table above, and they are unrelated to `spotapod.json`. Each is named `podUsers_<id>_<stamp>.json`. They were collected by this repo's author, Daniel Hall. Like the other raw files they are not included in this repo, and the checksum manifest is [checksums/EXPORT65_MANIFEST.csv](../checksums/EXPORT65_MANIFEST.csv).
+
+| Item | What is recorded | Tier |
+|---|---|---|
+| Reported source | The LinkBoost web application at linkboost.co | STATED by the collector |
+| Reported collection method | Navigated to the site directly and captured the resulting data to a local server | STATED by the collector |
+| Export date | 16 October 2026 | VERIFIED as internally consistent: the file names carry export stamps on that day and the latest `createdAt` in any file is also 16 October 2026 |
+
+The source and the method are asserted by the person who collected the files. This repo cannot check them, and it has no chain of custody for the files. The entry above does not change the entry for `LinkBoost-2025.json` in the first table. That file shares the product's name with the site, its source is still not stated, and nothing here says that the two hold the same data.
+
+### What the files themselves show
+
+Every figure in this list is **VERIFIED, reproducible**: it is computed by [`analysis/export65_profile.py`](../analysis/export65_profile.py) from the files, and the output is in [export-65-profile.md](research/export-65-profile.md).
+
+- 83 files were supplied. 18 are byte-identical copies of another file, which leaves **65 distinct files**.
+- The export stamps in the file names run from `2026-16-10--12-24-12` to `2026-16-10--13-44-05`. The order is year, day, month, and the time zone is not stated.
+- Each file is one server response: a text frame that wraps a JSON message holding a list of records. The script unwraps it before reading.
+- The 65 files hold 184,737 records. These de-duplicate on `_id` to **56,363 distinct records**, and 32,842 of those appear in more than one file. When a record is in several files, the analysis keeps the copy with the highest `engagedUsersCount`. For 8 records the `state` differs between files.
+- 22 files hold exactly 5,000 records, which is the size of the largest file. That looks like an export limit (INFERENCE: no file or person states it). The records in those 22 files span a median of 35 days, against 735 days for the other 43 files, so older records for those accounts are probably missing.
+- Every record has a creation time, `createdAt`, in milliseconds. The earliest is 11 October 2024 and the latest is 16 October 2026 (UTC). 438 records were created before 21 October 2024, the date on which 16 CFR § 465.8 took effect, and 55,925 on or after it. A date split says nothing about whether any record reflects a sale of a fake indicator (see [regulatory-context.md](regulatory-context.md)).
+- The records carry 1,380 distinct accounts, counted from case-normalised first and last names that are hashed in memory and never printed.
+
+### What this does not establish
+
+Treat the reported source and method as the collector's account and nothing firmer.
+
+This repo makes no statement about whether the capture complied with the site's terms of service. The caution in the "Terms of service" section below applies to these files in full. Two things bear on publishing them. Every record carries a first name, a last name and the URL of a LinkedIn post (see [privacy.md](privacy.md)), and the site's published terms contain a clause on disclosing non-public information made available through the service. The collector read that clause through a tool that summarizes pages, so it is STATED. This repo takes no position on whether it reaches these files.
+
 ## A fourth file, supplied as `spotapod.json`: not independent data
 
 A file supplied under the name `spotapod.json` was checked directly

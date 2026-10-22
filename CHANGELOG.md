@@ -15,6 +15,18 @@
 
 ### Added
 - Citations of the author's related work: the book *DIGITAL BOUGHTulism: POONAMI* and a second Harvard Dataverse record in `CITATION.cff` and the README, plus the October 2026 *Cyber Defense eMagazine* article and *Top 100 List of Lies on Social Media* in the README. All are listed as STATED and none is checked here.
+- Provenance note and aggregate profile for a separate set of 65 export files
+  (`podUsers_<id>_<stamp>.json`), collected by this repo's author. Added
+  `docs/provenance.md#the-65-export-files` (reported source and method, both
+  STATED; what the files show, VERIFIED), a section each in
+  `docs/data-dictionary.md`, `docs/privacy.md` and `docs/limitations.md`,
+  `docs/research/export-65-profile.md`, `analysis/export65_profile.py`
+  (counts only; prints no name, URL, id or post text) and
+  `checksums/EXPORT65_MANIFEST.csv` (hashes, record counts and date ranges for
+  the 65 distinct files). The raw files are not included. Verified: 83 files
+  supplied, 18 byte-identical copies, 65 distinct files, 184,737 records,
+  56,363 distinct `_id` values. The entry for `LinkBoost-2025.json` is
+  unchanged: its source is still not stated.
 - A file supplied as `spotapod.json` was checked before being treated as a
   fourth independent dataset. Verified: every one of its 201,000 unique
   `linkedinPostId` values and every one of its 6,948 unique authors already

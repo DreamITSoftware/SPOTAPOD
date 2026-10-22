@@ -88,5 +88,37 @@ class TestDuplicateContent(unittest.TestCase):
         self.assertNotIn("test-user-two", result.stdout)
 
 
+class TestExport65Profile(unittest.TestCase):
+    FOLDER = str(FIXTURES / "export65")
+
+    def test_runs_and_reports_counts(self):
+        result = run_script("export65_profile.py", self.FOLDER)
+        self.assertEqual(result.returncode, 0, result.stderr)
+        self.assertIn("Files uploaded:                      3", result.stdout)
+        self.assertIn("Distinct files (by content):         2", result.stdout)
+        self.assertIn("Byte-identical extra copies:         1", result.stdout)
+        self.assertIn("Distinct records (_id):              3", result.stdout)
+        self.assertIn("Records present in more than 1 file: 1", result.stdout)
+        self.assertIn("Records whose state differs by file: 1", result.stdout)
+        self.assertIn("Created before 2024-10-21: 1", result.stdout)
+
+    def test_no_identifier_in_output(self):
+        result = run_script("export65_profile.py", self.FOLDER)
+        for text in ("Personone", "Persontwo", "Personthree", "FIXTURE_REC",
+                     "urn:li:activity", "linkedin.com", "Fixture post text"):
+            self.assertNotIn(text, result.stdout)
+
+    def test_manifest_round_trip(self):
+        import tempfile
+        with tempfile.TemporaryDirectory() as tmp:
+            out = str(Path(tmp) / "manifest.csv")
+            written = run_script("export65_profile.py", self.FOLDER, "--write-manifest", out)
+            self.assertEqual(written.returncode, 0, written.stderr)
+            checked = run_script("export65_profile.py", self.FOLDER, "--check-manifest", out)
+            self.assertIn("2 of 2 listed files found with matching hash and record count", checked.stdout)
+            for text in ("Personone", "FIXTURE_REC", "urn:li:activity"):
+                self.assertNotIn(text, Path(out).read_text(encoding="utf-8"))
+
+
 if __name__ == "__main__":
     unittest.main()
