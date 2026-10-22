@@ -103,3 +103,8 @@ A few practical points, not legal advice:
   with anyone else, that's a materially different, higher-risk step than
   what this repo does, and worth running past someone with actual legal
   expertise in your jurisdiction first.
+
+
+## The 65 export files
+
+A separate set of files, described in [provenance.md](provenance.md#the-65-export-files), holds first and last names and the URL of a LinkedIn post on every record, and the post text for 99.6% of them. The names alone point to 1,380 distinct accounts. That is enough to identify the people behind the records without any inference, so the files are not published here and no script in this repo prints a name, a URL, a record id or a post text from them. `analysis/export65_profile.py` hashes case-normalised names in memory to count accounts and discards the hashes. The manifest in `checksums/` lists file hashes, record counts and date ranges, with sequential file numbers in place of the source ids that appear in the file names.

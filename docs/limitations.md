@@ -81,3 +81,14 @@ merge, or join was used to produce any figure in this repo. See
 (16 CFR § 465.8) this whole analysis is oriented around, and what it does
 and doesn't require to prove a violation, and [provenance.md](provenance.md)
 for the reported (STATED, not verified) origin of each file.
+
+
+## What the 65 export files do and don't tell you
+
+These limits apply to [the 65 export files](provenance.md#the-65-export-files) and to every figure computed from them.
+
+- **A record is what was submitted and how a tool handled it.** The files hold no information on who engaged, who paid, what a post earned or what any reader did next. `state` and `engagedUsersCount` describe the tool's own record, and a state of `finishedEngagement` does not show that any engagement reached LinkedIn.
+- **The months are not an activity trend.** 22 of the 65 files stop at exactly 5,000 records and reach back a median of 35 days, so older records for those accounts are probably missing. A count per month can reflect that limit, the export date and the accounts that were exported, and these files cannot separate the three. The rise to 7,285 records in September 2026 and 4,829 in the first 16 days of October 2026 should not be read as growth.
+- **`createdAt` is the record's creation time, not the post's date.** Decoding the post id in `url` gives a publish time for the target post (INFERENCE: the decode is not confirmed by LinkedIn). Against that time 64.0% of records were created within one hour, 89.8% within 24 hours and 2.2% more than seven days later, and none was created earlier. The record date therefore approximates the post date for most records and not for all.
+- **A date split is not a violation count.** 438 records were created before 21 October 2024 and 55,925 on or after it. The split says when the tool's record was made. It does not show a sale of a fake indicator, a party to one or any other element of 16 CFR § 465.8.
+- **Provenance is the collector's account.** The source and the method are STATED. The repo cannot verify them.

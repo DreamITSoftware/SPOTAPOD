@@ -8,7 +8,7 @@ and deliberately diverges on key points: no raw data included, no
 per-author/per-record explorer (see [explorer/README.md](explorer/README.md)
 and [docs/limitations.md](docs/limitations.md) for why).*
 
-**A de-identified, aggregate-only companion analysis of three engagement-pod-adjacent datasets.**
+**A de-identified, aggregate-only companion analysis of three engagement-pod-adjacent datasets, with a provenance note and an aggregate profile of a separate set of 65 export files.**
 
 All three datasets are described by their depositors/collectors as tied to
 engagement-pod tooling, the kind of conduct addressed by
@@ -44,6 +44,15 @@ scripts, and the aggregate output those scripts produce. Put your own copies of 
 three files next to the scripts (or pass a path) to reproduce everything below.
 See [docs/provenance.md](docs/provenance.md) for the reported source and
 collection method for each file.
+
+A separate set of **65 export files** (`podUsers_<id>_<stamp>.json`, 56,363 distinct
+records) is documented in [docs/provenance.md](docs/provenance.md#the-65-export-files)
+and profiled in [docs/research/export-65-profile.md](docs/research/export-65-profile.md).
+It is not part of the three-dataset table above, so every statement in this README
+that says "all three datasets" is about podawaa2024.json, HyperClaper.json and
+LinkBoost-2025.json only. The 65 files are not included here (every record carries a
+name and a post URL), and the only script that reads them,
+[`analysis/export65_profile.py`](analysis/export65_profile.py), prints counts only.
 
 ## File structures
 
@@ -565,6 +574,7 @@ no per-record data). See [explorer/README.md](explorer/README.md) for why.
 - [Schemas](schema), reference JSON Schema for all three file formats
 - [Commentary: LinkedIn's CEO and the fakery he didn't mention](docs/commentary/linkedin-ceo-fakery-contrast.md), opinion piece contrasting a September 2026 WSJ interview with this repo's own findings; evidence-tiered, with two figures corrected against the raw source files before publication
 - [Pod count profile](docs/research/pod-count-profile.md), profiles a fourth supplied file (`spotapod.json`) shown to be a derived aggregation of podawaa2024.json rather than an independent dataset, and its one new field (`PODCount`)
+- [65 export files profile](docs/research/export-65-profile.md), file-level facts, record states, engagement types, creation dates and what the dates can and cannot show for a separate set of 65 export files (counts only)
 
 ## Other regulatory signals
 
