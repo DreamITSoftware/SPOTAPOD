@@ -24,6 +24,9 @@ Any future work extending this project's approach to new datasets should check w
 
 Full LinkBoost findings: **github.com/DreamITSoftware/SPOTAPOD**.
 
+<!-- export65-note -->
+> **Update, 22 October 2026.** The [65 export files](../provenance.md#the-65-export-files) store like, comment and view counts on part of their records (46,931, 32,534 and 11,987 of 56,363) and an `engagementType` of normal (74.6%), human (15.9%), viral (7.6%) or steady (2.0%). The collector reports that they came from the LinkBoost web application (STATED). The site does not document these fields, and this project has not determined whether they show a comment-based model or any other. Detail: [provenance](../provenance.md#the-65-export-files).
+
 ---
 
 *Self-published. Not peer-reviewed.*

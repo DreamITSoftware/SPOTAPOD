@@ -24,6 +24,9 @@ A chart alone can't carry an evidence tier, a methodology note, or a limitation.
 
 Full methodology and the chart's data: **github.com/DreamITSoftware/SPOTAPOD**.
 
+<!-- export65-note -->
+> **Update, 22 October 2026.** The chart above describes podawaa2024. In the [65 export files](../provenance.md#the-65-export-files), none of the 11,943 records that carry both a like count and a view count has zero views with likes above zero, so the same chart drawn for those files would show no zero-view bar. The fields are undocumented and views are present on only 11,987 of 56,363 records. Detail: [engagement statistics fields](../research/export-65-profile.md#engagement-statistics-fields).
+
 ---
 
 *Self-published. Not peer-reviewed.*

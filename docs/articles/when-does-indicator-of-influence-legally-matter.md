@@ -24,6 +24,9 @@ It's tempting to treat "this metric is legally defined as an indicator of influe
 
 Full regulatory text and analysis: **github.com/DreamITSoftware/SPOTAPOD**.
 
+<!-- export65-note -->
+> **Update, 22 October 2026.** The [65 export files](../provenance.md#the-65-export-files) carry fields named `statsLikes`, `statsComments` and `statsViews`. The names match metrics that § 465.1(j) lists, but the site does not document what the fields measure, so this project does not say whether they are indicators of social media influence under the rule. A field name is a schema fact and says nothing about whether any value was fake. Detail: [engagement statistics fields](../research/export-65-profile.md#engagement-statistics-fields).
+
 ---
 
 *Self-published. Not peer-reviewed. This is not legal advice.*

@@ -24,6 +24,9 @@ LinkBoost-2025 skews dramatically higher on both terms. About one in five record
 
 Full methodology: **github.com/DreamITSoftware/SPOTAPOD**.
 
+<!-- export65-note -->
+> **Update, 22 October 2026.** The speaker and thought-leader scan was not run on the [65 export files](../provenance.md#the-65-export-files), because it reads the occupation or headline field and those files have none. Detail: [speaker and thought leader](../research/speaker-thought-leader.md#the-65-export-files).
+
 ---
 
 *Self-published. Not peer-reviewed. Independently reproducible from the source files. No account is identified anywhere in this project.*

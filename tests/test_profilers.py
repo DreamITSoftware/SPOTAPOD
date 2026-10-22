@@ -118,6 +118,33 @@ class TestExport65Profile(unittest.TestCase):
         for text in ("Personone", "Persontwo", "Personthree", "FIXTURE_REC", "urn:li:activity", "Fixture post text"):
             self.assertNotIn(text, result.stdout)
 
+    def test_top_ten_by_likes_block(self):
+        """Twelve fabricated records: the ten highest like counts hold one record with no views, one with zero views, and eight with views."""
+        import json
+        import tempfile
+        recs = []
+        for i in range(12):
+            r = {"_id": "FIXTURE_TOP_%d" % i, "state": "finishedEngagement",
+                 "url": "https://www.linkedin.com/feed/update/urn:li:activity:7256145920000000000/",
+                 "createdAt": {"$date": 1730000600000 + i}, "engagementType": "normal",
+                 "firstName": "Fixture", "lastName": "Person%d" % i,
+                 "title": "Fixture post text %d" % i, "engagedUsersCount": 10,
+                 "statsLikes": 100 + i, "statsViews": 500 + i}
+            recs.append(r)
+        recs[11].pop("statsViews")   # highest likes, no view count
+        recs[10]["statsViews"] = 0   # second highest likes, zero views
+        frame = "a" + json.dumps([json.dumps({"msg": "result", "id": "FIXTURETOP", "result": recs})])
+        with tempfile.TemporaryDirectory() as tmp:
+            (Path(tmp) / "abcd0000-podUsers_FIXTURETOP_2026-16-10--12-00-00.json").write_text(frame, encoding="utf-8")
+            result = run_script("export65_profile.py", tmp, "--stats")
+        self.assertEqual(result.returncode, 0, result.stderr)
+        self.assertIn("Records with the 10 highest statsLikes (ties at the tenth value kept): 10", result.stdout)
+        self.assertIn("with statsViews of 0:                    1", result.stdout)
+        self.assertIn("with no statsViews field:                1", result.stdout)
+        self.assertIn("with statsViews above 0:                 8", result.stdout)
+        for text in ("Person1", "FIXTURE_TOP", "urn:li:activity", "Fixture post text"):
+            self.assertNotIn(text, result.stdout)
+
     def test_manifest_round_trip(self):
         import tempfile
         with tempfile.TemporaryDirectory() as tmp:

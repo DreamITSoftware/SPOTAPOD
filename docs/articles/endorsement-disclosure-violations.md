@@ -26,6 +26,9 @@ A base rate this consistent, across three independently sourced datasets, is a r
 
 Full methodology and all four regulatory-signal categories checked: **github.com/DreamITSoftware/SPOTAPOD**.
 
+<!-- export65-note -->
+> **Update, 22 October 2026.** In the [65 export files](../provenance.md#the-65-export-files), the endorsement-disclosure-gap signal is 2.70% of 56,363 records (1,522), which is inside the 1.27% to 3.02% range above and the second highest of the four sources. It is a keyword signal, with the same limits. Detail: [other regulatory signals](../research/other-regulatory-signals.md#the-65-export-files).
+
 ---
 
 *Self-published. Not peer-reviewed. This is not legal advice.*

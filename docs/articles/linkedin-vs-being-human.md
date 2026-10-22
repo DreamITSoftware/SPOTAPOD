@@ -26,6 +26,9 @@ Checked manually against LinkBoost-2025's top repeated matches (no single string
 
 Full methodology: **github.com/DreamITSoftware/SPOTAPOD**.
 
+<!-- export65-note -->
+> **Update, 22 October 2026.** In the [65 export files](../provenance.md#the-65-export-files), 452 of 56,363 records (0.802%) match the "being human" terms: humanity 246, human connection 99, human touch 45, human side 32 and being human 20. That is about twice podawaa2024's 0.401%, just above HyperClapper's 0.758% and well below LinkBoost-2025's 2.070%, so the five-fold spread reported above is unchanged. Detail: [being-human content](../research/being-human-content.md#the-65-export-files).
+
 ---
 
 *Self-published. Not peer-reviewed. Independently reproducible from the source files.*

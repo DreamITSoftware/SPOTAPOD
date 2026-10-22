@@ -28,6 +28,9 @@ Two datasets agreeing is stronger than one, but it's still not a controlled long
 
 Full data: **github.com/DreamITSoftware/SPOTAPOD**.
 
+<!-- export65-note -->
+> **Update, 22 October 2026.** The [65 export files](../provenance.md#the-65-export-files), added after this piece was written, put technology and AI at 26.10% of 56,363 records, close to HyperClapper (27.97%) and LinkBoost-2025 (25.29%) and above podawaa2024 (16.39%). Blockchain and crypto terms are in 1.025% of the 65 files' records, against 2.930% in podawaa2024, 0.774% in HyperClapper and 1.181% in LinkBoost-2025. 99.11% of the 65 files' records have a `createdAt` after 22 October 2024, which places them with the later datasets if that field is the creation time (INFERENCE: the site does not define it). Detail: [topic taxonomy](../research/topic-taxonomy.md#the-65-export-files) and [blockchain and crypto content](../research/blockchain-crypto-content.md#the-65-export-files).
+
 ---
 
 *Self-published. Not peer-reviewed.*

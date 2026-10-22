@@ -24,6 +24,9 @@ Most genuinely viral LinkedIn posts, the kind that get picked up by aggregator a
 
 Full dataset documentation and every other anomaly of this kind: **github.com/DreamITSoftware/SPOTAPOD**.
 
+<!-- export65-note -->
+> **Update, 22 October 2026.** In the [65 export files](../provenance.md#the-65-export-files), the largest like count in the `statsLikes` field is 12,029 and the largest view count in `statsViews` is 842,676. The records with the ten highest like counts include none with zero views: two have no view count at all and eight have a view count above zero. Views are present on only 11,987 of 56,363 records and the site does not document the fields, so this is a limited check. Detail: [engagement statistics fields](../research/export-65-profile.md#engagement-statistics-fields).
+
 ---
 
 *Self-published. Not peer-reviewed. This figure is independently reproducible from the source file using the scripts published in the linked repository.*

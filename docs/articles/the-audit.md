@@ -26,6 +26,9 @@ If a rerun ever produces a different number than originally published, whether f
 
 Full scripts: **github.com/DreamITSoftware/SPOTAPOD**.
 
+<!-- export65-note -->
+> **Update, 22 October 2026.** A new source was added on 22 October 2026, the [65 export files](../provenance.md#the-65-export-files). It is a new set of files and not a changed version of an existing one. The three source files still match `checksums/CHECKSUMS.txt`, and the reruns of `topic_taxonomy.py` and `date_cutoff_count.py` that added the 65 files printed the same three-dataset figures as before.
+
 ---
 
 *Self-published. Not peer-reviewed.*

@@ -27,6 +27,9 @@ Every other niche-topic scan in this repo checks what people talk about. This on
 
 Full methodology: **github.com/DreamITSoftware/SPOTAPOD**.
 
+<!-- export65-note -->
+> **Update, 22 October 2026.** In the [65 export files](../provenance.md#the-65-export-files), 1,058 of 56,363 records (1.877%) match the social-proof patterns: engagement bait 670, congratulations or anniversary 265, award or recognition 80 and follower milestone 50. The matches hold 603 distinct texts, 57% of the matches, so repeated texts account for part of the count. Detail: [social-proof content](../research/social-proof-content.md#the-65-export-files).
+
 ---
 
 *Self-published. Not peer-reviewed. Independently reproducible from the source files. No author or post is identified.*

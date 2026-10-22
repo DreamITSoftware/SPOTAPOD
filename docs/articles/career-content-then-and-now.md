@@ -24,6 +24,9 @@ A single-dataset analysis showing "career content jumped from 2.23% to 13.92%" w
 
 Full comparative data: **github.com/DreamITSoftware/SPOTAPOD**.
 
+<!-- export65-note -->
+> **Update, 22 October 2026.** In the [65 export files](../provenance.md#the-65-export-files), career and job search is 5.98% of 56,363 records in the topic taxonomy. That is above podawaa2024 (2.23%) and LinkBoost-2025 (3.79%) and well below HyperClapper (13.92%). A third later-dated source does not reproduce HyperClapper's figure, which fits the reading above that the jump is specific to HyperClapper. The 65 files are later-dated if `createdAt` is the creation time (INFERENCE): 99.11% of their records have one after 22 October 2024. Detail: [topic taxonomy](../research/topic-taxonomy.md#the-65-export-files).
+
 ---
 
 *Self-published. Not peer-reviewed.*

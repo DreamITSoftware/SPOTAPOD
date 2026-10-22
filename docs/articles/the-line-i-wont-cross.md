@@ -26,6 +26,9 @@ A case-by-case standard eventually erodes. Each individual exception looks reaso
 
 Full data-handling policy: **github.com/DreamITSoftware/SPOTAPOD**.
 
+<!-- export65-note -->
+> **Update, 22 October 2026.** The [65 export files](../provenance.md#the-65-export-files) are under the same rule. They are not in the repository. The repository holds a manifest of file hashes and record counts, `checksums/EXPORT65_MANIFEST.csv`, and aggregate outputs. Every record in those files carries a first name, a last name and the link to a post, which is why nothing per record is published. See [provenance](../provenance.md#the-65-export-files).
+
 ---
 
 *Self-published. Not peer-reviewed.*

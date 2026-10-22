@@ -28,6 +28,9 @@ Not "there is one engagement-pod problem" but "there are multiple, structurally 
 
 Full comparative data: **github.com/DreamITSoftware/SPOTAPOD**.
 
+<!-- export65-note -->
+> **Update, 22 October 2026.** The [65 export files](../provenance.md#the-65-export-files) are not a fourth tool in this comparison. The collector reports that they came from the LinkBoost web application (STATED), and nothing here says they hold the same data as LinkBoost-2025. On concentration, the top 100 of their 1,380 accounts produce 62.7% of the records, against 83.5% in HyperClapper. Detail: [provenance](../provenance.md#the-65-export-files) and [engagement statistics fields](../research/export-65-profile.md#engagement-statistics-fields).
+
 ---
 
 *Self-published. Not peer-reviewed.*

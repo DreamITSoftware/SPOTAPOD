@@ -22,6 +22,9 @@ Every claim above carries a specific evidence tier, VERIFIED, CORROBORATED, STAT
 
 Full research, all of it: **github.com/DreamITSoftware/SPOTAPOD**.
 
+<!-- export65-note -->
+> **Update, 22 October 2026.** This summary covers three datasets. A further set, the [65 export files](../provenance.md#the-65-export-files), was added on 22 October 2026: 56,363 distinct records from 1,380 accounts. Two results above do not carry over to it. None of the 11,943 records that have both a like count and a view count has zero views with likes above zero, and no post text repeats as often as the 533-copy template (the most repeated text appears in 274 records). The 65 files' own findings are in [the profile](../research/export-65-profile.md).
+
 ---
 
 *Self-published. Not peer-reviewed.*

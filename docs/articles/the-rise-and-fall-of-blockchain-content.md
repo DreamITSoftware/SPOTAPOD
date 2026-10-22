@@ -30,6 +30,9 @@ It's tempting to read this as "AI replaced blockchain as LinkedIn's hype cycle o
 
 Full methodology and the LinkBoost-2025 figures: **github.com/DreamITSoftware/SPOTAPOD**.
 
+<!-- export65-note -->
+> **Update, 22 October 2026.** The [65 export files](../provenance.md#the-65-export-files) hold 578 of 56,363 records (1.025%) with a blockchain or crypto term. That is above HyperClapper's 0.774% and below LinkBoost-2025's 1.181% and podawaa2024's 2.930%. By term the counts are crypto 333, blockchain 200, Bitcoin 150, Web3 78, DeFi 58, Ethereum 44 and NFT 13. NFT appears in 13 records there, against 1,541 in podawaa2024. Detail: [blockchain and crypto content](../research/blockchain-crypto-content.md#the-65-export-files).
+
 ---
 
 *Self-published. Not peer-reviewed. Independently reproducible from the source files.*

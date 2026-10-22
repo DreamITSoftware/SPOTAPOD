@@ -26,6 +26,9 @@ This is exactly the mechanism this project's other findings point toward: Linked
 
 Full methodology: **github.com/DreamITSoftware/SPOTAPOD**.
 
+<!-- export65-note -->
+> **Update, 22 October 2026.** In the [65 export files](../provenance.md#the-65-export-files), 1,619 post texts occur in more than one record, and 299 of them were submitted under more than one account name, up to 23 names for one text. The most records sharing one text is 274. The figures are not directly comparable with the 400-author cluster above, because the 65 files carry a first and last name on each record and the site does not document whether that name is the post's author or the user of the tool. Detail: [engagement statistics fields](../research/export-65-profile.md#engagement-statistics-fields).
+
 ---
 
 *Self-published. Not peer-reviewed. Independently reproducible from the source file. No individual post, author, or account is identified anywhere in this project.*

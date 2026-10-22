@@ -24,6 +24,9 @@ LinkedIn's book-promotion content isn't really a books platform in miniature. It
 
 Full methodology and complete genre table: **github.com/DreamITSoftware/SPOTAPOD**.
 
+<!-- export65-note -->
+> **Update, 22 October 2026.** In the [65 export files](../provenance.md#the-65-export-files), 289 of 56,363 records (0.51%) match book-promotion language, the second lowest of the four sources. Of those 289, business and entrepreneurship is 51.2%, tied with technology and AI (51.2%), then writing craft 35.6%, self-help 9.7%, fiction 1.7% and poetry 1.0% (3 records). Two statements above change. Business and entrepreneurship is above the 32.5% to 49.2% range given for the three datasets, and poetry is not found only in podawaa2024. A record can match more than one genre. Detail: [book-promotion content](../research/book-promotion-content.md#the-65-export-files).
+
 ---
 
 *Self-published. Not peer-reviewed. Independently reproducible from the source files. No author or title is identified anywhere in this project.*

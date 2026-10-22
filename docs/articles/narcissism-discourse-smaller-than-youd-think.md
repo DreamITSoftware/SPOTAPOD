@@ -25,6 +25,9 @@ At 30, 10, and 65 mentions respectively, this is smaller than every other conten
 
 Full methodology: **github.com/DreamITSoftware/SPOTAPOD**.
 
+<!-- export65-note -->
+> **Update, 22 October 2026.** The [65 export files](../provenance.md#the-65-export-files) add 52 records (0.092% of 56,363) with a narcissism term: narcissistic 33, narcissist(s) 18 and narcissism 10, counted per term, so a record can appear twice. They hold 49 distinct texts. That rate is the highest of the four sources (podawaa2024 0.014%, HyperClapper 0.020%, LinkBoost-2025 0.083% after correction). It also changes one statement above. Narcissism is the smallest category in the three datasets, but in the 65 files four categories are smaller: rare-earth phrases (10 records), immunotherapy (14), genetic disorders (23) and homelessness on the narrow patterns (39). Detail: [narcissist content](../research/narcissist-content.md#the-65-export-files).
+
 ---
 
 *Self-published. Not peer-reviewed. Independently reproducible from the source files. No author or full post text is identified.*

@@ -39,6 +39,22 @@
   fields, the concentration of records by account and the repetition of post
   text. Nothing in the existing three-dataset sections changed. Tests added for
   the loader, every patched scan and the new options.
+- The 65 export files are reflected in the articles. 59 articles in
+  `docs/articles/` end with a dated "Update, 22 October 2026" note, marked
+  `<!-- export65-note -->`, that gives the 65-file figure for the article's
+  topic and says where it agrees or differs: the topic and content articles,
+  the zero-view, concentration and duplicate-text articles, the three
+  comparison pieces and the regulatory pieces that quote dataset figures, and
+  the privacy and method pieces. Four statements in older articles no longer
+  hold with the 65 files counted and the note says so: HyperClapper's 10.2%
+  is no longer the highest industry-vertical rate, narcissism is no longer the
+  smallest category, business is above the stated range among book-promotion
+  genres, and poetry is not found only in podawaa2024. Where a scan does not
+  apply to the 65 files (posting velocity, account overlap, occupation and
+  location), the note says why. `export65_profile.py --stats` also counts how
+  many of the ten highest `statsLikes` records have zero views or no view
+  count, with a test on a fabricated 12-record fixture. `posting-velocity.md`
+  now marks the reading of `createdAt` as an INFERENCE.
 - A file supplied as `spotapod.json` was checked before being treated as a
   fourth independent dataset. Verified: every one of its 201,000 unique
   `linkedinPostId` values and every one of its 6,948 unique authors already

@@ -36,6 +36,9 @@ Nobody tracked, in this data, who actually read these posts or what they did aft
 
 Full methodology, every dataset, every script: **github.com/DreamITSoftware/SPOTAPOD**.
 
+<!-- export65-note -->
+> **Update, 22 October 2026.** The [65 export files](../provenance.md#the-65-export-files) are built differently from LinkBoost-2025. Their 56,363 distinct records point at 55,621 distinct post ids (55,025 decoding to a date after 22 October 2024 and 596 before), so there is no counterpart to 469 posts drawing 77,969 records. That fits one record per target post, where LinkBoost-2025 has one record per engagement action (INFERENCE: the site does not document the files). Detail: [date cutoff count](../research/date-cutoff-count.md#the-65-export-files).
+
 ---
 
 *Self-published. Not peer-reviewed. Every figure above is independently reproducible from the source files using the scripts published in the linked repository.*

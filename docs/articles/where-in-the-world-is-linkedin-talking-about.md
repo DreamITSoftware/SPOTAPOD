@@ -28,6 +28,9 @@ It would have been easy to just report account locations and infer that content 
 
 Full methodology: **github.com/DreamITSoftware/SPOTAPOD**.
 
+<!-- export65-note -->
+> **Update, 22 October 2026.** In the [65 export files](../provenance.md#the-65-export-files), 2,816 of 56,363 records (4.996%) mention a tracked country or region. India leads with 1,381, ahead of Europe (789), China (534), the United States or America (175) and Africa (145), so these files fall in the India-led group with HyperClapper and LinkBoost-2025. The cross-check against account location cannot be made for them, because they carry no location field. Detail: [geographic mentions](../research/geographic-mentions-content.md#the-65-export-files).
+
 ---
 
 *Self-published. Not peer-reviewed. Independently reproducible from the source files. No account is identified.*

@@ -29,6 +29,9 @@ A blunter version of this piece would just report "Tesla dominates automotive di
 
 Full automaker breakdown: **github.com/DreamITSoftware/SPOTAPOD**.
 
+<!-- export65-note -->
+> **Update, 22 October 2026.** In the [65 export files](../provenance.md#the-65-export-files), 337 of 56,363 records (0.598%) name a car maker. Tesla leads with 149, then Ford 64, Toyota 40, BMW 30 and Volkswagen 24, so Tesla is ahead of the runner-up by about 2.3 to 1. The matches hold 326 distinct texts and the duplicate-template check did not fire. This project has not read the Tesla matches, so it does not know whether they are about cars or about finance, the distinction found in LinkBoost-2025. Detail: [car-maker content](../research/car-maker-content.md#the-65-export-files).
+
 ---
 
 *Self-published. Not peer-reviewed. Independently reproducible from the source files.*

@@ -30,6 +30,9 @@ If both later datasets showed the same jump in career content, that would be rea
 
 Full topic taxonomy data: **github.com/DreamITSoftware/SPOTAPOD**.
 
+<!-- export65-note -->
+> **Update, 22 October 2026.** The [65 export files](../provenance.md#the-65-export-files) are later-dated by the cutoff used above. 55,861 of 56,363 records (99.11%) have a `createdAt` after 22 October 2024, and 55,767 (98.94%) target a post whose id decodes to a date after it. Both readings are INFERENCE, because the site does not define `createdAt` and the id decode is not documented. In the topic taxonomy their technology and AI share is 26.10%, close to the two later datasets (27.97% and 25.29%). Career and job search is 5.98% and leadership, coaching and motivation is 8.11%. Detail: [topic taxonomy](../research/topic-taxonomy.md#the-65-export-files) and [date cutoff count](../research/date-cutoff-count.md#the-65-export-files).
+
 ---
 
 *Self-published. Not peer-reviewed.*

@@ -245,6 +245,21 @@ def main():
         print("    statsViews of 0 with statsLikes above 0: %d" % sum(1 for l, v in both if v == 0 and l > 0))
         print("    statsLikes above statsViews:             %d (%.1f%%)" % (
             sum(1 for l, v in both if l > v), 100.0 * sum(1 for l, v in both if l > v) / len(both) if both else 0.0))
+        ratios = [l / v for l, v in both if v > 0]
+        if ratios:
+            ratios.sort()
+            print("    Records with exactly 1 view:             %d" % sum(1 for l, v in both if v == 1))
+            print("    Highest statsLikes per statsViews:       %.1f to 1 (median %.2f)" % (ratios[-1], ratios[len(ratios) // 2]))
+            print("    Records with 2 or more likes per view:   %d; 10 or more: %d; 100 or more: %d" % (
+                sum(1 for x in ratios if x >= 2), sum(1 for x in ratios if x >= 10), sum(1 for x in ratios if x >= 100)))
+        liked = sorted((x for x in likes if x is not None), reverse=True)
+        if len(liked) >= 10:
+            cut = liked[9]
+            top = [(l, v) for l, v in zip(likes, views) if l is not None and l >= cut]
+            print("  Records with the 10 highest statsLikes (ties at the tenth value kept): %d" % len(top))
+            print("    with statsViews of 0:                    %d" % sum(1 for l, v in top if v == 0))
+            print("    with no statsViews field:                %d" % sum(1 for l, v in top if v is None))
+            print("    with statsViews above 0:                 %d" % sum(1 for l, v in top if v is not None and v > 0))
 
         # concentration by account and repetition of post text; one-way hashes in memory, counts only
         def acct(r):

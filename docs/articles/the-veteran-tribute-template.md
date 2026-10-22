@@ -31,6 +31,9 @@ A project built on catching inflated numbers has to catch its own inflated numbe
 
 Full methodology: **github.com/DreamITSoftware/SPOTAPOD**.
 
+<!-- export65-note -->
+> **Update, 22 October 2026.** In the [65 export files](../provenance.md#the-65-export-files), 213 of 56,363 records (0.378%) match a veteran or military term: veteran(s) 187, armed forces 64 and service member(s) 9. The matches hold 210 distinct texts and the duplicate-template check did not fire, so no single repeated post inflates the count the way the campaign post did in LinkBoost-2025. The rate is the second highest of the four sources, behind LinkBoost-2025's 0.488% after correction. Detail: [veteran content](../research/veteran-content.md#the-65-export-files).
+
 ---
 
 *Self-published. Not peer-reviewed. Independently reproducible from the source files. No individual is named anywhere in this project.*

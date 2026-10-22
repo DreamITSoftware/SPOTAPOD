@@ -27,6 +27,9 @@ It would be easy to assume any dataset-to-dataset swing this large is a keyword-
 
 Full methodology: **github.com/DreamITSoftware/SPOTAPOD**.
 
+<!-- export65-note -->
+> **Update, 22 October 2026.** In the [65 export files](../provenance.md#the-65-export-files), 5,795 of 56,363 records (10.282%) match an industry-vertical term. That is the highest rate of the four sources, just above HyperClapper's 10.205%, so the statement above that HyperClapper's 10.2% is the highest such figure no longer holds once these files are counted. Retail and e-commerce leads with 2,150, then healthcare and hospital (1,107), manufacturing and supply chain (1,074), energy, climate, ESG and sustainability (776), real estate (741) and insurance (497). Retail is first, as in podawaa2024 and HyperClapper. The matches hold 5,124 distinct texts. Detail: [industry-vertical content](../research/industry-verticals-content.md#the-65-export-files).
+
 ---
 
 *Self-published. Not peer-reviewed. Independently reproducible from the source files.*

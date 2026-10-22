@@ -24,6 +24,9 @@ A scan that had simply reported "17,573 mentions of sons" without checking would
 
 Full methodology: **github.com/DreamITSoftware/SPOTAPOD**.
 
+<!-- export65-note -->
+> **Update, 22 October 2026.** The children-content scan was also run on the [65 export files](../provenance.md#the-65-export-files) with the strict "son" rule described above. It finds 1,650 of 56,363 records (2.927%) with a children-related term. "Son" in clear English usage is in 151 records, against 805 for kid or kids and 649 for child or children. This project did not count bare "son" in the 65 files, so it has no figure for how much the strict rule removed there. Detail: [children content](../research/children-content.md#the-65-export-files).
+
 ---
 
 *Self-published. Not peer-reviewed. Independently reproducible from the source files.*

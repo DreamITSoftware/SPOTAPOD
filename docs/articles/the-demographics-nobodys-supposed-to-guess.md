@@ -24,6 +24,9 @@ Calling geographic-mention and industry-vertical distributions "demographics" in
 
 Full findings: **github.com/DreamITSoftware/SPOTAPOD**.
 
+<!-- export65-note -->
+> **Update, 22 October 2026.** The geographic-mention and industry-vertical scans were run on the [65 export files](../provenance.md#the-65-export-files): [geographic mentions](../research/geographic-mentions-content.md#the-65-export-files) and [industry verticals](../research/industry-verticals-content.md#the-65-export-files). The demographics scan of account location and stated occupation was not, because those files carry no location, country, headline or occupation field. Detail: [demographics](../research/demographics.md#the-65-export-files).
+
 ---
 
 *Self-published. Not peer-reviewed.*

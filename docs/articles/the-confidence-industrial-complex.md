@@ -22,6 +22,9 @@ LinkBoost-2025's top repeated confidence-mentioning strings were checked directl
 
 Full methodology: **github.com/DreamITSoftware/SPOTAPOD**.
 
+<!-- export65-note -->
+> **Update, 22 October 2026.** The [65 export files](../provenance.md#the-65-export-files) have the highest confidence rate of the four sources: 3,068 of 56,363 records (5.443%), about 1 record in 18, against LinkBoost-2025's 5.219%. The matches hold 2,659 distinct texts and the duplicate-template check did not fire. The reason for the spread between sources is still an INFERENCE. Detail: [confidence content](../research/confidence-content.md#the-65-export-files).
+
 ---
 
 *Self-published. Not peer-reviewed. Independently reproducible from the source files.*

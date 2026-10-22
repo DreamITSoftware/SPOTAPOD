@@ -24,6 +24,9 @@ It isn't just the content rate. HyperClapper also shows the highest rate of reci
 
 Full comparison table and methodology: **github.com/DreamITSoftware/SPOTAPOD**.
 
+<!-- export65-note -->
+> **Update, 22 October 2026.** In the [65 export files](../provenance.md#the-65-export-files), 4,723 of 56,363 records (8.38%) match the career-advice patterns, the second highest of the four sources and inside the 4.45% to 16.52% range above. The 65 files have no occupation or headline field and no like or comment flag, so the occupation and reciprocal-engagement comparisons in this piece cannot be made for them. Detail: [career-advice comparison](../research/career-advice-comparison.md#the-65-export-files).
+
 ---
 
 *Self-published. Not peer-reviewed. Independently reproducible from the source files.*

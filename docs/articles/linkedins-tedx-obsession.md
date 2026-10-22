@@ -29,6 +29,9 @@ HyperClapper's heavy skew toward TEDx specifically (228 of its 256 total mention
 
 Full methodology: **github.com/DreamITSoftware/SPOTAPOD**.
 
+<!-- export65-note -->
+> **Update, 22 October 2026.** In the [65 export files](../provenance.md#the-65-export-files), 63 of 56,363 records (0.112%) mention TED or TEDx: TEDx 33, TED Talk(s) 24 and the all-caps "TED" 34, counted per term. The matches hold 62 distinct texts. That is the second highest rate of the four sources, behind HyperClapper's 0.518%. TEDx alone is 0.059% of the 65 files' records, against 0.462% in HyperClapper (228 of 49,369), so the 65 files do not show the TEDx skew that HyperClapper does. Detail: [TED content](../research/ted-content.md#the-65-export-files).
+
 ---
 
 *Self-published. Not peer-reviewed. Independently reproducible from the source files.*
