@@ -36,6 +36,7 @@ Usage:
     python3 travel_content_scan.py podawaa /path/to/podawaa2024.json
     python3 travel_content_scan.py hyperclapper /path/to/HyperClaper.json
     python3 travel_content_scan.py linkboost /path/to/LinkBoost-2025.json
+    python3 travel_content_scan.py export65 /path/to/folder_with_the_65_files
 """
 import sys
 import json
@@ -126,7 +127,7 @@ def scan(texts, label, n, is_podawaa=False):
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("dataset", choices=["podawaa", "hyperclapper", "linkboost"])
+    ap.add_argument("dataset", choices=["podawaa", "hyperclapper", "linkboost", "export65"])
     ap.add_argument("path")
     args = ap.parse_args()
 
@@ -142,6 +143,10 @@ def main():
         with open(args.path, "r", encoding="utf-8") as f:
             recs = json.load(f)
         scan([r.get("Title") for r in recs], "LinkBoost-2025", len(recs))
+    elif args.dataset == "export65":
+        from export65_loader import load_export65  # the 65 export files; see export65_loader.py
+        texts = load_export65(args.path)
+        scan(texts, "65 export files", len(texts))
 
 
 if __name__ == "__main__":

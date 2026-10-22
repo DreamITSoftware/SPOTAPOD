@@ -60,3 +60,24 @@ across the board).
 Same as every keyword scan in this repo: a match means the term
 appears in the text, not that the post contains accurate or
 substantive commentary on how LinkedIn's algorithm actually works.
+
+<!-- export65-section -->
+## The 65 export files
+
+Added 22 October 2026. This is the same scan run on the 65 export files: 56,363 distinct records after the files are de-duplicated on record id, reading each record's `title` field, which holds the post text. These files are a separate set from the three datasets above, and nothing above this heading has changed. Their source, method and limits are in [provenance.md](../provenance.md#the-65-export-files) and [export-65-profile.md](export-65-profile.md). Rates use all 56,363 records as the denominator, and 237 of them have no post text. Command: `python3 analysis/algorithm_mention_scan.py export65 /path/to/folder_with_the_65_files`.
+
+```text
+=== 65 export files (56,363 records) ===
+Records mentioning any algorithm term: 378 (0.671%)
+Distinct underlying text values: 372
+    algorithm (generic, any platform)    378
+    algorithm change/update              21
+    algorithm favors/rewards             20
+    LinkedIn algorithm (specific)        12
+    beat the algorithm                   3
+    game the algorithm                   3
+```
+
+378 of 56,363 records (0.671%) match. In the three datasets above the same measure is 0.254% in podawaa2024, 0.65% in HyperClapper and 0.762% in LinkBoost-2025 (using the corrected figure where this page gives one), which puts the 65 export files at the second highest of the four. The scan's duplicate-template check did not fire, and the matching records hold 372 distinct texts.
+
+The rates come from different fields and different kinds of record, so a gap between them describes the files and does not describe the tools. A match is a keyword in the text, not a finding about the post or its author.

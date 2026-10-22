@@ -75,3 +75,8 @@ record can match more than one category or none.
   regulated categories in [other-regulatory-signals.md](other-regulatory-signals.md).**
   Geography and occupation are demographic/professional context, not
   evidence of any legal element.
+
+<!-- export65-section -->
+## The 65 export files
+
+Added 22 October 2026. This scan was not run on the 65 export files. It counts geography and stated occupation, and the 65 files carry no location, country, headline or occupation field. What the 65 files hold is in [export-65-profile.md](export-65-profile.md).

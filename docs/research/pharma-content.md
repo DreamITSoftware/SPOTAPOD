@@ -69,3 +69,26 @@ reminder that a low distinct-string count without a single dominant
 string can still mean the topic label doesn't mean what it looks like -
 a gap the earlier duplicate-template threshold alone wouldn't have
 caught.
+
+<!-- export65-section -->
+## The 65 export files
+
+Added 22 October 2026. This is the same scan run on the 65 export files: 56,363 distinct records after the files are de-duplicated on record id, reading each record's `title` field, which holds the post text. These files are a separate set from the three datasets above, and nothing above this heading has changed. Their source, method and limits are in [provenance.md](../provenance.md#the-65-export-files) and [export-65-profile.md](export-65-profile.md). Rates use all 56,363 records as the denominator, and 237 of them have no post text. Command: `python3 analysis/pharma_content_scan.py export65 /path/to/folder_with_the_65_files`.
+
+```text
+=== 65 export files (56,363 records) ===
+Records mentioning any pharma/biotech term: 597 (1.0592%)
+Distinct underlying text values: 589
+    biotech                          274
+    pharma / pharmaceutical(s)       273
+    FDA                              139
+    clinical trial(s)                69
+    pharma company/companies         34
+    big pharma                       25
+    pharmaceutical industry          8
+    drug company/companies           2
+```
+
+597 of 56,363 records (1.059%) match. In the three datasets above the same measure is 0.298% in podawaa2024, 0.296% in HyperClapper and 0.618% in LinkBoost-2025 (using the corrected figure where this page gives one), which puts the 65 export files at the highest of the four. The scan's duplicate-template check did not fire, and the matching records hold 589 distinct texts.
+
+The rates come from different fields and different kinds of record, so a gap between them describes the files and does not describe the tools. A match is a keyword in the text, not a finding about the post or its author.

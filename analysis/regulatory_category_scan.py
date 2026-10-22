@@ -24,6 +24,7 @@ Usage:
     python3 regulatory_category_scan.py podawaa /path/to/podawaa2024.json
     python3 regulatory_category_scan.py hyperclapper /path/to/HyperClaper.json
     python3 regulatory_category_scan.py linkboost /path/to/LinkBoost-2025.json
+    python3 regulatory_category_scan.py export65 /path/to/folder_with_the_65_files
 """
 import sys
 import json
@@ -95,6 +96,8 @@ LOADERS = {
     "hyperclapper": load_hyperclapper,
     "linkboost": load_linkboost,
 }
+from export65_loader import load_export65_records  # the 65 export files; see export65_loader.py
+LOADERS["export65"] = load_export65_records
 
 
 def main():

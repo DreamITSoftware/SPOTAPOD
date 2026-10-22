@@ -63,3 +63,40 @@ in the text, not that the post is meaningfully about a legal topic.
 tangential or unrelated mentions, which is exactly why they're broken
 out as separate line items rather than blended into a single combined
 count.
+
+<!-- export65-section -->
+## The 65 export files
+
+Added 22 October 2026. This is the same scan run on the 65 export files: 56,363 distinct records after the files are de-duplicated on record id, reading each record's `title` field, which holds the post text. These files are a separate set from the three datasets above, and nothing above this heading has changed. Their source, method and limits are in [provenance.md](../provenance.md#the-65-export-files) and [export-65-profile.md](export-65-profile.md). Rates use all 56,363 records as the denominator, and 237 of them have no post text. Command: `python3 analysis/law_content_scan.py export65 /path/to/folder_with_the_65_files`.
+
+```text
+=== 65 export files (56,363 records, 48.1s) ===
+NARROW (legal profession specific): 301 (0.534%)
+    lawyer                       159 (0.282%)
+    attorney                     91 (0.161%)
+    litigation                   39 (0.069%)
+    law firm                     35 (0.062%)
+    general counsel              7 (0.012%)
+    paralegal                    6 (0.011%)
+    legal counsel                3 (0.005%)
+BROADER (incl. legislation/compliance/IP/etc.): 2,597 (4.608%)
+    compliance                   1,765 (3.131%)
+    legal (adjective, general)   654 (1.160%)
+    lawyer                       159 (0.282%)
+    intellectual property        100 (0.177%)
+    attorney                     91 (0.161%)
+    lawsuit                      74 (0.131%)
+    litigation                   39 (0.069%)
+    law firm                     35 (0.062%)
+    legislation                  30 (0.053%)
+    court case                   27 (0.048%)
+    general counsel              7 (0.012%)
+    employment law               7 (0.012%)
+    paralegal                    6 (0.011%)
+    legal counsel                3 (0.005%)
+    contract law                 3 (0.005%)
+```
+
+301 of 56,363 records (0.534%) match the narrow legal-profession patterns, against 0.22% (podawaa2024), 0.34% (HyperClapper) and 0.57% (LinkBoost-2025), which is the second highest of the four. 2,597 (4.608%) match the broader patterns, against 1.44%, 2.50% and 4.45%, which is the highest of the four. Most of the broader count is the word compliance (1,765 records, 3.131%), which a post can use without any link to the legal profession.
+
+The rates come from different fields and different kinds of record, so a gap between them describes the files and does not describe the tools. A match is a keyword in the text, not a finding about the post or its author.

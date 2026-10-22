@@ -61,3 +61,8 @@ This script also does not establish that `spotapod.json` was produced
 independently of podawaa2024.json's own known duplicate-record
 structure; see [provenance.md](../provenance.md) for what has and
 hasn't been established about this file's origin.
+
+<!-- export65-section -->
+## The 65 export files
+
+Added 22 October 2026. This scan was not run on the 65 export files. This page concerns the PODCount field of spotapod.json, which the 65 files do not have. What the 65 files hold is in [export-65-profile.md](export-65-profile.md).

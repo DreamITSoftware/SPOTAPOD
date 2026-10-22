@@ -108,6 +108,16 @@ class TestExport65Profile(unittest.TestCase):
                      "urn:li:activity", "linkedin.com", "Fixture post text"):
             self.assertNotIn(text, result.stdout)
 
+    def test_stats_block(self):
+        result = run_script("export65_profile.py", self.FOLDER, "--stats")
+        self.assertEqual(result.returncode, 0, result.stderr)
+        self.assertIn("Engagement statistics fields as stored", result.stdout)
+        self.assertIn("Records with post text (title):      3 of 3", result.stdout)
+        self.assertIn("Distinct accounts:                   3", result.stdout)
+        self.assertIn("Distinct post texts:                 3 of 3 records with text", result.stdout)
+        for text in ("Personone", "Persontwo", "Personthree", "FIXTURE_REC", "urn:li:activity", "Fixture post text"):
+            self.assertNotIn(text, result.stdout)
+
     def test_manifest_round_trip(self):
         import tempfile
         with tempfile.TemporaryDirectory() as tmp:
@@ -118,6 +128,58 @@ class TestExport65Profile(unittest.TestCase):
             self.assertIn("2 of 2 listed files found with matching hash and record count", checked.stdout)
             for text in ("Personone", "FIXTURE_REC", "urn:li:activity"):
                 self.assertNotIn(text, Path(out).read_text(encoding="utf-8"))
+
+
+class TestExport65Loader(unittest.TestCase):
+    """The shared reader that lets the scan scripts run on the 65 export files."""
+    FOLDER = str(FIXTURES / "export65")
+    IDENTIFIERS = ("Personone", "Persontwo", "Personthree", "FIXTURE_REC",
+                   "urn:li:activity", "linkedin.com", "Fixture post text")
+
+    def test_loader_returns_distinct_records(self):
+        sys.path.insert(0, str(ANALYSIS))
+        try:
+            from export65_loader import load_export65, load_export65_counted
+        finally:
+            sys.path.pop(0)
+        texts = load_export65(self.FOLDER)
+        self.assertEqual(len(texts), 3)  # 3 distinct _id values across 3 files (1 is a byte-identical copy)
+        self.assertEqual(load_export65_counted(self.FOLDER)[1], 3)
+
+    def test_every_patched_scan_runs_on_the_fixture_without_identifiers(self):
+        scripts = sorted(p.name for p in ANALYSIS.glob("*.py")
+                         if "export65_loader import" in p.read_text(encoding="utf-8")
+                         and p.name not in ("export65_loader.py", "topic_taxonomy.py", "date_cutoff_count.py"))
+        self.assertGreaterEqual(len(scripts), 38)
+        for name in scripts:
+            extra = ["--category", "all"] if name == "entity_mention_scan.py" else []
+            result = run_script(name, "export65", self.FOLDER, *extra)
+            self.assertEqual(result.returncode, 0, name + ": " + result.stderr)
+            for text in self.IDENTIFIERS:
+                self.assertNotIn(text, result.stdout, name)
+
+    def test_algorithm_scan_reports_the_record_count(self):
+        result = run_script("algorithm_mention_scan.py", "export65", self.FOLDER)
+        self.assertIn("65 export files (3 records)", result.stdout)
+
+    def test_date_cutoff_count_adds_a_line(self):
+        result = run_script("date_cutoff_count.py", str(FIXTURES / "podawaa_sample.json"),
+                            str(FIXTURES / "hyperclapper_sample.json"), str(FIXTURES / "linkboost_sample.json"),
+                            "--export65", self.FOLDER)
+        self.assertEqual(result.returncode, 0, result.stderr)
+        self.assertIn("65 export files: 3 distinct records", result.stdout)
+        for text in self.IDENTIFIERS:
+            self.assertNotIn(text, result.stdout)
+
+    def test_topic_taxonomy_adds_a_separate_block(self):
+        result = run_script("topic_taxonomy.py", str(FIXTURES / "podawaa_sample.json"),
+                            str(FIXTURES / "hyperclapper_sample.json"), str(FIXTURES / "linkboost_sample.json"),
+                            "--export65", self.FOLDER)
+        self.assertEqual(result.returncode, 0, result.stderr)
+        self.assertIn("65 export files, run separately (not included in the totals above)", result.stdout)
+        self.assertIn("Records: 3", result.stdout)
+        for text in self.IDENTIFIERS:
+            self.assertNotIn(text, result.stdout)
 
 
 if __name__ == "__main__":

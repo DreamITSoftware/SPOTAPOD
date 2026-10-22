@@ -53,3 +53,23 @@ the related (but distinct) case study on platform-strategy advice content,
 and [audience-impact.md](audience-impact.md) for the general mechanism by
 which inflated engagement could affect readers who trust this kind of
 content.
+
+<!-- export65-section -->
+## The 65 export files
+
+Added 22 October 2026. This is the same scan run on the 65 export files: 56,363 distinct records after the files are de-duplicated on record id, reading each record's `title` field, which holds the post text. These files are a separate set from the three datasets above, and nothing above this heading has changed. Their source, method and limits are in [provenance.md](../provenance.md#the-65-export-files) and [export-65-profile.md](export-65-profile.md). Rates use all 56,363 records as the denominator, and 237 of them have no post text. Command: `python3 analysis/career_advice_scan.py export65 /path/to/folder_with_the_65_files`.
+
+```text
+============================================================
+EXPORT65: CAREER-ADVICE CONTENT SCAN (aggregate, de-identified)
+============================================================
+Total records scanned: 56,363
+Records matching career-advice language: 4,723 (8.38%)
+
+Reminder: keyword-pattern SIGNAL, not verified topic classification.
+No record, author, or matched text is identified by this script.
+```
+
+4,723 of 56,363 records (8.38%) match the career-advice patterns. The three datasets above give 4.45% (podawaa2024), 16.52% (HyperClapper) and 6.68% (LinkBoost-2025), so the 65 export files sit at the second highest of the four. The 65 files carry no occupation or headline field and no like or comment flag, so the occupation cross-reference and the reciprocal-engagement row of the table above have no counterpart for them.
+
+The rates come from different fields and different kinds of record, so a gap between them describes the files and does not describe the tools. A match is a keyword in the text, not a finding about the post or its author.

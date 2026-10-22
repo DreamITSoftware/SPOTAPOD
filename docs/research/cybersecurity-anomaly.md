@@ -72,3 +72,8 @@ representative piece of security content. The anomaly indicators
 themselves are the same blunt population-level signals used everywhere
 else in this repo - they flag a statistical pattern, not a confirmed
 instance of manipulation for any single record.
+
+<!-- export65-section -->
+## The 65 export files
+
+Added 22 October 2026. This scan was not run on the 65 export files. It cross-tabulates cybersecurity content against zero-view, likes-over-views and reciprocal-engagement indicators, and the 65 files store likes, comments and views on only part of the records, under names that the site does not document. The plain counts are in [export-65-profile.md](export-65-profile.md#engagement-statistics-fields): of the 11,943 records that carry both likes and views, none has zero views with likes present, and 1,636 (13.7%) have more likes than views. What the 65 files hold is in [export-65-profile.md](export-65-profile.md).

@@ -97,3 +97,37 @@ Hours from the target post's decoded publish time to record creation (INFERENCE:
 - **Dates.** Every record has a creation time. 438 records (0.78%) were created before 21 October 2024 and 55,925 (99.22%) on or after it. The monthly counts rise from about 1,000 to 2,000 a month through 2025 and early 2026, then to 7,285 in September 2026 and 4,829 in the first 16 days of October 2026. Because of the 5,000-record limit, these files cannot say whether that rise is growth in use, an effect of the limit or an effect of which accounts were exported.
 - **Creation time and post time.** The post id in each `url` decodes to a publish time for the target post (INFERENCE: see [method.md](../method.md)). Records were created a median of 0.39 hours after that time, 64.0% within an hour and 89.8% within 24 hours, and none before it. The decoded post dates run from 14 April 2019 to 16 October 2026, and 534 target posts decode to a date before 21 October 2024.
 - **A date split is not a violation count.** The split shows when a tool's record was made. It does not show a sale of a fake indicator, who the parties were or any other element of 16 CFR § 465.8 (see [regulatory-context.md](../regulatory-context.md)).
+
+## Engagement statistics fields
+
+Added 22 October 2026. Run `python3 analysis/export65_profile.py /path/to/folder --stats` to add three blocks: counts for the optional fields `statsLikes`, `statsComments` and `statsViews` and for the records that have post text, the concentration of records by account, and the repetition of post text. The blocks are separate so that the output above stays as it was. The site does not document what the three stats fields measure, so reading them as a post's public like, comment and view counts is an INFERENCE. Accounts are counted from one-way hashes of first and last name held in memory, and post texts from one-way hashes of the text, so the script prints counts only.
+
+```text
+Engagement statistics fields as stored (the site does not document what they measure)
+  Records with post text (title):      56126 of 56363
+  statsLikes present:                  46931 (median 40)
+  statsComments present:               32534 (median 9)
+  statsViews present:                  11987 (median 441)
+  Records with both likes and views:   11943
+    statsViews of 0 with statsLikes above 0: 0
+    statsLikes above statsViews:             1636 (13.7%)
+
+Records by account (first + last name, case-normalised; counts only)
+  Distinct accounts:                   1380
+  Share of records from the top 20  accounts: 29.3%
+  Share of records from the top 100 accounts: 62.7%
+  Accounts with 1 record: 326; with 100 or more: 139 (70.8% of records)
+
+Repetition of post text (exact match; counts only)
+  Distinct post texts:                 52235 of 56126 records with text
+  Texts that occur in more than 1 record: 1619 (covering 5510 records)
+  Most records sharing one text:       274
+  Texts submitted under more than 1 account name: 299; most account names for one text: 23
+```
+
+- **Post text.** 56,126 of the 56,363 records have post text, and 237 have none. The content scans on the other research pages use all 56,363 as the denominator.
+- **Coverage.** `statsLikes` is on 46,931 records, `statsComments` on 32,534 and `statsViews` on 11,987. How the records that carry each field were selected is not known, so the medians (40 likes, 9 comments, 441 views) describe the records that have the field and no wider set.
+- **Zero views.** Of the 11,943 records that carry both a like count and a view count, none has zero views with likes above zero. The zero-view pattern that [the zero-view articles](../articles/the-zero-view-problem.md) count in podawaa2024 does not appear in these fields.
+- **Likes above views.** 1,636 of those 11,943 records (13.7%) have more likes than views. If the two fields are measured in the same way, that is an inconsistency, and if they are measured differently it may not be one. The counts do not show that any like was bought, and they cannot say which reading is right.
+- **Accounts.** The records come from 1,380 accounts. The top 20 account for 29.3% of the records and the top 100 for 62.7%. 139 accounts with 100 or more records account for 70.8%, and 326 accounts have one record. For comparison, [one HyperClapper article](../articles/a-hundred-accounts-four-in-five-posts.md) reports that 100 of that file's 702 accounts produce 83.5% of its posts. An account here is a first and last name, so one person who uses two names counts twice.
+- **Repetition.** The 56,126 records with text hold 52,235 distinct texts (93.1%). 1,619 texts occur in more than one record, and together they cover 5,510 records. The most repeated text occurs in 274 records. 299 texts were submitted under more than one account name, and the most account names for one text is 23. The counts are for exact matches, so a text with one changed character counts as a different text.

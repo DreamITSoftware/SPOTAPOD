@@ -15,6 +15,7 @@ Usage:
     python3 book_genre_scan.py podawaa /path/to/podawaa2024.json
     python3 book_genre_scan.py hyperclapper /path/to/HyperClaper.json
     python3 book_genre_scan.py linkboost /path/to/LinkBoost-2025.json
+    python3 book_genre_scan.py export65 /path/to/folder_with_the_65_files
 """
 import sys
 import json
@@ -68,6 +69,8 @@ def load_linkboost(path):
 
 
 LOADERS = {"podawaa": load_podawaa, "hyperclapper": load_hyperclapper, "linkboost": load_linkboost}
+from export65_loader import load_export65_counted  # the 65 export files; see export65_loader.py
+LOADERS["export65"] = load_export65_counted
 
 
 def main():

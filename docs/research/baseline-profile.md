@@ -2520,3 +2520,8 @@ Distinct underlying text values: 57
     cat(s) [strict]      0 (0.0% of loose -- see docstring, 'cat' has real collision problems: CAT exam, .cat TLD, Catalan-language abbreviation)
 
 ```
+
+<!-- export65-section -->
+## The 65 export files
+
+Added 22 October 2026. This scan was not run on the 65 export files. The three profile scripts read the fields of the three datasets. The file-level profile of the 65 files is in [export-65-profile.md](export-65-profile.md). What the 65 files hold is in [export-65-profile.md](export-65-profile.md).

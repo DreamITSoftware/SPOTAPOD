@@ -27,6 +27,18 @@
   supplied, 18 byte-identical copies, 65 distinct files, 184,737 records,
   56,363 distinct `_id` values. The entry for `LinkBoost-2025.json` is
   unchanged: its source is still not stated.
+- The 65 export files now have a counterpart in the content scans. New
+  `analysis/export65_loader.py` reads the files (de-duplicated on `_id`, post
+  text from `title`), and 38 scans accept `export65 /path/to/folder` as a
+  dataset (`travel_content_scan.py` too; `topic_taxonomy.py` and
+  `date_cutoff_count.py` take `--export65 PATH`). Each research page whose scan
+  applies has a "The 65 export files" section with the scan output and a short
+  reading; ten pages say why the scan does not apply (the 65 files have no
+  occupation, headline, location or like and view fields of the kind those scans
+  need). `export65_profile.py --stats` adds counts for the like, comment and view
+  fields, the concentration of records by account and the repetition of post
+  text. Nothing in the existing three-dataset sections changed. Tests added for
+  the loader, every patched scan and the new options.
 - A file supplied as `spotapod.json` was checked before being treated as a
   fourth independent dataset. Verified: every one of its 201,000 unique
   `linkedinPostId` values and every one of its 6,948 unique authors already

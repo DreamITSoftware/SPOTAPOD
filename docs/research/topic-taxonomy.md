@@ -76,3 +76,25 @@ first (priority order is a modeling choice, not a ground truth), and no
 claim is made about any specific record, author, or the accuracy of any
 matched content. See [other-regulatory-signals.md](other-regulatory-signals.md)
 for the fuller version of this caveat, which applies here identically.
+
+<!-- export65-section -->
+## The 65 export files
+
+Added 22 October 2026. `analysis/topic_taxonomy.py` takes an optional `--export65 /path/to/folder_with_the_65_files` and prints one more block, run separately. The 65 files are not added to the 340,829-record totals above, and nothing above this heading has changed. The classification is the same: each of the 56,363 distinct records goes to the first category whose patterns match its post text, and a record with no post text falls in `uncategorized_other`. The three-dataset figures that this run printed match the table above. The 65 files are a separate set (see [provenance.md](../provenance.md#the-65-export-files) and [export-65-profile.md](export-65-profile.md)).
+
+```text
+65 export files, run separately (not included in the totals above)
+Records: 56,363
+career_job_search                  3,370  ( 5.98% of the 65 export files)
+book_writing_publishing              254  ( 0.45% of the 65 export files)
+education_certification              750  ( 1.33% of the 65 export files)
+technology_ai                     14,713  (26.10% of the 65 export files)
+finance_investing                  6,002  (10.65% of the 65 export files)
+health_wellness_fitness            2,273  ( 4.03% of the 65 export files)
+leadership_coaching_motivation     4,569  ( 8.11% of the 65 export files)
+marketing_sales_branding           2,444  ( 4.34% of the 65 export files)
+business_entrepreneurship          2,746  ( 4.87% of the 65 export files)
+uncategorized_other               19,242  (34.14% of the 65 export files)
+```
+
+Technology and AI is the largest named category in the 65 files (26.10%), as it is in each of the other three datasets. Finance and investing is second (10.65%), then leadership, coaching and motivation (8.11%) and career and job search (5.98%). The career and job search share is below HyperClapper (13.92%) and above podawaa2024 (2.23%) and LinkBoost-2025 (3.79%). 34.14% of the 65 files' records fall in no category, against 50.47% (podawaa2024), 33.93% (HyperClapper) and 28.15% (LinkBoost-2025). The categories are keyword signals in priority order, as the caveats above explain, and not verified topic labels.

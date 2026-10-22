@@ -55,3 +55,22 @@ framing found in the other two datasets.
 Same as every keyword scan in this repo: a match means the term appears
 in the text, not that the post contains substantive or accurate advice
 about building confidence.
+
+<!-- export65-section -->
+## The 65 export files
+
+Added 22 October 2026. This is the same scan run on the 65 export files: 56,363 distinct records after the files are de-duplicated on record id, reading each record's `title` field, which holds the post text. These files are a separate set from the three datasets above, and nothing above this heading has changed. Their source, method and limits are in [provenance.md](../provenance.md#the-65-export-files) and [export-65-profile.md](export-65-profile.md). Rates use all 56,363 records as the denominator, and 237 of them have no post text. Command: `python3 analysis/confidence_content_scan.py export65 /path/to/folder_with_the_65_files`.
+
+```text
+=== 65 export files (56,363 records) ===
+Records mentioning any confidence-related term: 3,068 (5.443%)
+Distinct underlying text values: 2,659
+    confidence                   2,032
+    confident                    1,176
+    self-confidence              7
+    confidence building/booster  3
+```
+
+3,068 of 56,363 records (5.443%) match. In the three datasets above the same measure is 1.063% in podawaa2024, 4.329% in HyperClapper and 5.219% in LinkBoost-2025 (using the corrected figure where this page gives one), which puts the 65 export files at the highest of the four. The scan's duplicate-template check did not fire, and the matching records hold 2,659 distinct texts.
+
+The rates come from different fields and different kinds of record, so a gap between them describes the files and does not describe the tools. A match is a keyword in the text, not a finding about the post or its author.

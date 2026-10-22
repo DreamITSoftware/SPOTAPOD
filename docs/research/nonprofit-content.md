@@ -74,3 +74,26 @@ with a nonprofit. The duplicate-template warning threshold (20% of
 matching records sharing one string) is a heuristic, not a certainty:
 a field that doesn't trigger it can still contain some duplication, just
 not enough to dominate the total.
+
+<!-- export65-section -->
+## The 65 export files
+
+Added 22 October 2026. This is the same scan run on the 65 export files: 56,363 distinct records after the files are de-duplicated on record id, reading each record's `title` field, which holds the post text. These files are a separate set from the three datasets above, and nothing above this heading has changed. Their source, method and limits are in [provenance.md](../provenance.md#the-65-export-files) and [export-65-profile.md](export-65-profile.md). Rates use all 56,363 records as the denominator, and 237 of them have no post text. Command: `python3 analysis/nonprofit_content_scan.py export65 /path/to/folder_with_the_65_files`.
+
+```text
+============================================================
+65 export files: NONPROFIT-RELATED CONTENT
+============================================================
+--- title (56,363 records) ---
+Records mentioning any nonprofit-related term: 222 (0.394%)
+Distinct underlying text values among those:   220
+    charity / charitable             138 (0.245%)
+    nonprofit / non-profit           53 (0.094%)
+    philanthropy / philanthropic     41 (0.073%)
+    NGO                              15 (0.027%)
+    nonprofit organization           4 (0.007%)
+```
+
+222 of 56,363 records (0.394%) mention a nonprofit-related term in the post text. The post-text rates above are 0.308% (podawaa2024 Content), 0.288% (HyperClapper post_title) and 0.404% after correction (LinkBoost-2025 Title; 0.530% raw), so the 65 export files sit just below LinkBoost-2025 and above the other two. The scan's duplicate-template check did not fire: the 222 matches hold 220 distinct texts. The 65 files have no headline or occupation field, so the HyperClapper headline and LinkBoost-2025 Occupation rows have no counterpart.
+
+The rates come from different fields and different kinds of record, so a gap between them describes the files and does not describe the tools. A match is a keyword in the text, not a finding about the post or its author.
