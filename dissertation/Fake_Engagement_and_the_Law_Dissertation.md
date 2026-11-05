@@ -2,9 +2,11 @@
 
 Daniel Hall · October 21, 2026
 
+Draft of November 5, 2026. Not submitted to or accepted by Harvard University, and no Dissertation Acceptance Certificate has been signed.
+
 © 2026 Daniel Hall. This dissertation is licensed under the [Creative Commons Attribution 4.0 International License (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/). You may share and adapt it for any purpose if you credit the author, link to the license and say whether you made changes.
 
-Suggested citation: Hall, Daniel. 2026. *Fake Engagement and the Law: How Federal, State and European Union Rules Apply to the Twenty Most Common Topics in 273,771 Engagement-Pod Posts.* Dissertation. <https://github.com/DreamITSoftware/SPOTAPOD/tree/main/dissertation>
+Suggested citation: Hall, Daniel. 2026. *Fake Engagement and the Law: How Federal, State and European Union Rules Apply to the Twenty Most Common Topics in 273,771 Engagement-Pod Posts.* Draft dissertation. <https://github.com/DreamITSoftware/SPOTAPOD/tree/main/dissertation>
 
 ## Abstract
 
