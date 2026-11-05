@@ -59,3 +59,13 @@ references:
     notes: >
       Related work by the author, listed as STATED. The title is as the author
       gave it, and this repository hasn't opened the record.
+  - type: thesis
+    title: "Fake Engagement and the Law: How Federal, State and European Union Rules Apply to the Twenty Most Common Topics in 273,771 Engagement-Pod Posts"
+    authors:
+      - name: "Daniel Hall"
+    year: 2026
+    url: "https://github.com/DreamITSoftware/SPOTAPOD/tree/main/dissertation"
+    notes: >
+      The author's dissertation. The full text is in this repository under
+      dissertation/. Its de-duplication rule, topic model and the counts that
+      depend on them are not in this repository.
