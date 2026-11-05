@@ -14,6 +14,24 @@ Posts.* Dissertation, 2026.
 
 The three files hold the same text. The PDF is the version to read and cite.
 
+## License
+
+© 2026 Daniel Hall. The dissertation is licensed under the
+[Creative Commons Attribution 4.0 International License (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/).
+Anyone may read, download, share, quote and adapt it for any purpose,
+including commercially, if they credit the author, link to the license and
+say whether they made changes. See [LICENSE](LICENSE).
+
+## How to cite
+
+> Hall, Daniel. 2026. *Fake Engagement and the Law: How Federal, State and
+> European Union Rules Apply to the Twenty Most Common Topics in 273,771
+> Engagement-Pod Posts.* Dissertation.
+> https://github.com/DreamITSoftware/SPOTAPOD/tree/main/dissertation
+
+[CITATION.cff](../CITATION.cff) lists the dissertation among its references
+in citation format.
+
 ## What it covers
 
 The dissertation pairs a corpus of engagement-pod posts with a topic-by-topic

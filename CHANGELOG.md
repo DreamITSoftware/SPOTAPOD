@@ -14,6 +14,12 @@
   earlier commit and are unaffected.
 
 ### Added
+- A CC BY 4.0 license for the dissertation: `dissertation/LICENSE`, a license
+  and suggested-citation notice on the dissertation's first page (PDF, Word
+  and Markdown), "License" and "How to cite" sections in
+  `dissertation/README.md`, `license: CC-BY-4.0` on its `CITATION.cff` entry,
+  and `LICENSE-CONTENT` now names `dissertation/` in its scope. No other text
+  in the dissertation changed.
 - The author's dissertation, *Fake Engagement and the Law: How Federal, State
   and European Union Rules Apply to the Twenty Most Common Topics in 273,771
   Engagement-Pod Posts*, under `dissertation/` as PDF (192 pages), Word and

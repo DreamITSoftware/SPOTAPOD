@@ -1140,7 +1140,8 @@ These are listed as STATED by the author. This repository hasn't checked them.
 - Hall, Daniel. *Fake Engagement and the Law: How Federal, State and European
   Union Rules Apply to the Twenty Most Common Topics in 273,771 Engagement-Pod
   Posts*. Dissertation, 2026. The full text is in [dissertation/](dissertation/)
-  as PDF, Word and Markdown. Its de-duplication rule, topic model and the
+  as PDF, Word and Markdown, free to read, share and cite under CC BY 4.0.
+  Its de-duplication rule, topic model and the
   counts that depend on them are not in this repository (see
   [dissertation/README.md](dissertation/README.md)).
 
