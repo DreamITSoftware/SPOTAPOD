@@ -14,6 +14,15 @@
   earlier commit and are unaffected.
 
 ### Added
+- The author's dissertation, *Fake Engagement and the Law: How Federal, State
+  and European Union Rules Apply to the Twenty Most Common Topics in 273,771
+  Engagement-Pod Posts*, under `dissertation/` as PDF (192 pages), Word and
+  Markdown, with a `dissertation/README.md` that says what the repository holds
+  and does not hold of its method. Linked from the README's related-work list,
+  `CITATION.cff` and the site navigation. Before adding it, the text was
+  checked for email addresses, profile links, handles, URNs and long numeric
+  IDs; the only matches were the author's own byline and two DOI and DOAJ
+  identifiers in the references. No raw data is added.
 - Citations of the author's related work: the book *DIGITAL BOUGHTulism: POONAMI* and a second Harvard Dataverse record in `CITATION.cff` and the README, plus the October 2026 *Cyber Defense eMagazine* article and *Top 100 List of Lies on Social Media* in the README. All are listed as STATED and none is checked here.
 - Provenance note and aggregate profile for a separate set of 65 export files
   (`podUsers_<id>_<stamp>.json`), collected by this repo's author. Added
