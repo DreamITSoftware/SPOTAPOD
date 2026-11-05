@@ -2,6 +2,10 @@
 
 Daniel Hall · October 21, 2026
 
+© 2026 Daniel Hall. This dissertation is licensed under the [Creative Commons Attribution 4.0 International License (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/). You may share and adapt it for any purpose if you credit the author, link to the license and say whether you made changes.
+
+Suggested citation: Hall, Daniel. 2026. *Fake Engagement and the Law: How Federal, State and European Union Rules Apply to the Twenty Most Common Topics in 273,771 Engagement-Pod Posts.* Dissertation. <https://github.com/DreamITSoftware/SPOTAPOD/tree/main/dissertation>
+
 ## Abstract
 
 Engagement pods produce fake social media indicators. The likes, comments and shares that a pod produces come from an agreement among its members, or from a tool that prompts them, and not from readers who chose on their own to engage, so they say little about how a post was received. The Federal Trade Commission's rule on fake indicators of social media influence, 16 CFR 465.1(h), gives the term a legal definition. Whether that definition reaches each kind of pod engagement is an open question, and this dissertation maps what the law says about it.
