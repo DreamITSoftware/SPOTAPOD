@@ -66,7 +66,10 @@ references:
     year: 2026
     url: "https://github.com/DreamITSoftware/SPOTAPOD/tree/main/dissertation"
     license: CC-BY-4.0
+    status: in-preparation
     notes: >
-      The author's dissertation. The full text is in this repository under
+      The author's draft dissertation, dated 5 November 2026. It has not been
+      submitted or accepted, and no acceptance certificate has been signed.
+      The full text is in this repository under
       dissertation/. Its de-duplication rule, topic model and the counts that
       depend on them are not in this repository.
