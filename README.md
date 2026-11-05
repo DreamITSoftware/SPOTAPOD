@@ -1137,9 +1137,15 @@ These are listed as STATED by the author. This repository hasn't checked them.
 - Hall, Daniel. *Replication Data for: SPOTAPOD Analysis Repository*. Harvard
   Dataverse. https://doi.org/10.7910/DVN/NT6YM2. The title is as the author
   gave it, and this repository hasn't opened the record.
+- Hall, Daniel. *Fake Engagement and the Law: How Federal, State and European
+  Union Rules Apply to the Twenty Most Common Topics in 273,771 Engagement-Pod
+  Posts*. Dissertation, 2026. The full text is in [dissertation/](dissertation/)
+  as PDF, Word and Markdown. Its de-duplication rule, topic model and the
+  counts that depend on them are not in this repository (see
+  [dissertation/README.md](dissertation/README.md)).
 
-[CITATION.cff](CITATION.cff) lists the article, the book and the Dataverse
-record in citation format.
+[CITATION.cff](CITATION.cff) lists the article, the book, the Dataverse
+record and the dissertation in citation format.
 
 ## Outreach materials
 
