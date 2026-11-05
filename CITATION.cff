@@ -65,6 +65,7 @@ references:
       - name: "Daniel Hall"
     year: 2026
     url: "https://github.com/DreamITSoftware/SPOTAPOD/tree/main/dissertation"
+    license: CC-BY-4.0
     notes: >
       The author's dissertation. The full text is in this repository under
       dissertation/. Its de-duplication rule, topic model and the counts that
