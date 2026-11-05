@@ -2,17 +2,30 @@
 
 Hall, Daniel. *Fake Engagement and the Law: How Federal, State and European
 Union Rules Apply to the Twenty Most Common Topics in 273,771 Engagement-Pod
-Posts.* Dissertation, 2026.
+Posts.* Draft dissertation, 2026.
+
+**Status: draft.** This is the draft of November 5, 2026. It has not been
+submitted to or accepted by Harvard University, and no Dissertation
+Acceptance Certificate has been signed. Every page of the PDF and Word file
+says so in its header.
 
 ## Files
 
 | File | What it is |
 |---|---|
-| [Fake_Engagement_and_the_Law_Dissertation.pdf](Fake_Engagement_and_the_Law_Dissertation.pdf) | The formatted dissertation, 192 pages |
-| [Fake_Engagement_and_the_Law_Dissertation.docx](Fake_Engagement_and_the_Law_Dissertation.docx) | The same text as a Word file |
-| [Fake_Engagement_and_the_Law_Dissertation.md](Fake_Engagement_and_the_Law_Dissertation.md) | The same text as Markdown, for searching and for reading changes between versions |
+| [Fake_Engagement_and_the_Law_Dissertation.pdf](Fake_Engagement_and_the_Law_Dissertation.pdf) | The draft laid out to the Harvard GSAS formatting rules, 343 pages: a certificate page stating that none has been signed, front matter numbered i to xiii, and the text numbered 1 to 329 |
+| [Fake_Engagement_and_the_Law_Dissertation.docx](Fake_Engagement_and_the_Law_Dissertation.docx) | The same draft as a Word file. Its table of contents and list of tables update in Word |
+| [Fake_Engagement_and_the_Law_Dissertation.md](Fake_Engagement_and_the_Law_Dissertation.md) | The same text as Markdown, without the front pages, for searching and for reading changes between versions |
 
 The three files hold the same text. The PDF is the version to read and cite.
+
+The PDF and Word file follow the
+[Harvard GSAS formatting guidance](https://gsas.harvard.edu/resource/dissertation-formatting-guidance):
+Times New Roman 12, double spacing, 1-inch margins, Roman numerals for the
+front matter, and tables that run past a page marked "(Continued)". The
+department, subject, advisor and defense date on the title and abstract
+pages are placeholders. The PDF's fonts are Liberation Serif, which has the
+same metrics as Times New Roman.
 
 ## License
 
@@ -26,7 +39,7 @@ say whether they made changes. See [LICENSE](LICENSE).
 
 > Hall, Daniel. 2026. *Fake Engagement and the Law: How Federal, State and
 > European Union Rules Apply to the Twenty Most Common Topics in 273,771
-> Engagement-Pod Posts.* Dissertation.
+> Engagement-Pod Posts.* Draft dissertation.
 > https://github.com/DreamITSoftware/SPOTAPOD/tree/main/dissertation
 
 [CITATION.cff](../CITATION.cff) lists the dissertation among its references
