@@ -13,6 +13,19 @@
   41,315-likes-on-one-view post) were independently re-verified in an
   earlier commit and are unaffected.
 
+### Changed
+- The dissertation PDF and Word file are now the draft of 5 November 2026 laid
+  out to the Harvard GSAS formatting rules (343 pages): a certificate page
+  stating that no Dissertation Acceptance Certificate has been signed, a title
+  page and copyright page, an abstract page, a table of contents and a list of
+  tables, Times New Roman 12 double-spaced, Roman-numbered front matter and
+  "(Continued)" labels on the four tables that run past a page. Every page
+  carries a header saying the dissertation is a draft that has not been
+  submitted or accepted. The title, abstract and chapter text are unchanged.
+  `dissertation/README.md`, `dissertation/LICENSE`, the README's related-work
+  entry and the `CITATION.cff` entry (now `status: in-preparation`) call it a
+  draft dissertation.
+
 ### Added
 - A CC BY 4.0 license for the dissertation: `dissertation/LICENSE`, a license
   and suggested-citation notice on the dissertation's first page (PDF, Word
