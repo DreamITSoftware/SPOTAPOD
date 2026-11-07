@@ -74,7 +74,7 @@ the 65 export files in aggregate. It does not hold the de-duplication rule
 them, including the 273,771 distinct posts and the topic shares, so a figure
 from the repository and a figure from the dissertation for the same source
 can differ. The dissertation cites the repository as it stood at commit
-da71fd2 on 22 October 2026.
+2c8d3f8 on 22 October 2026.
 
 The related Harvard Dataverse record is
 [doi:10.7910/DVN/NT6YM2](https://doi.org/10.7910/DVN/NT6YM2).
