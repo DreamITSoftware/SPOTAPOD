@@ -1,22 +1,24 @@
 # "Future" content
 
 `analysis/future_content_scan.py` counts mentions of "future"-related
-terms (future(s), futuristic, future of work) across post content in
-all three datasets. Like every other scan in this repo, it reports
-aggregate counts only, no record, author, or matched text ever printed
-beyond the duplicate-template check described below.
+terms (future(s), futuristic, future of work) across post content in all
+three datasets. Like every other scan in this repo, it reports aggregate
+counts only, with no record, author, or matched text printed beyond the
+duplicate-template check described below.
 
 ## LinkBoost-2025's low-distinct-ratio note, checked
 
 The low-distinct-ratio note fires on LinkBoost-2025 (403 distinct
-strings for 6,929 matches), but the duplicate-template warning does
-not - no single string dominates (the top is 104 of 6,929, about
-1.5%). Checked manually: the top repeated strings span many distinct,
-on-theme posts (AI-skills career advice, business-transformation
-commentary, emotional-intelligence-in-children content, "future of
-work" AI-course promotion). This is genuine signal, not an artifact.
+strings for 6,929 matches), but the duplicate-template warning does not:
+no single string dominates (the top is 104 of 6,929, about 1.5%).
+Checked manually, the top repeated strings span many distinct, on-theme
+posts (AI-skills career advice, business-transformation commentary,
+emotional-intelligence-in-children content, "future of work" AI-course
+promotion).
 
-## Results (VERIFIED - reproducible via the script)
+This is genuine signal, not an artifact.
+
+## Results (VERIFIED: reproducible via the script)
 
 | Term | podawaa2024 | HyperClapper | LinkBoost-2025 |
 |---|---|---|---|
@@ -29,17 +31,18 @@ work" AI-course promotion). This is genuine signal, not an artifact.
 
 This is the largest niche-topic category found in this repo so far:
 nearly 1 in 11 posts in LinkBoost-2025 mentions "future" in some form.
-All three datasets show a steady climb from podawaa2024 (5.5%)
-through HyperClapper (7.2%) to LinkBoost-2025 (8.9%). This gradient differs from
-many other scans in this repo, where LinkBoost-2025 is a sharp
-outlier against the other two.
 
-"Future of work" tracks closely with the AI-productivity content
-already documented elsewhere in this repo - the term appears at a
-similar share of "future" mentions across all three datasets (roughly
-2-4%), and the sample content confirms this: AI-skills career advice
-and "AI is changing the future of work" framing dominate the genuinely
-distinct LinkBoost-2025 posts checked above.
+All three datasets show a steady climb from podawaa2024 (5.5%) through
+HyperClapper (7.2%) to LinkBoost-2025 (8.9%). This gradient differs from
+many other scans in this repo, where LinkBoost-2025 is a clear outlier
+against the other two.
+
+"Future of work" tracks closely with the AI-productivity content already
+documented elsewhere in this repo. The term appears at a similar share
+of "future" mentions across all three datasets (roughly 2% to 4%), and
+the sample content confirms this: AI-skills career advice and "AI is
+changing the future of work" framing dominate the genuinely distinct
+LinkBoost-2025 posts checked above.
 
 "Futuristic" is comparatively rare and declining as a share of the
 category. It is the smallest of the three terms in every dataset, and drops

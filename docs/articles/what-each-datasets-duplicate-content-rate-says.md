@@ -14,7 +14,7 @@ This project's datasets show duplication rates and content clusters directly. Th
 
 ## Why publish this comparison
 
-Even as a labeled inference, it treats a duplication rate as a possible signal of what a specific tool sells and not only as evidence of low-quality content. That helps anyone trying to understand the engagement-pod market as a set of distinct businesses.
+Even as a labeled inference, it treats a duplication rate as a possible signal of what a specific tool sells as well as evidence of low-quality content. That helps anyone trying to understand the engagement-pod market as a set of distinct businesses.
 
 ## What is verified and what is inference
 

@@ -8,7 +8,7 @@ Every article in this project so far has been published off-platform: Substack, 
 
 A short LinkedIn post in the platform's own conventions (short paragraphs, a hook line) stating one verified finding (the zero-view anomaly, or the 533-post resume-template cluster) with a link back to the full research. Then report what engagement that post receives, compared to the typical engagement levels this project's own datasets show for career-advice or "exposing a problem" content categories.
 
-## Why run this as an experiment and not only as distribution
+## Why run this as an experiment rather than plain distribution
 
 A post about engagement manipulation, published on the platform where that manipulation happens, invites the question this project would ask of anyone else's post: was its engagement organic? This format commits in advance to disclosing the post's actual engagement numbers, not only its reach, and to stating that pod-based amplification of its own performance cannot be ruled out.
 

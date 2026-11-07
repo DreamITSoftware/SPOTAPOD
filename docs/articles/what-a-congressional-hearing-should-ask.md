@@ -8,7 +8,7 @@ If a future congressional hearing addresses social-media engagement manipulation
 
 **"What share of your platform's reported engagement metrics originates from coordinated, tool-assisted activity, and how is that measured internally?"** This project's own account-concentration findings (a small fraction of accounts producing a large majority of posts, in at least one documented case) show that this kind of concentration can be detected from exported data alone, so a platform's internal telemetry should be at least as capable of measuring it.
 
-**"When a third-party vulnerability is discovered in a tool that interacts with your platform, what is your actual notification and remediation timeline?"** This project's LEMPOD case documentation shows at least one instance of acknowledgment and mitigation. A hearing could ask for the general policy and timeline standard behind that instance, not just the instance itself.
+**"When a third-party vulnerability is discovered in a tool that interacts with your platform, what is your actual notification and remediation timeline?"** This project's LEMPOD case documentation shows at least one instance of acknowledgment and mitigation. A hearing could ask for the general policy and timeline standard behind that instance, in addition to the instance itself.
 
 **"Does your platform distinguish between different manipulation mechanisms (like-based vs. comment-based, for instance) in your detection systems, or treat all coordinated engagement as one category?"** This project found differences between manipulation models across three separate tools. A single-mechanism detection approach would plausibly miss at least one of them.
 

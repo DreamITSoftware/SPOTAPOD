@@ -5,7 +5,7 @@ venture-capital-related terms across post content in all three
 datasets. As with every other scan in this repo, it reports aggregate
 counts only, no record, author, or matched text ever printed. Includes
 the same duplicate-template safeguard introduced in
-[nonprofit-content.md](nonprofit-content.md) - it reports distinct
+[nonprofit-content.md](nonprofit-content.md): it reports distinct
 underlying text values alongside every raw count and flags any field
 where a single repeated string accounts for 20% or more of the
 matching records.
@@ -14,32 +14,30 @@ matching records.
 
 A record mentioning "investor" or "venture capital" is not evidence of
 any violation of any law. Establishing that requires specific elements
-this keyword scan doesn't and can't measure - a false statement of
-fact, materiality, intent, actual reliance or harm, and often
-jurisdiction and registration status.
+this keyword scan doesn't and can't measure: a false statement of fact,
+materiality, intent, actual reliance or harm, and often jurisdiction and
+registration status.
 
 If specific elements were separately established for a specific record,
 these frameworks would apply:
 
-- **16 CFR 465.8** - the rule this project is built around.
+- **16 CFR 465.8**: the rule this project is built around.
   Requires scienter and commercial-purpose materiality for that
   specific record, which this scan doesn't establish.
-- **FTC Endorsement Guides (16 CFR Part 255)** - relevant if content is
+- **FTC Endorsement Guides (16 CFR Part 255)**: relevant if content is
   a paid promotion of a specific investment product without disclosure.
   This scan doesn't check for sponsorship disclosure tied to investment
   content specifically; see [other-regulatory-signals.md](other-regulatory-signals.md)
   for the repo's general endorsement-disclosure-gap check.
-- **Securities law (Securities Act 17(a), Exchange Act Rule 10b-5)** -
-  relevant only if a post solicits investment in an actual,
+- **Securities law (Securities Act 17(a), Exchange Act Rule 10b-5)**: relevant only if a post solicits investment in an actual,
   identifiable security and makes materially false or misleading
   statements in connection with that solicitation. Requires an actual
-  security, an actual false statement, and reliance/harm - none of
-  which a keyword count can show.
-- **Investment Advisers Act of 1940** - relevant only if someone holds
+  security, an actual false statement, and reliance/harm, none of which a keyword count can show.
+- **Investment Advisers Act of 1940**: relevant only if someone holds
   themselves out as providing personalized investment advice for
   compensation without being registered. Not something this scan checks.
 
-## Results (VERIFIED - reproducible via the script)
+## Results (VERIFIED: reproducible via the script)
 
 | Term | podawaa2024 | HyperClapper | LinkBoost-2025 |
 |---|---|---|---|
@@ -57,8 +55,8 @@ these frameworks would apply:
 
 No field triggered the duplicate-template warning. LinkBoost-2025's
 distinct-string count (260 of 4,029 matching records) reflects that
-dataset's known structure - many pod actions logged against a limited
-set of target posts - documented already in
+dataset's known structure (many pod actions logged against a limited set
+of target posts), documented already in
 [baseline-profile.md](baseline-profile.md), and is not a new distortion.
 
 ## Reading these numbers
@@ -77,7 +75,7 @@ content uses "investor," "investing," or "VC" instead.
 
 This is one of the larger content categories checked in this repo so
 far, higher than law-related content or nonprofit-related content,
-though well below the corporation-mention rate (13-23%) in
+though well below the corporation-mention rate (13% to 23%) in
 [entity-mentions.md](entity-mentions.md).
 
 ## Caveats

@@ -16,7 +16,7 @@ Blockchain and crypto-related terms (blockchain, crypto, Web3, NFT, Bitcoin, DeF
 | DeFi | 551 | 29 |
 | Ethereum | 515 | 29 |
 
-Every term drops, not just the average. Web3 mentions fall from 2,251 to 65, NFT mentions from 1,541 to 19. No single outlier term drives the total; the drop covers the whole crypto vocabulary.
+Every term drops, along with the average. Web3 mentions fall from 2,251 to 65, NFT mentions from 1,541 to 19. No single outlier term drives the total; the drop covers the whole crypto vocabulary.
 
 ## One possible explanation
 

@@ -7,7 +7,7 @@ datasets. Same discipline as every other scan in this repo: aggregate
 counts only, and no record, author, or matched text is printed beyond the
 duplicate-template check described below.
 
-## Results (VERIFIED - reproducible via the script)
+## Results (VERIFIED: reproducible via the script)
 
 | Dataset | Any mention | % of dataset |
 |---|---|---|
@@ -29,15 +29,15 @@ duplicate-template check described below.
 Neither the duplicate-template safeguard nor the low-distinct-ratio
 check flagged a genuine correction here. LinkBoost-2025's lower
 distinct-string count (182 for 3,056 matches) is consistent with that
-dataset's known structure - only 469 distinct target posts total,
-documented in [baseline-profile.md](baseline-profile.md). It is not a new
-artifact requiring correction, as in earlier scans in this repo.
+dataset's known structure: only 469 distinct target posts total,
+documented in [baseline-profile.md](baseline-profile.md). It is not a
+new artifact requiring correction, as in earlier scans in this repo.
 
 ## Reading these numbers
 
 This is one of the larger content categories across the
 niche-topic scans in this repo, well above
-[pharma-content.md](pharma-content.md) (0.3-0.6%),
+[pharma-content.md](pharma-content.md) (0.3% to 0.6%),
 [cybersecurity-anomaly.md](cybersecurity-anomaly.md),
 [law-content.md](law-content.md), [nonprofit-content.md](nonprofit-content.md),
 [travel-content.md](travel-content.md),

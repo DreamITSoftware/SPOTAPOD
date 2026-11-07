@@ -9,29 +9,28 @@ duplicate-template check described below.
 ## A correction found by reading the actual posts
 
 The duplicate-template safeguard from
-[nonprofit-content.md](nonprofit-content.md) did not fire on this
-scan - no single string crossed the 20% threshold in any dataset.
+[nonprofit-content.md](nonprofit-content.md) did not fire on this scan:
+no single string crossed the 20% threshold in any dataset.
 LinkBoost-2025 still needed a manual check: its distinct-string count
 (28) was far below its match count (482), with no single string
-dominating. The matches came from roughly 8 distinct
-posts, each boosted 29-38 times by LinkBoost's pod-action structure.
-That is neither one repeated template nor evenly distributed genuine
-signal.
+dominating. The matches came from roughly 8 distinct posts, each boosted
+29 to 38 times by LinkBoost's pod-action structure. That is neither one
+repeated template nor evenly distributed genuine signal.
 
 Reading those 8 posts directly showed they are about **FDA
-import-compliance and customs-regulatory process** - Import Alerts,
+import-compliance and customs-regulatory process**: Import Alerts,
 product refusals and seizures at the border, FOIA requests to the FDA,
-tariff and import-cost issues for regulated goods. This is trade-
-compliance/customs-consulting content that mentions the FDA
-as a regulator. It is not pharmaceutical-industry content. `FDA` is 333 of
-LinkBoost-2025's 482 total matches, so this changes
-the whole result for that dataset, not just one line item.
+tariff and import-cost issues for regulated goods. This is
+trade-compliance/customs-consulting content that mentions the FDA as a
+regulator. It is not pharmaceutical-industry content. `FDA` is 333 of
+LinkBoost-2025's 482 total matches, so this changes the whole result for
+that dataset rather than one line item.
 
 The script now checks for this pattern automatically (a low
 distinct-to-match ratio without one dominant string) and prints a note
 recommending a manual content check. Earlier versions of this class of scan stayed silent.
 
-## Results (VERIFIED - reproducible via the script)
+## Results (VERIFIED: reproducible via the script)
 
 | Term | podawaa2024 | HyperClapper | LinkBoost-2025 |
 |---|---|---|---|
@@ -45,7 +44,7 @@ recommending a manual content check. Earlier versions of this class of scan stay
 | Drug company/companies | 3 | - | - |
 | **Any mention** | **636 (0.298%)** | **146 (0.296%)** | **482 (0.618%)** |
 
-\* See correction above - mostly FDA import-compliance content, not
+\* See correction above: mostly FDA import-compliance content, not
 pharmaceutical-industry content.
 
 ## Reading these numbers

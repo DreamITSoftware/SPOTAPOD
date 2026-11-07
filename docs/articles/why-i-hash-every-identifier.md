@@ -8,7 +8,7 @@ Publishing no identifying information is one standard. Having tools that are str
 
 Every script that loads raw engagement-pod data hashes each direct identifier, a LinkedIn profile URL, an author name, a public identifier field, with SHA-256, in memory, as one of the first operations performed on each record. This happens before any filtering, before any print statement, before any intermediate file gets written. The unhashed identifier exists in memory for the shortest possible span and is never deliberately persisted anywhere.
 
-The practical effect: during development, in a debugging session, or in an error message that might get pasted somewhere, the name or profile URL of a real person essentially never appears on a screen, because the code that would show it was never written.
+The practical effect: during development, in a debugging session, or in an error message that might get pasted somewhere, the name or profile URL of a real person almost never appears on a screen, because the code that would show it was never written.
 
 ## Why the bar is "before it touches my screen" and not "before publication"
 

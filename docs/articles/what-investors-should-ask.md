@@ -8,7 +8,7 @@ Founder personal brand is a due-diligence input. A strong LinkedIn following is 
 
 Three independently sourced datasets in this project describe operating engagement-pod services at scale: hundreds of thousands of posts, thousands of participating accounts, and at least two structurally different manipulation models (reciprocal liking in one, comment-based inflation in another). This is a documented market for the kind of engagement metric a founder's LinkedIn profile displays.
 
-Separately, this project found extremely high content-duplication rates in some categories (533 identical resume-rewrite posts is one example among several documented duplicate-template clusters) and account-concentration patterns where a small number of accounts account for a large share of total posts, both patterns consistent with managed or coordinated content operations rather than purely organic individual activity.
+Separately, this project found high content-duplication rates in some categories (533 identical resume-rewrite posts is one example among several documented duplicate-template clusters) and account-concentration patterns where a small number of accounts account for a large share of total posts, both patterns consistent with managed or coordinated content operations rather than purely organic individual activity.
 
 ## The due-diligence question
 

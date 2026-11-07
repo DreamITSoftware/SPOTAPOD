@@ -6,7 +6,7 @@ post content in all three datasets. Same discipline as every other
 scan in this repo: aggregate counts only, no record, author, or
 matched text ever printed beyond the duplicate-template check below.
 
-## Results (VERIFIED - reproducible via the script)
+## Results (VERIFIED: reproducible via the script)
 
 | Term | podawaa2024 | HyperClapper | LinkBoost-2025 |
 |---|---|---|---|
@@ -29,10 +29,10 @@ new artifact.
 HyperClapper's rate (4.851%) is the highest by a wide margin, driven almost
 entirely by "remote work" (1,716, nearly triple its next-highest term)
 - consistent with HyperClapper being the most recent dataset and remote
-work remaining a contested topic through 2025-2026.
+work remaining a contested topic through 2025 to 2026.
 
-LinkBoost-2025 leans heavily toward "burnout" specifically (1,937,
-81% of its total) rather than a spread across terms - this connects to the
+LinkBoost-2025 leans heavily toward "burnout" specifically (1,937, 81%
+of its total) rather than a spread across terms. This connects to the
 "authentic"/"honest truth" vulnerability-posting genre documented in
 [authenticity-content.md](authenticity-content.md), and burnout content
 fits that same performed-vulnerability pattern.

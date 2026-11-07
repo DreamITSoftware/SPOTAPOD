@@ -1,32 +1,37 @@
 # Veteran / military content
 
 `analysis/veteran_content_scan.py` counts mentions of veteran- and
-military-related terms across post content in all three datasets. Same
-as every other scan in this repo: aggregate counts only, no
-record, author, or matched text ever printed beyond the
-duplicate-template check described below. No individual is identified
-by name in this script's output or in this document.
+military-related terms across post content in all three datasets. As
+with every other scan in this repo: aggregate counts only, no record,
+author, or matched text ever printed beyond the duplicate-template check
+described below.
+
+No individual is identified by name in this script's output or in this
+document.
 
 ## A previously documented artifact
 
 The duplicate-template safeguard fires on LinkBoost-2025: 97 of its 476
 matches trace to the same repeated political campaign-endorsement post
-already documented - without naming the candidate - in
+already documented, without naming the candidate, in
 [decision-points.md](decision-points.md) and
 [political-content.md](political-content.md). That post describes the
 candidate as a "decorated 20-year veteran and combat aviator," which is
-why it surfaces here too. Corrected, LinkBoost-2025's real any-mention
-count is 380, not 476.
+why it surfaces here too.
 
-**The rest of LinkBoost-2025's veteran content is genuine.** The
-remaining matches are distinct tributes to Indian Armed Forces personnel - a fighter pilot's widow
-continuing his legacy, a soldier's wife honoring her husband, a young
-army doctor killed saving fellow soldiers, a third-generation officer.
-This differs from most niche categories checked in this repo and is
-similar to the advocacy content found alongside a duplicate template in
+Corrected, LinkBoost-2025's real any-mention count is 380, not 476.
+
+**The rest of LinkBoost-2025's veteran content is genuine.**
+
+The remaining matches are distinct tributes to Indian Armed Forces
+personnel: a fighter pilot's widow continuing his legacy, a soldier's
+wife honoring her husband, a young army doctor killed saving fellow
+soldiers, a third-generation officer. This differs from most niche
+categories checked in this repo and is similar to the advocacy content
+found alongside a duplicate template in
 [homelessness-content.md](homelessness-content.md).
 
-## Results (VERIFIED - reproducible via the script)
+## Results (VERIFIED: reproducible via the script)
 
 | Term | podawaa2024 | HyperClapper | LinkBoost-2025 |
 |---|---|---|---|

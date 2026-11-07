@@ -6,7 +6,7 @@ A number on a screen tells you quickly whether to believe what's next to it. 200
 
 ## The gap between "liked" and "seen"
 
-The plainest version of the problem is content liked by more people than ever saw it. Across one 213,491-record dataset, 75,442 posts, 35.3% of the file, show likes recorded against zero views. One record shows 88,028 likes and 0 views. A rounding error or a slow-loading counter would not explain that. It looks like engagement that never passed through anyone's feed, purchased or coordinated rather than earned.
+The plainest version of the problem is content liked by more people than ever saw it. Across one 213,491-record dataset, 75,442 posts, 35.3% of the file, show likes recorded against zero views. One record shows 88,028 likes and 0 views. A rounding error or a slow-loading counter would not explain that. It points to engagement that never passed through anyone's feed, purchased or coordinated rather than earned.
 
 This anomaly shows that the number on the post and the number of people who looked at it can differ, even when the platform presents them side by side. Every other finding in this piece builds on that gap.
 
@@ -40,7 +40,7 @@ Nobody tracked, in this data, who actually read these posts or what they believe
 
 ## What is established
 
-**VERIFIED**, reproducible from checksummed source files: the zero-view anomaly (75,442 of 213,491 records, 35.3%); career-advice content at 4.45%–16.52% across three datasets; the within-file 84.06% vs. 65.53% reciprocal-engagement gap for career-advice content; the 59.5% coaching/leadership occupation skew behind it; HyperClapper's removed-then-relisted Chrome Web Store presence under the same publisher; and the impressions-per-like gap between pod-flagged and clean engagement (3.94 vs. 6.07, p = 0.012), including that this gap survives a check against post-age as a confound.
+**VERIFIED**, reproducible from checksummed source files: the zero-view anomaly (75,442 of 213,491 records, 35.3%); career-advice content at 4.45% to 16.52% across three datasets; the within-file 84.06% vs. 65.53% reciprocal-engagement gap for career-advice content; the 59.5% coaching/leadership occupation skew behind it; HyperClapper's removed-then-relisted Chrome Web Store presence under the same publisher; and the impressions-per-like gap between pod-flagged and clean engagement (3.94 vs. 6.07, p = 0.012), including that this gap survives a check against post-age as a confound.
 
 **Not established**: whether the reach-penalty signal reflects LinkedIn's enforcement specifically rather than some other factor, since the within-account version of that comparison is far weaker (barely a majority) than the pooled one; and any claim about how readers actually respond to inflated engagement, since no dataset here tracks a single reader's belief or behavior.
 

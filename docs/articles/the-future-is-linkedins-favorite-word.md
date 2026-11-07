@@ -8,7 +8,7 @@ That last number means "future" shows up in nearly **1 of every 11 posts** in th
 
 ## A smooth gradient
 
-Most topics in this project show one dataset as a sharp outlier against the other two. "Future" climbs steadily, from 5.5% to 7.2% to 8.9%, with no single dataset spiking apart from the rest. This is rare in this project's other findings.
+Most topics in this project show one dataset as an outlier against the other two. "Future" climbs steadily, from 5.5% to 7.2% to 8.9%, with no single dataset spiking apart from the rest. This is rare in this project's other findings.
 
 "Future of work" specifically tracks closely with AI-productivity content documented elsewhere. The term appears at higher rates in datasets that also show elevated AI-topic mentions, consistent with "the future" functioning largely as shorthand for AI-driven change in career and business content, and not a general philosophical theme.
 
