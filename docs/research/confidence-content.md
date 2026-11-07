@@ -12,7 +12,7 @@ duplicate-template check described below.
 The low-distinct-ratio note fires on LinkBoost-2025 (249 distinct
 strings for 4,069 matches), but the duplicate-template warning does
 not - no single string dominates (the top is 129 of 4,069, about 3%).
-Checked manually: the top repeated strings are genuinely distinct,
+Checked manually: the top repeated strings are distinct,
 on-theme leadership/career posts (a leadership-metaphor post about a
 sheepdog, an AI-personal-branding post, ChatGPT job-search prompts,
 career-AI-skills advice). This is genuine signal, not an artifact.
@@ -38,15 +38,15 @@ confidence in some form.
 
 HyperClapper's jump from podawaa2024's rate (1.06%) to 4.33% - more
 than 4x higher, despite podawaa2024 having a larger raw count of
-"confidence" mentions - tracks with the broader pattern already
-established across this repo: HyperClapper and LinkBoost-2025 both
+"confidence" mentions - fits the broader pattern
+across this repo: HyperClapper and LinkBoost-2025 both
 skew heavily toward motivational/leadership/soft-skills content
 compared to podawaa2024's more general mix.
 
 "Self-confidence" is essentially absent in HyperClapper (6 mentions,
 versus 100 in podawaa2024 and 93 in LinkBoost-2025) despite HyperClapper
 having a comparable rate of the general term "confidence" - suggesting
-HyperClapper's confidence-content leans toward business/professional
+HyperClapper's confidence content leans toward business/professional
 confidence framing rather than the more personal "self-confidence"
 framing found in the other two datasets.
 

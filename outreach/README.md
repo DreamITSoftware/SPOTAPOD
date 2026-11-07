@@ -16,10 +16,9 @@ and the 533×-repeated "AI resume rewrite" template, reframed as a
 interpretation exercise, discussion questions, and a standards-alignment
 table (mapped to NAMLE's Access/Analyze/Evaluate/Act competencies).
 
-`classroom-case-study.html` is the source it was generated from, 
-includes all icons pre-embedded as base64 data URIs, so it's fully
-self-contained and reproducible without any build step beyond HTML-to-PDF
-conversion:
+`classroom-case-study.html` is the source the PDF was generated from. It
+includes all icons pre-embedded as base64 data URIs, so it is
+self-contained and needs no build step beyond HTML-to-PDF conversion:
 
 ```bash
 wkhtmltopdf --enable-local-file-access classroom-case-study.html classroom-case-study.pdf
@@ -28,22 +27,22 @@ wkhtmltopdf --enable-local-file-access classroom-case-study.html classroom-case-
 ## Why this is safe to include as a finished PDF, unlike the raw data
 
 Every fact in this document is aggregate (a concentration statistic, a
-repeated-template count) or already-established methodology from
+repeated-template count) or established methodology from
 `docs/research/`. It contains no names, handles, photos, profile links,
-or unique/one-off post content, see
+or unique/one-off post content. See
 [docs/research/decision-points.md](../docs/research/decision-points.md)
 for why only phrases repeated many times, never a single post, are ever
-referenced. That's the same test that governs everything in this repo
-(see [CONTRIBUTING.md](../CONTRIBUTING.md)): this PDF passes it, which is
-why it's committed directly rather than left as a build artifact.
+referenced. The same test governs everything in this repo
+(see [CONTRIBUTING.md](../CONTRIBUTING.md)). The PDF passes it, so it is
+committed directly instead of being left as a build artifact.
 
 ## Scope note (same as everywhere else in this repo)
 
-This lesson explicitly teaches a *general* media-literacy skill using
-LinkedIn/career-advice content as its example, on purpose, since LinkedIn
-requires users to be 16+ and isn't a platform most students in the target
-grade range use daily. The module states this directly to the teacher and
-is **not** framed as being about, or evidence for, any teen-focused
+This lesson teaches a *general* media-literacy skill and uses
+LinkedIn/career-advice content as its example on purpose: LinkedIn
+requires users to be 16+ and most students in the target grade range do
+not use it daily. The module tells the teacher this directly. It is
+**not** framed as being about, or evidence for, any teen-focused
 platform, any pending state or federal legislation (including KOSA), or
 any state's social-media-minors laws. See
 [docs/research/decision-points.md](../docs/research/decision-points.md)

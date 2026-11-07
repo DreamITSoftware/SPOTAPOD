@@ -1,12 +1,12 @@
 # Verified vs. Viral: Series Launch
 
-### A recurring feature fact-checking specific viral LinkedIn claims against this project's actual data, starting with the claim that launched this entire project
+### A recurring feature that checks specific viral LinkedIn claims against this project's data, starting with the claim that launched the project
 
-Some viral LinkedIn claims are checkable against the datasets this project studies. This series exists to do that, one claim at a time, using the same recheck-everything discipline applied throughout this project's other work.
+Some viral LinkedIn claims are checkable against the datasets this project studies. This series exists to do that, one claim at a time, using the same recheck-everything approach as this project's other work.
 
 ## Installment one: "Nine of the ten highest-liked posts show zero views"
 
-This claim didn't originate on LinkedIn. It originated in this project's own earlier commentary, making it a fitting first installment for a series about not taking a viral-sounding number at face value, including one's own.
+This claim did not originate on LinkedIn. It came from this project's own earlier commentary, which makes it a fitting first installment for a series about not taking a viral-sounding number at face value, including one's own.
 
 **The claim, as originally published:** nine of the ten single highest-liked posts in a 213,491-post dataset show zero recorded views.
 
@@ -14,15 +14,15 @@ This claim didn't originate on LinkedIn. It originated in this project's own ear
 
 **The result:** **four**, not nine.
 
-**Verdict:** Corrected. The claim was real and the underlying phenomenon (some top-liked posts do show zero views) is genuine, but the specific count was substantially overstated before this project rechecked it directly.
+**Verdict:** Corrected. The underlying phenomenon (some top-liked posts do show zero views) is genuine, but the specific count was substantially overstated before this project rechecked it directly.
 
-## Why this series starts here instead of with someone else's claim
+## Why this series starts here
 
-A series built around fact-checking viral claims loses credibility fast if its first move is pointing at someone else without first showing the same standard applied to its own house. Leading with a self-correction sets the actual bar this series intends to hold every future installment to.
+A fact-checking series loses credibility if it starts by pointing at someone else without first applying the same standard to its own work. Leading with a self-correction sets the bar for every future installment.
 
-## What this series will and won't do going forward
+## What this series will do
 
-Each future installment names a specific, checkable claim, states the check performed, and reports the result honestly, including when a viral claim turns out to hold up exactly as stated. This isn't a series built to find gotchas. It's built to check.
+Each future installment names a specific, checkable claim, states the check performed, and reports the result, including when a viral claim holds up exactly as stated. The goal is to check claims, not to catch people out.
 
 ## What this is, and isn't
 

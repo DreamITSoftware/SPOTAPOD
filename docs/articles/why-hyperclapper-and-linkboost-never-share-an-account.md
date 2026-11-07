@@ -1,26 +1,26 @@
 # Why HyperClapper and LinkBoost Never Share an Account
 
-### Zero overlapping accounts between two tools serving what should be the same market is the single strangest verified fact in this project
+### Two tools serving the same market share zero accounts, the strangest verified fact in this project
 
 Two engagement-pod tools, both serving people who want inflated LinkedIn engagement, checked against each other for shared accounts. The result: zero matches, across the full account lists of both datasets.
 
-## The check, and why it's a strong result
+## The check
 
-This isn't a low-overlap finding that could plausibly be sampling noise. It's a complete, exhaustive comparison of every account identifier appearing in HyperClapper's dataset against every account identifier in LinkBoost's, hashed and compared without ever exposing either list. Zero matches out of what should, on a naive assumption of a shared customer pool, produce at least some overlap.
+This is not a low-overlap finding that could be sampling noise. It is an exhaustive comparison of every account identifier appearing in HyperClapper's dataset against every account identifier in LinkBoost's, hashed and compared without ever exposing either list. A shared customer pool would be expected to produce at least some overlap.
 
-## Candidate explanations, all labeled as exactly what they are
+## Candidate explanations
 
-**Market segmentation by pricing or features.** If the two tools serve meaningfully different price points or feature sets (like-based vs. comment-based manipulation, for instance), they may simply attract non-overlapping customer segments by design. This project has no pricing or feature-comparison data to confirm this. It's a plausible inference, not a finding.
+**Market segmentation by pricing or features.** If the two tools serve meaningfully different price points or feature sets (like-based vs. comment-based manipulation, for instance), they may attract non-overlapping customer segments. This project has no pricing or feature-comparison data to confirm this. It is an inference, not a finding.
 
-**Geographic or industry segmentation.** The two tools could market to different regions or professional verticals. Again, unconfirmed by this project's data.
+**Geographic or industry segmentation.** The two tools could market to different regions or professional verticals. This project's data does not confirm this either.
 
-**Distribution channel effects.** If each tool is discovered primarily through a specific referral network, community, or marketing channel, non-overlapping discovery paths alone could produce non-overlapping customer bases without any deliberate segmentation at all.
+**Distribution channel effects.** If each tool is discovered primarily through a specific referral network, community, or marketing channel, non-overlapping discovery paths alone could produce non-overlapping customer bases without deliberate segmentation.
 
 **Sequential rather than simultaneous use.** Accounts could migrate from one tool to the other over time in a way that a snapshot comparison wouldn't detect as overlap, if the two datasets were captured at different points and an account switched providers in between.
 
-## What this project can actually claim
+## What this project can claim
 
-Only the fact itself: zero shared accounts between two independently sourced datasets, exhaustively checked. Every explanation for why is offered as inference, explicitly unconfirmed, because this project's data doesn't extend to customer acquisition, pricing, or account history, the things that would actually settle the question.
+Only the fact itself: zero shared accounts between two independently sourced datasets, exhaustively checked. Every explanation for why is inference and unconfirmed, because this project's data does not cover customer acquisition, pricing, or account history, which would settle the question.
 
 ## What this is, and isn't
 

@@ -37,11 +37,11 @@ percentages only, no matched text or record identified.
 ## Reading these numbers
 
 - **Book promotion is a small minority in all three files**, under 1%
-  each. It's present, but it doesn't characterize these datasets.
+  each. It is present but does not characterize these datasets.
 - **Business/entrepreneurship and "writing craft" dominate across all
-  three**, which is consistent with LinkedIn's overall content mix
-  (professional self-promotion) rather than anything distinctive to
-  pod-engagement content specifically.
+  three**, consistent with LinkedIn's overall content mix
+  (professional self-promotion) and not specific to
+  pod-engagement content.
 - **Fiction, poetry, and children's books are minor everywhere**, expected
   on a professional-networking platform.
 - Same caveats as [other-regulatory-signals.md](other-regulatory-signals.md):

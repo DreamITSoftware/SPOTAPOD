@@ -7,9 +7,9 @@ Every script in this repo follows the same rule: author/profile identifiers
 `linkedin_profile_link`, `profile_picture`) are read once, passed through
 `hashlib.sha256`, and used only as dictionary keys for counting. The hash is
 never written to disk, never printed, and cannot be reversed to the original
-identifier from anything this repo outputs. This means the repo can report
+identifier from anything this repo outputs. The repo can therefore report
 "7,033 unique authors" or "the top 1% of authors account for 19.1% of posts"
-without ever being able to tell you, or anyone else, *which* authors those are.
+without being able to say which authors those are.
 
 Post `Content` and `post_title` text is aggregated only at the level of exact
 duplicate counts (e.g., how many times a given string appears, how many
@@ -36,11 +36,11 @@ Snowflake-style bit layout as podawaa2024's `linkedinPostId`, so the same
 decode (shift right 22 bits for milliseconds since the Unix epoch)
 applies here too. This is the same **INFERENCE** as podawaa2024's
 decoding, not confirmed by LinkedIn documentation, and it approximates
-the target post's own publish date, not when LinkBoost's operator
+the target post's own publish date, not the date when LinkBoost's operator
 account acted on it. Because many records in this file target the same
 handful of posts (469 unique `ObjectUrn` values, 3,129 unique activity
 ids), a per-record date count and a per-unique-target-post date count
-give different pictures and are both worth reporting separately; see
+give different pictures and are both reported separately; see
 [docs/research/date-cutoff-count.md](research/date-cutoff-count.md) for
 an example.
 
@@ -49,7 +49,7 @@ an example.
 The `like` and `comment` booleans in the HyperClapper export appear to record
 whether the pod tool successfully executed a reciprocal like and/or comment
 action on a given post, not whether the *post's author* liked or commented
-on anything. That distinction matters: a record with `like=true,
+on anything. A record with `like=true,
 comment=true` is a **STATED** signal that a reciprocal action tied to this
 post happened via the tool, not independent confirmation of it, and it is
 not by itself evidence of the scienter or commercial-purpose elements that

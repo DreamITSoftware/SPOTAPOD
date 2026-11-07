@@ -1,8 +1,8 @@
 # The Pod Report: Series Launch
 
-### A running tracker of engagement-pod tools as they're discovered, starting with the three this project already has verified data on, and how they're actually different from each other
+### A running tracker of engagement-pod tools, starting with the three this project has verified data on and how they differ
 
-New engagement-pod tools appear and disappear. This series exists as a standing, updatable reference tracking each one this project can speak to with actual data, rather than by reputation alone.
+New engagement-pod tools appear and disappear. This series is an updatable reference covering each tool this project has data on, rather than relying on reputation.
 
 ## Current entries
 
@@ -14,11 +14,11 @@ New engagement-pod tools appear and disappear. This series exists as a standing,
 
 ## What "tracked" means for this series
 
-An entry only gets added once this project has independently verifiable, reproducible data on the tool in question. A marketing claim or a mention in someone else's writing isn't sufficient for inclusion. This keeps the tracker's evidentiary bar consistent with the rest of this project, at the cost of being slower to grow than a tool wouldn't need to clear that bar to simply exist.
+An entry only gets added once this project has independently verifiable, reproducible data on the tool in question. A marketing claim or a mention in someone else's writing is not sufficient for inclusion. This keeps the tracker's evidentiary bar consistent with the rest of this project, at the cost of slower growth.
 
-## Why a standing tracker format, rather than one article per tool
+## Why a tracker instead of one article per tool
 
-Pod tools aren't static. A service's scale, mechanism, or user base can shift, and a one-time article about a specific tool ages the same way a one-time corrections article does. A tracker format lets each tool's entry get updated as new data becomes available, without needing a new standalone piece every time.
+A service's scale, mechanism, or user base can change, and a one-time article about a tool goes out of date. A tracker lets each entry be updated as new data becomes available, without a new standalone piece each time.
 
 ## What this is, and isn't
 

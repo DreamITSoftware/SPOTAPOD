@@ -18,29 +18,28 @@ matched text ever printed beyond the duplicate-template check below.
 | **Any mention** | **1,898 (0.889%)** | **2,395 (4.851%)** | **2,398 (3.076%)** |
 
 LinkBoost-2025's low distinct-string ratio (139 for 2,398 matches,
-mostly "burnout") was checked manually - the top repeated string is
-under 5% of matches, and the top several are genuinely distinct posts
+mostly "burnout") was checked manually. The top repeated string is
+under 5% of matches, and the top several are distinct posts
 (an executive-burnout post, a solopreneur-burnout post, a security
 operations center overload post, an empathy-in-leadership post), not a
 new artifact.
 
 ## Reading these numbers
 
-HyperClapper's rate (4.851%) is by far the highest, driven almost
+HyperClapper's rate (4.851%) is the highest by a wide margin, driven almost
 entirely by "remote work" (1,716, nearly triple its next-highest term)
 - consistent with HyperClapper being the most recent dataset and remote
-work remaining a live, contested topic through 2025-2026.
+work remaining a contested topic through 2025-2026.
 
 LinkBoost-2025 leans heavily toward "burnout" specifically (1,937,
-81% of its total) rather than a spread across terms - connects to the
+81% of its total) rather than a spread across terms - this connects to the
 "authentic"/"honest truth" vulnerability-posting genre documented in
-[authenticity-content.md](authenticity-content.md); burnout content is
-a natural fit for that same performed-vulnerability pattern.
+[authenticity-content.md](authenticity-content.md), and burnout content
+fits that same performed-vulnerability pattern.
 
-"Return to office" is the smallest term everywhere, which is itself
-notable given how contentious RTO mandates have been in general tech
-and business news coverage over this period - this content ecosystem
-doesn't reflect that intensity.
+"Return to office" is the smallest term everywhere, even though
+RTO mandates have been contentious in tech and business news over this
+period. This content does not reflect that intensity.
 
 ## Caveats
 

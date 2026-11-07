@@ -2,12 +2,12 @@
 
 `analysis/veteran_content_scan.py` counts mentions of veteran- and
 military-related terms across post content in all three datasets. Same
-discipline as every other scan in this repo: aggregate counts only, no
+as every other scan in this repo: aggregate counts only, no
 record, author, or matched text ever printed beyond the
 duplicate-template check described below. No individual is identified
 by name in this script's output or in this document.
 
-## Another appearance of an already-documented artifact
+## A previously documented artifact
 
 The duplicate-template safeguard fires on LinkBoost-2025: 97 of its 476
 matches trace to the same repeated political campaign-endorsement post
@@ -18,14 +18,12 @@ candidate as a "decorated 20-year veteran and combat aviator," which is
 why it surfaces here too. Corrected, LinkBoost-2025's real any-mention
 count is 380, not 476.
 
-**Unlike that artifact, the rest of LinkBoost-2025's veteran content is
-genuine and substantive.** The remaining matches are real, distinct
-tributes to Indian Armed Forces personnel - a fighter pilot's widow
+**The rest of LinkBoost-2025's veteran content is genuine.** The
+remaining matches are distinct tributes to Indian Armed Forces personnel - a fighter pilot's widow
 continuing his legacy, a soldier's wife honoring her husband, a young
 army doctor killed saving fellow soldiers, a third-generation officer.
-This is a meaningfully different character than most niche categories
-checked in this repo, similar to the genuine advocacy content found
-alongside a duplicate template in
+This differs from most niche categories checked in this repo and is
+similar to the advocacy content found alongside a duplicate template in
 [homelessness-content.md](homelessness-content.md).
 
 ## Results (VERIFIED - reproducible via the script)
@@ -46,10 +44,10 @@ alongside a duplicate template in
 
 ## Reading these numbers
 
-podawaa2024 shows the most diverse term usage - the only dataset with
-meaningful "veteran-owned" business content and "VA benefits"
-mentions, suggesting some genuine veteran-entrepreneurship and
-benefits-related content specifically in that dataset. HyperClapper has
+podawaa2024 shows the most diverse term usage. It is the only dataset
+with meaningful "veteran-owned" business content and "VA benefits"
+mentions, which suggests some veteran-entrepreneurship and
+benefits-related content there. HyperClapper has
 the smallest and least diverse veteran-related presence of the three.
 
 ## A note on a term deliberately excluded
@@ -58,10 +56,9 @@ Bare "VA" is not checked in this scan, unlike some short acronyms
 elsewhere in this repo (see the "MIT" case-sensitivity fix in
 [university-content.md](university-content.md) for a related lesson).
 "VA" collides too readily with the state abbreviation for Virginia and
-other unrelated uses to be reliable even with a case constraint; only
+other unrelated uses to be reliable even with a case constraint. Only
 "Veterans Affairs," "VA benefits," "VA loan," and "VA disability" are
-checked, each of which requires enough surrounding context to be
-trustworthy on its own.
+checked, each of which requires enough surrounding context to be reliable.
 
 ## Caveats
 

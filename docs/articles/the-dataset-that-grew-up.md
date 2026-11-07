@@ -6,17 +6,17 @@
 
 ## The finding
 
-Comparing `PODCount` between the zero-view anomaly group (posts with recorded likes but zero recorded views) and everything else, the zero-view group has a mean `PODCount` of **17.46**, versus **5.78** for other records, roughly three times higher on average. The median, however, is **2 for both groups**, meaning the mean difference is being driven by a smaller number of high-`PODCount` outliers within the zero-view group, not a uniform shift across the whole distribution.
+Comparing `PODCount` between the zero-view anomaly group (posts with recorded likes but zero recorded views) and everything else, the zero-view group has a mean `PODCount` of **17.46**, versus **5.78** for other records, roughly three times higher on average. The median, however, is **2 for both groups**, meaning the mean difference is being driven by a smaller number of high-`PODCount` outliers within the zero-view group, and not a uniform shift across the whole distribution.
 
-## Why the mean and median split matters for how to read this
+## How to read the mean and median split
 
-If both the mean and median had shifted together, that would suggest zero-view posts are broadly, consistently more pod-touched than other posts. Instead, what the data shows is narrower. Most zero-view-anomaly posts look similar to other posts on `PODCount` (same median), but the group also contains some records with dramatically higher `PODCount` values that pull the average up. That's a meaningfully different and more precise claim than "zero-view posts have more pod activity." It's closer to "a subset of zero-view posts have unusually high pod activity, and the rest look typical."
+If both the mean and median had shifted together, that would suggest zero-view posts are broadly, consistently more pod-touched than other posts. Instead, the data shows something narrower. Most zero-view-anomaly posts look similar to other posts on `PODCount` (same median), but the group also contains some records with dramatically higher `PODCount` values that pull the average up. This is more precise than "zero-view posts have more pod activity." It is closer to "a subset of zero-view posts have unusually high pod activity, and the rest look typical."
 
-## What this doesn't establish
+## What this does not establish
 
-`PODCount` being higher for some zero-view records is consistent with the zero-view anomaly being pod-related for those specific records, but consistency isn't proof. This project has no way to confirm that `PODCount` is being measured or defined the same way its name implies, since `spotapod.json`'s exact construction methodology wasn't documented by whoever supplied it. Treat this as a corroborating signal, not an independent confirmation.
+`PODCount` being higher for some zero-view records is consistent with the zero-view anomaly being pod-related for those specific records, but consistency is not proof. This project has no way to confirm that `PODCount` is being measured or defined the same way its name implies, since `spotapod.json`'s exact construction methodology wasn't documented by whoever supplied it. Treat this as a corroborating signal and not an independent confirmation.
 
-## What this is, and isn't
+## What is verified and what is corroborated
 
 **VERIFIED**: mean and median `PODCount` figures for both groups, reproducible directly from `spotapod.json`.
 

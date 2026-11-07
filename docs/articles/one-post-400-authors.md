@@ -4,19 +4,19 @@
 
 Somewhere in a 2024 LinkedIn export, one specific piece of post content, the same words, character for character, was published under **400 different author identities**.
 
-Not four. Not forty. Four hundred separate accounts, each posting an identical piece of text as if it were their own.
+That is 400 separate accounts, each posting an identical text as if it were their own.
 
 ## How this was found
 
-Checking a dataset for duplicate content is straightforward: group every post by its exact text, and count how many distinct authors show up per group. Most duplicate content clusters in this dataset are small. The median cluster spans just two distinct authors, which is roughly what you'd expect from ordinary things like someone quoting a well-known line, or two people independently reposting a popular meme.
+Checking a dataset for duplicate content is straightforward: group every post by its exact text, and count how many distinct authors show up per group. Most duplicate content clusters in this dataset are small. The median cluster spans just two distinct authors, which is what you would expect from someone quoting a well-known line or two people independently reposting a popular meme.
 
-But the distribution has a long tail. There are 1,875 clusters where at least two different authors posted identical content. Most of those clusters are small: 1,491 of them involve exactly two authors. A handful climb much higher: one cluster reaches 9 authors, another 11, another 21. And at the very top, one specific piece of content was posted, word for word, by 400 distinct author identities.
+The distribution has a long tail. There are 1,875 clusters where at least two different authors posted identical content. Most of those clusters are small: 1,491 of them involve exactly two authors. A handful climb much higher: one cluster reaches 9 authors, another 11, another 21. And at the very top, one specific piece of content was posted, word for word, by 400 distinct author identities.
 
 ## What 400 identical posts implies
 
-A person quoting a famous saying doesn't explain this. Four hundred people independently deciding, unprompted, to write the exact same original sentence doesn't happen by coincidence at any scale. The far more plausible explanation is a shared script or template, distributed to or used by many accounts, each publishing it as if it were their own voice and their own thought.
+A person quoting a famous saying doesn't explain this. Four hundred people independently writing the same original sentence is not plausible as a coincidence. A more likely explanation is a shared script or template used by many accounts, each publishing it as its own voice.
 
-This is exactly the mechanism this project's other findings point toward: LinkedIn's "authentic professional voice" content, at scale, includes coordinated or templated material presented as individual, original insight.
+This matches what this project's other findings point toward: LinkedIn's "authentic professional voice" content includes coordinated or templated material presented as individual, original insight.
 
 ## What this is, and isn't
 

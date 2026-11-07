@@ -1,8 +1,8 @@
 # Where in the World Is LinkedIn Talking About?
 
-### Europe dominates one dataset, India dominates the other two, and it's not a coincidence
+### Europe dominates one dataset, India dominates the other two, and the pattern matches account locations
 
-Ask which countries and regions LinkedIn content actually discusses, not where accounts are located, but what a post's text is actually about, and the answer flips depending on which dataset you check.
+Which countries and regions does LinkedIn content discuss? This counts what a post's text is about, not where accounts are located, and the answer differs by dataset.
 
 | Region | podawaa2024 | HyperClapper | LinkBoost-2025 |
 |---|---|---|---|
@@ -14,13 +14,13 @@ Ask which countries and regions LinkedIn content actually discusses, not where a
 
 Europe leads podawaa2024 by a wide margin, nearly double India's count in that dataset. But India leads both HyperClapper and LinkBoost-2025, and by the widest margin of any single term found in either one.
 
-## The finding this connects to
+## The related finding
 
-This isn't an isolated geography quirk. This project's separate demographics analysis, which tracks self-reported account location, not content subject matter, already found HyperClapper's location field skewing heavily toward Delhi, Gurugram, and Bengaluru. The content people post about tracks the geography of who's posting. That's an intuitive connection, but it's one this project confirmed rather than assumed, by measuring the two things, content subject matter and account metadata, completely separately and finding they line up.
+This project's separate demographics analysis tracks self-reported account location, not content subject matter. It already found HyperClapper's location field skewing heavily toward Delhi, Gurugram, and Bengaluru. The content people post about tracks the geography of who is posting. This project measured content subject matter and account metadata separately and found they line up.
 
-## Why measuring both separately matters
+## Why measure both separately
 
-It would have been easy to just report account locations and infer that content follows the same pattern. Instead, this project ran two independent scans, one on what posts are literally about, one on where the posting accounts say they're based, and only afterward checked whether they agreed. They do, which is a stronger form of confirmation than either measurement alone would have provided.
+Reporting only account locations and inferring that content follows the same pattern would have been simpler. Instead, this project ran two independent scans, one on what posts are about and one on where the posting accounts say they're based, and then checked whether they agreed. They do, which confirms the link more strongly than either measurement alone.
 
 ## What this is, and isn't
 

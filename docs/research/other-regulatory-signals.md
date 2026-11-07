@@ -3,9 +3,9 @@
 This page covers `analysis/regulatory_category_scan.py`, which looks beyond
 [16 CFR § 465.8](../regulatory-context.md) at whether post/comment/occupation
 text across the three datasets contains terms associated with a handful of
-*other* regulated categories. It's included because engagement-pod content
-can plausibly overlap with other rules, but the method here is
-deliberately blunt, and the results should be read that way.
+*other* regulated categories. It is included because engagement-pod content
+can plausibly overlap with other rules. The method is deliberately
+blunt, and the results should be read that way.
 
 ## Method
 
@@ -21,7 +21,7 @@ against four keyword/phrase pattern sets:
 | `endorsement_disclosure_gap` | "partnered with", "sponsored", "affiliate link" without a visible disclosure | FTC Endorsement Guides, 16 CFR Part 255 (material-connection disclosure requirements) |
 
 A record counts as a "hit" if any pattern in a category matches, case-
-insensitively, anywhere in its available text. That's it, no context, no
+insensitively, anywhere in its available text. There is no context, no
 sentiment, no check for an actual disclosure elsewhere in the post, no
 distinction between literal and figurative use ("this offer won't last,
 act now!" marketing copy and an actual unregistered-security pitch match
@@ -39,7 +39,7 @@ INFERENCE caveat below)
 Full script output: `analysis/regulatory_category_scan.py` run directly
 against each checksummed file reproduces every number above.
 
-## Why this is INFERENCE, not a finding
+## Why this is INFERENCE and not a finding
 
 - **A keyword match is not a legal element.** None of the laws named above
   turn on whether a specific word appears, they turn on falsity,
@@ -70,7 +70,7 @@ against each checksummed file reproduces every number above.
 
 It will not report per-record results, list matched phrases, or let you
 filter down to "which occupations tripped the financial-claims category."
-That's the same line drawn everywhere else in this repo: aggregate signal
+This is the same line drawn everywhere else in this repo: aggregate signal
 is shareable, individual-level accusation-building is not, regardless of
 which law is invoked.
 

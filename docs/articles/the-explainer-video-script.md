@@ -1,34 +1,34 @@
 # The Explainer Video Script: "How I Know a Post Is Fake"
 
-### A plain-language script format, written for narration rather than reading, the same methodology, translated for a completely different medium
+### A plain-language script written for narration, using the same methodology in a different medium
 
-Every piece in this series so far has been written to be read. This is the format experiment of writing this project's core detection methodology as a spoken-word video script, shorter sentences, no citations mid-paragraph, built for the ear rather than the eye.
+Every piece in this series so far has been written to be read. This is an experiment in writing this project's core detection methodology as a spoken-word video script, with shorter sentences and no citations mid-paragraph, built for listening.
 
 ## The script
 
 *[Open on a single stat, large on screen: "75,442 posts. Zero views. Real likes."]*
 
-Here's a weird thing hiding in a quarter-million LinkedIn posts. Seventy-five thousand of them have likes, sometimes a lot of likes, but zero recorded views. Not low views. Zero.
+Among a quarter-million LinkedIn posts, seventy-five thousand have likes, sometimes a lot of likes, but zero recorded views. Zero, not low.
 
-That shouldn't really be possible. You can't like something you never saw.
+That shouldn't be possible. You can't like something you never saw.
 
 *[Cut to a second stat: "One post. 88,028 likes. Zero views."]*
 
-One single post hit eighty-eight thousand likes with zero recorded views at all. That's not an engagement rate that's a little off. That's a number that doesn't make sense unless something automated is producing those likes.
+One post has eighty-eight thousand likes and zero recorded views. That number doesn't make sense unless something automated is producing those likes.
 
 *[Cut to: "533 identical posts."]*
 
-And it's not just likes. Five hundred and thirty-three posts, different accounts, same exact resume-writing advice, word for word. That's not five hundred people independently having the same idea. That's a template.
+It isn't only likes. Five hundred and thirty-three posts, from different accounts, carry the same resume-writing advice, word for word. Five hundred people did not independently have the same idea. This is a template.
 
 *[Close on: "None of this tells us who. All of it tells us what."]*
 
-We don't name names here. No accounts, no people, ever. But the pattern itself? That's measurable, and it's public, and it's real.
+We don't name names here. No accounts, no people, ever. The pattern itself is measurable and public.
 
-## Why this format matters
+## Trade-offs of this format
 
-A script this short forces every technical caveat out of the main narration and into supplementary text, which is an honest trade-off to name, not one to hide. Video format sacrifices nuance for reach, and any real video built from this script should carry the full evidence-tier caveats in on-screen text or a linked description.
+A script this short moves every technical caveat out of the main narration and into supplementary text. Video format gives up nuance for reach, and any real video built from this script should carry the full evidence-tier caveats in on-screen text or a linked description.
 
-## What this is, and isn't
+## What this is built from
 
 **A script built entirely from previously VERIFIED figures (75,442, 88,028, 533), translated into spoken-word format.**
 

@@ -20,16 +20,15 @@ mentions total) and
 
 The duplicate-template check fires on LinkBoost-2025 (52 of 116
 matches share one string), but checking the underlying text directly
-showed this is genuine content - a personal recovery/psychedelic-
+showed this is genuine content, a personal recovery/psychedelic-
 journey narrative ("free from the NARCISSISTS spider web... significantly
-helped me get clarity") - boosted by the platform's structure, not a
-false positive. Corrected, LinkBoost-2025's real any-mention count is
+helped me get clarity"), and not a false positive. Corrected, LinkBoost-2025's real any-mention count is
 65, not 116.
 
-This is the same kind of outcome as
+This matches
 [homelessness-content.md](homelessness-content.md) and
 [diabetes-content.md](diabetes-content.md), where a flagged duplicate
-turned out to be real content rather than noise, and the opposite of
+turned out to be real content, and differs from
 [immunotherapy-content.md](immunotherapy-content.md),
 [university-content.md](university-content.md), and
 [children-content.md](children-content.md), where flagged or dominant
@@ -49,11 +48,9 @@ collisions.
 ## Reading these numbers
 
 Even the corrected LinkBoost-2025 figure (65, 0.083%) is the smallest
-"any mention" percentage documented anywhere in this repo. There is
-essentially no meaningful narcissism-discourse content in these
-datasets - the topic simply doesn't have a foothold in this
-professional-networking content ecosystem, unlike the broader
-kindness/honesty vocabulary documented in
+"any mention" percentage documented anywhere in this repo. These
+datasets contain essentially no narcissism-discourse content, unlike
+the broader kindness/honesty vocabulary documented in
 [honesty-language-content.md](honesty-language-content.md).
 
 ## Caveats

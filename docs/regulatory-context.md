@@ -4,12 +4,12 @@ Three datasets, 340,829 combined records, and every one of them tied by its
 depositor to engagement-pod tooling: software or services built to make a
 LinkedIn post look more liked, more viewed, and more commented on than it
 organically was. That description matches the fact pattern several federal
-and state laws were written for. It does not automatically mean any of them
-apply to any specific record in these files. This page checks each law
-against what the aggregate data actually shows, element by element, and is
-explicit about where the fit breaks down as much as where it holds.
+and state laws were written for. That does not mean any of them
+apply to a specific record in these files. This page checks each law
+against what the aggregate data shows, element by element, and states
+where the fit breaks down as well as where it holds.
 
-Every comparison below stays at the tier discipline used throughout this
+Every comparison below uses the tier labels used throughout this
 repo. A law's elements are either **STATED** (asserted by the datasets'
 depositors, not independently confirmed), **CORROBORATED** (an aggregate
 statistic computed directly from a checksummed file), or **INFERENCE** (a
@@ -18,10 +18,9 @@ reasoned reading of what a pattern is consistent with). None of it is
 require facts (intent, actual falsity of one metric, a specific consumer's
 reliance) that do not exist as fields in a JSON file and cannot be
 manufactured by a Python script. See [limitations.md](limitations.md) for
-why that line doesn't move no matter how suggestive an aggregate number
-looks.
+why that holds however suggestive an aggregate number looks.
 
-## 16 CFR § 465.8: the rule written for exactly this conduct
+## 16 CFR § 465.8: the rule written for this conduct
 
 **16 CFR § 465.8, "Misuse of fake indicators of social media influence,"**
 is part of the FTC's Trade Regulation Rule on the Use of Consumer Reviews
@@ -49,7 +48,7 @@ explicitly. Every metric field in all three datasets in this repo (`Likes`,
 `Views`, `like_count`, `impression_count`, `comment_count`, `followers`,
 `SuccessfullLikes`, `SuccessfullComments`) falls within that definition.
 
-### The two elements the rule actually requires
+### The two elements the rule requires
 
 16 CFR § 465.8 only reaches conduct that satisfies **both**:
 
@@ -65,7 +64,7 @@ who turns out to have fake followers is not itself liable under this
 section. See the [FTC's final rule announcement](https://www.ftc.gov/news-events/news/press-releases/2024/08/federal-trade-commission-announces-final-rule-banning-fake-reviews-testimonials)
 and its [Consumer Reviews and Testimonials Rule Q&A](https://www.ftc.gov/business-guidance/resources/consumer-reviews-testimonials-rule-questions-answers).
 
-### What the aggregate data can and can't speak to
+### What the aggregate data can and cannot show
 
 | Element | What the data shows | Tier | What's still missing |
 |---|---|---|---|
@@ -74,13 +73,12 @@ and its [Consumer Reviews and Testimonials Rule Q&A](https://www.ftc.gov/busines
 | Materiality for a commercial purpose | 213,491 podawaa2024 records skew toward business/professional content categories (see [topic-taxonomy.md](research/topic-taxonomy.md)); LinkBoost-2025's `Occupation` field is populated for 96.1% of records, mostly professional headlines | STATED / INFERENCE | Whether inflated engagement on any one post was actually used to misrepresent influence *to* a specific buyer, employer, or reader, and whether that use was material to a decision they made |
 | Scienter | Not a field in any file | Not addressed | This is the element the rule leans on hardest, and it is exactly the element no dataset of engagement records can supply on its own |
 
-Two of four elements have real data behind them. The other two, the ones
-that actually decide liability, don't exist in any form a script can check.
-That gap is not a technicality this repo is working around. It's the reason
+Two of four elements have data behind them. The other two, which decide
+liability, do not exist in any form a script can check. That gap is the reason
 [limitations.md](limitations.md) and [privacy.md](privacy.md) draw the
 line where they do.
 
-## FTC Act § 5: the broader net that doesn't need scienter
+## FTC Act § 5: the broader net that does not need scienter
 
 15 U.S.C. § 45 bars "unfair or deceptive acts or practices in or affecting
 commerce," and it splits into two independent tests. An act is **deceptive**
@@ -92,21 +90,20 @@ consumers, (2) that injury isn't reasonably avoidable, and (3) it isn't
 outweighed by countervailing benefits to consumers or competition. Source:
 [Federal Reserve's Section 5 examination guidance](https://www.federalreserve.gov/boarddocs/supmanual/cch/200806/ftca.pdf).
 
-The unfairness prong is the one worth sitting with, because it does not
-require scienter at all. A practice can be unfair under § 5 with no showing
-that anyone "knew or should have known" anything. That makes it a wider net
+The unfairness prong does not require scienter. A practice can be unfair under § 5 with no showing
+that anyone "knew or should have known" anything. That makes it broader
 than 16 CFR § 465.8, which is itself a Trade Regulation Rule issued *under*
 § 5's authority. In principle, a coordinated engagement-inflation scheme
 could be reachable as unfair (substantial injury to the people who trusted
 the inflated numbers, not reasonably avoidable since a reader has no way to
 tell a pod-driven like from an organic one, no countervailing benefit to
-weigh it against) without ever reaching the harder scienter question 465.8
+weigh it against) without reaching the scienter question 465.8
 demands. That is an INFERENCE about legal theory, not a claim that any FTC
 action exists or is likely against any party named or unnamed in these
 files. No such action is documented anywhere in this repo's provenance
 notes.
 
-## The Computer Fraud and Abuse Act: the law that looks like it should fit, and mostly doesn't
+## The Computer Fraud and Abuse Act: a law that mostly does not fit
 
 18 U.S.C. § 1030 criminalizes accessing a computer "without authorization"
 or in a way that "exceeds authorized access." Before 2021, several courts
@@ -127,20 +124,18 @@ desist letter or technical anti-scraping measure creates a "gate," not
 whether a mere terms-of-service violation does; *Van Buren* forecloses the
 latter theory.
 
-This matters for reading these three files honestly. All three tools
+All three tools
 (Podawaa, HyperClapper, LinkBoost) are described by their depositors as
 operating through the account holder's own authenticated session, not by
 breaking into someone else's account or bypassing a technical barrier. Under
 *Van Buren*'s gates-up-or-down test, a user directing their own authorized,
 authenticated session to do something LinkedIn's terms of service prohibit
 is very likely outside CFAA's reach, however clearly it violates that
-platform's rules. This is the one law on this page where the honest
-reading, after checking the actual elements against the actual mechanism
-these files describe, is that it probably does not apply. That is worth
-stating plainly instead of quietly leaving CFAA off the list and hoping
-nobody asks.
+platform's rules. This is the one law on this page that, after checking its
+elements against the mechanism these files describe, probably does not
+apply.
 
-## The Lanham Act § 43(a): the theory an actual competitor has already used
+## The Lanham Act § 43(a): a theory a competitor has already used
 
 15 U.S.C. § 1125(a) creates a private right of action for false advertising
 and unfair competition. A plaintiff must show (1) a false statement of fact
@@ -155,14 +150,13 @@ caused by the misrepresentation, not on whether the plaintiff is a direct
 competitor. Consumers cannot sue under this section; only someone with an
 injured commercial interest can. Source: [practical guidance on § 43(a) claims](https://www.bfkn.com/assets/htmldocuments/Lanham%20Act%20Section%2043a%20Claims.pdf).
 
-This is not a hypothetical fit. **LinkedIn Corp. v. TopSocial24 et al.**
+**LinkedIn Corp. v. TopSocial24 et al.**
 (Case No. 5:23-cv-00110, N.D. Cal.) resulted in a $43,086 judgment in
 October 2023 against an engagement-pod-style service, using theories
 including breach of LinkedIn's user agreement and unfair-competition claims
-in the same family as § 43(a). That is a real, citable outcome against a
-real defendant, and it is the strongest evidence in this section that a
-plaintiff with standing (the platform itself, most plausibly) can and does
-win against this category of tooling. It says nothing about whether
+in the same family as § 43(a). It is the strongest evidence in this section that a
+plaintiff with standing (most plausibly the platform itself) can win
+against this category of tooling. It says nothing about whether
 Podawaa, HyperClapper, or LinkBoost specifically have faced or would face
 the same outcome; no litigation naming any of the three tools behind these
 datasets was found during this repo's research (see [provenance.md](provenance.md)
@@ -180,7 +174,7 @@ action with a $50 statutory minimum per violation, added to the statute in
 1980. Source: [GBL § 349 elements summary](https://openclassactions.com/glossary/ny-general-business-law-349-350.php);
 [statute text via Justia](https://law.justia.com/codes/new-york/gbs/article-22-a/349/).
 
-The injury element is the one worth being precise about. The people most
+The people most
 directly deceived by an inflated like count are not the pod-service's own
 customers (who know exactly what they're buying), but the third-party
 readers who encounter a post with 400 likes and take that as a signal the
@@ -197,10 +191,10 @@ other legal violation, a 16 CFR § 465.8 violation, an FTC Act § 5
 violation, a GBL § 349 violation, becomes independently actionable under
 § 17200 once established, with its own private right of action and
 remedies. Source: [UCL overview](https://www.shouselaw.com/ca/personal-injury/unfair-competition/).
-That makes § 17200 structurally dependent on one of the other laws on this
-page actually being established first. It adds no new element of its own
-to check against the data; it just widens who can sue once someone else's
-violation is proven.
+Section 17200 therefore depends on one of the other laws on this
+page being established first. It adds no element of its own
+to check against the data; it widens who can sue once another violation
+is proven.
 
 ## Breach notification law: a different question than 16 CFR § 465.8
 
@@ -208,8 +202,8 @@ The laws above concern fake engagement. A separate question applies to the
 LEMPOD disclosure in [provenance.md](provenance.md#a-second-separate-disclosure-a-pod-tools-own-vulnerability-lempod):
 what duty, if any, applies when a company discovers that user credentials or
 session tokens leaked, and does or doesn't tell affected users. This is a
-different body of law from the fake-engagement statutes above, and it is
-worth being precise about which entity it would even apply to.
+different body of law from the fake-engagement statutes above, and it
+matters which entity it would apply to.
 
 The LEMPOD vulnerability, per the disclosure, sits inside LEMPOD's own
 platform, not LinkedIn's. LinkedIn did not build or operate the leak.
@@ -224,9 +218,9 @@ version of a law requiring notice to residents when their personal
 information is exposed. Most define "personal information" by an
 enumerated list: a Social Security number, a driver's license number, or a
 username/password combination, most commonly. A session cookie like `li_at`
-is not explicitly named on most states' lists, which makes whether it
-counts as reportable "personal information" a genuinely open legal
-question rather than a settled one. New York's SHIELD Act (N.Y. Gen. Bus.
+is not explicitly named on most states' lists, so whether it
+counts as reportable "personal information" is an open legal
+question. New York's SHIELD Act (N.Y. Gen. Bus.
 Law § 899-aa/bb) and a handful of others use somewhat broader definitions
 that could plausibly reach a session credential; many older state statutes
 use narrower, enumerated lists that might not. Source: [NCSL security
@@ -248,7 +242,7 @@ security incident to affected users as itself an unfair practice under
 
 ### What this repo will not do with this section either
 
-The same discipline applies here as everywhere else on this page. Naming
+The same rule applies here as elsewhere on this page. Naming
 the frameworks that would matter if a duty were triggered is not the same
 as concluding a duty was triggered, or that anyone failed to meet one. This
 repo does not know whether LEMPOD or LinkedIn had actual knowledge
@@ -260,17 +254,16 @@ violation occurred.
 
 ## What this repo will not do with any of this
 
-Cross-referencing a law's elements against an aggregate statistic is not
-the same thing as applying that law to a record, an author, or a dataset,
+Comparing a law's elements against an aggregate statistic is not
+the same as applying that law to a record, an author, or a dataset,
 and this repo does not do the latter. Nothing above should be read as
 alleging that a specific engagement-pod service, its operators, or any
 account represented in these files violated 16 CFR § 465.8, the FTC Act,
 the CFAA, the Lanham Act, GBL § 349, California's UCL, or any other law.
 The elements that would actually establish a violation, intent, a specific
 misrepresentation, a specific deceived party, an actual injury, are not
-fields in a JSON file and are not something a checksum-verified script can
-manufacture. That determination requires a lawyer looking at specific
-facts a spreadsheet cannot provide. See [limitations.md](limitations.md)
+fields in a JSON file and a checksum-verified script cannot produce them.
+That determination requires a lawyer looking at specific facts. See [limitations.md](limitations.md)
 for the full reasoning.
 
 For an aggregate (not per-record) look at whether post/comment content

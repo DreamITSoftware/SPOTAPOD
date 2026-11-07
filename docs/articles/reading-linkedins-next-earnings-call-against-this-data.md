@@ -6,15 +6,15 @@ LinkedIn's parent company periodically references engagement metrics, member gro
 
 ## Questions worth asking of any future statement
 
-**Does the stated metric distinguish organic from pod-amplified engagement?** This project's account-concentration findings (a small fraction of accounts producing the large majority of posts in at least one dataset) suggest aggregate engagement figures can be heavily influenced by a small, highly active subset of accounts. A platform-wide average could mask that concentration entirely.
+**Does the stated metric distinguish organic from pod-amplified engagement?** This project's account-concentration findings (a small fraction of accounts producing the large majority of posts in at least one dataset) suggest aggregate engagement figures can be heavily influenced by a small, highly active subset of accounts. A platform-wide average could mask that concentration.
 
-**Does a stated "content quality" or "authenticity" initiative address the specific patterns this project has documented?** Zero-view-with-high-likes anomalies, duplicate-template content, and extreme posting-velocity outliers are three specific, independently verifiable pattern types. A general statement about "improving content quality" doesn't, by itself, indicate whether any of these three specific patterns are being addressed.
+**Does a stated "content quality" or "authenticity" initiative address the specific patterns this project has documented?** Zero-view-with-high-likes anomalies, duplicate-template content, and extreme posting-velocity outliers are three independently verifiable pattern types. A general statement about "improving content quality" does not indicate whether any of them are being addressed.
 
-**Is any cited detection or removal number independently verifiable, or only self-reported?** This project's own standard, VERIFIED requires independent reproduction, not just a stated figure, applies with equal force to a platform's own self-reported enforcement statistics.
+**Is any cited detection or removal number independently verifiable, or only self-reported?** This project's own standard, that VERIFIED requires independent reproduction and not just a stated figure, applies equally to a platform's own self-reported enforcement statistics.
 
-## Why this matters more than it might seem
+## Why stated figures need checking
 
-Public companies have real incentive to describe engagement-quality efforts in the most favorable available light, which isn't dishonesty so much as normal corporate communication, but it means a stated figure should be read the same way this project reads any other claim: as a hypothesis to check against independently available evidence, not a fact to relay unchecked.
+Public companies have an incentive to describe engagement-quality efforts favorably. That is normal corporate communication, but a stated figure should be read like any other claim in this project: as a hypothesis to check against independent evidence, not a fact to relay unchecked.
 
 ## What this is, and isn't
 

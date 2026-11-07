@@ -1,20 +1,20 @@
 # What HR Departments Get Wrong About "Social Proof"
 
-### Award claims, follower milestones, and engagement bait are a documented, measurable content category, not a neutral background feature of LinkedIn
+### Award claims, follower milestones, and engagement bait are a documented, measurable content category on LinkedIn
 
-HR and employer-brand teams frequently benchmark against, or draw inspiration from, high-engagement LinkedIn content when shaping internal communications guidance or evaluating a hire's "LinkedIn presence." This project's research on social-proof content patterns is worth factoring into that practice.
+HR and employer-brand teams frequently benchmark against, or draw on, high-engagement LinkedIn content when shaping internal communications guidance or evaluating a hire's "LinkedIn presence." This project's research on social-proof content patterns bears on that practice.
 
 ## The pattern this project measured
 
-This project's "social-proof playbook" research documented a real, measurable category of content built around award claims, follower-milestone announcements, and engagement-bait phrasing ("agree?", "who else..."), appearing at identifiable rates across datasets. This is descriptive content-pattern research, not an accusation against any individual. The point is that "social proof" language is itself a recognizable, gameable content strategy, not a neutral signal of genuine accomplishment or standing.
+This project's "social-proof playbook" research documented a measurable category of content built around award claims, follower-milestone announcements, and engagement-bait phrasing ("agree?", "who else..."), appearing at identifiable rates across datasets. This is descriptive content-pattern research, not an accusation against any individual. "Social proof" language is a recognizable, gameable content strategy and not a neutral signal of accomplishment or standing.
 
-## Why this matters for HR practice specifically
+## Relevance to HR practice
 
-Two places this shows up: first, evaluating a candidate's "digital presence" by how much social-proof-style content they produce risks rewarding the pattern itself rather than the substance behind it. Second, internal guidance encouraging employees to post "achievement" content for employer-brand purposes should be aware it's asking people to participate in a content category this project's data shows is heavily formulaic and, in part, associated with the same platforms where engagement-pod services concentrate activity.
+Evaluating a candidate's "digital presence" by how much social-proof-style content they produce risks rewarding the pattern rather than the substance behind it. Internal guidance encouraging employees to post "achievement" content for employer-brand purposes asks people to participate in a content category that this project's data shows is heavily formulaic and, in part, associated with the same platforms where engagement-pod services concentrate activity.
 
-## A more useful standard
+## A better standard
 
-Judging LinkedIn content, a candidate's or an employee's, by its substance, what was actually accomplished, described specifically, rather than by its adherence to a recognizable social-proof template or by its engagement numbers, produces a more reliable signal than either of those proxies alone.
+Judging LinkedIn content, a candidate's or an employee's, by its substance (what was accomplished, described specifically) gives a more reliable signal than its adherence to a social-proof template or its engagement numbers.
 
 ## What this is, and isn't
 

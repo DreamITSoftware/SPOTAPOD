@@ -1,8 +1,8 @@
 # Updating the Record: A Living Log of Every Correction This Project Has Made
 
-### Three corrections so far, all logged in the public changelog, none quietly edited away
+### Three corrections so far, all logged in the public changelog
 
-This project's corrections aren't buried in edit histories. They're logged explicitly, with the original claim, the corrected figure, and how the error was found. This piece is the readable, narrative version of that changelog.
+This project logs its corrections explicitly, with the original claim, the corrected figure, and how the error was found. This piece is the readable version of that changelog.
 
 ## Correction one: the resume-template count
 
@@ -14,15 +14,15 @@ The same disputed document's claims of 50.6% (top 20 authors) and 87.3% (top 100
 
 ## Correction three: this project's own "nine of ten" claim
 
-A previously published piece in this project's own commentary claimed nine of the ten highest-liked posts in a 213,491-post dataset showed zero recorded views. Rechecking directly against the raw data found **four**, not nine. This is this project's own number, caught and corrected by this project itself, not by an outside critic.
+A previously published piece in this project's own commentary claimed nine of the ten highest-liked posts in a 213,491-post dataset showed zero recorded views. Rechecking directly against the raw data found **four**, not nine. This is this project's own number, caught and corrected by this project, not by an outside critic.
 
-## Why this log exists as a standalone piece
+## Why this log is a standalone piece
 
-A correction buried in a changelog is technically transparent but practically invisible. Almost nobody reads a changelog voluntarily. Surfacing the same corrections as their own readable piece makes the track record actually legible to anyone deciding how much to trust this project's numbers, which is the entire point of maintaining the discipline in the first place.
+A correction in a changelog is transparent but rarely read. Publishing the same corrections as their own piece lets anyone deciding how much to trust this project's numbers see its track record.
 
 ## What updates here, and how
 
-This piece gets a new entry every time a future correction is logged in the project's changelog. Nothing here is retired or softened after the fact. A correction, once made, stays part of the public record permanently.
+This piece gets a new entry every time a future correction is logged in the project's changelog. Nothing here is retired or softened after the fact. A correction stays part of the public record.
 
 ## What this is, and isn't
 

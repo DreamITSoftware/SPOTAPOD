@@ -1,20 +1,20 @@
 # What Job Seekers Should Actually Ignore on LinkedIn
 
-### If a resume-rewrite formula shows up identically 533 times, it isn't an insider secret. It's a template.
+### A resume-rewrite formula that appears identically 533 times is a template, not an insider secret
 
-Job seekers spend real time and real anxiety trying to reverse-engineer what "worked" for a viral LinkedIn post about landing a job. Some of what looks like a proven formula is, on inspection, just a template running through a large number of accounts.
+Job seekers spend time trying to reverse-engineer what "worked" for a viral LinkedIn post about landing a job. Some of what looks like a proven formula is a template running through a large number of accounts.
 
-## The specific finding worth knowing
+## The finding
 
-This project independently verified that 533 posts across the dataset used an identical resume-rewrite template, not similar advice independently arrived at by hundreds of different writers, but the same text, structurally reused. A post that looks like "here's the exact trick that got me hired" attached to a huge like count may be one instance of a template running through a coordinated content operation, not a uniquely earned insight validated by a large number of independent readers.
+This project independently verified that 533 posts across the dataset used an identical resume-rewrite template, meaning the same text reused, not similar advice written independently by hundreds of people. A post that reads "here's the exact trick that got me hired" with a large like count may be one instance of a template running through a coordinated content operation, not an insight validated by many independent readers.
 
-## Why this matters for how job seekers spend their time
+## What this means for job seekers
 
-Chasing the specific phrasing, formatting, or "hook" of a viral post because it appears to have worked for someone else is weak strategy if the post's popularity came from a pod rather than organic reader response. The format didn't succeed because it's effective. It succeeded because a coordinated group of accounts liked it. Time spent reverse-engineering a template's phrasing is better spent on the actual substance of a resume or application, which no engagement-pod service can inflate.
+Chasing the specific phrasing, formatting, or "hook" of a viral post because it appears to have worked for someone else is weak strategy if the post's popularity came from a pod rather than organic reader response. The format may have succeeded because a coordinated group of accounts liked it, not because it is effective. Time spent on a template's phrasing is better spent on the substance of a resume or application, which no engagement-pod service can inflate.
 
 ## A simple check
 
-If a piece of "insider" career advice looks close to identical, word-for-word, to several other posts a job seeker has seen, that's a reasonable signal to weight it less, not more. Popularity through duplication isn't validation.
+If a piece of "insider" career advice looks close to identical, word-for-word, to several other posts a job seeker has seen, that is a reason to weight it less, not more. Popularity through duplication is not validation.
 
 ## What this is, and isn't
 

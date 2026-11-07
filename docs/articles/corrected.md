@@ -1,8 +1,8 @@
 # Corrected: Series Launch
 
-### A recurring transparency series logging every number this project has ever revised, the standalone, narrative version of the changelog, kept permanently up to date
+### A recurring series logging every number this project has revised: the standalone, narrative version of the changelog
 
-This project has already published a one-time retrospective on its corrections. This is the format that turns that into an ongoing series, with a new installment every time a future correction happens, rather than a single article that goes stale the next time a number gets fixed.
+This project has already published a one-time retrospective on its corrections. This is the ongoing series version, with a new installment each time a correction happens, so the record does not go stale the next time a number gets fixed.
 
 ## Installment one: the record so far
 
@@ -12,13 +12,13 @@ This project has already published a one-time retrospective on its corrections. 
 
 **"Nine of ten" to "four of ten":** this project's own previously published claim about zero-view posts among the ten highest-liked, caught and corrected by this project itself on recheck.
 
-## Why this needs to be a series, not a single retrospective
+## Why a series and not a single retrospective
 
-A one-time "here's our track record" piece ages the moment a new correction happens. Either it gets awkwardly out of date, or someone has to remember to update an old post, which defeats the purpose of a visible, permanent record. A series format solves this structurally. Each new correction gets its own dated installment, and the series as a whole becomes the living, appendable record this project's evidentiary discipline actually requires.
+A one-time track-record piece goes out of date as soon as a new correction happens. Either it stays out of date, or someone has to remember to update an old post, which defeats the purpose of a visible, permanent record. In a series, each new correction gets its own dated installment, and the series is an appendable record.
 
 ## The standard every future installment holds to
 
-Original claim, corrected figure, method used to catch the error, and date, every time, no exceptions, regardless of whether the error came from an outside source or from this project's own prior work.
+Each installment gives the original claim, corrected figure, method used to catch the error, and date, regardless of whether the error came from an outside source or from this project's own prior work.
 
 ## What this is, and isn't
 
