@@ -3,28 +3,27 @@
 `analysis/nonprofit_content_scan.py` counts mentions of nonprofit-related
 terms (charity, nonprofit, NGO, philanthropy, 501(c)(3)) across post
 content and, where available, occupation/headline text. Same discipline
-as every other scan in this repo: aggregate counts only, no record,
+as the other scans in this repo: aggregate counts only, no record,
 author, or matched text ever printed.
 
-## The safeguard this script has that earlier ones didn't
+## The duplicate-string safeguard
 
 A first, manual pass at this question found a 1.38% "any mention" rate
-in HyperClapper's headline field (the highest of any field checked) 
-which looked like a real, notable signal. It wasn't. Checking the
-underlying text showed all but 23 of those 681 matching records shared
+in HyperClapper's headline field (the highest of any field checked).
+Checking the underlying text showed that this was not a real signal: all but 23 of those 681 matching records shared
 the exact same headline, repeated 658 times, because HyperClapper's
 structure logs one row per reciprocal-engagement action and captures
 that account's headline snapshot every time. The corrected rate, once
 that single repeated string is treated as one occurrence rather than
-658, is 0.05%, the lowest of any field checked, not the highest.
+658, is 0.05%, the lowest of any field checked.
 
-`nonprofit_content_scan.py` builds that check in permanently. For every
+`nonprofit_content_scan.py` includes that check. For every
 field, it reports both the raw record count and the number of distinct
 underlying text values behind it, and prints an explicit warning
 whenever a single repeated string accounts for 20% or more of the
-matching records. Running it surfaced two more instances of the same
-distortion that the original manual check hadn't caught, in
-LinkBoost-2025's Title and Occupation fields.
+matching records. Running it found two more instances of the same
+distortion, in LinkBoost-2025's Title and Occupation fields,
+which the manual check had missed.
 
 ## Results (VERIFIED, reproducible via the script)
 
@@ -58,13 +57,12 @@ script does not break the correction down per term, only per field.
 
 ## Reading these numbers
 
-Once corrected, genuine nonprofit-related content sits consistently in
+Once corrected, nonprofit-related content sits in
 a narrow band (roughly 0.05% to 0.40%) across every dataset and
-field. There's no meaningful nonprofit-sector concentration anywhere in
-this data; these are professional/business/marketing datasets, and the
-presence of charity or philanthropy language is small and unremarkable
-once duplicate profile snapshots and repeated templates are accounted
-for.
+field. There is no meaningful nonprofit-sector concentration in
+this data. These are professional, business and marketing datasets, and
+charity or philanthropy language is small once duplicate profile
+snapshots and repeated templates are accounted for.
 
 ## Caveats
 

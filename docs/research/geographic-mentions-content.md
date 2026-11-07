@@ -23,32 +23,30 @@ duplicate-template check below.
 | **Any mention** | **6,421 (3.008%)** | **3,180 (6.441%)** | **2,190 (2.809%)** |
 
 LinkBoost-2025's lower distinct-string ratio (154 for 2,190 matches)
-was checked manually - the top repeated strings (a retail-street-shop
+was checked manually. The top repeated strings (a retail-street-shop
 tribute post, an AI-productivity post, a "life can only be understood
-backwards" quote post) are genuinely distinct, none dominating, so no
+backwards" quote post) are distinct, none dominating, so no
 correction is needed.
 
 ## Reading these numbers
 
 Europe leads podawaa2024 by a wide margin (2,800, nearly double
 India's count there), but India leads both HyperClapper and
-LinkBoost-2025 - and by the widest margin of any single term in either
-dataset. This lines up directly with the geographic *account* metadata
+LinkBoost-2025, by the widest margin of any single term in either
+dataset. This matches the geographic *account* metadata
 already documented in [demographics.md](demographics.md), where
 HyperClapper's location field skews heavily toward Delhi, Gurugram, and
 Bengaluru: the content people post about tracks the geography of who's
-posting, which is an intuitive but still useful confirmation that these
-two independently collected signals (what accounts say they're located,
-and what countries their posts actually discuss) point the same
+posting. These two independently collected signals (where accounts say they're located,
+and which countries their posts discuss) point the same
 direction.
 
-The United States is a surprisingly minor presence everywhere,
+The United States is a minor presence everywhere,
 especially in LinkBoost-2025 (8 mentions total, the smallest figure in
-this entire table) - notable given that dataset's Occupation field
+this table). This is notable given that dataset's Occupation field
 skewed toward executive/leadership content in
 [demographics.md](demographics.md) and its country field led with the
-US at 21.8% there. Account location and content subject matter clearly
-diverge for this dataset specifically.
+US at 21.8% there. Account location and content subject matter diverge for this dataset.
 
 ## Caveats
 

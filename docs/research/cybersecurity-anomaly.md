@@ -14,7 +14,7 @@ Only **podawaa2024.json** and **HyperClaper.json** are covered.
 **LinkBoost-2025.json is not supported** - it has no per-record
 engagement fields to cross-reference against. Every record there is,
 by the dataset's own construction, a logged successful pod action, so
-a per-record anomaly rate isn't a meaningful thing to compute for it.
+a per-record anomaly rate cannot be computed for it.
 
 ## Results (VERIFIED - reproducible via the script)
 
@@ -41,9 +41,8 @@ Cybersecurity-related posts: 4,487 of 49,369 (9.09%)
 
 Cybersecurity content shows a higher anomaly rate than the dataset
 baseline on three of the four measures checked, most notably the
-reciprocal like+comment flag in HyperClapper (84.2% vs. 68.6% baseline)
-- a meaningfully elevated rate, and a genuine, reproducible, aggregate
-finding.
+reciprocal like+comment flag in HyperClapper (84.2% vs. 68.6% baseline).
+This is a reproducible aggregate finding.
 
 Cybersecurity content also makes up a much larger share of HyperClapper
 (9.09%) than of podawaa2024 (1.30%), consistent with HyperClapper's
@@ -55,10 +54,10 @@ vs. 16.39% in podawaa2024).
 
 An elevated anomaly rate at the category level is a population-level
 pattern, not identification of any specific cybersecurity account or
-post as fraudulent. This script cannot and does not determine which
-individual posts within the cybersecurity-content subset are actually
-anomalous versus which authors happen to write about cybersecurity and
-also happen to have organically unusual engagement patterns for
+post as fraudulent. This script does not determine which
+individual posts in the cybersecurity subset are actually
+anomalous, as opposed to authors who write about cybersecurity and
+have unusual organic engagement for
 unrelated reasons. No name, handle, or individual post is identified by
 this scan, and none should be inferred from it. See
 [limitations.md](../limitations.md) for the fuller version of this
@@ -67,8 +66,8 @@ caveat, which applies here identically.
 ## Caveats
 
 Same as every keyword scan in this repo: a match means a cybersecurity
-term appears in the text, not that the post is a credible, accurate, or
-representative piece of security content. The anomaly indicators
+term appears in the text, not that the post is credible, accurate, or
+representative security content. The anomaly indicators
 themselves are the same blunt population-level signals used everywhere
 else in this repo - they flag a statistical pattern, not a confirmed
 instance of manipulation for any single record.

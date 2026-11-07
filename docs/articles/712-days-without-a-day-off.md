@@ -2,9 +2,9 @@
 
 ### The top accounts in one LinkedIn dataset sustained multiple posts a day, every day, for up to two years straight
 
-Ask any working professional to post original career content every single day for two years without a gap, and they'll tell you it's not realistic. Ask them to do it multiple times a day, and the conversation is over.
+Posting original career content every day for two years without a gap is not realistic for a working professional, and doing it multiple times a day is less so.
 
-Ten specific accounts in a LinkedIn engagement dataset did exactly that. Across active windows ranging from 174 to 712 consecutive days, these accounts sustained between 1.25 and 3.74 posts per day, every day, for the entire window.
+Ten accounts in a LinkedIn engagement dataset did it. Across active windows ranging from 174 to 712 consecutive days, these accounts sustained between 1.25 and 3.74 posts per day, every day, for the entire window.
 
 | Account rank | Total posts | Active days | Posts/day |
 |---|---|---|---|
@@ -16,9 +16,9 @@ Ten specific accounts in a LinkedIn engagement dataset did exactly that. Across 
 
 The account at the top of this list posted, on average, once every 6.5 hours, for over ten months, without interruption. The account with the longest active window, 712.6 days, nearly two full years, never dropped below its sustained rate for the entire stretch.
 
-## The part that isn't the obvious story
+## Irregular timing, sustained rate
 
-The obvious assumption is that this looks like a bot: too regular, too mechanical. It's the opposite. Every one of these accounts shows highly irregular spacing between individual posts: some intervals close together, some far apart, no fixed clockwork rhythm at all. That irregularity is actually the more interesting finding: whatever is producing this volume isn't posting on a rigid timer. It's sustaining an average rate no realistic individual professional could sustain, while still looking, post to post, like a human deciding in the moment to publish.
+One might assume this looks like a bot: too regular, too mechanical. The data shows the opposite. Every one of these accounts has highly irregular spacing between individual posts: some intervals close together, some far apart, no fixed rhythm. Whatever produces this volume is not posting on a rigid timer. It sustains an average rate that few individual professionals could, while individual posts still look like a human deciding when to publish.
 
 ## What this is, and isn't
 

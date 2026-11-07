@@ -2,7 +2,7 @@
 
 `analysis/future_content_scan.py` counts mentions of "future"-related
 terms (future(s), futuristic, future of work) across post content in
-all three datasets. Same discipline as every other scan in this repo:
+all three datasets. Like every other scan in this repo, it reports
 aggregate counts only, no record, author, or matched text ever printed
 beyond the duplicate-template check described below.
 
@@ -27,14 +27,12 @@ work" AI-course promotion). This is genuine signal, not an artifact.
 
 ## Reading these numbers
 
-This is the largest niche-topic category found in this repo so far -
+This is the largest niche-topic category found in this repo so far:
 nearly 1 in 11 posts in LinkBoost-2025 mentions "future" in some form.
-All three datasets show a clean, steady climb from podawaa2024 (5.5%)
-through HyperClapper (7.2%) to LinkBoost-2025 (8.9%) - a consistent
-gradient rather than one sharp outlier, which is itself notable given
-how many other scans in this repo show LinkBoost-2025 as a sharp
-outlier against the other two rather than the top of a smooth
-progression.
+All three datasets show a steady climb from podawaa2024 (5.5%)
+through HyperClapper (7.2%) to LinkBoost-2025 (8.9%). This gradient differs from
+many other scans in this repo, where LinkBoost-2025 is a sharp
+outlier against the other two.
 
 "Future of work" tracks closely with the AI-productivity content
 already documented elsewhere in this repo - the term appears at a
@@ -44,9 +42,9 @@ and "AI is changing the future of work" framing dominate the genuinely
 distinct LinkBoost-2025 posts checked above.
 
 "Futuristic" is comparatively rare and declining as a share of the
-category - the smallest of the three terms in every dataset, and drops
+category. It is the smallest of the three terms in every dataset, and drops
 most sharply in LinkBoost-2025 (42, the smallest raw count despite that
-dataset having the highest overall "future" rate). This suggests a
+dataset having the highest overall "future" rate). This may reflect a
 shift from describing things as "futuristic" (an adjective about
 novelty) toward discussing "the future" directly (a noun, often paired
 with AI/career anxiety), consistent with the AI-productivity content

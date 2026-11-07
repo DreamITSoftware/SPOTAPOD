@@ -3,7 +3,7 @@
 `analysis/law_enforcement_scan.py` counts mentions of law-enforcement-
 related terms (law enforcement, police, police officer(s), cop/cops,
 sheriff, detective) across post content in all three datasets. Same
-discipline as every other scan in this repo: aggregate counts only, no
+rules as every other scan in this repo: aggregate counts only, no
 record, author, or matched text ever printed beyond the
 duplicate-template check described below.
 
@@ -16,11 +16,11 @@ local law enforcement.
 The low-distinct-ratio note fires on LinkBoost-2025 (32 distinct
 strings for 461 matches), but the duplicate-template warning does not -
 no single string dominates (the top is 82 of 461, about 18%). Checked
-manually: the top several repeated strings are genuinely distinct,
+manually: the top several repeated strings are distinct,
 on-topic career-narrative posts - an IPS officer's competitive-exam
 story, someone's "worked as a cop" side-hustle recap, a detective's
 career-statistics post, a cop's salary-progression post. This is
-genuine signal, not an artifact.
+real signal and not an artifact.
 
 ## Results (VERIFIED - reproducible via the script)
 
@@ -36,8 +36,8 @@ genuine signal, not an artifact.
 
 ## Reading these numbers
 
-LinkBoost-2025 has the highest rate by a clear margin - more than
-double podawaa2024's rate - and the content is genuinely spread across
+LinkBoost-2025 has the highest rate by a wide margin (more than
+double podawaa2024's rate), and the content is spread across
 many distinct career-narrative posts, consistent with LinkBoost's
 broader lean toward personal-narrative/career-journey content already
 documented elsewhere in this repo (see, for example, the recurring

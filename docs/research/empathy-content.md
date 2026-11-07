@@ -3,7 +3,7 @@
 `analysis/empathy_content_scan.py` counts mentions of empathy-related
 terms (empathy, empathetic, empathize) across post content in all
 three datasets. Same discipline as every other scan in this repo:
-aggregate counts only, no record, author, or matched text ever printed
+aggregate counts only, and no record, author, or matched text is printed
 beyond the duplicate-template check described below.
 
 ## Cross-category confirmation of an already-documented template
@@ -12,10 +12,9 @@ This scan's LinkBoost-2025 sample independently surfaces the "Empathy
 isn't just a checkbox for leaders" post already found while checking
 the burnout scan in
 [career-transitions-content.md](career-transitions-content.md) - 56
-occurrences here. Finding it again independently, from a completely
-different keyword search, confirms it's a genuinely recurring,
-cross-category leadership template rather than a one-off found by
-coincidence in a single scan.
+occurrences here. Finding it again independently, from a different
+keyword search, confirms it is a recurring,
+cross-category leadership template and not a one-off.
 
 ## LinkBoost-2025's low-distinct-ratio note, checked
 
@@ -26,7 +25,7 @@ Checked manually: the top repeated strings span many distinct,
 on-theme leadership/emotional-intelligence posts (a listening-skills
 post, an "understand a person" post, a brand-with-heart post, the
 empathy-checkbox-for-leaders post, ChatGPT email-writing prompts).
-This is genuine signal, not an artifact.
+This is genuine signal and not an artifact.
 
 ## Results (VERIFIED - reproducible via the script)
 
@@ -39,20 +38,19 @@ This is genuine signal, not an artifact.
 
 ## Reading these numbers
 
-LinkBoost-2025 has by far the highest rate - more than 2x HyperClapper's
-and 3.4x podawaa2024's - continuing the same pattern already documented
+LinkBoost-2025 has the highest rate - more than 2x HyperClapper's
+and 3.4x podawaa2024's. This continues the pattern documented
 across [confidence-content.md](confidence-content.md),
 [being-human-content.md](being-human-content.md), and
 [honesty-language-content.md](honesty-language-content.md):
-LinkBoost-2025 consistently skews hardest toward
+LinkBoost-2025 skews most toward
 emotional/leadership/soft-skills content of every kind checked in this
 repo.
 
-HyperClapper shows a notably low "empathize" rate (4 mentions, versus
-66 in podawaa2024 and 172 in LinkBoost-2025) despite having a
-comparable overall pace to podawaa2024 for the noun form "empathy" -
-the verb form barely appears there even though the noun does, a
-pattern worth flagging even without a clear explanation for it.
+HyperClapper shows a low "empathize" rate (4 mentions, versus
+66 in podawaa2024 and 172 in LinkBoost-2025) despite a
+rate for the noun "empathy" comparable to podawaa2024's.
+The verb form barely appears there even though the noun does. There is no clear explanation yet.
 
 ## Caveats
 

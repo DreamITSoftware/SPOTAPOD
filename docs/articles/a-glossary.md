@@ -1,8 +1,8 @@
 # A Glossary: Every Term This Project Uses and Why
 
-### A reference format, short definitions, no argument, meant to be linked to rather than read straight through
+### A reference format with short definitions and no argument, meant to be linked to
 
-Several terms recur across this project's articles without always being re-defined in place. This piece collects them in one place.
+Several terms recur across this project's articles without being re-defined each time. This piece collects them in one place.
 
 **Engagement pod.** A coordinated group of accounts (often paid, often automated) that reciprocally like, comment on, or otherwise engage with each other's posts to inflate visibility metrics.
 
@@ -12,7 +12,7 @@ Several terms recur across this project's articles without always being re-defin
 
 **VERIFIED / CORROBORATED / STATED / UNCORROBORATED / INFERENCE.** This project's five-tier evidence classification, defined and applied without exception to every quantitative or factual claim. See this series' dedicated methodology piece for full definitions.
 
-**Signal vs. finding.** A signal is a detected pattern from a disclosed method (a keyword rate, an anomaly count). A finding is a fact this project is willing to assert, at whatever tier it earns. This project is careful never to let a signal be read as a finding.
+**Signal vs. finding.** A signal is a detected pattern from a disclosed method (a keyword rate, an anomaly count). A finding is a fact this project is willing to assert, at whatever tier it earns. This project does not let a signal be read as a finding.
 
 **Hash-before-use.** This project's practice of hashing every direct identifier in memory before any other operation touches a record, so no script ever prints, logs, or persists an unhashed identifier.
 
@@ -22,7 +22,7 @@ Several terms recur across this project's articles without always being re-defin
 
 ## What this is, and isn't
 
-**A reference document, not a new finding**, meant to keep this series' recurring vocabulary consistent and precisely defined.
+**A reference document with no new findings**, meant to keep this series' vocabulary consistent.
 
 Full documentation: **github.com/DreamITSoftware/SPOTAPOD**.
 

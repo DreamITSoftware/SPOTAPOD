@@ -55,25 +55,24 @@ its specific author than one reused across many records.
 | "Social" | 12 |
 | "#selfaccountable" | 6 |
 
-## Two things worth flagging
+## Two points to note
 
 **"postNoContent" (160x in podawaa2024) is not a real post.** It reads
-as a missing-data placeholder string from the source export tool, not
-something anyone actually typed. It should be treated as a
-data-quality artifact, not genuine one-word engagement content, and is
-excluded from the "genuine one-word content" framing below.
+as a missing-data placeholder string from the source export tool, and
+nobody typed it. It is a data-quality artifact, not genuine one-word
+engagement content, and is excluded from the "genuine one-word content"
+framing below.
 
 **LinkBoost-2025's "inc.com" and a bare Luma event URL are a distinct
-genre from the rest of the table** - bare-link posts with zero
-accompanying text, different in kind from the one-word engagement-bait
+genre from the rest of the table**: bare-link posts with no
+accompanying text, unlike the one-word engagement-bait
 pattern ("Agree?"/"Thoughts?") that otherwise dominates every dataset.
 
 ## Reading these numbers
 
-"Agree?"/"Agree" is, by a wide margin, the single most common one-word
-post in every dataset where it appears - not just a notable duplicate
-string as reported in
-[baseline-profile.md](baseline-profile.md), but the literal top
+"Agree?"/"Agree" is by a wide margin the most common one-word
+post in every dataset where it appears. [baseline-profile.md](baseline-profile.md)
+reports it as a notable duplicate string; it is also the top
 one-word post everywhere. podawaa2024 has both the highest rate (2.16%)
 and by far the most variety (364 distinct one-word strings, versus 23
 and 5 in the other two) - consistent with podawaa2024 being the

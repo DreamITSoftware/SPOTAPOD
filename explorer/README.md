@@ -7,14 +7,13 @@ directly in a browser, no server, no build step, no network request.
 ## How this differs from SPOTAPOD's explorer, on purpose
 
 SPOTAPOD's explorer lets you filter by author and click into individual
-identities across every panel. This one doesn't do that, and won't:
-there's no search box, no filter, no click-to-focus, and no per-record
-data of any kind embedded in the page, just the same population-level
-figures and headline numbers that are already in the main README and
+identities across every panel. This one does not and will not:
+it has no search box, no filter, no click-to-focus, and no per-record
+data embedded in the page. It shows the population-level
+figures and headline numbers already in the main README and
 `docs/research/baseline-profile.md`, laid out for browsing. See
 `docs/limitations.md` for why a per-author lookup isn't something this
 repo builds, in any form, including a private or read-only one.
 
-If you're looking for the ability to search for a specific account,
-that's not an omission to request. It's the one thing this repo is
-built to not do.
+Searching for a specific account is not supported and will not be added.
+This repo is built to avoid it.

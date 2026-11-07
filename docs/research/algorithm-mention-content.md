@@ -6,15 +6,15 @@ datasets. Same discipline as every other scan in this repo: aggregate
 counts only, no record, author, or matched text ever printed beyond
 the duplicate-template check described below.
 
-## Why this scan is directly relevant to this project
+## Why this scan is relevant to this project
 
 Unlike most of the niche-topic scans in this repo, this one measures
-something close to this whole project's own subject matter. See
+something close to this project's own subject matter. See
 [algorithm-strategy-advice.md](algorithm-strategy-advice.md), which
 documents the broader genre of algorithm-strategy-advice content this
 scan measures the raw prevalence of. LinkBoost-2025's top repeated
 posts include content specifically about gaming or understanding the
-LinkedIn algorithm - directly on-theme for the datasets this repo
+LinkedIn algorithm - on-theme for the datasets this repo
 analyzes, not incidental.
 
 ## LinkBoost-2025's low-distinct-ratio note, checked
@@ -22,10 +22,10 @@ analyzes, not incidental.
 The low-distinct-ratio check fires on LinkBoost-2025 (37 distinct
 strings for 594 matches), but the duplicate-template warning does not -
 no single string dominates. Checked manually: the top repeated string
-is under 10% of matches, and the top several strings are genuinely
+is under 10% of matches, and the top several strings are
 distinct, on-topic posts (one about using ChatGPT to analyze a LinkedIn
 profile, one directly discussing why "the algorithm hates you"). This
-is genuine signal, not a new artifact requiring correction.
+is a real signal, not a new artifact requiring correction.
 
 ## Results (VERIFIED - reproducible via the script)
 
@@ -47,7 +47,7 @@ effectively none in LinkBoost-2025. The other two datasets discuss "the
 algorithm" much more generically without naming the platform, even
 though all of this content is itself hosted on LinkedIn.
 
-This is a meaningful, if modest, category overall - larger than
+This is a modest category overall, larger than
 [diabetes-content.md](diabetes-content.md),
 [national-security-content.md](national-security-content.md), and
 [immunotherapy-content.md](immunotherapy-content.md), and in the same

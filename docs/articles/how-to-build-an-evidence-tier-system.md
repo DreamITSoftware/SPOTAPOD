@@ -1,8 +1,8 @@
 # How to Build an Evidence-Tier System for Your Own Research
 
-### Five labels, applied without exception, that do more honesty-enforcement than any style guide
+### Five labels, applied to every claim, enforce honesty better than a style guide
 
-The single structural decision that shapes every article in this project isn't a finding. It's a labeling system, applied to every claim before it's allowed to be published.
+The main structural decision in this project is a labeling system, not a finding. Every claim gets a label before it is published.
 
 ## The five tiers
 
@@ -18,17 +18,17 @@ The single structural decision that shapes every article in this project isn't a
 
 ## The rule that makes it work
 
-The system only functions because of one hard constraint: a claim's tier can only be downgraded, never upgraded, by later work. If a VERIFIED number turns out to be wrong on recheck, it gets corrected and the correction is logged. It doesn't quietly become "STATED" to save face. If an INFERENCE later turns out to align with independently verified data, it still gets re-labeled based on the new check, not promoted on the strength of the original guess.
+The system depends on one constraint: later work can only downgrade a claim's tier, never upgrade it. If a VERIFIED number turns out to be wrong on recheck, it gets corrected and the correction is logged. It does not quietly become "STATED" to save face. If an INFERENCE later turns out to align with independently verified data, it still gets re-labeled based on the new check, not promoted on the strength of the original guess.
 
-This matters because the opposite temptation is real and constant. An inference that turns out right feels like it deserves more credit than it earned at the time it was made, and a verified number that turns out wrong is uncomfortable to downgrade in public. The discipline is refusing both moves.
+The opposite temptation is constant. An inference that turns out right feels like it deserves more credit than it earned when it was made, and a verified number that turns out wrong is uncomfortable to downgrade in public. The system requires refusing both.
 
 ## Why most research writing doesn't do this
 
-It's slower. Every sentence with a number in it needs a tier decided before it ships, and that decision sometimes means admitting a claim is weaker than the writing would be if you just didn't label it. But the alternative is what most public data commentary actually does: state everything with the same confident tone regardless of how well-supported it is, and let the reader guess which numbers would survive a fact-check.
+It is slower. Every sentence with a number in it needs a tier decided before it ships, and that sometimes means admitting a claim is weaker than the prose would suggest. Most public data commentary instead states everything in the same confident tone regardless of support and leaves the reader to guess which numbers would survive a fact-check.
 
 ## Applying this outside a research project
 
-The same five categories work for any claim-heavy writing, a business case, a policy memo, a due-diligence report. The discipline is the same. Write the label before you write the sentence, and let a claim's evidentiary weakness show up as a weaker label rather than a hedge word buried in the middle of a paragraph.
+The same five categories work for any claim-heavy writing, such as a business case, a policy memo or a due-diligence report. Write the label before the sentence, and show a claim's weak evidence as a weaker label rather than a hedge word inside a paragraph.
 
 ## What this is, and isn't
 

@@ -6,20 +6,20 @@ other scan in this repo: aggregate counts only, no record, author, or
 matched text ever printed beyond the duplicate-template check
 described below.
 
-Distinct from [entity-mentions.md](entity-mentions.md)'s general
-corporation-mention scan - this focuses specifically on automakers, at
-a finer resolution than that broader scan tracks.
+This is separate from [entity-mentions.md](entity-mentions.md)'s general
+corporation-mention scan. It covers only automakers, at a finer
+resolution than that broader scan.
 
 ## LinkBoost-2025's low-distinct-ratio note, checked
 
 The low-distinct-ratio note fires on LinkBoost-2025 (40 distinct
-strings for 508 matches), but the duplicate-template warning does not -
+strings for 508 matches), but the duplicate-template warning does not:
 no single string dominates (the top is 95 of 508, about 19%). Checked
-manually: the top repeated strings are genuinely distinct Tesla/Musk
+manually: the top repeated strings are distinct Tesla/Musk
 finance-and-tech posts (a JPMorgan analyst note on humanoid-robot
 stocks tied to Tesla, "should you buy a Tesla in cash" investing
 advice, Musk/AI business news, a Cathie Wood interview excerpt). This
-is genuine signal, not an artifact.
+is real signal, not an artifact.
 
 ## Results (VERIFIED - reproducible via the script)
 
@@ -45,22 +45,22 @@ is genuine signal, not an artifact.
 
 ## Reading these numbers
 
-Tesla dominates every dataset - by far the most-mentioned automaker
-everywhere, and in LinkBoost-2025 it's essentially the only automaker
-discussed at meaningful volume (411 of 508 total mentions, 81%). Given
+Tesla is the most-mentioned automaker in every dataset by a wide
+margin. In LinkBoost-2025 it is essentially the only automaker
+discussed at meaningful volume (411 of 508 total mentions, 81%).
 LinkBoost-2025's content skews toward finance/investing (see
-[investment-vc-content.md](investment-vc-content.md)), this tracks:
-Tesla shows up there mainly as a stock/investment topic rather than as
-automotive content per se.
+[investment-vc-content.md](investment-vc-content.md)), and Tesla shows
+up there mainly as a stock/investment topic rather than as automotive
+content.
 
-podawaa2024 has by far the most manufacturer diversity (14 of 16
-tracked makers present, versus 12 in HyperClapper and just 5 in
-LinkBoost-2025), consistent with podawaa2024 being the broadest, most
-diffuse dataset across every other scan in this repo.
+podawaa2024 has the most manufacturer diversity (14 of 16 tracked
+makers present, versus 12 in HyperClapper and 5 in LinkBoost-2025),
+consistent with it being the broadest dataset in every other scan in
+this repo.
 
-LinkBoost-2025's near-total Tesla concentration is itself informative:
-this dataset doesn't discuss the auto industry broadly - it discusses
-one company, largely as a finance/tech story rather than a car story.
+LinkBoost-2025's near-total Tesla concentration means the dataset
+does not discuss the auto industry broadly. It discusses one company,
+largely as a finance/tech story.
 
 ## Caveats
 

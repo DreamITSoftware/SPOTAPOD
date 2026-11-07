@@ -1,8 +1,8 @@
 # The Lanham Act Angle: What an Actual Competitor Already Won
 
-### A real judgment against an engagement-pod-style service already exists, and it wasn't the FTC that brought it
+### A real judgment against an engagement-pod-style service already exists, brought by someone other than the FTC
 
-Most of the legal theories that could apply to engagement pods are, for now, theoretical. They're laws that plausibly reach the conduct, untested against these specific tools. One theory isn't theoretical at all. It already produced a real judgment, brought by a private plaintiff with standing to sue.
+Most of the legal theories that could apply to engagement pods are, for now, theoretical: laws that plausibly reach the conduct but are untested against these specific tools. One theory has already produced a real judgment, brought by a private plaintiff with standing to sue.
 
 ## The framework
 
@@ -10,15 +10,15 @@ The Lanham Act's § 43(a) (15 U.S.C. § 1125(a)) creates a private right of acti
 
 ## The case that already happened
 
-**LinkedIn Corp. v. TopSocial24 et al.** (N.D. Cal., 2023) resulted in a **$43,086 judgment** against an engagement-pod-style service, using theories in the same family as § 43(a) alongside breach-of-user-agreement claims. That's not a hypothetical fit. It's a real defendant, a real outcome, and the strongest evidence available that a plaintiff with standing (the platform itself, most plausibly) can and does win against this category of tooling.
+**LinkedIn Corp. v. TopSocial24 et al.** (N.D. Cal., 2023) resulted in a **$43,086 judgment** against an engagement-pod-style service, using theories in the same family as § 43(a) alongside breach-of-user-agreement claims. This is a real defendant and a real outcome, and the strongest evidence available that a plaintiff with standing (the platform itself, most plausibly) can and does win against this category of tooling.
 
-## What it doesn't tell you
+## What it does not show
 
 TopSocial24 is not Podawaa, HyperClapper, or LinkBoost. No litigation naming any of the three specific tools behind this project's datasets was found during its research. A precedent that a plaintiff can win this kind of case is not the same thing as evidence that any specific tool has faced, or would face, the same outcome.
 
 ## Why the size of the number matters
 
-$43,086 is worth holding onto for a different reason too. It's the real-world figure to compare against any back-of-envelope theoretical maximum penalty calculation, a reminder that actual outcomes for this category of conduct have, so far, settled for a small fraction of any statutory ceiling.
+$43,086 is the real-world figure to compare against any back-of-envelope theoretical maximum penalty calculation. Actual outcomes for this category of conduct have, so far, been a small fraction of any statutory ceiling.
 
 ## What this is, and isn't
 

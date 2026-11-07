@@ -24,7 +24,7 @@ Each record's headline/occupation text is checked against seventeen
 simple-title keyword patterns, in a fixed priority order (broader
 seniority titles like "Founder" and "CEO" are checked before narrower
 functional ones like "Coach," so "Founder & Marketing Coach" lands under
-Founder, not Coach - an arbitrary but fixed and reproducible rule). A
+Founder, not Coach - a fixed and reproducible rule). A
 record is assigned to the first matching title, or `unspecified_other` if
 none match. Records with no headline/occupation text at all are tracked
 separately and excluded from the percentage base for the title buckets.
@@ -83,13 +83,13 @@ instead of post content.
 
 ## Reading these numbers
 
-- **LinkBoost skews heavily toward Founder/Coach** (34.7% combined) versus
+- **LinkBoost skews toward Founder/Coach** (34.7% combined) versus
   HyperClapper's lean toward Marketer/Founder (20.2% combined) -
   consistent with the `leadership_coaching_motivation` topic-category
   finding in [topic-taxonomy.md](topic-taxonomy.md), where LinkBoost's
   18.91% far outpaces the ~6% seen in the other two files.
-- **`unspecified_other` is large in both files** (34.9% and 29.4%) -
-  expected, since seventeen keyword patterns can't exhaustively cover
+- **`unspecified_other` is large in both files** (34.9% and 29.4%),
+  because seventeen keyword patterns can't cover
   every real job title (e.g. "Nurse," "Teacher," "Attorney" aren't in the
   list), and free-text headlines often lead with a personal tagline
   rather than a title at all.
