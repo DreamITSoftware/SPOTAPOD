@@ -4,13 +4,13 @@
 
 Somewhere in a 2024 LinkedIn export, one specific piece of post content, the same words, character for character, was published under **400 different author identities**.
 
-That is 400 separate accounts, each posting an identical text as if it were their own.
+That is 400 separate accounts, each posting an identical text as their own.
 
 ## How this was found
 
 Checking a dataset for duplicate content is straightforward: group every post by its exact text, and count how many distinct authors show up per group. Most duplicate content clusters in this dataset are small. The median cluster spans just two distinct authors, which is what you would expect from someone quoting a well-known line or two people independently reposting a popular meme.
 
-The distribution has a long tail. There are 1,875 clusters where at least two different authors posted identical content. Most of those clusters are small: 1,491 of them involve exactly two authors. A handful climb much higher: one cluster reaches 9 authors, another 11, another 21. And at the very top, one specific piece of content was posted, word for word, by 400 distinct author identities.
+The distribution has a long tail. There are 1,875 clusters where at least two different authors posted identical content. Most of those clusters are small: 1,491 of them involve exactly two authors. A handful climb much higher: one cluster reaches 9 authors, another 11, another 21. And at the top, one specific piece of content was posted, word for word, by 400 distinct author identities.
 
 ## What 400 identical posts implies
 

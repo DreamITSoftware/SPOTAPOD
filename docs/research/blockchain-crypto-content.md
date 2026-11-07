@@ -6,7 +6,7 @@ rules as every other scan in this repo: aggregate counts only, no
 record, author, or matched text ever printed beyond the
 duplicate-template check described below.
 
-## Results (VERIFIED - reproducible via the script)
+## Results (VERIFIED: reproducible via the script)
 
 | Dataset | Any mention | % of dataset |
 |---|---|---|
@@ -28,15 +28,14 @@ duplicate-template check described below.
 | Altcoin | 82 | 2 | - |
 
 LinkBoost-2025's lower distinct-string count (63 for 921 matches) was
-checked manually - the top repeated strings (81, 80, 54, 49, 42
-occurrences, none dominating) are distinct posts, consistent
-with that dataset's known structure (a limited set of distinct target
-posts, each logged multiple times), not a new artifact requiring
-correction.
+checked manually. The top repeated strings (81, 80, 54, 49, 42
+occurrences, none dominating) are distinct posts, consistent with that
+dataset's known structure (a limited set of distinct target posts, each
+logged multiple times), not a new artifact requiring correction.
 
 ## Reading these numbers
 
-podawaa2024 has by far the highest rate - nearly 3% of the entire
+podawaa2024 has by far the highest rate: nearly 3% of the entire
 dataset, roughly 4x HyperClapper's rate and 2.5x LinkBoost-2025's. A
 duplicate-template or false-positive check does not explain this
 divergence between datasets.
@@ -47,14 +46,13 @@ than "crypto/cryptocurrency" generally, is the single largest term
 "crypto/cryptocurrency" as the dominant phrasing instead.
 
 **A plausible, but not confirmed, cross-dataset pattern**: podawaa2024
-is 2024 data, while HyperClapper and LinkBoost-2025 are 2025-2026 data.
+is 2024 data, while HyperClapper and LinkBoost-2025 are 2025 to 2026 data.
 The large drop in blockchain/crypto-specific content alongside a shift
 toward general "crypto" phrasing is consistent with a broader trend
-already established elsewhere in this project - the topic taxonomy
+already established elsewhere in this project: the topic taxonomy
 shows `technology_ai` climbing sharply in the newer datasets (16.39% in
 podawaa2024 to 27.97% in HyperClapper, per
-[topic-taxonomy.md](topic-taxonomy.md)), suggesting attention in this
-content ecosystem may have shifted from blockchain/Web3 toward AI over
+[topic-taxonomy.md](topic-taxonomy.md)), suggesting attention in this kind of content may have shifted from blockchain/Web3 toward AI over
 that period. This is INFERENCE-tier reasoning from two adjacent data
 points across different time periods and different underlying
 datasets. It is not a confirmed time-series trend, since no single dataset in this

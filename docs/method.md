@@ -23,7 +23,7 @@ Snowflake-style bit layout. Shifting the ID right by 22 bits yields
 milliseconds since the Unix epoch directly (LinkedIn does not add the extra
 custom epoch offset that Twitter's original Snowflake scheme used). This was
 verified empirically against several IDs in the dataset whose decoded dates
-land in the expected 2018–2024 range; it is an **INFERENCE** about the ID
+land in the expected 2018 to 2024 range; it is an **INFERENCE** about the ID
 encoding, not something confirmed by LinkedIn documentation, so treat decoded
 years as approximate.
 

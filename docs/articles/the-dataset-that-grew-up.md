@@ -10,7 +10,7 @@ Comparing `PODCount` between the zero-view anomaly group (posts with recorded li
 
 ## How to read the mean and median split
 
-If both the mean and median had shifted together, that would suggest zero-view posts are broadly, consistently more pod-touched than other posts. Instead, the data shows something narrower. Most zero-view-anomaly posts look similar to other posts on `PODCount` (same median), but the group also contains some records with dramatically higher `PODCount` values that pull the average up. This is more precise than "zero-view posts have more pod activity." It is closer to "a subset of zero-view posts have unusually high pod activity, and the rest look typical."
+If both the mean and median had shifted together, that would suggest zero-view posts are broadly, consistently more pod-touched than other posts. Instead, the data shows something narrower. Most zero-view-anomaly posts look similar to other posts on `PODCount` (same median), but the group also contains some records with much higher `PODCount` values that pull the average up. This is more precise than "zero-view posts have more pod activity." It is closer to "a subset of zero-view posts have unusually high pod activity, and the rest look typical."
 
 ## What this does not establish
 

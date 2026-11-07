@@ -13,16 +13,15 @@ local law enforcement.
 
 ## LinkBoost-2025's low-distinct-ratio note, checked
 
-The low-distinct-ratio note fires on LinkBoost-2025 (32 distinct
-strings for 461 matches), but the duplicate-template warning does not -
-no single string dominates (the top is 82 of 461, about 18%). Checked
-manually: the top several repeated strings are distinct,
-on-topic career-narrative posts - an IPS officer's competitive-exam
-story, someone's "worked as a cop" side-hustle recap, a detective's
-career-statistics post, a cop's salary-progression post. This is
-real signal and not an artifact.
+The low-distinct-ratio note fires on LinkBoost-2025 (32 distinct strings
+for 461 matches), but the duplicate-template warning does not: no single
+string dominates (the top is 82 of 461, about 18%). Checked manually:
+the top several repeated strings are distinct, on-topic career-narrative
+posts: an IPS officer's competitive-exam story, someone's "worked as a
+cop" side-hustle recap, a detective's career-statistics post, a cop's
+salary-progression post. This is real signal and not an artifact.
 
-## Results (VERIFIED - reproducible via the script)
+## Results (VERIFIED: reproducible via the script)
 
 | Term | podawaa2024 | HyperClapper | LinkBoost-2025 |
 |---|---|---|---|
@@ -46,7 +45,7 @@ documented elsewhere in this repo (see, for example, the recurring
 [career-transitions-content.md](career-transitions-content.md)).
 
 "Police" leads in all three datasets, with "cop/cops" a consistent
-second - informal phrasing outpacing more formal terms like "law
+second: informal phrasing outpaces more formal terms like "law
 enforcement" or "police officer(s)" everywhere except HyperClapper,
 where the two are close.
 

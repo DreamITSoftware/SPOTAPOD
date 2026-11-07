@@ -1,6 +1,6 @@
 # 2024 vs. 2025-26: How a Year of AI Changed LinkedIn Content
 
-### Career-advice content nearly doubled its share between the older dataset and the newer ones. Technology and AI content grew too, just not as dramatically.
+### Career-advice content nearly doubled its share between the older dataset and the newer ones. Technology and AI content grew too, by a smaller margin.
 
 Three datasets, captured at different times, offer a rough before-and-after view of how LinkedIn content mix shifted across roughly a year.
 

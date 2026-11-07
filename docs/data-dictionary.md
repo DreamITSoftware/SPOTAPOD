@@ -44,7 +44,7 @@ Top level: `[ ... ]` (flat array, no wrapper object)
 | Field | Type | Completeness | Notes |
 |---|---|---|---|
 | `Id` | string | 100.0% | Internal record ID |
-| `FirstName` / `LastName` | string | 96.0–96.1% | Real name. **Never printed by any script in this repo** |
+| `FirstName` / `LastName` | string | 96.0 to 96.1% | Real name. **Never printed by any script in this repo** |
 | `piFirstName` / `piLastName` | string | 100.0% | Duplicate of FirstName/LastName, always present. **Never printed by any script in this repo** |
 | `Occupation` | string | 96.1% | LinkedIn-style headline/bio, a quasi-identifier on its own |
 | `DashEntityUrn` | string | 96.1% | LinkedIn internal profile URN. **Never read by any script in this repo** |

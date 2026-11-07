@@ -152,7 +152,7 @@ Duplicate post_title content (cross-author exact match):
 The top-20/top-100 lines were computed via
 [analysis/top_account_concentration.py](../../analysis/top_account_concentration.py)
 to directly check a disputed third-party document's claim of "top 20 =
-50.6%, top 100 = 87.3%" - see
+50.6%, top 100 = 87.3%". See
 [authenticity-content.md](authenticity-content.md) for the full
 comparison. Both figures use the same "percent of posts with an
 identified author" denominator as the 1%/5%/10% figures above.
@@ -2488,7 +2488,7 @@ Distinct underlying text values: 76
 
 ## Animal content
 
-See [animal-content.md](animal-content.md) for methodology and the "cat" collision lesson - the worst term-collision problem documented in this repo.
+See [animal-content.md](animal-content.md) for methodology and the "cat" collision lesson. It is the worst term-collision problem documented in this repo.
 
 ```
 === podawaa2024 (213,491 records) ===

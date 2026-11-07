@@ -6,7 +6,7 @@ TEDx shows up 228 times in a 49,369-post dataset. That is more than double its r
 
 ## A name that needed unusual handling
 
-"TED" is a collision risk that most terms in this project are not. It is also a common first name, short for Theodore or Edward. To handle that, the underlying scan matches bare "TED" case-sensitively. Only all-caps "TED" counts, since personal names are essentially never written in all-caps prose. "TEDx" and "TED Talk(s)" are unambiguous phrases and matched normally. This costs a small amount of recall (an all-caps sentence that happens to contain the name "Ted" would be missed) but reduces false positives from the name collision.
+"TED" is a collision risk that most terms in this project are not. It is also a common first name, short for Theodore or Edward. To handle that, the underlying scan matches bare "TED" case-sensitively. Only all-caps "TED" counts, since personal names are almost never written in all-caps prose. "TEDx" and "TED Talk(s)" are unambiguous phrases and matched normally. This costs a small amount of recall (an all-caps sentence that happens to contain the name "Ted" would be missed) but reduces false positives from the name collision.
 
 ## The numbers, and the one that needed a second look
 

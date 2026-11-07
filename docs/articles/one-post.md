@@ -8,7 +8,9 @@ A "one post" deep-dive series would normally display an actual post and dissect 
 
 **What's measurable about it:** a single record in `podawaa2024.json` with a like count of 88,028 and a view count of 0. That specific combination, real likes, zero views, is the largest single instance of this project's zero-view anomaly pattern in the entire dataset.
 
-**What that combination would require, if the metrics were genuine:** 88,028 individual people encountering and liking a post that was, per the same record, viewed by nobody. That is a large discrepancy, and it has no plausible innocent explanation under normal platform mechanics.
+**What that combination would require, if the metrics were genuine:** 88,028 individual people encountering and liking a post that was, per the same record, viewed by nobody.
+
+That is a large discrepancy, and it has no plausible innocent explanation under normal platform mechanics.
 
 **What this project doesn't know:** which account posted it, when precisely, what it said, or why this specific record shows this specific anomaly rather than a smaller one. The record is one data point in an aggregate pattern, examined in isolation. It is not a case study of an identified individual's behavior.
 

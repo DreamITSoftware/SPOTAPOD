@@ -12,8 +12,7 @@ printed beyond the duplicate-template check described below.
 insecurity, homeless services/agency.
 
 **BROAD**: narrow, plus affordable housing and the bare word "shelter."
-Bare "shelter" is deliberately kept out of the narrow tally - checking
-actual matches in podawaa2024 showed it catches unrelated posts, including a
+Bare "shelter" is deliberately kept out of the narrow tally: checking actual matches in podawaa2024 showed it catches unrelated posts, including a
 disaster-protection product post ("a spherical shelter designed to
 protect against natural disasters such as tsunamis, tornadoes") and
 unrelated leadership content. The narrow tally is the more trustworthy
@@ -38,7 +37,7 @@ post or the AI-travel-tool ad in earlier scans. For this reason the
 script's warning message for this scan says to check the text rather
 than assume inflation means noise.
 
-## Results (VERIFIED - reproducible via the script)
+## Results (VERIFIED: reproducible via the script)
 
 | Dataset | Narrow | % | Broad | % |
 |---|---|---|---|---|
@@ -48,15 +47,16 @@ than assume inflation means noise.
 
 ## What stands out
 
-LinkBoost-2025 contains homelessness-sector advocacy content
-beyond the personal-narrative template - posts along the lines of "The
-Power of Collaboration in Ending Homelessness," "The most effective way
-to end homelessness? Stop it before it starts," and a piece on digital
+LinkBoost-2025 contains homelessness-sector advocacy content beyond the
+personal-narrative template: posts along the lines of "The Power of
+Collaboration in Ending Homelessness," "The most effective way to end
+homelessness? Stop it before it starts," and a piece on digital
 exclusion of vulnerable populations from online-only essential services
 (benefits applications, housing applications). This reads as
-nonprofit/social-sector professional content, unlike most of the other small content categories checked in
-this repo (compare [national-security-content.md](national-security-content.md),
-where matches were mostly scattered and tangential).
+nonprofit/social-sector professional content, unlike most of the other
+small content categories checked in this repo (compare
+[national-security-content.md](national-security-content.md), where
+matches were mostly scattered and tangential).
 
 ## Caveats
 

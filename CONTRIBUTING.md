@@ -44,8 +44,7 @@ matter how useful the analysis behind it is.
 
 7. **New datasets get the full doc set.** Adding a fourth dataset means
    adding its section to `docs/data-dictionary.md`, `docs/limitations.md`,
-   `docs/privacy.md`, and `docs/provenance.md`, not just an analysis
-   script. A dataset without a privacy/limitations writeup doesn't belong
+   `docs/privacy.md`, and `docs/provenance.md`, in addition to an analysis script. A dataset without a privacy/limitations writeup doesn't belong
    in `analysis/` yet.
 
 8. **Provenance is reported, not assumed.** Don't fill in a dataset's

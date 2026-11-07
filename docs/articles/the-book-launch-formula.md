@@ -16,7 +16,7 @@ By genre, business and self-help dominate and fiction barely registers.
 
 ## Reading the breakdown
 
-LinkedIn's book-promotion content looks like career advice more than a books community: self-published business and self-help authors promoting their books for career credibility, not writers sharing creative work. Fiction and poetry are nearly absent, and business and writing-craft framing dominates, which suggests the kind of "author" LinkedIn hosts.
+LinkedIn's book-promotion content resembles career advice more than a books community: self-published business and self-help authors promoting their books for career credibility, not writers sharing creative work. Fiction and poetry are nearly absent, and business and writing-craft framing dominates, which suggests the kind of "author" LinkedIn hosts.
 
 ## What this is, and isn't
 
