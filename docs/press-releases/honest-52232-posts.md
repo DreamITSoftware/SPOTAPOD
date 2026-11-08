@@ -3,7 +3,7 @@
 Press release by Dream IT Software. Published on Cyber Defense Wire on 5 November 2026:
 <https://cyberdefensewire.com/researcher-counts-52232-engagement-pod-posts-and-finds-honest-in-about-seven-times-as-many-as-the-words-for-lying/>
 
-The text below is the release as published. The Cyber Defense Wire page is the published version.
+The text below is the release as published, with one unfilled placeholder removed: the first citation's link to the article, which was never filled in. The Cyber Defense Wire page is the published version.
 
 ---
 
@@ -43,7 +43,7 @@ Daniel Hall is CEO of Dream IT Software and has worked with engagement pods sinc
 
 Hall's own research and writing:
 
-1. Hall, D. *Honestly? Stop Saying "Honestly." I Counted, and the Internet Has a Problem.* [link to the article]
+1. Hall, D. *Honestly? Stop Saying "Honestly." I Counted, and the Internet Has a Problem.*
 2. Hall, D. *Replication Data for: SPOTAPOD Analysis Repository.* Harvard Dataverse. doi:10.7910/DVN/NT6YM2. [dataverse.harvard.edu](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/NT6YM2)
 3. Hall, D. *SPOTAPOD Analysis Repository.* GitHub. [github.com/DreamITSoftware/SPOTAPOD](https://github.com/DreamITSoftware/SPOTAPOD)
 4. Hall, D. *DIGITAL BOUGHTulism: POONAMI: A Teenagers Field Guide to Fake Social Media.* A book for teenagers, and the follow-up to *Top 100 List of Lies on Social Media.* [Amazon](https://www.amazon.com/dp/B0HMX7536J)

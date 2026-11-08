@@ -1,6 +1,6 @@
 # Press releases
 
-Press releases issued by Dream IT Software about SPOTAPOD findings and published on [Cyber Defense Wire](https://cyberdefensewire.com/press-releases/). Each Cyber Defense Wire page is the published version. The copies here are the text as published.
+Press releases issued by Dream IT Software about SPOTAPOD findings and published on [Cyber Defense Wire](https://cyberdefensewire.com/press-releases/). Each Cyber Defense Wire page is the published version. The copies here are the text as published, with unfilled placeholders removed.
 
 | Date published | Release | Copy here |
 |---|---|---|

@@ -3,7 +3,7 @@
 Press release by Dream IT Software. Published on Cyber Defense Wire on 5 November 2026:
 <https://cyberdefensewire.com/spotapod-research-finds-118-pod-boosted-linkedin-posts-naming-lovable-across-its-three-funding-rounds/>
 
-The text below is the release as published. The Cyber Defense Wire page is the published version.
+The text below is the release as published, with two unfilled placeholders removed: a note about contacting Lovable for comment, and a link to the full analysis that was never filled in. The Cyber Defense Wire page is the published version.
 
 ---
 
@@ -31,8 +31,6 @@ Neither partner-tagged post says what the partnership involved. Lovable's formal
 
 The analysis compares the data with US and EU consumer protection rules. It finds the strongest exposure with the pod operators (16 CFR 465.8(a), the FTC rule on fake indicators of social media influence) and with whoever submitted the two partner posts to a pod (16 CFR 465.8(b) and, in the EU, Annex I point 23c of the Unfair Commercial Practices Directive), if the pod order records can be traced. Against Lovable itself, the record supports one theory: that it failed to police its partners' disclosures, and only if it gave these creators something of value. The analysis compares rules with data and is not a legal finding.
 
-[Lovable was contacted for comment on DATE. Add its response here, or write "Lovable had not responded by the time of release."]
-
 ## What the data does not show
 
 - **Who paid for the pods.** Nothing in the data links a pod order to Lovable, and most of these posts come from people writing about the company.
@@ -43,7 +41,7 @@ The analysis compares the data with US and EU consumer protection rules. It find
 
 ## About the data
 
-The analysis uses pod logs from HyperClapper (49,369 records), LinkBoost-2025 (77,969 records) and a 2026 file (30,504 records). Every record whose post text contains "lovable" was pulled, and posts that use the word in its ordinary sense were read and removed. Each post's date is decoded from its LinkedIn ID, and spot checks matched the tools' own timestamps to the second. Counts and dates can be rerun from the files. No author or account is named in the analysis. The full analysis is available at [LINK].
+The analysis uses pod logs from HyperClapper (49,369 records), LinkBoost-2025 (77,969 records) and a 2026 file (30,504 records). Every record whose post text contains "lovable" was pulled, and posts that use the word in its ordinary sense were read and removed. Each post's date is decoded from its LinkedIn ID, and spot checks matched the tools' own timestamps to the second. Counts and dates can be rerun from the files. No author or account is named in the analysis.
 
 ## About SPOTAPOD and Daniel Hall
 
