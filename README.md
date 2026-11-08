@@ -576,6 +576,7 @@ no per-record data). See [explorer/README.md](explorer/README.md) for why.
 - [Pod count profile](docs/research/pod-count-profile.md), profiles a fourth supplied file (`spotapod.json`) shown to be a derived aggregation of podawaa2024.json rather than an independent dataset, and its one new field (`PODCount`)
 - [65 export files profile](docs/research/export-65-profile.md), file-level facts, record states, engagement types, creation dates and what the dates can and cannot show for a separate set of 65 export files (counts only)
 - [Books](docs/books/README.md), *DIGITAL BOUGHTulism: POONAMI*, Daniel Hall's field guide to fake social media for teenagers, in PDF, EPUB, Word and Markdown. Copyright the author, all rights reserved; not covered by this repo's CC BY license
+- [Press releases](docs/press-releases/README.md), press releases issued by Dream IT Software about SPOTAPOD findings, with links to the published versions on Cyber Defense Wire
 
 ## Other regulatory signals
 

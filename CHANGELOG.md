@@ -27,6 +27,11 @@
   draft dissertation.
 
 ### Added
+- `docs/press-releases/`, the press releases Dream IT Software published on
+  Cyber Defense Wire on 5 and 6 November 2026: the text of the Lovable and
+  "honest" releases as published, and an index linking all three published
+  pages. The children release is listed with its link; its text is not yet
+  copied here. Linked from the README's docs list and the site menu.
 - A CC BY 4.0 license for the dissertation: `dissertation/LICENSE`, a license
   and suggested-citation notice on the dissertation's first page (PDF, Word
   and Markdown), "License" and "How to cite" sections in
