@@ -27,6 +27,10 @@
   draft dissertation.
 
 ### Added
+- `docs/articles/zero-respect-for-veterans`, the Dream IT Software press
+  release of 11 November 2026 on veteran-related posts in the pod files and
+  on fake accounts that impersonate service members, as Markdown, PDF and
+  Word. It gives aggregate counts only and names no account or person.
 - `docs/press-releases/`, the press releases Dream IT Software published on
   Cyber Defense Wire on 5 and 6 November 2026: the text of the Lovable and
   "honest" releases as published, and an index linking all three published
