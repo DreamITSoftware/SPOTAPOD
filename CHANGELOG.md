@@ -27,6 +27,15 @@
   draft dissertation.
 
 ### Added
+- `analysis/crypto_half_year_scan.py`, the blockchain and crypto scan on a
+  half-year axis, with a "half-year series" section in
+  `docs/research/blockchain-crypto-content.md` and the article
+  `docs/articles/crypto-posts-rose-fivefold-then-fell-by-two-fifths`. Inside
+  podawaa2024 the share of dated posts with a term rose from 0.76% (2020 H2)
+  to 3.92% (2023 H1) and fell to 2.28% (2024 H2). In 2024 H2 podawaa2024's
+  rate is about three times HyperClapper's, so the earlier four-times
+  comparison between datasets mixes tool differences with time. Aggregate
+  counts only.
 - `docs/articles/zero-respect-for-veterans`, the Dream IT Software press
   release of 11 November 2026 on veteran-related posts in the pod files and
   on fake accounts that impersonate service members, as Markdown, PDF and
