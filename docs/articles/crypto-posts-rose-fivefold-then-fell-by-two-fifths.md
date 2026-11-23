@@ -10,17 +10,7 @@ This piece puts each file on a half-year axis, using the date decoded from each 
 
 podawaa2024.json holds 201,000 distinct posts with a decodable date. This table shows the share that mention any of the eight terms used in the [blockchain and crypto scan](../research/blockchain-crypto-content.md). The file ends in early November 2024, so 2024 H2 is a partial half-year. 2020 H1 is left out because it holds only 111 posts.
 
-| Half-year | Posts | With a term | Share |
-|---|---|---|---|
-| 2020 H2 | 4,208 | 32 | 0.76% |
-| 2021 H1 | 10,834 | 187 | 1.73% |
-| 2021 H2 | 16,969 | 317 | 1.87% |
-| 2022 H1 | 24,153 | 827 | 3.42% |
-| 2022 H2 | 26,672 | 989 | 3.71% |
-| 2023 H1 | 29,723 | 1,166 | 3.92% |
-| 2023 H2 | 28,648 | 884 | 3.09% |
-| 2024 H1 | 35,784 | 946 | 2.64% |
-| 2024 H2 | 23,896 | 544 | 2.28% |
+![Table of podawaa2024 posts with a blockchain or crypto term by half-year. The share rises from 0.76% in 2020 H2 to a peak of 3.92% in 2023 H1 and falls to 2.28% in 2024 H2.](img/crypto-half-year-podawaa2024.png)
 
 The share rose about fivefold, from 0.76% to 3.92%, by the first half of 2023. It then fell by about 42%, to 2.28%. The fall inside one tool is real, and it is smaller than the four-times gap between datasets.
 
@@ -28,15 +18,7 @@ The share rose about fivefold, from 0.76% to 3.92%, by the first half of 2023. I
 
 The terms did not fall together. A post can mention more than one, so the columns overlap.
 
-| Half-year | NFT | Web3 | blockchain | crypto | Bitcoin |
-|---|---|---|---|---|---|
-| 2021 H1 | 24 | 4 | 114 | 106 | 90 |
-| 2022 H1 | 371 | 255 | 359 | 352 | 105 |
-| 2022 H2 | 391 | 467 | 407 | 381 | 99 |
-| 2023 H1 | 328 | 583 | 563 | 367 | 115 |
-| 2023 H2 | 188 | 350 | 408 | 311 | 121 |
-| 2024 H1 | 78 | 231 | 425 | 352 | 290 |
-| 2024 H2 | 27 | 178 | 278 | 175 | 134 |
+![Table of posts mentioning NFT, Web3, blockchain, crypto and Bitcoin by half-year, from 2021 H1 to 2024 H2. NFT peaks at 391 in 2022 H2, Web3 at 583 and blockchain at 563 in 2023 H1, and Bitcoin at 290 in 2024 H1.](img/crypto-words-podawaa2024.png)
 
 NFT mentions peaked in 2022 H2 at 391 and fell to 27 by 2024 H2. In 2022 H1, 371 of the 827 posts with a term (45%) mentioned NFTs. In 2024 H2 it was 27 of 544 (5%). Web3 and blockchain peaked a half-year later, in 2023 H1, at 583 and 563. Bitcoin stayed near 100 per half-year until 2023 H2, then reached 290 in 2024 H1.
 
@@ -44,13 +26,7 @@ NFT mentions peaked in 2022 H2 at 391 and fell to 27 by 2024 H2. In 2022 H1, 371
 
 The other two datasets cover later years, and they do not fill in the same series.
 
-| File | Half-year | Posts | With a term | Share |
-|---|---|---|---|---|
-| podawaa2024 | 2024 H2 | 23,896 | 544 | 2.28% |
-| HyperClapper | 2024 H2 | 1,969 | 15 | 0.76% |
-| HyperClapper | 2025 H2 | 16,703 | 131 | 0.78% |
-| HyperClapper | 2026 H1 | 23,143 | 169 | 0.73% |
-| LinkBoost-2025 | 2025 H2 | 3,125 | 42 | 1.34% |
+![Table of the share of posts with a blockchain or crypto term by file: podawaa2024 2.28% in 2024 H2; HyperClapper 0.76% in 2024 H2, 0.78% in 2025 H2 and 0.73% in 2026 H1; LinkBoost-2025 1.34% in 2025 H2.](img/crypto-by-file-same-half-year.png)
 
 In 2024 H2, the one half-year that podawaa2024 and HyperClapper share, podawaa2024's rate is about three times HyperClapper's. In 2025 H2, LinkBoost-2025's rate is about 1.7 times HyperClapper's. Tool differences are about as large as the change over time, so a gap between two datasets says little about a trend.
 
